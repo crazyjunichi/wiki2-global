@@ -1,0 +1,1 @@
+const e="FoxRemoveHome",o="FoxRemoveHome",n=!1,m=null,c=1,t={UseAssociatedAgent:!0,TargetAgent:null,SetHome:3,SpecificEnv:null},l={m_Name:e,key:o,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,SetHome:t};export{n as RequiredForSelectingDuty,t as SetHome,l as default,o as key,c as m_Enabled,m as m_GameObject,e as m_Name};

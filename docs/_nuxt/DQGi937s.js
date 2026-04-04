@@ -1,0 +1,1 @@
+var u=(l=>(l[l.MultiplyByValueDifference=0]="MultiplyByValueDifference",l[l.MultiplyByPlayerToNPCValue=1]="MultiplyByPlayerToNPCValue",l[l.MultiplyByNPCToPlayerValue=2]="MultiplyByNPCToPlayerValue",l[l.FlatModifier=3]="FlatModifier",l))(u||{});export{u as T};

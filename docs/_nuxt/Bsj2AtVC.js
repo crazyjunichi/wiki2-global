@@ -1,0 +1,1 @@
+const t={key:"TestNPCTag",icon:"",type:"tag"},e={key:"TestNPCTag",icon:"",type:"tag"},s=[{key:"TestNPC1",icon:"WestonTrascendental",type:"npc",zh:"Test 1",en:"Test 1",ja:"Test 1"}],a=!0,n=!0,o={title:t,localization:e,list:s,useImage:a,allowNoImage:n};export{n as allowNoImage,o as default,s as list,e as localization,t as title,a as useImage};

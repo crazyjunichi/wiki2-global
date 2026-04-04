@@ -1,0 +1,1 @@
+const t="New WaitDutyAction",e="New WaitDutyAction",c=!1,o=null,a=1,n={m_X:2,m_Y:2},i={m_Name:t,key:e,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:n};export{c as RequiredForSelectingDuty,n as WaitFor,i as default,e as key,a as m_Enabled,o as m_GameObject,t as m_Name};

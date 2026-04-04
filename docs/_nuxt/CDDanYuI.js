@@ -1,0 +1,1 @@
+const e="SetFoxHomeBuild",t="SetFoxHomeBuild",n=!1,l=null,c=1,o={UseAssociatedAgent:!0,TargetAgent:null,SetHome:0,SpecificEnv:null},m={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,SetHome:o};export{n as RequiredForSelectingDuty,o as SetHome,m as default,t as key,c as m_Enabled,l as m_GameObject,e as m_Name};

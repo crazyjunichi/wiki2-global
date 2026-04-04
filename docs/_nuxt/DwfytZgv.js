@@ -1,0 +1,1 @@
+const e="SetFoxHome",t="SetFoxHome",n=!1,c=null,m=1,o={UseAssociatedAgent:!0,TargetAgent:null,SetHome:0,SpecificEnv:null},l={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,SetHome:o};export{n as RequiredForSelectingDuty,o as SetHome,l as default,t as key,m as m_Enabled,c as m_GameObject,e as m_Name};

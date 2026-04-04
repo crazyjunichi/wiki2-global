@@ -1,0 +1,1 @@
+const e="Wait1Hour",t="Wait1Hour",a=!1,n=null,c=1,o={m_X:3,m_Y:3},m={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:o};export{a as RequiredForSelectingDuty,o as WaitFor,m as default,t as key,c as m_Enabled,n as m_GameObject,e as m_Name};

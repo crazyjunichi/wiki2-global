@@ -1,0 +1,1 @@
+const e="ResetBadger1Home",t="ResetBadger1Home",o=!1,s=null,c=1,n={UseAssociatedAgent:!0,TargetAgent:null,SetHome:0,SpecificEnv:null},a={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,SetHome:n};export{o as RequiredForSelectingDuty,n as SetHome,a as default,t as key,c as m_Enabled,s as m_GameObject,e as m_Name};

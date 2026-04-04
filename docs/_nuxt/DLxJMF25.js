@@ -1,0 +1,1 @@
+const e="Sociialise",t="Sociialise",i=!1,o=null,a=1,c={m_X:4,m_Y:4},n={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:c};export{i as RequiredForSelectingDuty,c as WaitFor,n as default,t as key,a as m_Enabled,o as m_GameObject,e as m_Name};

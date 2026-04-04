@@ -1,0 +1,1 @@
+function l(n){return n===null||n.x===0&&n.y===0}function i(n,u){return u!==null&&n>=u.x&&n<=u.y}function f(n,u=!1){if(n===null)return"";let x=u&&n.x>0?`+${n.x}`:n.x,y=u&&n.y>0?`+${n.y}`:n.y;return n.x==n.y?`${x}`:`(${x}~${y})`}export{i as a,f as g,l as i};

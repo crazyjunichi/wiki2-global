@@ -1,0 +1,1 @@
+const e="",l=[{key:"NOT_USED_Bp_CollapsedWell",icon:"",type:"card",CardType:12,zh:"坍塌的井",en:"Collapsed Well",ja:"崩れた井戸"}],a=!0,t=!1,o={title:e,list:l,useImage:a,allowNoImage:t};export{t as allowNoImage,o as default,l as list,e as title,a as useImage};

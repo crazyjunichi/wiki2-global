@@ -1,0 +1,1 @@
+const e="Wait for 5 Ticks",t="Wait for 5 Ticks",o=!1,a=null,n=1,c={m_X:5,m_Y:5},s={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:c};export{o as RequiredForSelectingDuty,c as WaitFor,s as default,t as key,n as m_Enabled,a as m_GameObject,e as m_Name};

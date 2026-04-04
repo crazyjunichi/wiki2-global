@@ -1,0 +1,1 @@
+const e="SquirrelSpawnPineWait2Ticks",t="SquirrelSpawnPineWait2Ticks",i=!1,a=null,c=1,n={m_X:2,m_Y:2},r={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:n};export{i as RequiredForSelectingDuty,n as WaitFor,r as default,t as key,c as m_Enabled,a as m_GameObject,e as m_Name};
