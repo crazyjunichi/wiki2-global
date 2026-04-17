@@ -4,17 +4,44 @@
 Install BepInEx and place WikiMod.dll in the Plugin folder.
 After entering the game, you can enable or disable the main mod features from the game’s Settings menu.
 
-## Latest Update V2.4 (2026/03/28)
-- Added WikiMod achievement series (badges, mysterious statues, rewards)
-- [Detail Tooltip] Shows attribute requirements in blueprint conditions
-- [Detail Tooltip] Fixed missing display of transferred attribute values
-- [Detail Tooltip] Fixed missing display of inner-item change rates during conversions
-- [Anything Mod] Supports locking status values and saving auto-lock for next game launch
-- [Anything Mod] Environment modifier now supports freely shifting game time while keeping seasons in sync
-- [Anything Mod] Added "Speed Up Time Animation" option in More Settings
-- [Anything Mod] Added "Exit Without Saving" option in More Settings
-- [Map] Optimized map node tooltip details and added current attributes display
-- [BugFix] Fixed time hints disappearing after loading a save
+## Latest Update V2.5 (2026/04/09)
+💡 Quick Backpack Bar
+- Added a quick backpack entry near the character carry-weight area. Hover to preview equipped backpacks, and click to open quickly.
+
+💡 Remember On-Field Card Positions
+- When dragging cards to sort them, the game now remembers relative positions; cards will prefer their previous positions when placed on the field again.
+- This feature still uses the existing "Optimize Card Placement" switch.
+
+🗺️ Map Adjustments
+- Added "Unlock All Maps" option. When disabled, only visited maps are shown.
+Note: This option is OFF by default. Players who want to see all maps must enable it manually in game settings.
+
+⚙️ Anything Mod Improvements
+- Anything Mod is now enabled by default.
+- Added "Developer Mode" switch. When enabled, some debug data can be viewed.
+- Added "Detail Tooltip Default Expanded" switch. When enabled, detailed display is on by default; you can still switch to compact mode via hotkey.
+- Added "Do Not Stack Cards with Different Names" switch. When enabled, different logs and different meats no longer stack.
+- Added "Allow Deleting All Cards" switch. When enabled, delete buttons are clickable on all cards.
+- Added "Enable Fast Enter House" switch. When enabled, entering and leaving houses no longer requires popup confirmation.
+- Added "Card Tooltip Delay Time" configuration to prevent card number flickering. If issues occur, adjust back to 0.
+- Added "Other Mod Config" feature to show active other-mod versions and related settings.
+- Supports change detail-tooltip fonts.
+- Fixed an issue where story perks could not be removed correctly.
+
+📈 Detail Tooltip Improvements
+- Supports showing liquid change rate and change time.
+- Supports showing liquid conversion inside containers.
+- Supports showing decay speed for seasonings/coatings.
+- Supports showing follow-up changes caused by actions.
+
+🎖️ WikiMod Achievement Badges
+- Added a badge recycle device. If a crafted badge's quality is unsatisfactory, you can recycle and recraft it.
+- Added Harvest Badge and Brewing Badge.
+- Adjusted crafting requirements for Painting Badge and Cooking Badge.
+- Added new badge rewards: Sunny Doll, Color Lights, Dimensional Box, and Muscle Statue.
+
+💡 Other Improvements
+- Fixed cases where CTRL stack move did not work.
 
 ## ✨ Main Features
 
@@ -110,6 +137,7 @@ In blueprint/container slot UI, right-click to open menu and quickly add availab
 
 ### 🏷️ More Useful Features
 
+- Quick backpack bar
 - Support renaming almost all cards
 - Can add 6-hour sleep option in rest interface (duration adjustable in advanced settings)
 - Hold CTRL + click the arrow on a card to move the whole stack
@@ -120,6 +148,30 @@ In blueprint/container slot UI, right-click to open menu and quickly add availab
 
 
 ## 📝 Changelog
+### V2.5 (2026/04/09)
+- Added Quick Backpack Bar. A quick backpack entry is now shown near the character carry-weight UI; hover shows equipped backpacks and click opens quickly.
+- Added remembered on-field card positions. When sorting cards by dragging, relative positions are remembered; cards prefer previous positions when placed again. (Still controlled by "Optimize Card Placement".)
+- [Detail Tooltip] Supports liquid change rate and change time display.
+- [Detail Tooltip] Supports liquid conversion display inside containers.
+- [Detail Tooltip] Supports decay speed display for seasonings/coatings.
+- [Detail Tooltip] Supports displaying follow-up changes caused by actions.
+- [Map] Added "Unlock All Maps" option. When disabled, only visited maps are shown. Note: this option is OFF by default, and players must enable it manually in game settings to view all maps.
+- [Achievement Badges] Added a badge recycle device. If badge quality is unsatisfactory, badges can be recycled and recrafted.
+- [Achievement Badges] Added Harvest Badge and Brewing Badge.
+- [Achievement Badges] Adjusted crafting requirements for Painting Badge and Cooking Badge.
+- [Achievement Badges] Added new badge rewards: Sunny Doll, Color Lights, Dimensional Box, and Muscle Statue.
+- [Anything Mod] Anything Mod is now enabled by default.
+- [Anything Mod] Added "Developer Mode" toggle. When enabled, some debug data can be viewed.
+- [Anything Mod] Added "Detail Tooltip Default Expanded" toggle. When enabled, detailed display is shown by default, and can still be switched to compact via hotkey.
+- [Anything Mod] Added "Do Not Stack Cards with Different Names" toggle. When enabled, different logs and different meats no longer stack.
+- [Anything Mod] Added "Allow Deleting All Cards" toggle. When enabled, delete buttons are clickable for all cards.
+- [Anything Mod] Added "Enable Fast Enter House" toggle. When enabled, entering/exiting houses no longer requires popup confirmation.
+- [Anything Mod] Added "Card Tooltip Delay Time" configuration to prevent card number flickering. If issues occur, adjust back to 0.
+- [Anything Mod] Added "Other Mod Config" feature to display active other-mod versions and related configurations.
+- [Anything Mod] Supports change detail-tooltip fonts.
+- [Anything Mod] Fixed an issue where story perks could not be removed correctly.
+- [BugFix] Fixed cases where CTRL stack move did not work.
+
 ### V2.4 (2026/03/28)
 - Added WikiMod achievement series (badges, mysterious statues, rewards)
 - [Detail Tooltip] Shows attribute requirements in blueprint conditions
