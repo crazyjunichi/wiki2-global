@@ -1,0 +1,1 @@
+import{n as a,w as r,u as n,p as o}from"./BZExxWIB.js";const p=a({__name:"test",async setup(s){let e,t;const _=([e,t]=r(()=>n(()=>o(()=>import("./CYz8uzTE.js"),[],import.meta.url),"card/River")),e=await e,t(),e);return console.log(_),(i,c)=>null}});export{p as default};

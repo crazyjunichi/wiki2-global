@@ -1,1 +1,0 @@
-import{k as a,u as n,c as t,o,O as r,t as l,B as p}from"./CFvHMphb.js";const c=a({__name:"ModValueDescriptor",props:{value:{}},setup(u){const{t:s}=n();return(e,_)=>(o(),t("span",{class:r({"text-red-500/70":e.value<0,"text-green-500/70":e.value>0})},l(p(s)(e.value>=0?"增加":"减少")),3))}}),m=Object.assign(c,{__name:"UtilModValueDescriptor"});export{m as _};
