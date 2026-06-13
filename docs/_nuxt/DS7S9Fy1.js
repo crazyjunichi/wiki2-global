@@ -1,1 +1,0 @@
-const e="WaitIfBleedingOut",t="WaitIfBleedingOut",a=!1,c=null,i=1,n={m_X:1,m_Y:1},l={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:n};export{a as RequiredForSelectingDuty,n as WaitFor,l as default,t as key,i as m_Enabled,c as m_GameObject,e as m_Name};

@@ -1,0 +1,2321 @@
+{
+  "m_Name": "TreatingWounds_Completed",
+  "key": "TreatingWounds_Completed",
+  "icon": "",
+  "type": "perk",
+  "zh": "治疗伤口",
+  "en": "Treating Wounds",
+  "ja": "Treating Wounds",
+  "UniqueIDIndex": 4497,
+  "StartUnlocked": false,
+  "ActionObjectives": [],
+  "CardsOnBoardObjectives": [],
+  "TagsOnBoardObjectives": [],
+  "StatsObjectives": [],
+  "TimeObjectives": [],
+  "NestedObjectives": [
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "ObjectiveCondition": {
+        "m_Name": "TreatingWounds_Obj1_WashYourWounds",
+        "key": "TreatingWounds_Obj1_WashYourWounds",
+        "icon": "",
+        "type": "perk",
+        "zh": "清洁伤口",
+        "en": "Wash your Wounds",
+        "ja": "Wash your Wounds",
+        "UniqueID": "661ac7fe3bacd254b85033b6e61711ef",
+        "UniqueIDIndex": 4500,
+        "StartUnlocked": false,
+        "ActionObjectives": [
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "OnCard": null,
+            "OnCardWithTags": [
+              {
+                "key": "tag_OpenWound",
+                "text": "“开放性伤口”",
+                "icon": "",
+                "type": "tag",
+                "count": 16,
+                "zh": "开放性伤口",
+                "en": "Open Wound",
+                "ja": "開いた傷",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "回復"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 288
+                },
+                "UsageDurability": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Infection",
+                    "Text": "感染",
+                    "zh": "感染",
+                    "en": "Infection",
+                    "ja": "感染"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "痛み"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 100
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Bleeding",
+                    "Text": "正在流血",
+                    "zh": "正在流血",
+                    "en": "Bleeding",
+                    "ja": "出血"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 800
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "回復要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Disinfectant Factor",
+                    "Text": "消毒系数",
+                    "zh": "消毒系数",
+                    "en": "Disinfectant Factor",
+                    "ja": "消毒要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "ShieldCross"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "鎮痛要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Coagulant Factor",
+                    "Text": "凝血系数",
+                    "zh": "凝血系数",
+                    "en": "Coagulant Factor",
+                    "ja": "血液凝固要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 96
+                }
+              }
+            ],
+            "WithActionTags": [],
+            "ActionName": "清理",
+            "OnActionStarted": true,
+            "PerformMultipleTimes": 1,
+            "DebugMode": false,
+            "ActionNameText": {
+              "DefaultText": "Clean",
+              "Text": "清理",
+              "zh": "清理",
+              "en": "Clean",
+              "ja": "綺麗にする"
+            }
+          }
+        ],
+        "CardsOnBoardObjectives": [],
+        "TagsOnBoardObjectives": [],
+        "StatsObjectives": [],
+        "TimeObjectives": [],
+        "NestedObjectives": [],
+        "PlayedCharacter": [],
+        "CompleteOnWin": false,
+        "CompleteOnLose": false,
+        "RequiredDifficultyScore": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "EditorOnly": false,
+        "NotifyWhenNotChecked": true,
+        "CheckingNotificationDetails": 2,
+        "DebugCompletion": false,
+        "CombatObjectives": [],
+        "BlueprintsResearchedObjectives": [],
+        "ObjectiveDescription": {
+          "DefaultText": "Wash your Wounds",
+          "Text": "清洁伤口",
+          "zh": "清洁伤口",
+          "en": "Wash your Wounds",
+          "ja": "Wash your Wounds"
+        },
+        "NotificationSettings": {
+          "Frequency": 0,
+          "PercentThreshold": 0.01
+        },
+        "OnCompleteActions": [],
+        "QuestBehavior": 1,
+        "SteamAchievementID": "",
+        "JournalObjective": false,
+        "DontStayAliveWhenQuestIsInactive": false,
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "ExplicitRelatedQuest": null
+      },
+      "IgnoreValidation": false
+    },
+    {
+      "ObjectiveName": "2",
+      "CompletionWeight": 1,
+      "ObjectiveCondition": {
+        "m_Name": "TreatingWounds_Obj2_EquipBracketFungusOrHealersMossOnAWound",
+        "key": "TreatingWounds_Obj2_EquipBracketFungusOrHealersMossOnAWound",
+        "icon": "",
+        "type": "perk",
+        "zh": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+        "en": "Equip Healers Moss or cut Fresh Bracket Fungus Strips on a Wound",
+        "ja": "Equip Healers Moss or cut Fresh Bracket Fungus Strips on a Wound",
+        "UniqueID": "cfb3394165d0a194894e6b15af17465e",
+        "UniqueIDIndex": 4501,
+        "StartUnlocked": false,
+        "ActionObjectives": [],
+        "CardsOnBoardObjectives": [
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "Card": {
+              "key": "BracketFungusStrips",
+              "icon": "BracketFungus_Strip",
+              "type": "card",
+              "CardType": 0,
+              "zh": "多孔菌条",
+              "en": "Bracket Fungus Strip",
+              "ja": "Bracket Fungus Strip",
+              "SpoilageTime": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Durability",
+                  "Text": "耐久度",
+                  "zh": "耐久度",
+                  "en": "Durability",
+                  "ja": "Durability"
+                },
+                "OverrideIcon": {
+                  "FileName": "Shield"
+                },
+                "MaxValue": 960
+              },
+              "UsageDurability": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "进度",
+                  "zh": "耐久",
+                  "en": "Usage",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Hammer"
+                },
+                "MaxValue": 24
+              },
+              "FuelCapacity": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "温度",
+                  "zh": "容量",
+                  "en": "Fuel",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Hot"
+                },
+                "MaxValue": 200
+              },
+              "Progress": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "Progress",
+                  "zh": "进度",
+                  "en": "Progress",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 1
+              },
+              "SpecialDurability1": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "烹饪度",
+                  "zh": "特殊1",
+                  "en": "Special1",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Cooking"
+                },
+                "MaxValue": 1
+              },
+              "SpecialDurability2": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "品质",
+                  "zh": "特殊2",
+                  "en": "Special2",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Quality"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability3": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability3",
+                  "zh": "特殊3",
+                  "en": "Special3",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 1
+              },
+              "SpecialDurability4": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "烹饪度",
+                  "zh": "特殊4",
+                  "en": "Special4",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Cooking"
+                },
+                "MaxValue": 1
+              }
+            },
+            "Quantity": 1,
+            "ConstantlyChecking": false,
+            "OnlyInEnvironment": null,
+            "OnlyIfEquipped": false,
+            "OnlyInContainer": {
+              "Target": {
+                "key": "tag_Wound",
+                "text": "“伤口”",
+                "icon": "",
+                "type": "tag",
+                "count": 33,
+                "zh": "伤口",
+                "en": "Wound",
+                "ja": "傷",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "回復"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 288
+                },
+                "UsageDurability": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Infection",
+                    "Text": "感染",
+                    "zh": "感染",
+                    "en": "Infection",
+                    "ja": "感染"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "痛み"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 100
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Bleeding",
+                    "Text": "正在流血",
+                    "zh": "正在流血",
+                    "en": "Bleeding",
+                    "ja": "出血"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 800
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "回復要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Disinfectant Factor",
+                    "Text": "消毒系数",
+                    "zh": "消毒系数",
+                    "en": "Disinfectant Factor",
+                    "ja": "消毒要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "ShieldCross"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "鎮痛要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Coagulant Factor",
+                    "Text": "凝血系数",
+                    "zh": "凝血系数",
+                    "en": "Coagulant Factor",
+                    "ja": "血液凝固要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 96
+                }
+              }
+            },
+            "WithDurabilities": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          },
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "Card": {
+              "key": "HealersMoss",
+              "icon": "HealersMoss",
+              "type": "card",
+              "CardType": 0,
+              "zh": "疗伤地衣",
+              "en": "Healer's Moss",
+              "ja": "回復コケ",
+              "SpoilageTime": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Spoilage",
+                  "Text": "变质",
+                  "zh": "变质",
+                  "en": "Spoilage",
+                  "ja": "腐敗"
+                },
+                "OverrideIcon": {
+                  "FileName": "Bacteria"
+                },
+                "MaxValue": 480
+              },
+              "UsageDurability": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "UsageDurability",
+                  "zh": "耐久",
+                  "en": "Usage",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "FuelCapacity": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Temperature",
+                  "Text": "温度",
+                  "zh": "温度",
+                  "en": "Temperature",
+                  "ja": "濡れ"
+                },
+                "OverrideIcon": {
+                  "FileName": "Hot"
+                },
+                "MaxValue": 200
+              },
+              "Progress": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "Progress",
+                  "zh": "进度",
+                  "en": "Progress",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 96
+              },
+              "SpecialDurability1": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability1",
+                  "zh": "特殊1",
+                  "en": "Special1",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Health"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability2": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Quality",
+                  "Text": "品质",
+                  "zh": "品质",
+                  "en": "Quality",
+                  "ja": "クオリティ"
+                },
+                "OverrideIcon": {
+                  "FileName": "Quality"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability3": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability3",
+                  "zh": "特殊3",
+                  "en": "Special3",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Pain"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability4": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Boil",
+                  "Text": "烹煮",
+                  "zh": "烹煮",
+                  "en": "Boil",
+                  "ja": "茹でる"
+                },
+                "OverrideIcon": {
+                  "FileName": "Cooking"
+                },
+                "MaxValue": 1
+              }
+            },
+            "Quantity": 1,
+            "ConstantlyChecking": false,
+            "OnlyInEnvironment": null,
+            "OnlyIfEquipped": false,
+            "OnlyInContainer": {
+              "Target": {
+                "key": "tag_Wound",
+                "text": "“伤口”",
+                "icon": "",
+                "type": "tag",
+                "count": 33,
+                "zh": "伤口",
+                "en": "Wound",
+                "ja": "傷",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "回復"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 288
+                },
+                "UsageDurability": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Infection",
+                    "Text": "感染",
+                    "zh": "感染",
+                    "en": "Infection",
+                    "ja": "感染"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "痛み"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 100
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Bleeding",
+                    "Text": "正在流血",
+                    "zh": "正在流血",
+                    "en": "Bleeding",
+                    "ja": "出血"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 800
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "回復要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Disinfectant Factor",
+                    "Text": "消毒系数",
+                    "zh": "消毒系数",
+                    "en": "Disinfectant Factor",
+                    "ja": "消毒要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "ShieldCross"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "鎮痛要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Coagulant Factor",
+                    "Text": "凝血系数",
+                    "zh": "凝血系数",
+                    "en": "Coagulant Factor",
+                    "ja": "血液凝固要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 96
+                }
+              }
+            },
+            "WithDurabilities": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          },
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "Card": {
+              "key": "HealersMossBoiled",
+              "icon": "HealersMoss",
+              "type": "card",
+              "CardType": 0,
+              "zh": "水煮地衣",
+              "en": "Boiled Moss",
+              "ja": "茹でたコケ",
+              "SpoilageTime": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Spoilage",
+                  "Text": "变质",
+                  "zh": "变质",
+                  "en": "Spoilage",
+                  "ja": "腐敗"
+                },
+                "OverrideIcon": {
+                  "FileName": "Bacteria"
+                },
+                "MaxValue": 480
+              },
+              "UsageDurability": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "UsageDurability",
+                  "zh": "耐久",
+                  "en": "Usage",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "FuelCapacity": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Temperature",
+                  "Text": "温度",
+                  "zh": "温度",
+                  "en": "Temperature",
+                  "ja": "温度"
+                },
+                "OverrideIcon": {
+                  "FileName": "Hot"
+                },
+                "MaxValue": 200
+              },
+              "Progress": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "Progress",
+                  "zh": "进度",
+                  "en": "Progress",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 96
+              },
+              "SpecialDurability1": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability1",
+                  "zh": "特殊1",
+                  "en": "Special1",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Health"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability2": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Quality",
+                  "Text": "品质",
+                  "zh": "品质",
+                  "en": "Quality",
+                  "ja": "クオリティ"
+                },
+                "OverrideIcon": {
+                  "FileName": "Quality"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability3": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability3",
+                  "zh": "特殊3",
+                  "en": "Special3",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Pain"
+                },
+                "MaxValue": 96
+              },
+              "SpecialDurability4": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Boil",
+                  "Text": "烹煮",
+                  "zh": "烹煮",
+                  "en": "Boil",
+                  "ja": "Boil"
+                },
+                "OverrideIcon": {
+                  "FileName": "Cooking"
+                },
+                "MaxValue": 4
+              }
+            },
+            "Quantity": 1,
+            "ConstantlyChecking": false,
+            "OnlyInEnvironment": null,
+            "OnlyIfEquipped": false,
+            "OnlyInContainer": {
+              "Target": {
+                "key": "tag_Wound",
+                "text": "“伤口”",
+                "icon": "",
+                "type": "tag",
+                "count": 33,
+                "zh": "伤口",
+                "en": "Wound",
+                "ja": "傷",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "回復"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 288
+                },
+                "UsageDurability": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Infection",
+                    "Text": "感染",
+                    "zh": "感染",
+                    "en": "Infection",
+                    "ja": "感染"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "痛み"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 100
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Bleeding",
+                    "Text": "正在流血",
+                    "zh": "正在流血",
+                    "en": "Bleeding",
+                    "ja": "出血"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 800
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "回復要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Disinfectant Factor",
+                    "Text": "消毒系数",
+                    "zh": "消毒系数",
+                    "en": "Disinfectant Factor",
+                    "ja": "消毒要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "ShieldCross"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "鎮痛要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Coagulant Factor",
+                    "Text": "凝血系数",
+                    "zh": "凝血系数",
+                    "en": "Coagulant Factor",
+                    "ja": "血液凝固要素"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Blood"
+                  },
+                  "MaxValue": 96
+                }
+              }
+            },
+            "WithDurabilities": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          }
+        ],
+        "TagsOnBoardObjectives": [],
+        "StatsObjectives": [],
+        "TimeObjectives": [],
+        "NestedObjectives": [],
+        "PlayedCharacter": [],
+        "CompleteOnWin": false,
+        "CompleteOnLose": false,
+        "RequiredDifficultyScore": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "EditorOnly": false,
+        "NotifyWhenNotChecked": true,
+        "CheckingNotificationDetails": 2,
+        "DebugCompletion": false,
+        "CombatObjectives": [],
+        "BlueprintsResearchedObjectives": [],
+        "ObjectiveDescription": {
+          "DefaultText": "Equip Healers Moss or cut Fresh Bracket Fungus Strips on a Wound",
+          "Text": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+          "zh": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+          "en": "Equip Healers Moss or cut Fresh Bracket Fungus Strips on a Wound",
+          "ja": "Equip Healers Moss or cut Fresh Bracket Fungus Strips on a Wound"
+        },
+        "NotificationSettings": {
+          "Frequency": 0,
+          "PercentThreshold": 0.01
+        },
+        "OnCompleteActions": [],
+        "QuestBehavior": 1,
+        "SteamAchievementID": "",
+        "JournalObjective": false,
+        "DontStayAliveWhenQuestIsInactive": false,
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "ExplicitRelatedQuest": null
+      },
+      "IgnoreValidation": false
+    },
+    {
+      "ObjectiveName": "3",
+      "CompletionWeight": 1,
+      "ObjectiveCondition": {
+        "m_Name": "TreatingWounds_Obj3_ResearchAndCraftPineSalves",
+        "key": "TreatingWounds_Obj3_ResearchAndCraftPineSalves",
+        "icon": "",
+        "type": "perk",
+        "zh": "研究并制作松脂膏",
+        "en": "Research and Craft Pine Salves",
+        "ja": "Research and Craft Pine Salves",
+        "UniqueID": "3c6e11c7fccd47e4ea2b98b7b65cf751",
+        "UniqueIDIndex": 4502,
+        "StartUnlocked": false,
+        "ActionObjectives": [],
+        "CardsOnBoardObjectives": [
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "Card": {
+              "key": "PineSalve",
+              "icon": "Salve_Healing",
+              "type": "card",
+              "CardType": 0,
+              "zh": "松脂膏",
+              "en": "Pine Salve",
+              "ja": "Pine Salve",
+              "SpoilageTime": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "耐久",
+                  "zh": "时间",
+                  "en": "Spoilage",
+                  "ja": ""
+                },
+                "OverrideIcon": {
+                  "FileName": "Spoilage"
+                },
+                "MaxValue": 1440
+              },
+              "UsageDurability": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "UsageDurability",
+                  "zh": "耐久",
+                  "en": "Usage",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "FuelCapacity": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "FuelCapacity",
+                  "zh": "容量",
+                  "en": "Fuel",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "Progress": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "Progress",
+                  "zh": "进度",
+                  "en": "Progress",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "SpecialDurability1": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability1",
+                  "zh": "特殊1",
+                  "en": "Special1",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "SpecialDurability2": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Quality",
+                  "Text": "品质",
+                  "zh": "品质",
+                  "en": "Quality",
+                  "ja": "Quality"
+                },
+                "OverrideIcon": {
+                  "FileName": "Quality"
+                },
+                "MaxValue": 100
+              },
+              "SpecialDurability3": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability3",
+                  "zh": "特殊3",
+                  "en": "Special3",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              },
+              "SpecialDurability4": {
+                "Active": false,
+                "CardStatName": {
+                  "DefaultText": "",
+                  "Text": "SpecialDurability4",
+                  "zh": "特殊4",
+                  "en": "Special4",
+                  "ja": ""
+                },
+                "OverrideIcon": null,
+                "MaxValue": 0
+              }
+            },
+            "Quantity": 1,
+            "ConstantlyChecking": false,
+            "OnlyInEnvironment": null,
+            "OnlyIfEquipped": false,
+            "OnlyInContainer": {
+              "Target": null
+            },
+            "WithDurabilities": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          }
+        ],
+        "TagsOnBoardObjectives": [],
+        "StatsObjectives": [],
+        "TimeObjectives": [],
+        "NestedObjectives": [],
+        "PlayedCharacter": [],
+        "CompleteOnWin": false,
+        "CompleteOnLose": false,
+        "RequiredDifficultyScore": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "EditorOnly": false,
+        "NotifyWhenNotChecked": true,
+        "CheckingNotificationDetails": 2,
+        "DebugCompletion": false,
+        "CombatObjectives": [],
+        "BlueprintsResearchedObjectives": [],
+        "ObjectiveDescription": {
+          "DefaultText": "Research and Craft Pine Salves",
+          "Text": "研究并制作松脂膏",
+          "zh": "研究并制作松脂膏",
+          "en": "Research and Craft Pine Salves",
+          "ja": "Research and Craft Pine Salves"
+        },
+        "NotificationSettings": {
+          "Frequency": 0,
+          "PercentThreshold": 0.01
+        },
+        "OnCompleteActions": [],
+        "QuestBehavior": 1,
+        "SteamAchievementID": "",
+        "JournalObjective": false,
+        "DontStayAliveWhenQuestIsInactive": false,
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "ExplicitRelatedQuest": null
+      },
+      "IgnoreValidation": false
+    },
+    {
+      "ObjectiveName": "4",
+      "CompletionWeight": 1,
+      "ObjectiveCondition": {
+        "m_Name": "TreatingWounds_Obj4_ApplySalvesOrOintmentsToAWound",
+        "key": "TreatingWounds_Obj4_ApplySalvesOrOintmentsToAWound",
+        "icon": "",
+        "type": "perk",
+        "zh": "将药膏或软膏敷于伤口。",
+        "en": "Apply Salves or Ointments to a Wound",
+        "ja": "Apply Salves or Ointments to a Wound",
+        "UniqueID": "87c20b915c3b3e147a91f694e5be41fb",
+        "UniqueIDIndex": 4503,
+        "StartUnlocked": false,
+        "ActionObjectives": [
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "OnCard": null,
+            "OnCardWithTags": [
+              {
+                "key": "tag_Preservable",
+                "text": "“可储存的”",
+                "icon": "",
+                "type": "tag",
+                "count": 368,
+                "zh": "可储存的",
+                "en": "Preservable",
+                "ja": "保存できる",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Spoilage",
+                    "Text": "变质",
+                    "zh": "变质",
+                    "en": "Spoilage",
+                    "ja": "腐敗"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria"
+                  },
+                  "MaxValue": 96
+                },
+                "UsageDurability": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Drying",
+                    "Text": "干燥中",
+                    "zh": "干燥中",
+                    "en": "Drying",
+                    "ja": "乾燥中"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Hammer"
+                  },
+                  "MaxValue": 16
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Temperature",
+                    "Text": "温度",
+                    "zh": "温度",
+                    "en": "Temperature",
+                    "ja": "温度"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Hot"
+                  },
+                  "MaxValue": 200
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 1
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Cook",
+                    "Text": "烹饪",
+                    "zh": "烹饪",
+                    "en": "Cook",
+                    "ja": "料理する"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Cooking"
+                  },
+                  "MaxValue": 1
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Quality",
+                    "Text": "品质",
+                    "zh": "品质",
+                    "en": "Quality",
+                    "ja": "クオリティ"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Quality"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Mill",
+                    "Text": "研磨",
+                    "zh": "研磨",
+                    "en": "Mill",
+                    "ja": "製粉"
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 1
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Boil",
+                    "Text": "烹煮",
+                    "zh": "烹煮",
+                    "en": "Boil",
+                    "ja": "Boil"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Cooking"
+                  },
+                  "MaxValue": 4
+                }
+              }
+            ],
+            "WithActionTags": [],
+            "ActionName": "Apply to Wound",
+            "OnActionStarted": false,
+            "PerformMultipleTimes": 0,
+            "DebugMode": false
+          }
+        ],
+        "CardsOnBoardObjectives": [],
+        "TagsOnBoardObjectives": [],
+        "StatsObjectives": [],
+        "TimeObjectives": [],
+        "NestedObjectives": [],
+        "PlayedCharacter": [],
+        "CompleteOnWin": false,
+        "CompleteOnLose": false,
+        "RequiredDifficultyScore": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "EditorOnly": false,
+        "NotifyWhenNotChecked": true,
+        "CheckingNotificationDetails": 2,
+        "DebugCompletion": false,
+        "CombatObjectives": [],
+        "BlueprintsResearchedObjectives": [],
+        "ObjectiveDescription": {
+          "DefaultText": "Apply Salves or Ointments to a Wound",
+          "Text": "将药膏或软膏敷于伤口。",
+          "zh": "将药膏或软膏敷于伤口。",
+          "en": "Apply Salves or Ointments to a Wound",
+          "ja": "Apply Salves or Ointments to a Wound"
+        },
+        "NotificationSettings": {
+          "Frequency": 0,
+          "PercentThreshold": 0.01
+        },
+        "OnCompleteActions": [],
+        "QuestBehavior": 1,
+        "SteamAchievementID": "",
+        "JournalObjective": false,
+        "DontStayAliveWhenQuestIsInactive": false,
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "ExplicitRelatedQuest": null
+      },
+      "IgnoreValidation": false
+    }
+  ],
+  "PlayedCharacter": [],
+  "CompleteOnWin": false,
+  "CompleteOnLose": false,
+  "RequiredDifficultyScore": {
+    "m_X": 0,
+    "m_Y": 0
+  },
+  "EditorOnly": false,
+  "NotifyWhenNotChecked": true,
+  "CheckingNotificationDetails": 0,
+  "DebugCompletion": false,
+  "CombatObjectives": [],
+  "BlueprintsResearchedObjectives": [],
+  "ObjectiveDescription": {
+    "DefaultText": "Treating Wounds",
+    "Text": "治疗伤口",
+    "zh": "治疗伤口",
+    "en": "Treating Wounds",
+    "ja": "Treating Wounds"
+  },
+  "NotificationSettings": {
+    "Frequency": 1,
+    "PercentThreshold": 0.01
+  },
+  "OnCompleteActions": [
+    {
+      "ActionName": {
+        "DefaultText": "Completed",
+        "Text": "完成",
+        "zh": "完成",
+        "en": "Completed",
+        "ja": "Completed"
+      },
+      "ActionDescription": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoveltyShared": false,
+      "VictorySettings": {
+        "Victory": false,
+        "SpecialEnding": false,
+        "VictoryMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        }
+      },
+      "UnavailableInDemo": false,
+      "SaveGame": false,
+      "ConfirmPopup": false,
+      "CustomConfirmText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NotInterruptedByEncounters": false,
+      "StackCompatible": false,
+      "DaytimeCost": 0,
+      "UseMiniTicks": 0,
+      "ActionSounds": [],
+      "DisablePitchVariation": false,
+      "ActionTags": [],
+      "RequiredStatValues": [],
+      "RequiredNPCStatValues": [],
+      "RequiredCardsOnBoard": [],
+      "RequiredTagsOnBoard": [],
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredReceivingContainer": [],
+      "RequiredReceivingContainerTag": [],
+      "RequiredNOTReceivingContainerTag": [],
+      "RequiredReceivingContainerDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingLiquidContent": {
+        "IsActive": false,
+        "RequiredLiquid": null,
+        "RequiredGroup": null,
+        "RequiredQuantity": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "RequiredActiveHidingGroups": [],
+      "HideIfConditionsNotMet": false,
+      "NotBaseAction": false,
+      "Cancellable": false,
+      "InstantStatModifications": false,
+      "DontDoStatModificationsOnCancel": false,
+      "InstantDurabilityModifications": false,
+      "ReceivingCardFlavourBonus": false,
+      "GivenCardFlavourBonus": false,
+      "ResetWhenDone": null,
+      "StatInterruptions": [],
+      "StartDialog": null,
+      "ProducedCards": [
+        {
+          "CollectionName": "Completed",
+          "CollectionMessages": [],
+          "CountsAsSuccess": false,
+          "RevealInventory": false,
+          "CollectionUses": {
+            "m_X": 0,
+            "m_Y": 0
+          },
+          "CollectionWeight": 0,
+          "StatsDropChanceModifiers": [],
+          "NPCStatsDropChanceModifiers": [],
+          "CardDropChanceModifiers": [],
+          "DurabilitiesDropChanceModifier": {
+            "Spoilage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Usage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Fuel": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Progress": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special1": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special2": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special3": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special4": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            }
+          },
+          "CreatedLiquid": {
+            "LiquidCard": null,
+            "Quantity": {
+              "x": 0,
+              "y": 0
+            },
+            "Durabilities": {
+              "Spoilage": 0,
+              "Usage": 0,
+              "Fuel": 0,
+              "Progress": 0,
+              "Special1": 0,
+              "Special2": 0,
+              "Special3": 0,
+              "Special4": 0,
+              "SpoilageValue": 0,
+              "UsageValue": 0,
+              "FuelValue": 0,
+              "ProgressValue": 0,
+              "Special1Value": 0,
+              "Special2Value": 0,
+              "Special3Value": 0,
+              "Special4Value": 0,
+              "SpoilageFrom": 0,
+              "UsageFrom": 0,
+              "FuelFrom": 0,
+              "ProgressFrom": 0,
+              "Special1From": 0,
+              "Special2From": 0,
+              "Special3From": 0,
+              "Special4From": 0
+            }
+          },
+          "DroppedCards": [
+            {
+              "DroppedCard": {
+                "key": "TreatingWounds_Completed_Event",
+                "icon": "Ointment_Healing",
+                "type": "card",
+                "CardType": 3,
+                "zh": "治疗伤口 - 完成",
+                "en": "Treating Wounds Complete",
+                "ja": "Treating Wounds Complete",
+                "SpoilageTime": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpoilageTime",
+                    "zh": "时间",
+                    "en": "Spoilage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "FuelCapacity": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "FuelCapacity",
+                    "zh": "容量",
+                    "en": "Fuel",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability1": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability1",
+                    "zh": "特殊1",
+                    "en": "Special1",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability2",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability3": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability3",
+                    "zh": "特殊3",
+                    "en": "Special3",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 1
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": false,
+                "BaseDropChance": 0,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [],
+                "CardsModifiers": [],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
+            }
+          ],
+          "DropSavedBpIngredients": false,
+          "DroppedIfNoBpIngredient": [],
+          "DropCardsInsideInventory": false,
+          "DropCardsInPlayerHand": false,
+          "DroppedEncounter": null,
+          "EncounterNPC": null,
+          "SkipEncounterEvent": false,
+          "StatModifications": [],
+          "ReceivingCardDurabilityModifications": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "BpDropDurabilityChangesReplaceStartingValue": {
+            "MaskValue": 0
+          },
+          "DropsStatInterpolatedDurabilityChanges": []
+        }
+      ],
+      "StatModifications": [],
+      "InterpolatedStatModifications": [],
+      "NPCStatModifications": [],
+      "TemporaryStatModifications": [],
+      "MovePlayer": {
+        "MoveOption": 0,
+        "ToEnv": null,
+        "Pathfinding": null,
+        "Direction": 0
+      },
+      "MoveReceivingCard": {
+        "Card": null,
+        "UseCardinalDirection": false,
+        "MoveInDirection": 0,
+        "Pathfinding": null
+      },
+      "MoveNPC": [],
+      "SetNPCHome": [],
+      "ExtraDurabilityModifications": [],
+      "BlueprintsFullUnlock": [],
+      "CompletedImprovements": [],
+      "AddedInRunPerks": [],
+      "DontShowDestroyMessage": false,
+      "CustomDestroyMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoCardsAffectedMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "ReceivingCardChanges": {
+        "ModType": 0,
+        "TransformInto": null,
+        "TransformToLiquidQuantity": 0,
+        "TransferSpoilage": false,
+        "TransferUsage": false,
+        "TransferFuel": false,
+        "TransferCharges": false,
+        "TransferSpecial1": false,
+        "TransferSpecial2": false,
+        "TransferSpecial3": false,
+        "TransferSpecial4": false,
+        "TransferInventory": false,
+        "TransferSavedIngredients": false,
+        "AverageGivenAndReceivingCards": false,
+        "TransferLiquid": false,
+        "SpoilageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UsageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "FuelTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ProgressTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special1TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special2TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special3TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special4TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ModifyDurability": false,
+        "ModifyLiquid": false,
+        "DropOnDestroyList": false,
+        "LiquidEffectScaling": 0,
+        "AddFlavoursFromTargetCard": false,
+        "AddFlavoursFromOtherCard": false,
+        "AddSpicesFromTargetCard": false,
+        "AddSpicesFromOtherCard": false,
+        "AddedFlavours": [],
+        "AddedSpiceTags": [],
+        "SpoilageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpoilageFromOtherCard": false,
+        "UsageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetUsageFromOtherCard": false,
+        "FuelChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetFuelFromOtherCard": false,
+        "ChargesChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetProgressFromOtherCard": false,
+        "LiquidQuantityChange": {
+          "x": 0,
+          "y": 0
+        },
+        "Special1Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial1FromOtherCard": false,
+        "Special2Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial2FromOtherCard": false,
+        "Special3Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial3FromOtherCard": false,
+        "Special4Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial4FromOtherCard": false,
+        "StatInterpolatedDurabilityChanges": [],
+        "DurabilityInterpolatedTransfers": [],
+        "ScaleChangesPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UseOtherCardForLiquidQuantity": false
+      },
+      "CustomWindowPrefab": null,
+      "OpenQuestLog": false,
+      "OpenMap": false,
+      "UpdateMap": false,
+      "EditDescription": false,
+      "FadeToBlack": 0,
+      "FadeMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "FadeTips": false,
+      "TravelToPreviousEnv": false,
+      "TravelToOtherRoom": false,
+      "RoomDirection": 0,
+      "ExitDirection": 0
+    }
+  ],
+  "QuestBehavior": 0,
+  "SteamAchievementID": "",
+  "JournalObjective": false,
+  "DontStayAliveWhenQuestIsInactive": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "ExplicitRelatedQuest": null
+}

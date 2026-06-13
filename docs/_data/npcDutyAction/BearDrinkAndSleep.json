@@ -1,0 +1,119 @@
+{
+  "m_Name": "BearDrinkAndSleep",
+  "key": "BearDrinkAndSleep",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_Bear",
+        "icon": "Bear_Wild",
+        "type": "npc",
+        "zh": "熊",
+        "en": "Bear",
+        "ja": "クマ"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": true
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentHydration",
+        "key": "AgentHydration",
+        "type": "durability",
+        "zh": "饮水度",
+        "en": "AgentHydration",
+        "ja": "Agent Hydration",
+        "GameName": {
+          "DefaultText": "Agent Hydration",
+          "Text": "饮水度",
+          "zh": "饮水度",
+          "en": "AgentHydration",
+          "ja": "Agent Hydration"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "饮水度",
+        "desc": "Agent Hydration",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "7d6d83b0fdd5f8c4b891b2ec33c84809",
+        "UniqueIDIndex": 3062
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": 100,
+        "y": 100
+      }
+    },
+    {
+      "TargetStat": {
+        "m_Name": "AgentWakefulness",
+        "key": "AgentWakefulness",
+        "type": "durability",
+        "zh": "清醒度",
+        "en": "AgentWakefulness",
+        "ja": "Agent Satiation",
+        "GameName": {
+          "DefaultText": "Agent Satiation",
+          "Text": "清醒度",
+          "zh": "清醒度",
+          "en": "AgentWakefulness",
+          "ja": "Agent Satiation"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "清醒度",
+        "desc": "Agent Satiation",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "47794f16e36bc51458d19487afd9528d",
+        "UniqueIDIndex": 3091
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": 100,
+        "y": 100
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": false,
+    "IntValue": 1
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "m_Name": "SunlightExposure",
+  "key": "SunlightExposure",
+  "icon": "Sun",
+  "type": "stat",
+  "zh": "阳光辐射",
+  "en": "Sunlight Exposure",
+  "ja": "日光",
+  "UniqueIDIndex": 4306,
+  "GameName": {
+    "DefaultText": "Sunlight Exposure",
+    "Text": "阳光辐射",
+    "zh": "阳光辐射",
+    "en": "Sunlight Exposure",
+    "ja": "日光"
+  },
+  "Description": {
+    "DefaultText": "Has a negative effect on your immune system and mood if it gets too low. Increases by spending time under the sun.",
+    "Text": "如果太低，会对你的免疫系统和情绪产生负面影响。会随着晒太阳的时间而增加。",
+    "zh": "如果太低，会对你的免疫系统和情绪产生负面影响。会随着晒太阳的时间而增加。",
+    "en": "Has a negative effect on your immune system and mood if it gets too low. Increases by spending time under the sun.",
+    "ja": "少ない気分と免疫力が落ちる。太陽の下で時間過ごすと増える。"
+  },
+  "BaseValue": 672,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 672
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 100,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.22352943,
+    "g": 0.40000004,
+    "b": 0.8705883,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Sun"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Sunlight Deficiency",
+        "Text": "日照不足",
+        "zh": "日照不足",
+        "en": "Sunlight Deficiency",
+        "ja": "日光不足"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 10
+      },
+      "Icon": {
+        "FileName": "Sun"
+      },
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 95
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+        "icon": "",
+        "type": "stat",
+        "zh": "光亮",
+        "en": "Light",
+        "ja": "光",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强光",
+        "en": "Status Stage: Strong Light",
+        "ja": "ステータス段階: 眩しい"
+      },
+      "value": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_4_DarkSkin",
+        "icon": "Perk_DarkSkin_Old",
+        "zh": "深色皮肤",
+        "en": "Dark Skin",
+        "ja": "黒い肌",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_4_LightSkin",
+        "icon": "Perk_PaleSkin_Old",
+        "zh": "浅色皮肤",
+        "en": "Light Skin",
+        "ja": "白い肌",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_4_VeryDarkSkin",
+        "icon": "Perk_DarkSkin_Old",
+        "zh": "皮肤黝黑",
+        "en": "Very Dark Skin",
+        "ja": "かなり黒い肌",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_4_VeryLightSkin",
+        "icon": "Perk_PaleSkin_Old",
+        "zh": "皮肤白皙",
+        "en": "Very Light Skin",
+        "ja": "かなり白い肌。",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 0.75,
+        "y": 0.75
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_5_DarkHair",
+        "icon": "Perk_DarkSkin_Old",
+        "zh": "深色头发",
+        "en": "Dark Hair",
+        "ja": "黒い髪",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_5_LightHair",
+        "icon": "Perk_PaleSkin_Old",
+        "zh": "浅色头发",
+        "en": "Light Hair",
+        "ja": "明るい髪",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 0.1,
+        "y": 0.1
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 672,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Sun"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

@@ -1,0 +1,1586 @@
+{
+  "m_Name": "BloodLoss",
+  "key": "BloodLoss",
+  "icon": "Blood",
+  "type": "stat",
+  "zh": "失血",
+  "en": "Blood Loss",
+  "ja": "失血",
+  "UniqueIDIndex": 3134,
+  "GameName": {
+    "DefaultText": "Blood Loss",
+    "Text": "失血",
+    "zh": "失血",
+    "en": "Blood Loss",
+    "ja": "失血"
+  },
+  "Description": {
+    "DefaultText": "Caused by bleeding wounds, use Tourniquets and Dressings to lower it.",
+    "Text": "由流血的伤口导致，使用止血带和敷料来减少出血。",
+    "zh": "由流血的伤口导致，使用止血带和敷料来减少出血。",
+    "en": "Caused by bleeding wounds, use Tourniquets and Dressings to lower it.",
+    "ja": "出血中の傷口が原因。止血帯や包帯を使おう。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 20
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 5
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 1,
+    "g": 0.02591994,
+    "b": 0,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 0.5254902,
+    "g": 0,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Blood"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Not Bleeding",
+        "Text": "没有流血",
+        "zh": "没有流血",
+        "en": "Not Bleeding",
+        "ja": "出血していない"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Bleeding",
+        "Text": "正在流血",
+        "zh": "正在流血",
+        "en": "Bleeding",
+        "ja": "出血中"
+      },
+      "Description": {
+        "DefaultText": "You are losing blood. ",
+        "Text": "你正在失血。",
+        "zh": "你正在失血。",
+        "en": "You are losing blood. ",
+        "ja": "出血してる。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Blood"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 2
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Filth",
+            "icon": "Filth",
+            "type": "stat",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BloodPressure",
+            "icon": "Blood",
+            "type": "stat",
+            "zh": "血压",
+            "en": "Blood Pressure",
+            "ja": "血圧",
+            "max": 75,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Bleeding",
+        "Text": "正在流血",
+        "zh": "正在流血",
+        "en": "Bleeding",
+        "ja": "出血中"
+      },
+      "Description": {
+        "DefaultText": "You are losing blood. ",
+        "Text": "你正在失血。",
+        "zh": "你正在失血。",
+        "en": "You are losing blood. ",
+        "ja": "出血してる。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Blood"
+      },
+      "ValueRange": {
+        "m_X": 3,
+        "m_Y": 4
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1.5,
+            "y": -1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Filth",
+            "icon": "Filth",
+            "type": "stat",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BloodPressure",
+            "icon": "Blood",
+            "type": "stat",
+            "zh": "血压",
+            "en": "Blood Pressure",
+            "ja": "血圧",
+            "max": 75,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Bleeding Profusely",
+        "Text": "大量出血",
+        "zh": "大量出血",
+        "en": "Bleeding Profusely",
+        "ja": "かなり出血している"
+      },
+      "Description": {
+        "DefaultText": "You are losing lots of blood. ",
+        "Text": "你正在大量失血。",
+        "zh": "你正在大量失血。",
+        "en": "You are losing lots of blood. ",
+        "ja": "かなり血が減ってきた。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Blood"
+      },
+      "ValueRange": {
+        "m_X": 5,
+        "m_Y": 6
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Filth",
+            "icon": "Filth",
+            "type": "stat",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BloodPressure",
+            "icon": "Blood",
+            "type": "stat",
+            "zh": "血压",
+            "en": "Blood Pressure",
+            "ja": "血圧",
+            "max": 75,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Bleeding Profusely",
+        "Text": "大量出血",
+        "zh": "大量出血",
+        "en": "Bleeding Profusely",
+        "ja": "かなり出血している"
+      },
+      "Description": {
+        "DefaultText": "You are losing lots of blood. ",
+        "Text": "你正在大量失血。",
+        "zh": "你正在大量失血。",
+        "en": "You are losing lots of blood. ",
+        "ja": "かなり血が減ってきた。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Blood"
+      },
+      "ValueRange": {
+        "m_X": 7,
+        "m_Y": 20
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Filth",
+            "icon": "Filth",
+            "type": "stat",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BloodPressure",
+            "icon": "Blood",
+            "type": "stat",
+            "zh": "血压",
+            "en": "Blood Pressure",
+            "ja": "血圧",
+            "max": 75,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -12,
+            "y": -12
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "It's to dark for this action...",
+    "Text": "太黑了我做不到……",
+    "zh": "太黑了我做不到……",
+    "en": "It's to dark for this action...",
+    "ja": "暗くてアクションできない・・・"
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "W_ArmLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "Arm Laceration"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "Arm Laceration"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊咬伤",
+        "en": "Bear Bite",
+        "ja": "Bear Bite"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊咬伤",
+        "en": "Bear Bite",
+        "ja": "Bear Bite"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊爪痕",
+        "en": "Bear Clawmarks",
+        "ja": "Bear Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊爪痕",
+        "en": "Bear Clawmarks",
+        "ja": "Bear Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_BiteWound",
+        "icon": "Bite_Small",
+        "type": "card",
+        "CardType": 0,
+        "zh": "咬伤",
+        "en": "Bite Wound",
+        "ja": "噛まれた跡"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "W_ClawMarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "抓伤",
+        "en": "Claw Marks",
+        "ja": "引っ掻かれた跡"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽咬伤",
+        "en": "Forest Beast Bite",
+        "ja": "Forest Beast Bite"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽咬伤",
+        "en": "Forest Beast Bite",
+        "ja": "Forest Beast Bite"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽爪痕",
+        "en": "Forest Beast Clawmarks",
+        "ja": "Forest Beast Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽爪痕",
+        "en": "Forest Beast Clawmarks",
+        "ja": "Forest Beast Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "W_MinorLaceration",
+        "icon": "LacerationMinor",
+        "type": "card",
+        "CardType": 0,
+        "zh": "轻微撕裂伤",
+        "en": "Minor Laceration",
+        "ja": "軽い切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "W_MinorLacerationStitched",
+        "icon": "LacerationMinor_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的轻微撕裂伤",
+        "en": "Minor Laceration",
+        "ja": "軽い切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "W_Puncture",
+        "icon": "Puncture",
+        "type": "card",
+        "CardType": 0,
+        "zh": "穿刺伤",
+        "en": "Puncture Wound",
+        "ja": "刺し傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "W_WolfBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "狼咬伤",
+        "en": "Wolf Bite",
+        "ja": "狼の噛み傷"
+      },
+      "localization": {
+        "zh": "被动效果：失血",
+        "en": "Passive Effect：Bloodloss",
+        "ja": "パッシブ効果：失血"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 20,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

@@ -1,0 +1,1594 @@
+{
+  "m_Name": "Energy",
+  "key": "Energy",
+  "icon": "Energy",
+  "type": "stat",
+  "zh": "精力",
+  "en": "Energy",
+  "ja": "エネルギー",
+  "UniqueIDIndex": 3232,
+  "GameName": {
+    "DefaultText": "Energy",
+    "Text": "精力",
+    "zh": "精力",
+    "en": "Energy",
+    "ja": "エネルギー"
+  },
+  "Description": {
+    "DefaultText": "Affects your stamina recovery rate. Gained by spending stamina and recovered through prolongued resting.",
+    "Text": "影响你的耐力恢复速度。通过消耗耐力来获得，并通过长时间休息来恢复。",
+    "zh": "影响你的耐力恢复速度。通过消耗耐力来获得，并通过长时间休息来恢复。",
+    "en": "Affects your stamina recovery rate. Gained by spending stamina and recovered through prolongued resting.",
+    "ja": "スタミナの回復に影響する。スタミナを消耗するほどエネルギーが増え、休めば回復する。"
+  },
+  "BaseValue": 96,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 96
+  },
+  "BaseRatePerTick": 0.5,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.9725491,
+    "g": 0.9176471,
+    "b": 0.26666668,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Energy"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Depleted Energy",
+        "Text": "精力耗尽",
+        "zh": "精力耗尽",
+        "en": "Depleted Energy",
+        "ja": "消耗したエネルギー"
+      },
+      "Description": {
+        "DefaultText": "You should rest and let your body recover",
+        "Text": "你应该休息一下，让身体恢复。",
+        "zh": "你应该休息一下，让身体恢复。",
+        "en": "You should rest and let your body recover",
+        "ja": "体を休めよう"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 20
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Low Energy",
+        "Text": "低精力",
+        "zh": "低精力",
+        "en": "Low Energy",
+        "ja": "エネルギーが少ない"
+      },
+      "Description": {
+        "DefaultText": "Your body is low on energy, you should rest",
+        "Text": "你的身体精力不足，你应该休息",
+        "zh": "你的身体精力不足，你应该休息",
+        "en": "Your body is low on energy, you should rest",
+        "ja": "体のエネルギーが少ない、休もう。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 20,
+        "m_Y": 40
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4.5,
+            "y": 4.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Energy",
+        "Text": "中等精力",
+        "zh": "中等精力",
+        "en": "Moderate Energy",
+        "ja": "適度なエネルギー"
+      },
+      "Description": {
+        "DefaultText": "Your body has enough energy",
+        "Text": "你的身体精力充足",
+        "zh": "你的身体精力充足",
+        "en": "Your body has enough energy",
+        "ja": "エネルギーは十分ある"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 41,
+        "m_Y": 60
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 5,
+            "y": 5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "High Energy",
+        "Text": "高精力",
+        "zh": "高精力",
+        "en": "High Energy",
+        "ja": "エネルギーが多い"
+      },
+      "Description": {
+        "DefaultText": "Your body has a good amount of energy",
+        "Text": "你的身体精力相当充足",
+        "zh": "你的身体精力相当充足",
+        "en": "Your body has a good amount of energy",
+        "ja": "体にエネルギーがたくさんある"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 61,
+        "m_Y": 80
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 5.5,
+            "y": 5.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Full Energy",
+        "Text": "精力充沛",
+        "zh": "精力充沛",
+        "en": "Full Energy",
+        "ja": "エネルギーでいっぱい"
+      },
+      "Description": {
+        "DefaultText": "Your body is full of energy",
+        "Text": "你的身体充满精力",
+        "zh": "你的身体充满精力",
+        "en": "Your body is full of energy",
+        "ja": "体がエネルギーで溢れてる"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 81,
+        "m_Y": 96
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 6,
+            "y": 6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "I'm too tired for this action...",
+    "Text": "太累了我做不到……",
+    "zh": "太累了我做不到……",
+    "en": "I'm too tired for this action...",
+    "ja": "疲れすぎてアクションが起こせない"
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "Infection_Systemic",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "全身感染",
+        "en": "Systemic Infection",
+        "ja": "全身感染",
+        "max": 1800,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重败血症",
+        "en": "Status Stage: Severe Sepsis",
+        "ja": "ステータス段階: 重度の敗血症"
+      },
+      "value": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "link": {
+        "key": "Infection_Systemic",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "全身感染",
+        "en": "Systemic Infection",
+        "ja": "全身感染",
+        "max": 1800,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 感染性休克",
+        "en": "Status Stage: Septic Shock",
+        "ja": "ステータス段階: 敗血症ショック"
+      },
+      "value": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "link": {
+        "key": "BedImprovised",
+        "icon": "LeafBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "简易床",
+        "en": "Improvised Bed",
+        "ja": "手作りベッド"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedImprovised_Nap"
+    },
+    {
+      "link": {
+        "key": "BedImprovised",
+        "icon": "LeafBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "简易床",
+        "en": "Improvised Bed",
+        "ja": "手作りベッド"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedImprovised_Sleep"
+    },
+    {
+      "link": {
+        "key": "BedLog",
+        "icon": "LogBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "原木床",
+        "en": "Log Bed",
+        "ja": "丸太のベッド"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：仮眠"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedLog_Nap"
+    },
+    {
+      "link": {
+        "key": "BedLog",
+        "icon": "LogBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "原木床",
+        "en": "Log Bed",
+        "ja": "丸太のベッド"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedLog_Sleep"
+    },
+    {
+      "link": {
+        "key": "BedRoll",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "睡袋",
+        "en": "Bedroll",
+        "ja": "寝袋"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：仮眠"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedRoll_Nap"
+    },
+    {
+      "link": {
+        "key": "BedRoll",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "睡袋",
+        "en": "Bedroll",
+        "ja": "寝袋"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "BedRoll_Sleep"
+    },
+    {
+      "link": {
+        "key": "Hideout",
+        "icon": "Hideout",
+        "type": "card",
+        "CardType": 2,
+        "zh": "藏匿点",
+        "en": "Hideout",
+        "ja": "隠れ家"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：昼寝"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "Hideout_Nap"
+    },
+    {
+      "link": {
+        "key": "Hideout",
+        "icon": "Hideout",
+        "type": "card",
+        "CardType": 2,
+        "zh": "藏匿点",
+        "en": "Hideout",
+        "ja": "隠れ家"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：Sleep"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "Hideout_Sleep"
+    },
+    {
+      "link": {
+        "key": "ImprovisedShelter",
+        "icon": "ImprovisedShelter",
+        "type": "card",
+        "CardType": 2,
+        "zh": "临时庇护所",
+        "en": "Improvised Shelter",
+        "ja": "手作りシェルター"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "ImprovisedShelter_Nap"
+    },
+    {
+      "link": {
+        "key": "ImprovisedShelter",
+        "icon": "ImprovisedShelter",
+        "type": "card",
+        "CardType": 2,
+        "zh": "临时庇护所",
+        "en": "Improvised Shelter",
+        "ja": "手作りシェルター"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "ImprovisedShelter_Sleep"
+    },
+    {
+      "link": {
+        "key": "SnowShelter",
+        "icon": "SnowShelter",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雪棚",
+        "en": "Snow Shelter",
+        "ja": "Snow Shelter"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：Nap"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "SnowShelter_Nap"
+    },
+    {
+      "link": {
+        "key": "SnowShelter",
+        "icon": "SnowShelter",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雪棚",
+        "en": "Snow Shelter",
+        "ja": "Snow Shelter"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：Sleep"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      },
+      "key": "SnowShelter_Sleep"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Fitness",
+        "icon": "Fitness",
+        "type": "stat",
+        "zh": "体魄",
+        "en": "Fitness",
+        "ja": "フィットネス",
+        "max": 3200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 健壮体魄",
+        "en": "Status Stage: Very High Fitness",
+        "ja": "ステータス段階: 相当健康"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Fitness",
+        "icon": "Fitness",
+        "type": "stat",
+        "zh": "体魄",
+        "en": "Fitness",
+        "ja": "フィットネス",
+        "max": 3200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 好体魄",
+        "en": "Status Stage: High Fitness",
+        "ja": "ステータス段階: かなり健康"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Fitness",
+        "icon": "Fitness",
+        "type": "stat",
+        "zh": "体魄",
+        "en": "Fitness",
+        "ja": "フィットネス",
+        "max": 3200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 一般体魄",
+        "en": "Status Stage: Moderate Fitness",
+        "ja": "ステータス段階: 平均的に健康"
+      },
+      "value": {
+        "x": 0.25,
+        "y": 0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Fitness",
+        "icon": "Fitness",
+        "type": "stat",
+        "zh": "体魄",
+        "en": "Fitness",
+        "ja": "フィットネス",
+        "max": 3200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 低体魄",
+        "en": "Status Stage: Low Fitness",
+        "ja": "ステータス段階: 不健康"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Fitness",
+        "icon": "Fitness",
+        "type": "stat",
+        "zh": "体魄",
+        "en": "Fitness",
+        "ja": "フィットネス",
+        "max": 3200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极差体魄",
+        "en": "Status Stage: Very Low Fitness",
+        "ja": "ステータス段階: かなり不健康"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "LungCapacity",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺容量",
+        "en": "Lung Capacity",
+        "ja": "肺活量",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 肺容量减少",
+        "en": "Status Stage: Reduced Lung Capacity",
+        "ja": "ステータス段階: 軽度の肺活量低下"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "LungCapacity",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺容量",
+        "en": "Lung Capacity",
+        "ja": "肺活量",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 肺功能受损",
+        "en": "Status Stage: Impaired Lung Capacity",
+        "ja": "ステータス段階: 普通の肺活量低下"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "LungCapacity",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺容量",
+        "en": "Lung Capacity",
+        "ja": "肺活量",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 肺严重损伤",
+        "en": "Status Stage: Compromised Lung Capacity",
+        "ja": "ステータス段階: 重度の肺活量低下"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "LungDamage",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺部伤害",
+        "en": "Lung Damage",
+        "ja": "肺の傷",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 轻微肺损伤",
+        "en": "Status Stage: Minor Lung Damage",
+        "ja": "ステータス段階: 肺の軽い傷"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "LungDamage",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺部伤害",
+        "en": "Lung Damage",
+        "ja": "肺の傷",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度肺损伤",
+        "en": "Status Stage: Moderate Lung Damage",
+        "ja": "ステータス段階: 肺の傷"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "LungDamage",
+        "icon": "LungDamage_Old",
+        "type": "stat",
+        "zh": "肺部伤害",
+        "en": "Lung Damage",
+        "ja": "肺の傷",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 重度肺损伤",
+        "en": "Status Stage: Severe Lung Damage",
+        "ja": "ステータス段階: 肺のひどい傷"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Stamina",
+        "icon": "Stamina",
+        "type": "stat",
+        "zh": "耐力",
+        "en": "Stamina",
+        "ja": "スタミナ",
+        "max": 32,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 筋疲力尽",
+        "en": "Status Stage: Exhausted",
+        "ja": "ステータス段階: クタクタ"
+      },
+      "value": {
+        "x": -3.3,
+        "y": -3.3
+      }
+    },
+    {
+      "link": {
+        "key": "Stamina",
+        "icon": "Stamina",
+        "type": "stat",
+        "zh": "耐力",
+        "en": "Stamina",
+        "ja": "スタミナ",
+        "max": 32,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 疲惫",
+        "en": "Status Stage: Tired",
+        "ja": "ステータス段階: 疲れた"
+      },
+      "value": {
+        "x": -2.2,
+        "y": -2.2
+      }
+    },
+    {
+      "link": {
+        "key": "Stamina",
+        "icon": "Stamina",
+        "type": "stat",
+        "zh": "耐力",
+        "en": "Stamina",
+        "ja": "スタミナ",
+        "max": 32,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 活跃",
+        "en": "Status Stage: Active",
+        "ja": "ステータス段階: アクティブ"
+      },
+      "value": {
+        "x": -1.1,
+        "y": -1.1
+      }
+    },
+    {
+      "link": {
+        "key": "SwampFeverMerozoites",
+        "icon": "Fever",
+        "type": "stat",
+        "zh": "沼泽热裂殖体",
+        "en": "Swamp Fever",
+        "ja": "Swamp Fever",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 沼泽热",
+        "en": "Status Stage: Swamp Fever",
+        "ja": "ステータス段階: Swamp Fever"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "SwampFeverMerozoites",
+        "icon": "Fever",
+        "type": "stat",
+        "zh": "沼泽热裂殖体",
+        "en": "Swamp Fever",
+        "ja": "Swamp Fever",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 沼泽热",
+        "en": "Status Stage: Swamp Fever",
+        "ja": "ステータス段階: Swamp Fever"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "SwampFeverMerozoites",
+        "icon": "Fever",
+        "type": "stat",
+        "zh": "沼泽热裂殖体",
+        "en": "Swamp Fever",
+        "ja": "Swamp Fever",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 沼泽热",
+        "en": "Status Stage: Swamp Fever",
+        "ja": "ステータス段階: Swamp Fever"
+      },
+      "value": {
+        "x": -1.5,
+        "y": -1.5
+      }
+    },
+    {
+      "link": {
+        "key": "SwampFeverMerozoites",
+        "icon": "Fever",
+        "type": "stat",
+        "zh": "沼泽热裂殖体",
+        "en": "Swamp Fever",
+        "ja": "Swamp Fever",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 沼泽热",
+        "en": "Status Stage: Swamp Fever",
+        "ja": "ステータス段階: Swamp Fever"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Tannins",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "鞣质",
+        "en": "Tannins",
+        "ja": "タンニン",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中鞣质剂量",
+        "en": "Status Stage: Moderate Tannins Dose",
+        "ja": "ステータス段階: 適量のタンニン"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Tannins",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "鞣质",
+        "en": "Tannins",
+        "ja": "タンニン",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高鞣质剂量",
+        "en": "Status Stage: High Tannins Dose",
+        "ja": "ステータス段階: 大量のタンニン"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Tannins",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "鞣质",
+        "en": "Tannins",
+        "ja": "タンニン",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极高鞣质剂量",
+        "en": "Status Stage: Very High Tannins Dose",
+        "ja": "ステータス段階: 超大量のタンニン"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Wakefulness",
+        "icon": "Wakefulness4",
+        "type": "stat",
+        "zh": "清醒度",
+        "en": "Wakefulness",
+        "ja": "眠さ",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 困了",
+        "en": "Status Stage: Sleepy",
+        "ja": "ステータス段階: 眠い"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "Wakefulness",
+        "icon": "Wakefulness4",
+        "type": "stat",
+        "zh": "清醒度",
+        "en": "Wakefulness",
+        "ja": "眠さ",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 很困",
+        "en": "Status Stage: Very Sleepy",
+        "ja": "ステータス段階: かなり眠い"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Weight",
+        "icon": "Weight2",
+        "type": "stat",
+        "zh": "体重",
+        "en": "Weight",
+        "ja": "体重",
+        "max": 1000000,
+        "min": 293999
+      },
+      "localization": {
+        "zh": "状态阶段: 极端肥胖",
+        "en": "Status Stage: Severely Obese",
+        "ja": "ステータス段階: かなり肥満"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Weight",
+        "icon": "Weight2",
+        "type": "stat",
+        "zh": "体重",
+        "en": "Weight",
+        "ja": "体重",
+        "max": 1000000,
+        "min": 293999
+      },
+      "localization": {
+        "zh": "状态阶段: 肥胖",
+        "en": "Status Stage: Obese",
+        "ja": "ステータス段階: 肥満"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Weight",
+        "icon": "Weight2",
+        "type": "stat",
+        "zh": "体重",
+        "en": "Weight",
+        "ja": "体重",
+        "max": 1000000,
+        "min": 293999
+      },
+      "localization": {
+        "zh": "状态阶段: 瘦弱",
+        "en": "Status Stage: Emaciated",
+        "ja": "ステータス段階: ガリガリ"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Weight",
+        "icon": "Weight2",
+        "type": "stat",
+        "zh": "体重",
+        "en": "Weight",
+        "ja": "体重",
+        "max": 1000000,
+        "min": 293999
+      },
+      "localization": {
+        "zh": "状态阶段: 濒临饿死",
+        "en": "Status Stage: On the Verge of Starvation",
+        "ja": "ステータス段階: 飢餓状態になりそう"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstonePoisoning",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "巫石中毒",
+        "en": "Witchstone Poisoning",
+        "ja": "Witchstone Poisoning",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 轻度巫石中毒",
+        "en": "Status Stage: Minor Witchstone Poisoning",
+        "ja": "ステータス段階: Minor Witchstone Poisoning"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstonePoisoning",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "巫石中毒",
+        "en": "Witchstone Poisoning",
+        "ja": "Witchstone Poisoning",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度巫石中毒",
+        "en": "Status Stage: Moderate Witchstone Poisoning",
+        "ja": "ステータス段階: Moderate Witchstone Poisoning"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstonePoisoning",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "巫石中毒",
+        "en": "Witchstone Poisoning",
+        "ja": "Witchstone Poisoning",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 重度巫石中毒",
+        "en": "Status Stage: Severe Witchstone Poisoning",
+        "ja": "ステータス段階: Severe Witchstone Poisoning"
+      },
+      "value": {
+        "x": -1.5,
+        "y": -1.5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstonePoisoning",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "巫石中毒",
+        "en": "Witchstone Poisoning",
+        "ja": "Witchstone Poisoning",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重巫石中毒",
+        "en": "Status Stage: Critical Witchstone Poisoning",
+        "ja": "ステータス段階: Critical Witchstone Poisoning"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 96,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Energy"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

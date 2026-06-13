@@ -1,0 +1,1378 @@
+{
+  "m_Name": "SnowVisible",
+  "key": "SnowVisible",
+  "icon": "Snowflake_Old",
+  "type": "stat",
+  "zh": "雪",
+  "en": "Snow",
+  "ja": "雪",
+  "UniqueIDIndex": 4123,
+  "GameName": {
+    "DefaultText": "Snow",
+    "Text": "雪",
+    "zh": "雪",
+    "en": "Snow",
+    "ja": "雪"
+  },
+  "Description": {
+    "DefaultText": "Can make travelling difficult if it gets too deep. ",
+    "Text": "太深时会使旅行变得困难。",
+    "zh": "太深时会使旅行变得困难。",
+    "en": "Can make travelling difficult if it gets too deep. ",
+    "ja": "深すぎると移動が困難になる"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 480
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [
+    {
+      "Stat": {
+        "key": "SnowInvisible",
+        "icon": "",
+        "type": "stat",
+        "zh": "雪",
+        "en": "Snow Invisible",
+        "ja": "Snow Invisible",
+        "max": 480,
+        "min": 0
+      },
+      "Scale": {
+        "Active": false,
+        "FloatValue": 0
+      }
+    }
+  ],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": true,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Snowflake_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Light Snow",
+        "Text": "浅雪",
+        "zh": "浅雪",
+        "en": "Light Snow",
+        "ja": "軽い雪"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Snowflake_Old"
+      },
+      "ValueRange": {
+        "m_X": 8,
+        "m_Y": 48
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Snow",
+        "Text": "中雪",
+        "zh": "中雪",
+        "en": "Moderate Snow",
+        "ja": "普通の雪"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Snowflake_Old"
+      },
+      "ValueRange": {
+        "m_X": 49,
+        "m_Y": 288
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Deep Snow",
+        "Text": "深雪",
+        "zh": "深雪",
+        "en": "Deep Snow",
+        "ja": "深い雪"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Snowflake_Old"
+      },
+      "ValueRange": {
+        "m_X": 289,
+        "m_Y": 480
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "Not Enough Snow",
+    "Text": "雪不够",
+    "zh": "雪不够",
+    "en": "Not Enough Snow",
+    "ja": "雪が足りない"
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "CabinConstructionLocationAttic",
+        "icon": "Attic",
+        "type": "card",
+        "CardType": 8,
+        "zh": "阁楼",
+        "en": "Attic",
+        "ja": "Attic"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "CabinConstructionLocationCabinRoom",
+        "icon": "Cabin_Room",
+        "type": "card",
+        "CardType": 8,
+        "zh": "木质房间",
+        "en": "Cabin Room",
+        "ja": "Cabin Room"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "CabinConstructionStartingPointCabin",
+        "icon": "Cabin_Outside",
+        "type": "card",
+        "CardType": 8,
+        "zh": "木屋",
+        "en": "Cabin",
+        "ja": "Cabin"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_BearCave",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "熊洞",
+        "en": "Bear Cave",
+        "ja": "クマの洞窟"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveOldHollow",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巨大洞穴",
+        "en": "Great Cave",
+        "ja": "Great Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CavePineSlopes",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "洞穴",
+        "en": "Cave",
+        "ja": "Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveRiverPass",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "洞穴",
+        "en": "Cave",
+        "ja": "Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveShadyThicket",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "隐秘洞穴",
+        "en": "Secret Cave",
+        "ja": "Secret Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveStillHollow",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "静谧洞穴",
+        "en": "Still Cave",
+        "ja": "Still Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FlintSett",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石巢穴",
+        "en": "Flint Sett",
+        "ja": "火打石の大鉱脈"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmClearedTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "已清理的隧道",
+        "en": "Cleared Tunnel",
+        "ja": "屋根崩壊カウンター"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmCollapsedTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "坍塌的隧道",
+        "en": "Collapsed Tunnel",
+        "ja": "崩れたトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelNorthEast",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelNorthWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelSouthEast",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelSouthWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル（西）"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmFlintclawsChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧爪的巢穴",
+        "en": "Flintclaw's Chamber",
+        "ja": "フリントクローの間"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmFloodedTunnel",
+        "icon": "Tunnel_Flooded",
+        "type": "card",
+        "CardType": 8,
+        "zh": "覆溺隧道",
+        "en": "Flooded Tunnel",
+        "ja": "浸水したトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmNorthernChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部洞穴",
+        "en": "Northern Chamber",
+        "ja": "北の間"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmNorthernTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部隧道",
+        "en": "Northern Tunnel",
+        "ja": "北の洞窟"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmOminousTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "不祥隧道",
+        "en": "Ominous Tunnel",
+        "ja": "不穏なトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmOvergrownTunnel",
+        "icon": "Tunnel_Overgrown",
+        "type": "card",
+        "CardType": 8,
+        "zh": "藤蔓覆盖的隧道",
+        "en": "Overgrown Tunnel",
+        "ja": "草木に覆われたトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmSouthernTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "南部隧道",
+        "en": "Southern Tunnel",
+        "ja": "南のトンネル"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmTheShaft",
+        "icon": "Tunnel_Shaft",
+        "type": "card",
+        "CardType": 8,
+        "zh": "竖井",
+        "en": "The Shaft",
+        "ja": "シャフト"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_WaterfallCaves",
+        "icon": "Waterfall_Cave",
+        "type": "card",
+        "CardType": 8,
+        "zh": "瀑布洞穴",
+        "en": "Waterfall Caves",
+        "ja": "滝の洞窟"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_WolfCave",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "狼穴",
+        "en": "Wolf Cave",
+        "ja": "Wolf Cave"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_DeathChamber",
+        "icon": "Tunnel_Overgrown",
+        "type": "card",
+        "CardType": 8,
+        "zh": "死亡洞室",
+        "en": "Death Chamber",
+        "ja": "Death Chamber"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_EntranceTunnel",
+        "icon": "Tunnel_Shaft",
+        "type": "card",
+        "CardType": 8,
+        "zh": "入口隧洞",
+        "en": "Entrance Tunnel",
+        "ja": "Entrance Tunnel"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_OuterChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "外厅洞室",
+        "en": "Outer Chamber",
+        "ja": "Outer Chamber"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationCopperMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "铜矿井",
+        "en": "Copper Mine",
+        "ja": "Copper Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationFlintMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石矿井",
+        "en": "Flint Mine",
+        "ja": "Flint Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationWitchstoneMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巫石矿井",
+        "en": "Witchstone Mine",
+        "ja": "Witchstone Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointCopperMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "铜矿井",
+        "en": "Copper Mine",
+        "ja": "Copper Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointFlintMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石矿井",
+        "en": "Flint Mine",
+        "ja": "Flint Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointWitchstoneMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巫石矿井",
+        "en": "Witchstone Mine",
+        "ja": "Witchstone Mine"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationCellar",
+        "icon": "Cellar_Down",
+        "type": "card",
+        "CardType": 8,
+        "zh": "地窖",
+        "en": "Cellar",
+        "ja": "セラー"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationRoom",
+        "icon": "MudHutRoom",
+        "type": "card",
+        "CardType": 8,
+        "zh": "房间",
+        "en": "Room",
+        "ja": "部屋"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointCellar",
+        "icon": "Cellar_Down",
+        "type": "card",
+        "CardType": 8,
+        "zh": "地窖",
+        "en": "Cellar",
+        "ja": "セラー"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointMudHut",
+        "icon": "MudHut_Outside",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥屋",
+        "en": "Mud Hut",
+        "ja": "泥小屋"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -480,
+        "y": -480
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "IceSkates",
+        "icon": "Skates",
+        "type": "card",
+        "CardType": 0,
+        "zh": "冰鞋",
+        "en": "Ice Skates",
+        "ja": "Ice Skates"
+      },
+      "localization": {
+        "zh": "被动效果：Ice Skates Equiped Moderate Snow",
+        "en": "Passive Effect：Ice Skates Equiped Moderate Snow",
+        "ja": "パッシブ効果：Ice Skates Equiped Moderate Snow"
+      },
+      "value": {
+        "x": 49,
+        "y": 288
+      }
+    },
+    {
+      "link": {
+        "key": "IceSkates",
+        "icon": "Skates",
+        "type": "card",
+        "CardType": 0,
+        "zh": "冰鞋",
+        "en": "Ice Skates",
+        "ja": "Ice Skates"
+      },
+      "localization": {
+        "zh": "被动效果：Ice Skates Equiped Deep Snow",
+        "en": "Passive Effect：Ice Skates Equiped Deep Snow",
+        "ja": "パッシブ効果：Ice Skates Equiped Deep Snow"
+      },
+      "value": {
+        "x": 289,
+        "y": 480
+      }
+    },
+    {
+      "link": {
+        "key": "Skis",
+        "icon": "Skis",
+        "type": "card",
+        "CardType": 0,
+        "zh": "滑雪板",
+        "en": "Skis",
+        "ja": "Skis"
+      },
+      "localization": {
+        "zh": "被动效果：Skis Equiped Moderate Snow",
+        "en": "Passive Effect：Skis Equiped Moderate Snow",
+        "ja": "パッシブ効果：Skis Equiped Moderate Snow"
+      },
+      "value": {
+        "x": 49,
+        "y": 288
+      }
+    },
+    {
+      "link": {
+        "key": "Skis",
+        "icon": "Skis",
+        "type": "card",
+        "CardType": 0,
+        "zh": "滑雪板",
+        "en": "Skis",
+        "ja": "Skis"
+      },
+      "localization": {
+        "zh": "被动效果：Skis Equiped Deep Snow",
+        "en": "Passive Effect：Skis Equiped Deep Snow",
+        "ja": "パッシブ効果：Skis Equiped Deep Snow"
+      },
+      "value": {
+        "x": 289,
+        "y": 480
+      }
+    },
+    {
+      "link": {
+        "key": "Sledge",
+        "icon": "Sledge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪橇",
+        "en": "Sledge",
+        "ja": "Sledge"
+      },
+      "localization": {
+        "zh": "被动效果：Sledge Equiped Moderate Snow",
+        "en": "Passive Effect：Sledge Equiped Moderate Snow",
+        "ja": "パッシブ効果：Sledge Equiped Moderate Snow"
+      },
+      "value": {
+        "x": 49,
+        "y": 288
+      }
+    },
+    {
+      "link": {
+        "key": "Sledge",
+        "icon": "Sledge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪橇",
+        "en": "Sledge",
+        "ja": "Sledge"
+      },
+      "localization": {
+        "zh": "被动效果：Sledge Equiped Deep Snow",
+        "en": "Passive Effect：Sledge Equiped Deep Snow",
+        "ja": "パッシブ効果：Sledge Equiped Deep Snow"
+      },
+      "value": {
+        "x": 289,
+        "y": 480
+      }
+    },
+    {
+      "link": {
+        "key": "Sledge",
+        "icon": "Sledge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪橇",
+        "en": "Sledge",
+        "ja": "Sledge"
+      },
+      "localization": {
+        "zh": "被动效果：Movement Penalty if no snow",
+        "en": "Passive Effect：Movement Penalty if no snow",
+        "ja": "パッシブ効果：Movement Penalty if no snow"
+      },
+      "value": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "link": {
+        "key": "Sledge",
+        "icon": "Sledge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪橇",
+        "en": "Sledge",
+        "ja": "Sledge"
+      },
+      "localization": {
+        "zh": "被动效果：Can't haul so much",
+        "en": "Passive Effect：Can't haul so much",
+        "ja": "パッシブ効果：Can't haul so much"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "SnowShoes",
+        "icon": "SnowShoes",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪靴",
+        "en": "Snow Shoes",
+        "ja": "雪靴"
+      },
+      "localization": {
+        "zh": "被动效果：消除中度积雪移动惩罚",
+        "en": "Passive Effect：Negate Medium snow movement Penalty",
+        "ja": "パッシブ効果：中程度の積雪移動ペナルティを無効化"
+      },
+      "value": {
+        "x": 49,
+        "y": 288
+      }
+    },
+    {
+      "link": {
+        "key": "SnowShoes",
+        "icon": "SnowShoes",
+        "type": "card",
+        "CardType": 0,
+        "zh": "雪靴",
+        "en": "Snow Shoes",
+        "ja": "雪靴"
+      },
+      "localization": {
+        "zh": "被动效果：消除深度积雪移动惩罚",
+        "en": "Passive Effect：Negate Heavy snow movement Penalty",
+        "ja": "パッシブ効果：深い積雪移動ペナルティを無効化"
+      },
+      "value": {
+        "x": 289,
+        "y": 480
+      }
+    }
+  ],
+  "triggers": [],
+  "max": 480,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

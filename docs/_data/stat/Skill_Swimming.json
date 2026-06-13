@@ -1,0 +1,610 @@
+{
+  "m_Name": "Skill_Swimming",
+  "key": "Skill_Swimming",
+  "icon": "Swimming_Old",
+  "type": "stat",
+  "zh": "游泳",
+  "en": "Swimming",
+  "ja": "水泳",
+  "UniqueIDIndex": 4101,
+  "GameName": {
+    "DefaultText": "Swimming",
+    "Text": "游泳",
+    "zh": "游泳",
+    "en": "Swimming",
+    "ja": "水泳"
+  },
+  "Description": {
+    "DefaultText": "Shows how good you are at swimming. Increases your chances of reaching difficult places and finding good things when diving ",
+    "Text": "显示你游泳的熟练度。增加游到远处和潜水时找到好东西的几率。",
+    "zh": "显示你游泳的熟练度。增加游到远处和潜水时找到好东西的几率。",
+    "en": "Shows how good you are at swimming. Increases your chances of reaching difficult places and finding good things when diving ",
+    "ja": "泳ぐ上手さを示す。ダイビング中、珍しい物を見つける確率が上がり、たどり着くのが難しい場所に行けるようになる。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 150
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.31132078,
+    "g": 0.1042631,
+    "b": 0.10786408,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Swimming_Old"
+  },
+  "Statuses": [],
+  "UsesNovelty": true,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0.5,
+  "MaxStalenessStack": 4,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "Not enough skill!",
+    "Text": "技能不够！",
+    "zh": "技能不够！",
+    "en": "Not enough skill!",
+    "ja": "スキルが足りない！"
+  },
+  "TooMuchText": {
+    "DefaultText": "Too much skill!",
+    "Text": "技术高超！",
+    "zh": "技术高超！",
+    "en": "Too much skill!",
+    "ja": "スキルがありすぎる！"
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "HagPond",
+        "icon": "Pond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "老妪池塘",
+        "en": "Hag Pond",
+        "ja": "Hag Pond"
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "HagPond_Swim"
+    },
+    {
+      "link": {
+        "key": "MosquitoPond",
+        "icon": "Pond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "MosquitoPond_Swim"
+    },
+    {
+      "link": {
+        "key": "Pond",
+        "icon": "Pond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "池塘",
+        "en": "Pond",
+        "ja": "池"
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：泳ぐ"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "Pond_Swim"
+    },
+    {
+      "link": {
+        "key": "River",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "河流",
+        "en": "River",
+        "ja": "川",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 10,
+                "y": 10
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 11,
+                "y": 11
+              }
+            },
+            "Name": {
+              "DefaultText": "Mire",
+              "Text": "泥沼",
+              "zh": "泥沼",
+              "en": "Mire",
+              "ja": "Mire"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 12,
+                "y": 12
+              }
+            },
+            "Name": {
+              "DefaultText": "Bog",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Bog",
+              "ja": "Bog"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 13,
+                "y": 13
+              }
+            },
+            "Name": {
+              "DefaultText": "Swamp",
+              "Text": "沼泽地",
+              "zh": "沼泽地",
+              "en": "Swamp",
+              "ja": "Swamp"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：泳ぐ"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "River_Swim"
+    },
+    {
+      "link": {
+        "key": "RiverBog",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "River Marsh",
+        "en": "River Marsh",
+        "ja": "River Marsh",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "RiverBog_Swim"
+    },
+    {
+      "link": {
+        "key": "RiverLake",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "河流（湖）",
+        "en": "River Lake",
+        "ja": "River Lake",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "RiverLake_Swim"
+    },
+    {
+      "link": {
+        "key": "RiverMarsh",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "河流（沼泽）",
+        "en": "River Marsh",
+        "ja": "River Marsh",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "RiverMarsh_Swim"
+    },
+    {
+      "link": {
+        "key": "RiverMire",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "River Marsh",
+        "en": "River Marsh",
+        "ja": "River Marsh",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "RiverMire_Swim"
+    },
+    {
+      "link": {
+        "key": "RiverSwamp",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "River Marsh",
+        "en": "River Marsh",
+        "ja": "River Marsh",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：游泳",
+        "en": "Action: Swim",
+        "ja": "アクション：Swim"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "RiverSwamp_Swim"
+    },
+    {
+      "link": {
+        "key": "River_ClearingPine_NorthernLakeBank",
+        "icon": "Lake1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部湖岸",
+        "en": "Northern Lake Bank",
+        "ja": "Northern Lake Bank"
+      },
+      "localization": {
+        "zh": "动作：向东游泳",
+        "en": "Action: Swim East",
+        "ja": "アクション：Swim East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "River_ClearingPine_NorthernLakeBank_Swim East"
+    },
+    {
+      "link": {
+        "key": "River_GrovePine_LakeIsland",
+        "icon": "LakeIsland",
+        "type": "card",
+        "CardType": 8,
+        "zh": "湖心岛",
+        "en": "Lake Island",
+        "ja": "Lake Island"
+      },
+      "localization": {
+        "zh": "动作：向西游泳",
+        "en": "Action: Swim West",
+        "ja": "アクション：Swim West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "River_GrovePine_LakeIsland_Swim West"
+    },
+    {
+      "link": {
+        "key": "River_ThicketPine_SouthernRapids",
+        "icon": "PineRapids1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "南部湍流",
+        "en": "Southern Rapids",
+        "ja": "南の急流"
+      },
+      "localization": {
+        "zh": "动作：潜水",
+        "en": "Action: Dive",
+        "ja": "アクション：飛び込む"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "River_ThicketPine_SouthernRapids_Dive"
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 150,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

@@ -1,0 +1,569 @@
+{
+  "m_Name": "SeaAgitation",
+  "key": "SeaAgitation",
+  "icon": "",
+  "type": "stat",
+  "zh": "海风程度",
+  "en": "Sea Agitation",
+  "ja": "波の激しさ",
+  "UniqueIDIndex": 4058,
+  "GameName": {
+    "DefaultText": "Sea Agitation",
+    "Text": "海风程度",
+    "zh": "海风程度",
+    "en": "Sea Agitation",
+    "ja": "波の激しさ"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 5
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Calm Waters",
+        "Text": "平静的水面",
+        "zh": "平静的水面",
+        "en": "Calm Waters",
+        "ja": "静かな海"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SeaSickness",
+            "icon": "Distance_Old",
+            "type": "stat",
+            "zh": "晕船",
+            "en": "Sea Sickness",
+            "ja": "船酔い",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Mild agitation",
+        "Text": "轻微的浪",
+        "zh": "轻微的浪",
+        "en": "Mild agitation",
+        "ja": "軽い揺れ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SeaSickness",
+            "icon": "Distance_Old",
+            "type": "stat",
+            "zh": "晕船",
+            "en": "Sea Sickness",
+            "ja": "船酔い",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Medium Agitation",
+        "Text": "中等的浪",
+        "zh": "中等的浪",
+        "en": "Medium Agitation",
+        "ja": "普通の揺れ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2,
+        "m_Y": 2
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SeaSickness",
+            "icon": "Distance_Old",
+            "type": "stat",
+            "zh": "晕船",
+            "en": "Sea Sickness",
+            "ja": "船酔い",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Strong Agitation",
+        "Text": "强力的浪",
+        "zh": "强力的浪",
+        "en": "Strong Agitation",
+        "ja": "激しい揺れ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 3,
+        "m_Y": 3
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SeaSickness",
+            "icon": "Distance_Old",
+            "type": "stat",
+            "zh": "晕船",
+            "en": "Sea Sickness",
+            "ja": "船酔い",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Storm Waters",
+        "Text": "风暴海域",
+        "zh": "风暴海域",
+        "en": "Storm Waters",
+        "ja": "嵐の海"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4,
+        "m_Y": 5
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SeaSickness",
+            "icon": "Distance_Old",
+            "type": "stat",
+            "zh": "晕船",
+            "en": "Sea Sickness",
+            "ja": "船酔い",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 5,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

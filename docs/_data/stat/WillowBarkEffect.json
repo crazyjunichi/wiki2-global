@@ -1,0 +1,1131 @@
+{
+  "m_Name": "WillowBarkEffect",
+  "key": "WillowBarkEffect",
+  "icon": "Bark",
+  "type": "stat",
+  "zh": "柳树皮",
+  "en": "Willow Bark",
+  "ja": "ヤナギの樹皮",
+  "UniqueIDIndex": 4595,
+  "GameName": {
+    "DefaultText": "Willow Bark",
+    "Text": "柳树皮",
+    "zh": "柳树皮",
+    "en": "Willow Bark",
+    "ja": "ヤナギの樹皮"
+  },
+  "Description": {
+    "DefaultText": "Lowers fever, pain and stress.",
+    "Text": "缓解发热和疼痛并降低压力。",
+    "zh": "缓解发热和疼痛并降低压力。",
+    "en": "Lowers fever, pain and stress.",
+    "ja": "発熱、痛み、ストレスを改善する。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 400
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Bark"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Minor Willow Bark Dose",
+        "Text": "低柳苷剂量",
+        "zh": "低柳苷剂量",
+        "en": "Minor Willow Bark Dose",
+        "ja": "少量のヤナギの樹皮"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Bark"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 100
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -200,
+            "y": -200
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Fever",
+            "icon": "Fever",
+            "type": "stat",
+            "zh": "发烧",
+            "en": "Fever",
+            "ja": "発熱",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Willow Bark Dose",
+        "Text": "中柳苷剂量",
+        "zh": "中柳苷剂量",
+        "en": "Moderate Willow Bark Dose",
+        "ja": "普通の量のヤナギの樹皮"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Bark"
+      },
+      "ValueRange": {
+        "m_X": 101,
+        "m_Y": 200
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -300,
+            "y": -300
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Fever",
+            "icon": "Fever",
+            "type": "stat",
+            "zh": "发烧",
+            "en": "Fever",
+            "ja": "発熱",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -20,
+            "y": -20
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "WillowBarkEffect",
+            "icon": "Bark",
+            "type": "stat",
+            "zh": "柳树皮",
+            "en": "Willow Bark",
+            "ja": "ヤナギの樹皮",
+            "max": 400,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "High Willow Bark Dose",
+        "Text": "高柳苷剂量",
+        "zh": "高柳苷剂量",
+        "en": "High Willow Bark Dose",
+        "ja": "大量のヤナギの樹皮"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Bark"
+      },
+      "ValueRange": {
+        "m_X": 201,
+        "m_Y": 300
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -400,
+            "y": -400
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Fever",
+            "icon": "Fever",
+            "type": "stat",
+            "zh": "发烧",
+            "en": "Fever",
+            "ja": "発熱",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -40,
+            "y": -40
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "WillowBarkEffect",
+            "icon": "Bark",
+            "type": "stat",
+            "zh": "柳树皮",
+            "en": "Willow Bark",
+            "ja": "ヤナギの樹皮",
+            "max": 400,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Very High Willow Bark Dose",
+        "Text": "极高柳苷剂量",
+        "zh": "极高柳苷剂量",
+        "en": "Very High Willow Bark Dose",
+        "ja": "超大量のヤナギの樹皮"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Bark"
+      },
+      "ValueRange": {
+        "m_X": 301,
+        "m_Y": 400
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -500,
+            "y": -500
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Fever",
+            "icon": "Fever",
+            "type": "stat",
+            "zh": "发烧",
+            "en": "Fever",
+            "ja": "発熱",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -80,
+            "y": -80
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "WillowBarkEffect",
+            "icon": "Bark",
+            "type": "stat",
+            "zh": "柳树皮",
+            "en": "Willow Bark",
+            "ja": "ヤナギの樹皮",
+            "max": 400,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -5,
+            "y": -5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "LQ_WillowBarkTea",
+        "icon": "",
+        "type": "card",
+        "CardType": 9,
+        "zh": "柳树皮茶",
+        "en": "Willow Bark Tea",
+        "ja": "ヤナギの樹皮のお茶"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 300
+      }
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "WillowBarkEffect",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "柳树皮",
+        "en": "Willow Bark",
+        "ja": "ヤナギの樹皮",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中柳苷剂量",
+        "en": "Status Stage: Moderate Willow Bark Dose",
+        "ja": "ステータス段階: 普通の量のヤナギの樹皮"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "WillowBarkEffect",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "柳树皮",
+        "en": "Willow Bark",
+        "ja": "ヤナギの樹皮",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高柳苷剂量",
+        "en": "Status Stage: High Willow Bark Dose",
+        "ja": "ステータス段階: 大量のヤナギの樹皮"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "WillowBarkEffect",
+        "icon": "Bark",
+        "type": "stat",
+        "zh": "柳树皮",
+        "en": "Willow Bark",
+        "ja": "ヤナギの樹皮",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极高柳苷剂量",
+        "en": "Status Stage: Very High Willow Bark Dose",
+        "ja": "ステータス段階: 超大量のヤナギの樹皮"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 400,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Fairyweed_Item"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

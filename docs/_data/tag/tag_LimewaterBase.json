@@ -1,0 +1,1114 @@
+{
+  "m_Name": "tag_LimewaterBase",
+  "key": "tag_LimewaterBase",
+  "icon": "",
+  "type": "tag",
+  "zh": "石灰水基础",
+  "zh_fix": "石灰水基础",
+  "en": "LimewaterBase",
+  "ja": "LimewaterBase",
+  "InGameName": {
+    "DefaultText": "LimewaterBase",
+    "Text": "LimewaterBase",
+    "zh": "LimewaterBase",
+    "en": "LimewaterBase",
+    "ja": "LimewaterBase"
+  },
+  "UniqueOnBoard": false,
+  "ActionModifiers": [],
+  "OnlyOneCardAllowedInContainers": false,
+  "UsedInBpActionModifiers": [],
+  "references": [
+    {
+      "link": {
+        "key": "Quicklime",
+        "icon": "Powder_Garlic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "生石灰",
+        "en": "Quicklime",
+        "ja": "石灰",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "动作：浸泡",
+        "en": "Action: Soak",
+        "ja": "アクション：浸す"
+      }
+    }
+  ],
+  "cards": [
+    {
+      "key": "LQ_Limewater",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "石灰水",
+      "en": "Limewater",
+      "ja": "Limewater",
+      "AlternateNames": [
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 0,
+              "y": 25
+            }
+          },
+          "Name": {
+            "DefaultText": "Weak Limewater",
+            "Text": "稀石灰水",
+            "zh": "稀石灰水",
+            "en": "Weak Limewater",
+            "ja": "Weak Limewater"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 26,
+              "y": 75
+            }
+          },
+          "Name": {
+            "DefaultText": "Limewater",
+            "Text": "石灰水",
+            "zh": "石灰水",
+            "en": "Limewater",
+            "ja": "Limewater"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 76,
+              "y": 100
+            }
+          },
+          "Name": {
+            "DefaultText": "Milk of Lime",
+            "Text": "石灰乳",
+            "zh": "石灰乳",
+            "en": "Milk of Lime",
+            "ja": "Milk of Lime"
+          }
+        }
+      ],
+      "SpoilageTime": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpoilageTime",
+          "zh": "时间",
+          "en": "Spoilage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Shield"
+        },
+        "MaxValue": 1000
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Liquid Temperature",
+          "Text": "液体温度",
+          "zh": "液体温度",
+          "en": "Liquid Temperature",
+          "ja": "Liquid Temperature"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Thickness",
+          "Text": "浓稠度",
+          "zh": "浓稠度",
+          "en": "Thickness",
+          "ja": "Thickness"
+        },
+        "OverrideIcon": {
+          "FileName": "Powder_Garlic"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Weight3"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "品质",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability3": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability3",
+          "zh": "特殊3",
+          "en": "Special3",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Health"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Filth"
+        },
+        "MaxValue": 1
+      }
+    },
+    {
+      "key": "LQ_RenetAbsorber",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "水",
+      "en": "Water",
+      "ja": "Water",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Renet",
+          "Text": "凝乳酶",
+          "zh": "凝乳酶",
+          "en": "Renet",
+          "ja": "Renet"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 300
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Shield"
+        },
+        "MaxValue": 1000
+      },
+      "FuelCapacity": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "温度",
+          "zh": "容量",
+          "en": "Fuel",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Weight3"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "品质",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability3": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability3",
+          "zh": "特殊3",
+          "en": "Special3",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 300
+      },
+      "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Filth"
+        },
+        "MaxValue": 1
+      }
+    },
+    {
+      "key": "LQ_Water",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "水",
+      "en": "Water",
+      "ja": "水",
+      "AlternateNames": [
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 75,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Potage",
+            "Text": "浓汤",
+            "zh": "浓汤",
+            "en": "Potage",
+            "ja": "Potage"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 50,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Stew",
+            "Text": "炖菜",
+            "zh": "炖菜",
+            "en": "Stew",
+            "ja": "Stew"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 25,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Soup",
+            "Text": "汤",
+            "zh": "汤",
+            "en": "Soup",
+            "ja": "Soup"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Broth",
+            "Text": "汤",
+            "zh": "汤",
+            "en": "Broth",
+            "ja": "Broth"
+          }
+        }
+      ],
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Bacteria",
+          "Text": "细菌",
+          "zh": "细菌",
+          "en": "Bacteria",
+          "ja": "Bacteria"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 480
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Vitamins",
+          "Text": "维生素",
+          "zh": "维生素",
+          "en": "Vitamins",
+          "ja": "ビタミン"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationVegetables"
+        },
+        "MaxValue": 1000
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Liquid Temperature",
+          "Text": "液体温度",
+          "zh": "液体温度",
+          "en": "Liquid Temperature",
+          "ja": "Liquid Temperature"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Thickness",
+          "Text": "浓稠度",
+          "zh": "浓稠度",
+          "en": "Thickness",
+          "ja": "濃厚さ"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationCauldron"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Calories",
+          "Text": "卡路里",
+          "zh": "卡路里",
+          "en": "Calories",
+          "ja": "カロリー"
+        },
+        "OverrideIcon": {
+          "FileName": "Weight3"
+        },
+        "MaxValue": 1000
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Proteins",
+          "Text": "蛋白质",
+          "zh": "蛋白质",
+          "en": "Proteins",
+          "ja": "タンパク質"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationMeat"
+        },
+        "MaxValue": 1000
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Iron",
+          "Text": "铁元素",
+          "zh": "铁元素",
+          "en": "Waste",
+          "ja": "ゴミ"
+        },
+        "OverrideIcon": {
+          "FileName": "Filth"
+        },
+        "MaxValue": 1000
+      }
+    },
+    {
+      "key": "LQ_WaterRiver",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "河水",
+      "en": "River Water",
+      "ja": "川の水",
+      "SpoilageTime": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpoilageTime",
+          "zh": "时间",
+          "en": "Spoilage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Liquid Temperature",
+          "Text": "液体温度",
+          "zh": "液体温度",
+          "en": "Liquid Temperature",
+          "ja": "液体温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability2",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability3": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability3",
+          "zh": "特殊3",
+          "en": "Special3",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      }
+    },
+    {
+      "key": "LQ_WaterUnsafe",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "不安全的水",
+      "en": "Unsafe Water",
+      "ja": "危険な水",
+      "SpoilageTime": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpoilageTime",
+          "zh": "时间",
+          "en": "Spoilage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Liquid Temperature",
+          "Text": "液体温度",
+          "zh": "液体温度",
+          "en": "Liquid Temperature",
+          "ja": "Liquid Temperature"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability2",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability3": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability3",
+          "zh": "特殊3",
+          "en": "Special3",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      }
+    },
+    {
+      "key": "NOT_USED_LQ_WaterMessagesetups",
+      "icon": "Thirst_Old",
+      "type": "card",
+      "CardType": 9,
+      "zh": "水",
+      "en": "Water",
+      "ja": "Water",
+      "AlternateNames": [
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 75,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Potage",
+            "Text": "浓汤",
+            "zh": "浓汤",
+            "en": "Potage",
+            "ja": "Potage"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 50,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Stew",
+            "Text": "炖菜",
+            "zh": "炖菜",
+            "en": "Stew",
+            "ja": "Stew"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 25,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Soup",
+            "Text": "汤",
+            "zh": "汤",
+            "en": "Soup",
+            "ja": "Soup"
+          }
+        },
+        {
+          "Conditions": {
+            "ProgressRange": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "Name": {
+            "DefaultText": "Broth",
+            "Text": "汤",
+            "zh": "汤",
+            "en": "Broth",
+            "ja": "Broth"
+          }
+        }
+      ],
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Bacteria",
+          "Text": "细菌",
+          "zh": "细菌",
+          "en": "Bacteria",
+          "ja": "Bacteria"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 480
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Vitamins",
+          "Text": "维生素",
+          "zh": "维生素",
+          "en": "Vitamins",
+          "ja": "Vitamins"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationVegetables"
+        },
+        "MaxValue": 1000
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Liquid Temperature",
+          "Text": "液体温度",
+          "zh": "液体温度",
+          "en": "Liquid Temperature",
+          "ja": "Liquid Temperature"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Thickness",
+          "Text": "浓稠度",
+          "zh": "浓稠度",
+          "en": "Thickness",
+          "ja": "Thickness"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationCauldron"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Calories",
+          "Text": "卡路里",
+          "zh": "卡路里",
+          "en": "Calories",
+          "ja": "Calories"
+        },
+        "OverrideIcon": {
+          "FileName": "Weight3"
+        },
+        "MaxValue": 1000
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "Quality"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Proteins",
+          "Text": "蛋白质",
+          "zh": "蛋白质",
+          "en": "Proteins",
+          "ja": "Proteins"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationMeat"
+        },
+        "MaxValue": 1000
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Iron",
+          "Text": "铁元素",
+          "zh": "铁元素",
+          "en": "Iron",
+          "ja": "Iron"
+        },
+        "OverrideIcon": {
+          "FileName": "Filth"
+        },
+        "MaxValue": 1000
+      }
+    }
+  ],
+  "count": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "MapStructureType": 0,
+  "SpoilageTime": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Renet",
+      "Text": "凝乳酶",
+      "zh": "凝乳酶",
+      "en": "Renet",
+      "ja": "Renet"
+    },
+    "OverrideIcon": null,
+    "MaxValue": 300
+  },
+  "UsageDurability": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Vitamins",
+      "Text": "维生素",
+      "zh": "维生素",
+      "en": "Vitamins",
+      "ja": "ビタミン"
+    },
+    "OverrideIcon": {
+      "FileName": "SaturationVegetables"
+    },
+    "MaxValue": 1000
+  },
+  "FuelCapacity": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Liquid Temperature",
+      "Text": "液体温度",
+      "zh": "液体温度",
+      "en": "Liquid Temperature",
+      "ja": "Liquid Temperature"
+    },
+    "OverrideIcon": {
+      "FileName": "Hot"
+    },
+    "MaxValue": 200
+  },
+  "Progress": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Thickness",
+      "Text": "浓稠度",
+      "zh": "浓稠度",
+      "en": "Thickness",
+      "ja": "Thickness"
+    },
+    "OverrideIcon": {
+      "FileName": "Powder_Garlic"
+    },
+    "MaxValue": 100
+  },
+  "SpecialDurability1": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Calories",
+      "Text": "卡路里",
+      "zh": "卡路里",
+      "en": "Calories",
+      "ja": "カロリー"
+    },
+    "OverrideIcon": {
+      "FileName": "Weight3"
+    },
+    "MaxValue": 1000
+  },
+  "SpecialDurability2": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Quality",
+      "Text": "品质",
+      "zh": "品质",
+      "en": "Quality",
+      "ja": "クオリティ"
+    },
+    "OverrideIcon": {
+      "FileName": "Quality"
+    },
+    "MaxValue": 100
+  },
+  "SpecialDurability3": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Proteins",
+      "Text": "蛋白质",
+      "zh": "蛋白质",
+      "en": "Proteins",
+      "ja": "タンパク質"
+    },
+    "OverrideIcon": {
+      "FileName": "SaturationMeat"
+    },
+    "MaxValue": 1000
+  },
+  "SpecialDurability4": {
+    "Active": true,
+    "CardStatName": {
+      "DefaultText": "Iron",
+      "Text": "铁元素",
+      "zh": "铁元素",
+      "en": "Waste",
+      "ja": "ゴミ"
+    },
+    "OverrideIcon": {
+      "FileName": "Filth"
+    },
+    "MaxValue": 1000
+  }
+}

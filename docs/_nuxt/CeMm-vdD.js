@@ -1,1 +1,0 @@
-const e="Wait_0_2053",t="Wait_0_2053",a=!1,n=null,c=1,_={m_X:2,m_Y:2},o={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,WaitFor:_};export{a as RequiredForSelectingDuty,_ as WaitFor,o as default,t as key,c as m_Enabled,n as m_GameObject,e as m_Name};

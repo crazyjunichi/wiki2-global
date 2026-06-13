@@ -1,0 +1,74 @@
+{
+  "m_Name": "ChangeExistsTo1",
+  "key": "ChangeExistsTo1",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_Moontouched",
+        "icon": "Moontouched",
+        "type": "npc",
+        "zh": "月之野兽",
+        "en": "Moontouched",
+        "ja": "Moontouched"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentExists",
+        "key": "AgentExists",
+        "type": "durability",
+        "zh": "存在",
+        "en": "AgentExists",
+        "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+        "GameName": {
+          "DefaultText": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+          "Text": "存在",
+          "zh": "存在",
+          "en": "AgentExists",
+          "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 1
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "存在",
+        "desc": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "16eb4865d583a1d4d82def0680f3065d",
+        "UniqueIDIndex": 3050
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": false,
+    "IntValue": 0
+  }
+}

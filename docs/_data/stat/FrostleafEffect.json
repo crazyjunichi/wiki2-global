@@ -1,0 +1,664 @@
+{
+  "m_Name": "FrostleafEffect",
+  "key": "FrostleafEffect",
+  "icon": "Frostleaf_Item",
+  "type": "stat",
+  "zh": "霜叶效果",
+  "en": "Frostleaf Effect",
+  "ja": "フロストリーフ効果",
+  "UniqueIDIndex": 3363,
+  "GameName": {
+    "DefaultText": "Frostleaf Effect",
+    "Text": "霜叶效果",
+    "zh": "霜叶效果",
+    "en": "Frostleaf Effect",
+    "ja": "フロストリーフ効果"
+  },
+  "Description": {
+    "DefaultText": "Alleviates inflamation and provides a mild numbing effect against pain and headaches. ",
+    "Text": "能缓解炎症，对疼痛和头痛有轻微的缓解作用。",
+    "zh": "能缓解炎症，对疼痛和头痛有轻微的缓解作用。",
+    "en": "Alleviates inflamation and provides a mild numbing effect against pain and headaches. ",
+    "ja": "炎症、痛み、頭痛に効く。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 48
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Frostleaf_Item"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Weak Frostleaf Effect",
+        "Text": "弱霜叶效果",
+        "zh": "弱霜叶效果",
+        "en": "Weak Frostleaf Effect",
+        "ja": "弱いフロストリーフ効果"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Frostleaf_Item"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 23
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.1,
+            "y": 0.1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -50,
+            "y": -50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Strong Frostleaf Effect",
+        "Text": "强霜叶效果",
+        "zh": "强霜叶效果",
+        "en": "Strong Frostleaf Effect",
+        "ja": "強いフロストリーフ効果"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Frostleaf_Item"
+      },
+      "ValueRange": {
+        "m_X": 24,
+        "m_Y": 48
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "FrostleafDried",
+        "icon": "Frostleaf_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "干霜叶",
+        "en": "Dry Frostleaf",
+        "ja": "乾燥したフロストリーフ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 10,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "FrostleafFresh",
+        "icon": "Frostleaf_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "霜叶",
+        "en": "Frostleaf",
+        "ja": "フロストリーフ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 10,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_FrostleafTea",
+        "icon": "",
+        "type": "card",
+        "CardType": 9,
+        "zh": "霜叶茶",
+        "en": "Frostleaf Tea",
+        "ja": "フロストリーフのお茶"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 60
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 48,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Frostleaf_Item"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

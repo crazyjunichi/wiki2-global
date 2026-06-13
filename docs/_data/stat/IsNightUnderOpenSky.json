@@ -1,0 +1,376 @@
+{
+  "m_Name": "IsNightUnderOpenSky",
+  "key": "IsNightUnderOpenSky",
+  "icon": "",
+  "type": "stat",
+  "zh": "夜晚在无遮蔽的天空下",
+  "zh_fix": "夜晚在无遮蔽的天空下",
+  "en": "IsNightUnderOpenSky",
+  "ja": "IsNightUnderOpenSky",
+  "UniqueIDIndex": 3692,
+  "GameName": {
+    "DefaultText": "IsNightUnderOpenSky",
+    "Text": "IsNightUnderOpenSky",
+    "zh": "IsNightUnderOpenSky",
+    "en": "IsNightUnderOpenSky",
+    "ja": "IsNightUnderOpenSky"
+  },
+  "Description": {
+    "DefaultText": "Moon is visible between 17:00 and 07:00 but only if OpenSky is on board",
+    "Text": "月亮在17：00至07：00期间可见，但是仅在天空开阔的地方",
+    "zh": "月亮在17：00至07：00期间可见，但是仅在天空开阔的地方",
+    "en": "Moon is visible between 17:00 and 07:00 but only if OpenSky is on board",
+    "ja": "Moon is visible between 17:00 and 07:00 but only if OpenSky is on board"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [
+    {
+      "StartingHour": 17,
+      "EndingHour": 7,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [],
+      "ValueModifier": {
+        "x": 1,
+        "y": 1
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.16164762,
+    "g": 0.019845007,
+    "b": 0.315,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Hide Moon Shape",
+        "Text": "隐藏月相",
+        "zh": "隐藏月相",
+        "en": "Hide Moon Shape",
+        "ja": "Hide Moon Shape"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MoonShapeVisible",
+            "icon": "",
+            "type": "stat",
+            "zh": "月相可见",
+            "en": "Moon Phase",
+            "ja": "Moon Phase",
+            "max": 6,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "It's too dark for this action...",
+    "Text": "太黑了我做不到……",
+    "zh": "太黑了我做不到……",
+    "en": "It's too dark for this action...",
+    "ja": "It's too dark for this action..."
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "Counter",
+        "icon": "",
+        "type": "stat",
+        "zh": "计数器",
+        "en": "Counter",
+        "ja": "カウンター",
+        "max": 1000000000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Moon_MoonStone",
+        "icon": "Moonstone",
+        "type": "card",
+        "CardType": 2,
+        "zh": "月石",
+        "en": "Moonstone",
+        "ja": "Moonstone"
+      },
+      "localization": {
+        "zh": "动作：交流",
+        "en": "Action: Commune",
+        "ja": "アクション：Commune"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "key": "Tgr_Apparitions"
+    }
+  ],
+  "max": 1,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

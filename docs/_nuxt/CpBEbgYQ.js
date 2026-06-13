@@ -1,0 +1,1 @@
+import{n as a,x as n,y as o}from"./COs4swim.js";const l=a({__name:"test",async setup(r){let e,t;const s=([e,t]=n(()=>o(()=>Promise.resolve({default:{}}),"card/River")),e=await e,t(),e);return console.log(s),(_,c)=>null}});export{l as default};

@@ -1,0 +1,840 @@
+{
+  "m_Name": "WaterFrozen",
+  "key": "WaterFrozen",
+  "icon": "",
+  "type": "stat",
+  "zh": "水已结冰",
+  "en": "WaterFrozen",
+  "ja": "WaterFrozen",
+  "UniqueIDIndex": 4536,
+  "GameName": {
+    "DefaultText": "WaterFrozen",
+    "Text": "WaterFrozen",
+    "zh": "WaterFrozen",
+    "en": "WaterFrozen",
+    "ja": "WaterFrozen"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1344
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "Text": "Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "zh": "Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "en": "Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "ja": "Fish Population Reduction, replacing flooded status to freezing status for the flooded paths"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 673,
+        "m_Y": 1344
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "SwampWaterLevelFrozenStatus",
+            "icon": "",
+            "type": "stat",
+            "zh": "沼泽水位冻结状态",
+            "en": "SwampWaterLevelFrozenStatus",
+            "ja": "SwampWaterLevelFrozenStatus",
+            "max": 1,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SwampWaterLevelFloodedStatus",
+            "icon": "",
+            "type": "stat",
+            "zh": "沼泽水位洪水状态",
+            "en": "SwampWaterLevelFloodedStatus",
+            "ja": "SwampWaterLevelFloodedStatus",
+            "max": 2,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pop_Perch_Local",
+            "icon": "",
+            "type": "stat",
+            "zh": "本地河鲈数量",
+            "en": "Pop_Perch_Local",
+            "ja": "Pop_Perch_Local",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pop_Eel_Local",
+            "icon": "",
+            "type": "stat",
+            "zh": "本地鳗鱼数量",
+            "en": "Pop_Eel_Local",
+            "ja": "Pop_Eel_Local",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pop_Pike_Local",
+            "icon": "",
+            "type": "stat",
+            "zh": "本地狗鱼数量",
+            "en": "Pop_Pike_Local",
+            "ja": "Pop_Pike_Local",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pop_Trout_Local",
+            "icon": "",
+            "type": "stat",
+            "zh": "本地鳟鱼数量",
+            "en": "Pop_Trout_Local",
+            "ja": "Pop_Trout_Local",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -50,
+            "y": -50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pop_Sturgeon_Local",
+            "icon": "",
+            "type": "stat",
+            "zh": "本地鲟鱼数量",
+            "en": "Pop_Sturgeon_Local",
+            "ja": "Pop_Sturgeon_Local",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "WaterLevel",
+        "icon": "RiverShore",
+        "type": "stat",
+        "zh": "潜在水位",
+        "en": "Water Level Invisible",
+        "ja": "水位が見えない",
+        "max": 7665,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高水位",
+        "en": "Status Stage: High Water Level",
+        "ja": "ステータス段階: 高い水位"
+      },
+      "value": {
+        "x": -1000,
+        "y": -1000
+      }
+    },
+    {
+      "link": {
+        "key": "WaterLevel",
+        "icon": "RiverShore",
+        "type": "stat",
+        "zh": "潜在水位",
+        "en": "Water Level Invisible",
+        "ja": "水位が見えない",
+        "max": 7665,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 略微溢出",
+        "en": "Status Stage: Moderate Overflow",
+        "ja": "ステータス段階: 水溢れ"
+      },
+      "value": {
+        "x": -1000,
+        "y": -1000
+      }
+    },
+    {
+      "link": {
+        "key": "WaterLevel",
+        "icon": "RiverShore",
+        "type": "stat",
+        "zh": "潜在水位",
+        "en": "Water Level Invisible",
+        "ja": "水位が見えない",
+        "max": 7665,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 大水漫出",
+        "en": "Status Stage: High Overflow",
+        "ja": "ステータス段階: 多い水溢"
+      },
+      "value": {
+        "x": -1000,
+        "y": -1000
+      }
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: WaterFrozen",
+        "en": "Status Stage: WaterFrozen",
+        "ja": "ステータス段階: WaterFrozen"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 1",
+        "en": "Status Stage: Melt Snow 1",
+        "ja": "ステータス段階: Melt Snow 1"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 2",
+        "en": "Status Stage: Melt Snow 2",
+        "ja": "ステータス段階: Melt Snow 2"
+      },
+      "value": {
+        "x": -40,
+        "y": -40
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 3",
+        "en": "Status Stage: Melt Snow 3",
+        "ja": "ステータス段階: Melt Snow 3"
+      },
+      "value": {
+        "x": -80,
+        "y": -80
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 4",
+        "en": "Status Stage: Melt Snow 4",
+        "ja": "ステータス段階: Melt Snow 4"
+      },
+      "value": {
+        "x": -160,
+        "y": -160
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 5",
+        "en": "Status Stage: Melt Snow 5",
+        "ja": "ステータス段階: Melt Snow 5"
+      },
+      "value": {
+        "x": -320,
+        "y": -320
+      }
+    },
+    {
+      "link": {
+        "key": "BaseTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "基础温度",
+        "en": "Base Temperature",
+        "ja": "Base Temperature",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: Melt Snow 6",
+        "en": "Status Stage: Melt Snow 6",
+        "ja": "ステータス段階: Melt Snow 6"
+      },
+      "value": {
+        "x": -640,
+        "y": -640
+      }
+    }
+  ],
+  "_requireList": [
+    {
+      "link": {
+        "key": "River_ClearingPine_NorthernLakeBank",
+        "icon": "Lake1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部湖岸",
+        "en": "Northern Lake Bank",
+        "ja": "Northern Lake Bank"
+      },
+      "localization": {
+        "zh": "动作：向东游泳",
+        "en": "Action: Swim East",
+        "ja": "アクション：Swim East"
+      },
+      "value": {
+        "x": 0,
+        "y": 672
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingPine_NorthernLakeBank",
+        "icon": "Lake1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部湖岸",
+        "en": "Northern Lake Bank",
+        "ja": "Northern Lake Bank"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 673,
+        "y": 1000000000
+      }
+    },
+    {
+      "link": {
+        "key": "River_GrovePine_LakeIsland",
+        "icon": "LakeIsland",
+        "type": "card",
+        "CardType": 8,
+        "zh": "湖心岛",
+        "en": "Lake Island",
+        "ja": "Lake Island"
+      },
+      "localization": {
+        "zh": "动作：向西游泳",
+        "en": "Action: Swim West",
+        "ja": "アクション：Swim West"
+      },
+      "value": {
+        "x": 0,
+        "y": 672
+      }
+    },
+    {
+      "link": {
+        "key": "River_GrovePine_LakeIsland",
+        "icon": "LakeIsland",
+        "type": "card",
+        "CardType": 8,
+        "zh": "湖心岛",
+        "en": "Lake Island",
+        "ja": "Lake Island"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 673,
+        "y": 1000000000
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketPine_SouthernRapids",
+        "icon": "PineRapids1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "南部湍流",
+        "en": "Southern Rapids",
+        "ja": "南の急流"
+      },
+      "localization": {
+        "zh": "动作：潜水",
+        "en": "Action: Dive",
+        "ja": "アクション：飛び込む"
+      },
+      "value": {
+        "x": 0,
+        "y": 672
+      }
+    },
+    {
+      "link": {
+        "key": "StreamInvisibleQEE",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 13,
+        "zh": "Invisible Stream",
+        "en": "Invisible Stream",
+        "ja": "Invisible Stream"
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 0,
+        "y": 672
+      }
+    },
+    {
+      "link": {
+        "key": "Agent_Duck1",
+        "icon": "Ducks_Wild",
+        "type": "npc",
+        "zh": "鸭群",
+        "en": "Ducks",
+        "ja": "Ducks"
+      },
+      "localization": {
+        "zh": "Spawn into the World_1",
+        "en": "Spawn into the World_1",
+        "ja": "Spawn into the World_1"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "Agent_Duck1",
+        "icon": "Ducks_Wild",
+        "type": "npc",
+        "zh": "鸭群",
+        "en": "Ducks",
+        "ja": "Ducks"
+      },
+      "localization": {
+        "zh": "If Water Frozen is 673  move to spirit world",
+        "en": "If Water Frozen is 673  move to spirit world",
+        "ja": "If Water Frozen is 673  move to spirit world"
+      },
+      "value": {
+        "x": 673,
+        "y": 10000
+      }
+    },
+    {
+      "link": {
+        "key": "Agent_Duck2",
+        "icon": "Ducks_Wild",
+        "type": "npc",
+        "zh": "鸭群",
+        "en": "Ducks",
+        "ja": "Ducks"
+      },
+      "localization": {
+        "zh": "Spawn into the World_1",
+        "en": "Spawn into the World_1",
+        "ja": "Spawn into the World_1"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "Agent_Duck2",
+        "icon": "Ducks_Wild",
+        "type": "npc",
+        "zh": "鸭群",
+        "en": "Ducks",
+        "ja": "Ducks"
+      },
+      "localization": {
+        "zh": "If Water Frozen is 673  move to spirit world",
+        "en": "If Water Frozen is 673  move to spirit world",
+        "ja": "If Water Frozen is 673  move to spirit world"
+      },
+      "value": {
+        "x": 673,
+        "y": 10000
+      }
+    }
+  ],
+  "triggers": [],
+  "max": 1344,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

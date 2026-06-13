@@ -1,0 +1,583 @@
+{
+  "m_Name": "GarlicEffect",
+  "key": "GarlicEffect",
+  "icon": "ShieldCross",
+  "type": "stat",
+  "zh": "蒜",
+  "en": "Garlic",
+  "ja": "ニンニク",
+  "UniqueIDIndex": 3372,
+  "GameName": {
+    "DefaultText": "Garlic",
+    "Text": "蒜",
+    "zh": "蒜",
+    "en": "Garlic",
+    "ja": "ニンニク"
+  },
+  "Description": {
+    "DefaultText": "Boosts immune system.",
+    "Text": "增强免疫系统。",
+    "zh": "增强免疫系统。",
+    "en": "Boosts immune system.",
+    "ja": "免疫力をブーストする。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "ShieldCross"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Mild Garlic Effect",
+        "Text": "低大蒜效果",
+        "zh": "低大蒜效果",
+        "en": "Mild Garlic Effect",
+        "ja": "弱いニンニク効果"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 33
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Mosquitoes",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊子",
+            "en": "Mosquitoes",
+            "ja": "Mosquitoes",
+            "max": 6,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 1,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Medium Garlic Effect",
+        "Text": "中大蒜效果",
+        "zh": "中大蒜效果",
+        "en": "Medium Garlic Effect",
+        "ja": "普通のニンニク効果"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 34,
+        "m_Y": 66
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 75,
+            "y": 75
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Mosquitoes",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊子",
+            "en": "Mosquitoes",
+            "ja": "Mosquitoes",
+            "max": 6,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 1,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Strong Garlic Effect",
+        "Text": "强大蒜效果",
+        "zh": "强大蒜效果",
+        "en": "Strong Garlic Effect",
+        "ja": "強いニンニク効果"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 67,
+        "m_Y": 100
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 100,
+            "y": 100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Mosquitoes",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊子",
+            "en": "Mosquitoes",
+            "ja": "Mosquitoes",
+            "max": 6,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 1,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "LQ_GarlicWater",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "蒜水",
+        "en": "Garlic Water",
+        "ja": "ニンニク水"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 100
+      }
+    },
+    {
+      "link": {
+        "key": "WildGarlicCooked",
+        "icon": "WildGarlic_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熟野蒜",
+        "en": "Cooked Wild Garlic",
+        "ja": "焼いたワイルドガーリック"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 25,
+        "y": 50
+      }
+    },
+    {
+      "link": {
+        "key": "WildGarlicDried",
+        "icon": "WildGarlic_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "干野蒜",
+        "en": "Dried Wild Garlic",
+        "ja": "乾燥したワイルドガーリック"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 25,
+        "y": 50
+      }
+    },
+    {
+      "link": {
+        "key": "WildGarlicFresh",
+        "icon": "WildGarlic_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "野蒜",
+        "en": "Wild Garlic",
+        "ja": "ワイルドガーリック"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 25,
+        "y": 50
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

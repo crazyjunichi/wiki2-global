@@ -1,0 +1,438 @@
+{
+  "m_Name": "Huntsman_Thirst_Obj2_FindAWaterSource",
+  "key": "Huntsman_Thirst_Obj2_FindAWaterSource",
+  "icon": "",
+  "type": "perk",
+  "zh": "找到水源",
+  "en": "Find a water source",
+  "ja": "Find a water source",
+  "UniqueIDIndex": 3216,
+  "StartUnlocked": false,
+  "ActionObjectives": [],
+  "CardsOnBoardObjectives": [
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "River",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "河流",
+        "en": "River",
+        "ja": "川",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Lake",
+              "Text": "湖泊",
+              "zh": "湖泊",
+              "en": "Lake",
+              "ja": "Lake"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Marsh",
+              "Text": "沼泽",
+              "zh": "沼泽",
+              "en": "Marsh",
+              "ja": "Marsh"
+            }
+          }
+        ],
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 10000
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Common Fish Population",
+            "Text": "Common Fish Population",
+            "zh": "常见鱼种群数量",
+            "en": "Common Fish Population",
+            "ja": "Common Fish Population"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 10000
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Uncommon Fish Population",
+            "Text": "罕见鱼类种群数量",
+            "zh": "罕见鱼类种群数量",
+            "en": "Uncommon Fish Population",
+            "ja": "アンコモンな魚の数"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 3000
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Rare Fish Population",
+            "Text": "珍稀鱼类种群数量",
+            "zh": "珍稀鱼类种群数量",
+            "en": "Rare Fish Population",
+            "ja": "レアな魚の数"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1000
+        },
+        "SpecialDurability4": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "River Type",
+            "Text": "河流类型",
+            "zh": "河流类型",
+            "en": "River Type",
+            "ja": "River Type"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1000
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    },
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "Pond",
+        "icon": "Pond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "池塘",
+        "en": "Pond",
+        "ja": "池",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Frog Population",
+            "Text": "青蛙种群",
+            "zh": "青蛙种群",
+            "en": "Frog Population",
+            "ja": "カエルの数"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 20000
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1000
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    },
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "SpiritShrine_Water_SacredSpring",
+        "icon": "SacredSpring",
+        "type": "card",
+        "CardType": 2,
+        "zh": "神圣之泉",
+        "en": "Sacred Spring",
+        "ja": "聖なる泉",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 288
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 672
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Thirst_Old"
+          },
+          "MaxValue": 288
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 96
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "MitesNot_Old"
+          },
+          "MaxValue": 288
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "FungiNot_Old"
+          },
+          "MaxValue": 288
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Mites_Old"
+          },
+          "MaxValue": 100
+        },
+        "SpecialDurability4": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Spirit",
+            "Text": "Spirit",
+            "zh": "Spirit",
+            "en": "Spirit",
+            "ja": "Spirit"
+          },
+          "OverrideIcon": {
+            "FileName": "AlarmClock_Old"
+          },
+          "MaxValue": 672
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    }
+  ],
+  "TagsOnBoardObjectives": [],
+  "StatsObjectives": [],
+  "TimeObjectives": [],
+  "NestedObjectives": [],
+  "PlayedCharacter": [],
+  "CompleteOnWin": false,
+  "CompleteOnLose": false,
+  "RequiredDifficultyScore": {
+    "m_X": 0,
+    "m_Y": 0
+  },
+  "EditorOnly": false,
+  "NotifyWhenNotChecked": true,
+  "CheckingNotificationDetails": 2,
+  "DebugCompletion": false,
+  "CombatObjectives": [],
+  "ObjectiveDescription": {
+    "DefaultText": "Find a water source",
+    "Text": "找到水源",
+    "zh": "找到水源",
+    "en": "Find a water source",
+    "ja": "Find a water source"
+  },
+  "NotificationSettings": {
+    "Frequency": 0,
+    "PercentThreshold": 0.01
+  },
+  "OnCompleteActions": [],
+  "QuestBehavior": 0,
+  "SteamAchievementID": "",
+  "JournalObjective": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "ExplicitRelatedQuest": null
+}

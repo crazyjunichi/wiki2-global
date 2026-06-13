@@ -1,0 +1,4721 @@
+{
+  "m_Name": "WitchstonePoisoning",
+  "key": "WitchstonePoisoning",
+  "icon": "Skull&Bones",
+  "type": "stat",
+  "zh": "巫石中毒",
+  "en": "Witchstone Poisoning",
+  "ja": "Witchstone Poisoning",
+  "UniqueIDIndex": 4610,
+  "GameName": {
+    "DefaultText": "Witchstone Poisoning",
+    "Text": "巫石中毒",
+    "zh": "巫石中毒",
+    "en": "Witchstone Poisoning",
+    "ja": "Witchstone Poisoning"
+  },
+  "Description": {
+    "DefaultText": "Caused by exposure to witchstone. Causes nausea, headaches, pain, confusion and death.",
+    "Text": "因接触巫石而引起。会导致恶心、头痛、疼痛、迷乱甚至死亡。",
+    "zh": "因接触巫石而引起。会导致恶心、头痛、疼痛、迷乱甚至死亡。",
+    "en": "Caused by exposure to witchstone. Causes nausea, headaches, pain, confusion and death.",
+    "ja": "Caused by exposure to witchstone. Causes nausea, headaches, pain, confusion and death."
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": -2,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Skull&Bones"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Minor Witchstone Poisoning",
+        "Text": "轻度巫石中毒",
+        "zh": "轻度巫石中毒",
+        "en": "Minor Witchstone Poisoning",
+        "ja": "Minor Witchstone Poisoning"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 10,
+        "m_Y": 25
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1.5,
+            "y": 1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 1,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Witchstone Poisoning",
+        "Text": "中度巫石中毒",
+        "zh": "中度巫石中毒",
+        "en": "Moderate Witchstone Poisoning",
+        "ja": "Moderate Witchstone Poisoning"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 26,
+        "m_Y": 50
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stomachache",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "腹痛",
+            "en": "Stomachache",
+            "ja": "Stomachache",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Witchstone Poisoning",
+        "Text": "重度巫石中毒",
+        "zh": "重度巫石中毒",
+        "en": "Severe Witchstone Poisoning",
+        "ja": "Severe Witchstone Poisoning"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 51,
+        "m_Y": 75
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2.5,
+            "y": 2.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stomachache",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "腹痛",
+            "en": "Stomachache",
+            "ja": "Stomachache",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1.5,
+            "y": -1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Confusion",
+            "icon": "Alcohol_Old",
+            "type": "stat",
+            "zh": "迷乱",
+            "en": "Confusion",
+            "ja": "Confusion",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 5,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Critical Witchstone Poisoning",
+        "Text": "严重巫石中毒",
+        "zh": "严重巫石中毒",
+        "en": "Critical Witchstone Poisoning",
+        "ja": "Critical Witchstone Poisoning"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 76,
+        "m_Y": 99
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Headache",
+            "icon": "Headache",
+            "type": "stat",
+            "zh": "头疼",
+            "en": "Headache",
+            "ja": "頭痛",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 5,
+            "y": 5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stomachache",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "腹痛",
+            "en": "Stomachache",
+            "ja": "Stomachache",
+            "max": 48,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Confusion",
+            "icon": "Alcohol_Old",
+            "type": "stat",
+            "zh": "迷乱",
+            "en": "Confusion",
+            "ja": "Confusion",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 6,
+            "y": 6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 500,
+            "y": 500
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 5,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Terminal Witchstone Poisoning",
+        "Text": "致死巫石中毒",
+        "zh": "致死巫石中毒",
+        "en": "Terminal Witchstone Poisoning",
+        "ja": "Terminal Witchstone Poisoning"
+      },
+      "Description": {
+        "DefaultText": "You died of Witchstone Poisoning.",
+        "Text": "你死于巫石中毒。",
+        "zh": "你死于巫石中毒。",
+        "en": "You died of Witchstone Poisoning.",
+        "ja": "You died of Witchstone Poisoning."
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 100,
+        "m_Y": 100
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 5,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": true,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "Cast_MetalArrowBroadhead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属宽头箭头模具",
+        "en": "Metal Broadhead Arrows Mold",
+        "ja": "Metal Broadhead Arrows Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Broadhead Arrows Mold",
+              "Text": "铜宽头箭头模具",
+              "zh": "铜宽头箭头模具",
+              "en": "Copper Broadhead Arrows Mold",
+              "ja": "Copper Broadhead Arrows Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Broadhead Arrows Mold",
+              "Text": "鬼铜宽头箭头模具",
+              "zh": "鬼铜宽头箭头模具",
+              "en": "Ghost Bronze Broadhead Arrows Mold",
+              "ja": "Ghost Bronze Broadhead Arrows Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Broadhead Arrows Mold",
+              "Text": "锡宽头箭头模具",
+              "zh": "锡宽头箭头模具",
+              "en": "Tin Broadhead Arrows Mold",
+              "ja": "Tin Broadhead Arrows Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Broadhead Arrows Mold",
+              "Text": "青铜宽头箭头模具",
+              "zh": "青铜宽头箭头模具",
+              "en": "Tin Bronze Broadhead Arrows Mold",
+              "ja": "Tin Bronze Broadhead Arrows Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Broadhead Arrows Mold",
+              "Text": "白铜宽头箭头模具",
+              "zh": "白铜宽头箭头模具",
+              "en": "White Bronze Broadhead Arrows Mold",
+              "ja": "White Bronze Broadhead Arrows Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalArrowBroadhead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalArrowHead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属箭头模具",
+        "en": "Metal Arrow Heads Mold",
+        "ja": "Metal Arrow Heads Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Arrow Heads Mold",
+              "Text": "铜箭头模具",
+              "zh": "铜箭头模具",
+              "en": "Copper Arrow Heads Mold",
+              "ja": "Copper Arrow Heads Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Arrow Heads Mold",
+              "Text": "鬼铜箭头模具",
+              "zh": "鬼铜箭头模具",
+              "en": "Ghost Bronze Arrow Heads Mold",
+              "ja": "Ghost Bronze Arrow Heads Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Arrow Heads Mold",
+              "Text": "锡箭头模具",
+              "zh": "锡箭头模具",
+              "en": "Tin Arrow Heads Mold",
+              "ja": "Tin Arrow Heads Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Arrow Heads Mold",
+              "Text": "青铜箭头模具",
+              "zh": "青铜箭头模具",
+              "en": "Tin Bronze Arrow Heads Mold",
+              "ja": "Tin Bronze Arrow Heads Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Arrow Heads Mold",
+              "Text": "白铜箭头模具",
+              "zh": "白铜箭头模具",
+              "en": "White Bronze Arrow Heads Mold",
+              "ja": "White Bronze Arrow Heads Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalArrowHead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalAxeHeadCast",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属斧刃头模具",
+        "en": "Metal Axe Head Mold",
+        "ja": "Metal Axe Head Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Axe Head Mold",
+              "Text": "铜斧刃头模具",
+              "zh": "铜斧刃头模具",
+              "en": "Copper Axe Head Mold",
+              "ja": "Copper Axe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Axe Head Mold",
+              "Text": "鬼铜斧刃头模具",
+              "zh": "鬼铜斧刃头模具",
+              "en": "Ghost Bronze Axe Head Mold",
+              "ja": "Ghost Bronze Axe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Axe Head Mold",
+              "Text": "锡斧刃头模具",
+              "zh": "锡斧刃头模具",
+              "en": "Tin Axe Head Mold",
+              "ja": "Tin Axe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Axe Head Mold",
+              "Text": "青铜斧刃头模具",
+              "zh": "青铜斧刃头模具",
+              "en": "Tin Bronze Axe Head Mold",
+              "ja": "Tin Bronze Axe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Axe Head Mold",
+              "Text": "白铜斧刃头模具",
+              "zh": "白铜斧刃头模具",
+              "en": "White Bronze Axe Head Mold",
+              "ja": "White Bronze Axe Head Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalAxeHeadCast_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalButcheringKnifeBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属屠宰刀刃片模具",
+        "en": "Metal Butchering Knife Blade Mold",
+        "ja": "Metal Butchering Knife Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Butchering Knife Blade Mold",
+              "Text": "铜屠宰刀刃片模具",
+              "zh": "铜屠宰刀刃片模具",
+              "en": "Copper Butchering Knife Blade Mold",
+              "ja": "Copper Butchering Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Butchering Knife Blade Mold",
+              "Text": "鬼铜屠宰刀刃片模具",
+              "zh": "鬼铜屠宰刀刃片模具",
+              "en": "Ghost Butchering Knife Blade Mold",
+              "ja": "Ghost Butchering Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Butchering Knife Blade Mold",
+              "Text": "锡屠宰刀刃片模具",
+              "zh": "锡屠宰刀刃片模具",
+              "en": "Tin Butchering Knife Blade Mold",
+              "ja": "Tin Butchering Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Butchering Knife Blade Mold",
+              "Text": "青铜屠宰刀刃片模具",
+              "zh": "青铜屠宰刀刃片模具",
+              "en": "Tin Bronze Butchering Knife Blade Mold",
+              "ja": "Tin Bronze Butchering Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Butchering Knife Blade Mold",
+              "Text": "白铜屠宰刀刃片模具",
+              "zh": "白铜屠宰刀刃片模具",
+              "en": "White Bronze Butchering Knife Blade Mold",
+              "ja": "White Bronze Butchering Knife Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalButcheringKnifeBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalChiselBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属凿刃模具",
+        "en": "Metal Chisel Blade Mold",
+        "ja": "Metal Chisel Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Chisel Blade Mold",
+              "Text": "铜凿刃模具",
+              "zh": "铜凿刃模具",
+              "en": "Copper Chisel Blade Mold",
+              "ja": "Copper Chisel Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Chisel Blade Mold",
+              "Text": "鬼铜凿刃模具",
+              "zh": "鬼铜凿刃模具",
+              "en": "Ghost Bronze Chisel Blade Mold",
+              "ja": "Ghost Bronze Chisel Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Chisel Blade Mold",
+              "Text": "锡凿刃模具",
+              "zh": "锡凿刃模具",
+              "en": "Tin Chisel Blade Mold",
+              "ja": "Tin Chisel Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Chisel Blade Mold",
+              "Text": "青铜凿刃模具",
+              "zh": "青铜凿刃模具",
+              "en": "Tin Bronze Chisel Blade Mold",
+              "ja": "Tin Bronze Chisel Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Chisel Blade Mold",
+              "Text": "白铜凿刃模具",
+              "zh": "白铜凿刃模具",
+              "en": "White Bronze Chisel Blade Mold",
+              "ja": "White Bronze Chisel Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalChiselBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalDrawknifeBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属拉刀刃片模具",
+        "en": "Metal Drawknife Blade Mold",
+        "ja": "Metal Drawknife Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Drawknife Blade Mold",
+              "Text": "铜拉刀刃片模具",
+              "zh": "铜拉刀刃片模具",
+              "en": "Copper Drawknife Blade Mold",
+              "ja": "Copper Drawknife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Drawknife Blade Mold",
+              "Text": "鬼铜拉刀刃片模具",
+              "zh": "鬼铜拉刀刃片模具",
+              "en": "Ghost Bronze Drawknife Blade Mold",
+              "ja": "Ghost Bronze Drawknife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Drawknife Blade Mold",
+              "Text": "锡拉刀刃片模具",
+              "zh": "锡拉刀刃片模具",
+              "en": "Tin Drawknife Blade Mold",
+              "ja": "Tin Drawknife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Drawknife Blade Mold",
+              "Text": "青铜拉刀刃片模具",
+              "zh": "青铜拉刀刃片模具",
+              "en": "Tin Bronze Drawknife Blade Mold",
+              "ja": "Tin Bronze Drawknife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Drawknife Blade Mold",
+              "Text": "白铜拉刀刃片模具",
+              "zh": "白铜拉刀刃片模具",
+              "en": "White Bronze Drawknife Blade Mold",
+              "ja": "White Bronze Drawknife Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalDrawknifeBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalHoeHead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属锄头模具",
+        "en": "Metal Hoe Head Mold",
+        "ja": "Metal Hoe Head Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Hoe Head Mold",
+              "Text": "铜锄头模具",
+              "zh": "铜锄头模具",
+              "en": "Copper Hoe Head Mold",
+              "ja": "Copper Hoe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Hoe Head Mold",
+              "Text": "鬼铜锄头模具",
+              "zh": "鬼铜锄头模具",
+              "en": "Ghost Bronze Hoe Head Mold",
+              "ja": "Ghost Bronze Hoe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Hoe Head Mold",
+              "Text": "锡锄头模具",
+              "zh": "锡锄头模具",
+              "en": "Tin Hoe Head Mold",
+              "ja": "Tin Hoe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Hoe Head Mold",
+              "Text": "青铜锄头模具",
+              "zh": "青铜锄头模具",
+              "en": "Tin Bronze Hoe Head Mold",
+              "ja": "Tin Bronze Hoe Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Hoe Head Mold",
+              "Text": "白铜锄头模具",
+              "zh": "白铜锄头模具",
+              "en": "White Bronze Hoe Head Mold",
+              "ja": "White Bronze Hoe Head Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalHoeHead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalHuntingSpearHead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属狩猎长矛头模具",
+        "en": "Metal Hunting Spearhead Mold",
+        "ja": "Metal Hunting Spearhead Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Hunting Spearhead Mold",
+              "Text": "铜狩猎长矛头模具",
+              "zh": "铜狩猎长矛头模具",
+              "en": "Copper Hunting Spearhead Mold",
+              "ja": "Copper Hunting Spearhead Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Hunting Spearhead Mold",
+              "Text": "鬼铜狩猎长矛头模具",
+              "zh": "鬼铜狩猎长矛头模具",
+              "en": "Ghost Bronze Hunting Spearhead Mold",
+              "ja": "Ghost Bronze Hunting Spearhead Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Hunting Spearhead Mold",
+              "Text": "锡狩猎长矛头模具",
+              "zh": "锡狩猎长矛头模具",
+              "en": "Tin Hunting Spearhead Mold",
+              "ja": "Tin Hunting Spearhead Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Hunting Spearhead Mold",
+              "Text": "青铜狩猎长矛头模具",
+              "zh": "青铜狩猎长矛头模具",
+              "en": "Tin Bronze Hunting Spearhead Mold",
+              "ja": "Tin Bronze Hunting Spearhead Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Hunting Spearhead Mold",
+              "Text": "白铜狩猎长矛头模具",
+              "zh": "白铜狩猎长矛头模具",
+              "en": "White Bronze Hunting Spearhead Mold",
+              "ja": "White Bronze Hunting Spearhead Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalHuntingSpearHead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalKnifeBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属刀刃片模具",
+        "en": "Metal Knife Blade Mold",
+        "ja": "Metal Knife Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Knife Blade Mold",
+              "Text": "铜刀刃片模具",
+              "zh": "铜刀刃片模具",
+              "en": "Copper Knife Blade Mold",
+              "ja": "Copper Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Knife Blade Mold",
+              "Text": "鬼铜刀刃片模具",
+              "zh": "鬼铜刀刃片模具",
+              "en": "Ghost Bronze Knife Blade Mold",
+              "ja": "Ghost Bronze Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Knife Blade Mold",
+              "Text": "锡刀刃片模具",
+              "zh": "锡刀刃片模具",
+              "en": "Tin Knife Blade Mold",
+              "ja": "Tin Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Knife Blade Mold",
+              "Text": "青铜刀刃片模具",
+              "zh": "青铜刀刃片模具",
+              "en": "Tin Bronze Knife Blade Mold",
+              "ja": "Tin Bronze Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Knife Blade Mold",
+              "Text": "白铜刀刃片模具",
+              "zh": "白铜刀刃片模具",
+              "en": "White Bronze Knife Blade Mold",
+              "ja": "White Bronze Knife Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalKnifeBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalMeatHook",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属肉钩模具",
+        "en": "Metal Meat Hook Mold",
+        "ja": "Metal Meat Hook Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Meat Hook Mold",
+              "Text": "铜肉钩模具",
+              "zh": "铜肉钩模具",
+              "en": "Copper Meat Hook Mold",
+              "ja": "Copper Meat Hook Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Meat Hook Mold",
+              "Text": "鬼铜肉钩模具",
+              "zh": "鬼铜肉钩模具",
+              "en": "Ghost Bronze Meat Hook Mold",
+              "ja": "Ghost Bronze Meat Hook Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Meat Hook Mold",
+              "Text": "锡肉钩模具",
+              "zh": "锡肉钩模具",
+              "en": "Tin Meat Hook Mold",
+              "ja": "Tin Meat Hook Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Meat Hook Mold",
+              "Text": "青铜肉钩模具",
+              "zh": "青铜肉钩模具",
+              "en": "Tin Bronze Meat Hook Mold",
+              "ja": "Tin Bronze Meat Hook Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Meat Hook Mold",
+              "Text": "白铜肉钩模具",
+              "zh": "白铜肉钩模具",
+              "en": "White Bronze Meat Hook Mold",
+              "ja": "White Bronze Meat Hook Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalMeatHook_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalScytheBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属大镰刀刃片模具",
+        "en": "Metal Scythe Blade Mold",
+        "ja": "Metal Scythe Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Scythe Blade Mold",
+              "Text": "铜大镰刀刃片模具",
+              "zh": "铜大镰刀刃片模具",
+              "en": "Copper Scythe Blade Mold",
+              "ja": "Copper Scythe Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Scythe Blade Mold",
+              "Text": "鬼铜大镰刀刃片模具",
+              "zh": "鬼铜大镰刀刃片模具",
+              "en": "Ghost Bronze Scythe Blade Mold",
+              "ja": "Ghost Bronze Scythe Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Scythe Blade Mold",
+              "Text": "锡大镰刀刃片模具",
+              "zh": "锡大镰刀刃片模具",
+              "en": "Tin Scythe Blade Mold",
+              "ja": "Tin Scythe Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Scythe Blade Mold",
+              "Text": "青铜大镰刀刃片模具",
+              "zh": "青铜大镰刀刃片模具",
+              "en": "Tin Bronze Scythe Blade Mold",
+              "ja": "Tin Bronze Scythe Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Scythe Blade Mold",
+              "Text": "白铜大镰刀刃片模具",
+              "zh": "白铜大镰刀刃片模具",
+              "en": "White Bronze Scythe Blade Mold",
+              "ja": "White Bronze Scythe Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalScytheBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalShovelHead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属铲子头模具",
+        "en": "Metal Shovel Head Mold",
+        "ja": "Metal Shovel Head Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Shovel Head Mold",
+              "Text": "铜铲子头模具",
+              "zh": "铜铲子头模具",
+              "en": "Copper Shovel Head Mold",
+              "ja": "Copper Shovel Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Shovel Head Mold",
+              "Text": "鬼铜铲子头模具",
+              "zh": "鬼铜铲子头模具",
+              "en": "Ghost Bronze Shovel Head Mold",
+              "ja": "Ghost Bronze Shovel Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Shovel Head Mold",
+              "Text": "锡铲子头模具",
+              "zh": "锡铲子头模具",
+              "en": "Tin Shovel Head Mold",
+              "ja": "Tin Shovel Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Shovel Head Mold",
+              "Text": "青铜铲子头模具",
+              "zh": "青铜铲子头模具",
+              "en": "Tin Bronze Shovel Head Mold",
+              "ja": "Tin Bronze Shovel Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Shovel Head Mold",
+              "Text": "白铜铲子头模具",
+              "zh": "白铜铲子头模具",
+              "en": "White Bronze Shovel Head Mold",
+              "ja": "White Bronze Shovel Head Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalShovelHead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalSickleBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属镰刀刃片模具",
+        "en": "Metal Sickle Blade Mold",
+        "ja": "Metal Sickle Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Sickle Blade Mold",
+              "Text": "铜镰刀刃片模具",
+              "zh": "铜镰刀刃片模具",
+              "en": "Copper Sickle Blade Mold",
+              "ja": "Copper Sickle Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Sickle Blade Mold",
+              "Text": "鬼铜镰刀刃片模具",
+              "zh": "鬼铜镰刀刃片模具",
+              "en": "Ghost Bronze Sickle Blade Mold",
+              "ja": "Ghost Bronze Sickle Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Knife Sickle Mold",
+              "Text": "锡镰刀刃片模具",
+              "zh": "锡镰刀刃片模具",
+              "en": "Tin Knife Sickle Mold",
+              "ja": "Tin Knife Sickle Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Sickle Blade Mold",
+              "Text": "青铜镰刀刃片模具",
+              "zh": "青铜镰刀刃片模具",
+              "en": "Tin Bronze Sickle Blade Mold",
+              "ja": "Tin Bronze Sickle Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Sickle Blade Mold",
+              "Text": "白铜镰刀刃片模具",
+              "zh": "白铜镰刀刃片模具",
+              "en": "White Bronze Sickle Blade Mold",
+              "ja": "White Bronze Sickle Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalSickleBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalSkinningKnifeBlade",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属剥皮刀刃片模具",
+        "en": "Metal Skinning Knife Blade Mold",
+        "ja": "Metal Skinning Knife Blade Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Skinning Knife Blade Mold",
+              "Text": "铜剥皮刀刃片模具",
+              "zh": "铜剥皮刀刃片模具",
+              "en": "Copper Skinning Knife Blade Mold",
+              "ja": "Copper Skinning Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Skinning Knife Blade Mold",
+              "Text": "鬼铜剥皮刀刃片模具",
+              "zh": "鬼铜剥皮刀刃片模具",
+              "en": "Ghost Bronze Skinning Knife Blade Mold",
+              "ja": "Ghost Bronze Skinning Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Skinning Knife Blade Mold",
+              "Text": "锡剥皮刀刃片模具",
+              "zh": "锡剥皮刀刃片模具",
+              "en": "Tin Skinning Knife Blade Mold",
+              "ja": "Tin Skinning Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Skinning Knife Blade Mold",
+              "Text": "青铜剥皮刀刃片模具",
+              "zh": "青铜剥皮刀刃片模具",
+              "en": "Tin Bronze Skinning Knife Blade Mold",
+              "ja": "Tin Bronze Skinning Knife Blade Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Skinning Knife Blade Mold",
+              "Text": "白铜剥皮刀刃片模具",
+              "zh": "白铜剥皮刀刃片模具",
+              "en": "White Bronze Skinning Knife Blade Mold",
+              "ja": "White Bronze Skinning Knife Blade Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalSkinningKnifeBlade_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalSpearHead",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属矛头模具",
+        "en": "Metal Spear Head Mold",
+        "ja": "Metal Spear Head Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Spear Head Mold",
+              "Text": "铜矛头模具",
+              "zh": "铜矛头模具",
+              "en": "Copper Spear Head Mold",
+              "ja": "Copper Spear Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Spear Head Mold",
+              "Text": "鬼铜矛头模具",
+              "zh": "鬼铜矛头模具",
+              "en": "Ghost Bronze Spear Head Mold",
+              "ja": "Ghost Bronze Spear Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Spear Head Mold",
+              "Text": "锡矛头模具",
+              "zh": "锡矛头模具",
+              "en": "Tin Spear Head Mold",
+              "ja": "Tin Spear Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Spear Head Mold",
+              "Text": "青铜矛头模具",
+              "zh": "青铜矛头模具",
+              "en": "Tin Bronze Spear Head Mold",
+              "ja": "Tin Bronze Spear Head Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Spear Head Mold",
+              "Text": "白铜矛头模具",
+              "zh": "白铜矛头模具",
+              "en": "White Bronze Spear Head Mold",
+              "ja": "White Bronze Spear Head Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalSpearHead_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "Cast_MetalSpoonBit",
+        "icon": "CastingMold",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属勺型钻头模具",
+        "en": "Metal Spoon Bit Mold",
+        "ja": "Metal Spoon Bit Mold",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Spoon Bit Mold",
+              "Text": "铜勺型钻头模具",
+              "zh": "铜勺型钻头模具",
+              "en": "Copper Spoon Bit Mold",
+              "ja": "Copper Spoon Bit Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Spoon Bit Mold",
+              "Text": "鬼铜勺型钻头模具",
+              "zh": "鬼铜勺型钻头模具",
+              "en": "Ghost Bronze Spoon Bit Mold",
+              "ja": "Ghost Bronze Spoon Bit Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Spoon Bit Mold",
+              "Text": "锡勺型钻头模具",
+              "zh": "锡勺型钻头模具",
+              "en": "Tin Spoon Bit Mold",
+              "ja": "Tin Spoon Bit Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Spoon Bit Mold",
+              "Text": "青铜勺型钻头模具",
+              "zh": "青铜勺型钻头模具",
+              "en": "Tin Bronze Spoon Bit Mold",
+              "ja": "Tin Bronze Spoon Bit Mold"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Spoon Bit Mold",
+              "Text": "白铜勺型钻头模具",
+              "zh": "白铜勺型钻头模具",
+              "en": "White Bronze Spoon Bit Mold",
+              "ja": "White Bronze Spoon Bit Mold"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      },
+      "key": "Cast_MetalSpoonBit_if Material is Ghost Bronze  ( metal type 110 ) =  increase Witchstone Poisoning"
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "Clay Basin"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayBasin_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "Clay Basin"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayBasin_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayBowl",
+        "icon": "Bowl_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶碗",
+        "en": "Clay Bowl",
+        "ja": "粘土のボウル"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayBowl_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayBowl",
+        "icon": "Bowl_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶碗",
+        "en": "Clay Bowl",
+        "ja": "粘土のボウル"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayBowl_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayCauldron_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayCauldron_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayJar",
+        "icon": "Jar_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小陶罐",
+        "en": "Clay Jar",
+        "ja": "粘土の瓶"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayJar_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayJar",
+        "icon": "Jar_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小陶罐",
+        "en": "Clay Jar",
+        "ja": "粘土の瓶"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayJar_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayStoragePotPlacedUnsealed",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 2,
+        "zh": "未密封的储物罐",
+        "en": "Unsealed Storage Pot",
+        "ja": "未密封の保存壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayStoragePotPlacedUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayStoragePotPlacedUnsealed",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 2,
+        "zh": "未密封的储物罐",
+        "en": "Unsealed Storage Pot",
+        "ja": "未密封の保存壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayStoragePotPlacedUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayStoragePotUnsealed",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "未密封的储物罐",
+        "en": "Unsealed Storage Pot",
+        "ja": "密封されていない保存壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayStoragePotUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayStoragePotUnsealed",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "未密封的储物罐",
+        "en": "Unsealed Storage Pot",
+        "ja": "密封されていない保存壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayStoragePotUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayVase",
+        "icon": "Vase_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶罐",
+        "en": "Clay Vase",
+        "ja": "粘土の壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayVase_Urinate"
+    },
+    {
+      "link": {
+        "key": "ClayVase",
+        "icon": "Vase_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶罐",
+        "en": "Clay Vase",
+        "ja": "粘土の壺"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "ClayVase_Urinate"
+    },
+    {
+      "link": {
+        "key": "CookingPot",
+        "icon": "CookingPot_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烹饪锅",
+        "en": "Cooking Pot",
+        "ja": "料理ポット"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "CookingPot_Urinate"
+    },
+    {
+      "link": {
+        "key": "CookingPot",
+        "icon": "CookingPot_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烹饪锅",
+        "en": "Cooking Pot",
+        "ja": "料理ポット"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "CookingPot_Urinate"
+    },
+    {
+      "link": {
+        "key": "Event_TreeTopBase",
+        "icon": "LandscapeSurvery",
+        "type": "card",
+        "CardType": 3,
+        "zh": "树顶",
+        "en": "Tree Top",
+        "ja": "樹頭"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "Event_TreeTopBase_Urinate"
+    },
+    {
+      "link": {
+        "key": "FermentationBinUnsealed",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "未密封的发酵桶",
+        "en": "Unsealed Fermentation Bin",
+        "ja": "塞いでない発酵箱"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "FermentationBinUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "FermentationBinUnsealed",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "未密封的发酵桶",
+        "en": "Unsealed Fermentation Bin",
+        "ja": "塞いでない発酵箱"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "FermentationBinUnsealed_Urinate"
+    },
+    {
+      "link": {
+        "key": "NettleLeavesBlanchedBoiled",
+        "icon": "Nettle_Leaves",
+        "type": "card",
+        "CardType": 0,
+        "zh": "水焯荨麻",
+        "en": "Blanched Nettles",
+        "ja": "茹でたイラクサ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      },
+      "key": "NettleLeavesBlanchedBoiled_Eat"
+    },
+    {
+      "link": {
+        "key": "NettleLeavesDried",
+        "icon": "Nettle_Leaves",
+        "type": "card",
+        "CardType": 0,
+        "zh": "干荨麻叶",
+        "en": "Dried Nettle Leaves",
+        "ja": "乾燥したイラクサ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      },
+      "key": "NettleLeavesDried_Eat"
+    },
+    {
+      "link": {
+        "key": "NettleLeavesRaw",
+        "icon": "Nettle_Leaves",
+        "type": "card",
+        "CardType": 0,
+        "zh": "荨麻叶",
+        "en": "Nettle Leaves",
+        "ja": "イラクサの葉"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      },
+      "key": "NettleLeavesRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "OLD_ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "Clay Cauldron"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "OLD_ClayCauldron_Urinate"
+    },
+    {
+      "link": {
+        "key": "OLD_ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "Clay Cauldron"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "OLD_ClayCauldron_Urinate"
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "Rain Cistern"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RainCistern_Urinate"
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "Rain Cistern"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RainCistern_Urinate"
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "Rustic Barrel"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RusticBarrelItem_Urinate"
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "Rustic Barrel"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RusticBarrelItem_Urinate"
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "Rustic Barrel"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RusticBarrelLocation_Urinate"
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "Rustic Barrel"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "RusticBarrelLocation_Urinate"
+    },
+    {
+      "link": {
+        "key": "TanningPit",
+        "icon": "TanningPit_Empty",
+        "type": "card",
+        "CardType": 2,
+        "zh": "鞣制坑",
+        "en": "Tanning Pit",
+        "ja": "タンニングピット"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "TanningPit_Urinate"
+    },
+    {
+      "link": {
+        "key": "TanningPit",
+        "icon": "TanningPit_Empty",
+        "type": "card",
+        "CardType": 2,
+        "zh": "鞣制坑",
+        "en": "Tanning Pit",
+        "ja": "タンニングピット"
+      },
+      "localization": {
+        "zh": "动作：排尿",
+        "en": "Action: Urinate",
+        "ja": "アクション：Urinate"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      },
+      "key": "TanningPit_Urinate"
+    },
+    {
+      "link": {
+        "key": "Witchstone",
+        "icon": "Witchstone",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石",
+        "en": "Witchstone",
+        "ja": "Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 25,
+        "y": 13
+      }
+    },
+    {
+      "link": {
+        "key": "Witchstone",
+        "icon": "Witchstone",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石",
+        "en": "Witchstone",
+        "ja": "Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 25,
+        "y": 13
+      }
+    },
+    {
+      "link": {
+        "key": "Witchstone",
+        "icon": "Witchstone",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石",
+        "en": "Witchstone",
+        "ja": "Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 10,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "Witchstone",
+        "icon": "Witchstone",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石",
+        "en": "Witchstone",
+        "ja": "Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 10,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneDead",
+        "icon": "Witchstone_Dead",
+        "type": "card",
+        "CardType": 0,
+        "zh": "衰败巫石",
+        "en": "Dead Witchstone",
+        "ja": "Dead Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 25,
+        "y": 13
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneDead",
+        "icon": "Witchstone_Dead",
+        "type": "card",
+        "CardType": 0,
+        "zh": "衰败巫石",
+        "en": "Dead Witchstone",
+        "ja": "Dead Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 25,
+        "y": 13
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneDead",
+        "icon": "Witchstone_Dead",
+        "type": "card",
+        "CardType": 0,
+        "zh": "衰败巫石",
+        "en": "Dead Witchstone",
+        "ja": "Dead Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 10,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneDead",
+        "icon": "Witchstone_Dead",
+        "type": "card",
+        "CardType": 0,
+        "zh": "衰败巫石",
+        "en": "Dead Witchstone",
+        "ja": "Dead Witchstone"
+      },
+      "localization": {
+        "DefaultText": "Grind",
+        "Text": "研磨",
+        "zh": "研磨",
+        "en": "Grind",
+        "ja": "Grind"
+      },
+      "value": {
+        "x": 10,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneVein",
+        "icon": "WitchstoneVein",
+        "type": "card",
+        "CardType": 2,
+        "zh": "巫石矿脉",
+        "en": "Witchstone Vein",
+        "ja": "Witchstone Vein"
+      },
+      "localization": {
+        "DefaultText": "Mine",
+        "Text": "采掘",
+        "zh": "采掘",
+        "en": "Mine",
+        "ja": "Mine"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "WitchstoneVein_Mine"
+    },
+    {
+      "link": {
+        "key": "WitchstoneVein",
+        "icon": "WitchstoneVein",
+        "type": "card",
+        "CardType": 2,
+        "zh": "巫石矿脉",
+        "en": "Witchstone Vein",
+        "ja": "Witchstone Vein"
+      },
+      "localization": {
+        "DefaultText": "Mine",
+        "Text": "采掘",
+        "zh": "采掘",
+        "en": "Mine",
+        "ja": "Mine"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "WitchstoneVein_Mine"
+    },
+    {
+      "link": {
+        "key": "WitchstoneVeinInfinite",
+        "icon": "WitchstoneVein",
+        "type": "card",
+        "CardType": 2,
+        "zh": "巫石矿脉",
+        "en": "Witchstone Vein",
+        "ja": "Witchstone Vein"
+      },
+      "localization": {
+        "DefaultText": "Mine",
+        "Text": "采掘",
+        "zh": "采掘",
+        "en": "Mine",
+        "ja": "Mine"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "WitchstoneVeinInfinite_Mine"
+    },
+    {
+      "link": {
+        "key": "WitchstoneVeinInfinite",
+        "icon": "WitchstoneVein",
+        "type": "card",
+        "CardType": 2,
+        "zh": "巫石矿脉",
+        "en": "Witchstone Vein",
+        "ja": "Witchstone Vein"
+      },
+      "localization": {
+        "DefaultText": "Mine",
+        "Text": "采掘",
+        "zh": "采掘",
+        "en": "Mine",
+        "ja": "Mine"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "WitchstoneVeinInfinite_Mine"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 灼热",
+        "en": "Status Stage: Scorching Hot",
+        "ja": "ステータス段階: 灼熱の暑さ"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 极端炎热",
+        "en": "Status Stage: Extremely Hot",
+        "ja": "ステータス段階: 熱すぎる！"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 非常热",
+        "en": "Status Stage: Very Hot",
+        "ja": "ステータス段階: すごく熱い"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 热",
+        "en": "Status Stage: Hot",
+        "ja": "ステータス段階: 暑い"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_DeathChamber",
+        "icon": "Tunnel_Overgrown",
+        "type": "card",
+        "CardType": 8,
+        "zh": "死亡洞室",
+        "en": "Death Chamber",
+        "ja": "Death Chamber"
+      },
+      "localization": {
+        "zh": "被动效果：Witchstone Poisoning",
+        "en": "Passive Effect：Witchstone Poisoning",
+        "ja": "パッシブ効果：Witchstone Poisoning"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_EntranceTunnel",
+        "icon": "Tunnel_Shaft",
+        "type": "card",
+        "CardType": 8,
+        "zh": "入口隧洞",
+        "en": "Entrance Tunnel",
+        "ja": "Entrance Tunnel"
+      },
+      "localization": {
+        "zh": "被动效果：Witchstone Poisoning",
+        "en": "Passive Effect：Witchstone Poisoning",
+        "ja": "パッシブ効果：Witchstone Poisoning"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "DeathCrack_OuterChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "外厅洞室",
+        "en": "Outer Chamber",
+        "ja": "Outer Chamber"
+      },
+      "localization": {
+        "zh": "被动效果：Witchstone Poisoning",
+        "en": "Passive Effect：Witchstone Poisoning",
+        "ja": "パッシブ効果：Witchstone Poisoning"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大型预备坩埚",
+        "en": "Large Prepared Crucible",
+        "ja": "Large Prepared Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Copper",
+              "Text": "预备铜",
+              "zh": "预备铜",
+              "en": "Prepared Copper",
+              "ja": "Prepared Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Ghost Bronze",
+              "Text": "预备鬼铜",
+              "zh": "预备鬼铜",
+              "en": "Prepared Ghost Bronze",
+              "ja": "Prepared Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin",
+              "Text": "预备锡",
+              "zh": "预备锡",
+              "en": "Prepared Tin",
+              "ja": "Prepared Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin Bronze",
+              "Text": "预备青铜",
+              "zh": "预备青铜",
+              "en": "Prepared Tin Bronze",
+              "ja": "Prepared Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared White Bronze",
+              "Text": "预备白铜",
+              "zh": "预备白铜",
+              "en": "Prepared White Bronze",
+              "ja": "Prepared White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大型预备坩埚",
+        "en": "Large Prepared Crucible",
+        "ja": "Large Prepared Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Copper",
+              "Text": "预备铜",
+              "zh": "预备铜",
+              "en": "Prepared Copper",
+              "ja": "Prepared Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Ghost Bronze",
+              "Text": "预备鬼铜",
+              "zh": "预备鬼铜",
+              "en": "Prepared Ghost Bronze",
+              "ja": "Prepared Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin",
+              "Text": "预备锡",
+              "zh": "预备锡",
+              "en": "Prepared Tin",
+              "ja": "Prepared Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin Bronze",
+              "Text": "预备青铜",
+              "zh": "预备青铜",
+              "en": "Prepared Tin Bronze",
+              "ja": "Prepared Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared White Bronze",
+              "Text": "预备白铜",
+              "zh": "预备白铜",
+              "en": "Prepared White Bronze",
+              "ja": "Prepared White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小型预备坩埚",
+        "en": "Small Prepared Crucible",
+        "ja": "Small Prepared Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Copper",
+              "Text": "预备铜",
+              "zh": "预备铜",
+              "en": "Prepared Copper",
+              "ja": "Prepared Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Ghost Bronze",
+              "Text": "预备鬼铜",
+              "zh": "预备鬼铜",
+              "en": "Prepared Ghost Bronze",
+              "ja": "Prepared Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin",
+              "Text": "预备锡",
+              "zh": "预备锡",
+              "en": "Prepared Tin",
+              "ja": "Prepared Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin Bronze",
+              "Text": "预备青铜",
+              "zh": "预备青铜",
+              "en": "Prepared Tin Bronze",
+              "ja": "Prepared Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared White Bronze",
+              "Text": "预备白铜",
+              "zh": "预备白铜",
+              "en": "Prepared White Bronze",
+              "ja": "Prepared White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小型预备坩埚",
+        "en": "Small Prepared Crucible",
+        "ja": "Small Prepared Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Copper",
+              "Text": "预备铜",
+              "zh": "预备铜",
+              "en": "Prepared Copper",
+              "ja": "Prepared Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Ghost Bronze",
+              "Text": "预备鬼铜",
+              "zh": "预备鬼铜",
+              "en": "Prepared Ghost Bronze",
+              "ja": "Prepared Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin",
+              "Text": "预备锡",
+              "zh": "预备锡",
+              "en": "Prepared Tin",
+              "ja": "Prepared Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared Tin Bronze",
+              "Text": "预备青铜",
+              "zh": "预备青铜",
+              "en": "Prepared Tin Bronze",
+              "ja": "Prepared Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Prepared White Bronze",
+              "Text": "预备白铜",
+              "zh": "预备白铜",
+              "en": "Prepared White Bronze",
+              "ja": "Prepared White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleSmallRefinedCopper",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "预备精炼铜",
+        "en": "Copper Prepared for Refining",
+        "ja": "Copper Prepared for Refining"
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "PreparedMetalCrucibleSmallRefinedCopper",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "预备精炼铜",
+        "en": "Copper Prepared for Refining",
+        "ja": "Copper Prepared for Refining"
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "SolidifiedMetalCrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大型凝固坩埚",
+        "en": "Large Solidified Crucible",
+        "ja": "Large Solidified Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Copper",
+              "Text": "凝固铜",
+              "zh": "凝固铜",
+              "en": "Solidified Copper",
+              "ja": "Solidified Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Ghost Bronze",
+              "Text": "凝固鬼铜",
+              "zh": "凝固鬼铜",
+              "en": "Solidified Ghost Bronze",
+              "ja": "Solidified Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin",
+              "Text": "凝固锡",
+              "zh": "凝固锡",
+              "en": "Solidified Tin",
+              "ja": "Solidified Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin Bronze",
+              "Text": "凝固青铜",
+              "zh": "凝固青铜",
+              "en": "Solidified Tin Bronze",
+              "ja": "Solidified Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified White Bronze",
+              "Text": "凝固白铜",
+              "zh": "凝固白铜",
+              "en": "Solidified White Bronze",
+              "ja": "Solidified White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "SolidifiedMetalCrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大型凝固坩埚",
+        "en": "Large Solidified Crucible",
+        "ja": "Large Solidified Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Copper",
+              "Text": "凝固铜",
+              "zh": "凝固铜",
+              "en": "Solidified Copper",
+              "ja": "Solidified Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Ghost Bronze",
+              "Text": "凝固鬼铜",
+              "zh": "凝固鬼铜",
+              "en": "Solidified Ghost Bronze",
+              "ja": "Solidified Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin",
+              "Text": "凝固锡",
+              "zh": "凝固锡",
+              "en": "Solidified Tin",
+              "ja": "Solidified Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin Bronze",
+              "Text": "凝固青铜",
+              "zh": "凝固青铜",
+              "en": "Solidified Tin Bronze",
+              "ja": "Solidified Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified White Bronze",
+              "Text": "凝固白铜",
+              "zh": "凝固白铜",
+              "en": "Solidified White Bronze",
+              "ja": "Solidified White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "SolidifiedMetalCrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小型凝固坩埚",
+        "en": "Small Solidified Crucible",
+        "ja": "Small Solidified Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Copper",
+              "Text": "凝固铜",
+              "zh": "凝固铜",
+              "en": "Solidified Copper",
+              "ja": "Solidified Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Ghost Bronze",
+              "Text": "凝固鬼铜",
+              "zh": "凝固鬼铜",
+              "en": "Solidified Ghost Bronze",
+              "ja": "Solidified Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin",
+              "Text": "凝固锡",
+              "zh": "凝固锡",
+              "en": "Solidified Tin",
+              "ja": "Solidified Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin Bronze",
+              "Text": "凝固青铜",
+              "zh": "凝固青铜",
+              "en": "Solidified Tin Bronze",
+              "ja": "Solidified Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified White Bronze",
+              "Text": "凝固白铜",
+              "zh": "凝固白铜",
+              "en": "Solidified White Bronze",
+              "ja": "Solidified White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "SolidifiedMetalCrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小型凝固坩埚",
+        "en": "Small Solidified Crucible",
+        "ja": "Small Solidified Crucible",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Copper",
+              "Text": "凝固铜",
+              "zh": "凝固铜",
+              "en": "Solidified Copper",
+              "ja": "Solidified Copper"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Ghost Bronze",
+              "Text": "凝固鬼铜",
+              "zh": "凝固鬼铜",
+              "en": "Solidified Ghost Bronze",
+              "ja": "Solidified Ghost Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin",
+              "Text": "凝固锡",
+              "zh": "凝固锡",
+              "en": "Solidified Tin",
+              "ja": "Solidified Tin"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified Tin Bronze",
+              "Text": "凝固青铜",
+              "zh": "凝固青铜",
+              "en": "Solidified Tin Bronze",
+              "ja": "Solidified Tin Bronze"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "Solidified White Bronze",
+              "Text": "凝固白铜",
+              "zh": "凝固白铜",
+              "en": "Solidified White Bronze",
+              "ja": "Solidified White Bronze"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "en": "Passive Effect：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15",
+        "ja": "パッシブ効果：1100+ Furnace + Ghost Bronze + Not WIndy = Witchstone Toxicity +15"
+      },
+      "value": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "link": {
+        "key": "Witchstone",
+        "icon": "Witchstone",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石",
+        "en": "Witchstone",
+        "ja": "Witchstone"
+      },
+      "localization": {
+        "zh": "被动效果：Witchstone poisoning",
+        "en": "Passive Effect：Witchstone poisoning",
+        "ja": "パッシブ効果：Witchstone poisoning"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "WitchstoneDust",
+        "icon": "Witchstone_Dust",
+        "type": "card",
+        "CardType": 0,
+        "zh": "巫石粉末",
+        "en": "Witchstone Dust",
+        "ja": "Witchstone Dust"
+      },
+      "localization": {
+        "zh": "被动效果：Witchstone poisoning",
+        "en": "Passive Effect：Witchstone poisoning",
+        "ja": "パッシブ効果：Witchstone poisoning"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Appleweed_Item"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

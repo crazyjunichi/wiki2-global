@@ -1,0 +1,327 @@
+{
+  "m_Name": "AffectMushrooms",
+  "key": "AffectMushrooms",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "SimpleItemPool": [
+    {
+      "Target": {
+        "Target": {
+          "key": "ForestCapsFresh",
+          "icon": "ForestCaps_Item",
+          "type": "card",
+          "CardType": 0,
+          "zh": "森林帽",
+          "en": "Forest Caps",
+          "ja": "森キノコ",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 240
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Drying",
+              "Text": "干燥中……",
+              "zh": "干燥中……",
+              "en": "Drying",
+              "ja": "乾燥中"
+            },
+            "OverrideIcon": {
+              "FileName": "Hammer"
+            },
+            "MaxValue": 24
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Temperature",
+              "Text": "温度",
+              "zh": "温度",
+              "en": "Temperature",
+              "ja": "温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Growth",
+              "Text": "成长度",
+              "zh": "成长度",
+              "en": "Growth",
+              "ja": "成長"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Cook",
+              "Text": "烹饪",
+              "zh": "烹饪",
+              "en": "Cook",
+              "ja": "料理する"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Boil",
+              "Text": "烹煮",
+              "zh": "烹煮",
+              "en": "Boil",
+              "ja": "茹でる"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 1
+          }
+        },
+        "RequiredDurabilities": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      "Quantity": {
+        "x": 1,
+        "y": 3
+      }
+    }
+  ],
+  "ItemModification": {
+    "ModType": 1,
+    "TransformInto": null,
+    "TransformToLiquidQuantity": 0,
+    "TransferSpoilage": false,
+    "TransferUsage": false,
+    "TransferFuel": false,
+    "TransferCharges": false,
+    "TransferSpecial1": false,
+    "TransferSpecial2": false,
+    "TransferSpecial3": false,
+    "TransferSpecial4": false,
+    "TransferInventory": false,
+    "TransferSavedIngredients": false,
+    "AverageGivenAndReceivingCards": false,
+    "TransferLiquid": false,
+    "SpoilageTransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "UsageTransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "FuelTransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "ProgressTransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "Special1TransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "Special2TransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "Special3TransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "Special4TransferScale": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "ModifyDurability": false,
+    "ModifyLiquid": false,
+    "DropOnDestroyList": false,
+    "LiquidEffectScaling": 0,
+    "AddFlavoursFromTargetCard": false,
+    "AddFlavoursFromOtherCard": false,
+    "AddSpicesFromTargetCard": false,
+    "AddSpicesFromOtherCard": false,
+    "AddedFlavours": [],
+    "AddedSpiceTags": [],
+    "SpoilageChange": {
+      "x": 100,
+      "y": 100
+    },
+    "GetSpoilageFromOtherCard": false,
+    "UsageChange": {
+      "x": 0,
+      "y": 0
+    },
+    "GetUsageFromOtherCard": false,
+    "FuelChange": {
+      "x": 0,
+      "y": 0
+    },
+    "GetFuelFromOtherCard": false,
+    "ChargesChange": {
+      "x": 0,
+      "y": 0
+    },
+    "GetProgressFromOtherCard": false,
+    "LiquidQuantityChange": {
+      "x": 0,
+      "y": 0
+    },
+    "Special1Change": {
+      "x": 0,
+      "y": 0
+    },
+    "GetSpecial1FromOtherCard": false,
+    "Special2Change": {
+      "x": 0,
+      "y": 0
+    },
+    "GetSpecial2FromOtherCard": false,
+    "Special3Change": {
+      "x": 0,
+      "y": 0
+    },
+    "GetSpecial3FromOtherCard": false,
+    "Special4Change": {
+      "x": 0,
+      "y": 0
+    },
+    "GetSpecial4FromOtherCard": false,
+    "StatInterpolatedDurabilityChanges": [],
+    "DurabilityInterpolatedTransfers": [],
+    "ScaleChangesPerPortionOfLiquid": {
+      "Active": false,
+      "FloatValue": 0
+    },
+    "UseOtherCardForLiquidQuantity": false
+  },
+  "SearchPriority": 0,
+  "Containers": {
+    "CanLookInContainers": false,
+    "ContainerRequiredDurabilities": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "AllowedContainers": [],
+    "NOTAllowedContainers": []
+  },
+  "CanAffectPlayerHand": false
+}

@@ -1,0 +1,973 @@
+{
+  "m_Name": "SaturationSugar",
+  "key": "SaturationSugar",
+  "icon": "",
+  "type": "stat",
+  "zh": "糖厌倦度",
+  "en": "Sugar Saturation",
+  "ja": "砂糖の飽き",
+  "UniqueIDIndex": 4054,
+  "GameName": {
+    "DefaultText": "Sugar Saturation",
+    "Text": "糖厌倦度",
+    "zh": "糖厌倦度",
+    "en": "Sugar Saturation",
+    "ja": "砂糖の飽き"
+  },
+  "Description": {
+    "DefaultText": "Shows how tired you are of eating sugar. Lowers your wellbeing and gets you nauseous if it gets too high.",
+    "Text": "显示你对糖有多厌倦。如果过高，会降低你的幸福度，并让你感到恶心。",
+    "zh": "显示你对糖有多厌倦。如果过高，会降低你的幸福度，并让你感到恶心。",
+    "en": "Shows how tired you are of eating sugar. Lowers your wellbeing and gets you nauseous if it gets too high.",
+    "ja": "砂糖にどのくらい飽きたのかを示す。幸福度が落ち、上がりすぎると吐き気がする。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 288
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.7568628,
+    "g": 0.7490196,
+    "b": 0.7372549,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "I'm a bit tired of eating sweet things...",
+        "Text": "我有点厌倦吃甜食了……",
+        "zh": "我有点厌倦吃甜食了……",
+        "en": "I'm a bit tired of eating sweet things...",
+        "ja": "甘い物以外のものが食べたいなぁ・・・"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Powder_Fairyweed"
+      },
+      "ValueRange": {
+        "m_X": 97,
+        "m_Y": 240
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "I'm so sick of eating sweet things...",
+        "Text": "我讨厌吃甜食……",
+        "zh": "我讨厌吃甜食……",
+        "en": "I'm so sick of eating sweet things...",
+        "ja": "甘い物はもう嫌だ・・・"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Powder_Fairyweed"
+      },
+      "ValueRange": {
+        "m_X": 241,
+        "m_Y": 288
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.75,
+            "y": -0.75
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "BeeHoneycomb",
+        "icon": "BeeHoneycomb",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Honeycomb",
+        "en": "Honeycomb",
+        "ja": "Honeycomb"
+      },
+      "localization": {
+        "zh": "动作：Eat",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 200,
+        "y": 200
+      },
+      "key": "BeeHoneycomb_Eat"
+    },
+    {
+      "link": {
+        "key": "LQ_BillberryMust",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "越橘汁",
+        "en": "Billberry Must",
+        "ja": "ビルベリーマスト"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_BillberrySyrup",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "越橘糖浆",
+        "en": "Billberry Syrup",
+        "ja": "ビルベリーのシロップ"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_BillberryWine",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "越橘酒",
+        "en": "Billberry Wine",
+        "ja": "Billberry Wine",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 15,
+                "y": 10000
+              }
+            },
+            "Name": {
+              "DefaultText": "Strong Billberry Wine",
+              "Text": "烈越橘酒",
+              "zh": "烈越橘酒",
+              "en": "Strong Billberry Wine",
+              "ja": "Strong Billberry Wine"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_BirchSap",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "白桦树汁",
+        "en": "Birch Sap",
+        "ja": "シラカバの樹液"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_BirchSyrup",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "白桦糖浆",
+        "en": "Birch Syrup",
+        "ja": "シラカバのシロップ"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_BirchWine",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "白桦酒",
+        "en": "Birch Wine",
+        "ja": "シラカバのワイン",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 15,
+                "y": 10000
+              }
+            },
+            "Name": {
+              "DefaultText": "Strong Birch Wine",
+              "Text": "烈白桦酒",
+              "zh": "烈白桦酒",
+              "en": "Strong Birch Wine",
+              "ja": "Strong Birch Wine"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_RyeAle",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "黑麦艾尔啤酒",
+        "en": "Rye Ale",
+        "ja": "ライ麦のエール",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 15,
+                "y": 10000
+              }
+            },
+            "Name": {
+              "DefaultText": "Strong Rye Ale",
+              "Text": "烈黑麦艾尔啤酒",
+              "zh": "烈黑麦艾尔啤酒",
+              "en": "Strong Rye Ale",
+              "ja": "Strong Rye Ale"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_RyeSyrup",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "黑麦糖浆",
+        "en": "Rye Syrup",
+        "ja": "ライ麦シロップ"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_RyeWort",
+        "icon": "",
+        "type": "card",
+        "CardType": 9,
+        "zh": "黑麦汁",
+        "en": "Rye Wort",
+        "ja": "Rye Wort"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpringberryMust",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "春莓汁",
+        "en": "Springberry Must",
+        "ja": "スプリングベリーマスト"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpringberrySyrup",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "春莓糖浆",
+        "en": "Springberry Syrup",
+        "ja": "スプリングベリーシロップ"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpringberryWine",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "春莓酒",
+        "en": "Springberry Wine",
+        "ja": "スプリングベリーワイン",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 15,
+                "y": 10000
+              }
+            },
+            "Name": {
+              "DefaultText": "Strong Springberry Wine",
+              "Text": "烈春莓酒",
+              "zh": "烈春莓酒",
+              "en": "Strong Springberry Wine",
+              "ja": "Strong Springberry Wine"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_WheatAle",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "小麦艾尔啤酒",
+        "en": "Wheat Ale",
+        "ja": "Wheat Ale",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 15,
+                "y": 10000
+              }
+            },
+            "Name": {
+              "DefaultText": "Strong Wheat Ale",
+              "Text": "烈小麦艾尔啤酒",
+              "zh": "烈小麦艾尔啤酒",
+              "en": "Strong Wheat Ale",
+              "ja": "Strong Wheat Ale"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：Drink"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_WheatSyrup",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "小麦糖浆",
+        "en": "Wheat Syrup",
+        "ja": "Wheat Syrup"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：Drink"
+      },
+      "value": {
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_WheatWort",
+        "icon": "",
+        "type": "card",
+        "CardType": 9,
+        "zh": "麦芽汁",
+        "en": "Wheat Wort",
+        "ja": "Wheat Wort"
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：Drink"
+      },
+      "value": {
+        "x": 0,
+        "y": 576
+      }
+    },
+    {
+      "link": {
+        "key": "Sugar",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Sugar",
+        "en": "Sugar",
+        "ja": "Sugar"
+      },
+      "localization": {
+        "zh": "动作：Eat",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 200,
+        "y": 200
+      },
+      "key": "Sugar_Eat"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "AppleWeedEffect",
+        "icon": "Appleweed_Item",
+        "type": "stat",
+        "zh": "柰草效果",
+        "en": "Appleweed Effect",
+        "ja": "アップルウィード効果",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 弱柰草效果",
+        "en": "Status Stage: Weak Appleweed Effect",
+        "ja": "ステータス段階: 弱いアップルウィード効果"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "AppleWeedEffect",
+        "icon": "Appleweed_Item",
+        "type": "stat",
+        "zh": "柰草效果",
+        "en": "Appleweed Effect",
+        "ja": "アップルウィード効果",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强柰草效果",
+        "en": "Status Stage: Strong Appleweed Effect",
+        "ja": "ステータス段階: 強いアップルウィード効果"
+      },
+      "value": {
+        "x": -1.5,
+        "y": -1.5
+      }
+    },
+    {
+      "link": {
+        "key": "GingerEffect",
+        "icon": "",
+        "type": "stat",
+        "zh": "姜效果",
+        "en": "Ginger",
+        "ja": "生姜",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 低剂量",
+        "en": "Status Stage: Small Dose",
+        "ja": "ステータス段階: 少量"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "GingerEffect",
+        "icon": "",
+        "type": "stat",
+        "zh": "姜效果",
+        "en": "Ginger",
+        "ja": "生姜",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高剂量",
+        "en": "Status Stage: High Dose",
+        "ja": "ステータス段階: 大量"
+      },
+      "value": {
+        "x": -1,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 饥饿",
+        "en": "Status Stage: Hungry",
+        "ja": "ステータス段階: お腹空いた"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 非常饿",
+        "en": "Status Stage: Very Hungry",
+        "ja": "ステータス段階: かなりお腹空いた"
+      },
+      "value": {
+        "x": -8,
+        "y": -8
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极度饥饿",
+        "en": "Status Stage: Ravenous",
+        "ja": "ステータス段階: 空腹状態"
+      },
+      "value": {
+        "x": -12,
+        "y": -12
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_2_4_HighAppetite",
+        "icon": "Appetite",
+        "zh": "胃口大开",
+        "en": "High Appetite",
+        "ja": "大食い",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_2_4_LowAppetite",
+        "icon": "Appetite",
+        "zh": "食欲不振",
+        "en": "Low Appetite",
+        "ja": "小食",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_4_9_SweetTooth",
+        "icon": "Flour_Rye",
+        "zh": "甜品脑袋",
+        "en": "Sweet Tooth",
+        "ja": "甘党",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 288,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

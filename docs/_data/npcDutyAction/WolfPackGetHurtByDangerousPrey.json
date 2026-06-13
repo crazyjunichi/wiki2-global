@@ -1,0 +1,74 @@
+{
+  "m_Name": "WolfPackGetHurtByDangerousPrey",
+  "key": "WolfPackGetHurtByDangerousPrey",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_WolfPack",
+        "icon": "Wolf_Pack",
+        "type": "npc",
+        "zh": "狼群",
+        "en": "Wolf Pack",
+        "ja": "狼の群れ"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentBlood",
+        "key": "AgentBlood",
+        "type": "durability",
+        "zh": "血量",
+        "en": "AgentBlood",
+        "ja": "Agent Stamina",
+        "GameName": {
+          "DefaultText": "Agent Stamina",
+          "Text": "血量",
+          "zh": "血量",
+          "en": "AgentBlood",
+          "ja": "Agent Stamina"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 10000
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "血量",
+        "desc": "Agent Stamina",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "f2c3d787896b6874c9974806acbe757a",
+        "UniqueIDIndex": 2806
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": -55,
+        "y": -65
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": false,
+    "IntValue": 0
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "m_Name": "BugBites",
+  "key": "BugBites",
+  "icon": "",
+  "type": "stat",
+  "zh": "蚊虫叮咬",
+  "en": "Bug Bites",
+  "ja": "虫刺され",
+  "UniqueIDIndex": 3148,
+  "GameName": {
+    "DefaultText": "Bug Bites",
+    "Text": "蚊虫叮咬",
+    "zh": "蚊虫叮咬",
+    "en": "Bug Bites",
+    "ja": "虫刺され"
+  },
+  "Description": {
+    "DefaultText": "Caused by spending time in areas with high bug populations. They give pain and increase chances of catching diseases.",
+    "Text": "由防护不足的情况下在高密度蚊虫地区停留时导致。它们会给你带来疼痛并增加感染疾病的概率。",
+    "zh": "由防护不足的情况下在高密度蚊虫地区停留时导致。它们会给你带来疼痛并增加感染疾病的概率。",
+    "en": "Caused by spending time in areas with high bug populations. They give pain and increase chances of catching diseases.",
+    "ja": "虫が多いエリアに行くとできる。痛く、病気にかかる可能性が上がる。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 384
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Bug Bites",
+        "Text": "蚊虫叮咬",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Bites",
+        "ja": "虫刺され"
+      },
+      "Description": {
+        "DefaultText": "Itches...",
+        "Text": "痒……",
+        "zh": "痒……",
+        "en": "Itches...",
+        "ja": "かゆい・・・"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "BugBites_Old"
+      },
+      "ValueRange": {
+        "m_X": 96,
+        "m_Y": 192
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 25,
+            "y": 25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Bug Bites",
+        "Text": "蚊虫叮咬",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Bites",
+        "ja": "虫刺され"
+      },
+      "Description": {
+        "DefaultText": "I'm covered in bug bites. They're eating me alive.",
+        "Text": "我全身到处都是被虫子咬的伤口。它们仿佛要吃了我。",
+        "zh": "我全身到处都是被虫子咬的伤口。它们仿佛要吃了我。",
+        "en": "I'm covered in bug bites. They're eating me alive.",
+        "ja": "虫に刺された跡だらけだ。まるで食べられてるみたいだ・・・"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "BugBites_Old"
+      },
+      "ValueRange": {
+        "m_X": 193,
+        "m_Y": 288
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -20,
+            "y": -20
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Bug Bites",
+        "Text": "严重的蚊虫叮咬",
+        "zh": "严重的蚊虫叮咬",
+        "en": "Severe Bug Bites",
+        "ja": "ひどい虫刺され"
+      },
+      "Description": {
+        "DefaultText": "My skin is covered in bug bites. It's not looking good",
+        "Text": "我的皮肤上全是虫子咬的伤口。很不舒服。",
+        "zh": "我的皮肤上全是虫子咬的伤口。很不舒服。",
+        "en": "My skin is covered in bug bites. It's not looking good",
+        "ja": "虫に刺された跡だらけだ。嫌だな・・・"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "BugBites_Old"
+      },
+      "ValueRange": {
+        "m_X": 289,
+        "m_Y": 384
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 100,
+            "y": 100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -30,
+            "y": -30
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "BedImprovised",
+        "icon": "LeafBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "简易床",
+        "en": "Improvised Bed",
+        "ja": "手作りベッド"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedImprovised_Nap"
+    },
+    {
+      "link": {
+        "key": "BedImprovised",
+        "icon": "LeafBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "简易床",
+        "en": "Improvised Bed",
+        "ja": "手作りベッド"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedImprovised_Sleep"
+    },
+    {
+      "link": {
+        "key": "BedLog",
+        "icon": "LogBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "原木床",
+        "en": "Log Bed",
+        "ja": "丸太のベッド"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：仮眠"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedLog_Nap"
+    },
+    {
+      "link": {
+        "key": "BedLog",
+        "icon": "LogBed",
+        "type": "card",
+        "CardType": 2,
+        "zh": "原木床",
+        "en": "Log Bed",
+        "ja": "丸太のベッド"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedLog_Sleep"
+    },
+    {
+      "link": {
+        "key": "BedRoll",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "睡袋",
+        "en": "Bedroll",
+        "ja": "寝袋"
+      },
+      "localization": {
+        "zh": "动作：小憩",
+        "en": "Action: Nap",
+        "ja": "アクション：仮眠"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedRoll_Nap"
+    },
+    {
+      "link": {
+        "key": "BedRoll",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "睡袋",
+        "en": "Bedroll",
+        "ja": "寝袋"
+      },
+      "localization": {
+        "zh": "动作：睡觉",
+        "en": "Action: Sleep",
+        "ja": "アクション：寝る"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      },
+      "key": "BedRoll_Sleep"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "BrimstoneGelProtection",
+        "icon": "",
+        "type": "stat",
+        "zh": "硫磺膏保护",
+        "en": "Brimstone Gel Protection",
+        "ja": "硫黄の保護ジェル",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 硫磺膏已涂抹",
+        "en": "Status Stage: Aloe Vera Applied",
+        "ja": "ステータス段階: アロエベラを塗った"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "BugDamage",
+        "icon": "Bugs_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Damage",
+        "ja": "虫からのダメージ",
+        "max": 5,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中等程度的蚊虫叮咬",
+        "en": "Status Stage: Moderate Bug Damage",
+        "ja": "ステータス段階: 中程度の虫のダメージ"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "BugDamage",
+        "icon": "Bugs_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Damage",
+        "ja": "虫からのダメージ",
+        "max": 5,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 较高的蚊虫叮咬",
+        "en": "Status Stage: High Bug Damage",
+        "ja": "ステータス段階: 大きい虫のダメージ"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "BugDamage",
+        "icon": "Bugs_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Damage",
+        "ja": "虫からのダメージ",
+        "max": 5,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 很高的蚊虫叮咬",
+        "en": "Status Stage: Very High Bug Damage",
+        "ja": "ステータス段階: かなり大きい虫のダメージ"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "BugDamage",
+        "icon": "Bugs_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Damage",
+        "ja": "虫からのダメージ",
+        "max": 5,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极高的蚊虫叮咬",
+        "en": "Status Stage: Extreme Bug Damage",
+        "ja": "ステータス段階: 深刻な虫のダメージ"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 384,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

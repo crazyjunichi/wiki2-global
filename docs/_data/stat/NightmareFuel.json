@@ -1,0 +1,844 @@
+{
+  "m_Name": "NightmareFuel",
+  "key": "NightmareFuel",
+  "icon": "Darkness",
+  "type": "stat",
+  "zh": "梦魇燃料",
+  "en": "Nightmare Fuel",
+  "ja": "悪夢の燃料",
+  "UniqueIDIndex": 3778,
+  "GameName": {
+    "DefaultText": "Nightmare Fuel",
+    "Text": "梦魇燃料",
+    "zh": "梦魇燃料",
+    "en": "Nightmare Fuel",
+    "ja": "悪夢の燃料"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 100,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.07450981,
+    "g": 0.909804,
+    "b": 0.6117647,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Darkness"
+  },
+  "Statuses": [],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "AcornsBlackEdibleRaw",
+        "icon": "Acorns",
+        "type": "card",
+        "CardType": 0,
+        "zh": "可食用的黑橡子",
+        "en": "Edible Black Acorns",
+        "ja": "Edible Black Acorns"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "AcornsBlackEdibleRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "AcornsBlackRoasted",
+        "icon": "Acorns",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烤黑橡子",
+        "en": "Roasted Black Acorns",
+        "ja": "Roasted Black Acorns"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "AcornsBlackRoasted_Eat"
+    },
+    {
+      "link": {
+        "key": "ClayBarrow",
+        "icon": "Barrow",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粘土坑",
+        "en": "Clay Barrow",
+        "ja": "粘土の土墳"
+      },
+      "localization": {
+        "zh": "时间 降为零",
+        "en": "Spoilage Depleted",
+        "ja": " ゼロ"
+      },
+      "value": {
+        "x": 100,
+        "y": 100
+      },
+      "key": "ClayBarrow_"
+    },
+    {
+      "link": {
+        "key": "Event_Nightmare",
+        "icon": "Spirit_VoidDark",
+        "type": "card",
+        "CardType": 3,
+        "zh": "梦魇！",
+        "en": "Nightmare!",
+        "ja": "悪夢！"
+      },
+      "localization": {
+        "zh": "动作：尝试平静下来……",
+        "en": "Action: Try to calm down...",
+        "ja": "アクション：落ち着こう・・・"
+      },
+      "value": {
+        "x": 48,
+        "y": 48
+      },
+      "key": "Event_Nightmare_Try to calm down..."
+    },
+    {
+      "link": {
+        "key": "Event_NightTerror",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 3,
+        "zh": "夜惧！",
+        "en": "Night Terror!",
+        "ja": "夜の恐怖！"
+      },
+      "localization": {
+        "zh": "动作：尝试平静下来……",
+        "en": "Action: Try to calm down...",
+        "ja": "アクション：落ち着こう・・・"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "Event_NightTerror_Try to calm down..."
+    },
+    {
+      "link": {
+        "key": "Event_NightTerror",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 3,
+        "zh": "夜惧！",
+        "en": "Night Terror!",
+        "ja": "夜の恐怖！"
+      },
+      "localization": {
+        "zh": "动作：融合",
+        "en": "Action: Bind it",
+        "ja": "アクション：バインドする"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "Event_NightTerror_Bind it"
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritFear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 9,
+        "zh": "恐惧精魄",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "LQ_SpiritFear_Blessing"
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritFear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 9,
+        "zh": "恐惧精魄",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "DefaultText": "Call Nightmare",
+        "Text": "召唤梦魇",
+        "zh": "召唤梦魇",
+        "en": "Call Nightmare",
+        "ja": "悪夢を呼ぶ"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "LQ_SpiritFear_Call Nightmare"
+    },
+    {
+      "link": {
+        "key": "Agent_WanderingOak",
+        "icon": "WanderingOak",
+        "type": "npc",
+        "zh": "迷离古橡",
+        "en": "Wandering Oak",
+        "ja": "Wandering Oak"
+      },
+      "localization": {
+        "zh": "动作：收获橡子",
+        "en": "Action: Harvest Acorns",
+        "ja": "アクション：Harvest Acorns"
+      },
+      "value": {
+        "x": 96,
+        "y": 96
+      },
+      "key": "Agent_WanderingOak_Harvest Acorns"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 惊吓",
+        "en": "Status Stage: Frightened",
+        "ja": "ステータス段階: 怖がってる"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 动摇",
+        "en": "Status Stage: Shaken ",
+        "ja": "ステータス段階: 震えてる"
+      },
+      "value": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 惊恐",
+        "en": "Status Stage: Terrified",
+        "ja": "ステータス段階: 怯えてる"
+      },
+      "value": {
+        "x": 8,
+        "y": 8
+      }
+    },
+    {
+      "link": {
+        "key": "FearUrge",
+        "icon": "Watcher4a",
+        "type": "stat",
+        "zh": "恐惧本能",
+        "en": "Fear Urge",
+        "ja": "恐怖の欲求",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 恐惧本能",
+        "en": "Status Stage: Fear Urge",
+        "ja": "ステータス段階: 恐怖の欲求"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "FearUrge",
+        "icon": "Watcher4a",
+        "type": "stat",
+        "zh": "恐惧本能",
+        "en": "Fear Urge",
+        "ja": "恐怖の欲求",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 恐惧本能",
+        "en": "Status Stage: Fear Urge",
+        "ja": "ステータス段階: 恐怖の欲求"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.2,
+        "y": -0.2
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.3,
+        "y": -0.3
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.4,
+        "y": -0.4
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": -0.6,
+        "y": -0.6
+      }
+    },
+    {
+      "link": {
+        "key": "Stress",
+        "icon": "Stress",
+        "type": "stat",
+        "zh": "压力",
+        "en": "Stress",
+        "ja": "ストレス",
+        "max": 240,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 焦虑",
+        "en": "Status Stage: Tense",
+        "ja": "ステータス段階: 緊張してる"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Stress",
+        "icon": "Stress",
+        "type": "stat",
+        "zh": "压力",
+        "en": "Stress",
+        "ja": "ストレス",
+        "max": 240,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 紧张",
+        "en": "Status Stage: Stressed",
+        "ja": "ステータス段階: ストレスを感じてる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Stress",
+        "icon": "Stress",
+        "type": "stat",
+        "zh": "压力",
+        "en": "Stress",
+        "ja": "ストレス",
+        "max": 240,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极度紧张",
+        "en": "Status Stage: Extremely Stressed",
+        "ja": "ステータス段階: 非常にストレスを感じてる"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "HagPond",
+        "icon": "Pond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "老妪池塘",
+        "en": "Hag Pond",
+        "ja": "Hag Pond"
+      },
+      "localization": {
+        "zh": "被动效果：Nightmare Fuel",
+        "en": "Passive Effect：Nightmare Fuel",
+        "ja": "パッシブ効果：Nightmare Fuel"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "HagPondFrozen",
+        "icon": "Pond_Winter",
+        "type": "card",
+        "CardType": 2,
+        "zh": "冰冻老妪池塘",
+        "en": "Frozen Hag Pond",
+        "ja": "Frozen Hag Pond"
+      },
+      "localization": {
+        "zh": "被动效果：Nightmare Fuel",
+        "en": "Passive Effect：Nightmare Fuel",
+        "ja": "パッシブ効果：Nightmare Fuel"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    }
+  ],
+  "_requireList": [
+    {
+      "link": {
+        "key": "NightmareCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "梦魇计数器",
+        "en": "Nightmare Counter",
+        "ja": "悪夢カウンター",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "梦魇计数器",
+        "en": "Nightmare Counter",
+        "ja": "悪夢カウンター",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "梦魇计数器",
+        "en": "Nightmare Counter",
+        "ja": "悪夢カウンター",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareFuel",
+        "icon": "Darkness",
+        "type": "stat",
+        "zh": "梦魇燃料",
+        "en": "Nightmare Fuel",
+        "ja": "悪夢の燃料",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareFuel",
+        "icon": "Darkness",
+        "type": "stat",
+        "zh": "梦魇燃料",
+        "en": "Nightmare Fuel",
+        "ja": "悪夢の燃料",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareFuel",
+        "icon": "Darkness",
+        "type": "stat",
+        "zh": "梦魇燃料",
+        "en": "Nightmare Fuel",
+        "ja": "悪夢の燃料",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "SleepClock",
+        "icon": "",
+        "type": "stat",
+        "zh": "睡眠钟",
+        "en": "Sleep Clock",
+        "ja": "睡眠の時計",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "SleepClock",
+        "icon": "",
+        "type": "stat",
+        "zh": "睡眠钟",
+        "en": "Sleep Clock",
+        "ja": "睡眠の時計",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "link": {
+        "key": "SleepClock",
+        "icon": "",
+        "type": "stat",
+        "zh": "睡眠钟",
+        "en": "Sleep Clock",
+        "ja": "睡眠の時計",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 96
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "key": "Tgr_Nightmare"
+    }
+  ],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Darkness"
+    },
+    "NegativeIcon": {
+      "FileName": "Sun"
+    },
+    "StepValue": 100,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

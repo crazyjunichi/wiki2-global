@@ -1,0 +1,775 @@
+{
+  "m_Name": "CombatMorale",
+  "key": "CombatMorale",
+  "icon": "Content_Old",
+  "type": "stat",
+  "zh": "士气",
+  "en": "Combat Morale",
+  "ja": "戦闘士気",
+  "UniqueIDIndex": 3197,
+  "GameName": {
+    "DefaultText": "Combat Morale",
+    "Text": "士气",
+    "zh": "士气",
+    "en": "Combat Morale",
+    "ja": "戦闘士気"
+  },
+  "Description": {
+    "DefaultText": "Needed to stay in a fight and resist your flight instincts. Recovers over time.",
+    "Text": "需要继续战斗并抵抗逃跑本能。随着时间会逐渐恢复。",
+    "zh": "需要继续战斗并抵抗逃跑本能。随着时间会逐渐恢复。",
+    "en": "Needed to stay in a fight and resist your flight instincts. Recovers over time.",
+    "ja": "逃げずに戦闘を続けたりするために必要。時間で回復する。"
+  },
+  "BaseValue": 100,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 100,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.07450981,
+    "g": 0.909804,
+    "b": 0.6117647,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Content_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Demoralized",
+        "Text": "士气低落",
+        "zh": "士气低落",
+        "en": "Demoralized",
+        "ja": "士気が落ちた"
+      },
+      "Description": {
+        "DefaultText": "You have recently run away from a fight.",
+        "Text": "你最近在一场打斗中逃跑了。",
+        "zh": "你最近在一场打斗中逃跑了。",
+        "en": "You have recently run away from a fight.",
+        "ja": "最近戦いから逃げた。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "DeepPregnancy_Old"
+      },
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "Morale",
+        "icon": "Morale2",
+        "type": "stat",
+        "zh": "情绪",
+        "en": "Morale",
+        "ja": "士気",
+        "max": 350,
+        "min": -350
+      },
+      "localization": {
+        "zh": "状态阶段: 失落",
+        "en": "Status Stage: Feeling down",
+        "ja": "ステータス段階: 落ち込んでる"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "Morale",
+        "icon": "Morale2",
+        "type": "stat",
+        "zh": "情绪",
+        "en": "Morale",
+        "ja": "士気",
+        "max": 350,
+        "min": -350
+      },
+      "localization": {
+        "zh": "状态阶段: 抑郁",
+        "en": "Status Stage: Depressed",
+        "ja": "ステータス段階: しんどい"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "Morale",
+        "icon": "Morale2",
+        "type": "stat",
+        "zh": "情绪",
+        "en": "Morale",
+        "ja": "士気",
+        "max": 350,
+        "min": -350
+      },
+      "localization": {
+        "zh": "状态阶段: 严重抑郁",
+        "en": "Status Stage: Seriously Depressed",
+        "ja": "ステータス段階: 鬱病"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "Morale",
+        "icon": "Morale2",
+        "type": "stat",
+        "zh": "情绪",
+        "en": "Morale",
+        "ja": "士気",
+        "max": 350,
+        "min": -350
+      },
+      "localization": {
+        "zh": "状态阶段: 崩溃",
+        "en": "Status Stage: Self Destructive",
+        "ja": "ステータス段階: 自己破壊的"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "Morale",
+        "icon": "Morale2",
+        "type": "stat",
+        "zh": "情绪",
+        "en": "Morale",
+        "ja": "士気",
+        "max": 350,
+        "min": -350
+      },
+      "localization": {
+        "zh": "状态阶段: 崩溃",
+        "en": "Status Stage: Self Destructive",
+        "ja": "ステータス段階: 自己破壊的"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterBeaver",
+        "icon": "Beaver_Wild",
+        "type": "encounter",
+        "zh": "河狸",
+        "en": "Beaver",
+        "ja": "Beaver"
+      },
+      "localization": {
+        "zh": "敌人行动 河狸试图咬你！",
+        "en": "Enemy Action The beaver tries to bite you!",
+        "ja": "敵の行動 The beaver tries to bite you!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "Combat_EncounterFox",
+        "icon": "Fox_Wild",
+        "type": "encounter",
+        "zh": "狐狸",
+        "en": "Fox",
+        "ja": "キツネ"
+      },
+      "localization": {
+        "zh": "敌人行动 狐狸试图咬你！",
+        "en": "Enemy Action The fox tries to bite you!",
+        "ja": "敵の行動 キツネが噛んできた！"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -40,
+        "y": -40
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterGreaterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Greater Mudling",
+        "en": "Greater Mudling",
+        "ja": "Greater Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 It flails its arms at you and tries to go for a bite!",
+        "en": "Enemy Action It flails its arms at you and tries to go for a bite!",
+        "ja": "敵の行動 It flails its arms at you and tries to go for a bite!"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Mudling",
+        "en": "Mudling",
+        "ja": "Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 The mudling tries to grab you!",
+        "en": "Enemy Action The mudling tries to grab you!",
+        "ja": "敵の行動 The mudling tries to grab you!"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Mudling",
+        "en": "Mudling",
+        "ja": "Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 The mudling tries to grab you!",
+        "en": "Enemy Action The mudling tries to grab you!",
+        "ja": "敵の行動 The mudling tries to grab you!"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "OutOfDate_Combat_EncounterMudling_F",
+        "icon": "",
+        "type": "encounter",
+        "zh": "Mudling",
+        "en": "Mudling",
+        "ja": "Mudling"
+      },
+      "localization": {
+        "zh": "敌人行动 The mudling tries to grab you!",
+        "en": "Enemy Action The mudling tries to grab you!",
+        "ja": "敵の行動 The mudling tries to grab you!"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 100,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

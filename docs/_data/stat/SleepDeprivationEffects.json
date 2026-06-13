@@ -1,0 +1,1743 @@
+{
+  "m_Name": "SleepDeprivationEffects",
+  "key": "SleepDeprivationEffects",
+  "icon": "Wakefulness3",
+  "type": "stat",
+  "zh": "睡眠不足效果",
+  "zh_fix": "睡眠不足效果",
+  "en": "Sleep Deprivation",
+  "ja": "Sleep Deprivation",
+  "UniqueIDIndex": 4113,
+  "GameName": {
+    "DefaultText": "Sleep Deprivation",
+    "Text": "Sleep Deprivation",
+    "zh": "Sleep Deprivation",
+    "en": "Sleep Deprivation",
+    "ja": "Sleep Deprivation"
+  },
+  "Description": {
+    "DefaultText": "The result of not sleeping enough. Can alter your mindstate, increase your stress and make you sleepier faster.",
+    "Text": "这是睡眠不足的结果。会改变你的精神状态，增加压力，并让你更容易感到困倦。",
+    "zh": "这是睡眠不足的结果。会改变你的精神状态，增加压力，并让你更容易感到困倦。",
+    "en": "The result of not sleeping enough. Can alter your mindstate, increase your stress and make you sleepier faster.",
+    "ja": "睡眠時間が足りない結果。精神状態を変え、ストレスが増える。眠くなりやすくなる。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 4
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.26873443,
+    "g": 0.31449082,
+    "b": 0.5754717,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Wakefulness3"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Minor Sleep Deprivation",
+        "Text": "轻微缺乏睡眠",
+        "zh": "轻微缺乏睡眠",
+        "en": "Minor Sleep Deprivation",
+        "ja": "少し睡眠不足"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Wakefulness3"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -5,
+            "y": -5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "AlteredMindstate",
+            "icon": "AlteredMindState",
+            "type": "stat",
+            "zh": "精神失常",
+            "en": "Altered Mindstate",
+            "ja": "変わった精神状態",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Focus",
+            "icon": "Focus",
+            "type": "stat",
+            "zh": "专注度",
+            "en": "Focus",
+            "ja": "集中力",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -25,
+            "y": -25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Perception",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "感知",
+            "en": "Perception",
+            "ja": "Perception",
+            "max": 150,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Sleep Deprivation",
+        "Text": "缺乏睡眠",
+        "zh": "缺乏睡眠",
+        "en": "Sleep Deprivation",
+        "ja": "睡眠不足"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Wakefulness2"
+      },
+      "ValueRange": {
+        "m_X": 2,
+        "m_Y": 2
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -10,
+            "y": -10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "AlteredMindstate",
+            "icon": "AlteredMindState",
+            "type": "stat",
+            "zh": "精神失常",
+            "en": "Altered Mindstate",
+            "ja": "変わった精神状態",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Focus",
+            "icon": "Focus",
+            "type": "stat",
+            "zh": "专注度",
+            "en": "Focus",
+            "ja": "集中力",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -50,
+            "y": -50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Perception",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "感知",
+            "en": "Perception",
+            "ja": "Perception",
+            "max": 150,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -20,
+            "y": -20
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Major Sleep Deprivation",
+        "Text": "高度缺乏睡眠",
+        "zh": "高度缺乏睡眠",
+        "en": "Major Sleep Deprivation",
+        "ja": "かなり睡眠不足"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Wakefulness2"
+      },
+      "ValueRange": {
+        "m_X": 3,
+        "m_Y": 3
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -20,
+            "y": -20
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "AlteredMindstate",
+            "icon": "AlteredMindState",
+            "type": "stat",
+            "zh": "精神失常",
+            "en": "Altered Mindstate",
+            "ja": "変わった精神状態",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.75,
+            "y": 0.75
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.75,
+            "y": -0.75
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Focus",
+            "icon": "Focus",
+            "type": "stat",
+            "zh": "专注度",
+            "en": "Focus",
+            "ja": "集中力",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -100,
+            "y": -100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Perception",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "感知",
+            "en": "Perception",
+            "ja": "Perception",
+            "max": 150,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -40,
+            "y": -40
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Serious Sleep Deprivation",
+        "Text": "极度缺乏睡眠",
+        "zh": "极度缺乏睡眠",
+        "en": "Serious Sleep Deprivation",
+        "ja": "危険なほど睡眠不足"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Wakefulness1"
+      },
+      "ValueRange": {
+        "m_X": 4,
+        "m_Y": 4
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": -40,
+            "y": -40
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "AlteredMindstate",
+            "icon": "AlteredMindState",
+            "type": "stat",
+            "zh": "精神失常",
+            "en": "Altered Mindstate",
+            "ja": "変わった精神状態",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Wakefulness",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "清醒度",
+            "en": "Wakefulness",
+            "ja": "眠さ",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Focus",
+            "icon": "Focus",
+            "type": "stat",
+            "zh": "专注度",
+            "en": "Focus",
+            "ja": "集中力",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -200,
+            "y": -200
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Perception",
+            "icon": "Wakefulness4",
+            "type": "stat",
+            "zh": "感知",
+            "en": "Perception",
+            "ja": "Perception",
+            "max": 150,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -80,
+            "y": -80
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "SleepDeprivationMajor",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "重度睡眠不足",
+        "en": "Sleep Deprivation Extreme",
+        "ja": "Sleep Deprivation Extreme",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "SleepDeprivationMajor_Extreme Sleep Deprivation Start"
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationMinor",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "轻度睡眠不足",
+        "en": "Sleep Deprivation Minor",
+        "ja": "Sleep Deprivation Minor",
+        "max": 72,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "SleepDeprivationMinor_Minor Sleep Deprivation Start"
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationNormal",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "中度睡眠不足",
+        "en": "Sleep Deprivation Major",
+        "ja": "Sleep Deprivation Major",
+        "max": 84,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "SleepDeprivationNormal_Major Sleep Deprivation Start"
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationSerious",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "严重睡眠不足",
+        "en": "Sleep Deprivation Undoable",
+        "ja": "Sleep Deprivation Undoable",
+        "max": 120,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      },
+      "key": "SleepDeprivationSerious_Undoable Sleep Deprivation Start"
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "SleepDeprivationMajor",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "重度睡眠不足",
+        "en": "Sleep Deprivation Extreme",
+        "ja": "Sleep Deprivation Extreme",
+        "max": 96,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationMinor",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "轻度睡眠不足",
+        "en": "Sleep Deprivation Minor",
+        "ja": "Sleep Deprivation Minor",
+        "max": 72,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationNormal",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "中度睡眠不足",
+        "en": "Sleep Deprivation Major",
+        "ja": "Sleep Deprivation Major",
+        "max": 84,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "SleepDeprivationSerious",
+        "icon": "MoonIcon",
+        "type": "stat",
+        "zh": "严重睡眠不足",
+        "en": "Sleep Deprivation Undoable",
+        "ja": "Sleep Deprivation Undoable",
+        "max": 120,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "key": "Tgr_SleepDeprivationEffects"
+    }
+  ],
+  "max": 4,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Wakefulness2"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

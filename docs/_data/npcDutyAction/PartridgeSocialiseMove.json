@@ -1,0 +1,445 @@
+{
+  "m_Name": "PartridgeSocialiseMove",
+  "key": "PartridgeSocialiseMove",
+  "RequiredForSelectingDuty": true,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "MovementType": 0,
+  "MoveDestination": 5,
+  "MoveAwayFromDestination": false,
+  "DestinationSelection": 0,
+  "MoveToEnvironments": [],
+  "MoveToTags": [
+    {
+      "key": "tag_Env_HidingArea",
+      "text": "“Used for Agent Duties. Has to be on an Enviroment Card. ”",
+      "icon": "",
+      "type": "tag",
+      "count": 25,
+      "zh": "藏身处",
+      "en": "Used for Agent Duties. Has to be on an Enviroment Card. ",
+      "ja": "Used for Agent Duties. Has to be on an Enviroment Card. "
+    }
+  ],
+  "MoveToItems": [
+    {
+      "Target": {
+        "key": "tag_PartridgeSocialisationTarget",
+        "text": "“灰山鹑”",
+        "icon": "",
+        "type": "tag",
+        "count": 6,
+        "zh": "灰山鹑社交目标",
+        "en": "Partridge",
+        "ja": "Partridge",
+        "SpoilageTime": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Hunger",
+            "Text": "饥饿",
+            "zh": "饥饿",
+            "en": "Hunger",
+            "ja": "Hunger"
+          },
+          "OverrideIcon": {
+            "FileName": "Hunger"
+          },
+          "MaxValue": 1.5
+        },
+        "UsageDurability": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Happiness",
+            "Text": "幸福感",
+            "zh": "幸福感",
+            "en": "Happiness",
+            "ja": "Happiness"
+          },
+          "OverrideIcon": {
+            "FileName": "Morale2"
+          },
+          "MaxValue": 288
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Trust",
+            "Text": "信任",
+            "zh": "信任",
+            "en": "Trust",
+            "ja": "Trust"
+          },
+          "OverrideIcon": {
+            "FileName": "ShieldCross"
+          },
+          "MaxValue": 11520
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Growth",
+            "Text": "成长度",
+            "zh": "成长度",
+            "en": "Growth",
+            "ja": "Growth"
+          },
+          "OverrideIcon": {
+            "FileName": "Hammer"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Egg Complete",
+            "Text": "鸡蛋已完成",
+            "zh": "鸡蛋已完成",
+            "en": "Egg Complete",
+            "ja": "Egg Complete"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Health",
+            "Text": "健康度",
+            "zh": "健康度",
+            "en": "Health",
+            "ja": "Health"
+          },
+          "OverrideIcon": {
+            "FileName": "Health"
+          },
+          "MaxValue": 100
+        }
+      },
+      "RequiredDurabilities": {
+        "SpoilageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "UsageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "FuelRange": {
+          "x": 0,
+          "y": 0
+        },
+        "ProgressRange": {
+          "x": 0,
+          "y": 0
+        },
+        "Special1Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special2Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special3Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special4Range": {
+          "x": 0,
+          "y": 0
+        },
+        "LiquidQuantityRange": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "OtherAgent": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": null,
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "IgnoreCurrentLocation": false,
+  "Containers": {
+    "CanLookInContainers": true,
+    "ContainerRequiredDurabilities": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "AllowedContainers": [
+      {
+        "Target": {
+          "key": "Cage",
+          "icon": "Cage",
+          "type": "card",
+          "CardType": 0,
+          "zh": "笼子",
+          "en": "Cage",
+          "ja": "檻",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        }
+      },
+      {
+        "Target": {
+          "key": "CagePlaced",
+          "icon": "Cage",
+          "type": "card",
+          "CardType": 2,
+          "zh": "笼子",
+          "en": "Cage",
+          "ja": "檻",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 192
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        }
+      }
+    ],
+    "NOTAllowedContainers": []
+  },
+  "LeaveTracks": true,
+  "OverrideAgentDefaultTracks": {
+    "Active": false,
+    "TrackLifetime": {
+      "m_X": 0,
+      "m_Y": 0
+    },
+    "AddedChanceToDiscoverTracks": {
+      "x": 0,
+      "y": 0
+    },
+    "AddedStatChanceToDiscover": [],
+    "OverrideDefaultTracksCard": null,
+    "TracksDirection": 0,
+    "OverrideTrackDurabilities": 0,
+    "NPCStatsToTrackDurabilities": []
+  },
+  "CostRequirements": 0,
+  "MoveCosts": []
+}

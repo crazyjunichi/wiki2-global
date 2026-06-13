@@ -1,0 +1,677 @@
+{
+  "m_Name": "FrostleafPasteEffect",
+  "key": "FrostleafPasteEffect",
+  "icon": "Ointment_Soothing",
+  "type": "stat",
+  "zh": "霜叶膏效果",
+  "en": "Frostleaf Paste Effect",
+  "ja": "フロストリーフペースト効果",
+  "UniqueIDIndex": 3364,
+  "GameName": {
+    "DefaultText": "Frostleaf Paste Effect",
+    "Text": "霜叶膏效果",
+    "zh": "霜叶膏效果",
+    "en": "Frostleaf Paste Effect",
+    "ja": "フロストリーフペースト効果"
+  },
+  "Description": {
+    "DefaultText": "Alleviates inflamation and provides a mild numbing effect against pain.",
+    "Text": "能缓解炎症，对疼痛有轻微的缓解作用。",
+    "zh": "能缓解炎症，对疼痛有轻微的缓解作用。",
+    "en": "Alleviates inflamation and provides a mild numbing effect against pain.",
+    "ja": "炎症と痛みを和らげる。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0,
+    "g": 1,
+    "b": 0.90713024,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 1,
+    "b": 0.09941673,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Ointment_Soothing"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "FrostLeaf Gel Applied",
+        "Text": "已涂抹霜叶膏",
+        "zh": "已涂抹霜叶膏",
+        "en": "FrostLeaf Gel Applied",
+        "ja": "フロストリーフジェルを塗った"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Ointment_Soothing"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 100
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Rash",
+            "icon": "Rash",
+            "type": "stat",
+            "zh": "皮疹",
+            "en": "Rash",
+            "ja": "発疹",
+            "max": 384,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BodyTemperature",
+            "icon": "Hot",
+            "type": "stat",
+            "zh": "体温",
+            "en": "Body Temperature",
+            "ja": "体温",
+            "max": 200,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Fever",
+            "icon": "Fever",
+            "type": "stat",
+            "zh": "发烧",
+            "en": "Fever",
+            "ja": "発熱",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "HandDamage",
+            "icon": "",
+            "type": "stat",
+            "zh": "手掌损伤",
+            "en": "Hand Damage",
+            "ja": "手のダメージ",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "FootDamage",
+            "icon": "",
+            "type": "stat",
+            "zh": "足部损伤",
+            "en": "Foot Damage",
+            "ja": "足のダメージ",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "DEBUG_LQ_MagicWater",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "水"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "DEBUG_LQ_MagicWater_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_RenetAbsorber",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "Water"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：Wash Yourself"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "LQ_RenetAbsorber_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_RenetAbsorber",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "Water"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：Wash Yourself"
+      },
+      "value": {
+        "x": -75,
+        "y": -75
+      },
+      "key": "LQ_RenetAbsorber_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_SacredWater",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "神圣之水",
+        "en": "Sacred Water",
+        "ja": "聖水"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "LQ_SacredWater_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_Water",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "水",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Potage",
+              "Text": "浓汤",
+              "zh": "浓汤",
+              "en": "Potage",
+              "ja": "Potage"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 50,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Stew",
+              "Text": "炖菜",
+              "zh": "炖菜",
+              "en": "Stew",
+              "ja": "Stew"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Soup",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Soup",
+              "ja": "Soup"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Broth",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Broth",
+              "ja": "Broth"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "LQ_Water_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_Water",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "水",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Potage",
+              "Text": "浓汤",
+              "zh": "浓汤",
+              "en": "Potage",
+              "ja": "Potage"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 50,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Stew",
+              "Text": "炖菜",
+              "zh": "炖菜",
+              "en": "Stew",
+              "ja": "Stew"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Soup",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Soup",
+              "ja": "Soup"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Broth",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Broth",
+              "ja": "Broth"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -75,
+        "y": -75
+      },
+      "key": "LQ_Water_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_WaterRiver",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "河水",
+        "en": "River Water",
+        "ja": "川の水"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "LQ_WaterRiver_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "LQ_WaterUnsafe",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "不安全的水",
+        "en": "Unsafe Water",
+        "ja": "危険な水"
+      },
+      "localization": {
+        "zh": "动作：洗个澡",
+        "en": "Action: Wash Yourself",
+        "ja": "アクション：体を洗う"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "LQ_WaterUnsafe_Wash Yourself"
+    },
+    {
+      "link": {
+        "key": "Shower",
+        "icon": "",
+        "type": "card",
+        "CardType": 2,
+        "zh": "Shower",
+        "en": "Shower",
+        "ja": "Shower"
+      },
+      "localization": {
+        "zh": "动作：Take a Shower",
+        "en": "Action: Take a Shower",
+        "ja": "アクション：Take a Shower"
+      },
+      "value": {
+        "x": -50,
+        "y": -50
+      },
+      "key": "Shower_Take a Shower"
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "AloeGel_Old"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

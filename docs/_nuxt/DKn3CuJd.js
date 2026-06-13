@@ -1,1 +1,0 @@
-const e="SetPrimevalWolfHomeFlag_0_7621",t="SetPrimevalWolfHomeFlag_0_7621",o=!1,n=null,a=1,l={UseAssociatedAgent:!0,TargetAgent:null,SetHome:0,SpecificEnv:null},m={m_Name:e,key:t,RequiredForSelectingDuty:!1,m_GameObject:null,m_Enabled:1,SetHome:l};export{o as RequiredForSelectingDuty,l as SetHome,m as default,t as key,a as m_Enabled,n as m_GameObject,e as m_Name};

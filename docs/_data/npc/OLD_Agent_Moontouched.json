@@ -1,0 +1,3924 @@
+{
+  "m_Name": "OLD_Agent_Moontouched",
+  "key": "OLD_Agent_Moontouched",
+  "icon": "Moontouched",
+  "zh": "Moontouched",
+  "en": "Moontouched",
+  "ja": "Moontouched",
+  "UniqueIDIndex": 3815,
+  "AgentName": {
+    "DefaultText": "Moontouched",
+    "Text": "Moontouched",
+    "zh": "Moontouched",
+    "en": "Moontouched",
+    "ja": "Moontouched"
+  },
+  "AgentDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "AgentImage": {
+    "FileName": "Moontouched"
+  },
+  "WeightCategory": null,
+  "AgentStats": [
+    {
+      "ModelStat": {
+        "m_Name": "AgentRespawnCounter",
+        "key": "AgentRespawnCounter",
+        "type": "durability",
+        "zh": "刷新倒计时",
+        "en": "AgentRespawnCounter",
+        "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+        "GameName": {
+          "DefaultText": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+          "Text": "刷新倒计时",
+          "zh": "刷新倒计时",
+          "en": "AgentRespawnCounter",
+          "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 2880
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": -10000,
+          "y": 10000
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "刷新倒计时",
+        "desc": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "0e991b807e7703949b02b48ca7828f59",
+        "UniqueIDIndex": 3075
+      },
+      "OverrideStartingValue": {
+        "Active": false,
+        "FloatValue": 2880
+      },
+      "OverrideMinMaxValue": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 2880
+      },
+      "OverrideRate": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": -10,
+        "MaxValue": 0
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentExists",
+        "key": "AgentExists",
+        "type": "durability",
+        "zh": "存在",
+        "en": "AgentExists",
+        "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+        "GameName": {
+          "DefaultText": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+          "Text": "存在",
+          "zh": "存在",
+          "en": "AgentExists",
+          "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 1
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "存在",
+        "desc": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "16eb4865d583a1d4d82def0680f3065d",
+        "UniqueIDIndex": 3059
+      },
+      "OverrideStartingValue": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxValue": {
+        "Active": false,
+        "FloatValue": -3520,
+        "MaxValue": 10000
+      },
+      "OverrideRate": {
+        "Active": false,
+        "FloatValue": 1
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentBlood",
+        "key": "AgentBlood",
+        "type": "durability",
+        "zh": "血量",
+        "en": "AgentBlood",
+        "ja": "Agent Stamina",
+        "GameName": {
+          "DefaultText": "Agent Stamina",
+          "Text": "血量",
+          "zh": "血量",
+          "en": "AgentBlood",
+          "ja": "Agent Stamina"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 10000
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "血量",
+        "desc": "Agent Stamina",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "f2c3d787896b6874c9974806acbe757a",
+        "UniqueIDIndex": 2806
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 100
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 0.17
+      },
+      "OverrideMinMaxRate": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentHydration",
+        "key": "AgentHydration",
+        "type": "durability",
+        "zh": "饮水度",
+        "en": "AgentHydration",
+        "ja": "Agent Hydration",
+        "GameName": {
+          "DefaultText": "Agent Hydration",
+          "Text": "饮水度",
+          "zh": "饮水度",
+          "en": "AgentHydration",
+          "ja": "Agent Hydration"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "饮水度",
+        "desc": "Agent Hydration",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "7d6d83b0fdd5f8c4b891b2ec33c84809",
+        "UniqueIDIndex": 3062
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 100
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": -1
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentSatiation",
+        "key": "AgentSatiation",
+        "type": "durability",
+        "zh": "饱食度",
+        "en": "AgentSatiation",
+        "ja": "Agent Satiation",
+        "GameName": {
+          "DefaultText": "Agent Satiation",
+          "Text": "饱食度",
+          "zh": "饱食度",
+          "en": "AgentSatiation",
+          "ja": "Agent Satiation"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "饱食度",
+        "desc": "Agent Satiation",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "1e9b6d7cef4e1b04daa390812d6932ea",
+        "UniqueIDIndex": 3076
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 12
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": -0.0186
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentWakefulness",
+        "key": "AgentWakefulness",
+        "type": "durability",
+        "zh": "清醒度",
+        "en": "AgentWakefulness",
+        "ja": "Agent Satiation",
+        "GameName": {
+          "DefaultText": "Agent Satiation",
+          "Text": "清醒度",
+          "zh": "清醒度",
+          "en": "AgentWakefulness",
+          "ja": "Agent Satiation"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "清醒度",
+        "desc": "Agent Satiation",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "47794f16e36bc51458d19487afd9528d",
+        "UniqueIDIndex": 3091
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 100
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": -1
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentMorale",
+        "key": "AgentMorale",
+        "type": "durability",
+        "zh": "斗志",
+        "en": "AgentMorale",
+        "ja": "Agent Morale",
+        "GameName": {
+          "DefaultText": "Agent Morale",
+          "Text": "斗志",
+          "zh": "斗志",
+          "en": "AgentMorale",
+          "ja": "Agent Morale"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 10000
+        },
+        "DefaultRate": 1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "斗志",
+        "desc": "Agent Morale",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "02ddd4de2bc32564daa80cdcdaa87cc2",
+        "UniqueIDIndex": 3063
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 100
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 10
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentStamina",
+        "key": "AgentStamina",
+        "type": "durability",
+        "zh": "耐力",
+        "en": "AgentStamina",
+        "ja": "Agent Stamina",
+        "GameName": {
+          "DefaultText": "Agent Stamina",
+          "Text": "耐力",
+          "zh": "耐力",
+          "en": "AgentStamina",
+          "ja": "Agent Stamina"
+        },
+        "DefaultStartingValue": 100,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 10000
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "耐力",
+        "desc": "Agent Stamina",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "6bf1c5e5fd581784180547c3850218a0",
+        "UniqueIDIndex": 3081
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 100
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxRate": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentPoisonResistance",
+        "key": "AgentPoisonResistance",
+        "type": "durability",
+        "zh": "毒抗",
+        "en": "AgentPoisonResistance",
+        "ja": "Agent Special1",
+        "GameName": {
+          "DefaultText": "Agent Special1",
+          "Text": "毒抗",
+          "zh": "毒抗",
+          "en": "AgentPoisonResistance",
+          "ja": "Agent Special1"
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 1
+        },
+        "DefaultRate": -1,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "毒抗",
+        "desc": "Agent Special1",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "ef9eb06fd9bff0545906eb75d99a2937",
+        "UniqueIDIndex": 3065
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 40
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 40
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 0.4
+      },
+      "OverrideMinMaxRate": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentTrapType",
+        "key": "AgentTrapType",
+        "type": "durability",
+        "zh": "陷阱类型",
+        "en": "AgentTrapType",
+        "ja": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
+        "GameName": {
+          "DefaultText": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
+          "Text": "陷阱类型",
+          "zh": "陷阱类型",
+          "en": "AgentTrapType",
+          "ja": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40"
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": -10000,
+          "y": 10000
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "陷阱类型",
+        "desc": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "cf4a2923e7142524f8aff07c95a916e5",
+        "UniqueIDIndex": 3089
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 100
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxRate": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    },
+    {
+      "ModelStat": {
+        "m_Name": "AgentTrapCunning",
+        "key": "AgentTrapCunning",
+        "type": "durability",
+        "zh": "陷阱技巧",
+        "en": "AgentTrapCunning",
+        "ja": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
+        "GameName": {
+          "DefaultText": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
+          "Text": "陷阱技巧",
+          "zh": "陷阱技巧",
+          "en": "AgentTrapCunning",
+          "ja": "Agent Cunning Value, use to calculate the % catch reduction for traps. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": -10000,
+          "y": 10000
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "陷阱技巧",
+        "desc": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "879f824941ccad94daff21e4cde082fb",
+        "UniqueIDIndex": 3084
+      },
+      "OverrideStartingValue": {
+        "Active": true,
+        "FloatValue": 25
+      },
+      "OverrideMinMaxValue": {
+        "Active": true,
+        "FloatValue": 25,
+        "MaxValue": 25
+      },
+      "OverrideRate": {
+        "Active": true,
+        "FloatValue": 0
+      },
+      "OverrideMinMaxRate": {
+        "Active": true,
+        "FloatValue": 0,
+        "MaxValue": 10
+      },
+      "StatAddedPercentageToModifiersOverride": 0,
+      "StatScalingToModifiers": [],
+      "NPCStatAddedPercentageToModifiersOverride": 0,
+      "NPCStatScalingToModifiers": [],
+      "OverrideVisibleIcon": false,
+      "Icon": null
+    }
+  ],
+  "AgentActions": [
+    {
+      "ActionID": "If Agent Exist is 0 Go to Spirit World",
+      "ActionLocalizedName": {
+        "DefaultText": "If Agent Exist is 0 Go to Spirit World",
+        "Text": "If Agent Exist is 0 Go to Spirit World",
+        "zh": "If Agent Exist is 0 Go to Spirit World",
+        "en": "If Agent Exist is 0 Go to Spirit World",
+        "ja": "If Agent Exist is 0 Go to Spirit World"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 2,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": false,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": true,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [],
+        "RequiredNPCStatValues": [
+          {
+            "UseAssociatedAgent": true,
+            "TargetAgent": {
+              "key": "Agent_Doe",
+              "icon": "Doe_Wild",
+              "type": "npc",
+              "zh": "母鹿",
+              "en": "Doe",
+              "ja": "雌鹿"
+            },
+            "TargetStat": {
+              "m_Name": "AgentExists",
+              "key": "AgentExists",
+              "type": "durability",
+              "zh": "存在",
+              "en": "AgentExists",
+              "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+              "GameName": {
+                "DefaultText": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+                "Text": "存在",
+                "zh": "存在",
+                "en": "AgentExists",
+                "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
+              },
+              "DefaultStartingValue": 0,
+              "DefaultMinMaxValue": {
+                "x": 0,
+                "y": 1
+              },
+              "DefaultRate": 0,
+              "DefaultMinMaxRate": {
+                "x": 0,
+                "y": 0
+              },
+              "StatVisibleIcon": null,
+              "HidingOptions": 0,
+              "TextDisplay": 0,
+              "NumberPrecision": 0,
+              "StatScalingToModifiers": [],
+              "NPCStatScalingToModifiers": [],
+              "name": "存在",
+              "desc": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "UniqueID": "16eb4865d583a1d4d82def0680f3065d",
+              "UniqueIDIndex": 3059
+            },
+            "ConditionRange": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "UseAssociatedAgent": true,
+            "TargetAgent": {
+              "key": "Agent_Doe",
+              "icon": "Doe_Wild",
+              "type": "npc",
+              "zh": "母鹿",
+              "en": "Doe",
+              "ja": "雌鹿"
+            },
+            "TargetStat": {
+              "m_Name": "AgentRespawnCounter",
+              "key": "AgentRespawnCounter",
+              "type": "durability",
+              "zh": "刷新倒计时",
+              "en": "AgentRespawnCounter",
+              "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+              "GameName": {
+                "DefaultText": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+                "Text": "刷新倒计时",
+                "zh": "刷新倒计时",
+                "en": "AgentRespawnCounter",
+                "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. "
+              },
+              "DefaultStartingValue": 0,
+              "DefaultMinMaxValue": {
+                "x": 0,
+                "y": 2880
+              },
+              "DefaultRate": 0,
+              "DefaultMinMaxRate": {
+                "x": -10000,
+                "y": 10000
+              },
+              "StatVisibleIcon": null,
+              "HidingOptions": 0,
+              "TextDisplay": 0,
+              "NumberPrecision": 0,
+              "StatScalingToModifiers": [],
+              "NPCStatScalingToModifiers": [],
+              "name": "刷新倒计时",
+              "desc": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "UniqueID": "0e991b807e7703949b02b48ca7828f59",
+              "UniqueIDIndex": 3075
+            },
+            "ConditionRange": {
+              "x": 2,
+              "y": 2880
+            }
+          }
+        ],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [
+        {
+          "Stat": {
+            "key": "Agent_FoxExists1",
+            "icon": "",
+            "type": "stat",
+            "zh": "Fox Exists 1",
+            "en": "Fox Exists 1",
+            "ja": "Fox Exists 1",
+            "max": 1,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "NPCStatModifications": [],
+      "DroppedCards": [],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": {
+        "key": "Env_SpiritWorld",
+        "icon": "",
+        "type": "card",
+        "CardType": 4,
+        "zh": "SpiritWorld",
+        "en": "SpiritWorld",
+        "ja": "SpiritWorld",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": false,
+      "MoveTiming": 1,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [],
+      "DropCardsEvenIfHiding": false
+    },
+    {
+      "ActionID": "Arrive at Moon Hills_1",
+      "ActionLocalizedName": {
+        "DefaultText": "Arrive at Moon Hills_1",
+        "Text": "Arrive at Moon Hills_1",
+        "zh": "Arrive at Moon Hills_1",
+        "en": "Arrive at Moon Hills_1",
+        "ja": "Arrive at Moon Hills_1"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 2,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": false,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": false,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "MoonShape",
+              "icon": "",
+              "type": "stat",
+              "zh": "月形态",
+              "en": "Moon Shape",
+              "ja": "Moon Shape",
+              "max": 6,
+              "min": 1
+            },
+            "TriggerRange": {
+              "x": 4,
+              "y": 4
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredInGameTimes": [
+          {
+            "TimeType": 0,
+            "CompareType": 0,
+            "StartValue": 22,
+            "EndValue": 3,
+            "MomentOfDayValue": {
+              "MaskValue": 0
+            },
+            "SeasonValue": {
+              "MaskValue": 0
+            }
+          }
+        ],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [],
+      "NPCStatModifications": [],
+      "DroppedCards": [],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": {
+        "key": "Env_SpiritWorld",
+        "icon": "",
+        "type": "card",
+        "CardType": 4,
+        "zh": "SpiritWorld",
+        "en": "SpiritWorld",
+        "ja": "SpiritWorld",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": false,
+      "MoveTiming": 0,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [],
+      "DropCardsEvenIfHiding": false
+    },
+    {
+      "ActionID": "Depart to Spirit World_1",
+      "ActionLocalizedName": {
+        "DefaultText": "Depart to Spirit World_1",
+        "Text": "Depart to Spirit World_1",
+        "zh": "Depart to Spirit World_1",
+        "en": "Depart to Spirit World_1",
+        "ja": "Depart to Spirit World_1"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 2,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": false,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": false,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [],
+        "RequiredNPCStatValues": [],
+        "RequiredInGameTimes": [
+          {
+            "TimeType": 0,
+            "CompareType": 0,
+            "StartValue": 4,
+            "EndValue": 5,
+            "MomentOfDayValue": {
+              "MaskValue": 0
+            },
+            "SeasonValue": {
+              "MaskValue": 0
+            }
+          }
+        ],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [],
+      "NPCStatModifications": [],
+      "DroppedCards": [],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": {
+        "key": "Env_SpiritWorld",
+        "icon": "",
+        "type": "card",
+        "CardType": 4,
+        "zh": "SpiritWorld",
+        "en": "SpiritWorld",
+        "ja": "SpiritWorld",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": false,
+      "MoveTiming": 0,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [],
+      "DropCardsEvenIfHiding": false
+    },
+    {
+      "ActionID": "Attack the Player_1",
+      "ActionLocalizedName": {
+        "DefaultText": "Attack the Player_1",
+        "Text": "Attack the Player_1",
+        "zh": "Attack the Player_1",
+        "en": "Attack the Player_1",
+        "ja": "Attack the Player_1"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 2,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": true,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": false,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": true,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "MoonBlessing",
+              "icon": "Moon",
+              "type": "stat",
+              "zh": "月赐福",
+              "en": "Moon Blessing",
+              "ja": "Moon Blessing",
+              "max": 288,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 0,
+              "y": 1
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          },
+          {
+            "Stat": {
+              "key": "Stat_Pk_5_6_WolfProtection",
+              "icon": "",
+              "type": "stat",
+              "zh": "狼之庇护",
+              "en": "Stat_Pk_5_6_WolfProtection",
+              "ja": "Stat_Pk_5_6_WolfProtection",
+              "max": 1,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 0,
+              "y": 0
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [],
+      "NPCStatModifications": [],
+      "DroppedCards": [
+        {
+          "CollectionName": "Combat",
+          "CollectionMessages": [],
+          "CountsAsSuccess": false,
+          "RevealInventory": false,
+          "CollectionUses": {
+            "m_X": 0,
+            "m_Y": 0
+          },
+          "CollectionWeight": 0,
+          "StatsDropChanceModifiers": [],
+          "NPCStatsDropChanceModifiers": [],
+          "CardDropChanceModifiers": [],
+          "DurabilitiesDropChanceModifier": {
+            "Spoilage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Usage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Fuel": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Progress": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special1": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special2": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special3": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special4": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            }
+          },
+          "CreatedLiquid": {
+            "LiquidCard": null,
+            "Quantity": {
+              "x": 0,
+              "y": 0
+            },
+            "Durabilities": {
+              "Spoilage": 0,
+              "Usage": 0,
+              "Fuel": 0,
+              "Progress": 0,
+              "Special1": 0,
+              "Special2": 0,
+              "Special3": 0,
+              "Special4": 0,
+              "SpoilageValue": 0,
+              "UsageValue": 0,
+              "FuelValue": 0,
+              "ProgressValue": 0,
+              "Special1Value": 0,
+              "Special2Value": 0,
+              "Special3Value": 0,
+              "Special4Value": 0,
+              "SpoilageFrom": 0,
+              "UsageFrom": 0,
+              "FuelFrom": 0,
+              "ProgressFrom": 0,
+              "Special1From": 0,
+              "Special2From": 0,
+              "Special3From": 0,
+              "Special4From": 0
+            }
+          },
+          "DroppedCards": [],
+          "DropSavedBpIngredients": false,
+          "DroppedIfNoBpIngredient": [],
+          "DropCardsInsideInventory": false,
+          "DropCardsInPlayerHand": false,
+          "DroppedEncounter": {
+            "key": "Combat_EncounterWolf",
+            "icon": "Wolf_Wild",
+            "type": "encounter",
+            "zh": "狼",
+            "en": "Wolf",
+            "ja": "狼"
+          },
+          "EncounterNPC": {
+            "key": "OLD_Agent_Moontouched",
+            "icon": "Moontouched",
+            "type": "npc",
+            "zh": "Moontouched",
+            "en": "Moontouched",
+            "ja": "Moontouched"
+          },
+          "SkipEncounterEvent": false,
+          "StatModifications": [],
+          "ReceivingCardDurabilityModifications": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "BpDropDurabilityChangesReplaceStartingValue": {
+            "MaskValue": 0
+          },
+          "DropsStatInterpolatedDurabilityChanges": []
+        }
+      ],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": null,
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": true,
+      "MoveTiming": 0,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [
+        {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 284
+          },
+          "m_Name": "Hunting",
+          "UniqueID": "0c8bd30579c4c274298eccaa8f37bf56",
+          "UniqueIDIndex": 3411,
+          "Cooldown": 5,
+          "HideAgents": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2330
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2331
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2334
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2336
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2340
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2344
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2349
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2355
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2332
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2339
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2343
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2346
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2356
+            }
+          ],
+          "IgnoreSourceAgent": true,
+          "___fn": "Hunting@2660.json"
+        }
+      ],
+      "DropCardsEvenIfHiding": false
+    },
+    {
+      "ActionID": "Wolf Attraction Attack the Player_1",
+      "ActionLocalizedName": {
+        "DefaultText": "Wolf Attraction Attack the Player_1",
+        "Text": "Wolf Attraction Attack the Player_1",
+        "zh": "Wolf Attraction Attack the Player_1",
+        "en": "Wolf Attraction Attack the Player_1",
+        "ja": "Wolf Attraction Attack the Player_1"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 2,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": true,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": false,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": true,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "Stat_Pk_5_7_WolfAttraction",
+              "icon": "",
+              "type": "stat",
+              "zh": "狼之吸引",
+              "en": "Stat_Pk_7_WolfAttraction",
+              "ja": "Stat_Pk_7_WolfAttraction",
+              "max": 1,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 1,
+              "y": 1
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [],
+      "NPCStatModifications": [],
+      "DroppedCards": [
+        {
+          "CollectionName": "Combat",
+          "CollectionMessages": [],
+          "CountsAsSuccess": false,
+          "RevealInventory": false,
+          "CollectionUses": {
+            "m_X": 0,
+            "m_Y": 0
+          },
+          "CollectionWeight": 0,
+          "StatsDropChanceModifiers": [],
+          "NPCStatsDropChanceModifiers": [],
+          "CardDropChanceModifiers": [],
+          "DurabilitiesDropChanceModifier": {
+            "Spoilage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Usage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Fuel": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Progress": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special1": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special2": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special3": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special4": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            }
+          },
+          "CreatedLiquid": {
+            "LiquidCard": null,
+            "Quantity": {
+              "x": 0,
+              "y": 0
+            },
+            "Durabilities": {
+              "Spoilage": 0,
+              "Usage": 0,
+              "Fuel": 0,
+              "Progress": 0,
+              "Special1": 0,
+              "Special2": 0,
+              "Special3": 0,
+              "Special4": 0,
+              "SpoilageValue": 0,
+              "UsageValue": 0,
+              "FuelValue": 0,
+              "ProgressValue": 0,
+              "Special1Value": 0,
+              "Special2Value": 0,
+              "Special3Value": 0,
+              "Special4Value": 0,
+              "SpoilageFrom": 0,
+              "UsageFrom": 0,
+              "FuelFrom": 0,
+              "ProgressFrom": 0,
+              "Special1From": 0,
+              "Special2From": 0,
+              "Special3From": 0,
+              "Special4From": 0
+            }
+          },
+          "DroppedCards": [],
+          "DropSavedBpIngredients": false,
+          "DroppedIfNoBpIngredient": [],
+          "DropCardsInsideInventory": false,
+          "DropCardsInPlayerHand": false,
+          "DroppedEncounter": {
+            "key": "Combat_EncounterWolf",
+            "icon": "Wolf_Wild",
+            "type": "encounter",
+            "zh": "狼",
+            "en": "Wolf",
+            "ja": "狼"
+          },
+          "EncounterNPC": {
+            "key": "OLD_Agent_Moontouched",
+            "icon": "Moontouched",
+            "type": "npc",
+            "zh": "Moontouched",
+            "en": "Moontouched",
+            "ja": "Moontouched"
+          },
+          "SkipEncounterEvent": false,
+          "StatModifications": [],
+          "ReceivingCardDurabilityModifications": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "BpDropDurabilityChangesReplaceStartingValue": {
+            "MaskValue": 0
+          },
+          "DropsStatInterpolatedDurabilityChanges": []
+        }
+      ],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": null,
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": true,
+      "MoveTiming": 0,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [
+        {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 284
+          },
+          "m_Name": "Hunting",
+          "UniqueID": "0c8bd30579c4c274298eccaa8f37bf56",
+          "UniqueIDIndex": 3411,
+          "Cooldown": 5,
+          "HideAgents": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2330
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2331
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2334
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2336
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2340
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2344
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2349
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2355
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2332
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2339
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2343
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2346
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2356
+            }
+          ],
+          "IgnoreSourceAgent": true,
+          "___fn": "Hunting@2660.json"
+        }
+      ],
+      "DropCardsEvenIfHiding": false
+    },
+    {
+      "ActionID": "Bleed",
+      "ActionLocalizedName": {
+        "DefaultText": "Bleed",
+        "Text": "Bleed",
+        "zh": "Bleed",
+        "en": "Bleed",
+        "ja": "Bleed"
+      },
+      "ActionPopupText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "RepeatOptions": 1,
+      "CannotPerformWhileOnDuty": false,
+      "CannotPerformWhileInCombat": false,
+      "CannotPerformWhileInDialog": false,
+      "CannotPerformWhileDoingOtherAction": false,
+      "CannotPerformIfPlayerCannotBeInterrupted": false,
+      "CanBePerformedDuringTriggeredActions": [],
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [],
+        "RequiredNPCStatValues": [
+          {
+            "UseAssociatedAgent": true,
+            "TargetAgent": null,
+            "TargetStat": {
+              "m_Name": "AgentBlood",
+              "key": "AgentBlood",
+              "type": "durability",
+              "zh": "血量",
+              "en": "AgentBlood",
+              "ja": "Agent Stamina",
+              "GameName": {
+                "DefaultText": "Agent Stamina",
+                "Text": "血量",
+                "zh": "血量",
+                "en": "AgentBlood",
+                "ja": "Agent Stamina"
+              },
+              "DefaultStartingValue": 100,
+              "DefaultMinMaxValue": {
+                "x": 0,
+                "y": 10000
+              },
+              "DefaultRate": 0,
+              "DefaultMinMaxRate": {
+                "x": 0,
+                "y": 0
+              },
+              "StatVisibleIcon": null,
+              "HidingOptions": 0,
+              "TextDisplay": 0,
+              "NumberPrecision": 0,
+              "StatScalingToModifiers": [],
+              "NPCStatScalingToModifiers": [],
+              "name": "血量",
+              "desc": "Agent Stamina",
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "UniqueID": "f2c3d787896b6874c9974806acbe757a",
+              "UniqueIDIndex": 2806
+            },
+            "ConditionRange": {
+              "x": 0,
+              "y": 50
+            }
+          },
+          {
+            "UseAssociatedAgent": true,
+            "TargetAgent": null,
+            "TargetStat": {
+              "m_Name": "AgentExists",
+              "key": "AgentExists",
+              "type": "durability",
+              "zh": "存在",
+              "en": "AgentExists",
+              "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+              "GameName": {
+                "DefaultText": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+                "Text": "存在",
+                "zh": "存在",
+                "en": "AgentExists",
+                "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
+              },
+              "DefaultStartingValue": 0,
+              "DefaultMinMaxValue": {
+                "x": 0,
+                "y": 1
+              },
+              "DefaultRate": 0,
+              "DefaultMinMaxRate": {
+                "x": 0,
+                "y": 0
+              },
+              "StatVisibleIcon": null,
+              "HidingOptions": 0,
+              "TextDisplay": 0,
+              "NumberPrecision": 0,
+              "StatScalingToModifiers": [],
+              "NPCStatScalingToModifiers": [],
+              "name": "存在",
+              "desc": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "UniqueID": "16eb4865d583a1d4d82def0680f3065d",
+              "UniqueIDIndex": 3059
+            },
+            "ConditionRange": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        ],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "StatModifications": [],
+      "NPCStatModifications": [
+        {
+          "TargetStat": {
+            "m_Name": "AgentBlood",
+            "key": "AgentBlood",
+            "type": "durability",
+            "zh": "血量",
+            "en": "AgentBlood",
+            "ja": "Agent Stamina",
+            "GameName": {
+              "DefaultText": "Agent Stamina",
+              "Text": "血量",
+              "zh": "血量",
+              "en": "AgentBlood",
+              "ja": "Agent Stamina"
+            },
+            "DefaultStartingValue": 100,
+            "DefaultMinMaxValue": {
+              "x": 0,
+              "y": 10000
+            },
+            "DefaultRate": 0,
+            "DefaultMinMaxRate": {
+              "x": 0,
+              "y": 0
+            },
+            "StatVisibleIcon": null,
+            "HidingOptions": 0,
+            "TextDisplay": 0,
+            "NumberPrecision": 0,
+            "StatScalingToModifiers": [],
+            "NPCStatScalingToModifiers": [],
+            "name": "血量",
+            "desc": "Agent Stamina",
+            "m_GameObject": null,
+            "m_Enabled": 1,
+            "UniqueID": "f2c3d787896b6874c9974806acbe757a",
+            "UniqueIDIndex": 2806
+          },
+          "UseAssociatedAgent": true,
+          "TargetAgent": null,
+          "ValueChange": {
+            "x": -5,
+            "y": -5
+          }
+        }
+      ],
+      "DroppedCards": [],
+      "DropCardsInTriggerContainer": false,
+      "InventoryActions": [],
+      "StartDialog": null,
+      "MoveToEnvironment": null,
+      "MoveToRandomConnectedArea": false,
+      "MoveToPlayerEnvironment": false,
+      "MoveTiming": 0,
+      "SetNPCHome": [],
+      "Tracks": {
+        "Active": false,
+        "TrackLifetime": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "AddedChanceToDiscoverTracks": {
+          "x": 0,
+          "y": 0
+        },
+        "AddedStatChanceToDiscover": [],
+        "OverrideDefaultTracksCard": null,
+        "TracksDirection": 0,
+        "OverrideTrackDurabilities": 0,
+        "NPCStatsToTrackDurabilities": []
+      },
+      "TriggerHidingGroups": [],
+      "DropCardsEvenIfHiding": false
+    }
+  ],
+  "MaxCarryWeight": 10000,
+  "TradingConditions": {
+    "NotInBackground": false,
+    "InBackground": false,
+    "PlayerUsesCard": 0,
+    "RequiredEnvironment": null,
+    "InvertEnvironmentRequirement": false,
+    "RequiredEnvironmentTags": [],
+    "RequiredNOTEnvironmentTags": [],
+    "RequiredContainer": [],
+    "RequiredNOTContainer": [],
+    "RequiredContainerTags": [],
+    "RequiredNOTContainerTags": [],
+    "RequiredCardsOnBoard": [],
+    "RequiredTagsOnBoard": [],
+    "RequiredCardsNOTOnBoard": [],
+    "RequiredTagsNOTOnBoard": [],
+    "RequiredLiquidContainers": [],
+    "RequiredCardsInInventory": [],
+    "RequiredTagsInInventory": [],
+    "CardWasBuiltWith": [],
+    "CardWasNOTBuiltWith": [],
+    "RequiredPlayerOwnedCards": [],
+    "RequiredPlayerNOTOwnedCards": [],
+    "ReceivingRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "GivenRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ReceivingContainerRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "GivenContainerRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ReceivingCardTags": [],
+    "GivenCardTags": [],
+    "ReceivingCardSpices": [],
+    "GivenCardSpices": [],
+    "RequiredEnvironmentWeight": {
+      "Active": false,
+      "FloatValue": 0,
+      "MaxValue": 0
+    },
+    "RequiredStatValues": [],
+    "RequiredNPCStatValues": [],
+    "RequiredInGameTimes": [],
+    "RequiredAlreadyVisitedEnvironments": []
+  },
+  "StartingInventory": [],
+  "TradingModifiers": [],
+  "ModifyNPCStatsPerTradeValue": [],
+  "AgentTags": [],
+  "Interactions": [
+    {
+      "ButtonName": {
+        "DefaultText": "Approach",
+        "Text": "Approach",
+        "zh": "Approach",
+        "en": "Approach",
+        "ja": "Approach"
+      },
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [],
+        "RequiredNPCStatValues": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": []
+      },
+      "ButtonType": 0,
+      "Dialog": null,
+      "DroppedEncounter": {
+        "key": "Combat_EncounterMoontouched",
+        "icon": "Moontouched",
+        "type": "encounter",
+        "zh": "月之野兽",
+        "en": "Moontouched",
+        "ja": "Moontouched"
+      },
+      "SkipEncounterEvent": false
+    }
+  ],
+  "DefaultTracks": {
+    "Active": true,
+    "TrackLifetime": {
+      "m_X": 32,
+      "m_Y": 32
+    },
+    "AddedChanceToDiscoverTracks": {
+      "x": 0,
+      "y": 0
+    },
+    "AddedStatChanceToDiscover": [],
+    "OverrideDefaultTracksCard": null,
+    "TracksDirection": 0,
+    "OverrideTrackDurabilities": 0,
+    "NPCStatsToTrackDurabilities": [
+      {
+        "UseAssociatedAgent": true,
+        "TargetAgent": null,
+        "TargetStat": {
+          "m_Name": "AgentBlood",
+          "key": "AgentBlood",
+          "type": "durability",
+          "zh": "血量",
+          "en": "AgentBlood",
+          "ja": "Agent Stamina",
+          "GameName": {
+            "DefaultText": "Agent Stamina",
+            "Text": "血量",
+            "zh": "血量",
+            "en": "AgentBlood",
+            "ja": "Agent Stamina"
+          },
+          "DefaultStartingValue": 100,
+          "DefaultMinMaxValue": {
+            "x": 0,
+            "y": 10000
+          },
+          "DefaultRate": 0,
+          "DefaultMinMaxRate": {
+            "x": 0,
+            "y": 0
+          },
+          "StatVisibleIcon": null,
+          "HidingOptions": 0,
+          "TextDisplay": 0,
+          "NumberPrecision": 0,
+          "StatScalingToModifiers": [],
+          "NPCStatScalingToModifiers": [],
+          "name": "血量",
+          "desc": "Agent Stamina",
+          "m_GameObject": null,
+          "m_Enabled": 1,
+          "UniqueID": "f2c3d787896b6874c9974806acbe757a",
+          "UniqueIDIndex": 2806
+        },
+        "OutputDurability": 32,
+        "Value": {
+          "Active": true,
+          "InputValueRange": {
+            "x": 0,
+            "y": 100
+          },
+          "OutputValueRange": {
+            "x": 0,
+            "y": 100
+          },
+          "WhenOutOfRange": 0,
+          "OutOfRangeCustomValue": 0
+        }
+      }
+    ]
+  },
+  "AmbientSoundRealRange": 0,
+  "AmbientSoundNodesRange": 0,
+  "AmbientSounds": [],
+  "AgentDuties": [],
+  "Pathfinding": null,
+  "DismantleActions": [],
+  "DragAndDropActions": [],
+  "AgentPassiveEffects": [],
+  "CommissionsBp": [],
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "DebugLogActions": false,
+  "DebugActionIDs": [],
+  "CannotTrade": true,
+  "DebugColor": {
+    "r": 0.9651718,
+    "g": 0,
+    "b": 1,
+    "a": 1
+  }
+}

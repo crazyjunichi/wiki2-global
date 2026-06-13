@@ -1,0 +1,2821 @@
+{
+  "m_Name": "ColdResistance",
+  "key": "ColdResistance",
+  "icon": "Flame",
+  "type": "stat",
+  "zh": "耐寒",
+  "en": "Cold Resistance",
+  "ja": "Cold Resistance",
+  "UniqueIDIndex": 3176,
+  "GameName": {
+    "DefaultText": "Cold Resistance",
+    "Text": "耐寒",
+    "zh": "耐寒",
+    "en": "Cold Resistance",
+    "ja": "Cold Resistance"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 7000
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 288
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.4528302,
+    "g": 0.4528302,
+    "b": 0.4528302,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Flame"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 1001 - Frost Blessing 1000 + Body Temperature 1 (Shivering)",
+        "Text": "耐寒 1001 - 冰霜赐福 1000 + 体温 1（寒战）",
+        "zh": "耐寒 1001 - 冰霜赐福 1000 + 体温 1（寒战）",
+        "en": "Cold Resistance 1001 - Frost Blessing 1000 + Body Temperature 1 (Shivering)",
+        "ja": "Cold Resistance 1001 - Frost Blessing 1000 + Body Temperature 1 (Shivering)"
+      },
+      "Description": {
+        "DefaultText": "Negate half of Shivering Penalties",
+        "Text": "抵消一半的寒战惩罚",
+        "zh": "抵消一半的寒战惩罚",
+        "en": "Negate half of Shivering Penalties",
+        "ja": "Negate half of Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1001,
+        "m_Y": 1001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 7.5,
+            "y": 7.5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 2001 - Frost Blessing 2000 + Body Temperature 1 (Shivering))",
+        "Text": "耐寒 2001 - 冰霜赐福 2000 + 体温 1（寒战）",
+        "zh": "耐寒 2001 - 冰霜赐福 2000 + 体温 1（寒战）",
+        "en": "Cold Resistance 2001 - Frost Blessing 2000 + Body Temperature 1 (Shivering))",
+        "ja": "Cold Resistance 2001 - Frost Blessing 2000 + Body Temperature 1 (Shivering))"
+      },
+      "Description": {
+        "DefaultText": "Negate full Shivering Penalties",
+        "Text": "抵消全部的寒战惩罚",
+        "zh": "抵消全部的寒战惩罚",
+        "en": "Negate full Shivering Penalties",
+        "ja": "Negate full Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2001,
+        "m_Y": 2001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 3001 - Frost Blessing 3000 + Body Temperature 1 (Shivering))",
+        "Text": "耐寒 3001 - 冰霜赐福 3000 + 体温 1（寒战）",
+        "zh": "耐寒 3001 - 冰霜赐福 3000 + 体温 1（寒战）",
+        "en": "Cold Resistance 3001 - Frost Blessing 3000 + Body Temperature 1 (Shivering))",
+        "ja": "Cold Resistance 3001 - Frost Blessing 3000 + Body Temperature 1 (Shivering))"
+      },
+      "Description": {
+        "DefaultText": "Negate full Shivering Penalties",
+        "Text": "抵消全部的寒战惩罚",
+        "zh": "抵消全部的寒战惩罚",
+        "en": "Negate full Shivering Penalties",
+        "ja": "Negate full Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 3001,
+        "m_Y": 3001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 4001 - Frost Blessing 4000 + Body Temperature 1 (Shivering))",
+        "Text": "耐寒 4001 - 冰霜赐福 4000 + 体温 1（寒战）",
+        "zh": "耐寒 4001 - 冰霜赐福 4000 + 体温 1（寒战）",
+        "en": "Cold Resistance 4001 - Frost Blessing 4000 + Body Temperature 1 (Shivering))",
+        "ja": "Cold Resistance 4001 - Frost Blessing 4000 + Body Temperature 1 (Shivering))"
+      },
+      "Description": {
+        "DefaultText": "Negate full Shivering Penalties",
+        "Text": "抵消全部的寒战惩罚",
+        "zh": "抵消全部的寒战惩罚",
+        "en": "Negate full Shivering Penalties",
+        "ja": "Negate full Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4001,
+        "m_Y": 4001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 5001 - Frost Blessing 5000 + Body Temperature 1 (Shivering))",
+        "Text": "耐寒 5001 - 冰霜赐福 5000 + 体温 1（寒战）",
+        "zh": "耐寒 5001 - 冰霜赐福 5000 + 体温 1（寒战）",
+        "en": "Cold Resistance 5001 - Frost Blessing 5000 + Body Temperature 1 (Shivering))",
+        "ja": "Cold Resistance 5001 - Frost Blessing 5000 + Body Temperature 1 (Shivering))"
+      },
+      "Description": {
+        "DefaultText": "Negate full Shivering Penalties",
+        "Text": "抵消全部的寒战惩罚",
+        "zh": "抵消全部的寒战惩罚",
+        "en": "Negate full Shivering Penalties",
+        "ja": "Negate full Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 5001,
+        "m_Y": 5001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 6001 - Frost Blessing 6000 + Body Temperature 1 (Shivering))",
+        "Text": "耐寒 6001 - 冰霜赐福 6000 + 体温 1（寒战）",
+        "zh": "耐寒 6001 - 冰霜赐福 6000 + 体温 1（寒战）",
+        "en": "Cold Resistance 6001 - Frost Blessing 6000 + Body Temperature 1 (Shivering))",
+        "ja": "Cold Resistance 6001 - Frost Blessing 6000 + Body Temperature 1 (Shivering))"
+      },
+      "Description": {
+        "DefaultText": "Negate full Shivering Penalties",
+        "Text": "抵消全部的寒战惩罚",
+        "zh": "抵消全部的寒战惩罚",
+        "en": "Negate full Shivering Penalties",
+        "ja": "Negate full Shivering Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 6001,
+        "m_Y": 6001
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -6,
+            "y": -6
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 1002 - Frost Blessing 1000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 1002 - 冰霜赐福 1000 + 体温 2（麻木）",
+        "zh": "耐寒 1002 - 冰霜赐福 1000 + 体温 2（麻木）",
+        "en": "Cold Resistance 1002 - Frost Blessing 1000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 1002 - Frost Blessing 1000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/8 of Numb Penalties",
+        "Text": "抵消1/8的麻木惩罚",
+        "zh": "抵消1/8的麻木惩罚",
+        "en": "Negate 1/8 of Numb Penalties",
+        "ja": "Negate 1/8 of Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1002,
+        "m_Y": 1002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 6.25,
+            "y": 6.25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 2002 - Frost Blessing 2000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 2002 - 冰霜赐福 2000 + 体温 2（麻木）",
+        "zh": "耐寒 2002 - 冰霜赐福 2000 + 体温 2（麻木）",
+        "en": "Cold Resistance 2002 - Frost Blessing 2000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 2002 - Frost Blessing 2000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/4 of Numb Penalties",
+        "Text": "抵消1/4的麻木惩罚",
+        "zh": "抵消1/4的麻木惩罚",
+        "en": "Negate 1/4 of Numb Penalties",
+        "ja": "Negate 1/4 of Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2002,
+        "m_Y": 2002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 12.5,
+            "y": 12.5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 3002 - Frost Blessing 3000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 3002 - 冰霜赐福 3000 + 体温 2（麻木）",
+        "zh": "耐寒 3002 - 冰霜赐福 3000 + 体温 2（麻木）",
+        "en": "Cold Resistance 3002 - Frost Blessing 3000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 3002 - Frost Blessing 3000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/2 of Numb Penalties",
+        "Text": "抵消1/2的麻木惩罚",
+        "zh": "抵消1/2的麻木惩罚",
+        "en": "Negate 1/2 of Numb Penalties",
+        "ja": "Negate 1/2 of Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 3002,
+        "m_Y": 3002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 25,
+            "y": 25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 4002 - Frost Blessing 4000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 4002 - 冰霜赐福 4000 + 体温 2（麻木）",
+        "zh": "耐寒 4002 - 冰霜赐福 4000 + 体温 2（麻木）",
+        "en": "Cold Resistance 4002 - Frost Blessing 4000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 4002 - Frost Blessing 4000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate full Numb Penalties",
+        "Text": "抵消全部的麻木惩罚",
+        "zh": "抵消全部的麻木惩罚",
+        "en": "Negate full Numb Penalties",
+        "ja": "Negate full Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4002,
+        "m_Y": 4002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 5002 - Frost Blessing 5000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 5002 - 冰霜赐福 5000 + 体温 2（麻木）",
+        "zh": "耐寒 5002 - 冰霜赐福 5000 + 体温 2（麻木）",
+        "en": "Cold Resistance 5002 - Frost Blessing 5000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 5002 - Frost Blessing 5000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate full Numb Penalties",
+        "Text": "抵消全部的麻木惩罚",
+        "zh": "抵消全部的麻木惩罚",
+        "en": "Negate full Numb Penalties",
+        "ja": "Negate full Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 5002,
+        "m_Y": 5002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 6002 - Frost Blessing 6000 + Body Temperature 2 (Numb)",
+        "Text": "耐寒 6002 - 冰霜赐福 6000 + 体温 2（麻木）",
+        "zh": "耐寒 6002 - 冰霜赐福 6000 + 体温 2（麻木）",
+        "en": "Cold Resistance 6002 - Frost Blessing 6000 + Body Temperature 2 (Numb)",
+        "ja": "Cold Resistance 6002 - Frost Blessing 6000 + Body Temperature 2 (Numb)"
+      },
+      "Description": {
+        "DefaultText": "Negate full Numb Penalties",
+        "Text": "抵消全部的麻木惩罚",
+        "zh": "抵消全部的麻木惩罚",
+        "en": "Negate full Numb Penalties",
+        "ja": "Negate full Numb Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 6002,
+        "m_Y": 6002
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 1003 - Frost Blessing 1000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 1003 - 冰霜赐福 1000 + 体温 3（失温）",
+        "zh": "耐寒 1003 - 冰霜赐福 1000 + 体温 3（失温）",
+        "en": "Cold Resistance 1003 - Frost Blessing 1000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 1003 - Frost Blessing 1000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/32 of Hypothermia Penalties",
+        "Text": "抵消1/32的失温惩罚",
+        "zh": "抵消1/32的失温惩罚",
+        "en": "Negate 1/32 of Hypothermia Penalties",
+        "ja": "Negate 1/32 of Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1003,
+        "m_Y": 1003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 3.125,
+            "y": 3.125
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.125,
+            "y": 0.125
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 2003 - Frost Blessing 2000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 2003 - 冰霜赐福 2000 + 体温 3（失温）",
+        "zh": "耐寒 2003 - 冰霜赐福 2000 + 体温 3（失温）",
+        "en": "Cold Resistance 2003 - Frost Blessing 2000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 2003 - Frost Blessing 2000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/16 of Hypothermia Penalties",
+        "Text": "抵消1/16的失温惩罚",
+        "zh": "抵消1/16的失温惩罚",
+        "en": "Negate 1/16 of Hypothermia Penalties",
+        "ja": "Negate 1/16 of Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2003,
+        "m_Y": 2003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 6.25,
+            "y": 6.25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 3003 - Frost Blessing 3000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 3003 - 冰霜赐福 3000 + 体温 3（失温）",
+        "zh": "耐寒 3003 - 冰霜赐福 3000 + 体温 3（失温）",
+        "en": "Cold Resistance 3003 - Frost Blessing 3000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 3003 - Frost Blessing 3000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/8 of Hypothermia Penalties",
+        "Text": "抵消1/8的失温惩罚",
+        "zh": "抵消1/8的失温惩罚",
+        "en": "Negate 1/8 of Hypothermia Penalties",
+        "ja": "Negate 1/8 of Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 3003,
+        "m_Y": 3003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 12.5,
+            "y": 12.5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 4003 - Frost Blessing 4000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 4003 - 冰霜赐福 4000 + 体温 3（失温）",
+        "zh": "耐寒 4003 - 冰霜赐福 4000 + 体温 3（失温）",
+        "en": "Cold Resistance 4003 - Frost Blessing 4000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 4003 - Frost Blessing 4000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/4 of Hypothermia Penalties",
+        "Text": "抵消1/4的失温惩罚",
+        "zh": "抵消1/4的失温惩罚",
+        "en": "Negate 1/4 of Hypothermia Penalties",
+        "ja": "Negate 1/4 of Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4003,
+        "m_Y": 4003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 25,
+            "y": 25
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 5003 - Frost Blessing 5000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 5003 - 冰霜赐福 5000 + 体温 3（失温）",
+        "zh": "耐寒 5003 - 冰霜赐福 5000 + 体温 3（失温）",
+        "en": "Cold Resistance 5003 - Frost Blessing 5000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 5003 - Frost Blessing 5000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate 1/2 of Hypothermia Penalties",
+        "Text": "抵消1/2的失温惩罚",
+        "zh": "抵消1/2的失温惩罚",
+        "en": "Negate 1/2 of Hypothermia Penalties",
+        "ja": "Negate 1/2 of Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 5003,
+        "m_Y": 5003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Cold Resistance 6003 - Frost Blessing 6000 + Body Temperature 3 (Hypothermia)",
+        "Text": "耐寒 6003 - 冰霜赐福 6000 + 体温 3（失温）",
+        "zh": "耐寒 6003 - 冰霜赐福 6000 + 体温 3（失温）",
+        "en": "Cold Resistance 6003 - Frost Blessing 6000 + Body Temperature 3 (Hypothermia)",
+        "ja": "Cold Resistance 6003 - Frost Blessing 6000 + Body Temperature 3 (Hypothermia)"
+      },
+      "Description": {
+        "DefaultText": "Negate full Hypothermia Penalties",
+        "Text": "抵消全部的失温惩罚",
+        "zh": "抵消全部的失温惩罚",
+        "en": "Negate full Hypothermia Penalties",
+        "ja": "Negate full Hypothermia Penalties"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 6003,
+        "m_Y": 6003
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Comfort",
+            "icon": "FurCloak",
+            "type": "stat",
+            "zh": "舒适度",
+            "en": "Comfort",
+            "ja": "快適さ",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 100,
+            "y": 100
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Infection_UpperRespiratory",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "上呼吸道感染",
+            "en": "Upper Respiratory Infection",
+            "ja": "上気道感染",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "BodyTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体温",
+        "en": "Body Temperature",
+        "ja": "体温",
+        "max": 200,
+        "min": -100
+      },
+      "localization": {
+        "zh": "状态阶段: 寒战",
+        "en": "Status Stage: Shivering",
+        "ja": "ステータス段階: 震えてる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "BodyTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体温",
+        "en": "Body Temperature",
+        "ja": "体温",
+        "max": 200,
+        "min": -100
+      },
+      "localization": {
+        "zh": "状态阶段: 麻木",
+        "en": "Status Stage: Numb",
+        "ja": "ステータス段階: 感覚がない"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "BodyTemperature",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体温",
+        "en": "Body Temperature",
+        "ja": "体温",
+        "max": 200,
+        "min": -100
+      },
+      "localization": {
+        "zh": "状态阶段: 失温",
+        "en": "Status Stage: Hypothermia",
+        "ja": "ステータス段階: Hypothermia"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 1000,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 2000,
+        "y": 2000
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 3000,
+        "y": 3000
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 4000,
+        "y": 4000
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 5000,
+        "y": 5000
+      }
+    },
+    {
+      "link": {
+        "key": "FrostBlessing",
+        "icon": "Snowflake_Old",
+        "type": "stat",
+        "zh": "冰霜赐福",
+        "en": "Frost Blessing",
+        "ja": "Frost Blessing",
+        "max": 288,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 冰霜赐福",
+        "en": "Status Stage: Frost Blessing",
+        "ja": "ステータス段階: Frost Blessing"
+      },
+      "value": {
+        "x": 6000,
+        "y": 6000
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 7000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": true,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Flame"
+    },
+    "NegativeIcon": null,
+    "StepValue": 50,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

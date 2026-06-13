@@ -1,0 +1,1882 @@
+{
+  "m_Name": "BasicHunting_DisplayConditions",
+  "key": "BasicHunting_DisplayConditions",
+  "icon": "",
+  "type": "perk",
+  "zh": "",
+  "en": "",
+  "ja": "",
+  "UniqueIDIndex": 2828,
+  "StartUnlocked": false,
+  "ActionObjectives": [],
+  "CardsOnBoardObjectives": [],
+  "TagsOnBoardObjectives": [],
+  "StatsObjectives": [
+    {
+      "ObjectiveName": "2",
+      "CompletionWeight": 1,
+      "StatCondition": {
+        "Stat": {
+          "key": "HuntsmanEnabled",
+          "icon": "",
+          "type": "stat",
+          "zh": "猎人任务启用",
+          "en": "HuntsmanEnabled",
+          "ja": "HuntsmanEnabled",
+          "max": 1,
+          "min": 0
+        },
+        "TriggerRange": {
+          "x": 0,
+          "y": 0
+        },
+        "NotifyWhenNotMet": false,
+        "HideAllWhenNotMet": false
+      },
+      "ConstantlyChecking": false
+    }
+  ],
+  "TimeObjectives": [],
+  "NestedObjectives": [
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "ObjectiveCondition": {
+        "m_Name": "ImprovisedShelter_Completed",
+        "key": "ImprovisedShelter_Completed",
+        "icon": "",
+        "type": "perk",
+        "zh": "临时庇护所",
+        "en": "Improvised Shelter",
+        "ja": "手作りシェルター",
+        "UniqueID": "0b740e8312d30ce4a9fc5337dfe90db9",
+        "UniqueIDIndex": 3225,
+        "StartUnlocked": false,
+        "ActionObjectives": [],
+        "CardsOnBoardObjectives": [],
+        "TagsOnBoardObjectives": [],
+        "StatsObjectives": [],
+        "TimeObjectives": [],
+        "NestedObjectives": [
+          {
+            "ObjectiveName": "1",
+            "CompletionWeight": 1,
+            "ObjectiveCondition": {
+              "m_Name": "ImprovisedShelter_Obj1_HarvestNettle",
+              "key": "ImprovisedShelter_Obj1_HarvestNettle",
+              "icon": "",
+              "type": "perk",
+              "zh": "采集荨麻",
+              "en": "Harvest Nettle",
+              "ja": "イラクサを収穫する",
+              "UniqueID": "2afe80cfe1b0ee24fb47935c1cca7fe5",
+              "UniqueIDIndex": 3227,
+              "StartUnlocked": false,
+              "ActionObjectives": [
+                {
+                  "ObjectiveName": "1",
+                  "CompletionWeight": 1,
+                  "OnCard": {
+                    "key": "NettlePatchWild",
+                    "icon": "Nettle_Plant",
+                    "type": "card",
+                    "CardType": 2,
+                    "zh": "野生荨麻",
+                    "en": "Nettle Patch",
+                    "ja": "イラクサのパッチ",
+                    "SpoilageTime": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpoilageTime",
+                        "zh": "时间",
+                        "en": "Spoilage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 384
+                    },
+                    "UsageDurability": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "UsageDurability",
+                        "zh": "耐久",
+                        "en": "Usage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 96
+                    },
+                    "FuelCapacity": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "FuelCapacity",
+                        "zh": "容量",
+                        "en": "Fuel",
+                        "ja": ""
+                      },
+                      "OverrideIcon": {
+                        "FileName": "Thirst_Old"
+                      },
+                      "MaxValue": 96
+                    },
+                    "Progress": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "Progress",
+                        "zh": "进度",
+                        "en": "Progress",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1440
+                    },
+                    "SpecialDurability1": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "Yield",
+                        "Text": "饱满度",
+                        "zh": "饱满度",
+                        "en": "Yield",
+                        "ja": "収量"
+                      },
+                      "OverrideIcon": {
+                        "FileName": "SaturationBerries"
+                      },
+                      "MaxValue": 5760
+                    },
+                    "SpecialDurability2": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability2",
+                        "zh": "特殊2",
+                        "en": "Special2",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 96
+                    },
+                    "SpecialDurability3": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability3",
+                        "zh": "特殊3",
+                        "en": "Special3",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1
+                    },
+                    "SpecialDurability4": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability4",
+                        "zh": "特殊4",
+                        "en": "Special4",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    }
+                  },
+                  "OnCardWithTags": [],
+                  "WithActionTags": [],
+                  "ActionName": "采集",
+                  "OnActionStarted": true,
+                  "PerformMultipleTimes": 0,
+                  "DebugMode": false,
+                  "ActionNameText": {
+                    "DefaultText": "Harvest",
+                    "Text": "采集",
+                    "zh": "采集",
+                    "en": "Harvest",
+                    "ja": "収穫"
+                  }
+                }
+              ],
+              "CardsOnBoardObjectives": [],
+              "TagsOnBoardObjectives": [],
+              "StatsObjectives": [],
+              "TimeObjectives": [],
+              "NestedObjectives": [],
+              "PlayedCharacter": [],
+              "CompleteOnWin": false,
+              "CompleteOnLose": false,
+              "RequiredDifficultyScore": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "EditorOnly": false,
+              "NotifyWhenNotChecked": true,
+              "CheckingNotificationDetails": 2,
+              "DebugCompletion": false,
+              "CombatObjectives": [],
+              "ObjectiveDescription": {
+                "DefaultText": "Harvest Nettle",
+                "Text": "采集荨麻",
+                "zh": "采集荨麻",
+                "en": "Harvest Nettle",
+                "ja": "イラクサを収穫する"
+              },
+              "NotificationSettings": {
+                "Frequency": 0,
+                "PercentThreshold": 0.01
+              },
+              "OnCompleteActions": [],
+              "QuestBehavior": 0,
+              "SteamAchievementID": "",
+              "JournalObjective": false,
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "ExplicitRelatedQuest": null
+            },
+            "IgnoreValidation": false
+          },
+          {
+            "ObjectiveName": "2",
+            "CompletionWeight": 1,
+            "ObjectiveCondition": {
+              "m_Name": "ImprovisedShelter_Obj2_WashYourselfToTreatTheRash",
+              "key": "ImprovisedShelter_Obj2_WashYourselfToTreatTheRash",
+              "icon": "",
+              "type": "perk",
+              "zh": "洗个澡来治疗皮疹",
+              "en": "Wash yourself to Treat the Rash",
+              "ja": "発疹を治療するために体を洗う",
+              "UniqueID": "55aeabbcebc7c324b8b23a01e23b645c",
+              "UniqueIDIndex": 3228,
+              "StartUnlocked": false,
+              "ActionObjectives": [
+                {
+                  "ObjectiveName": "1",
+                  "CompletionWeight": 1,
+                  "OnCard": {
+                    "key": "River",
+                    "icon": "RiverShore",
+                    "type": "card",
+                    "CardType": 2,
+                    "zh": "河流",
+                    "en": "River",
+                    "ja": "川",
+                    "AlternateNames": [
+                      {
+                        "Conditions": {
+                          "Special4Range": {
+                            "x": 1,
+                            "y": 1
+                          }
+                        },
+                        "Name": {
+                          "DefaultText": "Lake",
+                          "Text": "湖泊",
+                          "zh": "湖泊",
+                          "en": "Lake",
+                          "ja": "Lake"
+                        }
+                      },
+                      {
+                        "Conditions": {
+                          "Special4Range": {
+                            "x": 2,
+                            "y": 2
+                          }
+                        },
+                        "Name": {
+                          "DefaultText": "Marsh",
+                          "Text": "沼泽",
+                          "zh": "沼泽",
+                          "en": "Marsh",
+                          "ja": "Marsh"
+                        }
+                      }
+                    ],
+                    "SpoilageTime": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpoilageTime",
+                        "zh": "时间",
+                        "en": "Spoilage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "UsageDurability": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "UsageDurability",
+                        "zh": "耐久",
+                        "en": "Usage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 10000
+                    },
+                    "FuelCapacity": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "FuelCapacity",
+                        "zh": "容量",
+                        "en": "Fuel",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "Progress": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "Progress",
+                        "zh": "进度",
+                        "en": "Progress",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1
+                    },
+                    "SpecialDurability1": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "Common Fish Population",
+                        "Text": "Common Fish Population",
+                        "zh": "常见鱼种群数量",
+                        "en": "Common Fish Population",
+                        "ja": "Common Fish Population"
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 10000
+                    },
+                    "SpecialDurability2": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "Uncommon Fish Population",
+                        "Text": "罕见鱼类种群数量",
+                        "zh": "罕见鱼类种群数量",
+                        "en": "Uncommon Fish Population",
+                        "ja": "アンコモンな魚の数"
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 3000
+                    },
+                    "SpecialDurability3": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "Rare Fish Population",
+                        "Text": "珍稀鱼类种群数量",
+                        "zh": "珍稀鱼类种群数量",
+                        "en": "Rare Fish Population",
+                        "ja": "レアな魚の数"
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1000
+                    },
+                    "SpecialDurability4": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "River Type",
+                        "Text": "河流类型",
+                        "zh": "河流类型",
+                        "en": "River Type",
+                        "ja": "River Type"
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1000
+                    }
+                  },
+                  "OnCardWithTags": [],
+                  "WithActionTags": [],
+                  "ActionName": "洗个澡",
+                  "OnActionStarted": true,
+                  "PerformMultipleTimes": 0,
+                  "DebugMode": false,
+                  "ActionNameText": {
+                    "DefaultText": "Wash yourself",
+                    "Text": "洗个澡",
+                    "zh": "洗个澡",
+                    "en": "Wash yourself",
+                    "ja": "体を洗う"
+                  }
+                }
+              ],
+              "CardsOnBoardObjectives": [],
+              "TagsOnBoardObjectives": [],
+              "StatsObjectives": [],
+              "TimeObjectives": [],
+              "NestedObjectives": [],
+              "PlayedCharacter": [],
+              "CompleteOnWin": false,
+              "CompleteOnLose": false,
+              "RequiredDifficultyScore": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "EditorOnly": false,
+              "NotifyWhenNotChecked": true,
+              "CheckingNotificationDetails": 2,
+              "DebugCompletion": false,
+              "CombatObjectives": [],
+              "ObjectiveDescription": {
+                "DefaultText": "Wash yourself to Treat the Rash",
+                "Text": "洗个澡来治疗皮疹",
+                "zh": "洗个澡来治疗皮疹",
+                "en": "Wash yourself to Treat the Rash",
+                "ja": "発疹を治療するために体を洗う"
+              },
+              "NotificationSettings": {
+                "Frequency": 0,
+                "PercentThreshold": 0.01
+              },
+              "OnCompleteActions": [],
+              "QuestBehavior": 0,
+              "SteamAchievementID": "",
+              "JournalObjective": false,
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "ExplicitRelatedQuest": null
+            },
+            "IgnoreValidation": false
+          },
+          {
+            "ObjectiveName": "3",
+            "CompletionWeight": 1,
+            "ObjectiveCondition": {
+              "m_Name": "ImprovisedShelter_Obj3_MakeSomeTwineWithTheNettle",
+              "key": "ImprovisedShelter_Obj3_MakeSomeTwineWithTheNettle",
+              "icon": "",
+              "type": "perk",
+              "zh": "用荨麻搓些细线",
+              "en": "Make some Twine with the Nettle",
+              "ja": "イラクサで紐を作る",
+              "UniqueID": "92a53edacca30924b858c16a41f71044",
+              "UniqueIDIndex": 3229,
+              "StartUnlocked": false,
+              "ActionObjectives": [
+                {
+                  "ObjectiveName": "1",
+                  "CompletionWeight": 1,
+                  "OnCard": {
+                    "key": "Fibers",
+                    "icon": "Fibers",
+                    "type": "card",
+                    "CardType": 0,
+                    "zh": "纤维",
+                    "en": "Fibers",
+                    "ja": "繊維",
+                    "SpoilageTime": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpoilageTime",
+                        "zh": "时间",
+                        "en": "Spoilage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "UsageDurability": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "UsageDurability",
+                        "zh": "耐久",
+                        "en": "Usage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "FuelCapacity": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "FuelCapacity",
+                        "zh": "容量",
+                        "en": "Fuel",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1
+                    },
+                    "Progress": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "Progress",
+                        "zh": "进度",
+                        "en": "Progress",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability1": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "CanBeCombed",
+                        "Text": "CanBeCombed",
+                        "zh": "CanBeCombed",
+                        "en": "CanBeCombed",
+                        "ja": "CanBeCombed"
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 1
+                    },
+                    "SpecialDurability2": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "Quality",
+                        "Text": "品质",
+                        "zh": "品质",
+                        "en": "Quality",
+                        "ja": "クオリティ"
+                      },
+                      "OverrideIcon": {
+                        "FileName": "Quality"
+                      },
+                      "MaxValue": 47.5
+                    },
+                    "SpecialDurability3": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability3",
+                        "zh": "特殊3",
+                        "en": "Special3",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability4": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability4",
+                        "zh": "特殊4",
+                        "en": "Special4",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    }
+                  },
+                  "OnCardWithTags": [],
+                  "WithActionTags": [],
+                  "ActionName": "制作细线",
+                  "OnActionStarted": true,
+                  "PerformMultipleTimes": 0,
+                  "DebugMode": false,
+                  "ActionNameText": {
+                    "DefaultText": "Make Twine",
+                    "Text": "制作细线",
+                    "zh": "制作细线",
+                    "en": "Make Twine",
+                    "ja": "紐を作る"
+                  }
+                }
+              ],
+              "CardsOnBoardObjectives": [],
+              "TagsOnBoardObjectives": [],
+              "StatsObjectives": [],
+              "TimeObjectives": [],
+              "NestedObjectives": [],
+              "PlayedCharacter": [],
+              "CompleteOnWin": false,
+              "CompleteOnLose": false,
+              "RequiredDifficultyScore": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "EditorOnly": false,
+              "NotifyWhenNotChecked": true,
+              "CheckingNotificationDetails": 2,
+              "DebugCompletion": false,
+              "CombatObjectives": [],
+              "ObjectiveDescription": {
+                "DefaultText": "Make some Twine with the Nettle",
+                "Text": "用荨麻搓些细线",
+                "zh": "用荨麻搓些细线",
+                "en": "Make some Twine with the Nettle",
+                "ja": "イラクサで紐を作る"
+              },
+              "NotificationSettings": {
+                "Frequency": 0,
+                "PercentThreshold": 0.01
+              },
+              "OnCompleteActions": [],
+              "QuestBehavior": 0,
+              "SteamAchievementID": "",
+              "JournalObjective": false,
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "ExplicitRelatedQuest": null
+            },
+            "IgnoreValidation": false
+          },
+          {
+            "ObjectiveName": "4",
+            "CompletionWeight": 1,
+            "ObjectiveCondition": {
+              "m_Name": "ImprovisedShelter_Obj4_BuildAnImprovisedShelter",
+              "key": "ImprovisedShelter_Obj4_BuildAnImprovisedShelter",
+              "icon": "",
+              "type": "perk",
+              "zh": "搭一个临时庇护所",
+              "en": "Build an Improvised Shelter",
+              "ja": "手作りシェルターを作る",
+              "UniqueID": "ffd475ad055cab34c91d2701c5bf5c89",
+              "UniqueIDIndex": 3230,
+              "StartUnlocked": false,
+              "ActionObjectives": [],
+              "CardsOnBoardObjectives": [
+                {
+                  "ObjectiveName": "1",
+                  "CompletionWeight": 1,
+                  "Card": {
+                    "key": "ImprovisedShelter",
+                    "icon": "ImprovisedShelter",
+                    "type": "card",
+                    "CardType": 2,
+                    "zh": "临时庇护所",
+                    "en": "Improvised Shelter",
+                    "ja": "手作りシェルター",
+                    "SpoilageTime": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpoilageTime",
+                        "zh": "时间",
+                        "en": "Spoilage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "UsageDurability": {
+                      "Active": true,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "耐久",
+                        "zh": "耐久",
+                        "en": "Usage",
+                        "ja": ""
+                      },
+                      "OverrideIcon": {
+                        "FileName": "Spoilage"
+                      },
+                      "MaxValue": 2880
+                    },
+                    "FuelCapacity": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "FuelCapacity",
+                        "zh": "容量",
+                        "en": "Fuel",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "Progress": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "Progress",
+                        "zh": "进度",
+                        "en": "Progress",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability1": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability1",
+                        "zh": "特殊1",
+                        "en": "Special1",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability2": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability2",
+                        "zh": "特殊2",
+                        "en": "Special2",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability3": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability3",
+                        "zh": "特殊3",
+                        "en": "Special3",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    },
+                    "SpecialDurability4": {
+                      "Active": false,
+                      "CardStatName": {
+                        "DefaultText": "",
+                        "Text": "SpecialDurability4",
+                        "zh": "特殊4",
+                        "en": "Special4",
+                        "ja": ""
+                      },
+                      "OverrideIcon": null,
+                      "MaxValue": 0
+                    }
+                  },
+                  "Quantity": 1,
+                  "ConstantlyChecking": false,
+                  "OnlyInEnvironment": null,
+                  "OnlyIfEquipped": false,
+                  "OnlyInContainer": {
+                    "Target": null
+                  }
+                }
+              ],
+              "TagsOnBoardObjectives": [],
+              "StatsObjectives": [],
+              "TimeObjectives": [],
+              "NestedObjectives": [],
+              "PlayedCharacter": [],
+              "CompleteOnWin": false,
+              "CompleteOnLose": false,
+              "RequiredDifficultyScore": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "EditorOnly": false,
+              "NotifyWhenNotChecked": true,
+              "CheckingNotificationDetails": 2,
+              "DebugCompletion": false,
+              "CombatObjectives": [],
+              "ObjectiveDescription": {
+                "DefaultText": "Build an Improvised Shelter",
+                "Text": "搭一个临时庇护所",
+                "zh": "搭一个临时庇护所",
+                "en": "Build an Improvised Shelter",
+                "ja": "手作りシェルターを作る"
+              },
+              "NotificationSettings": {
+                "Frequency": 0,
+                "PercentThreshold": 0.01
+              },
+              "OnCompleteActions": [],
+              "QuestBehavior": 0,
+              "SteamAchievementID": "",
+              "JournalObjective": false,
+              "m_GameObject": null,
+              "m_Enabled": 1,
+              "ExplicitRelatedQuest": null
+            },
+            "IgnoreValidation": false
+          }
+        ],
+        "PlayedCharacter": [],
+        "CompleteOnWin": false,
+        "CompleteOnLose": false,
+        "RequiredDifficultyScore": {
+          "m_X": 0,
+          "m_Y": 0
+        },
+        "EditorOnly": false,
+        "NotifyWhenNotChecked": true,
+        "CheckingNotificationDetails": 0,
+        "DebugCompletion": false,
+        "CombatObjectives": [],
+        "ObjectiveDescription": {
+          "DefaultText": "Improvised Shelter",
+          "Text": "临时庇护所",
+          "zh": "临时庇护所",
+          "en": "Improvised Shelter",
+          "ja": "手作りシェルター"
+        },
+        "NotificationSettings": {
+          "Frequency": 1,
+          "PercentThreshold": 0.01
+        },
+        "OnCompleteActions": [
+          {
+            "ActionName": {
+              "DefaultText": "Completed",
+              "Text": "完成",
+              "zh": "完成",
+              "en": "Completed",
+              "ja": "完了"
+            },
+            "ActionDescription": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            },
+            "NoveltyShared": false,
+            "VictorySettings": {
+              "Victory": false,
+              "SpecialEnding": false,
+              "VictoryMessage": {
+                "DefaultText": "",
+                "Text": "",
+                "zh": "",
+                "en": "",
+                "ja": ""
+              }
+            },
+            "UnavailableInDemo": false,
+            "SaveGame": false,
+            "ConfirmPopup": false,
+            "CustomConfirmText": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            },
+            "NotInterruptedByEncounters": false,
+            "StackCompatible": false,
+            "DaytimeCost": 0,
+            "UseMiniTicks": 0,
+            "ActionSounds": [],
+            "DisablePitchVariation": false,
+            "ActionTags": [],
+            "RequiredStatValues": [],
+            "RequiredNPCStatValues": [],
+            "RequiredCardsOnBoard": [],
+            "RequiredTagsOnBoard": [],
+            "RequiredReceivingContainer": [],
+            "RequiredReceivingContainerTag": [],
+            "RequiredReceivingContainerDurabilities": {
+              "RequiredSpoilagePercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredUsagePercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredFuelPercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredProgressPercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredLiquidQuantity": 0,
+              "RequiredSpecial1Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial2Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial3Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial4Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "HideActionIfNotMet": false,
+              "FailMessage": {
+                "DefaultText": "",
+                "Text": "",
+                "zh": "",
+                "en": "",
+                "ja": ""
+              },
+              "SpecificFailMessages": []
+            },
+            "RequiredReceivingDurabilities": {
+              "RequiredSpoilagePercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredUsagePercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredFuelPercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredProgressPercent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredLiquidQuantity": 0,
+              "RequiredSpecial1Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial2Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial3Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "RequiredSpecial4Percent": {
+                "Active": false,
+                "FloatValue": 0,
+                "MaxValue": 0
+              },
+              "HideActionIfNotMet": false,
+              "FailMessage": {
+                "DefaultText": "",
+                "Text": "",
+                "zh": "",
+                "en": "",
+                "ja": ""
+              },
+              "SpecificFailMessages": []
+            },
+            "RequiredReceivingLiquidContent": {
+              "IsActive": false,
+              "RequiredLiquid": null,
+              "RequiredGroup": null,
+              "RequiredQuantity": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "RequiredActiveHidingGroups": [],
+            "HideIfConditionsNotMet": false,
+            "NotBaseAction": false,
+            "Cancellable": false,
+            "InstantStatModifications": false,
+            "ReceivingCardFlavourBonus": false,
+            "GivenCardFlavourBonus": false,
+            "ResetWhenDone": null,
+            "StatInterruptions": [],
+            "StartDialog": null,
+            "ProducedCards": [
+              {
+                "CollectionName": "Completed",
+                "CollectionMessages": [],
+                "CountsAsSuccess": false,
+                "RevealInventory": false,
+                "CollectionUses": {
+                  "m_X": 0,
+                  "m_Y": 0
+                },
+                "CollectionWeight": 0,
+                "StatsDropChanceModifiers": [],
+                "NPCStatsDropChanceModifiers": [],
+                "CardDropChanceModifiers": [],
+                "DurabilitiesDropChanceModifier": {
+                  "Spoilage": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Usage": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Fuel": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Progress": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Special1": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Special2": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Special3": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  },
+                  "Special4": {
+                    "Active": false,
+                    "DurabilityRange": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "InterpWeightRange": {
+                      "m_X": 0,
+                      "m_Y": 0
+                    },
+                    "WhenOutOfRange": 0
+                  }
+                },
+                "CreatedLiquid": {
+                  "LiquidCard": null,
+                  "Quantity": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "Durabilities": {
+                    "Spoilage": 0,
+                    "Usage": 0,
+                    "Fuel": 0,
+                    "Progress": 0,
+                    "Special1": 0,
+                    "Special2": 0,
+                    "Special3": 0,
+                    "Special4": 0,
+                    "SpoilageValue": 0,
+                    "UsageValue": 0,
+                    "FuelValue": 0,
+                    "ProgressValue": 0,
+                    "Special1Value": 0,
+                    "Special2Value": 0,
+                    "Special3Value": 0,
+                    "Special4Value": 0,
+                    "SpoilageFrom": 0,
+                    "UsageFrom": 0,
+                    "FuelFrom": 0,
+                    "ProgressFrom": 0,
+                    "Special1From": 0,
+                    "Special2From": 0,
+                    "Special3From": 0,
+                    "Special4From": 0
+                  }
+                },
+                "DroppedCards": [
+                  {
+                    "DroppedCard": {
+                      "key": "ImprovisedShelter_Completed_Event",
+                      "icon": "ImprovisedShelter",
+                      "type": "card",
+                      "CardType": 3,
+                      "zh": "临时庇护所 - 完成",
+                      "en": "Improvised Shelter Complete",
+                      "ja": "手作りシェルター完了",
+                      "SpoilageTime": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "SpoilageTime",
+                          "zh": "时间",
+                          "en": "Spoilage",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "UsageDurability": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "UsageDurability",
+                          "zh": "耐久",
+                          "en": "Usage",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "FuelCapacity": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "FuelCapacity",
+                          "zh": "容量",
+                          "en": "Fuel",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "Progress": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "Progress",
+                          "zh": "进度",
+                          "en": "Progress",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "SpecialDurability1": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "SpecialDurability1",
+                          "zh": "特殊1",
+                          "en": "Special1",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "SpecialDurability2": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "SpecialDurability2",
+                          "zh": "特殊2",
+                          "en": "Special2",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "SpecialDurability3": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "SpecialDurability3",
+                          "zh": "特殊3",
+                          "en": "Special3",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      },
+                      "SpecialDurability4": {
+                        "Active": false,
+                        "CardStatName": {
+                          "DefaultText": "",
+                          "Text": "SpecialDurability4",
+                          "zh": "特殊4",
+                          "en": "Special4",
+                          "ja": ""
+                        },
+                        "OverrideIcon": null,
+                        "MaxValue": 0
+                      }
+                    },
+                    "Quantity": {
+                      "m_X": 1,
+                      "m_Y": 1
+                    },
+                    "FinishUnlocking": false,
+                    "TransferRules": {
+                      "Spoilage": 0,
+                      "Usage": 0,
+                      "Fuel": 0,
+                      "Progress": 0,
+                      "Special1": 0,
+                      "Special2": 0,
+                      "Special3": 0,
+                      "Special4": 0,
+                      "SpoilageValue": 0,
+                      "UsageValue": 0,
+                      "FuelValue": 0,
+                      "ProgressValue": 0,
+                      "Special1Value": 0,
+                      "Special2Value": 0,
+                      "Special3Value": 0,
+                      "Special4Value": 0,
+                      "SpoilageFrom": 0,
+                      "UsageFrom": 0,
+                      "FuelFrom": 0,
+                      "ProgressFrom": 0,
+                      "Special1From": 0,
+                      "Special2From": 0,
+                      "Special3From": 0,
+                      "Special4From": 0
+                    },
+                    "DropChance": {
+                      "Active": false,
+                      "BaseDropChance": 0,
+                      "DurabilitiesModifiers": [],
+                      "StatsModifiers": [],
+                      "CardsModifiers": [],
+                      "NPCStatsModifiers": []
+                    },
+                    "DropsDurabilityMultipliers": [],
+                    "DropsStatMultipliers": []
+                  }
+                ],
+                "DropSavedBpIngredients": false,
+                "DroppedIfNoBpIngredient": [],
+                "DropCardsInsideInventory": false,
+                "DropCardsInPlayerHand": false,
+                "DroppedEncounter": null,
+                "EncounterNPC": null,
+                "SkipEncounterEvent": false,
+                "StatModifications": [],
+                "ReceivingCardDurabilityModifications": {
+                  "SpoilageChange": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "UsageChange": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "FuelChange": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "ChargesChange": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "Special1Change": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "Special2Change": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "Special3Change": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "Special4Change": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "BpDropDurabilityChangesReplaceStartingValue": {
+                  "MaskValue": 0
+                },
+                "DropsStatInterpolatedDurabilityChanges": []
+              }
+            ],
+            "StatModifications": [],
+            "InterpolatedStatModifications": [],
+            "NPCStatModifications": [],
+            "TemporaryStatModifications": [],
+            "MovePlayer": {
+              "MoveOption": 0,
+              "ToEnv": null,
+              "Pathfinding": null,
+              "Direction": 0
+            },
+            "MoveReceivingCard": {
+              "Card": null,
+              "UseCardinalDirection": false,
+              "MoveInDirection": 0,
+              "Pathfinding": null
+            },
+            "MoveNPC": [],
+            "SetNPCHome": [],
+            "ExtraDurabilityModifications": [],
+            "BlueprintsFullUnlock": [],
+            "CompletedImprovements": [],
+            "DontShowDestroyMessage": false,
+            "CustomDestroyMessage": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            },
+            "NoCardsAffectedMessage": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            },
+            "ReceivingCardChanges": {
+              "ModType": 0,
+              "TransformInto": null,
+              "TransferSpoilage": false,
+              "TransferUsage": false,
+              "TransferFuel": false,
+              "TransferCharges": false,
+              "TransferSpecial1": false,
+              "TransferSpecial2": false,
+              "TransferSpecial3": false,
+              "TransferSpecial4": false,
+              "TransferInventory": false,
+              "TransferSavedIngredients": false,
+              "AverageGivenAndReceivingCards": false,
+              "TransferLiquid": false,
+              "SpoilageTransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "UsageTransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "FuelTransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "ProgressTransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "Special1TransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "Special2TransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "Special3TransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "Special4TransferScale": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "ModifyDurability": false,
+              "ModifyLiquid": false,
+              "DropOnDestroyList": false,
+              "LiquidEffectScaling": 0,
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": [],
+              "SpoilageChange": {
+                "x": 0,
+                "y": 0
+              },
+              "GetSpoilageFromOtherCard": false,
+              "UsageChange": {
+                "x": 0,
+                "y": 0
+              },
+              "GetUsageFromOtherCard": false,
+              "FuelChange": {
+                "x": 0,
+                "y": 0
+              },
+              "GetFuelFromOtherCard": false,
+              "ChargesChange": {
+                "x": 0,
+                "y": 0
+              },
+              "GetProgressFromOtherCard": false,
+              "LiquidQuantityChange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Change": {
+                "x": 0,
+                "y": 0
+              },
+              "GetSpecial1FromOtherCard": false,
+              "Special2Change": {
+                "x": 0,
+                "y": 0
+              },
+              "GetSpecial2FromOtherCard": false,
+              "Special3Change": {
+                "x": 0,
+                "y": 0
+              },
+              "GetSpecial3FromOtherCard": false,
+              "Special4Change": {
+                "x": 0,
+                "y": 0
+              },
+              "GetSpecial4FromOtherCard": false,
+              "StatInterpolatedDurabilityChanges": [],
+              "DurabilityInterpolatedTransfers": [],
+              "ScaleChangesPerPortionOfLiquid": {
+                "Active": false,
+                "FloatValue": 0
+              },
+              "UseOtherCardForLiquidQuantity": false
+            },
+            "CustomWindowPrefab": null,
+            "OpenQuestLog": false,
+            "OpenMap": false,
+            "UpdateMap": false,
+            "EditDescription": false,
+            "FadeToBlack": 0,
+            "FadeMessage": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            },
+            "FadeTips": false,
+            "TravelToPreviousEnv": false,
+            "TravelToOtherRoom": false,
+            "RoomDirection": 0,
+            "ExitDirection": 0
+          }
+        ],
+        "QuestBehavior": 0,
+        "SteamAchievementID": "",
+        "JournalObjective": false,
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "ExplicitRelatedQuest": null
+      },
+      "IgnoreValidation": false
+    }
+  ],
+  "PlayedCharacter": [],
+  "CompleteOnWin": false,
+  "CompleteOnLose": false,
+  "RequiredDifficultyScore": {
+    "m_X": 0,
+    "m_Y": 0
+  },
+  "EditorOnly": false,
+  "NotifyWhenNotChecked": true,
+  "CheckingNotificationDetails": 2,
+  "DebugCompletion": false,
+  "CombatObjectives": [],
+  "ObjectiveDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "NotificationSettings": {
+    "Frequency": 2,
+    "PercentThreshold": 0.01
+  },
+  "OnCompleteActions": [
+    {
+      "ActionName": {
+        "DefaultText": "Completed",
+        "Text": "完成",
+        "zh": "完成",
+        "en": "Completed",
+        "ja": "完了"
+      },
+      "ActionDescription": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoveltyShared": false,
+      "VictorySettings": {
+        "Victory": false,
+        "SpecialEnding": false,
+        "VictoryMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        }
+      },
+      "UnavailableInDemo": false,
+      "SaveGame": false,
+      "ConfirmPopup": false,
+      "CustomConfirmText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NotInterruptedByEncounters": false,
+      "StackCompatible": false,
+      "DaytimeCost": 0,
+      "UseMiniTicks": 0,
+      "ActionSounds": [],
+      "DisablePitchVariation": false,
+      "ActionTags": [],
+      "RequiredStatValues": [],
+      "RequiredNPCStatValues": [],
+      "RequiredCardsOnBoard": [],
+      "RequiredTagsOnBoard": [],
+      "RequiredReceivingContainer": [],
+      "RequiredReceivingContainerTag": [],
+      "RequiredReceivingLiquidContent": {
+        "IsActive": false,
+        "RequiredLiquid": null,
+        "RequiredGroup": null,
+        "RequiredQuantity": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "RequiredActiveHidingGroups": [],
+      "HideIfConditionsNotMet": false,
+      "NotBaseAction": false,
+      "Cancellable": false,
+      "InstantStatModifications": false,
+      "ReceivingCardFlavourBonus": false,
+      "GivenCardFlavourBonus": false,
+      "ResetWhenDone": null,
+      "StatInterruptions": [],
+      "StartDialog": null,
+      "ProducedCards": [],
+      "StatModifications": [],
+      "InterpolatedStatModifications": [],
+      "NPCStatModifications": [],
+      "TemporaryStatModifications": [],
+      "MovePlayer": {
+        "MoveOption": 0,
+        "ToEnv": null,
+        "Pathfinding": null,
+        "Direction": 0
+      },
+      "MoveReceivingCard": {
+        "Card": null,
+        "UseCardinalDirection": false,
+        "MoveInDirection": 0,
+        "Pathfinding": null
+      },
+      "MoveNPC": [],
+      "SetNPCHome": [],
+      "ExtraDurabilityModifications": [],
+      "BlueprintsFullUnlock": [
+        {
+          "key": "Bp_RusticSpear",
+          "icon": "Spear_Rustic",
+          "type": "card",
+          "CardType": 7,
+          "zh": "简易长矛",
+          "en": "Rustic Spear",
+          "ja": "シンプルな槍",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        {
+          "key": "Bp_ButcheringMat",
+          "icon": "Mat",
+          "type": "card",
+          "CardType": 7,
+          "zh": "屠宰垫",
+          "en": "Butchering Mat",
+          "ja": "Butchering Mat",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        }
+      ],
+      "CompletedImprovements": [],
+      "DontShowDestroyMessage": false,
+      "CustomDestroyMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoCardsAffectedMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CustomWindowPrefab": null,
+      "OpenQuestLog": false,
+      "OpenMap": false,
+      "UpdateMap": false,
+      "EditDescription": false,
+      "FadeToBlack": 0,
+      "FadeMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "FadeTips": false,
+      "TravelToPreviousEnv": false,
+      "TravelToOtherRoom": false,
+      "RoomDirection": 0,
+      "ExitDirection": 0
+    }
+  ],
+  "QuestBehavior": 0,
+  "SteamAchievementID": "",
+  "JournalObjective": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "ExplicitRelatedQuest": null
+}

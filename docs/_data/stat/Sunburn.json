@@ -1,0 +1,987 @@
+{
+  "m_Name": "Sunburn",
+  "key": "Sunburn",
+  "icon": "Flame",
+  "type": "stat",
+  "zh": "晒伤",
+  "en": "Sunburn",
+  "ja": "日焼け",
+  "UniqueIDIndex": 4304,
+  "GameName": {
+    "DefaultText": "Sunburn",
+    "Text": "晒伤",
+    "zh": "晒伤",
+    "en": "Sunburn",
+    "ja": "日焼け"
+  },
+  "Description": {
+    "DefaultText": "Caused by exposing your skin to the sun for too long. Can cause burns if it gets too high.",
+    "Text": "由长时间的暴晒导致，如果该数值过高则会晒伤。",
+    "zh": "由长时间的暴晒导致，如果该数值过高则会晒伤。",
+    "en": "Caused by exposing your skin to the sun for too long. Can cause burns if it gets too high.",
+    "ja": "肌を太陽に長時間さらすとなってしまう。長すぎると火傷する可能性もある。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": -500,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Flame"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Sunburn",
+        "Text": "晒伤",
+        "zh": "晒伤",
+        "en": "Sunburn",
+        "ja": "日焼け"
+      },
+      "Description": {
+        "DefaultText": "My skin is a bit burnt.",
+        "Text": "我的皮肤有一点点晒伤。",
+        "zh": "我的皮肤有一点点晒伤。",
+        "en": "My skin is a bit burnt.",
+        "ja": "肌がちょっと焼けてる。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Flame"
+      },
+      "ValueRange": {
+        "m_X": 250,
+        "m_Y": 500
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Tanning",
+            "icon": "Perk_DarkSkin_Old",
+            "type": "stat",
+            "zh": "晒黑",
+            "en": "Tanning",
+            "ja": "タンニング",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 150,
+            "y": 150
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Sunburn",
+        "Text": "严重晒伤",
+        "zh": "严重晒伤",
+        "en": "Severe Sunburn",
+        "ja": "ひどい日焼け"
+      },
+      "Description": {
+        "DefaultText": "My skin is all red and blistered.",
+        "Text": "我的皮肤又红又起泡。",
+        "zh": "我的皮肤又红又起泡。",
+        "en": "My skin is all red and blistered.",
+        "ja": "肌は真っ赤になって水ぶくれができてる。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Flame"
+      },
+      "ValueRange": {
+        "m_X": 501,
+        "m_Y": 750
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Tanning",
+            "icon": "Perk_DarkSkin_Old",
+            "type": "stat",
+            "zh": "晒黑",
+            "en": "Tanning",
+            "ja": "タンニング",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 250,
+            "y": 250
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Burns",
+            "icon": "Flame",
+            "type": "stat",
+            "zh": "烧伤",
+            "en": "Burns",
+            "ja": "火傷",
+            "max": 1500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Extreme Sunburn",
+        "Text": "极度晒伤",
+        "zh": "极度晒伤",
+        "en": "Extreme Sunburn",
+        "ja": "極度の日焼け"
+      },
+      "Description": {
+        "DefaultText": "My skin is destroyed and hurts like hell.",
+        "Text": "我的皮肤晒坏了，疼得要命。",
+        "zh": "我的皮肤晒坏了，疼得要命。",
+        "en": "My skin is destroyed and hurts like hell.",
+        "ja": "肌はボロボロだし痛すぎる・・・"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Flame"
+      },
+      "ValueRange": {
+        "m_X": 751,
+        "m_Y": 1000
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Tanning",
+            "icon": "Perk_DarkSkin_Old",
+            "type": "stat",
+            "zh": "晒黑",
+            "en": "Tanning",
+            "ja": "タンニング",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 350,
+            "y": 350
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "SkinIntegrity",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "皮肤完整度",
+            "en": "Skin Integrity",
+            "ja": "肌の頑丈さ",
+            "max": 5,
+            "min": -20
+          },
+          "ValueModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Burns",
+            "icon": "Flame",
+            "type": "stat",
+            "zh": "烧伤",
+            "en": "Burns",
+            "ja": "火傷",
+            "max": 1500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 4,
+            "y": 4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "BrimstoneGelProtection",
+        "icon": "",
+        "type": "stat",
+        "zh": "硫磺膏保护",
+        "en": "Brimstone Gel Protection",
+        "ja": "硫黄の保護ジェル",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 硫磺膏已涂抹",
+        "en": "Status Stage: Aloe Vera Applied",
+        "ja": "ステータス段階: アロエベラを塗った"
+      },
+      "value": {
+        "x": -16,
+        "y": -16
+      }
+    },
+    {
+      "link": {
+        "key": "SoothingCreamApplied",
+        "icon": "Ointment_Soothing",
+        "type": "stat",
+        "zh": "舒缓效果",
+        "en": "Soothing Effect",
+        "ja": "鎮痛効果",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 弱效舒缓效果",
+        "en": "Status Stage: Weak Soothing Effect",
+        "ja": "ステータス段階: 弱い鎮痛効果"
+      },
+      "value": {
+        "x": -16,
+        "y": -16
+      }
+    },
+    {
+      "link": {
+        "key": "SoothingCreamApplied",
+        "icon": "Ointment_Soothing",
+        "type": "stat",
+        "zh": "舒缓效果",
+        "en": "Soothing Effect",
+        "ja": "鎮痛効果",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强效舒缓效果",
+        "en": "Status Stage: Strong Soothing Effect",
+        "ja": "ステータス段階: 強い鎮痛効果"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 没有阳光辐射",
+        "en": "Status Stage: No Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：なし"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 弱阳光辐射",
+        "en": "Status Stage: Weak Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：軽度"
+      },
+      "value": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中等阳光辐射",
+        "en": "Status Stage: Moderate Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：普通"
+      },
+      "value": {
+        "x": 8,
+        "y": 8
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强阳光辐射",
+        "en": "Status Stage: Strong Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：高度"
+      },
+      "value": {
+        "x": 16,
+        "y": 16
+      }
+    },
+    {
+      "link": {
+        "key": "Tanning",
+        "icon": "Perk_DarkSkin_Old",
+        "type": "stat",
+        "zh": "晒黑",
+        "en": "Tanning",
+        "ja": "タンニング",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 晒黑",
+        "en": "Status Stage: Tanning",
+        "ja": "ステータス段階: タンニング"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "Tanning",
+        "icon": "Perk_DarkSkin_Old",
+        "type": "stat",
+        "zh": "晒黑",
+        "en": "Tanning",
+        "ja": "タンニング",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 晒黑",
+        "en": "Status Stage: Tanning",
+        "ja": "ステータス段階: タンニング"
+      },
+      "value": {
+        "x": -8,
+        "y": -8
+      }
+    },
+    {
+      "link": {
+        "key": "Tanning",
+        "icon": "Perk_DarkSkin_Old",
+        "type": "stat",
+        "zh": "晒黑",
+        "en": "Tanning",
+        "ja": "タンニング",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 晒黑",
+        "en": "Status Stage: Tanning",
+        "ja": "ステータス段階: タンニング"
+      },
+      "value": {
+        "x": -16,
+        "y": -16
+      }
+    },
+    {
+      "link": {
+        "key": "Wetness",
+        "icon": "Hydration",
+        "type": "stat",
+        "zh": "湿度",
+        "en": "Wetness",
+        "ja": "濡れ",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 潮湿",
+        "en": "Status Stage: Wet",
+        "ja": "ステータス段階: 濡れてる"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Wetness",
+        "icon": "Hydration",
+        "type": "stat",
+        "zh": "湿度",
+        "en": "Wetness",
+        "ja": "濡れ",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 湿透了",
+        "en": "Status Stage: Soaked Wet",
+        "ja": "ステータス段階: かなり濡れてる"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_3_5_DarkHair",
+        "icon": "Perk_DarkSkin_Old",
+        "zh": "深色头发",
+        "en": "Dark Hair",
+        "ja": "黒い髪",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "VDEBUG_HybernationSuit",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "hybernation suit",
+        "en": "hybernation suit",
+        "ja": "hybernation suit"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -100,
+        "y": -100
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Flame"
+    },
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

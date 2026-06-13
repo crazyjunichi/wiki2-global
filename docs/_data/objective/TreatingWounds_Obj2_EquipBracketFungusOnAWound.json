@@ -1,0 +1,337 @@
+{
+  "m_Name": "TreatingWounds_Obj2_EquipBracketFungusOnAWound",
+  "key": "TreatingWounds_Obj2_EquipBracketFungusOnAWound",
+  "icon": "",
+  "type": "perk",
+  "zh": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+  "en": "Cut Fresh Bracket Fungus into Strips and equip them on a Wound",
+  "ja": "Cut Fresh Bracket Fungus into Strips and equip them on a Wound",
+  "UniqueIDIndex": 4254,
+  "StartUnlocked": false,
+  "ActionObjectives": [],
+  "CardsOnBoardObjectives": [
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "BracketFungusStrips",
+        "icon": "BracketFungus_Strip",
+        "type": "card",
+        "CardType": 0,
+        "zh": "多孔菌条",
+        "en": "Bracket Fungus Strip",
+        "ja": "Bracket Fungus Strip",
+        "SpoilageTime": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Durability",
+            "Text": "耐久度",
+            "zh": "耐久度",
+            "en": "Durability",
+            "ja": "Durability"
+          },
+          "OverrideIcon": {
+            "FileName": "Shield"
+          },
+          "MaxValue": 960
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "进度",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Hammer"
+          },
+          "MaxValue": 24
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "温度",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "烹饪度",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Cooking"
+          },
+          "MaxValue": 1
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "品质",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 96
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "烹饪度",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Cooking"
+          },
+          "MaxValue": 1
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": {
+          "key": "tag_Wound",
+          "text": "“伤口”",
+          "icon": "",
+          "type": "tag",
+          "count": 32,
+          "zh": "伤口",
+          "en": "Wound",
+          "ja": "傷",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Recovery",
+              "Text": "治愈",
+              "zh": "治愈",
+              "en": "Recovery",
+              "ja": "回復"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 288
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Infection",
+              "Text": "感染",
+              "zh": "感染",
+              "en": "Infection",
+              "ja": "感染"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 288
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Pain",
+              "Text": "疼痛",
+              "zh": "疼痛",
+              "en": "Pain",
+              "ja": "痛み"
+            },
+            "OverrideIcon": {
+              "FileName": "Pain"
+            },
+            "MaxValue": 100
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Bleeding",
+              "Text": "正在流血",
+              "zh": "正在流血",
+              "en": "Bleeding",
+              "ja": "出血"
+            },
+            "OverrideIcon": {
+              "FileName": "Blood"
+            },
+            "MaxValue": 800
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Healing Factor",
+              "Text": "治愈系数",
+              "zh": "治愈系数",
+              "en": "Healing Factor",
+              "ja": "回復要素"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Disinfectant Factor",
+              "Text": "消毒系数",
+              "zh": "消毒系数",
+              "en": "Disinfectant Factor",
+              "ja": "消毒要素"
+            },
+            "OverrideIcon": {
+              "FileName": "ShieldCross"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Analgesic Factor",
+              "Text": "镇痛系数",
+              "zh": "镇痛系数",
+              "en": "Analgesic Factor",
+              "ja": "鎮痛要素"
+            },
+            "OverrideIcon": {
+              "FileName": "Pain"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Coagulant Factor",
+              "Text": "凝血系数",
+              "zh": "凝血系数",
+              "en": "Coagulant Factor",
+              "ja": "血液凝固要素"
+            },
+            "OverrideIcon": {
+              "FileName": "Blood"
+            },
+            "MaxValue": 96
+          }
+        }
+      },
+      "WithDurabilities": {
+        "SpoilageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "UsageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "FuelRange": {
+          "x": 0,
+          "y": 0
+        },
+        "ProgressRange": {
+          "x": 0,
+          "y": 0
+        },
+        "Special1Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special2Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special3Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special4Range": {
+          "x": 0,
+          "y": 0
+        },
+        "LiquidQuantityRange": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "TagsOnBoardObjectives": [],
+  "StatsObjectives": [],
+  "TimeObjectives": [],
+  "NestedObjectives": [],
+  "PlayedCharacter": [],
+  "CompleteOnWin": false,
+  "CompleteOnLose": false,
+  "RequiredDifficultyScore": {
+    "m_X": 0,
+    "m_Y": 0
+  },
+  "EditorOnly": false,
+  "NotifyWhenNotChecked": true,
+  "CheckingNotificationDetails": 2,
+  "DebugCompletion": false,
+  "CombatObjectives": [],
+  "BlueprintsResearchedObjectives": [],
+  "ObjectiveDescription": {
+    "DefaultText": "Cut Fresh Bracket Fungus into Strips and equip them on a Wound",
+    "Text": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+    "zh": "将新鲜的多孔菌切成条状，并敷在伤口上。",
+    "en": "Cut Fresh Bracket Fungus into Strips and equip them on a Wound",
+    "ja": "Cut Fresh Bracket Fungus into Strips and equip them on a Wound"
+  },
+  "NotificationSettings": {
+    "Frequency": 0,
+    "PercentThreshold": 0.01
+  },
+  "OnCompleteActions": [],
+  "QuestBehavior": 1,
+  "SteamAchievementID": "",
+  "JournalObjective": false,
+  "DontStayAliveWhenQuestIsInactive": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "ExplicitRelatedQuest": null
+}

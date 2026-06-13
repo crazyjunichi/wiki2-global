@@ -1,0 +1,626 @@
+{
+  "m_Name": "BugProtection",
+  "key": "BugProtection",
+  "icon": "Bugs_Old",
+  "type": "stat",
+  "zh": "蚊虫防护",
+  "en": "Bug Protection",
+  "ja": "虫の保護",
+  "UniqueIDIndex": 3151,
+  "GameName": {
+    "DefaultText": "Bug Protection",
+    "Text": "蚊虫防护",
+    "zh": "蚊虫防护",
+    "en": "Bug Protection",
+    "ja": "虫の保護"
+  },
+  "Description": {
+    "DefaultText": "How protected you are against bug bites.",
+    "Text": "显示你抵御蚊虫叮咬的能力。",
+    "zh": "显示你抵御蚊虫叮咬的能力。",
+    "en": "How protected you are against bug bites.",
+    "ja": "虫刺されを防ぐレベル。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 5
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.35441718,
+    "g": 0.12482201,
+    "b": 0.8018868,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Bugs_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Moderate Protection",
+        "Text": "中等防护",
+        "zh": "中等防护",
+        "en": "Moderate Protection",
+        "ja": "普通の保護"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BugDamage",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊虫叮咬",
+            "en": "Bug Damage",
+            "ja": "虫からのダメージ",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "High Protection",
+        "Text": "较高防护",
+        "zh": "较高防护",
+        "en": "High Protection",
+        "ja": "すごい保護"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2,
+        "m_Y": 3
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BugDamage",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊虫叮咬",
+            "en": "Bug Damage",
+            "ja": "虫からのダメージ",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Very High Protection",
+        "Text": "很高防护",
+        "zh": "很高防护",
+        "en": "Very High Protection",
+        "ja": "かなりすごい保護"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4,
+        "m_Y": 4
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BugDamage",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊虫叮咬",
+            "en": "Bug Damage",
+            "ja": "虫からのダメージ",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Extreme Protection",
+        "Text": "极高防护",
+        "zh": "极高防护",
+        "en": "Extreme Protection",
+        "ja": "究極の保護"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 5,
+        "m_Y": 5
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BugDamage",
+            "icon": "Bugs_Old",
+            "type": "stat",
+            "zh": "蚊虫叮咬",
+            "en": "Bug Damage",
+            "ja": "虫からのダメージ",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -5,
+            "y": -5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "BugRepellentApplied",
+        "icon": "BugsNot_Old",
+        "type": "stat",
+        "zh": "驱虫",
+        "en": "Bug Repellent",
+        "ja": "虫除け",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 驱虫",
+        "en": "Status Stage: Bug Repellent",
+        "ja": "ステータス段階: 虫除け"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "BugRepellentApplied",
+        "icon": "BugsNot_Old",
+        "type": "stat",
+        "zh": "驱虫",
+        "en": "Bug Repellent",
+        "ja": "虫除け",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 驱虫",
+        "en": "Status Stage: Bug Repellent",
+        "ja": "ステータス段階: 虫除け"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "BugRepellentApplied",
+        "icon": "BugsNot_Old",
+        "type": "stat",
+        "zh": "驱虫",
+        "en": "Bug Repellent",
+        "ja": "虫除け",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 驱虫",
+        "en": "Status Stage: Bug Repellent",
+        "ja": "ステータス段階: 虫除け"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "BugRepellentApplied",
+        "icon": "BugsNot_Old",
+        "type": "stat",
+        "zh": "驱虫",
+        "en": "Bug Repellent",
+        "ja": "虫除け",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 驱虫",
+        "en": "Status Stage: Bug Repellent",
+        "ja": "ステータス段階: 虫除け"
+      },
+      "value": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "link": {
+        "key": "BeeSuit",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Bee Suit",
+        "en": "Bee Suit",
+        "ja": "Bee Suit"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "ClothLarge",
+        "icon": "Cloth_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大块的布",
+        "en": "Large Cloth",
+        "ja": "大きい布"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "HoodieRetromation",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Hoodie",
+        "en": "Hoodie",
+        "ja": "Hoodie"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 5,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

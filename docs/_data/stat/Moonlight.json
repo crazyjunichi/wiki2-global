@@ -1,0 +1,1055 @@
+{
+  "m_Name": "Moonlight",
+  "key": "Moonlight",
+  "icon": "Moon",
+  "type": "stat",
+  "zh": "月光",
+  "en": "Moonlight",
+  "ja": "Moonlight",
+  "UniqueIDIndex": 3728,
+  "GameName": {
+    "DefaultText": "Moonlight",
+    "Text": "月光",
+    "zh": "月光",
+    "en": "Moonlight",
+    "ja": "Moonlight"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 100
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [
+    {
+      "StartingHour": 6,
+      "EndingHour": 20,
+      "RequiredCardsOrTagsOnBoard": [],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "SeasonCounter_Spring",
+            "icon": "",
+            "type": "stat",
+            "zh": "春季",
+            "en": "Spring Counter",
+            "ja": "Spring Counter",
+            "max": 2880,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 2880
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": -100,
+        "y": -100
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "StartingHour": 4,
+      "EndingHour": 22,
+      "RequiredCardsOrTagsOnBoard": [],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "SeasonCounter_Summer",
+            "icon": "",
+            "type": "stat",
+            "zh": "夏季",
+            "en": "Summer Counter",
+            "ja": "Summer Counter",
+            "max": 2880,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 2880
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": -100,
+        "y": -100
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "StartingHour": 6,
+      "EndingHour": 20,
+      "RequiredCardsOrTagsOnBoard": [],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "SeasonCounter_Autumn",
+            "icon": "",
+            "type": "stat",
+            "zh": "秋季",
+            "en": "Autumn Counter",
+            "ja": "Autumn Counter",
+            "max": 2880,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 2880
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": -100,
+        "y": -100
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "StartingHour": 7,
+      "EndingHour": 17,
+      "RequiredCardsOrTagsOnBoard": [],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "SeasonCounter_Winter",
+            "icon": "",
+            "type": "stat",
+            "zh": "冬季",
+            "en": "Winter Counter",
+            "ja": "Winter Counter",
+            "max": 2880,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 2880
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": -100,
+        "y": -100
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_EnvIndoors",
+            "text": "“室内”",
+            "icon": "",
+            "type": "tag",
+            "count": 50,
+            "zh": "室内",
+            "en": "Indoors",
+            "ja": "屋内",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filthiness",
+                "Text": "污秽",
+                "zh": "污秽",
+                "en": "Filthiness",
+                "ja": "汚さ"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 1000
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "Flood"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Affinity",
+                "Text": "亲和度",
+                "zh": "亲和度",
+                "en": "Affinity",
+                "ja": "親和性"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1000
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Roof Hole Counter",
+                "Text": "屋顶破洞计数",
+                "zh": "屋顶破洞计数",
+                "en": "Roof Hole Counter",
+                "ja": "屋根の穴カウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 96
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Roof Collapse Counter",
+                "Text": "屋顶坍塌计数",
+                "zh": "屋顶坍塌计数",
+                "en": "Roof Collapse Counter",
+                "ja": "屋根崩壊カウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 2
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Steam",
+                "Text": "蒸汽",
+                "zh": "蒸汽",
+                "en": "Steam",
+                "ja": "Steam"
+              },
+              "OverrideIcon": {
+                "FileName": "AloeGel_Old"
+              },
+              "MaxValue": 400
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Smoke",
+                "Text": "烟雾",
+                "zh": "烟雾",
+                "en": "Smoke",
+                "ja": "Smoke"
+              },
+              "OverrideIcon": {
+                "FileName": "Ash"
+              },
+              "MaxValue": 4
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [],
+      "ValueModifier": {
+        "x": -100,
+        "y": -100
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": true,
+  "BarColor": {
+    "r": 0.16164762,
+    "g": 0.019845007,
+    "b": 0.315,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Moon"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "New Moon Light",
+        "Text": "New Moon Light",
+        "zh": "New Moon Light",
+        "en": "New Moon Light",
+        "ja": "New Moon Light"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 5,
+        "m_Y": 9
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MoonAffinity",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月亲和度",
+            "en": "Moon Affinity",
+            "ja": "Moon Affinity",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+            "icon": "",
+            "type": "stat",
+            "zh": "光亮",
+            "en": "Light",
+            "ja": "光",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Crescent Moon Light",
+        "Text": "Crescent Moon Light",
+        "zh": "Crescent Moon Light",
+        "en": "Crescent Moon Light",
+        "ja": "Crescent Moon Light"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 10,
+        "m_Y": 19
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MoonAffinity",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月亲和度",
+            "en": "Moon Affinity",
+            "ja": "Moon Affinity",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.1,
+            "y": 0.1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+            "icon": "",
+            "type": "stat",
+            "zh": "光亮",
+            "en": "Light",
+            "ja": "光",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Gibbous Moon Light",
+        "Text": "Gibbous Moon Light",
+        "zh": "Gibbous Moon Light",
+        "en": "Gibbous Moon Light",
+        "ja": "Gibbous Moon Light"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 20,
+        "m_Y": 39
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MoonAffinity",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月亲和度",
+            "en": "Moon Affinity",
+            "ja": "Moon Affinity",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+            "icon": "",
+            "type": "stat",
+            "zh": "光亮",
+            "en": "Light",
+            "ja": "光",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Full Moon Light",
+        "Text": "Full Moon Light",
+        "zh": "Full Moon Light",
+        "en": "Full Moon Light",
+        "ja": "Full Moon Light"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 40,
+        "m_Y": 1000
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "MoonAffinity",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月亲和度",
+            "en": "Moon Affinity",
+            "ja": "Moon Affinity",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+            "icon": "",
+            "type": "stat",
+            "zh": "光亮",
+            "en": "Light",
+            "ja": "光",
+            "max": 100,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 15,
+            "y": 15
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: New Moon",
+        "en": "Status Stage: New Moon",
+        "ja": "ステータス段階: New Moon"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Waxing Crescent",
+        "en": "Status Stage: Waxing Crescent",
+        "ja": "ステータス段階: Waxing Crescent"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Waxing Gibbous",
+        "en": "Status Stage: Waxing Gibbous",
+        "ja": "ステータス段階: Waxing Gibbous"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 满月",
+        "en": "Status Stage: Full Moon",
+        "ja": "ステータス段階: Full Moon"
+      },
+      "value": {
+        "x": 40,
+        "y": 40
+      }
+    },
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Waning Gibbous",
+        "en": "Status Stage: Waning Gibbous",
+        "ja": "ステータス段階: Waning Gibbous"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "MoonPhase",
+        "icon": "",
+        "type": "stat",
+        "zh": "月相",
+        "en": "Moon Phase",
+        "ja": "Moon Phase",
+        "max": 960,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Waning Crescent",
+        "en": "Status Stage: Waning Crescent",
+        "ja": "ステータス段階: Waning Crescent"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "BeastTracksCard",
+        "icon": "Tracks_ForestBeast",
+        "type": "card",
+        "CardType": 2,
+        "zh": "野兽踪迹！",
+        "en": "Beast Tracks!",
+        "ja": "Beast Tracks!"
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "BeastTracksCardInvisible",
+        "icon": "Tracks",
+        "type": "card",
+        "CardType": 13,
+        "zh": "野兽踪迹！",
+        "en": "Beast Tracks!",
+        "ja": "Beast Tracks!"
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
+      },
+      "value": {
+        "x": 5,
+        "y": 1000000000
+      }
+    }
+  ],
+  "triggers": [],
+  "max": 100,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": true,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

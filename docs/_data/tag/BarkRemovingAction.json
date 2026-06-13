@@ -1,0 +1,379 @@
+{
+  "m_Name": "BarkRemovingAction",
+  "key": "BarkRemovingAction",
+  "zh": "去树皮动作",
+  "zh_fix": "去树皮动作",
+  "en": "BarkRemovingAction",
+  "ja": "BarkRemovingAction",
+  "_actions": [
+    {
+      "link": {
+        "key": "TreeLargeAlder",
+        "icon": "TreeAlder",
+        "type": "card",
+        "CardType": 2,
+        "zh": "桤木",
+        "en": "Alder Tree",
+        "ja": "Alder Tree",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special1Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Marked Alder Tree",
+              "Text": "标记的桤木",
+              "zh": "标记的桤木",
+              "en": "Marked Alder Tree",
+              "ja": "Marked Alder Tree"
+            }
+          }
+        ]
+      },
+      "text": "采集树皮",
+      "time": 1
+    },
+    {
+      "link": {
+        "key": "TreeLargeOak",
+        "icon": "TreeOak",
+        "type": "card",
+        "CardType": 2,
+        "zh": "橡树",
+        "en": "Oak Tree",
+        "ja": "オークの木",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special1Range": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "Name": {
+              "DefaultText": "Marked Oak Tree",
+              "Text": "标记橡树",
+              "zh": "标记橡树",
+              "en": "Marked Oak Tree",
+              "ja": "Marked Oak Tree"
+            }
+          }
+        ]
+      },
+      "text": "采集树皮",
+      "time": 1
+    },
+    {
+      "link": {
+        "key": "TreeLargeWillow",
+        "icon": "TreeWillow",
+        "type": "card",
+        "CardType": 2,
+        "zh": "柳树",
+        "en": "Willow Tree",
+        "ja": "ヤナギの木"
+      },
+      "text": "采集树皮",
+      "time": 1
+    }
+  ],
+  "_blueprintStepActions": [],
+  "_modifiers": [
+    {
+      "link": {
+        "key": "ToolOrWeapon_Drawknife_Metal",
+        "icon": "Drawknife_Copper",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属拉刀",
+        "en": "Metal Drawknife",
+        "ja": "Metal Drawknife",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Copper Drawknife",
+              "Text": "铜拉刀",
+              "zh": "铜拉刀",
+              "en": "Copper Drawknife",
+              "ja": "Copper Drawknife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 110,
+                "y": 110
+              }
+            },
+            "Name": {
+              "DefaultText": "Ghost Bronze Drawknife",
+              "Text": "鬼铜拉刀",
+              "zh": "鬼铜拉刀",
+              "en": "Ghost Bronze Drawknife",
+              "ja": "Ghost Bronze Drawknife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 120,
+                "y": 120
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Drawknife",
+              "Text": "锡拉刀",
+              "zh": "锡拉刀",
+              "en": "Tin Drawknife",
+              "ja": "Tin Drawknife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 130,
+                "y": 130
+              }
+            },
+            "Name": {
+              "DefaultText": "Tin Bronze Drawknife",
+              "Text": "青铜拉刀",
+              "zh": "青铜拉刀",
+              "en": "Tin Bronze Drawknife",
+              "ja": "Tin Bronze Drawknife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Drawknife",
+              "Text": "白铜拉刀",
+              "zh": "白铜拉刀",
+              "en": "White Bronze Drawknife",
+              "ja": "White Bronze Drawknife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 200,
+                "y": 200
+              }
+            },
+            "Name": {
+              "DefaultText": "Iron Drawknife",
+              "Text": "铁拉刀",
+              "zh": "铁拉刀",
+              "en": "Iron Drawknife",
+              "ja": "Iron Drawknife"
+            }
+          }
+        ],
+        "SpoilageTime": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Sharpness",
+            "Text": "锋利",
+            "zh": "锋利",
+            "en": "Sharpness",
+            "ja": "Sharpness"
+          },
+          "OverrideIcon": {
+            "FileName": "Knife_Blank_Copper"
+          },
+          "MaxValue": 1000
+        },
+        "UsageDurability": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Shield"
+          },
+          "MaxValue": 10000
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Recently Sharpened",
+            "Text": "近期磨利",
+            "zh": "近期磨利",
+            "en": "Recently Sharpened",
+            "ja": "Recently Sharpened"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "Progress": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Beauty",
+            "Text": "美观",
+            "zh": "美观",
+            "en": "Beauty",
+            "ja": "Beauty"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1000
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Metal Quality",
+            "Text": "总金属品质",
+            "zh": "总金属品质",
+            "en": "Metal Quality",
+            "ja": "Metal Quality"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 100
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Quality",
+            "Text": "品质",
+            "zh": "品质",
+            "en": "Quality",
+            "ja": "Quality"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 100
+        },
+        "SpecialDurability4": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Metal Type",
+            "Text": "金属类型",
+            "zh": "金属类型",
+            "en": "Metal Type",
+            "ja": "Metal Type"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1000
+        }
+      },
+      "localization": {
+        "zh": "卡牌能力",
+        "en": "Card Ability",
+        "ja": "カード能力"
+      }
+    }
+  ],
+  "count": 0,
+  "templateCard": {
+    "UsageDurability": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Fragrance",
+        "Text": "香气",
+        "zh": "香气",
+        "en": "Fragrance",
+        "ja": "Fragrance"
+      },
+      "OverrideIcon": null,
+      "MaxValue": 10000
+    },
+    "FuelCapacity": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Fuel",
+        "Text": "燃料",
+        "zh": "燃料",
+        "en": "Fuel",
+        "ja": "Fuel"
+      },
+      "OverrideIcon": null,
+      "MaxValue": 10000
+    },
+    "Progress": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Cut",
+        "Text": "分割",
+        "zh": "分割",
+        "en": "Cut",
+        "ja": "Cut"
+      },
+      "OverrideIcon": {
+        "FileName": "Spoilage"
+      },
+      "MaxValue": 75
+    },
+    "SpecialDurability1": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Marked",
+        "Text": "已标记",
+        "zh": "已标记",
+        "en": "Marked",
+        "ja": "Marked"
+      },
+      "OverrideIcon": null,
+      "MaxValue": 1
+    },
+    "SpecialDurability2": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Quality",
+        "Text": "品质",
+        "zh": "品质",
+        "en": "Quality",
+        "ja": "Quality"
+      },
+      "OverrideIcon": {
+        "FileName": "Quality"
+      },
+      "MaxValue": 60
+    },
+    "SpecialDurability4": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "ID",
+        "Text": "ID",
+        "zh": "ID",
+        "en": "ID",
+        "ja": "ID"
+      },
+      "OverrideIcon": null,
+      "MaxValue": 10000
+    }
+  },
+  "m_GameObject": null,
+  "m_Enabled": 1
+}

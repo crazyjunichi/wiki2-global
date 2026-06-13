@@ -1,0 +1,1468 @@
+{
+  "m_Name": "SwampWaterLevelFrozenStatus",
+  "key": "SwampWaterLevelFrozenStatus",
+  "icon": "",
+  "type": "stat",
+  "zh": "沼泽水位冻结状态",
+  "zh_fix": "沼泽水位冻结状态",
+  "en": "SwampWaterLevelFrozenStatus",
+  "ja": "SwampWaterLevelFrozenStatus",
+  "UniqueIDIndex": 4317,
+  "GameName": {
+    "DefaultText": "SwampWaterLevelFrozenStatus",
+    "Text": "SwampWaterLevelFrozenStatus",
+    "zh": "SwampWaterLevelFrozenStatus",
+    "en": "SwampWaterLevelFrozenStatus",
+    "ja": "SwampWaterLevelFrozenStatus"
+  },
+  "Description": {
+    "DefaultText": "Active on FloodedTravelingActions when water is frozen. Used to check if player gets wet on traveling actions. ",
+    "Text": "Active on FloodedTravelingActions when water is frozen. Used to check if player gets wet on traveling actions. ",
+    "zh": "Active on FloodedTravelingActions when water is frozen. Used to check if player gets wet on traveling actions. ",
+    "en": "Active on FloodedTravelingActions when water is frozen. Used to check if player gets wet on traveling actions. ",
+    "ja": "Active on FloodedTravelingActions when water is frozen. Used to check if player gets wet on traveling actions. "
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Frozen Water traveling hazard.",
+        "Text": "Frozen Water traveling hazard.",
+        "zh": "Frozen Water traveling hazard.",
+        "en": "Frozen Water traveling hazard.",
+        "ja": "Frozen Water traveling hazard."
+      },
+      "Description": {
+        "DefaultText": "Flooded traveling actions have an implementation which can get you wet.",
+        "Text": "Flooded traveling actions have an implementation which can get you wet.",
+        "zh": "Flooded traveling actions have an implementation which can get you wet.",
+        "en": "Flooded traveling actions have an implementation which can get you wet.",
+        "ja": "Flooded traveling actions have an implementation which can get you wet."
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [
+        {
+          "Conditions": {
+            "NotInBackground": false,
+            "InBackground": false,
+            "PlayerUsesCard": 0,
+            "RequiredEnvironment": null,
+            "InvertEnvironmentRequirement": false,
+            "RequiredEnvironmentTags": [],
+            "RequiredNOTEnvironmentTags": [],
+            "RequiredContainer": [],
+            "RequiredNOTContainer": [],
+            "RequiredContainerTags": [],
+            "RequiredNOTContainerTags": [],
+            "RequiredCardsOnBoard": [],
+            "RequiredTagsOnBoard": [],
+            "RequiredCardsNOTOnBoard": [],
+            "RequiredTagsNOTOnBoard": [],
+            "RequiredLiquidContainers": [],
+            "RequiredCardsInInventory": [],
+            "RequiredTagsInInventory": [],
+            "CardWasBuiltWith": [],
+            "CardWasNOTBuiltWith": [],
+            "RequiredPlayerOwnedCards": [],
+            "RequiredPlayerNOTOwnedCards": [],
+            "ReceivingRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "GivenRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "ReceivingContainerRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "GivenContainerRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "ReceivingCardTags": [],
+            "GivenCardTags": [],
+            "ReceivingCardSpices": [],
+            "GivenCardSpices": [],
+            "RequiredEnvironmentWeight": {
+              "Active": false,
+              "FloatValue": 0,
+              "MaxValue": 0
+            },
+            "RequiredStatValues": [],
+            "RequiredNPCStatValues": [],
+            "RequiredInGameTimes": [],
+            "RequiredAlreadyVisitedEnvironments": []
+          },
+          "AppliesTo": [
+            {
+              "key": "FloodedTravelingAction",
+              "text": "FloodedTravelingAction",
+              "type": "tag",
+              "count": 43,
+              "SpecialDurability1": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Trees",
+                  "Text": "树林",
+                  "zh": "树林",
+                  "en": "Trees",
+                  "ja": "Trees"
+                },
+                "OverrideIcon": {
+                  "FileName": "Tree1"
+                },
+                "MaxValue": 115200
+              },
+              "SpecialDurability2": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Overgrowth",
+                  "Text": "过度生长",
+                  "zh": "过度生长",
+                  "en": "Overgrowth",
+                  "ja": "Overgrowth"
+                },
+                "OverrideIcon": {
+                  "FileName": "Overgrowth"
+                },
+                "MaxValue": 1440
+              },
+              "SpecialDurability3": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Foraging",
+                  "Text": "觅食",
+                  "zh": "觅食",
+                  "en": "Foraging",
+                  "ja": "Foraging"
+                },
+                "OverrideIcon": {
+                  "FileName": "SaturationBerries"
+                },
+                "MaxValue": 360
+              },
+              "SpecialDurability4": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Fertility",
+                  "Text": "Fertility",
+                  "zh": "繁衍",
+                  "en": "Fertility",
+                  "ja": "Fertility"
+                },
+                "OverrideIcon": null,
+                "MaxValue": 5760
+              },
+              "zh": "淹水地点行动",
+              "en": "FloodedTravelingAction",
+              "ja": "FloodedTravelingAction"
+            }
+          ],
+          "ExploreDirectionFilter": [],
+          "ActionAddedSuffix": {
+            "DefaultText": "frozen water",
+            "Text": "上冻的水",
+            "zh": "上冻的水",
+            "en": "frozen water",
+            "ja": "frozen water"
+          },
+          "BlocksAction": false,
+          "ActionBlockMessage": {
+            "DefaultText": "",
+            "Text": "",
+            "zh": "",
+            "en": "",
+            "ja": ""
+          },
+          "DurationModifier": 0,
+          "AddedStatModifiers": [],
+          "ReceivingDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "GivenDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "DropsDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "IgnoreStatConditions": [],
+          "AddedTemporaryStatModifiers": [],
+          "OverrideActionSounds": [],
+          "DisablePitchVariation": false,
+          "OverrideFadeToBlack": false,
+          "FadeToBlack": 0,
+          "OverrideFadeMessage": {
+            "Active": false,
+            "Text": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            }
+          }
+        }
+      ],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "WaterFrozen",
+        "icon": "",
+        "type": "stat",
+        "zh": "水已结冰",
+        "en": "WaterFrozen",
+        "ja": "WaterFrozen",
+        "max": 1344,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "en": "Status Stage: Fish Population Reduction, replacing flooded status to freezing status for the flooded paths",
+        "ja": "ステータス段階: Fish Population Reduction, replacing flooded status to freezing status for the flooded paths"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "ClearingAlder_SwampHill",
+        "icon": "Barrow",
+        "type": "card",
+        "CardType": 8,
+        "zh": "沼泽山丘",
+        "en": "Swamp Hill",
+        "ja": "Swamp Hill"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "ClearingAlder_SwampHill",
+        "icon": "Barrow",
+        "type": "card",
+        "CardType": 8,
+        "zh": "沼泽山丘",
+        "en": "Swamp Hill",
+        "ja": "Swamp Hill"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "ClearingAlder_SwampHill",
+        "icon": "Barrow",
+        "type": "card",
+        "CardType": 8,
+        "zh": "沼泽山丘",
+        "en": "Swamp Hill",
+        "ja": "Swamp Hill"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveAlder_AlderGrove",
+        "icon": "Woods13",
+        "type": "card",
+        "CardType": 8,
+        "zh": "桤木林地",
+        "en": "Alder Grove",
+        "ja": "Alder Grove"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveAlder_BleedingWoods",
+        "icon": "BleedingWoods",
+        "type": "card",
+        "CardType": 8,
+        "zh": "渗血森林",
+        "en": "Bleeding Woods",
+        "ja": "Bleeding Woods"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveAlder_BleedingWoods",
+        "icon": "BleedingWoods",
+        "type": "card",
+        "CardType": 8,
+        "zh": "渗血森林",
+        "en": "Bleeding Woods",
+        "ja": "Bleeding Woods"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveAlder_RottenWoods",
+        "icon": "Woods13",
+        "type": "card",
+        "CardType": 8,
+        "zh": "腐朽森林",
+        "en": "Rotten Woods",
+        "ja": "Rotten Woods"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveAlder_SleepyGrove",
+        "icon": "Woods3",
+        "type": "card",
+        "CardType": 8,
+        "zh": "沉睡林地",
+        "en": "Sleepy Grove",
+        "ja": "Sleepy Grove"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "GroveOak_MuddyGrove",
+        "icon": "Woods4",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥泞林地",
+        "en": "Muddy Grove",
+        "ja": "泥だらけの林"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：南"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BlackMire",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑色泥沼",
+        "en": "Black Mire",
+        "ja": "Black Mire"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BlackMire",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑色泥沼",
+        "en": "Black Mire",
+        "ja": "Black Mire"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BlackMire",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑色泥沼",
+        "en": "Black Mire",
+        "ja": "Black Mire"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BoggyMeadows",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥泞草场",
+        "en": "Boggy Meadows",
+        "ja": "Boggy Meadows"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BoggyMeadows",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥泞草场",
+        "en": "Boggy Meadows",
+        "ja": "Boggy Meadows"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_BoggyMeadows",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥泞草场",
+        "en": "Boggy Meadows",
+        "ja": "Boggy Meadows"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_FetidBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "恶臭沼泽",
+        "en": "Fetid Bog",
+        "ja": "Fetid Bog"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_FetidBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "恶臭沼泽",
+        "en": "Fetid Bog",
+        "ja": "Fetid Bog"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_FetidBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "恶臭沼泽",
+        "en": "Fetid Bog",
+        "ja": "Fetid Bog"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_MosquitoFlats",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "蚊虫浅滩",
+        "en": "Mosquito Flats",
+        "ja": "Mosquito Flats"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_MosquitoFlats",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "蚊虫浅滩",
+        "en": "Mosquito Flats",
+        "ja": "Mosquito Flats"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_MosquitoFlats",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "蚊虫浅滩",
+        "en": "Mosquito Flats",
+        "ja": "Mosquito Flats"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_PeatBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥炭沼泽",
+        "en": "Peat Bog",
+        "ja": "Peat Bog"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_PeatBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥炭沼泽",
+        "en": "Peat Bog",
+        "ja": "Peat Bog"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_PeatBog",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥炭沼泽",
+        "en": "Peat Bog",
+        "ja": "Peat Bog"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_RedMire",
+        "icon": "BoggyMeadows",
+        "type": "card",
+        "CardType": 8,
+        "zh": "红色泥沼",
+        "en": "Red Mire",
+        "ja": "Red Mire"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_ReedPool",
+        "icon": "Reeds_Plant",
+        "type": "card",
+        "CardType": 8,
+        "zh": "芦苇水池",
+        "en": "Reed Pool",
+        "ja": "Reed Pool"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_ReedPool",
+        "icon": "Reeds_Plant",
+        "type": "card",
+        "CardType": 8,
+        "zh": "芦苇水池",
+        "en": "Reed Pool",
+        "ja": "Reed Pool"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingAlder_ReedPool",
+        "icon": "Reeds_Plant",
+        "type": "card",
+        "CardType": 8,
+        "zh": "芦苇水池",
+        "en": "Reed Pool",
+        "ja": "Reed Pool"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_DuckPoint_",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "野鸭岬角",
+        "en": "Duck Point",
+        "ja": "Duck Point"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_DuckPoint_",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "野鸭岬角",
+        "en": "Duck Point",
+        "ja": "Duck Point"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_FloodedGrove",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "水浸林地",
+        "en": "Flooded Grove",
+        "ja": "浸水した林"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：北"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_FloodedGrove",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "水浸林地",
+        "en": "Flooded Grove",
+        "ja": "浸水した林"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_WillowSwamp",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "柳木沼泽",
+        "en": "Willow Swamp",
+        "ja": "Willow Swamp"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_WillowSwamp",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "柳木沼泽",
+        "en": "Willow Swamp",
+        "ja": "Willow Swamp"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_WillowWays",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "柳林小径",
+        "en": "Willow Ways",
+        "ja": "Willow Ways"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_WillowWays",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "柳林小径",
+        "en": "Willow Ways",
+        "ja": "Willow Ways"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_GroveAlder_WillowWays",
+        "icon": "WillowSwamp",
+        "type": "card",
+        "CardType": 8,
+        "zh": "柳林小径",
+        "en": "Willow Ways",
+        "ja": "Willow Ways"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketAlder_ClayBanks_",
+        "icon": "LakeIsland",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黏土河岸",
+        "en": "Clay Banks",
+        "ja": "Clay Banks"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketAlder_ClayBanks_",
+        "icon": "LakeIsland",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黏土河岸",
+        "en": "Clay Banks",
+        "ja": "Clay Banks"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketAlder_HagSwamp",
+        "icon": "Swamp1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "老巫沼泽",
+        "en": "Hag Swamp",
+        "ja": "Hag Swamp"
+      },
+      "localization": {
+        "zh": "动作：北方",
+        "en": "Action: North",
+        "ja": "アクション：North"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketAlder_HagSwamp",
+        "icon": "Swamp1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "老巫沼泽",
+        "en": "Hag Swamp",
+        "ja": "Hag Swamp"
+      },
+      "localization": {
+        "zh": "动作：东方",
+        "en": "Action: East",
+        "ja": "アクション：East"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "River_ThicketOak_MuddyBank",
+        "icon": "River1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥泞河岸",
+        "en": "Muddy Bank",
+        "ja": "泥だらけの川岸"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: Southwest",
+        "ja": "アクション：南西"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "ThicketAlder_HagWay",
+        "icon": "Woods14",
+        "type": "card",
+        "CardType": 8,
+        "zh": "老巫小径",
+        "en": "Hag Way",
+        "ja": "Hag Way"
+      },
+      "localization": {
+        "zh": "动作：南方",
+        "en": "Action: South",
+        "ja": "アクション：South"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "ThicketAlder_HagWay",
+        "icon": "Woods14",
+        "type": "card",
+        "CardType": 8,
+        "zh": "老巫小径",
+        "en": "Hag Way",
+        "ja": "Hag Way"
+      },
+      "localization": {
+        "zh": "动作：西方",
+        "en": "Action: West",
+        "ja": "アクション：West"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "triggers": [],
+  "max": 1,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": true,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

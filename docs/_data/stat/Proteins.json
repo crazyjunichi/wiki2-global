@@ -1,0 +1,458 @@
+{
+  "m_Name": "Proteins",
+  "key": "Proteins",
+  "icon": "SaturationMeat",
+  "type": "stat",
+  "zh": "蛋白质",
+  "en": "Proteins",
+  "ja": "タンパク質",
+  "UniqueIDIndex": 4018,
+  "GameName": {
+    "DefaultText": "Proteins",
+    "Text": "蛋白质",
+    "zh": "蛋白质",
+    "en": "Proteins",
+    "ja": "タンパク質"
+  },
+  "Description": {
+    "DefaultText": "Helps your immune system, mood and energy levels. Can be gained by eating meat.",
+    "Text": "对你的免疫系统、情绪和能量等级有益。可通过吃肉获得。",
+    "zh": "对你的免疫系统、情绪和能量等级有益。可通过吃肉获得。",
+    "en": "Helps your immune system, mood and energy levels. Can be gained by eating meat.",
+    "ja": "免疫力、気分、エネルギーを改善する。肉を食べると摂取できる。"
+  },
+  "BaseValue": 336,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 336
+  },
+  "BaseRatePerTick": -0.5,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 100,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.22352943,
+    "g": 0.40000004,
+    "b": 0.8705883,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "SaturationMeat"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Low Proteins",
+        "Text": "低蛋白",
+        "zh": "低蛋白",
+        "en": "Low Proteins",
+        "ja": "ゴミ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 10
+      },
+      "Icon": {
+        "FileName": "Meat"
+      },
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "ImmuneSystem",
+            "icon": "ShieldCross",
+            "type": "stat",
+            "zh": "免疫系统",
+            "en": "Immune System",
+            "ja": "免疫系",
+            "max": 325,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -150,
+            "y": -150
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": -40,
+            "y": -40
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 3,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Parasites",
+        "icon": "",
+        "type": "stat",
+        "zh": "胃肠道寄生虫感染",
+        "en": "Parasitic Gut Infection",
+        "ja": "腸の寄生虫感染",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 胃肠道寄生虫感染",
+        "en": "Status Stage: Parasitic Gut Infection",
+        "ja": "ステータス段階: 腸の寄生虫感染"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "Parasites",
+        "icon": "",
+        "type": "stat",
+        "zh": "胃肠道寄生虫感染",
+        "en": "Parasitic Gut Infection",
+        "ja": "腸の寄生虫感染",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 胃肠道寄生虫感染",
+        "en": "Status Stage: Parasitic Gut Infection",
+        "ja": "ステータス段階: 腸の寄生虫感染"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
+        "key": "Parasites",
+        "icon": "",
+        "type": "stat",
+        "zh": "胃肠道寄生虫感染",
+        "en": "Parasitic Gut Infection",
+        "ja": "腸の寄生虫感染",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 胃肠道寄生虫感染",
+        "en": "Status Stage: Parasitic Gut Infection",
+        "ja": "ステータス段階: 腸の寄生虫感染"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Parasites",
+        "icon": "",
+        "type": "stat",
+        "zh": "胃肠道寄生虫感染",
+        "en": "Parasitic Gut Infection",
+        "ja": "腸の寄生虫感染",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 胃肠道寄生虫感染",
+        "en": "Status Stage: Parasitic Gut Infection",
+        "ja": "ステータス段階: 腸の寄生虫感染"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Proteins_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃中的蛋白质",
+        "en": "Stomach Proteins",
+        "ja": "お腹のタンパク質",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Proteins_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃中的蛋白质",
+        "en": "Stomach Proteins",
+        "ja": "お腹のタンパク質",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "Proteins_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃中的蛋白质",
+        "en": "Stomach Proteins",
+        "ja": "お腹のタンパク質",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "Proteins_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃中的蛋白质",
+        "en": "Stomach Proteins",
+        "ja": "お腹のタンパク質",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 336,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Hunger"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

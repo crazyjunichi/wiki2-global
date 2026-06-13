@@ -1,0 +1,478 @@
+{
+  "m_Name": "FearAffinity",
+  "key": "FearAffinity",
+  "icon": "Nausea",
+  "type": "stat",
+  "zh": "恐惧亲和度",
+  "en": "Fear Affinity",
+  "ja": "恐怖の親和性",
+  "UniqueIDIndex": 3308,
+  "GameName": {
+    "DefaultText": "Fear Affinity",
+    "Text": "恐惧亲和度",
+    "zh": "恐惧亲和度",
+    "en": "Fear Affinity",
+    "ja": "恐怖の親和性"
+  },
+  "Description": {
+    "DefaultText": "How much in common you have with the spirit of Fear.\n\nSpend time afraid and suffer frightening experiences to increase it.",
+    "Text": "你与恐惧精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
+    "zh": "你与恐惧精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
+    "en": "How much in common you have with the spirit of Fear.\\n\\nSpend time afraid and suffer frightening experiences to increase it.",
+    "ja": "How much in common you have with the spirit of Fear.\n\nSpend time afraid and suffer frightening experiences to increase it."
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": -0.1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Nausea"
+  },
+  "Statuses": [],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "Not enough affinity.",
+    "Text": "亲和度不够。",
+    "zh": "亲和度不够。",
+    "en": "Not enough affinity.",
+    "ja": "親和性が足りない。"
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "DEBUG_Event_Spawner",
+        "icon": "God2",
+        "type": "card",
+        "CardType": 3,
+        "zh": "赐福",
+        "en": "Spawner Event",
+        "ja": "祝福"
+      },
+      "localization": {
+        "zh": "动作：继续",
+        "en": "Action: Continue",
+        "ja": "アクション：続ける"
+      },
+      "value": {
+        "x": 3000,
+        "y": 3000
+      },
+      "key": "DEBUG_Event_Spawner_Magic  Fuel"
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritFear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 9,
+        "zh": "恐惧精魄",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": 12,
+        "y": 12
+      },
+      "key": "LQ_SpiritFear_Blessing"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 惊吓",
+        "en": "Status Stage: Frightened",
+        "ja": "ステータス段階: 怖がってる"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 动摇",
+        "en": "Status Stage: Shaken ",
+        "ja": "ステータス段階: 震えてる"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "Fear",
+        "icon": "Skull&Bones",
+        "type": "stat",
+        "zh": "恐惧",
+        "en": "Fear",
+        "ja": "恐怖",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 惊恐",
+        "en": "Status Stage: Terrified",
+        "ja": "ステータス段階: 怯えてる"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    }
+  ],
+  "_requireList": [
+    {
+      "link": {
+        "key": "NightmareCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "梦魇计数器",
+        "en": "Nightmare Counter",
+        "ja": "悪夢カウンター",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 500
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "梦魇计数器",
+        "en": "Nightmare Counter",
+        "ja": "悪夢カウンター",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 500,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareFuel",
+        "icon": "Darkness",
+        "type": "stat",
+        "zh": "梦魇燃料",
+        "en": "Nightmare Fuel",
+        "ja": "悪夢の燃料",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 500
+      }
+    },
+    {
+      "link": {
+        "key": "NightmareFuel",
+        "icon": "Darkness",
+        "type": "stat",
+        "zh": "梦魇燃料",
+        "en": "Nightmare Fuel",
+        "ja": "悪夢の燃料",
+        "max": 100,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 500,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "SleepClock",
+        "icon": "",
+        "type": "stat",
+        "zh": "睡眠钟",
+        "en": "Sleep Clock",
+        "ja": "睡眠の時計",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 500
+      }
+    },
+    {
+      "link": {
+        "key": "SleepClock",
+        "icon": "",
+        "type": "stat",
+        "zh": "睡眠钟",
+        "en": "Sleep Clock",
+        "ja": "睡眠の時計",
+        "max": 999,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 500,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "Event_NightTerror",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 3,
+        "zh": "夜惧！",
+        "en": "Night Terror!",
+        "ja": "夜の恐怖！"
+      },
+      "localization": {
+        "zh": "动作：融合",
+        "en": "Action: Bind it",
+        "ja": "アクション：バインドする"
+      },
+      "value": {
+        "x": 800,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "Event_NightTerror",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 3,
+        "zh": "夜惧！",
+        "en": "Night Terror!",
+        "ja": "夜の恐怖！"
+      },
+      "localization": {
+        "zh": "动作：融合",
+        "en": "Action: Bind it",
+        "ja": "アクション：バインドする"
+      },
+      "value": {
+        "x": 800,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "Event_NightTerror",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 3,
+        "zh": "夜惧！",
+        "en": "Night Terror!",
+        "ja": "夜の恐怖！"
+      },
+      "localization": {
+        "zh": "动作：融合",
+        "en": "Action: Bind it",
+        "ja": "アクション：バインドする"
+      },
+      "value": {
+        "x": 800,
+        "y": 1000
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritFear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 9,
+        "zh": "恐惧精魄",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": 50,
+        "y": 1000000000
+      }
+    },
+    {
+      "link": {
+        "key": "Spirit_Fear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 0,
+        "zh": "恐惧精魄(召唤)",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "zh": "被动效果：低亲和力",
+        "en": "Passive Effect：Low Affinity",
+        "ja": "パッシブ効果：低親和性"
+      },
+      "value": {
+        "x": 0,
+        "y": 250
+      }
+    },
+    {
+      "link": {
+        "key": "Spirit_Fear",
+        "icon": "Spirit_Fear",
+        "type": "card",
+        "CardType": 0,
+        "zh": "恐惧精魄(召唤)",
+        "en": "Fear Spirit",
+        "ja": "恐怖の精霊"
+      },
+      "localization": {
+        "zh": "被动效果：高亲和力",
+        "en": "Passive Effect：High Affinity",
+        "ja": "パッシブ効果：高親和性"
+      },
+      "value": {
+        "x": 251,
+        "y": 1000
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "key": "Tgr_Nightmare"
+    }
+  ],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

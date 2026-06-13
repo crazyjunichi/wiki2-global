@@ -1,0 +1,780 @@
+{
+  "m_Name": "LungCapacity",
+  "key": "LungCapacity",
+  "icon": "LungDamage_Old",
+  "type": "stat",
+  "zh": "肺容量",
+  "en": "Lung Capacity",
+  "ja": "肺活量",
+  "UniqueIDIndex": 3711,
+  "GameName": {
+    "DefaultText": "Lung Capacity",
+    "Text": "肺容量",
+    "zh": "肺容量",
+    "en": "Lung Capacity",
+    "ja": "肺活量"
+  },
+  "Description": {
+    "DefaultText": "Reduced by lung damage and some diseases. Causes pain and reduces stamina and wellbeing.",
+    "Text": "因肺损伤和某些疾病而减少。导致疼痛，降低耐力和幸福度。",
+    "zh": "因肺损伤和某些疾病而减少。导致疼痛，降低耐力和幸福度。",
+    "en": "Reduced by lung damage and some diseases. Causes pain and reduces stamina and wellbeing.",
+    "ja": "肺のダメージと一部の病気で落ちる。痛みの原因になり、スタミナを下げ、健康状態を悪くする。"
+  },
+  "BaseValue": 1000,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": 1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.9450981,
+    "g": 0.5176471,
+    "b": 0.37647063,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "LungDamage_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Reduced Lung Capacity",
+        "Text": "肺容量减少",
+        "zh": "肺容量减少",
+        "en": "Reduced Lung Capacity",
+        "ja": "軽度の肺活量低下"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 751,
+        "m_Y": 999
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.1,
+            "y": -0.1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Impaired Lung Capacity",
+        "Text": "肺功能受损",
+        "zh": "肺功能受损",
+        "en": "Impaired Lung Capacity",
+        "ja": "普通の肺活量低下"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 251,
+        "m_Y": 750
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 175,
+            "y": 175
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Compromised Lung Capacity",
+        "Text": "肺严重损伤",
+        "zh": "肺严重损伤",
+        "en": "Compromised Lung Capacity",
+        "ja": "重度の肺活量低下"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 250
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 350,
+            "y": 350
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1.5,
+            "y": -1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "Infection_LowerRespiratory",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "下呼吸道感染",
+        "en": "Lower Respiratory Infection",
+        "ja": "下気道感染",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 下呼吸道感染",
+        "en": "Status Stage: Lower Respiratory Infection",
+        "ja": "ステータス段階: 下気道感染"
+      },
+      "value": {
+        "x": -200,
+        "y": -200
+      }
+    },
+    {
+      "link": {
+        "key": "Infection_LowerRespiratory",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "下呼吸道感染",
+        "en": "Lower Respiratory Infection",
+        "ja": "下気道感染",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 下呼吸道感染",
+        "en": "Status Stage: Lower Respiratory Infection",
+        "ja": "ステータス段階: 下気道感染"
+      },
+      "value": {
+        "x": -400,
+        "y": -400
+      }
+    },
+    {
+      "link": {
+        "key": "Infection_LowerRespiratory",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "下呼吸道感染",
+        "en": "Lower Respiratory Infection",
+        "ja": "下気道感染",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 下呼吸道感染",
+        "en": "Status Stage: Lower Respiratory Infection",
+        "ja": "ステータス段階: 下気道感染"
+      },
+      "value": {
+        "x": -600,
+        "y": -600
+      }
+    },
+    {
+      "link": {
+        "key": "Infection_LowerRespiratory",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "下呼吸道感染",
+        "en": "Lower Respiratory Infection",
+        "ja": "下気道感染",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 下呼吸道感染",
+        "en": "Status Stage: Lower Respiratory Infection",
+        "ja": "ステータス段階: 下気道感染"
+      },
+      "value": {
+        "x": -800,
+        "y": -800
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "LungDamage_Old"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

@@ -1,0 +1,1793 @@
+{
+  "m_Name": "SkinIntegrity",
+  "key": "SkinIntegrity",
+  "icon": "Weight2",
+  "type": "stat",
+  "zh": "皮肤完整度",
+  "en": "Skin Integrity",
+  "ja": "肌の頑丈さ",
+  "UniqueIDIndex": 4109,
+  "GameName": {
+    "DefaultText": "Skin Integrity",
+    "Text": "皮肤完整度",
+    "zh": "皮肤完整度",
+    "en": "Skin Integrity",
+    "ja": "肌の頑丈さ"
+  },
+  "Description": {
+    "DefaultText": "Lowered by wounds and increased through dressings. The lower your skin integrity the easier it is for you to catch infections when dirty.",
+    "Text": "因伤口而降低，因包扎而增加。你的皮肤完整性越低，脏的时候就越容易感染。",
+    "zh": "因伤口而降低，因包扎而增加。你的皮肤完整性越低，脏的时候就越容易感染。",
+    "en": "Lowered by wounds and increased through dressings. The lower your skin integrity the easier it is for you to catch infections when dirty.",
+    "ja": "怪我で弱まり、包帯で強くなる。弱ければ弱いほど汚れた時に感染しやすい。"
+  },
+  "BaseValue": 5,
+  "MinMaxValue": {
+    "x": -20,
+    "y": 5
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.5849056,
+    "g": 0.12967247,
+    "b": 0.12967247,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0.8018868,
+    "g": 0.10212712,
+    "b": 0.1021271,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Weight2"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Skin Integrity",
+        "Text": "皮肤完整度",
+        "zh": "皮肤完整度",
+        "en": "Skin Integrity",
+        "ja": "肌の頑丈さ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 5,
+        "m_Y": 5
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BacteriaSurface",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "表面细菌",
+            "en": "Surface Bacteria",
+            "ja": "表面のばい菌",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -5,
+            "y": -5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Skin Integrity",
+        "Text": "皮肤完整度",
+        "zh": "皮肤完整度",
+        "en": "Skin Integrity",
+        "ja": "肌の頑丈さ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 4,
+        "m_Y": 4
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BacteriaSurface",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "表面细菌",
+            "en": "Surface Bacteria",
+            "ja": "表面のばい菌",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Skin Integrity",
+        "Text": "皮肤完整度",
+        "zh": "皮肤完整度",
+        "en": "Skin Integrity",
+        "ja": "肌の頑丈さ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 3,
+        "m_Y": 3
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BacteriaSurface",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "表面细菌",
+            "en": "Surface Bacteria",
+            "ja": "表面のばい菌",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Skin Integrity",
+        "Text": "皮肤完整度",
+        "zh": "皮肤完整度",
+        "en": "Skin Integrity",
+        "ja": "肌の頑丈さ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 2,
+        "m_Y": 2
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BacteriaSurface",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "表面细菌",
+            "en": "Surface Bacteria",
+            "ja": "表面のばい菌",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Skin Integrity",
+        "Text": "皮肤完整度",
+        "zh": "皮肤完整度",
+        "en": "Skin Integrity",
+        "ja": "肌の頑丈さ"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": -20,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BacteriaSurface",
+            "icon": "Bacteria",
+            "type": "stat",
+            "zh": "表面细菌",
+            "en": "Surface Bacteria",
+            "ja": "表面のばい菌",
+            "max": 5,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "BeeStings",
+        "icon": "BeeStings_Old",
+        "type": "stat",
+        "zh": "蜜蜂蜇伤",
+        "en": "Bee Stings",
+        "ja": "Bee Stings",
+        "max": 192,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Bee Stings",
+        "en": "Status Stage: Bee Stings",
+        "ja": "ステータス段階: Bee Stings"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "BeeStings",
+        "icon": "BeeStings_Old",
+        "type": "stat",
+        "zh": "蜜蜂蜇伤",
+        "en": "Bee Stings",
+        "ja": "Bee Stings",
+        "max": 192,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Bee Stings",
+        "en": "Status Stage: Bee Stings",
+        "ja": "ステータス段階: Bee Stings"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "BugBites",
+        "icon": "",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Bites",
+        "ja": "虫刺され",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 蚊虫叮咬",
+        "en": "Status Stage: Bug Bites",
+        "ja": "ステータス段階: 虫刺され"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "BugBites",
+        "icon": "",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Bug Bites",
+        "ja": "虫刺され",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重的蚊虫叮咬",
+        "en": "Status Stage: Severe Bug Bites",
+        "ja": "ステータス段階: ひどい虫刺され"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Burns",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "烧伤",
+        "en": "Burns",
+        "ja": "火傷",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 轻微烧伤",
+        "en": "Status Stage: Minor Burn",
+        "ja": "ステータス段階: 小さい火傷"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Burns",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "烧伤",
+        "en": "Burns",
+        "ja": "火傷",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 一级烧伤",
+        "en": "Status Stage: First Degree Burn",
+        "ja": "ステータス段階: 第一度熱傷"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Burns",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "烧伤",
+        "en": "Burns",
+        "ja": "火傷",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 二级烧伤",
+        "en": "Status Stage: Second Degree Burn",
+        "ja": "ステータス段階: 第二度熱傷"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "Burns",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "烧伤",
+        "en": "Burns",
+        "ja": "火傷",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 二级烧伤",
+        "en": "Status Stage: Second Degree Burn",
+        "ja": "ステータス段階: 第二度熱傷"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "Burns",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "烧伤",
+        "en": "Burns",
+        "ja": "火傷",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 三级烧伤",
+        "en": "Status Stage: Third Degree Burn",
+        "ja": "ステータス段階: 第三度熱傷"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "FootDamage",
+        "icon": "",
+        "type": "stat",
+        "zh": "足部损伤",
+        "en": "Foot Damage",
+        "ja": "足のダメージ",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度足部损伤",
+        "en": "Status Stage: Moderate Foot Damage",
+        "ja": "ステータス段階: 足が痛い"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "FootDamage",
+        "icon": "",
+        "type": "stat",
+        "zh": "足部损伤",
+        "en": "Foot Damage",
+        "ja": "足のダメージ",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 重度足部损伤",
+        "en": "Status Stage: Severe Foot Damage",
+        "ja": "ステータス段階: 足が痛すぎる"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "HandDamage",
+        "icon": "",
+        "type": "stat",
+        "zh": "手掌损伤",
+        "en": "Hand Damage",
+        "ja": "手のダメージ",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度手掌损伤",
+        "en": "Status Stage: Moderate Hand Damage",
+        "ja": "ステータス段階: 手が痛い"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "HandDamage",
+        "icon": "",
+        "type": "stat",
+        "zh": "手掌损伤",
+        "en": "Hand Damage",
+        "ja": "手のダメージ",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 重度手掌损伤",
+        "en": "Status Stage: Severe Hand Damage",
+        "ja": "ステータス段階: 手が痛すぎる"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "MosquitoBites",
+        "icon": "BugBites_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Mosquito Bites",
+        "ja": "Mosquito Bites",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 蚊虫叮咬",
+        "en": "Status Stage: Mosquito Bites",
+        "ja": "ステータス段階: Mosquito Bites"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "MosquitoBites",
+        "icon": "BugBites_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Mosquito Bites",
+        "ja": "Mosquito Bites",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重的蚊虫叮咬",
+        "en": "Status Stage: Severe Mosquito Bites",
+        "ja": "ステータス段階: Severe Mosquito Bites"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "MosquitoBites",
+        "icon": "BugBites_Old",
+        "type": "stat",
+        "zh": "蚊虫叮咬",
+        "en": "Mosquito Bites",
+        "ja": "Mosquito Bites",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重的蚊虫叮咬",
+        "en": "Status Stage: Severe Mosquito Bites",
+        "ja": "ステータス段階: Severe Mosquito Bites"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "SkinHumidity",
+        "icon": "Rash",
+        "type": "stat",
+        "zh": "皮肤湿润度",
+        "en": "Skin Humidity",
+        "ja": "肌の湿度",
+        "max": 64,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 皮肤过干",
+        "en": "Status Stage: Very Dry Skin",
+        "ja": "ステータス段階: ひどい乾燥肌"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "SkinHumidity",
+        "icon": "Rash",
+        "type": "stat",
+        "zh": "皮肤湿润度",
+        "en": "Skin Humidity",
+        "ja": "肌の湿度",
+        "max": 64,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 皮肤龟裂",
+        "en": "Status Stage: Cracking Skin",
+        "ja": "ステータス段階: かなりひどい乾燥肌"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "Sunburn",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "晒伤",
+        "en": "Sunburn",
+        "ja": "日焼け",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 晒伤",
+        "en": "Status Stage: Sunburn",
+        "ja": "ステータス段階: 日焼け"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Sunburn",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "晒伤",
+        "en": "Sunburn",
+        "ja": "日焼け",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重晒伤",
+        "en": "Status Stage: Severe Sunburn",
+        "ja": "ステータス段階: ひどい日焼け"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Sunburn",
+        "icon": "Flame",
+        "type": "stat",
+        "zh": "晒伤",
+        "en": "Sunburn",
+        "ja": "日焼け",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极度晒伤",
+        "en": "Status Stage: Extreme Sunburn",
+        "ja": "ステータス段階: 極度の日焼け"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "W_Abrasion",
+        "icon": "Abrasion",
+        "type": "card",
+        "CardType": 0,
+        "zh": "擦伤",
+        "en": "Abrasion",
+        "ja": "擦り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_Abrasion",
+        "icon": "Abrasion",
+        "type": "card",
+        "CardType": 0,
+        "zh": "擦伤",
+        "en": "Abrasion",
+        "ja": "擦り傷"
+      },
+      "localization": {
+        "zh": "被动效果：弱效敷料（磨损）",
+        "en": "Passive Effect：Dressing (weak, abrasion)",
+        "ja": "パッシブ効果：弱い包帯（擦り傷）"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_Abrasion",
+        "icon": "Abrasion",
+        "type": "card",
+        "CardType": 0,
+        "zh": "擦伤",
+        "en": "Abrasion",
+        "ja": "擦り傷"
+      },
+      "localization": {
+        "zh": "被动效果：弱效敷料（擦伤）",
+        "en": "Passive Effect：Dressing (weak, scrapes )",
+        "ja": "パッシブ効果：弱い包帯（擦り傷）"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "W_Abrasion",
+        "icon": "Abrasion",
+        "type": "card",
+        "CardType": 0,
+        "zh": "擦伤",
+        "en": "Abrasion",
+        "ja": "擦り傷"
+      },
+      "localization": {
+        "zh": "被动效果：强效敷料（擦伤）",
+        "en": "Passive Effect：Dressing (strong, abrasion)",
+        "ja": "パッシブ効果：強力な包帯（擦り傷）"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_Abrasion",
+        "icon": "Abrasion",
+        "type": "card",
+        "CardType": 0,
+        "zh": "擦伤",
+        "en": "Abrasion",
+        "ja": "擦り傷"
+      },
+      "localization": {
+        "zh": "被动效果：强效敷料（擦伤）",
+        "en": "Passive Effect：Dressing (strong, scrapes)",
+        "ja": "パッシブ効果：強力な包帯（擦り傷）"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "Arm Laceration"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "Arm Laceration"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ArmLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右臂撕裂伤",
+        "en": "Arm Laceration",
+        "ja": "腕の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊咬伤",
+        "en": "Bear Bite",
+        "ja": "Bear Bite"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊咬伤",
+        "en": "Bear Bite",
+        "ja": "Bear Bite"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊爪痕",
+        "en": "Bear Clawmarks",
+        "ja": "Bear Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_BearClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熊爪痕",
+        "en": "Bear Clawmarks",
+        "ja": "Bear Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_BiteWound",
+        "icon": "Bite_Small",
+        "type": "card",
+        "CardType": 0,
+        "zh": "咬伤",
+        "en": "Bite Wound",
+        "ja": "噛まれた跡"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ClawMarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "抓伤",
+        "en": "Claw Marks",
+        "ja": "引っ掻かれた跡"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_FireBurn",
+        "icon": "Frostbite",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烧伤",
+        "en": "Fire Burn",
+        "ja": "火傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽咬伤",
+        "en": "Forest Beast Bite",
+        "ja": "Forest Beast Bite"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽咬伤",
+        "en": "Forest Beast Bite",
+        "ja": "Forest Beast Bite"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽爪痕",
+        "en": "Forest Beast Clawmarks",
+        "ja": "Forest Beast Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：皮肤完整性，伤口，重量",
+        "en": "Passive Effect：Skin Integrity, Wounds, Weight",
+        "ja": "パッシブ効果：皮膚の完全性、傷、重量"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_ForestBeastClawmarks",
+        "icon": "Scratches",
+        "type": "card",
+        "CardType": 0,
+        "zh": "森林猛兽爪痕",
+        "en": "Forest Beast Clawmarks",
+        "ja": "Forest Beast Clawmarks"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_Frostbite",
+        "icon": "Frostbite",
+        "type": "card",
+        "CardType": 0,
+        "zh": "冻伤",
+        "en": "Frostbite",
+        "ja": "凍傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "W_Frostnip",
+        "icon": "Frostnip",
+        "type": "card",
+        "CardType": 0,
+        "zh": "冻疮",
+        "en": "Frostnip",
+        "ja": "凍瘡"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_Frostnip",
+        "icon": "Frostnip",
+        "type": "card",
+        "CardType": 0,
+        "zh": "冻疮",
+        "en": "Frostnip",
+        "ja": "凍瘡"
+      },
+      "localization": {
+        "zh": "被动效果：冻伤进程",
+        "en": "Passive Effect：Frostbite Progression",
+        "ja": "パッシブ効果：凍傷の進行"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationL",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationLStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的左腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationR",
+        "icon": "LacerationDeep",
+        "type": "card",
+        "CardType": 0,
+        "zh": "右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_LegLacerationRStitched",
+        "icon": "LacerationDeep_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的右腿撕裂伤",
+        "en": "Leg Laceration",
+        "ja": "脚の切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：止血带",
+        "en": "Passive Effect：Tourniquet",
+        "ja": "パッシブ効果：止血帯"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "W_MinorLaceration",
+        "icon": "LacerationMinor",
+        "type": "card",
+        "CardType": 0,
+        "zh": "轻微撕裂伤",
+        "en": "Minor Laceration",
+        "ja": "軽い切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_MinorLacerationStitched",
+        "icon": "LacerationMinor_Sutured",
+        "type": "card",
+        "CardType": 0,
+        "zh": "已缝合的轻微撕裂伤",
+        "en": "Minor Laceration",
+        "ja": "軽い切り傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "W_Puncture",
+        "icon": "Puncture",
+        "type": "card",
+        "CardType": 0,
+        "zh": "穿刺伤",
+        "en": "Puncture Wound",
+        "ja": "刺し傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "W_WolfBite",
+        "icon": "Bite_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "狼咬伤",
+        "en": "Wolf Bite",
+        "ja": "狼の噛み傷"
+      },
+      "localization": {
+        "zh": "被动效果：Skin Integrity, Appetite, Weight",
+        "en": "Passive Effect：Skin Integrity, Appetite, Weight",
+        "ja": "パッシブ効果：Skin Integrity, Appetite, Weight"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 5,
+  "min": -20,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

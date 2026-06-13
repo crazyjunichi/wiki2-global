@@ -1,0 +1,482 @@
+{
+  "m_Name": "SunAllergy",
+  "key": "SunAllergy",
+  "icon": "",
+  "type": "stat",
+  "zh": "阳光过敏",
+  "en": "Sun Allergy",
+  "ja": "日光アレルギー",
+  "UniqueIDIndex": 4303,
+  "GameName": {
+    "DefaultText": "Sun Allergy",
+    "Text": "阳光过敏",
+    "zh": "阳光过敏",
+    "en": "Sun Allergy",
+    "ja": "日光アレルギー"
+  },
+  "Description": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": -200,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Sun Damage",
+        "Text": "阳光晒伤",
+        "zh": "阳光晒伤",
+        "en": "Sun Damage",
+        "ja": "日光ダメージ"
+      },
+      "Description": {
+        "DefaultText": "It burns!",
+        "Text": "晒伤好痛！",
+        "zh": "晒伤好痛！",
+        "en": "It burns!",
+        "ja": "ひりひりして痛い！"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Sunburn_Old"
+      },
+      "ValueRange": {
+        "m_X": 100,
+        "m_Y": 500
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Burns",
+            "icon": "Flame",
+            "type": "stat",
+            "zh": "烧伤",
+            "en": "Burns",
+            "ja": "火傷",
+            "max": 1500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 100,
+            "y": 100
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Sun Damage",
+        "Text": "重度太阳晒伤",
+        "zh": "重度太阳晒伤",
+        "en": "Severe Sun Damage",
+        "ja": "ひどい日焼け"
+      },
+      "Description": {
+        "DefaultText": "It burns! It burns!",
+        "Text": "晒伤好疼！超级疼！",
+        "zh": "晒伤好疼！超级疼！",
+        "en": "It burns! It burns!",
+        "ja": "焼け過ぎて痛い！痛い！！"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Sunburn_Old"
+      },
+      "ValueRange": {
+        "m_X": 501,
+        "m_Y": 750
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Burns",
+            "icon": "Flame",
+            "type": "stat",
+            "zh": "烧伤",
+            "en": "Burns",
+            "ja": "火傷",
+            "max": 1500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 150,
+            "y": 150
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Extreme Sun Damage",
+        "Text": "极度太阳晒伤",
+        "zh": "极度太阳晒伤",
+        "en": "Extreme Sun Damage",
+        "ja": "極度の日光ダメージ"
+      },
+      "Description": {
+        "DefaultText": "It burns! It burns! It burns!",
+        "Text": "晒伤好疼！超级疼！痛死我了！",
+        "zh": "晒伤好疼！超级疼！痛死我了！",
+        "en": "It burns! It burns! It burns!",
+        "ja": "暑い！痛い！痛い！！！"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Sunburn_Old"
+      },
+      "ValueRange": {
+        "m_X": 751,
+        "m_Y": 1000
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Burns",
+            "icon": "Flame",
+            "type": "stat",
+            "zh": "烧伤",
+            "en": "Burns",
+            "ja": "火傷",
+            "max": 1500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 200,
+            "y": 200
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 没有阳光辐射",
+        "en": "Status Stage: No Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：なし"
+      },
+      "value": {
+        "x": -200,
+        "y": -200
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 弱阳光辐射",
+        "en": "Status Stage: Weak Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：軽度"
+      },
+      "value": {
+        "x": 150,
+        "y": 150
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中等阳光辐射",
+        "en": "Status Stage: Moderate Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：普通"
+      },
+      "value": {
+        "x": 175,
+        "y": 175
+      }
+    },
+    {
+      "link": {
+        "key": "SunExposure",
+        "icon": "SunIcon",
+        "type": "stat",
+        "zh": "阳光辐射",
+        "en": "Sun Exposure",
+        "ja": "日光への露出",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强阳光辐射",
+        "en": "Status Stage: Strong Sun Exposure",
+        "ja": "ステータス段階: 日光への露出：高度"
+      },
+      "value": {
+        "x": 200,
+        "y": 200
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Sunburn_Old"
+    },
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

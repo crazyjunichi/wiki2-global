@@ -1,0 +1,532 @@
+{
+  "m_Name": "IntermediateWeaving_Obj3_WeaveSomeCloth",
+  "key": "IntermediateWeaving_Obj3_WeaveSomeCloth",
+  "icon": "",
+  "type": "perk",
+  "zh": "织几块布",
+  "en": "Weave some Cloth",
+  "ja": "布を織る",
+  "UniqueIDIndex": 3298,
+  "StartUnlocked": false,
+  "ActionObjectives": [],
+  "CardsOnBoardObjectives": [
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "Cloth",
+        "icon": "Cloth_Medium",
+        "type": "card",
+        "CardType": 0,
+        "zh": "布",
+        "en": "Cloth",
+        "ja": "布",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Quality",
+            "Text": "品质",
+            "zh": "品质",
+            "en": "Quality",
+            "ja": "クオリティ"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 60
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    },
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "ClothSmall",
+        "icon": "Cloth_Small",
+        "type": "card",
+        "CardType": 0,
+        "zh": "布片",
+        "en": "Small Cloth",
+        "ja": "小さい布",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Wetness",
+            "Text": "湿度",
+            "zh": "湿度",
+            "en": "Wetness",
+            "ja": "濡れ"
+          },
+          "OverrideIcon": {
+            "FileName": "Water"
+          },
+          "MaxValue": 3
+        },
+        "Progress": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Filth",
+            "Text": "污垢",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ"
+          },
+          "OverrideIcon": {
+            "FileName": "Filth"
+          },
+          "MaxValue": 384
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Healing Factor",
+            "Text": "治愈系数",
+            "zh": "治愈系数",
+            "en": "Healing Factor",
+            "ja": "回復要素"
+          },
+          "OverrideIcon": {
+            "FileName": "Health"
+          },
+          "MaxValue": 96
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Disinfectant Factor",
+            "Text": "消毒系数",
+            "zh": "消毒系数",
+            "en": "Disinfectant Factor",
+            "ja": "消毒要素"
+          },
+          "OverrideIcon": {
+            "FileName": "Bacteria"
+          },
+          "MaxValue": 96
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Analgesic Factor",
+            "Text": "镇痛系数",
+            "zh": "镇痛系数",
+            "en": "Analgesic Factor",
+            "ja": "鎮痛要素"
+          },
+          "OverrideIcon": {
+            "FileName": "Pain"
+          },
+          "MaxValue": 96
+        },
+        "SpecialDurability4": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Coagulant Factor",
+            "Text": "凝血系数",
+            "zh": "凝血系数",
+            "en": "Coagulant Factor",
+            "ja": "血液凝固要素"
+          },
+          "OverrideIcon": {
+            "FileName": "Blood"
+          },
+          "MaxValue": 96
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    },
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "ClothLarge",
+        "icon": "Cloth_Large",
+        "type": "card",
+        "CardType": 0,
+        "zh": "大块的布",
+        "en": "Large Cloth",
+        "ja": "大きい布",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "耐久",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "Spoilage"
+          },
+          "MaxValue": 2400
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Wetness",
+            "Text": "湿度",
+            "zh": "湿度",
+            "en": "Wetness",
+            "ja": "濡れ"
+          },
+          "OverrideIcon": {
+            "FileName": "Water"
+          },
+          "MaxValue": 12
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Quality",
+            "Text": "品质",
+            "zh": "品质",
+            "en": "Quality",
+            "ja": "クオリティ"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 60
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    },
+    {
+      "ObjectiveName": "1",
+      "CompletionWeight": 1,
+      "Card": {
+        "key": "ClothVeryLarge",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "超大块布",
+        "en": "Very Large Cloth",
+        "ja": "かなり大きい布",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "Quantity": 1,
+      "ConstantlyChecking": false,
+      "OnlyInEnvironment": null,
+      "OnlyIfEquipped": false,
+      "OnlyInContainer": {
+        "Target": null
+      }
+    }
+  ],
+  "TagsOnBoardObjectives": [],
+  "StatsObjectives": [],
+  "TimeObjectives": [],
+  "NestedObjectives": [],
+  "PlayedCharacter": [],
+  "CompleteOnWin": false,
+  "CompleteOnLose": false,
+  "RequiredDifficultyScore": {
+    "m_X": 0,
+    "m_Y": 0
+  },
+  "EditorOnly": false,
+  "NotifyWhenNotChecked": true,
+  "CheckingNotificationDetails": 2,
+  "DebugCompletion": false,
+  "CombatObjectives": [],
+  "ObjectiveDescription": {
+    "DefaultText": "Weave some Cloth",
+    "Text": "织几块布",
+    "zh": "织几块布",
+    "en": "Weave some Cloth",
+    "ja": "布を織る"
+  },
+  "NotificationSettings": {
+    "Frequency": 0,
+    "PercentThreshold": 0.01
+  },
+  "OnCompleteActions": [],
+  "QuestBehavior": 0,
+  "SteamAchievementID": "",
+  "JournalObjective": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "ExplicitRelatedQuest": null
+}

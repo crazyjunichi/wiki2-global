@@ -1,0 +1,769 @@
+{
+  "m_Name": "LungDamage",
+  "key": "LungDamage",
+  "icon": "LungDamage_Old",
+  "type": "stat",
+  "zh": "肺部伤害",
+  "en": "Lung Damage",
+  "ja": "肺の傷",
+  "UniqueIDIndex": 3712,
+  "GameName": {
+    "DefaultText": "Lung Damage",
+    "Text": "肺部伤害",
+    "zh": "肺部伤害",
+    "en": "Lung Damage",
+    "ja": "肺の傷"
+  },
+  "Description": {
+    "DefaultText": "Caused by spending time in toxic areas and by some diseases. Causes pain and reduces stamina.",
+    "Text": "由处于毒气区域或某些疾病导致。会导致疼痛并减少耐力。",
+    "zh": "由处于毒气区域或某些疾病导致。会导致疼痛并减少耐力。",
+    "en": "Caused by spending time in toxic areas and by some diseases. Causes pain and reduces stamina.",
+    "ja": "有害地域で時間を過ごしたり、一部の病気にかかったりすると起る。肺が痛み、スタミナが減る。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.9450981,
+    "g": 0.5176471,
+    "b": 0.37647063,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "LungDamage_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Minor Lung Damage",
+        "Text": "轻微肺损伤",
+        "zh": "轻微肺损伤",
+        "en": "Minor Lung Damage",
+        "ja": "肺の軽い傷"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 250,
+        "m_Y": 500
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 50,
+            "y": 50
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.1,
+            "y": -0.1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Lung Damage",
+        "Text": "中度肺损伤",
+        "zh": "中度肺损伤",
+        "en": "Moderate Lung Damage",
+        "ja": "肺の傷"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 501,
+        "m_Y": 750
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 175,
+            "y": 175
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Lung Damage",
+        "Text": "重度肺损伤",
+        "zh": "重度肺损伤",
+        "en": "Severe Lung Damage",
+        "ja": "肺のひどい傷"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "LungDamage_Old"
+      },
+      "ValueRange": {
+        "m_X": 751,
+        "m_Y": 1000
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Pain",
+            "icon": "Pain",
+            "type": "stat",
+            "zh": "疼痛",
+            "en": "Pain",
+            "ja": "痛み",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 350,
+            "y": 350
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1.5,
+            "y": -1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Energy",
+            "icon": "Energy",
+            "type": "stat",
+            "zh": "精力",
+            "en": "Energy",
+            "ja": "エネルギー",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.5,
+            "y": -0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "AirToxicity",
+        "icon": "AirToxicity_Old",
+        "type": "stat",
+        "zh": "空气毒性",
+        "en": "Air Toxicity",
+        "ja": "Air Toxicity",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Mild Air Toxicity",
+        "en": "Status Stage: Mild Air Toxicity",
+        "ja": "ステータス段階: Mild Air Toxicity"
+      },
+      "value": {
+        "x": 16,
+        "y": 16
+      }
+    },
+    {
+      "link": {
+        "key": "AirToxicity",
+        "icon": "AirToxicity_Old",
+        "type": "stat",
+        "zh": "空气毒性",
+        "en": "Air Toxicity",
+        "ja": "Air Toxicity",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: Moderate Air Toxicity",
+        "en": "Status Stage: Moderate Air Toxicity",
+        "ja": "ステータス段階: Moderate Air Toxicity"
+      },
+      "value": {
+        "x": 32,
+        "y": 32
+      }
+    },
+    {
+      "link": {
+        "key": "AirToxicity",
+        "icon": "AirToxicity_Old",
+        "type": "stat",
+        "zh": "空气毒性",
+        "en": "Air Toxicity",
+        "ja": "Air Toxicity",
+        "max": 6,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: High Air Toxicity",
+        "en": "Status Stage: High Air Toxicity",
+        "ja": "ステータス段階: High Air Toxicity"
+      },
+      "value": {
+        "x": 64,
+        "y": 64
+      }
+    },
+    {
+      "link": {
+        "key": "Lungrot",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "肺腐病",
+        "en": "Lungrot",
+        "ja": "肺膿瘍",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 轻微肺部感染",
+        "en": "Status Stage: Minor Lungrot Infection",
+        "ja": "ステータス段階: 軽度の肺膿瘍"
+      },
+      "value": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "link": {
+        "key": "Lungrot",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "肺腐病",
+        "en": "Lungrot",
+        "ja": "肺膿瘍",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度肺部感染",
+        "en": "Status Stage: Moderate Lungrot Infection",
+        "ja": "ステータス段階: 普通の肺膿瘍"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "Lungrot",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "肺腐病",
+        "en": "Lungrot",
+        "ja": "肺膿瘍",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重肺部感染",
+        "en": "Status Stage: Severe Lungrot Infection",
+        "ja": "ステータス段階: 重度の肺膿瘍"
+      },
+      "value": {
+        "x": 9,
+        "y": 9
+      }
+    },
+    {
+      "link": {
+        "key": "Lungrot",
+        "icon": "Bacteria",
+        "type": "stat",
+        "zh": "肺腐病",
+        "en": "Lungrot",
+        "ja": "肺膿瘍",
+        "max": 1500,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 致命肺部感染",
+        "en": "Status Stage: Critical Lungrot Infection",
+        "ja": "ステータス段階: 致命的な肺膿瘍"
+      },
+      "value": {
+        "x": 17,
+        "y": 17
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "LungDamage_Old"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

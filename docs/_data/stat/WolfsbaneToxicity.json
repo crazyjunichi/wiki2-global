@@ -1,0 +1,819 @@
+{
+  "m_Name": "WolfsbaneToxicity",
+  "key": "WolfsbaneToxicity",
+  "icon": "Skull&Bones",
+  "type": "stat",
+  "zh": "乌头中毒",
+  "en": "Wolfsbane Poisoning",
+  "ja": "トリカブトの毒",
+  "UniqueIDIndex": 4612,
+  "GameName": {
+    "DefaultText": "Wolfsbane Poisoning",
+    "Text": "乌头中毒",
+    "zh": "乌头中毒",
+    "en": "Wolfsbane Poisoning",
+    "ja": "トリカブトの毒"
+  },
+  "Description": {
+    "DefaultText": "Causes progressive paralysis, nausea, lowered blood pressure and eventual death if untreated.",
+    "Text": "会导致渐进麻痹、恶心、血压降低，最终死亡。",
+    "zh": "会导致渐进麻痹、恶心、血压降低，最终死亡。",
+    "en": "Causes progressive paralysis, nausea, lowered blood pressure and eventual death if untreated.",
+    "ja": "麻痺、吐き気、低血圧の原因になることがあり、治療しないと死ぬ可能がある。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 96
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Skull&Bones"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Mild Wolfsbane Poisoning",
+        "Text": "轻度乌头中毒",
+        "zh": "轻度乌头中毒",
+        "en": "Mild Wolfsbane Poisoning",
+        "ja": "軽度のトリカブトの毒"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 24,
+        "m_Y": 47
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 1,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Wolfsbane Poisoning",
+        "Text": "中度乌头中毒",
+        "zh": "中度乌头中毒",
+        "en": "Moderate Wolfsbane Poisoning",
+        "ja": "普通のトリカブトの毒"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 48,
+        "m_Y": 71
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "StoolLiquidity",
+            "icon": "Poop",
+            "type": "stat",
+            "zh": "大便软硬度",
+            "en": "Stool Liquidity",
+            "ja": "便の硬さ",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 3,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Severe Wolfsbane Poisoning",
+        "Text": "重度乌头中毒",
+        "zh": "重度乌头中毒",
+        "en": "Severe Wolfsbane Poisoning",
+        "ja": "重度のトリカブトの毒"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 72,
+        "m_Y": 95
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 3,
+            "y": 3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "StoolLiquidity",
+            "icon": "Poop",
+            "type": "stat",
+            "zh": "大便软硬度",
+            "en": "Stool Liquidity",
+            "ja": "便の硬さ",
+            "max": 300,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "DexterityPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "灵巧惩罚",
+            "en": "Dexterity Penalty",
+            "ja": "器用さペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MovementPenalty",
+            "icon": "",
+            "type": "stat",
+            "zh": "移动惩罚",
+            "en": "Movement Penalty",
+            "ja": "動きペナルティ",
+            "max": 3,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "BloodPressure",
+            "icon": "Blood",
+            "type": "stat",
+            "zh": "血压",
+            "en": "Blood Pressure",
+            "ja": "血圧",
+            "max": 75,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 5,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 2,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Terminal Wolfsbane Poisoning",
+        "Text": "致死乌头中毒",
+        "zh": "致死乌头中毒",
+        "en": "Terminal Wolfsbane Poisoning",
+        "ja": "超重度のトリカブトの毒"
+      },
+      "Description": {
+        "DefaultText": "You died of Wolsbane Poisoning.",
+        "Text": "你死于乌头中毒。",
+        "zh": "你死于乌头中毒。",
+        "en": "You died of Wolsbane Poisoning.",
+        "ja": "You died of Wolsbane Poisoning."
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Skull&Bones"
+      },
+      "ValueRange": {
+        "m_X": 96,
+        "m_Y": 96
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 5,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": true,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "WolfsbaneDried",
+        "icon": "Wolfsbane_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "干乌头",
+        "en": "Dry Wolfsbane",
+        "ja": "乾燥したトリカブト"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 75,
+        "y": 75
+      },
+      "key": "WolfsbaneDried_Eat"
+    },
+    {
+      "link": {
+        "key": "WolfsbaneFresh",
+        "icon": "Wolfsbane_Item",
+        "type": "card",
+        "CardType": 0,
+        "zh": "新鲜的乌头",
+        "en": "Fresh Wolfsbane",
+        "ja": "新鮮なトリカブト"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 75,
+        "y": 75
+      },
+      "key": "WolfsbaneFresh_Eat"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "WolfsbaneExposure",
+        "icon": "Wolfsbane",
+        "type": "stat",
+        "zh": "乌头暴露",
+        "en": "Wolfsbane Exposure",
+        "ja": "トリカブト中毒",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 轻微乌头暴露",
+        "en": "Status Stage: Minor Wolfsbane Exposure",
+        "ja": "ステータス段階: 軽いトリカブト中毒"
+      },
+      "value": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "link": {
+        "key": "WolfsbaneExposure",
+        "icon": "Wolfsbane",
+        "type": "stat",
+        "zh": "乌头暴露",
+        "en": "Wolfsbane Exposure",
+        "ja": "トリカブト中毒",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中度乌头暴露",
+        "en": "Status Stage: Moderate Wolfsbane Exposure",
+        "ja": "ステータス段階: 普通のトリカブト中毒"
+      },
+      "value": {
+        "x": 6,
+        "y": 6
+      }
+    },
+    {
+      "link": {
+        "key": "WolfsbaneExposure",
+        "icon": "Wolfsbane",
+        "type": "stat",
+        "zh": "乌头暴露",
+        "en": "Wolfsbane Exposure",
+        "ja": "トリカブト中毒",
+        "max": 384,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 重度乌头暴露",
+        "en": "Status Stage: Severe Wolfsbane Exposure",
+        "ja": "ステータス段階: 重度のトリカブト中毒"
+      },
+      "value": {
+        "x": 8,
+        "y": 8
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 96,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Appleweed_Item"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

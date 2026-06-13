@@ -1,0 +1,74 @@
+{
+  "m_Name": "SetHomeFlagToZero",
+  "key": "SetHomeFlagToZero",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_PrimevalWolf",
+        "icon": "PrimevalWolf",
+        "type": "npc",
+        "zh": "原初之狼",
+        "en": "Primeval Wolf",
+        "ja": "Primeval Wolf"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentHasHome",
+        "key": "AgentHasHome",
+        "type": "durability",
+        "zh": "有洞穴",
+        "en": "AgentHasHome",
+        "ja": "Agent Has Home",
+        "GameName": {
+          "DefaultText": "Agent Has Home",
+          "Text": "有洞穴",
+          "zh": "有洞穴",
+          "en": "AgentHasHome",
+          "ja": "Agent Has Home"
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 1
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": 0,
+          "y": 0
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "有洞穴",
+        "desc": "Agent Has Home",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
+        "UniqueIDIndex": 3060
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": -1,
+        "y": -1
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": false,
+    "IntValue": 0
+  }
+}

@@ -1,0 +1,991 @@
+{
+  "m_Name": "SaturationFish",
+  "key": "SaturationFish",
+  "icon": "SaturationFish",
+  "type": "stat",
+  "zh": "鱼类厌倦度",
+  "en": "Fish Saturation",
+  "ja": "魚の飽き",
+  "UniqueIDIndex": 4047,
+  "GameName": {
+    "DefaultText": "Fish Saturation",
+    "Text": "鱼类厌倦度",
+    "zh": "鱼类厌倦度",
+    "en": "Fish Saturation",
+    "ja": "魚の飽き"
+  },
+  "Description": {
+    "DefaultText": "Shows how tired you are of eating fish. Lowers your wellbeing and gets you nauseous if it gets too high.",
+    "Text": "显示你对鱼类有多厌倦。如果过高，会降低你的幸福度，并让你感到恶心。",
+    "zh": "显示你对鱼类有多厌倦。如果过高，会降低你的幸福度，并让你感到恶心。",
+    "en": "Shows how tired you are of eating fish. Lowers your wellbeing and gets you nauseous if it gets too high.",
+    "ja": "魚にどのくらい飽きたのかを示す。幸福度が落ち、上がりすぎると吐き気がする。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 288
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.29236382,
+    "g": 0.56694746,
+    "b": 0.8490566,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0.22990721,
+    "b": 0.4245283,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "SaturationFish"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "I'm a bit tired of eating Fish...",
+        "Text": "我有点厌倦吃鱼肉了……",
+        "zh": "我有点厌倦吃鱼肉了……",
+        "en": "I'm a bit tired of eating Fish...",
+        "ja": "魚以外のものが食べたいなぁ・・・"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "SaturationFish"
+      },
+      "ValueRange": {
+        "m_X": 97,
+        "m_Y": 240
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.25,
+            "y": -0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "I'm so sick of eating Fish...",
+        "Text": "我讨厌吃鱼肉……",
+        "zh": "我讨厌吃鱼肉……",
+        "en": "I'm so sick of eating Fish...",
+        "ja": "魚はもう嫌だ・・・"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "SaturationFish"
+      },
+      "ValueRange": {
+        "m_X": 241,
+        "m_Y": 288
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "Gratification",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -0.75,
+            "y": -0.75
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Nausea",
+            "icon": "Nausea",
+            "type": "stat",
+            "zh": "恶心",
+            "en": "Nausea",
+            "ja": "吐き気",
+            "max": 24,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 2,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "CrayfishCooked",
+        "icon": "Crayfish_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烤小龙虾",
+        "en": "Roasted Crayfish",
+        "ja": "Roasted Crayfish"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 6,
+        "y": 6
+      },
+      "key": "CrayfishCooked_Eat"
+    },
+    {
+      "link": {
+        "key": "CrayfishRaw",
+        "icon": "Crayfish",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小龙虾",
+        "en": "Crayfish",
+        "ja": "Crayfish"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 6,
+        "y": 6
+      },
+      "key": "CrayfishRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatFattyBoiled",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "水煮肥鱼肉",
+        "en": "Boiled Fatty Fish Meat",
+        "ja": "Boiled Fatty Fish Meat"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatFattyBoiled_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatFattyCooked",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熟肥鱼肉",
+        "en": "Cooked Fatty Fish Meat",
+        "ja": "Cooked Fatty Fish Meat"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatFattyCooked_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatFattyDried",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "肥鱼肉干",
+        "en": "Dried Fatty Fish Meat",
+        "ja": "Dried Fatty Fish Meat"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatFattyDried_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatFattyRaw",
+        "icon": "FIshMeat",
+        "type": "card",
+        "CardType": 0,
+        "zh": "生肥鱼肉",
+        "en": "Raw Fatty Fish Meat",
+        "ja": "Raw Fatty Fish Meat"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatFattyRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatFillingRaw",
+        "icon": "Meat_Minced",
+        "type": "card",
+        "CardType": 0,
+        "zh": "生鱼填料",
+        "en": "Raw Fish Filling",
+        "ja": "Raw Fish Filling"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatFillingRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatLeanBoiled",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "水煮瘦鱼肉",
+        "en": "Boiled Lean Fish Meat",
+        "ja": "Boiled Lean Fish Meat"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatLeanBoiled_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatLeanCooked",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "熟瘦鱼肉",
+        "en": "Cooked Lean Fish Meat",
+        "ja": "火を通した赤身の魚肉"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatLeanCooked_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatLeanDried",
+        "icon": "FishMeat_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "瘦鱼肉干",
+        "en": "Dried Lean Fish Meat",
+        "ja": "干した赤身の魚肉"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：餌を作る"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatLeanDried_Eat"
+    },
+    {
+      "link": {
+        "key": "FishMeatLeanRaw",
+        "icon": "FIshMeat",
+        "type": "card",
+        "CardType": 0,
+        "zh": "生瘦鱼肉",
+        "en": "Raw Lean Fish Meat",
+        "ja": "生の赤身の魚肉"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "FishMeatLeanRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "FishScraps",
+        "icon": "Meat_Scraps",
+        "type": "card",
+        "CardType": 0,
+        "zh": "鱼杂",
+        "en": "Fish Scraps",
+        "ja": "魚の残り物"
+      },
+      "localization": {
+        "zh": "动作：食用",
+        "en": "Action: Eat Scraps",
+        "ja": "アクション：残り物を食べる"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "FishScraps_Eat Scraps"
+    },
+    {
+      "link": {
+        "key": "FishScrapsCooked",
+        "icon": "Meat_Scraps",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烤鱼杂",
+        "en": "Cooked Fish Scraps",
+        "ja": "焼き魚の余り"
+      },
+      "localization": {
+        "zh": "动作：食用",
+        "en": "Action: Eat Scraps",
+        "ja": "アクション：残り物を食べる"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "FishScrapsCooked_Eat Scraps"
+    },
+    {
+      "link": {
+        "key": "FishSlices",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Fish Slices",
+        "en": "Fish Slices",
+        "ja": "Fish Slices"
+      },
+      "localization": {
+        "zh": "动作：Eat Slices",
+        "en": "Action: Eat Slices",
+        "ja": "アクション：Eat Slices"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "FishSlices_Eat Slices"
+    },
+    {
+      "link": {
+        "key": "FishSlicesCooked",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Cooked Fish Slices",
+        "en": "Cooked Fish Slices",
+        "ja": "Cooked Fish Slices"
+      },
+      "localization": {
+        "zh": "动作：Eat Slices",
+        "en": "Action: Eat Slices",
+        "ja": "アクション：Eat Slices"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      },
+      "key": "FishSlicesCooked_Eat Slices"
+    },
+    {
+      "link": {
+        "key": "FrogBoiled",
+        "icon": "Frog",
+        "type": "card",
+        "CardType": 0,
+        "zh": "水煮青蛙",
+        "en": "Boiled Frog",
+        "ja": "茹でたカエル"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 35,
+        "y": 35
+      },
+      "key": "FrogBoiled_Eat"
+    },
+    {
+      "link": {
+        "key": "FrogCooked",
+        "icon": "Frog",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烤青蛙",
+        "en": "Roasted Frog",
+        "ja": "焼いたカエル"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 35,
+        "y": 35
+      },
+      "key": "FrogCooked_Eat"
+    },
+    {
+      "link": {
+        "key": "FrogRaw",
+        "icon": "Frog",
+        "type": "card",
+        "CardType": 0,
+        "zh": "青蛙",
+        "en": "Frog",
+        "ja": "カエル"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 25,
+        "y": 25
+      },
+      "key": "FrogRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "MinnowCooked",
+        "icon": "Minnow_Cooked",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烤鲦鱼",
+        "en": "Roasted Minnow",
+        "ja": "焼いたミノウ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 35,
+        "y": 35
+      },
+      "key": "MinnowCooked_Eat"
+    },
+    {
+      "link": {
+        "key": "MinnowRaw",
+        "icon": "Minnow",
+        "type": "card",
+        "CardType": 0,
+        "zh": "鲦鱼",
+        "en": "Minnow",
+        "ja": "ミノウ"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：食べる"
+      },
+      "value": {
+        "x": 25,
+        "y": 25
+      },
+      "key": "MinnowRaw_Eat"
+    },
+    {
+      "link": {
+        "key": "RyeFishMeatPasty",
+        "icon": "Pasty_Rye",
+        "type": "card",
+        "CardType": 0,
+        "zh": "黑麦鱼馅饼",
+        "en": "Rye Fish Pasty",
+        "ja": "Rye Fish Pasty"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "RyeFishMeatPasty_Eat"
+    },
+    {
+      "link": {
+        "key": "WheatFishMeatPasty",
+        "icon": "Pasty_Wheat",
+        "type": "card",
+        "CardType": 0,
+        "zh": "小麦鱼馅饼",
+        "en": "Wheat Fish Pasty",
+        "ja": "Wheat Fish Pasty"
+      },
+      "localization": {
+        "zh": "动作：吃掉",
+        "en": "Action: Eat",
+        "ja": "アクション：Eat"
+      },
+      "value": {
+        "x": 30,
+        "y": 30
+      },
+      "key": "WheatFishMeatPasty_Eat"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "AppleWeedEffect",
+        "icon": "Appleweed_Item",
+        "type": "stat",
+        "zh": "柰草效果",
+        "en": "Appleweed Effect",
+        "ja": "アップルウィード効果",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 弱柰草效果",
+        "en": "Status Stage: Weak Appleweed Effect",
+        "ja": "ステータス段階: 弱いアップルウィード効果"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "AppleWeedEffect",
+        "icon": "Appleweed_Item",
+        "type": "stat",
+        "zh": "柰草效果",
+        "en": "Appleweed Effect",
+        "ja": "アップルウィード効果",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 强柰草效果",
+        "en": "Status Stage: Strong Appleweed Effect",
+        "ja": "ステータス段階: 強いアップルウィード効果"
+      },
+      "value": {
+        "x": -1.5,
+        "y": -1.5
+      }
+    },
+    {
+      "link": {
+        "key": "GingerEffect",
+        "icon": "",
+        "type": "stat",
+        "zh": "姜效果",
+        "en": "Ginger",
+        "ja": "生姜",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 低剂量",
+        "en": "Status Stage: Small Dose",
+        "ja": "ステータス段階: 少量"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "GingerEffect",
+        "icon": "",
+        "type": "stat",
+        "zh": "姜效果",
+        "en": "Ginger",
+        "ja": "生姜",
+        "max": 48,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高剂量",
+        "en": "Status Stage: High Dose",
+        "ja": "ステータス段階: 大量"
+      },
+      "value": {
+        "x": -1,
+        "y": 0
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 饥饿",
+        "en": "Status Stage: Hungry",
+        "ja": "ステータス段階: お腹空いた"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 非常饿",
+        "en": "Status Stage: Very Hungry",
+        "ja": "ステータス段階: かなりお腹空いた"
+      },
+      "value": {
+        "x": -8,
+        "y": -8
+      }
+    },
+    {
+      "link": {
+        "key": "Satiation",
+        "icon": "Hunger",
+        "type": "stat",
+        "zh": "饱食度",
+        "en": "Satiation",
+        "ja": "飽き",
+        "max": 330,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极度饥饿",
+        "en": "Status Stage: Ravenous",
+        "ja": "ステータス段階: 空腹状態"
+      },
+      "value": {
+        "x": -12,
+        "y": -12
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_2_4_HighAppetite",
+        "icon": "Appetite",
+        "zh": "胃口大开",
+        "en": "High Appetite",
+        "ja": "大食い",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_2_4_LowAppetite",
+        "icon": "Appetite",
+        "zh": "食欲不振",
+        "en": "Low Appetite",
+        "ja": "小食",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 288,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

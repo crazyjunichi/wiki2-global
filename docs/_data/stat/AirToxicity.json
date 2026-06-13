@@ -1,0 +1,530 @@
+{
+  "m_Name": "AirToxicity",
+  "key": "AirToxicity",
+  "icon": "AirToxicity_Old",
+  "type": "stat",
+  "zh": "空气毒性",
+  "en": "Air Toxicity",
+  "ja": "Air Toxicity",
+  "UniqueIDIndex": 3092,
+  "GameName": {
+    "DefaultText": "Air Toxicity",
+    "Text": "Air Toxicity",
+    "zh": "Air Toxicity",
+    "en": "Air Toxicity",
+    "ja": "Air Toxicity"
+  },
+  "Description": {
+    "DefaultText": "Air toxicity will damage your lungs after prolonged exposure, consider wearing a gas mask to avoid breathing problems.",
+    "Text": "Air toxicity will damage your lungs after prolonged exposure, consider wearing a gas mask to avoid breathing problems.",
+    "zh": "Air toxicity will damage your lungs after prolonged exposure, consider wearing a gas mask to avoid breathing problems.",
+    "en": "Air toxicity will damage your lungs after prolonged exposure, consider wearing a gas mask to avoid breathing problems.",
+    "ja": "Air toxicity will damage your lungs after prolonged exposure, consider wearing a gas mask to avoid breathing problems."
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 6
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": true,
+  "BarColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "AirToxicity_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Clean Air",
+        "Text": "Clean Air",
+        "zh": "Clean Air",
+        "en": "Clean Air",
+        "ja": "Clean Air"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Mild Air Toxicity",
+        "Text": "Mild Air Toxicity",
+        "zh": "Mild Air Toxicity",
+        "en": "Mild Air Toxicity",
+        "ja": "Mild Air Toxicity"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "AirToxicity_Old"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 2
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "LungDamage",
+            "icon": "LungDamage_Old",
+            "type": "stat",
+            "zh": "肺部伤害",
+            "en": "Lung Damage",
+            "ja": "肺の傷",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 16,
+            "y": 16
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 1,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moderate Air Toxicity",
+        "Text": "Moderate Air Toxicity",
+        "zh": "Moderate Air Toxicity",
+        "en": "Moderate Air Toxicity",
+        "ja": "Moderate Air Toxicity"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "AirToxicity_Old"
+      },
+      "ValueRange": {
+        "m_X": 3,
+        "m_Y": 4
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "LungDamage",
+            "icon": "LungDamage_Old",
+            "type": "stat",
+            "zh": "肺部伤害",
+            "en": "Lung Damage",
+            "ja": "肺の傷",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 32,
+            "y": 32
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "High Air Toxicity",
+        "Text": "High Air Toxicity",
+        "zh": "High Air Toxicity",
+        "en": "High Air Toxicity",
+        "ja": "High Air Toxicity"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "AirToxicity_Old"
+      },
+      "ValueRange": {
+        "m_X": 5,
+        "m_Y": 6
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "LungDamage",
+            "icon": "LungDamage_Old",
+            "type": "stat",
+            "zh": "肺部伤害",
+            "en": "Lung Damage",
+            "ja": "肺の傷",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 64,
+            "y": 64
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 4,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "GasMaskRustic",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Gas Mask",
+        "en": "Gas Mask",
+        "ja": "Gas Mask"
+      },
+      "localization": {
+        "zh": "被动效果：过滤",
+        "en": "Passive Effect：Filter",
+        "ja": "パッシブ効果：フィルター"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "GasMaskRustic",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Gas Mask",
+        "en": "Gas Mask",
+        "ja": "Gas Mask"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "MaskMakeshift",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Makeshift Mask",
+        "en": "Makeshift Mask",
+        "ja": "Makeshift Mask"
+      },
+      "localization": {
+        "zh": "被动效果：湿润",
+        "en": "Passive Effect：Wet",
+        "ja": "パッシブ効果：濡れた"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "MaskMakeshift",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Makeshift Mask",
+        "en": "Makeshift Mask",
+        "ja": "Makeshift Mask"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 6,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

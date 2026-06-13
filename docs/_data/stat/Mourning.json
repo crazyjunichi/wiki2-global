@@ -1,0 +1,318 @@
+{
+  "m_Name": "Mourning",
+  "key": "Mourning",
+  "icon": "Depressed_Old",
+  "type": "stat",
+  "zh": "哀悼",
+  "en": "Mourning",
+  "ja": "追悼",
+  "UniqueIDIndex": 3761,
+  "GameName": {
+    "DefaultText": "Mourning",
+    "Text": "哀悼",
+    "zh": "哀悼",
+    "en": "Mourning",
+    "ja": "追悼"
+  },
+  "Description": {
+    "DefaultText": "You are mourning the death of a loved one. Lowers your morale and mental structure.",
+    "Text": "你正在哀悼去世的亲人。影响你的情绪和世界观。",
+    "zh": "你正在哀悼去世的亲人。影响你的情绪和世界观。",
+    "en": "You are mourning the death of a loved one. Lowers your morale and mental structure.",
+    "ja": "亡くなった人を追悼し、士気と心の健康が悪化してる。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 2880
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.09411766,
+    "g": 0.29803923,
+    "b": 0.82745105,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Depressed_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Mourning",
+        "Text": "哀悼",
+        "zh": "哀悼",
+        "en": "Mourning",
+        "ja": "追悼"
+      },
+      "Description": {
+        "DefaultText": "You are mourning the death of a loved one.",
+        "Text": "你正在哀悼去世的亲人。",
+        "zh": "你正在哀悼去世的亲人。",
+        "en": "You are mourning the death of a loved one.",
+        "ja": "亡くなった人を追悼してる。"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Depressed_Old"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 2880
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Morale",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "情绪",
+            "en": "Morale",
+            "ja": "士気",
+            "max": 350,
+            "min": -350
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1.5,
+            "y": -1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "MentalStructure",
+            "icon": "Shield",
+            "type": "stat",
+            "zh": "世界观",
+            "en": "Mental Structure",
+            "ja": "精神構造",
+            "max": 250,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": true,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "DogFriend",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Dog Friend",
+        "en": "Dog Friend",
+        "ja": "Dog Friend"
+      },
+      "localization": {
+        "zh": "Hunger 降为零",
+        "en": "Hunger Depleted",
+        "ja": "Hunger ゼロ"
+      },
+      "value": {
+        "x": 672,
+        "y": 672
+      },
+      "key": "DogFriend_Dead of Hunger"
+    },
+    {
+      "link": {
+        "key": "DogFriend",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Dog Friend",
+        "en": "Dog Friend",
+        "ja": "Dog Friend"
+      },
+      "localization": {
+        "zh": "Thirst 降为零",
+        "en": "Thirst Depleted",
+        "ja": "Thirst ゼロ"
+      },
+      "value": {
+        "x": 672,
+        "y": 672
+      },
+      "key": "DogFriend_Dead of Thirst"
+    },
+    {
+      "link": {
+        "key": "DogFriend",
+        "icon": "",
+        "type": "card",
+        "CardType": 0,
+        "zh": "Dog Friend",
+        "en": "Dog Friend",
+        "ja": "Dog Friend"
+      },
+      "localization": {
+        "DefaultText": "Murder!",
+        "Text": "Murder!",
+        "zh": "Murder!",
+        "en": "Murder!",
+        "ja": "Murder!"
+      },
+      "value": {
+        "x": 288,
+        "y": 288
+      },
+      "key": "DogFriend_Murder!"
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 2880,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": {
+      "FileName": "Depressed_Old"
+    },
+    "NegativeIcon": null,
+    "StepValue": 10,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

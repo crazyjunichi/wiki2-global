@@ -1,0 +1,654 @@
+{
+  "m_Name": "Stat_Pk_2_9_ColdResistant",
+  "key": "Stat_Pk_2_9_ColdResistant",
+  "icon": "",
+  "type": "stat",
+  "zh": "Stat_Pk_2_9_ColdResistant",
+  "en": "Stat_Pk_2_9_ColdResistant",
+  "ja": "Stat_Pk_2_9_ColdResistant",
+  "UniqueIDIndex": 4264,
+  "GameName": {
+    "DefaultText": "Stat_Pk_2_9_ColdResistant",
+    "Text": "Stat_Pk_2_9_ColdResistant",
+    "zh": "Stat_Pk_2_9_ColdResistant",
+    "en": "Stat_Pk_2_9_ColdResistant",
+    "ja": "Stat_Pk_2_9_ColdResistant"
+  },
+  "Description": {
+    "DefaultText": "Used To enable the cold resistant perk. ",
+    "Text": "Used To enable the cold resistant perk. ",
+    "zh": "Used To enable the cold resistant perk. ",
+    "en": "Used To enable the cold resistant perk. ",
+    "ja": "Used To enable the cold resistant perk. "
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 11
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Insulation",
+        "Text": "Insulation",
+        "zh": "Insulation",
+        "en": "Insulation",
+        "ja": "Insulation"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 11,
+        "m_Y": 11
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "BodyTemperature",
+            "icon": "Hot",
+            "type": "stat",
+            "zh": "体温",
+            "en": "Body Temperature",
+            "ja": "体温",
+            "max": 200,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 1.5,
+            "y": 1.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 凉爽",
+        "en": "Status Stage: Chilled",
+        "ja": "ステータス段階: 涼しい"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 凉爽",
+        "en": "Status Stage: Chilled",
+        "ja": "ステータス段階: 涼しい"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 凉爽",
+        "en": "Status Stage: Chilled",
+        "ja": "ステータス段階: 涼しい"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冷",
+        "en": "Status Stage: Cold",
+        "ja": "ステータス段階: 寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冷",
+        "en": "Status Stage: Cold",
+        "ja": "ステータス段階: 寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冷",
+        "en": "Status Stage: Cold",
+        "ja": "ステータス段階: 寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 很冷",
+        "en": "Status Stage: Very Cold",
+        "ja": "ステータス段階: かなり寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 很冷",
+        "en": "Status Stage: Very Cold",
+        "ja": "ステータス段階: かなり寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 很冷",
+        "en": "Status Stage: Very Cold",
+        "ja": "ステータス段階: かなり寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冰冷",
+        "en": "Status Stage: Extremely Cold",
+        "ja": "ステータス段階: 相当寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冰冷",
+        "en": "Status Stage: Extremely Cold",
+        "ja": "ステータス段階: 相当寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 冰冷",
+        "en": "Status Stage: Extremely Cold",
+        "ja": "ステータス段階: 相当寒い"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 寒冷",
+        "en": "Status Stage: Freezing",
+        "ja": "ステータス段階: 寒すぎる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 寒冷",
+        "en": "Status Stage: Freezing",
+        "ja": "ステータス段階: 寒すぎる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 寒冷",
+        "en": "Status Stage: Freezing",
+        "ja": "ステータス段階: 寒すぎる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "TemperaturePerceived",
+        "icon": "Hot",
+        "type": "stat",
+        "zh": "体感温度",
+        "en": "Perceived Temperature",
+        "ja": "体感温度",
+        "max": 80,
+        "min": -80
+      },
+      "localization": {
+        "zh": "状态阶段: 极度寒冷",
+        "en": "Status Stage: Extremely Freezing",
+        "ja": "ステータス段階: 極寒"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_2_9_ColdResistant",
+        "icon": "Snowflake_Old",
+        "zh": "抗寒体质",
+        "en": "Cold Resistant",
+        "ja": "Cold Resistant",
+        "type": "perk"
+      },
+      "localization": {
+        "zh": "角色特质",
+        "en": "Character Perk",
+        "ja": "キャラクター特性"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [
+    {
+      "link": {
+        "key": "FrostnipAndFrostbiteCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "冻伤与轻度冻伤计数器",
+        "en": "FrostnipAndFrostbiteCounter",
+        "ja": "FrostnipAndFrostbiteCounter",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 10,
+        "y": 11
+      }
+    },
+    {
+      "link": {
+        "key": "FrostnipAndFrostbiteCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "冻伤与轻度冻伤计数器",
+        "en": "FrostnipAndFrostbiteCounter",
+        "ja": "FrostnipAndFrostbiteCounter",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "FrostnipAndFrostbiteCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "冻伤与轻度冻伤计数器",
+        "en": "FrostnipAndFrostbiteCounter",
+        "ja": "FrostnipAndFrostbiteCounter",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 10,
+        "y": 11
+      }
+    },
+    {
+      "link": {
+        "key": "FrostnipAndFrostbiteCounter",
+        "icon": "",
+        "type": "stat",
+        "zh": "冻伤与轻度冻伤计数器",
+        "en": "FrostnipAndFrostbiteCounter",
+        "ja": "FrostnipAndFrostbiteCounter",
+        "max": 8,
+        "min": 0
+      },
+      "localization": {
+        "zh": "触发器",
+        "en": "Trigger",
+        "ja": "トリガー"
+      },
+      "value": {
+        "x": 0,
+        "y": 1
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "key": "Tgr_FrostnipFrostbiteCheck"
+    }
+  ],
+  "max": 11,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

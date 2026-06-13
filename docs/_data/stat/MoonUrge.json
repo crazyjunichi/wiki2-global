@@ -1,0 +1,1756 @@
+{
+  "m_Name": "MoonUrge",
+  "key": "MoonUrge",
+  "icon": "Moon",
+  "type": "stat",
+  "zh": "月之本能",
+  "en": "Moon Urge",
+  "ja": "Moon Urge",
+  "UniqueIDIndex": 3756,
+  "GameName": {
+    "DefaultText": "Moon Urge",
+    "Text": "月之本能",
+    "zh": "月之本能",
+    "en": "Moon Urge",
+    "ja": "Moon Urge"
+  },
+  "Description": {
+    "DefaultText": "Raises your stress levels if not satisfied.\nCan be satisfied by interacting with the Moon.",
+    "Text": "如果得不到满足，将增加你的压力水平。\\n可以通过与月互动得到满足。",
+    "zh": "如果得不到满足，将增加你的压力水平。\\n可以通过与月互动得到满足。",
+    "en": "Raises your stress levels if not satisfied.\\nCan be satisfied by interacting with the Moon.",
+    "ja": "Raises your stress levels if not satisfied.\nCan be satisfied by interacting with the Moon."
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 96
+  },
+  "BaseRatePerTick": -1,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 1
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 2,
+            "y": 2
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 3,
+            "y": 3
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 4,
+            "y": 4
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -40,
+        "y": -40
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 5,
+            "y": 5
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -20,
+        "y": -20
+      }
+    },
+    {
+      "StartingHour": 0,
+      "EndingHour": 24,
+      "RequiredCardsOrTagsOnBoard": [
+        {
+          "Target": {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Moonlight",
+            "icon": "Moon",
+            "type": "stat",
+            "zh": "月光",
+            "en": "Moonlight",
+            "ja": "Moonlight",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 1,
+            "y": 100000
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        },
+        {
+          "Stat": {
+            "key": "MoonShape",
+            "icon": "",
+            "type": "stat",
+            "zh": "月形态",
+            "en": "Moon Shape",
+            "ja": "Moon Shape",
+            "max": 6,
+            "min": 1
+          },
+          "TriggerRange": {
+            "x": 6,
+            "y": 6
+          },
+          "NotifyWhenNotMet": false,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "ValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "RateModifier": {
+        "x": -10,
+        "y": -10
+      }
+    }
+  ],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.420658,
+    "g": 0.78039217,
+    "b": 0.19215685,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 0.88987577,
+    "g": 1,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Moon"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Moon Urge",
+        "Text": "月之本能",
+        "zh": "月之本能",
+        "en": "Moon Urge",
+        "ja": "Moon Urge"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 12,
+        "m_Y": 24
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moon Urge",
+        "Text": "月之本能",
+        "zh": "月之本能",
+        "en": "Moon Urge",
+        "ja": "Moon Urge"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 25,
+        "m_Y": 48
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Moon Urge",
+        "Text": "月之本能",
+        "zh": "月之本能",
+        "en": "Moon Urge",
+        "ja": "Moon Urge"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Moon"
+      },
+      "ValueRange": {
+        "m_X": 49,
+        "m_Y": 96
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Stress",
+            "icon": "Stress",
+            "type": "stat",
+            "zh": "压力",
+            "en": "Stress",
+            "ja": "ストレス",
+            "max": 240,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0.75,
+            "y": 0.75
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "Bp_MoonEnchantment",
+        "icon": "FFMoonIcon",
+        "type": "card",
+        "CardType": 7,
+        "zh": "月附魔",
+        "en": "Moon Enchantment",
+        "ja": "Moon Enchantment"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonMaidenEnchantment",
+        "icon": "MoonMaiden",
+        "type": "card",
+        "CardType": 7,
+        "zh": "月女附魔",
+        "en": "Moon Maiden Enchantment",
+        "ja": "Moon Maiden Enchantment"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonMaidenSpiritCalling",
+        "icon": "MoonMaiden",
+        "type": "card",
+        "CardType": 7,
+        "zh": "呼唤月女精魄(呼唤)",
+        "en": "Moon Maiden Spirit Calling",
+        "ja": "Moon Maiden Spirit Calling"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonMaidenSummoning",
+        "icon": "MoonMaiden",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤月之少女中",
+        "en": "Moon Maiden Summoning",
+        "ja": "Moon Maiden Summoning"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonSpiritCalling",
+        "icon": "FFMoonIcon",
+        "type": "card",
+        "CardType": 7,
+        "zh": "呼唤月精魄(呼唤)",
+        "en": "Moon Spirit Calling",
+        "ja": "Moon Spirit Calling"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonSummoning",
+        "icon": "FFMoonIcon",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "Summoning Ritual"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoontouchedEnchantment",
+        "icon": "Moontouched",
+        "type": "card",
+        "CardType": 7,
+        "zh": "月兽附魔",
+        "en": "Moontouched Enchantment",
+        "ja": "Moontouched Enchantment"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoontouchedSpiritCalling",
+        "icon": "Moontouched",
+        "type": "card",
+        "CardType": 7,
+        "zh": "呼唤月兽精魄中(呼唤)",
+        "en": "Moontouched Spirit Calling",
+        "ja": "Moontouched Spirit Calling"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoontouchedSummoning",
+        "icon": "Moontouched",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "Summoning Ritual"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_MoontouchedCarcass",
+        "icon": "Wolf_White",
+        "type": "card",
+        "CardType": 0,
+        "zh": "月兽尸体",
+        "en": "Moontouched Carcass",
+        "ja": "Moontouched Carcass"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      },
+      "key": "Carcass_MoontouchedCarcass_Blessing"
+    },
+    {
+      "link": {
+        "key": "Carcass_PrimevalWolfCarcass",
+        "icon": "Wolf_Dark",
+        "type": "card",
+        "CardType": 0,
+        "zh": "原初狼尸",
+        "en": "Primeval Wolf Carcass",
+        "ja": "Primeval Wolf Carcass"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      },
+      "key": "Carcass_PrimevalWolfCarcass_Blessing"
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Moon_MoonStone",
+        "icon": "Moonstone",
+        "type": "card",
+        "CardType": 2,
+        "zh": "月石",
+        "en": "Moonstone",
+        "ja": "Moonstone"
+      },
+      "localization": {
+        "zh": "动作：交流",
+        "en": "Action: Commune",
+        "ja": "アクション：Commune"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      },
+      "key": "SpiritShrine_Moon_MoonStone_Commune"
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Moon_MoonStone",
+        "icon": "Moonstone",
+        "type": "card",
+        "CardType": 2,
+        "zh": "月石",
+        "en": "Moonstone",
+        "ja": "Moonstone"
+      },
+      "localization": {
+        "zh": "动作：赐福",
+        "en": "Action: Blessing",
+        "ja": "アクション：Blessing"
+      },
+      "value": {
+        "x": -96,
+        "y": -96
+      },
+      "key": "SpiritShrine_Moon_MoonStone_Blessing"
+    }
+  ],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "LQ_SpiritMoon",
+        "icon": "FFMoonIcon",
+        "type": "card",
+        "CardType": 9,
+        "zh": "月精魄",
+        "en": "Moon Spirit",
+        "ja": "Moon Spirit"
+      },
+      "localization": {
+        "zh": "被动效果：Moon Urge +1.5: tag_Spirit",
+        "en": "Passive Effect：Moon Urge +1.5: tag_Spirit ",
+        "ja": "パッシブ効果：Moon Urge +1.5: tag_Spirit"
+      },
+      "value": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritMoonMaiden",
+        "icon": "MoonMaiden",
+        "type": "card",
+        "CardType": 9,
+        "zh": "月女精魄",
+        "en": "Moon Maiden Spirit",
+        "ja": "Moon Maiden Spirit"
+      },
+      "localization": {
+        "zh": "被动效果：Moon Urge +1.5: tag_Spirit",
+        "en": "Passive Effect：Moon Urge +1.5: tag_Spirit ",
+        "ja": "パッシブ効果：Moon Urge +1.5: tag_Spirit"
+      },
+      "value": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritMoontouched",
+        "icon": "Moontouched",
+        "type": "card",
+        "CardType": 9,
+        "zh": "月兽精魄",
+        "en": "Moontouched Spirit",
+        "ja": "Moontouched Spirit"
+      },
+      "localization": {
+        "zh": "被动效果：Moon Urge +1.5: tag_Spirit",
+        "en": "Passive Effect：Moon Urge +1.5: tag_Spirit ",
+        "ja": "パッシブ効果：Moon Urge +1.5: tag_Spirit"
+      },
+      "value": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    {
+      "link": {
+        "key": "MoontouchedCoat",
+        "icon": "WolfCoat_White",
+        "type": "card",
+        "CardType": 0,
+        "zh": "月兽大衣",
+        "en": "Moontouched Coat",
+        "ja": "Moontouched Coat",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special1Range": {
+                "x": 2,
+                "y": 2
+              }
+            },
+            "Name": {
+              "DefaultText": "Green Moontouched Coat",
+              "Text": "绿色月兽大衣",
+              "zh": "绿色月兽大衣",
+              "en": "Green Moontouched Coat",
+              "ja": "Green Moontouched Coat"
+            }
+          },
+          {
+            "Conditions": {
+              "Special1Range": {
+                "x": 3,
+                "y": 3
+              }
+            },
+            "Name": {
+              "DefaultText": "Red Moontouched Coat",
+              "Text": "红色月兽大衣",
+              "zh": "红色月兽大衣",
+              "en": "Red Moontouched Coat",
+              "ja": "Red Moontouched Coat"
+            }
+          },
+          {
+            "Conditions": {
+              "Special1Range": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "Name": {
+              "DefaultText": "Brown Moontouched Coat",
+              "Text": "棕色月兽大衣",
+              "zh": "棕色月兽大衣",
+              "en": "Brown Moontouched Coat",
+              "ja": "Brown Moontouched Coat"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "被动效果：Moon Urge",
+        "en": "Passive Effect：Moon Urge",
+        "ja": "パッシブ効果：Moon Urge"
+      },
+      "value": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Moon_MoonStone",
+        "icon": "Moonstone",
+        "type": "card",
+        "CardType": 2,
+        "zh": "月石",
+        "en": "Moonstone",
+        "ja": "Moonstone"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 96,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

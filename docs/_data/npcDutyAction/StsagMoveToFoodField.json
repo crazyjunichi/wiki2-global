@@ -1,0 +1,370 @@
+{
+  "m_Name": "StsagMoveToFoodField",
+  "key": "StsagMoveToFoodField",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "MovementType": 0,
+  "MoveDestination": 5,
+  "MoveAwayFromDestination": false,
+  "DestinationSelection": 0,
+  "MoveToEnvironments": [],
+  "MoveToTags": [
+    {
+      "key": "tag_FeedCarniOmni",
+      "text": "“肉食和杂食动物饲料”",
+      "icon": "",
+      "type": "tag",
+      "count": 142,
+      "zh": "肉食和杂食动物饲料",
+      "en": "Feed for Carnivores and Omnivores",
+      "ja": "肉食動物と雑食動物の餌",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 300
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Drying",
+          "Text": "干燥",
+          "zh": "干燥",
+          "en": "Drying",
+          "ja": "乾燥中"
+        },
+        "OverrideIcon": {
+          "FileName": "Hammer"
+        },
+        "MaxValue": 24
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Temperature",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spirit",
+          "Text": "精魄",
+          "zh": "精魄",
+          "en": "Spirit",
+          "ja": "Spirit"
+        },
+        "OverrideIcon": {
+          "FileName": "Insight"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Burned",
+          "Text": "烤焦的",
+          "zh": "烤焦的",
+          "en": "Burned",
+          "ja": "焦げた"
+        },
+        "OverrideIcon": {
+          "FileName": "Flame"
+        },
+        "MaxValue": 8
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Meat Type",
+          "Text": "肉部位",
+          "zh": "肉部位",
+          "en": "Meat Type",
+          "ja": "Meat Type"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 100
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
+      }
+    }
+  ],
+  "MoveToItems": [
+    {
+      "Target": {
+        "key": "tag_DeerFoodCropField",
+        "text": "“Deer Food Crop Field”",
+        "icon": "",
+        "type": "tag",
+        "count": 16,
+        "zh": "鹿食物农田",
+        "en": "Deer Food Crop Field",
+        "ja": "Deer Food Crop Field",
+        "SpoilageTime": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Nutrients",
+            "Text": "养分",
+            "zh": "养分",
+            "en": "Nutrients",
+            "ja": "栄養"
+          },
+          "OverrideIcon": {
+            "FileName": "Filth"
+          },
+          "MaxValue": 5760
+        },
+        "UsageDurability": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Acidity",
+            "Text": "土壤酸度",
+            "zh": "土壤酸度",
+            "en": "Acidity",
+            "ja": "酸度"
+          },
+          "OverrideIcon": {
+            "FileName": "Urine"
+          },
+          "MaxValue": 13440
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Hydration",
+            "Text": "湿度",
+            "zh": "湿度",
+            "en": "Hydration",
+            "ja": "水分"
+          },
+          "OverrideIcon": {
+            "FileName": "Water"
+          },
+          "MaxValue": 5760
+        },
+        "Progress": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Structure",
+            "Text": "土质",
+            "zh": "土质",
+            "en": "Structure",
+            "ja": "構成"
+          },
+          "OverrideIcon": {
+            "FileName": "Shield"
+          },
+          "MaxValue": 5760
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Growth",
+            "Text": "成长度",
+            "zh": "成长度",
+            "en": "Growth",
+            "ja": "成長"
+          },
+          "OverrideIcon": {
+            "FileName": "Growth"
+          },
+          "MaxValue": 2880
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Health",
+            "Text": "健康度",
+            "zh": "健康度",
+            "en": "Health",
+            "ja": "Health"
+          },
+          "OverrideIcon": {
+            "FileName": "Health"
+          },
+          "MaxValue": 96
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Yield",
+            "Text": "饱满度",
+            "zh": "饱满度",
+            "en": "Yield",
+            "ja": "Yield"
+          },
+          "OverrideIcon": {
+            "FileName": "SaturationBerries"
+          },
+          "MaxValue": 5760
+        },
+        "SpecialDurability4": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Care",
+            "Text": "照料",
+            "zh": "照料",
+            "en": "Care",
+            "ja": "Care"
+          },
+          "OverrideIcon": {
+            "FileName": "Wakefulness4"
+          },
+          "MaxValue": 96
+        }
+      },
+      "RequiredDurabilities": {
+        "SpoilageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "UsageRange": {
+          "x": 0,
+          "y": 0
+        },
+        "FuelRange": {
+          "x": 0,
+          "y": 0
+        },
+        "ProgressRange": {
+          "x": 0,
+          "y": 0
+        },
+        "Special1Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special2Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special3Range": {
+          "x": 0,
+          "y": 0
+        },
+        "Special4Range": {
+          "x": 0,
+          "y": 0
+        },
+        "LiquidQuantityRange": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "OtherAgent": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": null,
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "IgnoreCurrentLocation": false,
+  "Containers": {
+    "CanLookInContainers": false,
+    "ContainerRequiredDurabilities": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "AllowedContainers": [],
+    "NOTAllowedContainers": []
+  },
+  "LeaveTracks": true,
+  "OverrideAgentDefaultTracks": {
+    "Active": false,
+    "TrackLifetime": {
+      "m_X": 0,
+      "m_Y": 0
+    },
+    "AddedChanceToDiscoverTracks": {
+      "x": 0,
+      "y": 0
+    },
+    "AddedStatChanceToDiscover": [],
+    "OverrideDefaultTracksCard": null,
+    "TracksDirection": 0,
+    "OverrideTrackDurabilities": 0,
+    "NPCStatsToTrackDurabilities": []
+  },
+  "CostRequirements": 0,
+  "MoveCosts": []
+}

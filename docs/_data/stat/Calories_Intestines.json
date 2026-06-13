@@ -1,0 +1,1093 @@
+{
+  "m_Name": "Calories_Intestines",
+  "key": "Calories_Intestines",
+  "icon": "Intestines_Old",
+  "type": "stat",
+  "zh": "肠子",
+  "en": "Intestines",
+  "ja": "腸",
+  "UniqueIDIndex": 3161,
+  "GameName": {
+    "DefaultText": "Intestines",
+    "Text": "肠子",
+    "zh": "肠子",
+    "en": "Intestines",
+    "ja": "腸"
+  },
+  "Description": {
+    "DefaultText": "Shows how much food is currently in your intestines. Food is gradually converted into body weight here.",
+    "Text": "显示你肠道中目前有多少食物。食物在此逐渐转化为体重。",
+    "zh": "显示你肠道中目前有多少食物。食物在此逐渐转化为体重。",
+    "en": "Shows how much food is currently in your intestines. Food is gradually converted into body weight here.",
+    "ja": "腸の中にある食べ物を示す。カロリーは増加する体重と直接関係している。"
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1000
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 3,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 1000
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 0.41509432,
+    "g": 0.029369876,
+    "b": 0.26443762,
+    "a": 0
+  },
+  "BarHighlightColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Intestines_Old"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Digestion",
+        "Text": "消化",
+        "zh": "消化",
+        "en": "Digestion",
+        "ja": "消化"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 8
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Calories_Intestines",
+            "icon": "Intestines_Old",
+            "type": "stat",
+            "zh": "肠子",
+            "en": "Intestines",
+            "ja": "腸",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -1,
+            "y": -1
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 20,
+            "y": 20
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Digestion",
+        "Text": "消化",
+        "zh": "消化",
+        "en": "Digestion",
+        "ja": "消化"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 9,
+        "m_Y": 32
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Calories_Intestines",
+            "icon": "Intestines_Old",
+            "type": "stat",
+            "zh": "肠子",
+            "en": "Intestines",
+            "ja": "腸",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -2,
+            "y": -2
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 40,
+            "y": 40
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Digestion",
+        "Text": "消化",
+        "zh": "消化",
+        "en": "Digestion",
+        "ja": "消化"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 33,
+        "m_Y": 64
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Calories_Intestines",
+            "icon": "Intestines_Old",
+            "type": "stat",
+            "zh": "肠子",
+            "en": "Intestines",
+            "ja": "腸",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 60,
+            "y": 60
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Digestion",
+        "Text": "消化",
+        "zh": "消化",
+        "en": "Digestion",
+        "ja": "消化"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 65,
+        "m_Y": 168
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Calories_Intestines",
+            "icon": "Intestines_Old",
+            "type": "stat",
+            "zh": "肠子",
+            "en": "Intestines",
+            "ja": "腸",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -4,
+            "y": -4
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 80,
+            "y": 80
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    },
+    {
+      "GameName": {
+        "DefaultText": "Digestion",
+        "Text": "消化",
+        "zh": "消化",
+        "en": "Digestion",
+        "ja": "消化"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 169,
+        "m_Y": 1000
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [
+        {
+          "Stat": {
+            "key": "Calories_Intestines",
+            "icon": "Intestines_Old",
+            "type": "stat",
+            "zh": "肠子",
+            "en": "Intestines",
+            "ja": "腸",
+            "max": 1000,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": -8,
+            "y": -8
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 160,
+            "y": 160
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "Calories_Intestines",
+        "icon": "Intestines_Old",
+        "type": "stat",
+        "zh": "肠子",
+        "en": "Intestines",
+        "ja": "腸",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Intestines",
+        "icon": "Intestines_Old",
+        "type": "stat",
+        "zh": "肠子",
+        "en": "Intestines",
+        "ja": "腸",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Intestines",
+        "icon": "Intestines_Old",
+        "type": "stat",
+        "zh": "肠子",
+        "en": "Intestines",
+        "ja": "腸",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Intestines",
+        "icon": "Intestines_Old",
+        "type": "stat",
+        "zh": "肠子",
+        "en": "Intestines",
+        "ja": "腸",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Intestines",
+        "icon": "Intestines_Old",
+        "type": "stat",
+        "zh": "肠子",
+        "en": "Intestines",
+        "ja": "腸",
+        "max": 1000,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": -8,
+        "y": -8
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃部",
+        "en": "Stomach",
+        "ja": "お腹",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃部",
+        "en": "Stomach",
+        "ja": "お腹",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 5,
+        "y": 5
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃部",
+        "en": "Stomach",
+        "ja": "お腹",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "Calories_Stomach",
+        "icon": "Stomach_Old",
+        "type": "stat",
+        "zh": "胃部",
+        "en": "Stomach",
+        "ja": "お腹",
+        "max": 200,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 消化",
+        "en": "Status Stage: Digestion",
+        "ja": "ステータス段階: 消化"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "IngestedCharcoal",
+        "icon": "Charcoal",
+        "type": "stat",
+        "zh": "木炭摄入",
+        "en": "Ingested Charcoal",
+        "ja": "活性炭",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 低木炭剂量",
+        "en": "Status Stage: Minor Charcoal Dose",
+        "ja": "ステータス段階: 少量の木炭"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "IngestedCharcoal",
+        "icon": "Charcoal",
+        "type": "stat",
+        "zh": "木炭摄入",
+        "en": "Ingested Charcoal",
+        "ja": "活性炭",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中木炭剂量",
+        "en": "Status Stage: Moderate Charcoal Dose",
+        "ja": "ステータス段階: 適量の木炭"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    },
+    {
+      "link": {
+        "key": "IngestedCharcoal",
+        "icon": "Charcoal",
+        "type": "stat",
+        "zh": "木炭摄入",
+        "en": "Ingested Charcoal",
+        "ja": "活性炭",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高木炭剂量",
+        "en": "Status Stage: High Charcoal Dose",
+        "ja": "ステータス段階: 大量の木炭"
+      },
+      "value": {
+        "x": -3,
+        "y": -3
+      }
+    },
+    {
+      "link": {
+        "key": "IngestedCharcoal",
+        "icon": "Charcoal",
+        "type": "stat",
+        "zh": "木炭摄入",
+        "en": "Ingested Charcoal",
+        "ja": "活性炭",
+        "max": 400,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 极高木炭剂量",
+        "en": "Status Stage: Very High Charcoal Dose",
+        "ja": "ステータス段階: 超大量の木炭"
+      },
+      "value": {
+        "x": -4,
+        "y": -4
+      }
+    },
+    {
+      "link": {
+        "key": "StoolLiquidity",
+        "icon": "Poop",
+        "type": "stat",
+        "zh": "大便软硬度",
+        "en": "Stool Liquidity",
+        "ja": "便の硬さ",
+        "max": 300,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 大便稀软",
+        "en": "Status Stage: Loose Stools",
+        "ja": "ステータス段階: ゆるいウンコ"
+      },
+      "value": {
+        "x": -0.5,
+        "y": -0.5
+      }
+    },
+    {
+      "link": {
+        "key": "StoolLiquidity",
+        "icon": "Poop",
+        "type": "stat",
+        "zh": "大便软硬度",
+        "en": "Stool Liquidity",
+        "ja": "便の硬さ",
+        "max": 300,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 腹泻",
+        "en": "Status Stage: Diarrhoea",
+        "ja": "ステータス段階: 下痢"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "StoolLiquidity",
+        "icon": "Poop",
+        "type": "stat",
+        "zh": "大便软硬度",
+        "en": "Stool Liquidity",
+        "ja": "便の硬さ",
+        "max": 300,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 严重腹泻",
+        "en": "Status Stage: Severe Diarrhoea",
+        "ja": "ステータス段階: ひどい下痢だ"
+      },
+      "value": {
+        "x": -2,
+        "y": -2
+      }
+    }
+  ],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1000,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": false,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

@@ -1,0 +1,876 @@
+{
+  "m_Name": "AmbientSmoke",
+  "key": "AmbientSmoke",
+  "icon": "Smoke",
+  "type": "stat",
+  "zh": "环境烟雾",
+  "en": "Ambient Smoke",
+  "ja": "Ambient Smoke",
+  "UniqueIDIndex": 3097,
+  "GameName": {
+    "DefaultText": "Ambient Smoke",
+    "Text": "环境烟雾",
+    "zh": "环境烟雾",
+    "en": "Ambient Smoke",
+    "ja": "Ambient Smoke"
+  },
+  "Description": {
+    "DefaultText": "Lowers wellbeing.",
+    "Text": "降低幸福度。",
+    "zh": "降低幸福度。",
+    "en": "Lowers wellbeing.",
+    "ja": "Lowers wellbeing."
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 0,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": true,
+  "BarColor": {
+    "r": 0.8705883,
+    "g": 0.4431373,
+    "b": 0.4039216,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": {
+    "FileName": "Smoke"
+  },
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Ambient Smoke",
+        "Text": "环境烟雾",
+        "zh": "环境烟雾",
+        "en": "Ambient Smoke",
+        "ja": "Ambient Smoke"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": {
+        "FileName": "Smoke"
+      },
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 2,
+      "AlertLevel": 2,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 1,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "CabinConstructionLocationCabinRoom",
+        "icon": "Cabin_Room",
+        "type": "card",
+        "CardType": 8,
+        "zh": "木质房间",
+        "en": "Cabin Room",
+        "ja": "Cabin Room"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "CabinConstructionStartingPointCabin",
+        "icon": "Cabin_Outside",
+        "type": "card",
+        "CardType": 8,
+        "zh": "木屋",
+        "en": "Cabin",
+        "ja": "Cabin"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_BearCave",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "熊洞",
+        "en": "Bear Cave",
+        "ja": "クマの洞窟"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveOldHollow",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巨大洞穴",
+        "en": "Great Cave",
+        "ja": "Great Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CavePineSlopes",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "洞穴",
+        "en": "Cave",
+        "ja": "Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveRiverPass",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "洞穴",
+        "en": "Cave",
+        "ja": "Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveShadyThicket",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "隐秘洞穴",
+        "en": "Secret Cave",
+        "ja": "Secret Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_CaveStillHollow",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "静谧洞穴",
+        "en": "Still Cave",
+        "ja": "Still Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FlintSett",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石巢穴",
+        "en": "Flint Sett",
+        "ja": "火打石の大鉱脈"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmClearedTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "已清理的隧道",
+        "en": "Cleared Tunnel",
+        "ja": "屋根崩壊カウンター"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmCollapsedTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "坍塌的隧道",
+        "en": "Collapsed Tunnel",
+        "ja": "崩れたトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelNorthEast",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelNorthWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelSouthEast",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelSouthWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmDarkTunnelWest",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "黑暗隧道",
+        "en": "Dark Tunnel",
+        "ja": "暗いトンネル（西）"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmFlintclawsChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧爪的巢穴",
+        "en": "Flintclaw's Chamber",
+        "ja": "フリントクローの間"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmFloodedTunnel",
+        "icon": "Tunnel_Flooded",
+        "type": "card",
+        "CardType": 8,
+        "zh": "覆溺隧道",
+        "en": "Flooded Tunnel",
+        "ja": "浸水したトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmNorthernChamber",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部洞穴",
+        "en": "Northern Chamber",
+        "ja": "北の間"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmNorthernTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "北部隧道",
+        "en": "Northern Tunnel",
+        "ja": "北の洞窟"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmOminousTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "不祥隧道",
+        "en": "Ominous Tunnel",
+        "ja": "不穏なトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmOvergrownTunnel",
+        "icon": "Tunnel_Overgrown",
+        "type": "card",
+        "CardType": 8,
+        "zh": "藤蔓覆盖的隧道",
+        "en": "Overgrown Tunnel",
+        "ja": "草木に覆われたトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_FmSouthernTunnel",
+        "icon": "Tunnel_1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "南部隧道",
+        "en": "Southern Tunnel",
+        "ja": "南のトンネル"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_WaterfallCaves",
+        "icon": "Waterfall_Cave",
+        "type": "card",
+        "CardType": 8,
+        "zh": "瀑布洞穴",
+        "en": "Waterfall Caves",
+        "ja": "滝の洞窟"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Caves_WolfCave",
+        "icon": "BearCave_Entrance",
+        "type": "card",
+        "CardType": 8,
+        "zh": "狼穴",
+        "en": "Wolf Cave",
+        "ja": "Wolf Cave"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationCopperMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "铜矿井",
+        "en": "Copper Mine",
+        "ja": "Copper Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationFlintMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石矿井",
+        "en": "Flint Mine",
+        "ja": "Flint Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionLocationWitchstoneMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巫石矿井",
+        "en": "Witchstone Mine",
+        "ja": "Witchstone Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointCopperMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "铜矿井",
+        "en": "Copper Mine",
+        "ja": "Copper Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointFlintMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "燧石矿井",
+        "en": "Flint Mine",
+        "ja": "Flint Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MineConstructionStartingPointWitchstoneMine",
+        "icon": "Mines",
+        "type": "card",
+        "CardType": 8,
+        "zh": "巫石矿井",
+        "en": "Witchstone Mine",
+        "ja": "Witchstone Mine"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationCellar",
+        "icon": "Cellar_Down",
+        "type": "card",
+        "CardType": 8,
+        "zh": "地窖",
+        "en": "Cellar",
+        "ja": "セラー"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationRoom",
+        "icon": "MudHutRoom",
+        "type": "card",
+        "CardType": 8,
+        "zh": "房间",
+        "en": "Room",
+        "ja": "部屋"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointCellar",
+        "icon": "Cellar_Down",
+        "type": "card",
+        "CardType": 8,
+        "zh": "地窖",
+        "en": "Cellar",
+        "ja": "セラー"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointMudHut",
+        "icon": "MudHut_Outside",
+        "type": "card",
+        "CardType": 8,
+        "zh": "泥屋",
+        "en": "Mud Hut",
+        "ja": "泥小屋"
+      },
+      "localization": {
+        "zh": "被动效果：Increase Smoke Stat",
+        "en": "Passive Effect：Increase Smoke Stat",
+        "ja": "パッシブ効果：Increase Smoke Stat"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": true,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

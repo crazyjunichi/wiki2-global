@@ -1,0 +1,74 @@
+{
+  "m_Name": "New ChangeNPCStatDutyAction",
+  "key": "New ChangeNPCStatDutyAction",
+  "RequiredForSelectingDuty": false,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_ForestBeast",
+        "icon": "ForestBeast",
+        "type": "npc",
+        "zh": "森林猛兽",
+        "en": "Forest Beast",
+        "ja": "Forest Beast"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentDistracted",
+        "key": "AgentDistracted",
+        "type": "durability",
+        "zh": "AgentDistracted",
+        "en": "AgentDistracted",
+        "ja": "Agent distracted - used for various custom agent mechanics, for the forest beast it it used to trigger the moon staring duty. ",
+        "GameName": {
+          "DefaultText": "Agent distracted - used for various custom agent mechanics, for the forest beast it it used to trigger the moon staring duty. ",
+          "Text": "AgentDistracted",
+          "zh": "AgentDistracted",
+          "en": "AgentDistracted",
+          "ja": "Agent distracted - used for various custom agent mechanics, for the forest beast it it used to trigger the moon staring duty. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 100
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": -10000,
+          "y": 10000
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "AgentDistracted",
+        "desc": "Agent distracted - used for various custom agent mechanics, for the forest beast it it used to trigger the moon staring duty. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "a870d06f65ccbd94c8429560bf732270",
+        "UniqueIDIndex": 2812
+      },
+      "UseAssociatedAgent": true,
+      "TargetAgent": null,
+      "ValueChange": {
+        "x": -100,
+        "y": -100
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": true,
+    "IntValue": 1
+  }
+}
