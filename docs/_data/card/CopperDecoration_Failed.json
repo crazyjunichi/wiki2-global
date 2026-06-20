@@ -7,7 +7,7 @@
   "zh": "Copper Mess",
   "en": "Copper Mess",
   "ja": "Copper Mess",
-  "UniqueIDIndex": 915,
+  "UniqueIDIndex": 945,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“美丽的/好看的”",
       "icon": "",
       "type": "tag",
-      "count": 25,
+      "count": 26,
       "zh": "美丽的/好看的",
       "en": "Pretty",
       "ja": "綺麗",
@@ -71,6 +71,20 @@
         "OverrideIcon": null,
         "MaxValue": 96
       },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Flint",
+          "Text": "燧石",
+          "zh": "燧石",
+          "en": "Flint",
+          "ja": "Flint"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 50
+      },
       "SpecialDurability2": {
         "Active": true,
         "CardStatName": {
@@ -78,7 +92,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -92,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -128,7 +142,7 @@
           "Text": "总金属品质",
           "zh": "总金属品质",
           "en": "Metal Quality",
-          "ja": "Metal Quality"
+          "ja": "金属の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -142,7 +156,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -156,7 +170,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -1040,6 +1054,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1225,8 +1243,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

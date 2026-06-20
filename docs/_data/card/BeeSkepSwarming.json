@@ -7,7 +7,7 @@
   "zh": "Swarming Bee Skep",
   "en": "Swarming Bee Skep",
   "ja": "Swarming Bee Skep",
-  "UniqueIDIndex": 201,
+  "UniqueIDIndex": 202,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -1049,6 +1049,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1746,6 +1750,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2594,6 +2602,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3423,7 +3435,7 @@
                 "Text": "冰",
                 "zh": "冰",
                 "en": "Ice",
-                "ja": "Ice"
+                "ja": "氷"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -3437,7 +3449,7 @@
                 "Text": "容器温度",
                 "zh": "容器温度",
                 "en": "Container Temperature",
-                "ja": "Container Temperature"
+                "ja": "容器の温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -3463,7 +3475,7 @@
                 "Text": "染料",
                 "zh": "染料",
                 "en": "Dye",
-                "ja": "Dye"
+                "ja": "染料"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -3475,7 +3487,7 @@
                 "Text": "容器品质",
                 "zh": "容器品质",
                 "en": "Container Quality",
-                "ja": "Container Quality"
+                "ja": "容器の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3489,7 +3501,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -3547,6 +3559,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4230,6 +4246,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4909,6 +4926,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5661,111 +5679,7 @@
       "CarryOverGivenCard": false,
       "CompatibleCards": {
         "TriggerCards": [
-          {
-            "key": "Sack",
-            "icon": "",
-            "type": "card",
-            "CardType": 0,
-            "zh": "布袋",
-            "en": "Sack",
-            "ja": "袋",
-            "SpoilageTime": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
-                "en": "Spoilage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "UsageDurability": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "UsageDurability",
-                "zh": "耐久",
-                "en": "Usage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "FuelCapacity": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability1": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability1",
-                "zh": "特殊1",
-                "en": "Special1",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability2": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability3": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability4": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            }
-          }
+          null
         ],
         "TriggerTags": []
       },
@@ -6279,6 +6193,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -6574,7 +6492,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": true,
@@ -6868,7 +6789,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -7162,7 +7086,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -7570,7 +7497,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": true,
@@ -7864,7 +7794,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": true,
@@ -8062,8 +7995,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -8233,6 +8174,10 @@
       "StackCompatible": false,
       "DaytimeCost": 3,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -8911,6 +8856,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -9255,6 +9201,10 @@
       "StackCompatible": false,
       "DaytimeCost": 3,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -9779,6 +9729,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

@@ -7,7 +7,7 @@
   "zh": "Rennet",
   "en": "Rennet",
   "ja": "Rennet",
-  "UniqueIDIndex": 2150,
+  "UniqueIDIndex": 2210,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“喂/添加”",
       "icon": "",
       "type": "tag",
-      "count": 295,
+      "count": 299,
       "zh": "喂/添加",
       "en": "Feed",
       "ja": "餌",
@@ -158,7 +158,7 @@
           "Text": "幸福感",
           "zh": "幸福感",
           "en": "Happiness",
-          "ja": "Happiness"
+          "ja": "幸せ"
         },
         "OverrideIcon": {
           "FileName": "Morale2"
@@ -172,7 +172,7 @@
           "Text": "已消耗",
           "zh": "已消耗",
           "en": "Consumed",
-          "ja": "Consumed"
+          "ja": "使い切った"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -186,7 +186,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -228,7 +228,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "健康状態"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -344,13 +344,13 @@
     },
     {
       "key": "tag_FeedCarniOmni",
-      "text": "“肉食和杂食动物饲料”",
+      "text": "“Feed for Carnivores and Omnivores”",
       "icon": "",
       "type": "tag",
-      "count": 142,
-      "zh": "肉食和杂食动物饲料",
+      "count": 136,
+      "zh": "Feed for Carnivores and Omnivores",
       "en": "Feed for Carnivores and Omnivores",
-      "ja": "肉食動物と雑食動物の餌",
+      "ja": "Feed for Carnivores and Omnivores",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -400,7 +400,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -442,7 +442,7 @@
           "Text": "肉部位",
           "zh": "肉部位",
           "en": "Meat Type",
-          "ja": "Meat Type"
+          "ja": "肉の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -467,7 +467,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -585,7 +585,7 @@
       "text": "“少量蛋白质”",
       "icon": "",
       "type": "tag",
-      "count": 29,
+      "count": 30,
       "zh": "少量蛋白质",
       "en": "Poor Proteins",
       "ja": "タンパク質（低）",
@@ -610,7 +610,7 @@
           "Text": "幸福感",
           "zh": "幸福感",
           "en": "Happiness",
-          "ja": "Happiness"
+          "ja": "幸せ"
         },
         "OverrideIcon": {
           "FileName": "Morale2"
@@ -624,7 +624,7 @@
           "Text": "已消耗",
           "zh": "已消耗",
           "en": "Consumed",
-          "ja": "Consumed"
+          "ja": "使い切った"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -638,7 +638,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -680,7 +680,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "健康状態"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -1450,6 +1450,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3986,6 +3990,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4171,8 +4179,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4580,12 +4596,12 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4596,12 +4612,12 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4612,12 +4628,12 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4676,12 +4692,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -4820,12 +4836,12 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {

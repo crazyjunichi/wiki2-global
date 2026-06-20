@@ -7,9 +7,102 @@
   "zh": "牧草种子",
   "en": "Meadowgrass Seeds",
   "ja": "牧草の種",
-  "UniqueIDIndex": 1735,
+  "UniqueIDIndex": 1793,
   "CardType": 0,
-  "CardTags": [],
+  "CardTags": [
+    {
+      "key": "tag_FeedHerbiOmniTiny",
+      "text": "“Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ”",
+      "icon": "",
+      "type": "tag",
+      "count": 5,
+      "zh": "草食性和杂食性极小型饲料",
+      "en": "Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ",
+      "ja": "Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗物"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 11520
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Drying",
+          "Text": "干燥中",
+          "zh": "干燥中",
+          "en": "Drying",
+          "ja": "乾燥中"
+        },
+        "OverrideIcon": {
+          "FileName": "Hammer"
+        },
+        "MaxValue": 24
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Temperature",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Growth",
+          "Text": "成长度",
+          "zh": "成长度",
+          "en": "Growth",
+          "ja": "成長"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Burned",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Burned",
+          "ja": "焦げた"
+        },
+        "OverrideIcon": {
+          "FileName": "Flame"
+        },
+        "MaxValue": 8
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      }
+    }
+  ],
   "CardName": {
     "DefaultText": "Meadowgrass Seeds",
     "Text": "牧草种子",
@@ -893,7 +986,7 @@
     "Text": "<b>产地：</b>松木区域。\\n\\n<b>需求：</b>中或高等酸度、任意湿度、中或高等土质。春、夏季高养分下产量最高。\\n\\n<b>效果：</b>垫料，房顶材料，覆土作物。",
     "zh": "<b>产地：</b>松木区域。\\n\\n<b>需求：</b>中或高等酸度、任意湿度、中或高等土质。春、夏季高养分下产量最高。\\n\\n<b>效果：</b>垫料，房顶材料，覆土作物。",
     "en": "<b>Found:</b> Pine Clearings. \\n\\n<b>Growth Needs:</b> Mid or High Acidity, Any Hydration and Mid or High Structure. Produces the most yield on High Nutrients during Spring and Summer. \\n\\n<b>Benefits:</b> Bedding. Roofing. Cover Crop. ",
-    "ja": "<b>Found:</b> Pine Clearings. \n\n<b>Growth Needs:</b> Mid or High Acidity, Any Hydration and Mid or High Structure. Produces the most yield on High Nutrients during Spring and Summer. \n\n<b>Benefits:</b> Bedding. Roofing. Cover Crop. "
+    "ja": " <b>入手：</b>松の空き地。\\n\\n<b>生育条件：</b>酸性度（中～高）、水分量（任意）、土壌構造（中～高）。春から夏にかけて、高栄養土壌で最も収穫量が増える。\\n\\n<b>用途：</b>寝床材。屋根材。被覆作物。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 25,
@@ -909,10 +1002,14 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
-  "AlwaysUpdate": false,
+  "AlwaysUpdate": true,
   "CannotBeTrashed": false,
   "CanBeTrashed": false,
   "CarriesOverTo": [],
@@ -1094,8 +1191,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1423,7 +1528,7 @@
         "CardType": 7,
         "zh": "老鼠附魔",
         "en": "Mouse Enchantment",
-        "ja": "Mouse Enchantment"
+        "ja": "ネズミの加護"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -1439,7 +1544,7 @@
         "CardType": 7,
         "zh": "灰山鹑附魔",
         "en": "Partridge Enchantment",
-        "ja": "Partridge Enchantment"
+        "ja": "ヤマウズラの加護"
       },
       "localization": {
         "zh": "蓝图制作",

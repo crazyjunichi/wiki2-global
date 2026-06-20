@@ -7,7 +7,7 @@
   "zh": "藏匿点",
   "en": "Hideout",
   "ja": "隠れ家",
-  "UniqueIDIndex": 1445,
+  "UniqueIDIndex": 1487,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -247,8 +247,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -299,7 +299,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -429,7 +429,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -444,7 +444,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -527,7 +527,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -598,6 +598,7 @@
       "DroppedIfNoBpIngredient": [],
       "DropCardsInsideInventory": false,
       "DropCardsInPlayerHand": false,
+      "IgnoreEnvironmentQuantityLimits": false,
       "DroppedEncounter": null,
       "EncounterNPC": null,
       "SkipEncounterEvent": false,
@@ -766,6 +767,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1191,8 +1196,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -1243,7 +1248,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -1373,7 +1378,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -1388,7 +1393,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -1471,7 +1476,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -1542,6 +1547,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2098,6 +2104,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2825,7 +2835,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -2851,21 +2861,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 100
-            },
-            "SpecialDurability2": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3480,7 +3476,7 @@
     "Text": "一个经过伪装的临时庇护所，非常适合暗中观察和伏击猎物。",
     "zh": "一个经过伪装的临时庇护所，非常适合暗中观察和伏击猎物。",
     "en": "A camouflaged shelter ideal for waiting unseen and ambushing prey.",
-    "ja": "A camouflaged shelter ideal for waiting unseen and ambushing prey."
+    "ja": "身を隠して待ち伏せし、獲物を奇襲するのに適した偽装シェルター。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -3512,6 +3508,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3869,7 +3869,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3879,7 +3882,7 @@
             "type": "stat",
             "zh": "轮廓",
             "en": "Profile",
-            "ja": "Profile",
+            "ja": "プロフィール",
             "max": 150,
             "min": 0
           },
@@ -4238,7 +4241,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4474,8 +4480,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4645,6 +4659,10 @@
       "StackCompatible": false,
       "DaytimeCost": 16,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sleep1"
@@ -4918,7 +4936,7 @@
             "Text": "被淹了！",
             "zh": "被淹了！",
             "en": "Its flooding!",
-            "ja": "Its flooding!"
+            "ja": "浸水している！"
           }
         },
         {
@@ -4964,7 +4982,7 @@
             "Text": "太渴了我睡不着……",
             "zh": "太渴了我睡不着……",
             "en": "I'm too thirsty to sleep...",
-            "ja": "I'm too thirsty to sleep..."
+            "ja": "喉が渇きすぎて眠れない・・・"
           }
         },
         {
@@ -4987,7 +5005,7 @@
             "Text": "太热了我睡不着……",
             "zh": "太热了我睡不着……",
             "en": "I'm too hot to sleep...",
-            "ja": "I'm too hot to sleep..."
+            "ja": "暑すぎて眠れない・・・"
           }
         },
         {
@@ -5010,7 +5028,7 @@
             "Text": "太冷了我睡不着……",
             "zh": "太冷了我睡不着……",
             "en": "I'm too cold to sleep...",
-            "ja": "I'm too cold to sleep..."
+            "ja": "寒すぎて眠れない・・・"
           }
         },
         {
@@ -5033,7 +5051,7 @@
             "Text": "我严重失血……",
             "zh": "我严重失血……",
             "en": "I'm losing too much blood...",
-            "ja": "I'm losing too much blood..."
+            "ja": "血を失いすぎた・・・"
           }
         },
         {
@@ -5056,7 +5074,7 @@
             "Text": "我不太舒服……",
             "zh": "我不太舒服……",
             "en": "I'm not feeling well...",
-            "ja": "I'm not feeling well..."
+            "ja": "具合が悪いかも・・・"
           }
         },
         {
@@ -5079,7 +5097,7 @@
             "Text": "我不太舒服……",
             "zh": "我不太舒服……",
             "en": "I'm not feeling well...",
-            "ja": "I'm not feeling well..."
+            "ja": "具合が悪いかも・・・"
           }
         },
         {
@@ -5102,7 +5120,7 @@
             "Text": "我膀胱要炸了！",
             "zh": "我膀胱要炸了！",
             "en": "I really need to Pee!",
-            "ja": "I really need to Pee!"
+            "ja": "おしっこが漏れそう！"
           }
         },
         {
@@ -5125,7 +5143,7 @@
             "Text": "我真的需要拉屎！",
             "zh": "我真的需要拉屎！",
             "en": "I really need to Poop!",
-            "ja": "I really need to Poop!"
+            "ja": "うんこが漏れそう！"
           }
         }
       ],
@@ -5546,7 +5564,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -5808,7 +5826,7 @@
         "Text": "打盹中……",
         "zh": "打盹中……",
         "en": "Taking a nap...",
-        "ja": "Taking a nap..."
+        "ja": "仮眠中・・・"
       },
       "FadeTips": false,
       "TravelToPreviousEnv": false,
@@ -5840,7 +5858,7 @@
         "Text": "睡觉",
         "zh": "睡觉",
         "en": "Sleep",
-        "ja": "Sleep"
+        "ja": "寝る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -5875,6 +5893,10 @@
       "StackCompatible": false,
       "DaytimeCost": 32,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sleep1"
@@ -6148,7 +6170,7 @@
             "Text": "被淹了！",
             "zh": "被淹了！",
             "en": "Its flooding!",
-            "ja": "Its flooding!"
+            "ja": "浸水している！"
           }
         },
         {
@@ -6194,7 +6216,7 @@
             "Text": "太渴了我睡不着……",
             "zh": "太渴了我睡不着……",
             "en": "I'm too thirsty to sleep...",
-            "ja": "I'm too thirsty to sleep..."
+            "ja": "喉が渇きすぎて眠れない・・・"
           }
         },
         {
@@ -6217,7 +6239,7 @@
             "Text": "太热了我睡不着……",
             "zh": "太热了我睡不着……",
             "en": "I'm too hot to sleep...",
-            "ja": "I'm too hot to sleep..."
+            "ja": "暑すぎて眠れない・・・"
           }
         },
         {
@@ -6240,7 +6262,7 @@
             "Text": "太冷了我睡不着……",
             "zh": "太冷了我睡不着……",
             "en": "I'm too cold to sleep...",
-            "ja": "I'm too cold to sleep..."
+            "ja": "寒すぎて眠れない・・・"
           }
         },
         {
@@ -6263,7 +6285,7 @@
             "Text": "我严重失血……",
             "zh": "我严重失血……",
             "en": "I'm losing too much blood...",
-            "ja": "I'm losing too much blood..."
+            "ja": "血を失いすぎた・・・"
           }
         },
         {
@@ -6286,7 +6308,7 @@
             "Text": "我不太舒服……",
             "zh": "我不太舒服……",
             "en": "I'm not feeling well...",
-            "ja": "I'm not feeling well..."
+            "ja": "具合が悪いかも・・・"
           }
         },
         {
@@ -6309,7 +6331,7 @@
             "Text": "我不太舒服……",
             "zh": "我不太舒服……",
             "en": "I'm not feeling well...",
-            "ja": "I'm not feeling well..."
+            "ja": "具合が悪いかも・・・"
           }
         },
         {
@@ -6332,7 +6354,7 @@
             "Text": "我膀胱要炸了！",
             "zh": "我膀胱要炸了！",
             "en": "I really need to Pee!",
-            "ja": "I really need to Pee!"
+            "ja": "おしっこが漏れそう！"
           }
         },
         {
@@ -6355,7 +6377,7 @@
             "Text": "我真的需要拉屎！",
             "zh": "我真的需要拉屎！",
             "en": "I really need to Poop!",
-            "ja": "I really need to Poop!"
+            "ja": "うんこが漏れそう！"
           }
         }
       ],
@@ -6776,7 +6798,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -7038,7 +7060,7 @@
         "Text": "睡眠中……",
         "zh": "睡眠中……",
         "en": "Sleeping...",
-        "ja": "Sleeping..."
+        "ja": "睡眠中・・・"
       },
       "FadeTips": false,
       "TravelToPreviousEnv": false,
@@ -7070,7 +7092,7 @@
         "Text": "拆除",
         "zh": "拆除",
         "en": "Deconstruct",
-        "ja": "Deconstruct"
+        "ja": "解体する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -7105,6 +7127,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7549,8 +7575,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -7601,7 +7627,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -7731,7 +7757,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -7746,7 +7772,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -7829,7 +7855,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -7967,13 +7993,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -8058,6 +8084,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

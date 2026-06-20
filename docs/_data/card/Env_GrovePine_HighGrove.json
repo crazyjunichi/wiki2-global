@@ -11,11 +11,11 @@
   "CardType": 4,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1010,6 +1010,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1280,8 +1284,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1591,7 +1603,7 @@
               "Text": "标记松树",
               "zh": "标记松树",
               "en": "Marked Pine Tree",
-              "ja": "Marked Pine Tree"
+              "ja": "印付きの松の木"
             }
           }
         ],
@@ -1654,7 +1666,7 @@
             "Text": "已标记",
             "zh": "已标记",
             "en": "Marked",
-            "ja": "Marked"
+            "ja": "印付き"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2157,7 +2169,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2173,7 +2185,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2205,7 +2217,7 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "被动效果：Natural Windflow in Windy Enviroments",
@@ -2301,7 +2313,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2381,7 +2393,7 @@
         "CardType": 0,
         "zh": "大型预备坩埚",
         "en": "Large Prepared Crucible",
-        "ja": "Large Prepared Crucible",
+        "ja": "大型の準備済みるつぼ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -2395,7 +2407,7 @@
               "Text": "预备铜",
               "zh": "预备铜",
               "en": "Prepared Copper",
-              "ja": "Prepared Copper"
+              "ja": "鋳造準備済みの銅"
             }
           },
           {
@@ -2410,7 +2422,7 @@
               "Text": "预备鬼铜",
               "zh": "预备鬼铜",
               "en": "Prepared Ghost Bronze",
-              "ja": "Prepared Ghost Bronze"
+              "ja": "鋳造準備済みのゴーストブロンズ"
             }
           },
           {
@@ -2425,7 +2437,7 @@
               "Text": "预备锡",
               "zh": "预备锡",
               "en": "Prepared Tin",
-              "ja": "Prepared Tin"
+              "ja": "加工済みスズ"
             }
           },
           {
@@ -2440,7 +2452,7 @@
               "Text": "预备青铜",
               "zh": "预备青铜",
               "en": "Prepared Tin Bronze",
-              "ja": "Prepared Tin Bronze"
+              "ja": "加工済みスズ青銅"
             }
           },
           {
@@ -2455,7 +2467,7 @@
               "Text": "预备白铜",
               "zh": "预备白铜",
               "en": "Prepared White Bronze",
-              "ja": "Prepared White Bronze"
+              "ja": "加工済み白青銅"
             }
           }
         ]
@@ -2474,7 +2486,7 @@
         "CardType": 0,
         "zh": "小型预备坩埚",
         "en": "Small Prepared Crucible",
-        "ja": "Small Prepared Crucible",
+        "ja": "小型の準備済みるつぼ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -2488,7 +2500,7 @@
               "Text": "预备铜",
               "zh": "预备铜",
               "en": "Prepared Copper",
-              "ja": "Prepared Copper"
+              "ja": "鋳造準備済みの銅"
             }
           },
           {
@@ -2503,7 +2515,7 @@
               "Text": "预备鬼铜",
               "zh": "预备鬼铜",
               "en": "Prepared Ghost Bronze",
-              "ja": "Prepared Ghost Bronze"
+              "ja": "鋳造準備済みのゴーストブロンズ"
             }
           },
           {
@@ -2518,7 +2530,7 @@
               "Text": "预备锡",
               "zh": "预备锡",
               "en": "Prepared Tin",
-              "ja": "Prepared Tin"
+              "ja": "加工済みスズ"
             }
           },
           {
@@ -2533,7 +2545,7 @@
               "Text": "预备青铜",
               "zh": "预备青铜",
               "en": "Prepared Tin Bronze",
-              "ja": "Prepared Tin Bronze"
+              "ja": "加工済みスズ青銅"
             }
           },
           {
@@ -2548,7 +2560,7 @@
               "Text": "预备白铜",
               "zh": "预备白铜",
               "en": "Prepared White Bronze",
-              "ja": "Prepared White Bronze"
+              "ja": "加工済み白青銅"
             }
           }
         ]
@@ -2567,7 +2579,7 @@
         "CardType": 0,
         "zh": "预备精炼铜",
         "en": "Copper Prepared for Refining",
-        "ja": "Copper Prepared for Refining"
+        "ja": "精製用に準備された銅"
       },
       "localization": {
         "zh": "被动效果：1100+ Furnace + Ghost Bronze + WIndy = Witchstone Toxicity +10",
@@ -2583,7 +2595,7 @@
         "CardType": 0,
         "zh": "大型凝固坩埚",
         "en": "Large Solidified Crucible",
-        "ja": "Large Solidified Crucible",
+        "ja": "大型の凝固るつぼ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -2597,7 +2609,7 @@
               "Text": "凝固铜",
               "zh": "凝固铜",
               "en": "Solidified Copper",
-              "ja": "Solidified Copper"
+              "ja": "凝固した銅"
             }
           },
           {
@@ -2612,7 +2624,7 @@
               "Text": "凝固鬼铜",
               "zh": "凝固鬼铜",
               "en": "Solidified Ghost Bronze",
-              "ja": "Solidified Ghost Bronze"
+              "ja": "凝固したゴーストブロンズ"
             }
           },
           {
@@ -2627,7 +2639,7 @@
               "Text": "凝固锡",
               "zh": "凝固锡",
               "en": "Solidified Tin",
-              "ja": "Solidified Tin"
+              "ja": "固まったスズ"
             }
           },
           {
@@ -2642,7 +2654,7 @@
               "Text": "凝固青铜",
               "zh": "凝固青铜",
               "en": "Solidified Tin Bronze",
-              "ja": "Solidified Tin Bronze"
+              "ja": "固まったスズ青銅"
             }
           },
           {
@@ -2657,7 +2669,7 @@
               "Text": "凝固白铜",
               "zh": "凝固白铜",
               "en": "Solidified White Bronze",
-              "ja": "Solidified White Bronze"
+              "ja": "固まった白青銅"
             }
           }
         ]

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "出口",
   "en": "Exit",
-  "ja": "Exit",
-  "UniqueIDIndex": 1990,
+  "ja": "出る",
+  "UniqueIDIndex": 2049,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "出口",
     "zh": "出口",
     "en": "Exit",
-    "ja": "Exit"
+    "ja": "出る"
   },
   "CardImage": {
     "FileName": "BearCave_Exit"
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "离开",
         "zh": "离开",
         "en": "Exit",
-        "ja": "Exit"
+        "ja": "出る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 2,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1597,7 +1613,7 @@
                 "CardType": 4,
                 "zh": "潮润幽谷",
                 "en": "Damp Hollow",
-                "ja": "Damp Hollow",
+                "ja": "湿った窪地",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -1701,7 +1717,7 @@
                   "CardType": 8,
                   "zh": "潮润幽谷",
                   "en": "Damp Hollow",
-                  "ja": "Damp Hollow",
+                  "ja": "湿った窪地",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -1763,7 +1779,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -1777,7 +1793,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "草木の繁茂 "
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -1791,7 +1807,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -1865,6 +1881,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2067,7 +2084,7 @@
         "Text": "正在离开洞穴……",
         "zh": "正在离开洞穴……",
         "en": "Exiting the Cave...",
-        "ja": "Exiting the Cave..."
+        "ja": "洞窟を退出中・・・"
       },
       "FadeTips": false,
       "TravelToPreviousEnv": false,
@@ -2244,7 +2261,7 @@
       "CardType": 4,
       "zh": "巨大洞穴",
       "en": "Great Cave",
-      "ja": "Great Cave",
+      "ja": "大洞窟",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2348,7 +2365,7 @@
         "CardType": 8,
         "zh": "巨大洞穴",
         "en": "Great Cave",
-        "ja": "Great Cave",
+        "ja": "大洞窟",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -2356,7 +2373,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -2442,7 +2459,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"

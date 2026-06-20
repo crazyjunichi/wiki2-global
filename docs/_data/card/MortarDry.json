@@ -7,7 +7,7 @@
   "zh": "Dry Mortar",
   "en": "Dry Mortar",
   "ja": "Dry Mortar",
-  "UniqueIDIndex": 1822,
+  "UniqueIDIndex": 1880,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -66,7 +66,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -80,7 +80,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -106,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -120,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -1004,6 +1004,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1189,8 +1193,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1486,7 +1498,7 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "放置于容器",

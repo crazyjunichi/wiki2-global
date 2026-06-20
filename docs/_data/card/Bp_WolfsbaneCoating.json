@@ -4,18 +4,18 @@
   "exportName": "Bp_WolfsbaneCoating",
   "icon": "Coating_Wolfsbane",
   "type": "card",
-  "zh": "乌头涂层",
-  "en": "Wolfsbane Coating",
-  "ja": "トリカブトのコーティング",
-  "UniqueIDIndex": 682,
+  "zh": "乌头麻醉涂层",
+  "en": "Wolfsbane Tranquilizer Coating",
+  "ja": "Wolfsbane Tranquilizer Coating",
+  "UniqueIDIndex": 705,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
-    "DefaultText": "Wolfsbane Coating",
-    "Text": "乌头涂层",
-    "zh": "乌头涂层",
-    "en": "Wolfsbane Coating",
-    "ja": "トリカブトのコーティング"
+    "DefaultText": "Wolfsbane Tranquilizer Coating",
+    "Text": "乌头麻醉涂层",
+    "zh": "乌头麻醉涂层",
+    "en": "Wolfsbane Tranquilizer Coating",
+    "ja": "Wolfsbane Tranquilizer Coating"
   },
   "CardImage": {
     "FileName": "Coating_Wolfsbane"
@@ -984,7 +984,7 @@
         "CardType": 0,
         "zh": "松脂膏",
         "en": "Pine Salve",
-        "ja": "Pine Salve",
+        "ja": "松脂バーム",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1054,7 +1054,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -1326,11 +1326,11 @@
     "RLegHitProbabilityModifier": 0
   },
   "CardDescription": {
-    "DefaultText": "Poisonous coating that can be applied to pointy weapons.",
-    "Text": "能涂在尖锐武器上的毒素。",
-    "zh": "能涂在尖锐武器上的毒素。",
-    "en": "Poisonous coating that can be applied to pointy weapons.",
-    "ja": "鋭い武器に濡れる毒のコーティング"
+    "DefaultText": "Poisonous and sedative coating that can be applied to pointy weapons.",
+    "Text": "一种可涂在尖锐武器上的有毒镇静涂层。",
+    "zh": "一种可涂在尖锐武器上的有毒镇静涂层。",
+    "en": "Poisonous and sedative coating that can be applied to pointy weapons.",
+    "ja": "Poisonous and sedative coating that can be applied to pointy weapons."
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1362,6 +1362,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1568,16 +1572,14 @@
       "CannotRevertToThisStage": false,
       "RequiredElements": [
         {
-          "RequiredCard": null,
-          "RequiredTabGroup": {
-            "key": "GpTag_Wolfsbane",
-            "text": "“乌头”",
-            "type": "tag",
-            "zh": "乌头",
-            "en": "Wolfsbane",
-            "ja": "トリカブト",
-            "SubGroups": [],
-            "count": 3,
+          "RequiredCard": {
+            "key": "FairyweedPowder",
+            "icon": "Powder_Fairyweed",
+            "type": "card",
+            "CardType": 0,
+            "zh": "仙灵草粉",
+            "en": "Fairyweed Powder",
+            "ja": "精霊草の粉",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -1590,61 +1592,55 @@
               "OverrideIcon": {
                 "FileName": "Bacteria"
               },
-              "MaxValue": 420
+              "MaxValue": 3600
             },
             "UsageDurability": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Drying",
-                "Text": "干燥中",
-                "zh": "干燥中",
-                "en": "Drying",
-                "ja": "乾燥中"
-              },
-              "OverrideIcon": {
-                "FileName": "Hammer"
-              },
-              "MaxValue": 8
-            },
-            "FuelCapacity": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Maturity",
-                "Text": "成熟度",
-                "zh": "成熟度",
-                "en": "Maturity",
-                "ja": "成熟"
-              },
-              "OverrideIcon": {
-                "FileName": "AirToxicity_Old"
-              },
-              "MaxValue": 7872
-            },
-            "Progress": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Growth",
-                "Text": "成长度",
-                "zh": "成长度",
-                "en": "Growth",
-                "ja": "成長"
+                "DefaultText": "",
+                "Text": "UsageDurability",
+                "zh": "耐久",
+                "en": "Usage",
+                "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 0
+            },
+            "FuelCapacity": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "Progress": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 192
             },
             "SpecialDurability1": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Burn",
-                "Text": "烧焦",
-                "zh": "烧焦",
-                "en": "Burn",
-                "ja": "火傷"
+                "DefaultText": "",
+                "Text": "SpecialDurability1",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
               },
-              "OverrideIcon": {
-                "FileName": "Cooking"
-              },
-              "MaxValue": 8
+              "OverrideIcon": null,
+              "MaxValue": 0
             },
             "SpecialDurability2": {
               "Active": true,
@@ -1661,16 +1657,16 @@
               "MaxValue": 192
             },
             "SpecialDurability3": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
+                "DefaultText": "Mill",
+                "Text": "研磨",
+                "zh": "研磨",
+                "en": "Mill",
+                "ja": "製粉"
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 1
             },
             "SpecialDurability4": {
               "Active": false,
@@ -1685,6 +1681,289 @@
               "MaxValue": 0
             }
           },
+          "RequiredTabGroup": null,
+          "RequiredQuantity": 3,
+          "Spoilage": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Usage": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Fuel": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Special1": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Special2": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Special3": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "Special4": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "DurabilityFeedback": 0,
+          "FilterStackWithDurability": {
+            "MaskValue": 0
+          },
+          "DontSpend": false,
+          "RequiredLiquidContent": {
+            "IsActive": false,
+            "RequiredLiquid": null,
+            "RequiredGroup": null,
+            "RequiredQuantity": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "EffectOnIngredient": {
+            "ModType": 0,
+            "TransformInto": null,
+            "TransformToLiquidQuantity": 0,
+            "TransferSpoilage": false,
+            "TransferUsage": false,
+            "TransferFuel": false,
+            "TransferCharges": false,
+            "TransferSpecial1": false,
+            "TransferSpecial2": false,
+            "TransferSpecial3": false,
+            "TransferSpecial4": false,
+            "TransferInventory": false,
+            "TransferSavedIngredients": false,
+            "AverageGivenAndReceivingCards": false,
+            "TransferLiquid": false,
+            "SpoilageTransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "UsageTransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "FuelTransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "ProgressTransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "Special1TransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "Special2TransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "Special3TransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "Special4TransferScale": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "ModifyDurability": false,
+            "ModifyLiquid": false,
+            "DropOnDestroyList": false,
+            "LiquidEffectScaling": 0,
+            "AddFlavoursFromTargetCard": false,
+            "AddFlavoursFromOtherCard": false,
+            "AddSpicesFromTargetCard": false,
+            "AddSpicesFromOtherCard": false,
+            "AddedFlavours": [],
+            "AddedSpiceTags": [],
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "GetSpoilageFromOtherCard": false,
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "GetUsageFromOtherCard": false,
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "GetFuelFromOtherCard": false,
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "GetProgressFromOtherCard": false,
+            "LiquidQuantityChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "GetSpecial1FromOtherCard": false,
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "GetSpecial2FromOtherCard": false,
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "GetSpecial3FromOtherCard": false,
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            },
+            "GetSpecial4FromOtherCard": false,
+            "StatInterpolatedDurabilityChanges": [],
+            "DurabilityInterpolatedTransfers": [],
+            "ScaleChangesPerPortionOfLiquid": {
+              "Active": false,
+              "FloatValue": 0
+            },
+            "UseOtherCardForLiquidQuantity": false
+          },
+          "LiquidBecomesResult": false,
+          "AffectResultDurabilities": {
+            "MaskValue": 64
+          },
+          "Remember": false
+        },
+        {
+          "RequiredCard": {
+            "key": "WolfsbanePowder",
+            "icon": "Powder_Frostleaf",
+            "type": "card",
+            "CardType": 0,
+            "zh": "乌头粉",
+            "en": "Wolfsbane Powder",
+            "ja": "トリカブト粉",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Spoilage",
+                "Text": "变质",
+                "zh": "变质",
+                "en": "Spoilage",
+                "ja": "腐敗"
+              },
+              "OverrideIcon": {
+                "FileName": "Bacteria"
+              },
+              "MaxValue": 3600
+            },
+            "UsageDurability": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "UsageDurability",
+                "zh": "耐久",
+                "en": "Usage",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "FuelCapacity": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "Progress": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 192
+            },
+            "SpecialDurability1": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability1",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "クオリティ"
+              },
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 288
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Mill",
+                "Text": "研磨",
+                "zh": "研磨",
+                "en": "Mill",
+                "ja": "製粉"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "SpecialDurability4": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability4",
+                "zh": "特殊4",
+                "en": "Special4",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            }
+          },
+          "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
             "Active": false,
@@ -2434,14 +2713,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2449,7 +2736,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2463,7 +2750,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2477,7 +2764,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2491,7 +2778,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2564,9 +2851,9 @@
         "icon": "Coating_Wolfsbane",
         "type": "card",
         "CardType": 0,
-        "zh": "乌头涂层",
-        "en": "Wolfsbane Coating",
-        "ja": "トリカブトのコーティング",
+        "zh": "乌头麻醉涂层",
+        "en": "Wolfsbane Tranquilizer Coating",
+        "ja": "Wolfsbane Tranquilizer Coating",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -2725,7 +3012,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2753,7 +3040,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },

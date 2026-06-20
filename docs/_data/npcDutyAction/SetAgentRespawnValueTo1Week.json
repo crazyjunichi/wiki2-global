@@ -1,0 +1,82 @@
+{
+  "m_Name": "SetAgentRespawnValueTo1Week",
+  "key": "SetAgentRespawnValueTo1Week",
+  "exportName": "SetAgentRespawnValueTo1Week",
+  "RequiredForSelectingDuty": true,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "OverrideModifiersTarget": {
+    "TargetPlayer": false,
+    "TargetAgent": {
+      "Target": {
+        "key": "Agent_Hollow",
+        "icon": "Hollow",
+        "type": "npc",
+        "zh": "空壳",
+        "en": "Hollow",
+        "ja": "Hollow"
+      },
+      "NOT": false
+    },
+    "Method": 0,
+    "UsePathfinding": false
+  },
+  "NPCStatModifiers": [
+    {
+      "TargetStat": {
+        "m_Name": "AgentRespawnCounter",
+        "key": "AgentRespawnCounter",
+        "type": "durability",
+        "zh": "刷新倒计时",
+        "en": "AgentRespawnCounter",
+        "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+        "GameName": {
+          "DefaultText": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+          "Text": "刷新倒计时",
+          "zh": "刷新倒计时",
+          "en": "AgentRespawnCounter",
+          "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. "
+        },
+        "DefaultStartingValue": 0,
+        "DefaultMinMaxValue": {
+          "x": 0,
+          "y": 2880
+        },
+        "DefaultRate": 0,
+        "DefaultMinMaxRate": {
+          "x": -10000,
+          "y": 10000
+        },
+        "StatVisibleIcon": null,
+        "HidingOptions": 0,
+        "TextDisplay": 0,
+        "NumberPrecision": 0,
+        "StatScalingToModifiers": [],
+        "NPCStatScalingToModifiers": [],
+        "name": "刷新倒计时",
+        "desc": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
+        "m_GameObject": null,
+        "m_Enabled": 1,
+        "UniqueID": "0e991b807e7703949b02b48ca7828f59",
+        "UniqueIDIndex": 3180
+      },
+      "UseAssociatedAgent": false,
+      "TargetAgent": {
+        "key": "Agent_Hollow",
+        "icon": "Hollow",
+        "type": "npc",
+        "zh": "空壳",
+        "en": "Hollow",
+        "ja": "Hollow"
+      },
+      "ValueChange": {
+        "x": 672,
+        "y": 672
+      }
+    }
+  ],
+  "ChangeOverTicks": {
+    "Active": false,
+    "IntValue": 0
+  }
+}

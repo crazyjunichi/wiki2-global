@@ -7,7 +7,7 @@
   "zh": "灰泥",
   "en": "Plaster",
   "ja": "石膏",
-  "UniqueIDIndex": 529,
+  "UniqueIDIndex": 544,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1014,7 +1014,7 @@
     "Text": "由石灰乳与粘土混合制成。\\n\\n生石灰可通过在窑中烧制石头获得，然后浸泡在水中至饱和制成石灰乳。",
     "zh": "由石灰乳与粘土混合制成。\\n\\n生石灰可通过在窑中烧制石头获得，然后浸泡在水中至饱和制成石灰乳。",
     "en": "Made by combining milk of lime with clay. \\n\\nQuicklime can be obtained from firing stones in a kiln, while milk of lime can be obtained by saturating water with quicklime.",
-    "ja": "Made by combining milk of lime with clay. \r\n\r\nQuicklime can be obtained from firing stones in a kiln, while milk of lime can be obtained by saturating water with quicklime."
+    "ja": "石灰乳と粘土を混ぜ合わせて作られる。\\n\\n生石灰は石を窯で焼くことで得られ、石灰乳は生石灰を水に飽和させることで得られる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1046,6 +1046,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1259,7 +1263,7 @@
             "type": "tag",
             "zh": "水容器",
             "en": "Water Container",
-            "ja": "Water Container",
+            "ja": "水の容器",
             "SubGroups": [],
             "count": 6,
             "SpoilageTime": {
@@ -1293,7 +1297,7 @@
                 "Text": "容器温度",
                 "zh": "容器温度",
                 "en": "Container Temperature",
-                "ja": "Container Temperature"
+                "ja": "容器の温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1343,7 +1347,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -1418,7 +1422,7 @@
               "type": "tag",
               "zh": "石灰乳",
               "en": "Milk of Lime",
-              "ja": "Milk of Lime",
+              "ja": "石灰乳",
               "SubGroups": [],
               "count": 1,
               "SpoilageTime": {
@@ -1454,7 +1458,7 @@
                   "Text": "液体温度",
                   "zh": "液体温度",
                   "en": "Liquid Temperature",
-                  "ja": "Liquid Temperature"
+                  "ja": "液体温度"
                 },
                 "OverrideIcon": {
                   "FileName": "Hot"
@@ -1468,7 +1472,7 @@
                   "Text": "浓稠度",
                   "zh": "浓稠度",
                   "en": "Thickness",
-                  "ja": "Thickness"
+                  "ja": "濃度"
                 },
                 "OverrideIcon": {
                   "FileName": "Powder_Garlic"
@@ -1729,7 +1733,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1743,7 +1747,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2043,14 +2047,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2058,7 +2070,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2072,7 +2084,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2086,7 +2098,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2100,7 +2112,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"

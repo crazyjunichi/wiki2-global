@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "隐秘洞穴",
   "en": "Secret Cave",
-  "ja": "Secret Cave",
-  "UniqueIDIndex": 2046,
+  "ja": "秘密の洞窟",
+  "UniqueIDIndex": 2106,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "隐秘洞穴",
     "zh": "隐秘洞穴",
     "en": "Secret Cave",
-    "ja": "Secret Cave"
+    "ja": "秘密の洞窟"
   },
   "CardImage": {
     "FileName": "DeathCrack"
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "进入洞穴",
         "zh": "进入洞穴",
         "en": "Enter the Cave",
-        "ja": "Enter the Cave"
+        "ja": "洞窟に入る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1597,7 +1613,7 @@
                 "CardType": 4,
                 "zh": "隐秘洞穴",
                 "en": "Secret Cave",
-                "ja": "Secret Cave",
+                "ja": "秘密の洞窟",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -1701,7 +1717,7 @@
                   "CardType": 8,
                   "zh": "隐秘洞穴",
                   "en": "Secret Cave",
-                  "ja": "Secret Cave",
+                  "ja": "秘密の洞窟",
                   "SpoilageTime": {
                     "Active": true,
                     "CardStatName": {
@@ -1709,7 +1725,7 @@
                       "Text": "污秽",
                       "zh": "污秽",
                       "en": "Filthiness",
-                      "ja": "Filthiness"
+                      "ja": "汚さ"
                     },
                     "OverrideIcon": {
                       "FileName": "Filth"
@@ -1795,7 +1811,7 @@
                       "Text": "烟熏",
                       "zh": "烟熏",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -1857,6 +1873,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2059,7 +2076,7 @@
         "Text": "正在进入洞穴……",
         "zh": "正在进入洞穴……",
         "en": "Entering the Cave...",
-        "ja": "Entering the Cave..."
+        "ja": "洞窟の中へ移動中・・・"
       },
       "FadeTips": false,
       "TravelToPreviousEnv": false,
@@ -2235,12 +2252,12 @@
         "CardType": 2,
         "zh": "狭窄隧道",
         "en": "Narrow Tunnel",
-        "ja": "Narrow Tunnel"
+        "ja": "狭いトンネル"
       },
       "localization": {
         "zh": "动作：离开",
-        "en": "Action: Exit",
-        "ja": "アクション：Exit"
+        "en": "Action: Enter",
+        "ja": "アクション：Enter"
       }
     }
   ],

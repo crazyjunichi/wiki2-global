@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "梦醒了",
   "en": "The Dream finally Ends",
-  "ja": "The Dream finally Ends",
-  "UniqueIDIndex": 1109,
+  "ja": "ついに夢は終わる",
+  "UniqueIDIndex": 1150,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "梦醒了",
     "zh": "梦醒了",
     "en": "The Dream finally Ends",
-    "ja": "The Dream finally Ends"
+    "ja": "ついに夢は終わる"
   },
   "CardImage": {
     "FileName": "Moonstone"
@@ -855,7 +855,7 @@
     "Text": "你自梦中醒来，月华的余味仍萦绕唇齿之间。你确信内心的某种东西已经苏醒，某种东西却已消逝。你战胜了曾立于身前的幻影，却在同时隐约感觉失去了什么。\\n\\n森林不再是你的狩猎对象。它低伏于你的周身，仿佛早已熟知你的名字。狩猎仍在呼唤，但穿过松林的风，此刻也带上了你的气息。\\n\\n月亮照常升起，月光如影随形。",
     "zh": "你自梦中醒来，月华的余味仍萦绕唇齿之间。你确信内心的某种东西已经苏醒，某种东西却已消逝。你战胜了曾立于身前的幻影，却在同时隐约感觉失去了什么。\\n\\n森林不再是你的狩猎对象。它低伏于你的周身，仿佛早已熟知你的名字。狩猎仍在呼唤，但穿过松林的风，此刻也带上了你的气息。\\n\\n月亮照常升起，月光如影随形。",
     "en": "You wake with the taste of moonlight still on your breath, knowing that something inside you has awakened. Something in you has died. You have mastered the shadow that stood before you, yet somehow you feel you have lost something in the process.\\n\\nThe forest no longer feels like something to hunt. It bends around you, as if it has always known your name. The hunt still calls to you, but the wind through the pines carries your scent now.\\n\\nThe moon will rise again, and its light will follow you wherever you walk.",
-    "ja": "You wake with the taste of moonlight still on your breath, knowing that something inside you has awakened. Something in you has died. You have mastered the shadow that stood before you, yet somehow you feel you have lost something in the process.\n\nThe forest no longer feels like something to hunt. It bends around you, as if it has always known your name. The hunt still calls to you, but the wind through the pines carries your scent now.\n\nThe moon will rise again, and its light will follow you wherever you walk."
+    "ja": "月光の余韻を吐息に残したまま、あなたは目を覚ます。\\n心の奥で、何かが静かに目覚めていた。\\nそして同時に、何かが失われてしまったのだ。\\n\\nあなたは、かつて眼前に立ちはだかった影を乗り越えた。\\nだがその代わりに、大切な何かを置き去りにしてしまった気がしてならない。\\n\\n森は、もはや狩るべき場所には思えなかった。\\nまるでずっと前からあなたの名を知っていたかのように、木々も風も静かにあなたを受け入れている。\\n狩りの呼び声は今もなお響いている。\\nだが今は、松林を渡る風があなたの匂いを運んでいた。\\n\\n月は再び昇るだろう。\\nそしてその光は、あなたがどこへ行こうとも静かに付き従う。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1509,7 +1525,7 @@
           "icon": "FurCloak",
           "zh": "多毛症",
           "en": "Hypertrichosis",
-          "ja": "Hypertrichosis",
+          "ja": "多毛症",
           "type": "perk"
         },
         {
@@ -1848,7 +1864,7 @@
         "type": "encounter",
         "zh": "猎人",
         "en": "Huntsman",
-        "ja": "Huntsman"
+        "ja": "ハントマン"
       },
       "localization": {
         "zh": "战斗：玩家胜利",

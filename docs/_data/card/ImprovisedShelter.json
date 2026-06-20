@@ -7,7 +7,7 @@
   "zh": "临时庇护所",
   "en": "Improvised Shelter",
   "ja": "手作りシェルター",
-  "UniqueIDIndex": 1550,
+  "UniqueIDIndex": 1592,
   "CardType": 2,
   "CardTags": [
     {
@@ -49,11 +49,11 @@
       }
     },
     {
-      "key": "tag_FloodUnsafe",
+      "key": "NOT_USED_tag_FloodUnsafe",
       "text": "“被洪水摧毁”",
       "icon": "",
       "type": "tag",
-      "count": 20,
+      "count": 22,
       "zh": "被洪水摧毁",
       "en": "Destroyed by Floods",
       "ja": "洪水によって破壊された",
@@ -134,7 +134,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -148,7 +148,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Pike"
@@ -406,8 +406,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -458,7 +458,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -588,7 +588,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -603,7 +603,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -686,7 +686,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -757,6 +757,7 @@
       "DroppedIfNoBpIngredient": [],
       "DropCardsInsideInventory": false,
       "DropCardsInPlayerHand": false,
+      "IgnoreEnvironmentQuantityLimits": false,
       "DroppedEncounter": null,
       "EncounterNPC": null,
       "SkipEncounterEvent": false,
@@ -925,6 +926,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1270,7 +1275,9 @@
               "Special4From": 0
             }
           },
-          "DroppedCards": [
+          "DroppedCards": [],
+          "DropSavedBpIngredients": true,
+          "DroppedIfNoBpIngredient": [
             {
               "DroppedCard": {
                 "key": "StickLong",
@@ -1350,8 +1357,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -1402,7 +1409,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -1532,7 +1539,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -1547,7 +1554,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -1630,7 +1637,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -1695,12 +1702,169 @@
               "AddSpicesFromOtherCard": false,
               "AddedFlavours": [],
               "AddedSpiceTags": []
+            },
+            {
+              "DroppedCard": {
+                "key": "LeavesFresh",
+                "icon": "Leaves_Fresh",
+                "type": "card",
+                "CardType": 0,
+                "zh": "树叶",
+                "en": "Fresh Leaves",
+                "ja": "新鮮な葉",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Wetness",
+                    "Text": "湿度",
+                    "zh": "湿度",
+                    "en": "Wetness",
+                    "ja": "濡れ"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Spoilage"
+                  },
+                  "MaxValue": 480
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "FuelCapacity": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "FuelCapacity",
+                    "zh": "容量",
+                    "en": "Fuel",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability1": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability1",
+                    "zh": "特殊1",
+                    "en": "Special1",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "品质",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Quality"
+                  },
+                  "MaxValue": 100
+                },
+                "SpecialDurability3": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability3",
+                    "zh": "特殊3",
+                    "en": "Special3",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 4
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": false,
+                "BaseDropChance": 0,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [],
+                "CardsModifiers": [],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
             }
           ],
-          "DropSavedBpIngredients": false,
-          "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2257,6 +2421,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2984,7 +3152,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -3010,21 +3178,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 100
-            },
-            "SpecialDurability2": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3671,6 +3825,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4065,7 +4223,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4301,8 +4462,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4472,6 +4641,10 @@
       "StackCompatible": false,
       "DaytimeCost": 16,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sleep1"
@@ -5373,7 +5546,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -5702,6 +5875,10 @@
       "StackCompatible": false,
       "DaytimeCost": 32,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sleep1"
@@ -6603,7 +6780,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -6932,6 +7109,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7296,7 +7477,9 @@
               "Special4From": 0
             }
           },
-          "DroppedCards": [
+          "DroppedCards": [],
+          "DropSavedBpIngredients": true,
+          "DroppedIfNoBpIngredient": [
             {
               "DroppedCard": {
                 "key": "StickLong",
@@ -7376,8 +7559,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -7428,7 +7611,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -7558,7 +7741,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -7573,7 +7756,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -7656,7 +7839,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -7794,13 +7977,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -7881,10 +8064,9 @@
               "AddedSpiceTags": []
             }
           ],
-          "DropSavedBpIngredients": false,
-          "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

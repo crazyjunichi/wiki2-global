@@ -7,7 +7,7 @@
   "zh": "除菌剂",
   "en": "Fungicide",
   "ja": "殺菌剤",
-  "UniqueIDIndex": 1641,
+  "UniqueIDIndex": 1686,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 328,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -226,6 +226,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1351,7 +1355,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1371,7 +1375,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -2672,6 +2676,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2794,7 +2802,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2808,7 +2816,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -2993,7 +3001,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3287,7 +3298,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3600,7 +3614,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3913,7 +3930,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4226,7 +4246,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4424,8 +4447,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

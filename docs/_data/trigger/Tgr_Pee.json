@@ -4,7 +4,7 @@
   "exportName": "Tgr_Pee",
   "icon": "",
   "type": "trigger",
-  "UniqueIDIndex": 4408,
+  "UniqueIDIndex": 4539,
   "Actions": [
     {
       "ActionName": {
@@ -47,6 +47,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -293,7 +297,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -567,7 +571,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -601,7 +608,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -649,7 +656,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -663,7 +670,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -945,7 +952,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -965,7 +975,7 @@
                   "Text": "耐久度",
                   "zh": "耐久度",
                   "en": "Usage Durability",
-                  "ja": "Usage Durability"
+                  "ja": "使用耐久値"
                 },
                 "OverrideIcon": {
                   "FileName": "Spoilage"
@@ -979,7 +989,7 @@
                   "Text": "湿度",
                   "zh": "湿度",
                   "en": "Wetness",
-                  "ja": "Wetness"
+                  "ja": "濡れ具合"
                 },
                 "OverrideIcon": {
                   "FileName": "Water"
@@ -993,7 +1003,7 @@
                   "Text": "彩度",
                   "zh": "彩度",
                   "en": "Colour Intensity",
-                  "ja": "Colour Intensity"
+                  "ja": "色の濃さ"
                 },
                 "OverrideIcon": {
                   "FileName": "Urine"
@@ -1007,7 +1017,7 @@
                   "Text": "毛皮",
                   "zh": "毛皮",
                   "en": "Fur",
-                  "ja": "Fur"
+                  "ja": "毛皮"
                 },
                 "OverrideIcon": {
                   "FileName": "Fur_Cured"
@@ -1021,7 +1031,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -1035,7 +1045,7 @@
                   "Text": "柔软度",
                   "zh": "柔软度",
                   "en": "Softness",
-                  "ja": "Softness"
+                  "ja": "柔らかさ"
                 },
                 "OverrideIcon": {
                   "FileName": "Brain"
@@ -1049,7 +1059,7 @@
                   "Text": "颜色",
                   "zh": "颜色",
                   "en": "Colour",
-                  "ja": "Colour"
+                  "ja": "色"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 100
@@ -1071,7 +1081,7 @@
                   "Text": "耐久度",
                   "zh": "耐久度",
                   "en": "Usage Durability",
-                  "ja": "Usage Durability"
+                  "ja": "使用耐久値"
                 },
                 "OverrideIcon": {
                   "FileName": "Spoilage"
@@ -1085,7 +1095,7 @@
                   "Text": "湿度",
                   "zh": "湿度",
                   "en": "Wetness",
-                  "ja": "Wetness"
+                  "ja": "濡れ具合"
                 },
                 "OverrideIcon": {
                   "FileName": "Water"
@@ -1099,7 +1109,7 @@
                   "Text": "彩度",
                   "zh": "彩度",
                   "en": "Colour Intensity",
-                  "ja": "Colour Intensity"
+                  "ja": "色の濃さ"
                 },
                 "OverrideIcon": {
                   "FileName": "Urine"
@@ -1113,7 +1123,7 @@
                   "Text": "毛皮",
                   "zh": "毛皮",
                   "en": "Fur",
-                  "ja": "Fur"
+                  "ja": "毛皮"
                 },
                 "OverrideIcon": {
                   "FileName": "Fur_Cured"
@@ -1127,7 +1137,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -1141,7 +1151,7 @@
                   "Text": "柔软度",
                   "zh": "柔软度",
                   "en": "Softness",
-                  "ja": "Softness"
+                  "ja": "柔らかさ"
                 },
                 "OverrideIcon": {
                   "FileName": "Brain"
@@ -1155,7 +1165,7 @@
                   "Text": "颜色",
                   "zh": "颜色",
                   "en": "Colour",
-                  "ja": "Colour"
+                  "ja": "色"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 100

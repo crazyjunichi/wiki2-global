@@ -7,7 +7,7 @@
   "zh": "木桌",
   "en": "Table",
   "ja": "テーブル",
-  "UniqueIDIndex": 1997,
+  "UniqueIDIndex": 2056,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -979,7 +983,7 @@
         "type": "stat",
         "zh": "庇护度",
         "en": "Sanctuary",
-        "ja": "Sanctuary",
+        "ja": "安息度",
         "max": 7500,
         "min": -1000
       },
@@ -1305,7 +1309,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1536,8 +1543,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1707,6 +1722,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1714,7 +1733,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1722,7 +1741,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1736,7 +1755,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1750,7 +1769,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1764,7 +1783,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"

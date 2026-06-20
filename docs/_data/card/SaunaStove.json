@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "桑拿炉",
   "en": "Sauna Stove",
-  "ja": "Sauna Stove",
-  "UniqueIDIndex": 2242,
+  "ja": "サウナストーブ",
+  "UniqueIDIndex": 2301,
   "CardType": 2,
   "CardTags": [
     {
@@ -450,7 +450,7 @@
     "Text": "桑拿炉",
     "zh": "桑拿炉",
     "en": "Sauna Stove",
-    "ja": "Sauna Stove"
+    "ja": "サウナストーブ"
   },
   "CardImage": {
     "FileName": "Sauna_On"
@@ -467,7 +467,7 @@
       "Text": "温度",
       "zh": "温度",
       "en": "Temperature",
-      "ja": "Temperature"
+      "ja": "温度"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 400,
@@ -593,7 +593,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -712,7 +712,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -831,7 +831,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -950,7 +950,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -991,7 +991,7 @@
       "Text": "香气",
       "zh": "香气",
       "en": "Fragrance",
-      "ja": "Fragrance"
+      "ja": "香り"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 96,
@@ -1108,6 +1108,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1458,6 +1462,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1548,7 +1553,7 @@
           "CardType": 2,
           "zh": "桑拿炉(熄灭)",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove",
+          "ja": "サウナストーブ",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1556,7 +1561,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1570,7 +1575,7 @@
               "Text": "香气",
               "zh": "香气",
               "en": "Fragrance",
-              "ja": "Fragrance"
+              "ja": "香り"
             },
             "OverrideIcon": {
               "FileName": "Candle_Off"
@@ -1598,7 +1603,7 @@
               "Text": "木炭",
               "zh": "木炭",
               "en": "Charcoal",
-              "ja": "Charcoal"
+              "ja": "木炭"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -1612,7 +1617,7 @@
               "Text": "积灰量",
               "zh": "积灰量",
               "en": "Ash Amount",
-              "ja": "Ash Amount"
+              "ja": "灰の量"
             },
             "OverrideIcon": null,
             "MaxValue": 48
@@ -1796,12 +1801,12 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "zh": "动作：取出火炭",
           "en": "Action: Take Embers",
-          "ja": "アクション：Take Embers"
+          "ja": "アクション：残り火を取る"
         },
         "value": {
           "x": -16,
@@ -1816,14 +1821,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Feed Fuel",
           "Text": "添入燃料",
           "zh": "添入燃料",
           "en": "Feed Fuel",
-          "ja": "Feed Fuel"
+          "ja": "燃料を入れる"
         },
         "value": {
           "x": 7,
@@ -1838,14 +1843,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Feed Fuel",
           "Text": "添入燃料",
           "zh": "添入燃料",
           "en": "Feed Fuel",
-          "ja": "Feed Fuel"
+          "ja": "燃料を入れる"
         },
         "value": {
           "x": 4,
@@ -1860,14 +1865,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Feed Charcoal",
           "Text": "添入木炭",
           "zh": "添入木炭",
           "en": "Feed Charcoal",
-          "ja": "Feed Charcoal"
+          "ja": "木炭を入れる"
         },
         "value": {
           "x": 7,
@@ -1882,14 +1887,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Feed Leaves",
           "Text": "添入树叶",
           "zh": "添入树叶",
           "en": "Feed Leaves",
-          "ja": "Feed Leaves"
+          "ja": "葉っぱを入れる"
         },
         "value": {
           "x": 2,
@@ -1904,14 +1909,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Place Alembic",
           "Text": "放置蒸馏器",
           "zh": "放置蒸馏器",
           "en": "Place Alembic",
-          "ja": "Place Alembic"
+          "ja": "アランビックを置く"
         },
         "value": {
           "x": 2,
@@ -1928,7 +1933,7 @@
       "Text": "木炭",
       "zh": "木炭",
       "en": "Charcoal",
-      "ja": "Charcoal"
+      "ja": "木炭"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 16,
@@ -1974,12 +1979,12 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "zh": "动作：取出火炭",
           "en": "Action: Take Embers",
-          "ja": "アクション：Take Embers"
+          "ja": "アクション：残り火を取る"
         },
         "value": {
           "x": -16,
@@ -1994,14 +1999,14 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "DefaultText": "Feed Charcoal",
           "Text": "添入木炭",
           "zh": "添入木炭",
           "en": "Feed Charcoal",
-          "ja": "Feed Charcoal"
+          "ja": "木炭を入れる"
         },
         "value": {
           "x": 7,
@@ -2019,7 +2024,7 @@
       "Text": "积灰量",
       "zh": "积灰量",
       "en": "Ash Amount",
-      "ja": "Ash Amount"
+      "ja": "灰の量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 48,
@@ -2057,7 +2062,7 @@
         "Text": "产生灰分",
         "zh": "产生灰分",
         "en": "Generate Ash",
-        "ja": "Generate Ash"
+        "ja": "灰を生成する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2092,6 +2097,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2597,6 +2606,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2819,12 +2829,12 @@
           "CardType": 2,
           "zh": "桑拿炉",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove"
+          "ja": "サウナストーブ"
         },
         "localization": {
           "zh": "积灰量 达到最大",
           "en": "Ash Amount Full",
-          "ja": "Ash Amount フル"
+          "ja": "灰の量 フル"
         },
         "value": {
           "x": -48,
@@ -2979,7 +2989,7 @@
         "Text": "产出蒸汽",
         "zh": "产出蒸汽",
         "en": "Make Steam",
-        "ja": "Make Steam"
+        "ja": "蒸気を作る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3014,6 +3024,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sauna"
@@ -3426,7 +3440,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -3460,7 +3477,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -3508,7 +3525,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -3522,7 +3539,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -4105,7 +4122,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -4200,8 +4217,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -4224,7 +4241,7 @@
         "Text": "产出蒸汽",
         "zh": "产出蒸汽",
         "en": "Make Steam",
-        "ja": "Make Steam"
+        "ja": "蒸気を作る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4259,6 +4276,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sauna"
@@ -4671,7 +4692,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -4705,7 +4729,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -4753,7 +4777,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -4767,7 +4791,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -5350,7 +5374,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -5445,8 +5469,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -5469,7 +5493,7 @@
         "Text": "产出蒸汽",
         "zh": "产出蒸汽",
         "en": "Make Steam",
-        "ja": "Make Steam"
+        "ja": "蒸気を作る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -5504,6 +5528,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sauna"
@@ -5916,7 +5944,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -5950,7 +5981,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -5998,7 +6029,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -6012,7 +6043,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -6595,7 +6626,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -6690,8 +6721,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -6714,7 +6745,7 @@
         "Text": "产出蒸汽",
         "zh": "产出蒸汽",
         "en": "Make Steam",
-        "ja": "Make Steam"
+        "ja": "蒸気を作る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -6749,6 +6780,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Sauna"
@@ -7161,7 +7196,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -7195,7 +7233,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -7243,7 +7281,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -7257,7 +7295,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -7840,7 +7878,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -7935,8 +7973,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -7959,7 +7997,7 @@
         "Text": "添入柴火",
         "zh": "添入柴火",
         "en": "Feed Firewood",
-        "ja": "Feed Firewood"
+        "ja": "薪を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -7994,6 +8032,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -8916,7 +8958,7 @@
             "CardType": 0,
             "zh": "柴火",
             "en": "Firewood",
-            "ja": "Firewood",
+            "ja": "薪",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -8930,7 +8972,7 @@
                   "Text": "橡木柴",
                   "zh": "橡木柴",
                   "en": "Oak Firewood",
-                  "ja": "Oak Firewood"
+                  "ja": "オークの薪"
                 }
               },
               {
@@ -8945,7 +8987,7 @@
                   "Text": "松木柴",
                   "zh": "松木柴",
                   "en": "Pine Firewood",
-                  "ja": "Pine Firewood"
+                  "ja": "松の木の薪"
                 }
               },
               {
@@ -8960,7 +9002,7 @@
                   "Text": "桦木柴",
                   "zh": "桦木柴",
                   "en": "Birch Firewood",
-                  "ja": "Birch Firewood"
+                  "ja": "カバの薪"
                 }
               },
               {
@@ -8975,7 +9017,7 @@
                   "Text": "柳木柴",
                   "zh": "柳木柴",
                   "en": "Willow Firewood",
-                  "ja": "Willow Firewood"
+                  "ja": "ヤナギの薪"
                 }
               },
               {
@@ -9013,7 +9055,7 @@
                 "Text": "香气",
                 "zh": "香气",
                 "en": "Fragrance",
-                "ja": "Fragrance"
+                "ja": "香り"
               },
               "OverrideIcon": null,
               "MaxValue": 10000
@@ -9025,7 +9067,7 @@
                 "Text": "燃料",
                 "zh": "燃料",
                 "en": "Fuel",
-                "ja": "Fuel"
+                "ja": "燃料"
               },
               "OverrideIcon": null,
               "MaxValue": 10000
@@ -9061,7 +9103,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -9109,7 +9151,7 @@
         "Text": "添入燃料",
         "zh": "添入燃料",
         "en": "Feed Fuel",
-        "ja": "Feed Fuel"
+        "ja": "燃料を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -9144,6 +9186,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -9890,7 +9936,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -9932,7 +9978,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -9958,7 +10004,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -9993,7 +10039,7 @@
         "Text": "添入燃料",
         "zh": "添入燃料",
         "en": "Feed Fuel",
-        "ja": "Feed Fuel"
+        "ja": "燃料を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -10028,6 +10074,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -10783,7 +10833,7 @@
         "Text": "添入木炭",
         "zh": "添入木炭",
         "en": "Feed Charcoal",
-        "ja": "Feed Charcoal"
+        "ja": "木炭を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -10818,6 +10868,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -11775,7 +11829,7 @@
         "Text": "点燃火绒",
         "zh": "点燃火绒",
         "en": "Light Tinder",
-        "ja": "Light Tinder"
+        "ja": "火をつける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -11810,6 +11864,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -12662,7 +12720,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -12688,7 +12746,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -12749,7 +12807,7 @@
         "Text": "添入树叶",
         "zh": "添入树叶",
         "en": "Feed Leaves",
-        "ja": "Feed Leaves"
+        "ja": "葉っぱを入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -12784,6 +12842,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -13528,7 +13590,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -13566,7 +13628,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -13748,7 +13810,7 @@
         "Text": "制作简易长矛",
         "zh": "制作简易长矛",
         "en": "Make Rustic Spear",
-        "ja": "Make Rustic Spear"
+        "ja": "シンプルな槍を作る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -13783,6 +13845,10 @@
       "StackCompatible": false,
       "DaytimeCost": 3,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -14733,8 +14799,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -14785,7 +14851,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -14861,7 +14927,7 @@
         "Text": "放置蒸馏器",
         "zh": "放置蒸馏器",
         "en": "Place Alembic",
-        "ja": "Place Alembic"
+        "ja": "アランビックを置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -14896,6 +14962,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -16126,13 +16196,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "洪水"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -16180,7 +16250,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -16194,7 +16264,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -16286,13 +16356,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "洪水"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -16340,7 +16410,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -16354,7 +16424,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -16606,7 +16676,7 @@
     "Text": "一种特殊的炉灶，加热后可以浇水释放浓密的蒸汽。能缓解压力、提振精神、清洁身体并增强免疫系统。",
     "zh": "一种特殊的炉灶，加热后可以浇水释放浓密的蒸汽。能缓解压力、提振精神、清洁身体并增强免疫系统。",
     "en": "A specialized stove that can be doused with water when hot to release thick steam. Lowers stress, lifts the spirit, cleans the body and improves the immune system.",
-    "ja": "A specialized stove that can be doused with water when hot to release thick steam. Lowers stress, lifts the spirit, cleans the body and improves the immune system."
+    "ja": "熱した状態で水をかけると濃い蒸気を放つ専用ストーブ。ストレスを下げ、精神を鎮め、身体を清め、免疫力を高める。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -16638,6 +16708,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -17090,7 +17164,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -17441,7 +17518,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -17773,7 +17853,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -17820,7 +17903,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -18142,7 +18225,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -18189,7 +18275,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -18511,7 +18597,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -18521,7 +18610,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -18747,8 +18836,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -18883,7 +18980,7 @@
         "Text": "取出火炭",
         "zh": "取出火炭",
         "en": "Take Embers",
-        "ja": "Take Embers"
+        "ja": "残り火を取る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -18918,6 +19015,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -19093,7 +19194,7 @@
           "Text": "木炭尚未完成。",
           "zh": "木炭尚未完成。",
           "en": "Charcoal not ready yet.",
-          "ja": "Charcoal not ready yet."
+          "ja": "まだ木炭の準備が出来てない。"
         },
         "SpecificFailMessages": []
       },
@@ -19425,6 +19526,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -19697,7 +19799,7 @@
         "Text": "熄灭火焰",
         "zh": "熄灭火焰",
         "en": "Extinguish Fire",
-        "ja": "Extinguish Fire"
+        "ja": "火を消す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -19732,6 +19834,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -19979,7 +20085,7 @@
           "CardType": 2,
           "zh": "桑拿炉(熄灭)",
           "en": "Sauna Stove",
-          "ja": "Sauna Stove",
+          "ja": "サウナストーブ",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -19987,7 +20093,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -20001,7 +20107,7 @@
               "Text": "香气",
               "zh": "香气",
               "en": "Fragrance",
-              "ja": "Fragrance"
+              "ja": "香り"
             },
             "OverrideIcon": {
               "FileName": "Candle_Off"
@@ -20029,7 +20135,7 @@
               "Text": "木炭",
               "zh": "木炭",
               "en": "Charcoal",
-              "ja": "Charcoal"
+              "ja": "木炭"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -20043,7 +20149,7 @@
               "Text": "积灰量",
               "zh": "积灰量",
               "en": "Ash Amount",
-              "ja": "Ash Amount"
+              "ja": "灰の量"
             },
             "OverrideIcon": null,
             "MaxValue": 48
@@ -20235,7 +20341,7 @@
         "Text": "取暖",
         "zh": "取暖",
         "en": "Warm Up",
-        "ja": "Warm Up"
+        "ja": "温める"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -20270,6 +20376,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -20683,7 +20793,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -21014,7 +21124,7 @@
         "Text": "在火边等待",
         "zh": "在火边等待",
         "en": "Wait by Fire",
-        "ja": "Wait by Fire"
+        "ja": "火のそばで待つ"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -21049,6 +21159,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -21826,14 +21940,14 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "DefaultText": "Light Fire",
         "Text": "点燃",
         "zh": "点燃",
         "en": "Light Fire",
-        "ja": "Light Fire"
+        "ja": "火をつける"
       }
     }
   ],
@@ -21862,12 +21976,12 @@
         "CardType": 0,
         "zh": "干多孔菌",
         "en": "Dried Bracket Fungus",
-        "ja": "Dried Bracket Fungus"
+        "ja": "乾燥したサルノコシカケ"
       },
       "localization": {
         "zh": "动作：点燃火绒",
         "en": "Action: Light Tinder",
-        "ja": "アクション：Light Tinder"
+        "ja": "アクション：火口に火をつける"
       }
     },
     {
@@ -21894,12 +22008,12 @@
         "CardType": 0,
         "zh": "香蒲绒毛",
         "en": "Fluff",
-        "ja": "Fluff"
+        "ja": "ガマの綿毛"
       },
       "localization": {
         "zh": "动作：点燃火绒",
         "en": "Action: Light Tinder",
-        "ja": "アクション：Light Tinder"
+        "ja": "アクション：火をつける"
       }
     },
     {
@@ -21958,12 +22072,12 @@
         "CardType": 0,
         "zh": "干杜松针",
         "en": "Dry Juniper Needles",
-        "ja": "Dry Juniper Needles"
+        "ja": "乾燥したジュニパーの針葉"
       },
       "localization": {
         "zh": "动作：点燃火绒",
         "en": "Action: Light Tinder",
-        "ja": "アクション：Light Tinder"
+        "ja": "アクション：火口に火をつける"
       }
     },
     {
@@ -22102,12 +22216,12 @@
         "CardType": 0,
         "zh": "松树根",
         "en": "Pine Roots",
-        "ja": "Pine Roots"
+        "ja": "松の根"
       },
       "localization": {
         "zh": "动作：点燃火绒",
         "en": "Action: Light Tinder",
-        "ja": "アクション：Light Tinder"
+        "ja": "アクション：火口に火をつける"
       }
     },
     {
@@ -22118,7 +22232,7 @@
         "CardType": 0,
         "zh": "黑麦面包条",
         "en": "Rye Breadloaf",
-        "ja": "Rye Breadloaf"
+        "ja": "ライ麦パンの塊"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22134,7 +22248,7 @@
         "CardType": 0,
         "zh": "生黑麦面包条",
         "en": "Raw Rye Breadloaf",
-        "ja": "Raw Rye Breadloaf"
+        "ja": "未調理のライ麦パンの塊"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22150,7 +22264,7 @@
         "CardType": 0,
         "zh": "黑麦酸面团",
         "en": "Rye Sour Dough",
-        "ja": "Rye Sour Dough"
+        "ja": "ライ麦酸生地"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22166,7 +22280,7 @@
         "CardType": 0,
         "zh": "生黑麦越橘馅饼",
         "en": "Raw Rye Bilberry Pasty",
-        "ja": "Raw Rye Bilberry Pasty"
+        "ja": "生のライ麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22182,7 +22296,7 @@
         "CardType": 0,
         "zh": "生黑麦血馅饼",
         "en": "Raw Rye Blood Pasty",
-        "ja": "Raw Rye Blood Pasty"
+        "ja": "生のライ麦血入りパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22198,7 +22312,7 @@
         "CardType": 0,
         "zh": "生麦芽鱼馅饼",
         "en": "Raw Rye Fish Pasty",
-        "ja": "Raw Rye Fish Pasty"
+        "ja": "生のライ麦魚パスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22214,7 +22328,7 @@
         "CardType": 0,
         "zh": "生黑麦肉馅饼",
         "en": "Raw Rye Meat Pasty",
-        "ja": "Raw Rye Meat Pasty"
+        "ja": "生のライ麦肉パスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22230,7 +22344,7 @@
         "CardType": 0,
         "zh": "生黑麦春莓馅饼",
         "en": "Raw Rye Springberry Pasty",
-        "ja": "Raw Rye Springberry Pasty"
+        "ja": "生のライ麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22246,7 +22360,7 @@
         "CardType": 0,
         "zh": "黑麦圆面包",
         "en": "Rye Roundbread",
-        "ja": "Rye Roundbread"
+        "ja": "ライ麦丸パン"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22294,7 +22408,7 @@
         "CardType": 0,
         "zh": "小麦面包条",
         "en": "Wheat Breadloaf",
-        "ja": "Wheat Breadloaf"
+        "ja": "小麦のパンの塊"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22308,9 +22422,9 @@
         "icon": "BreadLoaf_Wheat",
         "type": "card",
         "CardType": 0,
-        "zh": "小麦面包条",
-        "en": "Wheat Rye Breadloaf",
-        "ja": "Wheat Rye Breadloaf"
+        "zh": "生小麦面包坯",
+        "en": "Raw Wheat Breadloaf",
+        "ja": "Raw Wheat Breadloaf"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22326,7 +22440,7 @@
         "CardType": 0,
         "zh": "小麦酸面团",
         "en": "Wheat Sour Dough",
-        "ja": "Wheat Sour Dough"
+        "ja": "小麦の発酵生地"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22342,7 +22456,7 @@
         "CardType": 0,
         "zh": "生小麦越橘馅饼",
         "en": "Raw Wheat Bilberry Pasty",
-        "ja": "Raw Wheat Bilberry Pasty"
+        "ja": "生の小麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22358,7 +22472,7 @@
         "CardType": 0,
         "zh": "生小麦血馅饼",
         "en": "Raw Wheat Blood Pasty",
-        "ja": "Raw Wheat Blood Pasty"
+        "ja": "生の小麦血入りパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22374,7 +22488,7 @@
         "CardType": 0,
         "zh": "生小麦鱼馅饼",
         "en": "Raw Wheat Fish Pasty",
-        "ja": "Raw Wheat Fish Pasty"
+        "ja": "生の小麦魚パスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22390,7 +22504,7 @@
         "CardType": 0,
         "zh": "生小麦肉馅饼",
         "en": "Raw Wheat Meat Pasty",
-        "ja": "Raw Wheat Meat Pasty"
+        "ja": "生の小麦肉パスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22406,7 +22520,7 @@
         "CardType": 0,
         "zh": "生小麦春莓馅饼",
         "en": "Raw Wheat Springberry Pasty",
-        "ja": "Raw Wheat Springberry Pasty"
+        "ja": "生の小麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",
@@ -22422,7 +22536,7 @@
         "CardType": 0,
         "zh": "小麦圆面包",
         "en": "Wheat Roundbread",
-        "ja": "Wheat Roundbread"
+        "ja": "小麦丸パン"
       },
       "localization": {
         "zh": "被动效果：Lose Quality on Open Fire",

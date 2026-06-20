@@ -11,11 +11,11 @@
   "CardType": 4,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1010,6 +1010,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1280,8 +1284,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1745,7 +1757,7 @@
               "Text": "标记松树",
               "zh": "标记松树",
               "en": "Marked Pine Tree",
-              "ja": "Marked Pine Tree"
+              "ja": "印付きの松の木"
             }
           }
         ],
@@ -1808,7 +1820,7 @@
             "Text": "已标记",
             "zh": "已标记",
             "en": "Marked",
-            "ja": "Marked"
+            "ja": "印付き"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2013,1006 +2025,6 @@
       "Quantity": {
         "m_X": 1,
         "m_Y": 1
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "StoneSmall",
-        "icon": "Stone",
-        "type": "card",
-        "CardType": 0,
-        "zh": "石头",
-        "en": "Stone",
-        "ja": "石",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Sun"
-          },
-          "MaxValue": 100
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "Quantity": {
-        "m_X": 3,
-        "m_Y": 3
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "StoneHeavy",
-        "icon": "Stone_Heavy",
-        "type": "card",
-        "CardType": 0,
-        "zh": "大石块",
-        "en": "Heavy Stone",
-        "ja": "重い石",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "Quantity": {
-        "m_X": 1,
-        "m_Y": 1
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "WoodPine",
-        "icon": "Wood",
-        "type": "card",
-        "CardType": 0,
-        "zh": "木材",
-        "en": "Wood",
-        "ja": "Wood",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 1,
-                "y": 1
-              }
-            },
-            "Name": {
-              "DefaultText": "Oak Wood",
-              "Text": "橡木",
-              "zh": "橡木",
-              "en": "Oak Wood",
-              "ja": "Oak Wood"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 2,
-                "y": 2
-              }
-            },
-            "Name": {
-              "DefaultText": "Pine Wood",
-              "Text": "松木",
-              "zh": "松木",
-              "en": "Pine Wood",
-              "ja": "Pine Wood"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 3,
-                "y": 3
-              }
-            },
-            "Name": {
-              "DefaultText": "Birch Wood",
-              "Text": "白桦木",
-              "zh": "白桦木",
-              "en": "Birch Wood",
-              "ja": "Birch Wood"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 4,
-                "y": 4
-              }
-            },
-            "Name": {
-              "DefaultText": "Willow Wood",
-              "Text": "柳木",
-              "zh": "柳木",
-              "en": "Willow Wood",
-              "ja": "Willow Wood"
-            }
-          }
-        ],
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fragrance",
-            "Text": "香气",
-            "zh": "香气",
-            "en": "Fragrance",
-            "ja": "Fragrance"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "FuelCapacity": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fuel",
-            "Text": "燃料",
-            "zh": "燃料",
-            "en": "Fuel",
-            "ja": "Fuel"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Quality",
-            "Text": "品质",
-            "zh": "品质",
-            "en": "Quality",
-            "ja": "Quality"
-          },
-          "OverrideIcon": {
-            "FileName": "Quality"
-          },
-          "MaxValue": 96
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Snowflake_Old"
-          },
-          "MaxValue": 672
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "ID",
-            "Text": "ID",
-            "zh": "ID",
-            "en": "ID",
-            "ja": "ID"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        }
-      },
-      "Quantity": {
-        "m_X": 8,
-        "m_Y": 8
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "Twigs",
-        "icon": "Twigs",
-        "type": "card",
-        "CardType": 0,
-        "zh": "树枝",
-        "en": "Twigs",
-        "ja": "枝",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "ID",
-            "Text": "ID",
-            "zh": "ID",
-            "en": "ID",
-            "ja": "ID"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 100
-        }
-      },
-      "Quantity": {
-        "m_X": 8,
-        "m_Y": 8
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "NeedlesDry",
-        "icon": "PineNeedlesDry",
-        "type": "card",
-        "CardType": 0,
-        "zh": "干松针",
-        "en": "Dry Needles",
-        "ja": "乾燥した針",
-        "SpoilageTime": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Durability",
-            "Text": "耐久度",
-            "zh": "耐久度",
-            "en": "Durability",
-            "ja": "Durability"
-          },
-          "OverrideIcon": {
-            "FileName": "Shield"
-          },
-          "MaxValue": 2880
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "Progress": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Nutrition",
-            "Text": "营养",
-            "zh": "营养",
-            "en": "Nutrition",
-            "ja": "Nutrition"
-          },
-          "OverrideIcon": {
-            "FileName": "Quality"
-          },
-          "MaxValue": 100
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "Quantity": {
-        "m_X": 12,
-        "m_Y": 12
-      },
-      "FinishUnlocking": false,
-      "TransferRules": {
-        "Spoilage": 0,
-        "Usage": 0,
-        "Fuel": 0,
-        "Progress": 0,
-        "Special1": 0,
-        "Special2": 0,
-        "Special3": 0,
-        "Special4": 0,
-        "SpoilageValue": 0,
-        "UsageValue": 0,
-        "FuelValue": 0,
-        "ProgressValue": 0,
-        "Special1Value": 0,
-        "Special2Value": 0,
-        "Special3Value": 0,
-        "Special4Value": 0,
-        "SpoilageFrom": 1,
-        "UsageFrom": 1,
-        "FuelFrom": 1,
-        "ProgressFrom": 1,
-        "Special1From": 1,
-        "Special2From": 1,
-        "Special3From": 1,
-        "Special4From": 1
-      },
-      "DropChance": {
-        "Active": false,
-        "BaseDropChance": 0,
-        "DurabilitiesModifiers": [],
-        "StatsModifiers": [],
-        "CardsModifiers": [],
-        "NPCStatsModifiers": []
-      },
-      "DropsDurabilityMultipliers": [],
-      "DropsStatMultipliers": [],
-      "AddFlavoursFromTargetCard": false,
-      "AddFlavoursFromOtherCard": false,
-      "AddSpicesFromTargetCard": false,
-      "AddSpicesFromOtherCard": false,
-      "AddedFlavours": [],
-      "AddedSpiceTags": []
-    },
-    {
-      "DroppedCard": {
-        "key": "NeedlesFresh",
-        "icon": "PineNeedles",
-        "type": "card",
-        "CardType": 0,
-        "zh": "松针",
-        "en": "Pine Needles",
-        "ja": "松の針",
-        "SpoilageTime": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Wetness",
-            "Text": "湿度",
-            "zh": "湿度",
-            "en": "Wetness",
-            "ja": "濡れ"
-          },
-          "OverrideIcon": {
-            "FileName": "Spoilage"
-          },
-          "MaxValue": 480
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "品质",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Quality"
-          },
-          "MaxValue": 100
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "Quantity": {
-        "m_X": 6,
-        "m_Y": 6
       },
       "FinishUnlocking": false,
       "TransferRules": {
@@ -3277,12 +2289,12 @@
         "CardType": 8,
         "zh": "浓荫松林",
         "en": "Shady Pines",
-        "ja": "Shady Pines"
+        "ja": "薄暗い松林"
       },
       "localization": {
         "zh": "动作：南方",
         "en": "Action: South",
-        "ja": "アクション：South"
+        "ja": "アクション：南"
       }
     },
     {
@@ -3311,7 +2323,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3327,7 +2339,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3423,7 +2435,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",

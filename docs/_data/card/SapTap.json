@@ -7,7 +7,7 @@
   "zh": "树汁采集点",
   "en": "Sap Tap",
   "ja": "樹液採取器",
-  "UniqueIDIndex": 2241,
+  "UniqueIDIndex": 2300,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -374,6 +374,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -760,11 +764,11 @@
           "ja": "樹液採取器"
         },
         "localization": {
-          "DefaultText": "Cut Tree",
-          "Text": "切割",
-          "zh": "切割",
-          "en": "Cut Tree",
-          "ja": "Cut Tree"
+          "DefaultText": "Refresh",
+          "Text": "刷新",
+          "zh": "刷新",
+          "en": "Refresh",
+          "ja": "Refresh"
         },
         "value": {
           "x": 96,
@@ -827,11 +831,11 @@
   "CardInteractions": [
     {
       "ActionName": {
-        "DefaultText": "Cut Tree",
-        "Text": "切割",
-        "zh": "切割",
-        "en": "Cut Tree",
-        "ja": "Cut Tree"
+        "DefaultText": "Refresh",
+        "Text": "刷新",
+        "zh": "刷新",
+        "en": "Refresh",
+        "ja": "Refresh"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -864,8 +868,12 @@
       },
       "NotInterruptedByEncounters": false,
       "StackCompatible": false,
-      "DaytimeCost": 1,
-      "UseMiniTicks": 0,
+      "DaytimeCost": 0,
+      "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -873,7 +881,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -881,7 +889,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -895,7 +903,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -909,7 +917,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -923,7 +931,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1860,7 +1868,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1888,7 +1896,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1900,7 +1908,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1912,7 +1920,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1926,7 +1934,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1940,7 +1948,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2275,7 +2283,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2329,7 +2337,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2343,7 +2351,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2369,7 +2377,7 @@
               "Text": "染料",
               "zh": "染料",
               "en": "Dye",
-              "ja": "Dye"
+              "ja": "染料"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -2381,7 +2389,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2395,7 +2403,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2497,7 +2505,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2511,7 +2519,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2537,7 +2545,7 @@
               "Text": "染料",
               "zh": "染料",
               "en": "Dye",
-              "ja": "Dye"
+              "ja": "染料"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -2549,7 +2557,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2563,7 +2571,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2760,7 +2768,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -3279,6 +3290,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3658,7 +3670,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -4144,6 +4159,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4329,8 +4348,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4633,7 +4660,7 @@
         "Text": "切道口子",
         "zh": "切道口子",
         "en": "Make a Cut",
-        "ja": "Make a Cut"
+        "ja": "切れ目を入れる"
       }
     }
   ],

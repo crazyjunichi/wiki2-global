@@ -7,7 +7,7 @@
   "zh": "鬼火",
   "en": "Will-o'-wisp",
   "ja": "ウィル・オ・ウィスプ",
-  "UniqueIDIndex": 2067,
+  "UniqueIDIndex": 2127,
   "CardType": 2,
   "CardTags": [
     {
@@ -898,6 +898,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1083,8 +1087,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1254,6 +1266,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -1273,7 +1289,7 @@
               "Text": "饱满度",
               "zh": "饱满度",
               "en": "Yield",
-              "ja": "Yield"
+              "ja": "収穫量"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -1301,7 +1317,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1408,7 +1424,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2110,6 +2126,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

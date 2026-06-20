@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "呼唤冰霜精魄(呼唤)",
   "en": "Frost Spirit Calling",
-  "ja": "Frost Spirit Calling",
-  "UniqueIDIndex": 432,
+  "ja": "氷霜の精霊召喚",
+  "UniqueIDIndex": 444,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "呼唤冰霜精魄",
     "zh": "呼唤冰霜精魄",
     "en": "Frost Spirit Calling",
-    "ja": "Frost Spirit Calling"
+    "ja": "氷霜の精霊召喚"
   },
   "CardImage": {
     "FileName": "Spirit_Frost"
@@ -879,7 +879,7 @@
     "Text": "暂时将冰霜精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将冰霜精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds a frost spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds a frost spirit to your soul, making you both a bit more like the other."
+    "ja": "氷霜の精霊を一時的に魂へ結びつけ、互いを少しずつ同質化させる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1015,7 +1019,7 @@
         "CardType": 0,
         "zh": "冰霜精魄(召唤)",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit",
+        "ja": "霜の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1023,7 +1027,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1049,7 +1053,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1187,7 +1191,7 @@
         "type": "stat",
         "zh": "冰霜亲和度",
         "en": "Frost Affinity",
-        "ja": "Frost Affinity",
+        "ja": "氷霜との親和性",
         "max": 1000,
         "min": 0
       },
@@ -1591,14 +1595,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1606,7 +1618,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1620,7 +1632,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1634,7 +1646,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1648,7 +1660,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1723,7 +1735,7 @@
         "CardType": 0,
         "zh": "冰霜精魄(召唤)",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit",
+        "ja": "霜の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1731,7 +1743,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1757,7 +1769,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1920,7 +1932,7 @@
         "type": "stat",
         "zh": "冰霜亲和度",
         "en": "Frost Affinity",
-        "ja": "Frost Affinity",
+        "ja": "氷霜との親和性",
         "max": 1000,
         "min": 0
       },
@@ -1957,7 +1969,7 @@
         "type": "stat",
         "zh": "冰霜本能",
         "en": "Frost Urge",
-        "ja": "Frost Urge",
+        "ja": "氷霜への衝動",
         "max": 96,
         "min": 0
       },

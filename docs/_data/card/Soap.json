@@ -7,7 +7,7 @@
   "zh": "肥皂",
   "en": "Soap",
   "ja": "石鹸",
-  "UniqueIDIndex": 2297,
+  "UniqueIDIndex": 2358,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -145,6 +145,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -957,6 +961,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1821,6 +1829,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2302,9 +2314,9 @@
           }
         },
         "RequiredProgressPercent": {
-          "Active": false,
+          "Active": true,
           "FloatValue": 0,
-          "MaxValue": 0,
+          "MaxValue": 0.01,
           "ScaleRequirementPerPortionOfLiquid": {
             "Active": false,
             "FloatValue": 0
@@ -2529,7 +2541,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -2624,8 +2636,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -3163,6 +3175,13 @@
         "en": "Wet Soap",
         "ja": "濡れた石鹸"
       },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
       "Art": {
         "SeasonID": "",
         "CardImage": {
@@ -3201,6 +3220,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3386,8 +3409,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3557,6 +3588,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "DiveShort"
@@ -3568,7 +3603,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3576,7 +3611,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3590,7 +3625,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3604,7 +3639,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -3618,7 +3653,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4221,7 +4256,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -4458,7 +4493,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [
             null
@@ -4888,16 +4926,16 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -4920,7 +4958,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡れ"
       }
     },
     {
@@ -4936,23 +4974,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：打湿",
-        "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡れ"
       }
     },
     {
@@ -4968,7 +4990,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
@@ -4984,7 +5006,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
@@ -5000,7 +5022,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
@@ -5016,7 +5038,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡れ"
       }
     },
     {
@@ -5041,7 +5063,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5056,7 +5078,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -5109,7 +5131,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡れ"
       }
     },
     {
@@ -5182,7 +5204,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5197,7 +5219,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5205,7 +5227,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
@@ -5230,7 +5252,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5245,7 +5267,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5253,7 +5275,7 @@
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     },
     {
@@ -5354,18 +5376,34 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：打湿",
+        "en": "Action: Wet",
+        "ja": "アクション：Wet"
+      }
+    },
+    {
+      "link": {
         "key": "StreamQEE",
         "icon": "RiverShore",
         "type": "card",
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：打湿",
         "en": "Action: Wet",
-        "ja": "アクション：Wet"
+        "ja": "アクション：濡らす"
       }
     }
   ],

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "黑麦",
   "en": "Rye",
-  "ja": "ライ麦畑",
-  "UniqueIDIndex": 569,
+  "ja": "ライ麦",
+  "UniqueIDIndex": 586,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "黑麦",
     "zh": "黑麦",
     "en": "Rye",
-    "ja": "ライ麦畑"
+    "ja": "ライ麦"
   },
   "CardImage": {
     "FileName": "Meadowgrass_Plant"
@@ -1166,7 +1166,7 @@
     "Text": "从商人处购得；需要中高酸度、中低湿度和中低养分。能改善土质。\\n\\n持久耐储的可食用谷物，可制作面包和啤酒。",
     "zh": "从商人处购得；需要中高酸度、中低湿度和中低养分。能改善土质。\\n\\n持久耐储的可食用谷物，可制作面包和啤酒。",
     "en": "Bought from traders; needs medium to high acidity, medium to low hydration and low to medium nutrients. Increases soil structure.\\n\\nEdible grain, long lasting and useful for making bread and beer.",
-    "ja": "商人から購入できる。酸度（中～高）、水分（低～中）、栄養（低～中）で育つ。土壌構造を改良する効果がある。\\n\\nそのまま食べれるがパンやビールの原材料として使える。長持ちする。"
+    "ja": "交易商から購入できる。中〜高程度の酸性度、低〜中程度の水分量、低〜中程度の養分量を必要とする。土壌構造を改善する。\\n\\n食用になる穀物。保存性が高く、パンやビールの原料として利用できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1198,6 +1198,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1711,14 +1715,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1726,7 +1738,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1740,7 +1752,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1754,7 +1766,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1768,7 +1780,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1843,7 +1855,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1871,7 +1883,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1965,7 +1977,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2246,7 +2258,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"

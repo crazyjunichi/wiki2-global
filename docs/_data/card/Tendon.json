@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "肌腱",
   "en": "Tendon",
-  "ja": "Tendon",
-  "UniqueIDIndex": 2397,
+  "ja": "腱",
+  "UniqueIDIndex": 2467,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -54,7 +54,7 @@
           "Text": "柔韧",
           "zh": "柔韧",
           "en": "Flexibility",
-          "ja": "Flexibility"
+          "ja": "柔軟性"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -66,7 +66,7 @@
     "Text": "肌腱",
     "zh": "肌腱",
     "en": "Tendon",
-    "ja": "Tendon"
+    "ja": "腱"
   },
   "CardImage": {
     "FileName": "Tendon"
@@ -171,7 +171,7 @@
       "Text": "湿度",
       "zh": "湿度",
       "en": "Wetness",
-      "ja": "Wetness"
+      "ja": "水分量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 288,
@@ -214,7 +214,7 @@
         "Text": "肌腱干了！",
         "zh": "肌腱干了！",
         "en": "Tendon dried!",
-        "ja": "Tendon dried!"
+        "ja": "腱が乾燥した！"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -242,6 +242,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -489,7 +493,7 @@
           "CardType": 0,
           "zh": "肌腱",
           "en": "Sinew",
-          "ja": "Sinew",
+          "ja": "腱繊維",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1422,7 +1426,7 @@
     "Text": "必须先干燥才能制成肌腱绳。",
     "zh": "必须先干燥才能制成肌腱绳。",
     "en": "Must be dried before it can be processed into sinew cordage.",
-    "ja": "Must be dried before it can be processed into sinew cordage."
+    "ja": "腱繊維の紐に加工する前に乾燥させる必要がある。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1454,6 +1458,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1639,8 +1647,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1918,14 +1934,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -1936,14 +1952,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -1954,14 +1970,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -1972,14 +1988,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -1990,14 +2006,14 @@
         "CardType": 0,
         "zh": "剥皮的小牛尸体",
         "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "ja": "皮剥ぎ済みの子牛の枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2008,14 +2024,14 @@
         "CardType": 0,
         "zh": "剥皮的小牛尸体",
         "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "ja": "皮剥ぎ済みの子牛の枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -2026,14 +2042,14 @@
         "CardType": 0,
         "zh": "剥皮的牛尸体",
         "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
+        "ja": "皮剥ぎ済みの牛の枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2044,14 +2060,14 @@
         "CardType": 0,
         "zh": "剥皮的牛尸体",
         "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
+        "ja": "皮剥ぎ済みの牛の枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -2062,7 +2078,79 @@
         "CardType": 0,
         "zh": "剥皮的母鹿尸体",
         "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_DoeCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的母鹿尸体",
+        "en": "Skinned Doe Carcass",
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_HollowCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
@@ -2074,49 +2162,13 @@
     },
     {
       "link": {
-        "key": "Carcass_DoeCarcassSkinned",
+        "key": "Carcass_HollowCarcassSkinned",
         "icon": "Doe_Skinned",
         "type": "card",
         "CardType": 0,
-        "zh": "剥皮的母鹿尸体",
-        "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Shoulder Meat",
-        "Text": "收获肩肉",
-        "zh": "收获肩肉",
-        "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Haunch Meat",
-        "Text": "收获腿肉",
-        "zh": "收获腿肉",
-        "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
@@ -2134,14 +2186,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2152,14 +2204,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -2170,14 +2222,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2188,14 +2240,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -2206,14 +2258,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2224,14 +2276,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -2242,14 +2294,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -2260,14 +2312,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     }
   ],

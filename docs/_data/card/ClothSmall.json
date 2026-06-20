@@ -7,7 +7,7 @@
   "zh": "布片",
   "en": "Small Cloth",
   "ja": "小さい布",
-  "UniqueIDIndex": 881,
+  "UniqueIDIndex": 911,
   "CardType": 0,
   "CardTags": [
     {
@@ -144,7 +144,7 @@
           "Text": "耐久度",
           "zh": "耐久度",
           "en": "Durability",
-          "ja": "Durability"
+          "ja": "耐久性"
         },
         "OverrideIcon": {
           "FileName": "Shield"
@@ -200,7 +200,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "品質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -409,7 +409,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -469,12 +469,12 @@
           "CardType": 0,
           "zh": "熊咬伤",
           "en": "Bear Bite",
-          "ja": "Bear Bite"
+          "ja": "熊による咬傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -489,12 +489,12 @@
           "CardType": 0,
           "zh": "熊爪痕",
           "en": "Bear Clawmarks",
-          "ja": "Bear Clawmarks"
+          "ja": "熊の爪痕"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -589,12 +589,12 @@
           "CardType": 0,
           "zh": "森林猛兽咬伤",
           "en": "Forest Beast Bite",
-          "ja": "Forest Beast Bite"
+          "ja": "森の獣による咬傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -609,12 +609,12 @@
           "CardType": 0,
           "zh": "森林猛兽爪痕",
           "en": "Forest Beast Clawmarks",
-          "ja": "Forest Beast Clawmarks"
+          "ja": "森の獣による爪傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -915,7 +915,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -1392,7 +1392,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "品質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1496,7 +1496,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "品質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 60,
@@ -1534,6 +1534,124 @@
     "TradingValueCustomRanges": [],
     "durabilityKey": "SpecialDurability2",
     "_valueModifications": [
+      {
+        "link": {
+          "key": "YarnFiber",
+          "icon": "Yarn",
+          "type": "card",
+          "CardType": 0,
+          "zh": "线团",
+          "en": "Yarn",
+          "ja": "毛糸",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 47.5
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "蓝图材料",
+          "en": "Blueprint Material",
+          "ja": "ブループリント材料"
+        },
+        "value": {
+          "x": 0,
+          "y": 60
+        }
+      },
       {
         "link": {
           "key": "YarnFiber",
@@ -1795,6 +1913,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2351,9 +2473,9 @@
           }
         },
         "RequiredProgressPercent": {
-          "Active": false,
+          "Active": true,
           "FloatValue": 0,
-          "MaxValue": 0,
+          "MaxValue": 0.01,
           "ScaleRequirementPerPortionOfLiquid": {
             "Active": false,
             "FloatValue": 0
@@ -2845,8 +2967,8 @@
                 "DefaultText": "Iron",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Iron"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -3367,6 +3489,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3668,7 +3794,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4056,7 +4185,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4066,7 +4198,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -4519,7 +4651,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4941,7 +5076,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -5361,7 +5499,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -5781,7 +5922,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -6201,7 +6345,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -6398,8 +6545,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -6687,6 +6842,22 @@
     },
     {
       "link": {
+        "key": "Bp_ClothSmallTreadle",
+        "icon": "Cloth_Small",
+        "type": "card",
+        "CardType": 7,
+        "zh": "布片",
+        "en": "Small Cloth",
+        "ja": "Small Cloth"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "ClothMedium",
         "icon": "Cloth_Medium",
         "type": "card",
@@ -6721,6 +6892,22 @@
   "_useFor": [
     {
       "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_DoughStarter",
         "icon": "",
         "type": "card",
@@ -6737,29 +6924,13 @@
     },
     {
       "link": {
-        "key": "Bp_FermentationBin",
-        "icon": "FermentingBin_Clay",
-        "type": "card",
-        "CardType": 7,
-        "zh": "发酵桶",
-        "en": "Fermentation Bin",
-        "ja": "発酵箱"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
         "key": "Bp_GreenwardPouch",
         "icon": "",
         "type": "card",
         "CardType": 7,
         "zh": "绿法杖袋",
         "en": "Green Ward Pouch",
-        "ja": "緑色の革ポーチ"
+        "ja": "緑色の革小袋"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -6791,21 +6962,21 @@
         "CardType": 2,
         "zh": "泉水",
         "en": "Spring",
-        "ja": "Spring"
+        "ja": "春"
       },
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -6844,23 +7015,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：清洗敷料",
-        "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -6901,7 +7056,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -6916,7 +7071,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -7042,7 +7197,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7057,7 +7212,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7065,7 +7220,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -7090,7 +7245,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7105,7 +7260,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7113,7 +7268,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -7230,6 +7385,22 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：清洗敷料",
+        "en": "Action: Wash the Dressing",
+        "ja": "アクション：Wash the Dressing"
+      }
+    },
+    {
+      "link": {
         "key": "SpiritShrine_Water_SacredSpring",
         "icon": "SacredSpring",
         "type": "card",
@@ -7252,12 +7423,12 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     }
   ],

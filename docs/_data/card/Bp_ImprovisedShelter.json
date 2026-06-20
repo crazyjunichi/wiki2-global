@@ -7,7 +7,7 @@
   "zh": "临时庇护所",
   "en": "Improvised Shelter",
   "ja": "手作りシェルター",
-  "UniqueIDIndex": 463,
+  "UniqueIDIndex": 478,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -739,8 +739,8 @@
             },
             "Name": {
               "DefaultText": "Alder Long Stick",
-              "Text": "Alder Long Stick",
-              "zh": "Alder Long Stick",
+              "Text": "桤木长木棍",
+              "zh": "桤木长木棍",
               "en": "Alder Long Stick",
               "ja": "Alder Long Stick"
             }
@@ -791,7 +791,7 @@
             "Text": "干燥度",
             "zh": "干燥度",
             "en": "Dryness",
-            "ja": "Dryness"
+            "ja": "乾燥度"
           },
           "OverrideIcon": {
             "FileName": "Drying"
@@ -1229,7 +1229,7 @@
     "Text": "提供一定的防护作用，睡在上面可以增强幸福度、专注度以及保温。",
     "zh": "提供一定的防护作用，睡在上面可以增强幸福度、专注度以及保温。",
     "en": "Offers some protection against the elements. Increases wellbeing, focus and insulation while sleeping on it.",
-    "ja": "属性耐性がつく。これを使って寝たら体が温まり、幸福度と集中力が向上する。"
+    "ja": "外気から多少身を守ってくれる。これの上で眠ると、快適性、集中力、保温性が向上する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1261,6 +1261,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1563,8 +1567,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -1615,7 +1619,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1845,7 +1849,7 @@
           "AffectResultDurabilities": {
             "MaskValue": 0
           },
-          "Remember": false
+          "Remember": true
         },
         {
           "RequiredCard": {
@@ -1869,7 +1873,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -1884,7 +1888,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -1967,7 +1971,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2155,7 +2159,7 @@
           "AffectResultDurabilities": {
             "MaskValue": 0
           },
-          "Remember": false
+          "Remember": true
         }
       ],
       "StepActionTags": []
@@ -2181,7 +2185,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -2219,7 +2223,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2444,7 +2448,7 @@
           "AffectResultDurabilities": {
             "MaskValue": 0
           },
-          "Remember": false
+          "Remember": true
         }
       ],
       "StepActionTags": []
@@ -2452,14 +2456,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2467,7 +2479,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2481,7 +2493,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2495,7 +2507,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2509,7 +2521,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2706,14 +2718,14 @@
         "Special2Value": 0,
         "Special3Value": 0,
         "Special4Value": 0,
-        "SpoilageFrom": 0,
-        "UsageFrom": 0,
-        "FuelFrom": 0,
-        "ProgressFrom": 0,
-        "Special1From": 0,
-        "Special2From": 0,
-        "Special3From": 0,
-        "Special4From": 0
+        "SpoilageFrom": 1,
+        "UsageFrom": 1,
+        "FuelFrom": 1,
+        "ProgressFrom": 1,
+        "Special1From": 1,
+        "Special2From": 1,
+        "Special3From": 1,
+        "Special4From": 1
       },
       "DropChance": {
         "Active": false,
@@ -2927,7 +2939,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

@@ -7,7 +7,7 @@
   "zh": "坍塌的屋顶",
   "en": "Collapsed Roof",
   "ja": "崩れた屋根",
-  "UniqueIDIndex": 956,
+  "UniqueIDIndex": 986,
   "CardType": 11,
   "CardTags": [
     {
@@ -988,6 +988,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1080,7 +1084,7 @@
         "type": "stat",
         "zh": "庇护度",
         "en": "Sanctuary",
-        "ja": "Sanctuary",
+        "ja": "安息度",
         "max": 7500,
         "min": -1000
       },
@@ -1469,7 +1473,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -1766,8 +1773,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -1818,7 +1825,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2072,7 +2079,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -2087,7 +2094,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -2170,7 +2177,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2369,12 +2376,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -2408,7 +2415,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2653,8 +2660,16 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2850,7 +2865,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AffectedCards": [
         {
@@ -3209,13 +3227,13 @@
             "MaxValue": 0
           },
           "FuelCapacity": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Flood",
-              "Text": "洪水",
-              "zh": "洪水",
-              "en": "Flood",
-              "ja": "洪水"
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -3263,7 +3281,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -3277,7 +3295,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -3320,13 +3338,13 @@
             "MaxValue": 0
           },
           "FuelCapacity": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Flood",
-              "Text": "洪水",
-              "zh": "洪水",
-              "en": "Flood",
-              "ja": "洪水"
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -3374,7 +3392,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -3388,7 +3406,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -3900,7 +3918,7 @@
         "CardType": 0,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "被动效果：Rain into Empty",
@@ -3916,7 +3934,7 @@
         "CardType": 0,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "被动效果：雨水转化为淡水",
@@ -3932,7 +3950,7 @@
         "CardType": 0,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "被动效果：雨水转化为不安全水源",
@@ -3948,7 +3966,7 @@
         "CardType": 0,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "被动效果：雨水转化为河水",
@@ -3964,7 +3982,7 @@
         "CardType": 0,
         "zh": "未烧制的陶盆",
         "en": "Unfired Clay Basin",
-        "ja": "Unfired Clay Basin"
+        "ja": "未焼成の粘土のたらい"
       },
       "localization": {
         "zh": "被动效果：下雨",
@@ -4092,7 +4110,7 @@
         "CardType": 9,
         "zh": "越橘酒",
         "en": "Billberry Wine",
-        "ja": "Billberry Wine",
+        "ja": "ビルベリーワイン",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4106,7 +4124,7 @@
               "Text": "烈越橘酒",
               "zh": "烈越橘酒",
               "en": "Strong Billberry Wine",
-              "ja": "Strong Billberry Wine"
+              "ja": "強化ビルベリーワイン"
             }
           }
         ]
@@ -4125,7 +4143,7 @@
         "CardType": 9,
         "zh": "冰冻越橘酒",
         "en": "Frozen Billberry Wine",
-        "ja": "Frozen Billberry Wine"
+        "ja": "凍ったビルベリーワイン"
       },
       "localization": {
         "zh": "被动效果：冻结",
@@ -4155,7 +4173,7 @@
               "Text": "烈白桦酒",
               "zh": "烈白桦酒",
               "en": "Strong Birch Wine",
-              "ja": "Strong Birch Wine"
+              "ja": "強化シラカバのワイン "
             }
           }
         ]
@@ -4174,7 +4192,7 @@
         "CardType": 9,
         "zh": "冻结的白桦酒",
         "en": "Frozen Birch Wine",
-        "ja": "Frozen Birch Wine"
+        "ja": "凍ったカバ酒"
       },
       "localization": {
         "zh": "被动效果：冻结",
@@ -4204,7 +4222,7 @@
               "Text": "烈黑麦艾尔啤酒",
               "zh": "烈黑麦艾尔啤酒",
               "en": "Strong Rye Ale",
-              "ja": "Strong Rye Ale"
+              "ja": "強化ライ麦エール"
             }
           }
         ]
@@ -4223,7 +4241,7 @@
         "CardType": 9,
         "zh": "冰冻黑麦艾尔啤酒",
         "en": "Frozen Rye Ale",
-        "ja": "Frozen Rye Ale"
+        "ja": "凍ったライ麦エール"
       },
       "localization": {
         "zh": "被动效果：冻结",
@@ -4253,7 +4271,7 @@
               "Text": "烈春莓酒",
               "zh": "烈春莓酒",
               "en": "Strong Springberry Wine",
-              "ja": "Strong Springberry Wine"
+              "ja": "強化スプリングベリーワイン"
             }
           }
         ]
@@ -4272,7 +4290,7 @@
         "CardType": 9,
         "zh": "冰冻春莓酒",
         "en": "Frozen Springberry Wine",
-        "ja": "Frozen Springberry Wine"
+        "ja": "凍ったスプリングベリーワイン"
       },
       "localization": {
         "zh": "被动效果：冻结",
@@ -4336,7 +4354,7 @@
         "CardType": 9,
         "zh": "小麦艾尔啤酒",
         "en": "Wheat Ale",
-        "ja": "Wheat Ale",
+        "ja": "小麦エール",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4350,7 +4368,7 @@
               "Text": "烈小麦艾尔啤酒",
               "zh": "烈小麦艾尔啤酒",
               "en": "Strong Wheat Ale",
-              "ja": "Strong Wheat Ale"
+              "ja": "強化小麦エール"
             }
           }
         ]
@@ -4369,7 +4387,7 @@
         "CardType": 9,
         "zh": "冰冻小麦艾尔啤酒",
         "en": "Frozen Wheat Ale",
-        "ja": "Frozen Wheat Ale"
+        "ja": "凍った小麦エール"
       },
       "localization": {
         "zh": "被动效果：冻结",
@@ -4385,7 +4403,7 @@
         "CardType": 0,
         "zh": "新鲜牧草",
         "en": "Fresh Meadowgrass",
-        "ja": "Fresh Meadowgrass"
+        "ja": "新鮮な牧草"
       },
       "localization": {
         "zh": "被动效果：雨水填充",
@@ -4433,7 +4451,7 @@
         "CardType": 2,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern"
+        "ja": "雨水貯水槽"
       },
       "localization": {
         "zh": "被动效果：Rain into Empty",
@@ -4449,7 +4467,7 @@
         "CardType": 2,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern"
+        "ja": "雨水貯水槽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为淡水",
@@ -4465,7 +4483,7 @@
         "CardType": 2,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern"
+        "ja": "雨水貯水槽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为不安全水源",
@@ -4481,7 +4499,7 @@
         "CardType": 2,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern"
+        "ja": "雨水貯水槽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为河水",
@@ -4513,7 +4531,7 @@
         "CardType": 0,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：Rain into Empty",
@@ -4529,7 +4547,7 @@
         "CardType": 0,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为淡水",
@@ -4545,7 +4563,7 @@
         "CardType": 0,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为不安全水源",
@@ -4561,7 +4579,7 @@
         "CardType": 0,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为河水",
@@ -4577,7 +4595,7 @@
         "CardType": 2,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：Rain into Empty",
@@ -4593,7 +4611,7 @@
         "CardType": 2,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为淡水",
@@ -4609,7 +4627,7 @@
         "CardType": 2,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为不安全水源",
@@ -4625,7 +4643,7 @@
         "CardType": 2,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "被动效果：雨水转化为河水",
@@ -4705,7 +4723,7 @@
         "CardType": 0,
         "zh": "巫石",
         "en": "Witchstone",
-        "ja": "Witchstone"
+        "ja": "ウィッチストーン"
       },
       "localization": {
         "zh": "被动效果：Lose Quality",
@@ -4721,7 +4739,7 @@
         "CardType": 0,
         "zh": "巫石粉末",
         "en": "Witchstone Dust",
-        "ja": "Witchstone Dust"
+        "ja": "ウィッチストーン粉末"
       },
       "localization": {
         "zh": "被动效果：Lose Quality",

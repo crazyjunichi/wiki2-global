@@ -7,7 +7,7 @@
   "zh": "Blunt Rusty Axe",
   "en": "Blunt Rusty Axe",
   "ja": "Blunt Rusty Axe",
-  "UniqueIDIndex": 185,
+  "UniqueIDIndex": 186,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“锤”",
       "icon": "",
       "type": "tag",
-      "count": 36,
+      "count": 34,
       "zh": "锤击工具(通用)",
       "en": "Hammer",
       "ja": "ハンマー",
@@ -26,7 +26,7 @@
           "Text": "锋利",
           "zh": "锋利",
           "en": "Sharpness",
-          "ja": "Sharpness"
+          "ja": "切れ味"
         },
         "OverrideIcon": {
           "FileName": "Knife_Blank_Copper"
@@ -54,7 +54,7 @@
           "Text": "近期磨利",
           "zh": "近期磨利",
           "en": "Recently Sharpened",
-          "ja": "Recently Sharpened"
+          "ja": "研いだばかり"
         },
         "OverrideIcon": null,
         "MaxValue": 1
@@ -66,7 +66,7 @@
           "Text": "美观",
           "zh": "美观",
           "en": "Beauty",
-          "ja": "Beauty"
+          "ja": "美しさ"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -104,7 +104,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -118,7 +118,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -129,7 +129,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -166,7 +166,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -180,7 +180,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -194,7 +194,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -220,7 +220,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -234,7 +234,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -655,6 +655,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "SharpeningMetal"
@@ -2424,6 +2428,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2609,8 +2617,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2906,12 +2922,12 @@
         "CardType": 0,
         "zh": "可食用的黑橡子",
         "en": "Edible Black Acorns",
-        "ja": "Edible Black Acorns"
+        "ja": "食用黒ドングリ"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -3034,12 +3050,12 @@
         "CardType": 0,
         "zh": "骨头碎片",
         "en": "Bone Pieces",
-        "ja": "Bone Pieces"
+        "ja": "骨片"
       },
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3082,7 +3098,7 @@
         "CardType": 0,
         "zh": "金属宽头箭头模具",
         "en": "Metal Broadhead Arrows Mold",
-        "ja": "Metal Broadhead Arrows Mold",
+        "ja": "金属製幅広矢の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3096,7 +3112,7 @@
               "Text": "铜宽头箭头模具",
               "zh": "铜宽头箭头模具",
               "en": "Copper Broadhead Arrows Mold",
-              "ja": "Copper Broadhead Arrows Mold"
+              "ja": "銅製幅広矢の鋳型"
             }
           },
           {
@@ -3111,7 +3127,7 @@
               "Text": "鬼铜宽头箭头模具",
               "zh": "鬼铜宽头箭头模具",
               "en": "Ghost Bronze Broadhead Arrows Mold",
-              "ja": "Ghost Bronze Broadhead Arrows Mold"
+              "ja": "ゴーストブロンズ製幅広矢の鋳型"
             }
           },
           {
@@ -3126,7 +3142,7 @@
               "Text": "锡宽头箭头模具",
               "zh": "锡宽头箭头模具",
               "en": "Tin Broadhead Arrows Mold",
-              "ja": "Tin Broadhead Arrows Mold"
+              "ja": "スズの幅広矢先矢型"
             }
           },
           {
@@ -3141,7 +3157,7 @@
               "Text": "青铜宽头箭头模具",
               "zh": "青铜宽头箭头模具",
               "en": "Tin Bronze Broadhead Arrows Mold",
-              "ja": "Tin Bronze Broadhead Arrows Mold"
+              "ja": "スズ青銅の幅広矢先矢型"
             }
           },
           {
@@ -3156,7 +3172,7 @@
               "Text": "白铜宽头箭头模具",
               "zh": "白铜宽头箭头模具",
               "en": "White Bronze Broadhead Arrows Mold",
-              "ja": "White Bronze Broadhead Arrows Mold"
+              "ja": "白青銅の幅広矢先矢型"
             }
           }
         ]
@@ -3164,7 +3180,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3175,7 +3191,7 @@
         "CardType": 0,
         "zh": "金属箭头模具",
         "en": "Metal Arrow Heads Mold",
-        "ja": "Metal Arrow Heads Mold",
+        "ja": "金属製矢じりの鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3189,7 +3205,7 @@
               "Text": "铜箭头模具",
               "zh": "铜箭头模具",
               "en": "Copper Arrow Heads Mold",
-              "ja": "Copper Arrow Heads Mold"
+              "ja": "銅製矢じりの鋳型"
             }
           },
           {
@@ -3204,7 +3220,7 @@
               "Text": "鬼铜箭头模具",
               "zh": "鬼铜箭头模具",
               "en": "Ghost Bronze Arrow Heads Mold",
-              "ja": "Ghost Bronze Arrow Heads Mold"
+              "ja": "ゴーストブロンズ製矢じりの鋳型"
             }
           },
           {
@@ -3219,7 +3235,7 @@
               "Text": "锡箭头模具",
               "zh": "锡箭头模具",
               "en": "Tin Arrow Heads Mold",
-              "ja": "Tin Arrow Heads Mold"
+              "ja": "スズの鏃型"
             }
           },
           {
@@ -3234,7 +3250,7 @@
               "Text": "青铜箭头模具",
               "zh": "青铜箭头模具",
               "en": "Tin Bronze Arrow Heads Mold",
-              "ja": "Tin Bronze Arrow Heads Mold"
+              "ja": "スズ青銅の矢先型"
             }
           },
           {
@@ -3249,7 +3265,7 @@
               "Text": "白铜箭头模具",
               "zh": "白铜箭头模具",
               "en": "White Bronze Arrow Heads Mold",
-              "ja": "White Bronze Arrow Heads Mold"
+              "ja": "白青銅の矢先型"
             }
           }
         ]
@@ -3257,7 +3273,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3268,7 +3284,7 @@
         "CardType": 0,
         "zh": "金属斧刃头模具",
         "en": "Metal Axe Head Mold",
-        "ja": "Metal Axe Head Mold",
+        "ja": "金属製斧頭の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3282,7 +3298,7 @@
               "Text": "铜斧刃头模具",
               "zh": "铜斧刃头模具",
               "en": "Copper Axe Head Mold",
-              "ja": "Copper Axe Head Mold"
+              "ja": "銅製斧頭の鋳型"
             }
           },
           {
@@ -3297,7 +3313,7 @@
               "Text": "鬼铜斧刃头模具",
               "zh": "鬼铜斧刃头模具",
               "en": "Ghost Bronze Axe Head Mold",
-              "ja": "Ghost Bronze Axe Head Mold"
+              "ja": "幽青銅の斧頭型"
             }
           },
           {
@@ -3312,7 +3328,7 @@
               "Text": "锡斧刃头模具",
               "zh": "锡斧刃头模具",
               "en": "Tin Axe Head Mold",
-              "ja": "Tin Axe Head Mold"
+              "ja": "スズの斧頭型"
             }
           },
           {
@@ -3327,7 +3343,7 @@
               "Text": "青铜斧刃头模具",
               "zh": "青铜斧刃头模具",
               "en": "Tin Bronze Axe Head Mold",
-              "ja": "Tin Bronze Axe Head Mold"
+              "ja": "スズ青銅の斧頭型"
             }
           },
           {
@@ -3342,7 +3358,7 @@
               "Text": "白铜斧刃头模具",
               "zh": "白铜斧刃头模具",
               "en": "White Bronze Axe Head Mold",
-              "ja": "White Bronze Axe Head Mold"
+              "ja": "ホワイトブロンズ製斧頭の鋳型"
             }
           }
         ]
@@ -3350,7 +3366,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3361,7 +3377,7 @@
         "CardType": 0,
         "zh": "金属屠宰刀刃片模具",
         "en": "Metal Butchering Knife Blade Mold",
-        "ja": "Metal Butchering Knife Blade Mold",
+        "ja": "金属製解体ナイフ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3375,7 +3391,7 @@
               "Text": "铜屠宰刀刃片模具",
               "zh": "铜屠宰刀刃片模具",
               "en": "Copper Butchering Knife Blade Mold",
-              "ja": "Copper Butchering Knife Blade Mold"
+              "ja": "銅の解体ナイフ刃の鋳型"
             }
           },
           {
@@ -3390,7 +3406,7 @@
               "Text": "鬼铜屠宰刀刃片模具",
               "zh": "鬼铜屠宰刀刃片模具",
               "en": "Ghost Butchering Knife Blade Mold",
-              "ja": "Ghost Butchering Knife Blade Mold"
+              "ja": "幽青銅の解体ナイフ刃の鋳型"
             }
           },
           {
@@ -3405,7 +3421,7 @@
               "Text": "锡屠宰刀刃片模具",
               "zh": "锡屠宰刀刃片模具",
               "en": "Tin Butchering Knife Blade Mold",
-              "ja": "Tin Butchering Knife Blade Mold"
+              "ja": "スズの解体ナイフ刃の鋳型"
             }
           },
           {
@@ -3420,7 +3436,7 @@
               "Text": "青铜屠宰刀刃片模具",
               "zh": "青铜屠宰刀刃片模具",
               "en": "Tin Bronze Butchering Knife Blade Mold",
-              "ja": "Tin Bronze Butchering Knife Blade Mold"
+              "ja": "スズ青銅の解体ナイフ刃の鋳型"
             }
           },
           {
@@ -3435,7 +3451,7 @@
               "Text": "白铜屠宰刀刃片模具",
               "zh": "白铜屠宰刀刃片模具",
               "en": "White Bronze Butchering Knife Blade Mold",
-              "ja": "White Bronze Butchering Knife Blade Mold"
+              "ja": "白青銅の解体ナイフ刃の鋳型"
             }
           }
         ]
@@ -3443,7 +3459,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3454,7 +3470,7 @@
         "CardType": 0,
         "zh": "金属凿刃模具",
         "en": "Metal Chisel Blade Mold",
-        "ja": "Metal Chisel Blade Mold",
+        "ja": "金属製のみ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3468,7 +3484,7 @@
               "Text": "铜凿刃模具",
               "zh": "铜凿刃模具",
               "en": "Copper Chisel Blade Mold",
-              "ja": "Copper Chisel Blade Mold"
+              "ja": "銅ののみ刃の鋳型"
             }
           },
           {
@@ -3483,7 +3499,7 @@
               "Text": "鬼铜凿刃模具",
               "zh": "鬼铜凿刃模具",
               "en": "Ghost Bronze Chisel Blade Mold",
-              "ja": "Ghost Bronze Chisel Blade Mold"
+              "ja": "幽青銅ののみ刃の鋳型"
             }
           },
           {
@@ -3498,7 +3514,7 @@
               "Text": "锡凿刃模具",
               "zh": "锡凿刃模具",
               "en": "Tin Chisel Blade Mold",
-              "ja": "Tin Chisel Blade Mold"
+              "ja": "スズののみ刃の鋳型"
             }
           },
           {
@@ -3513,7 +3529,7 @@
               "Text": "青铜凿刃模具",
               "zh": "青铜凿刃模具",
               "en": "Tin Bronze Chisel Blade Mold",
-              "ja": "Tin Bronze Chisel Blade Mold"
+              "ja": "スズ青銅ののみ刃の鋳型"
             }
           },
           {
@@ -3528,7 +3544,7 @@
               "Text": "白铜凿刃模具",
               "zh": "白铜凿刃模具",
               "en": "White Bronze Chisel Blade Mold",
-              "ja": "White Bronze Chisel Blade Mold"
+              "ja": "白青銅ののみ刃の鋳型"
             }
           }
         ]
@@ -3536,7 +3552,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3547,7 +3563,7 @@
         "CardType": 0,
         "zh": "金属拉刀刃片模具",
         "en": "Metal Drawknife Blade Mold",
-        "ja": "Metal Drawknife Blade Mold",
+        "ja": "金属製ドローナイフ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3561,7 +3577,7 @@
               "Text": "铜拉刀刃片模具",
               "zh": "铜拉刀刃片模具",
               "en": "Copper Drawknife Blade Mold",
-              "ja": "Copper Drawknife Blade Mold"
+              "ja": "銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -3576,7 +3592,7 @@
               "Text": "鬼铜拉刀刃片模具",
               "zh": "鬼铜拉刀刃片模具",
               "en": "Ghost Bronze Drawknife Blade Mold",
-              "ja": "Ghost Bronze Drawknife Blade Mold"
+              "ja": "幽青銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -3591,7 +3607,7 @@
               "Text": "锡拉刀刃片模具",
               "zh": "锡拉刀刃片模具",
               "en": "Tin Drawknife Blade Mold",
-              "ja": "Tin Drawknife Blade Mold"
+              "ja": "スズのドローナイフ刃の鋳型"
             }
           },
           {
@@ -3606,7 +3622,7 @@
               "Text": "青铜拉刀刃片模具",
               "zh": "青铜拉刀刃片模具",
               "en": "Tin Bronze Drawknife Blade Mold",
-              "ja": "Tin Bronze Drawknife Blade Mold"
+              "ja": "スズ青銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -3621,7 +3637,7 @@
               "Text": "白铜拉刀刃片模具",
               "zh": "白铜拉刀刃片模具",
               "en": "White Bronze Drawknife Blade Mold",
-              "ja": "White Bronze Drawknife Blade Mold"
+              "ja": "白青銅のドローナイフ刃の鋳型"
             }
           }
         ]
@@ -3629,7 +3645,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3640,7 +3656,7 @@
         "CardType": 0,
         "zh": "金属锄头模具",
         "en": "Metal Hoe Head Mold",
-        "ja": "Metal Hoe Head Mold",
+        "ja": "金属製クワの刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3654,7 +3670,7 @@
               "Text": "铜锄头模具",
               "zh": "铜锄头模具",
               "en": "Copper Hoe Head Mold",
-              "ja": "Copper Hoe Head Mold"
+              "ja": "銅のクワの刃の鋳型"
             }
           },
           {
@@ -3669,7 +3685,7 @@
               "Text": "鬼铜锄头模具",
               "zh": "鬼铜锄头模具",
               "en": "Ghost Bronze Hoe Head Mold",
-              "ja": "Ghost Bronze Hoe Head Mold"
+              "ja": "幽青銅のクワの刃の鋳型"
             }
           },
           {
@@ -3684,7 +3700,7 @@
               "Text": "锡锄头模具",
               "zh": "锡锄头模具",
               "en": "Tin Hoe Head Mold",
-              "ja": "Tin Hoe Head Mold"
+              "ja": "スズのクワの刃の鋳型"
             }
           },
           {
@@ -3699,7 +3715,7 @@
               "Text": "青铜锄头模具",
               "zh": "青铜锄头模具",
               "en": "Tin Bronze Hoe Head Mold",
-              "ja": "Tin Bronze Hoe Head Mold"
+              "ja": "スズ青銅のクワの刃の鋳型"
             }
           },
           {
@@ -3714,7 +3730,7 @@
               "Text": "白铜锄头模具",
               "zh": "白铜锄头模具",
               "en": "White Bronze Hoe Head Mold",
-              "ja": "White Bronze Hoe Head Mold"
+              "ja": "白青銅のクワの刃の鋳型"
             }
           }
         ]
@@ -3722,7 +3738,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3733,7 +3749,7 @@
         "CardType": 0,
         "zh": "金属狩猎长矛头模具",
         "en": "Metal Hunting Spearhead Mold",
-        "ja": "Metal Hunting Spearhead Mold",
+        "ja": "金属製狩猟槍先の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3747,7 +3763,7 @@
               "Text": "铜狩猎长矛头模具",
               "zh": "铜狩猎长矛头模具",
               "en": "Copper Hunting Spearhead Mold",
-              "ja": "Copper Hunting Spearhead Mold"
+              "ja": "銅製狩猟槍先の鋳型"
             }
           },
           {
@@ -3762,7 +3778,7 @@
               "Text": "鬼铜狩猎长矛头模具",
               "zh": "鬼铜狩猎长矛头模具",
               "en": "Ghost Bronze Hunting Spearhead Mold",
-              "ja": "Ghost Bronze Hunting Spearhead Mold"
+              "ja": "ゴーストブロンズ製狩猟槍先の鋳型"
             }
           },
           {
@@ -3777,7 +3793,7 @@
               "Text": "锡狩猎长矛头模具",
               "zh": "锡狩猎长矛头模具",
               "en": "Tin Hunting Spearhead Mold",
-              "ja": "Tin Hunting Spearhead Mold"
+              "ja": "スズの狩猟槍穂先型"
             }
           },
           {
@@ -3792,7 +3808,7 @@
               "Text": "青铜狩猎长矛头模具",
               "zh": "青铜狩猎长矛头模具",
               "en": "Tin Bronze Hunting Spearhead Mold",
-              "ja": "Tin Bronze Hunting Spearhead Mold"
+              "ja": "スズ青銅の狩猟槍穂先型"
             }
           },
           {
@@ -3807,7 +3823,7 @@
               "Text": "白铜狩猎长矛头模具",
               "zh": "白铜狩猎长矛头模具",
               "en": "White Bronze Hunting Spearhead Mold",
-              "ja": "White Bronze Hunting Spearhead Mold"
+              "ja": "白青銅の狩猟槍穂先型"
             }
           }
         ]
@@ -3815,7 +3831,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3826,7 +3842,7 @@
         "CardType": 0,
         "zh": "金属刀刃片模具",
         "en": "Metal Knife Blade Mold",
-        "ja": "Metal Knife Blade Mold",
+        "ja": "金属製ナイフ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3840,7 +3856,7 @@
               "Text": "铜刀刃片模具",
               "zh": "铜刀刃片模具",
               "en": "Copper Knife Blade Mold",
-              "ja": "Copper Knife Blade Mold"
+              "ja": "銅製ナイフ刃の鋳型"
             }
           },
           {
@@ -3855,7 +3871,7 @@
               "Text": "鬼铜刀刃片模具",
               "zh": "鬼铜刀刃片模具",
               "en": "Ghost Bronze Knife Blade Mold",
-              "ja": "Ghost Bronze Knife Blade Mold"
+              "ja": "幽青銅のナイフ刃型"
             }
           },
           {
@@ -3870,7 +3886,7 @@
               "Text": "锡刀刃片模具",
               "zh": "锡刀刃片模具",
               "en": "Tin Knife Blade Mold",
-              "ja": "Tin Knife Blade Mold"
+              "ja": "スズのナイフ刃型"
             }
           },
           {
@@ -3885,7 +3901,7 @@
               "Text": "青铜刀刃片模具",
               "zh": "青铜刀刃片模具",
               "en": "Tin Bronze Knife Blade Mold",
-              "ja": "Tin Bronze Knife Blade Mold"
+              "ja": "スズ青銅のナイフ刃型"
             }
           },
           {
@@ -3900,7 +3916,7 @@
               "Text": "白铜刀刃片模具",
               "zh": "白铜刀刃片模具",
               "en": "White Bronze Knife Blade Mold",
-              "ja": "White Bronze Knife Blade Mold"
+              "ja": "ホワイトブロンズ製ナイフ刃の鋳型"
             }
           }
         ]
@@ -3908,7 +3924,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -3919,7 +3935,7 @@
         "CardType": 0,
         "zh": "金属肉钩模具",
         "en": "Metal Meat Hook Mold",
-        "ja": "Metal Meat Hook Mold",
+        "ja": "金属製肉吊りフックの鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3933,7 +3949,7 @@
               "Text": "铜肉钩模具",
               "zh": "铜肉钩模具",
               "en": "Copper Meat Hook Mold",
-              "ja": "Copper Meat Hook Mold"
+              "ja": "銅の肉吊りフックの鋳型"
             }
           },
           {
@@ -3948,7 +3964,7 @@
               "Text": "鬼铜肉钩模具",
               "zh": "鬼铜肉钩模具",
               "en": "Ghost Bronze Meat Hook Mold",
-              "ja": "Ghost Bronze Meat Hook Mold"
+              "ja": "幽青銅の肉吊りフックの鋳型"
             }
           },
           {
@@ -3963,7 +3979,7 @@
               "Text": "锡肉钩模具",
               "zh": "锡肉钩模具",
               "en": "Tin Meat Hook Mold",
-              "ja": "Tin Meat Hook Mold"
+              "ja": "スズの肉吊りフックの鋳型"
             }
           },
           {
@@ -3978,7 +3994,7 @@
               "Text": "青铜肉钩模具",
               "zh": "青铜肉钩模具",
               "en": "Tin Bronze Meat Hook Mold",
-              "ja": "Tin Bronze Meat Hook Mold"
+              "ja": "スズ青銅の肉吊りフックの鋳型"
             }
           },
           {
@@ -3993,7 +4009,7 @@
               "Text": "白铜肉钩模具",
               "zh": "白铜肉钩模具",
               "en": "White Bronze Meat Hook Mold",
-              "ja": "White Bronze Meat Hook Mold"
+              "ja": "白青銅の肉吊りフックの鋳型"
             }
           }
         ]
@@ -4001,7 +4017,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4012,7 +4028,7 @@
         "CardType": 0,
         "zh": "金属大镰刀刃片模具",
         "en": "Metal Scythe Blade Mold",
-        "ja": "Metal Scythe Blade Mold",
+        "ja": "金属製大鎌の刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4026,7 +4042,7 @@
               "Text": "铜大镰刀刃片模具",
               "zh": "铜大镰刀刃片模具",
               "en": "Copper Scythe Blade Mold",
-              "ja": "Copper Scythe Blade Mold"
+              "ja": "銅の大鎌の刃の鋳型"
             }
           },
           {
@@ -4041,7 +4057,7 @@
               "Text": "鬼铜大镰刀刃片模具",
               "zh": "鬼铜大镰刀刃片模具",
               "en": "Ghost Bronze Scythe Blade Mold",
-              "ja": "Ghost Bronze Scythe Blade Mold"
+              "ja": "幽青銅の大鎌の刃の鋳型"
             }
           },
           {
@@ -4056,7 +4072,7 @@
               "Text": "锡大镰刀刃片模具",
               "zh": "锡大镰刀刃片模具",
               "en": "Tin Scythe Blade Mold",
-              "ja": "Tin Scythe Blade Mold"
+              "ja": "スズの大鎌の刃の鋳型"
             }
           },
           {
@@ -4071,7 +4087,7 @@
               "Text": "青铜大镰刀刃片模具",
               "zh": "青铜大镰刀刃片模具",
               "en": "Tin Bronze Scythe Blade Mold",
-              "ja": "Tin Bronze Scythe Blade Mold"
+              "ja": "スズ青銅の大鎌の刃の鋳型"
             }
           },
           {
@@ -4086,7 +4102,7 @@
               "Text": "白铜大镰刀刃片模具",
               "zh": "白铜大镰刀刃片模具",
               "en": "White Bronze Scythe Blade Mold",
-              "ja": "White Bronze Scythe Blade Mold"
+              "ja": "白青銅の大鎌の刃の鋳型"
             }
           }
         ]
@@ -4094,7 +4110,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4105,7 +4121,7 @@
         "CardType": 0,
         "zh": "金属铲子头模具",
         "en": "Metal Shovel Head Mold",
-        "ja": "Metal Shovel Head Mold",
+        "ja": "金属製シャベル頭の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4119,7 +4135,7 @@
               "Text": "铜铲子头模具",
               "zh": "铜铲子头模具",
               "en": "Copper Shovel Head Mold",
-              "ja": "Copper Shovel Head Mold"
+              "ja": "銅製シャベル頭の鋳型"
             }
           },
           {
@@ -4134,7 +4150,7 @@
               "Text": "鬼铜铲子头模具",
               "zh": "鬼铜铲子头模具",
               "en": "Ghost Bronze Shovel Head Mold",
-              "ja": "Ghost Bronze Shovel Head Mold"
+              "ja": "幽青銅のシャベル頭型"
             }
           },
           {
@@ -4149,7 +4165,7 @@
               "Text": "锡铲子头模具",
               "zh": "锡铲子头模具",
               "en": "Tin Shovel Head Mold",
-              "ja": "Tin Shovel Head Mold"
+              "ja": "スズのシャベル頭型"
             }
           },
           {
@@ -4164,7 +4180,7 @@
               "Text": "青铜铲子头模具",
               "zh": "青铜铲子头模具",
               "en": "Tin Bronze Shovel Head Mold",
-              "ja": "Tin Bronze Shovel Head Mold"
+              "ja": "スズ青銅のシャベル頭型"
             }
           },
           {
@@ -4179,7 +4195,7 @@
               "Text": "白铜铲子头模具",
               "zh": "白铜铲子头模具",
               "en": "White Bronze Shovel Head Mold",
-              "ja": "White Bronze Shovel Head Mold"
+              "ja": "ホワイトブロンズ製シャベル頭の鋳型"
             }
           }
         ]
@@ -4187,7 +4203,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4198,7 +4214,7 @@
         "CardType": 0,
         "zh": "金属镰刀刃片模具",
         "en": "Metal Sickle Blade Mold",
-        "ja": "Metal Sickle Blade Mold",
+        "ja": "金属製鎌の刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4212,7 +4228,7 @@
               "Text": "铜镰刀刃片模具",
               "zh": "铜镰刀刃片模具",
               "en": "Copper Sickle Blade Mold",
-              "ja": "Copper Sickle Blade Mold"
+              "ja": "銅の鎌の刃の鋳型"
             }
           },
           {
@@ -4227,7 +4243,7 @@
               "Text": "鬼铜镰刀刃片模具",
               "zh": "鬼铜镰刀刃片模具",
               "en": "Ghost Bronze Sickle Blade Mold",
-              "ja": "Ghost Bronze Sickle Blade Mold"
+              "ja": "幽青銅の鎌の刃の鋳型"
             }
           },
           {
@@ -4242,7 +4258,7 @@
               "Text": "锡镰刀刃片模具",
               "zh": "锡镰刀刃片模具",
               "en": "Tin Knife Sickle Mold",
-              "ja": "Tin Knife Sickle Mold"
+              "ja": "スズの鎌の刃の鋳型"
             }
           },
           {
@@ -4257,7 +4273,7 @@
               "Text": "青铜镰刀刃片模具",
               "zh": "青铜镰刀刃片模具",
               "en": "Tin Bronze Sickle Blade Mold",
-              "ja": "Tin Bronze Sickle Blade Mold"
+              "ja": "スズ青銅の鎌の刃の鋳型"
             }
           },
           {
@@ -4272,7 +4288,7 @@
               "Text": "白铜镰刀刃片模具",
               "zh": "白铜镰刀刃片模具",
               "en": "White Bronze Sickle Blade Mold",
-              "ja": "White Bronze Sickle Blade Mold"
+              "ja": "白青銅の鎌の刃の鋳型"
             }
           }
         ]
@@ -4280,7 +4296,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4291,7 +4307,7 @@
         "CardType": 0,
         "zh": "金属剥皮刀刃片模具",
         "en": "Metal Skinning Knife Blade Mold",
-        "ja": "Metal Skinning Knife Blade Mold",
+        "ja": "金属製皮剥ぎナイフ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4305,7 +4321,7 @@
               "Text": "铜剥皮刀刃片模具",
               "zh": "铜剥皮刀刃片模具",
               "en": "Copper Skinning Knife Blade Mold",
-              "ja": "Copper Skinning Knife Blade Mold"
+              "ja": "銅の皮剥ぎナイフ刃の鋳型"
             }
           },
           {
@@ -4320,7 +4336,7 @@
               "Text": "鬼铜剥皮刀刃片模具",
               "zh": "鬼铜剥皮刀刃片模具",
               "en": "Ghost Bronze Skinning Knife Blade Mold",
-              "ja": "Ghost Bronze Skinning Knife Blade Mold"
+              "ja": "幽青銅の皮剥ぎナイフ刃の鋳型"
             }
           },
           {
@@ -4335,7 +4351,7 @@
               "Text": "锡剥皮刀刃片模具",
               "zh": "锡剥皮刀刃片模具",
               "en": "Tin Skinning Knife Blade Mold",
-              "ja": "Tin Skinning Knife Blade Mold"
+              "ja": "スズの皮剥ぎナイフ刃の鋳型"
             }
           },
           {
@@ -4350,7 +4366,7 @@
               "Text": "青铜剥皮刀刃片模具",
               "zh": "青铜剥皮刀刃片模具",
               "en": "Tin Bronze Skinning Knife Blade Mold",
-              "ja": "Tin Bronze Skinning Knife Blade Mold"
+              "ja": "スズ青銅の皮剥ぎナイフ刃の鋳型"
             }
           },
           {
@@ -4365,7 +4381,7 @@
               "Text": "白铜剥皮刀刃片模具",
               "zh": "白铜剥皮刀刃片模具",
               "en": "White Bronze Skinning Knife Blade Mold",
-              "ja": "White Bronze Skinning Knife Blade Mold"
+              "ja": "白青銅の皮剥ぎナイフ刃の鋳型"
             }
           }
         ]
@@ -4373,7 +4389,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4384,7 +4400,7 @@
         "CardType": 0,
         "zh": "金属矛头模具",
         "en": "Metal Spear Head Mold",
-        "ja": "Metal Spear Head Mold",
+        "ja": "金属製槍先の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4398,7 +4414,7 @@
               "Text": "铜矛头模具",
               "zh": "铜矛头模具",
               "en": "Copper Spear Head Mold",
-              "ja": "Copper Spear Head Mold"
+              "ja": "銅製槍先の鋳型"
             }
           },
           {
@@ -4413,7 +4429,7 @@
               "Text": "鬼铜矛头模具",
               "zh": "鬼铜矛头模具",
               "en": "Ghost Bronze Spear Head Mold",
-              "ja": "Ghost Bronze Spear Head Mold"
+              "ja": "幽青銅の槍穂先型"
             }
           },
           {
@@ -4428,7 +4444,7 @@
               "Text": "锡矛头模具",
               "zh": "锡矛头模具",
               "en": "Tin Spear Head Mold",
-              "ja": "Tin Spear Head Mold"
+              "ja": "スズの槍穂先型"
             }
           },
           {
@@ -4443,7 +4459,7 @@
               "Text": "青铜矛头模具",
               "zh": "青铜矛头模具",
               "en": "Tin Bronze Spear Head Mold",
-              "ja": "Tin Bronze Spear Head Mold"
+              "ja": "スズ青銅の槍頭鋳型"
             }
           },
           {
@@ -4458,7 +4474,7 @@
               "Text": "白铜矛头模具",
               "zh": "白铜矛头模具",
               "en": "White Bronze Spear Head Mold",
-              "ja": "White Bronze Spear Head Mold"
+              "ja": "ホワイトブロンズ製槍先の鋳型"
             }
           }
         ]
@@ -4466,7 +4482,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4477,7 +4493,7 @@
         "CardType": 0,
         "zh": "金属勺型钻头模具",
         "en": "Metal Spoon Bit Mold",
-        "ja": "Metal Spoon Bit Mold",
+        "ja": "金属製スプーンビットの鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4491,7 +4507,7 @@
               "Text": "铜勺型钻头模具",
               "zh": "铜勺型钻头模具",
               "en": "Copper Spoon Bit Mold",
-              "ja": "Copper Spoon Bit Mold"
+              "ja": "銅のスプーンビットの鋳型"
             }
           },
           {
@@ -4506,7 +4522,7 @@
               "Text": "鬼铜勺型钻头模具",
               "zh": "鬼铜勺型钻头模具",
               "en": "Ghost Bronze Spoon Bit Mold",
-              "ja": "Ghost Bronze Spoon Bit Mold"
+              "ja": "幽青銅のスプーンビットの鋳型"
             }
           },
           {
@@ -4521,7 +4537,7 @@
               "Text": "锡勺型钻头模具",
               "zh": "锡勺型钻头模具",
               "en": "Tin Spoon Bit Mold",
-              "ja": "Tin Spoon Bit Mold"
+              "ja": "スズのスプーンビットの鋳型"
             }
           },
           {
@@ -4536,7 +4552,7 @@
               "Text": "青铜勺型钻头模具",
               "zh": "青铜勺型钻头模具",
               "en": "Tin Bronze Spoon Bit Mold",
-              "ja": "Tin Bronze Spoon Bit Mold"
+              "ja": "スズ青銅のスプーンビットの鋳型"
             }
           },
           {
@@ -4551,7 +4567,7 @@
               "Text": "白铜勺型钻头模具",
               "zh": "白铜勺型钻头模具",
               "en": "White Bronze Spoon Bit Mold",
-              "ja": "White Bronze Spoon Bit Mold"
+              "ja": "白青銅のスプーンビットの鋳型"
             }
           }
         ]
@@ -4559,7 +4575,7 @@
       "localization": {
         "zh": "动作：打碎",
         "en": "Action: Break",
-        "ja": "アクション：Break"
+        "ja": "アクション：壊す"
       }
     },
     {
@@ -4591,7 +4607,7 @@
       "localization": {
         "zh": "动作：碾碎",
         "en": "Action: Crush",
-        "ja": "アクション：Crush"
+        "ja": "アクション：砕く"
       }
     },
     {
@@ -4660,22 +4676,6 @@
     },
     {
       "link": {
-        "key": "FlintVein",
-        "icon": "FlintVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "燧石矿脉",
-        "en": "Flint Vein",
-        "ja": "火打石の脈"
-      },
-      "localization": {
-        "zh": "动作：采掘",
-        "en": "Action: Mine",
-        "ja": "アクション：採掘"
-      }
-    },
-    {
-      "link": {
         "key": "FlyAgaricDried",
         "icon": "FlyAgaric",
         "type": "card",
@@ -4728,7 +4728,7 @@
               "Text": "上冻的湖泊",
               "zh": "上冻的湖泊",
               "en": "Frozen Lake",
-              "ja": "Frozen Lake"
+              "ja": "凍った湖"
             }
           },
           {
@@ -4743,7 +4743,7 @@
               "Text": "上冻的沼泽",
               "zh": "上冻的沼泽",
               "en": "Frozen Marsh",
-              "ja": "Frozen Marsh"
+              "ja": "凍った湿地"
             }
           },
           {
@@ -4823,12 +4823,12 @@
         "CardType": 0,
         "zh": "绿石",
         "en": "Greenstone",
-        "ja": "Greenstone"
+        "ja": "グリーンストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -4839,21 +4839,21 @@
         "CardType": 0,
         "zh": "绿炉石",
         "en": "Greenstone Slag",
-        "ja": "Greenstone Slag"
+        "ja": "グリーンストーン鉱滓"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
       "link": {
         "key": "HagPondFrozen",
-        "icon": "Pond_Winter",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "冰冻老妪池塘",
+        "zh": "结冰的老巫池塘",
         "en": "Frozen Hag Pond",
         "ja": "Frozen Hag Pond"
       },
@@ -4871,7 +4871,7 @@
         "CardType": 0,
         "zh": "干燥的帚石南花",
         "en": "Dry Heather Flowers",
-        "ja": "Dry Heather Flowers"
+        "ja": "乾燥したヒースの花"
       },
       "localization": {
         "zh": "动作：研磨",
@@ -4919,12 +4919,12 @@
         "CardType": 0,
         "zh": "杜松子",
         "en": "Juniper Berries",
-        "ja": "Juniper Berries"
+        "ja": "ジュニパーベリー"
       },
       "localization": {
         "zh": "动作：捣碎",
         "en": "Action: Mash",
-        "ja": "アクション：Mash"
+        "ja": "アクション：すり潰す"
       }
     },
     {
@@ -4935,12 +4935,12 @@
         "CardType": 0,
         "zh": "烤杜松子",
         "en": "Roasted Juniper Berries",
-        "ja": "Roasted Juniper Berries"
+        "ja": "焙煎ジュニパーベリー"
       },
       "localization": {
         "zh": "动作：捣碎",
         "en": "Action: Mash",
-        "ja": "アクション：Mash"
+        "ja": "アクション：すり潰す"
       }
     },
     {
@@ -4951,12 +4951,12 @@
         "CardType": 9,
         "zh": "冰冻越橘酒",
         "en": "Frozen Billberry Wine",
-        "ja": "Frozen Billberry Wine"
+        "ja": "凍ったビルベリーワイン"
       },
       "localization": {
         "zh": "动作：移除结冰层",
         "en": "Action: Remove ice layer",
-        "ja": "アクション：Remove ice layer"
+        "ja": "アクション：氷の層を取り除く"
       }
     },
     {
@@ -4967,12 +4967,12 @@
         "CardType": 9,
         "zh": "冻结的白桦酒",
         "en": "Frozen Birch Wine",
-        "ja": "Frozen Birch Wine"
+        "ja": "凍ったカバ酒"
       },
       "localization": {
         "zh": "动作：移除结冰层",
         "en": "Action: Remove ice layer",
-        "ja": "アクション：Remove ice layer"
+        "ja": "アクション：氷の層を取り除く"
       }
     },
     {
@@ -4983,12 +4983,12 @@
         "CardType": 9,
         "zh": "冰冻黑麦艾尔啤酒",
         "en": "Frozen Rye Ale",
-        "ja": "Frozen Rye Ale"
+        "ja": "凍ったライ麦エール"
       },
       "localization": {
         "zh": "动作：移除结冰层",
         "en": "Action: Remove ice layer",
-        "ja": "アクション：Remove ice layer"
+        "ja": "アクション：氷の層を取り除く"
       }
     },
     {
@@ -4999,12 +4999,12 @@
         "CardType": 9,
         "zh": "冰冻春莓酒",
         "en": "Frozen Springberry Wine",
-        "ja": "Frozen Springberry Wine"
+        "ja": "凍ったスプリングベリーワイン"
       },
       "localization": {
         "zh": "动作：移除结冰层",
         "en": "Action: Remove ice layer",
-        "ja": "アクション：Remove ice layer"
+        "ja": "アクション：氷の層を取り除く"
       }
     },
     {
@@ -5015,12 +5015,12 @@
         "CardType": 9,
         "zh": "冰冻小麦艾尔啤酒",
         "en": "Frozen Wheat Ale",
-        "ja": "Frozen Wheat Ale"
+        "ja": "凍った小麦エール"
       },
       "localization": {
         "zh": "动作：移除结冰层",
         "en": "Action: Remove ice layer",
-        "ja": "アクション：Remove ice layer"
+        "ja": "アクション：氷の層を取り除く"
       }
     },
     {
@@ -5031,12 +5031,12 @@
         "CardType": 0,
         "zh": "脑花",
         "en": "Brain",
-        "ja": "Brain"
+        "ja": "脳"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5053,22 +5053,6 @@
         "zh": "动作：Ground",
         "en": "Action: Ground",
         "ja": "アクション：Ground"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPondFrozen",
-        "icon": "Pond_Winter",
-        "type": "card",
-        "CardType": 2,
-        "zh": "冰冻蚊虫池塘",
-        "en": "Frozen Mosquito Pond",
-        "ja": "Frozen Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：凿个冰洞",
-        "en": "Action: Create Ice Hole",
-        "ja": "アクション：Create Ice Hole"
       }
     },
     {
@@ -5116,7 +5100,7 @@
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5132,7 +5116,7 @@
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5143,12 +5127,12 @@
         "CardType": 0,
         "zh": "干荨麻茎",
         "en": "Dried Nettle Stems",
-        "ja": "Dried Nettle Stems"
+        "ja": "乾燥したイラクサの茎"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5159,12 +5143,12 @@
         "CardType": 0,
         "zh": "新鲜荨麻茎",
         "en": "Fresh Nettle Stems",
-        "ja": "Fresh Nettle Stems"
+        "ja": "新鮮なイラクサの茎"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5191,12 +5175,12 @@
         "CardType": 0,
         "zh": "黑麦粒(专有)",
         "en": "Rye Grains(Pk)",
-        "ja": "Rye Grains"
+        "ja": "ライ麦"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5239,7 +5223,7 @@
         "CardType": 0,
         "zh": "黑麦麦芽",
         "en": "Malted Rye",
-        "ja": "Malted Rye"
+        "ja": "麦芽ライ麦"
       },
       "localization": {
         "zh": "动作：研磨",
@@ -5255,12 +5239,12 @@
         "CardType": 0,
         "zh": "肌腱",
         "en": "Sinew",
-        "ja": "Sinew"
+        "ja": "腱繊維"
       },
       "localization": {
         "zh": "动作：捶打",
         "en": "Action: Pound",
-        "ja": "アクション：Pound"
+        "ja": "アクション：打ちほぐす"
       }
     },
     {
@@ -5281,18 +5265,18 @@
     },
     {
       "link": {
-        "key": "SpiritShrine_Flint_FlintMotherLode",
-        "icon": "FlintVein",
+        "key": "SpiritShrine_Bugs_MosquitoPondFrozen",
+        "icon": "MosquitoPond",
         "type": "card",
         "CardType": 2,
-        "zh": "燧石母矿脉",
-        "en": "Flint Mother Lode",
-        "ja": "火打石の大鉱脈"
+        "zh": "结冰的蚊虫池塘",
+        "en": "Frozen Mosquito Pond",
+        "ja": "Frozen Mosquito Pond"
       },
       "localization": {
-        "zh": "动作：采掘",
-        "en": "Action: Mine",
-        "ja": "アクション：採掘"
+        "zh": "动作：凿个冰洞",
+        "en": "Action: Create Ice Hole",
+        "ja": "アクション：Create Ice Hole"
       }
     },
     {
@@ -5431,12 +5415,12 @@
         "CardType": 0,
         "zh": "小麦粒",
         "en": "Wheat Grains",
-        "ja": "Wheat Grains"
+        "ja": "小麦粒"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5447,12 +5431,12 @@
         "CardType": 0,
         "zh": "小麦麦芽",
         "en": "Malted Wheat",
-        "ja": "Malted Wheat"
+        "ja": "小麦麦芽"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5495,12 +5479,12 @@
         "CardType": 0,
         "zh": "巫石",
         "en": "Witchstone",
-        "ja": "Witchstone"
+        "ja": "ウィッチストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5511,28 +5495,12 @@
         "CardType": 0,
         "zh": "衰败巫石",
         "en": "Dead Witchstone",
-        "ja": "Dead Witchstone"
+        "ja": "死んだウィッチストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
-      }
-    },
-    {
-      "link": {
-        "key": "WitchstoneVein",
-        "icon": "WitchstoneVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "巫石矿脉",
-        "en": "Witchstone Vein",
-        "ja": "Witchstone Vein"
-      },
-      "localization": {
-        "zh": "动作：采掘",
-        "en": "Action: Mine",
-        "ja": "アクション：Mine"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -5543,12 +5511,12 @@
         "CardType": 2,
         "zh": "巫石矿脉",
         "en": "Witchstone Vein",
-        "ja": "Witchstone Vein"
+        "ja": "ウィッチストーン鉱脈"
       },
       "localization": {
         "zh": "动作：采掘",
         "en": "Action: Mine",
-        "ja": "アクション：Mine"
+        "ja": "アクション：採掘する"
       }
     },
     {

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "呼唤月兽精魄中(呼唤)",
   "en": "Moontouched Spirit Calling",
-  "ja": "Moontouched Spirit Calling",
-  "UniqueIDIndex": 498,
+  "ja": "月触れの精霊呼び",
+  "UniqueIDIndex": 512,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "呼唤月兽精魄中",
     "zh": "呼唤月兽精魄中",
     "en": "Moontouched Spirit Calling",
-    "ja": "Moontouched Spirit Calling"
+    "ja": "月触れの精霊呼び"
   },
   "CardImage": {
     "FileName": "Moontouched"
@@ -879,7 +879,7 @@
     "Text": "暂时将月兽精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将月兽精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds a moontouched spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds a moontouched spirit to your soul, making you both a bit more like the other."
+    "ja": "月触れの精霊を一時的に魂へ結び付ける。\\n\\n互いが少しずつ、相手に似たものへ変わっていく。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1015,7 +1019,7 @@
         "CardType": 0,
         "zh": "月兽精魄(召唤)",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit",
+        "ja": "月触れの精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1023,7 +1027,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1049,7 +1053,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1205,7 +1209,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -1331,7 +1335,7 @@
             "type": "tag",
             "zh": "心脏",
             "en": "Heart",
-            "ja": "Heart",
+            "ja": "心",
             "SubGroups": [],
             "count": 4,
             "SpoilageTime": {
@@ -1341,7 +1345,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1355,7 +1359,7 @@
                 "Text": "干燥中",
                 "zh": "干燥中",
                 "en": "Drying",
-                "ja": "Drying"
+                "ja": "乾燥中"
               },
               "OverrideIcon": {
                 "FileName": "Hammer"
@@ -1369,7 +1373,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1395,7 +1399,7 @@
                 "Text": "烹饪",
                 "zh": "烹饪",
                 "en": "Cook",
-                "ja": "Cook"
+                "ja": "料理する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1409,7 +1413,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1435,7 +1439,7 @@
                 "Text": "烹煮",
                 "zh": "烹煮",
                 "en": "Boil",
-                "ja": "Boil"
+                "ja": "煮る"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1620,14 +1624,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1635,7 +1647,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1649,7 +1661,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1663,7 +1675,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1677,7 +1689,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1752,7 +1764,7 @@
         "CardType": 0,
         "zh": "月兽精魄(召唤)",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit",
+        "ja": "月触れの精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1760,7 +1772,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1786,7 +1798,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1986,7 +1998,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -2023,7 +2035,7 @@
         "type": "stat",
         "zh": "月之本能",
         "en": "Moon Urge",
-        "ja": "Moon Urge",
+        "ja": "月の衝動",
         "max": 96,
         "min": 0
       },

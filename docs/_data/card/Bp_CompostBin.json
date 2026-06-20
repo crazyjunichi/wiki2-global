@@ -7,7 +7,7 @@
   "zh": "堆肥箱",
   "en": "Compost Bin",
   "ja": "堆肥箱",
-  "UniqueIDIndex": 366,
+  "UniqueIDIndex": 378,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -670,7 +670,7 @@
           "type": "stat",
           "zh": "药草学",
           "en": "Herbalism",
-          "ja": "Herbalism",
+          "ja": "薬草学",
           "max": 150,
           "min": 0
         },
@@ -1024,6 +1024,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1269,7 +1273,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1284,7 +1288,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1299,7 +1303,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1314,7 +1318,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1376,7 +1380,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1626,7 +1630,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -1641,7 +1645,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -1724,7 +1728,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -1942,7 +1946,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1957,7 +1961,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1972,7 +1976,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1987,7 +1991,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -2049,7 +2053,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2299,7 +2303,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -2314,7 +2318,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -2397,7 +2401,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2593,14 +2597,22 @@
   ],
   "BuildingDaytimeCost": 6,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": true,
+    "IntValue": 3
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2608,7 +2620,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2622,7 +2634,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2636,7 +2648,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2650,7 +2662,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2712,6 +2724,33 @@
       "zh": "手部动作",
       "en": "HandAction",
       "ja": "HandAction"
+    },
+    {
+      "key": "SawhorsesActionSpecial2Drops",
+      "text": "SawhorsesActionSpecial2Drops",
+      "type": "tag",
+      "count": 0,
+      "zh": "锯木特殊2掉落",
+      "en": "SawhorsesActionSpecial2Drops",
+      "ja": "SawhorsesActionSpecial2Drops"
+    },
+    {
+      "key": "ShapingActionSpecial2Drops",
+      "text": "ShapingActionSpecial2Drops",
+      "type": "tag",
+      "count": 0,
+      "zh": "成型特殊2掉落",
+      "en": "ShapingActionSpecial2Drops",
+      "ja": "ShapingActionSpecial2Drops"
+    },
+    {
+      "key": "WoodworkingAction",
+      "text": "WoodworkingAction",
+      "type": "tag",
+      "count": 0,
+      "zh": "木工行动",
+      "en": "WoodworkingAction",
+      "ja": "WoodworkingAction"
     }
   ],
   "BPRandomSingleDrop": false,
@@ -3070,7 +3109,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

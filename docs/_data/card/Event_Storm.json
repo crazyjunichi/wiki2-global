@@ -7,7 +7,7 @@
   "zh": "The wind is too strong!",
   "en": "The wind is too strong!",
   "ja": "The wind is too strong!",
-  "UniqueIDIndex": 1172,
+  "UniqueIDIndex": 1213,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [
     null,
     null,
@@ -1299,8 +1303,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1470,6 +1482,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "StormEvent_2"
@@ -1957,7 +1973,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [],
@@ -1968,7 +1987,7 @@
                 "text": "“沉重的”",
                 "icon": "",
                 "type": "tag",
-                "count": 56,
+                "count": 57,
                 "zh": "沉重的",
                 "en": "Heavy",
                 "ja": "重い",
@@ -2005,7 +2024,7 @@
                     "Text": "容器温度",
                     "zh": "容器温度",
                     "en": "Container Temperature",
-                    "ja": "Container Temperature"
+                    "ja": "容器の温度"
                   },
                   "OverrideIcon": {
                     "FileName": "Hot"
@@ -2019,7 +2038,7 @@
                     "Text": "熔炼",
                     "zh": "熔炼",
                     "en": "Smelted",
-                    "ja": "Smelted"
+                    "ja": "精錬済み"
                   },
                   "OverrideIcon": {
                     "FileName": "Cooking"
@@ -2033,7 +2052,7 @@
                     "Text": "染料",
                     "zh": "染料",
                     "en": "Dye",
-                    "ja": "Dye"
+                    "ja": "染料"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -2059,7 +2078,7 @@
                     "Text": "已赐福",
                     "zh": "已赐福",
                     "en": "Blessed",
-                    "ja": "Blessed"
+                    "ja": "加護を受けている"
                   },
                   "OverrideIcon": {
                     "FileName": "Snowflake_Old"
@@ -2073,7 +2092,7 @@
                     "Text": "金属类型",
                     "zh": "金属类型",
                     "en": "Metal Type",
-                    "ja": "Metal Type"
+                    "ja": "金属の種類"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 1000
@@ -2086,7 +2105,7 @@
                 "text": "“大的”",
                 "icon": "",
                 "type": "tag",
-                "count": 93,
+                "count": 97,
                 "zh": "大的",
                 "en": "Large",
                 "ja": "大きい",
@@ -2139,7 +2158,7 @@
                     "Text": "便便",
                     "zh": "便便",
                     "en": "Poop",
-                    "ja": "Poop"
+                    "ja": "大便"
                   },
                   "OverrideIcon": {
                     "FileName": "Content_Old"
@@ -2179,7 +2198,7 @@
                     "Text": "健康度",
                     "zh": "健康度",
                     "en": "Health",
-                    "ja": "Health"
+                    "ja": "体力"
                   },
                   "OverrideIcon": {
                     "FileName": "Health"
@@ -2475,7 +2494,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -2873,7 +2895,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [
             {
@@ -3498,7 +3523,7 @@
                   "Text": "已赐福",
                   "zh": "已赐福",
                   "en": "Blessed",
-                  "ja": "Blessed"
+                  "ja": "加護を受けている"
                 },
                 "OverrideIcon": {
                   "FileName": "Fox_Wild"

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "墨水",
   "en": "Soot Ink",
-  "ja": "Soot Ink",
-  "UniqueIDIndex": 1670,
+  "ja": "煤インク",
+  "UniqueIDIndex": 1724,
   "CardType": 9,
   "CardTags": [
     {
@@ -40,7 +40,7 @@
     "Text": "墨水",
     "zh": "墨水",
     "en": "Soot Ink",
-    "ja": "Soot Ink"
+    "ja": "煤インク"
   },
   "CardImage": {
     "FileName": "Thirst_Old"
@@ -1010,7 +1010,7 @@
         "Text": "填充",
         "zh": "填充",
         "en": "Fill",
-        "ja": "Fill"
+        "ja": "注ぐ"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1045,6 +1045,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1743,7 +1747,7 @@
             "CardType": 0,
             "zh": "羽毛笔",
             "en": "Quill",
-            "ja": "Quill",
+            "ja": "羽ペン",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1757,7 +1761,7 @@
                   "Text": "蘸满的羽毛笔",
                   "zh": "蘸满的羽毛笔",
                   "en": "Filled Quill",
-                  "ja": "Filled Quill"
+                  "ja": "インク入り羽ペン"
                 }
               }
             ],
@@ -1794,7 +1798,7 @@
                 "Text": "墨水",
                 "zh": "墨水",
                 "en": "Ink",
-                "ja": "Ink"
+                "ja": "インク"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2377,6 +2381,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2499,7 +2507,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2513,7 +2521,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -2698,7 +2706,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -2896,8 +2907,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3175,7 +3194,7 @@
         "CardType": 7,
         "zh": "墨水",
         "en": "Soot Ink",
-        "ja": "Soot Ink"
+        "ja": "煤インク"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3191,7 +3210,7 @@
         "CardType": 0,
         "zh": "小陶罐(专有)",
         "en": "Clay Jar(Pk)",
-        "ja": "Clay Jar"
+        "ja": "粘土の壺"
       },
       "localization": {
         "zh": "默认液体",

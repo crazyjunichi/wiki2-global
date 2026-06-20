@@ -7,7 +7,7 @@
   "zh": "桤木鞣液",
   "en": "Alder Tanning Liquor",
   "ja": "Alder Tanning Liquor",
-  "UniqueIDIndex": 1610,
+  "UniqueIDIndex": 1652,
   "CardType": 9,
   "CardTags": [
     {
@@ -643,6 +643,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1474,6 +1478,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1721,7 +1729,7 @@
           "CardType": 9,
           "zh": "红色染料",
           "en": "Red Dye",
-          "ja": "Red Dye",
+          "ja": "赤色の染料",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1755,7 +1763,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1783,7 +1791,7 @@
               "Text": "媒染剂",
               "zh": "媒染剂",
               "en": "Mordant",
-              "ja": "Mordant"
+              "ja": "媒染剤"
             },
             "OverrideIcon": {
               "FileName": "Urine"
@@ -2145,6 +2153,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2219,7 +2231,7 @@
               "Text": "染料",
               "zh": "染料",
               "en": "Dye",
-              "ja": "Dye"
+              "ja": "染料"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -3185,6 +3197,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3307,7 +3323,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3321,7 +3337,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -3506,7 +3522,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3933,7 +3952,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4374,7 +4396,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4801,7 +4826,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5095,7 +5123,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5293,8 +5324,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

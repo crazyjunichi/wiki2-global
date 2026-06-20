@@ -7,7 +7,7 @@
   "zh": "未烧制的小陶罐",
   "en": "Unfired Clay Jar",
   "ja": "焼いてない粘土の瓶",
-  "UniqueIDIndex": 849,
+  "UniqueIDIndex": 878,
   "CardType": 0,
   "CardTags": [
     {
@@ -40,7 +40,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -88,7 +88,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -114,7 +114,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -126,7 +126,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -140,7 +140,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -154,7 +154,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -574,6 +574,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -891,7 +895,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -905,7 +909,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1299,7 +1303,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -1413,7 +1417,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1427,7 +1431,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -2055,6 +2059,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2240,8 +2248,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

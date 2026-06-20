@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "石南沼泽",
   "en": "Heather Marshes",
-  "ja": "Heather Marshes",
-  "UniqueIDIndex": 104,
+  "ja": "ヒースの沼",
+  "UniqueIDIndex": 105,
   "CardType": 4,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -170,7 +170,7 @@
     "Text": "石南沼泽",
     "zh": "石南沼泽",
     "en": "Heather Marshes",
-    "ja": "Heather Marshes"
+    "ja": "ヒースの沼"
   },
   "CardImage": null,
   "CardBackground": null,
@@ -1040,6 +1040,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1310,8 +1314,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1443,7 +1455,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes",
+        "ja": "ヒースの沼",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -1503,7 +1515,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -1517,7 +1529,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -1531,7 +1543,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -1777,7 +1789,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -1792,7 +1804,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ],
@@ -1863,7 +1875,7 @@
             "Text": "罕见鱼类种群数量",
             "zh": "罕见鱼类种群数量",
             "en": "Uncommon Fish Population",
-            "ja": "Uncommon Fish Population"
+            "ja": "アンコモンな魚の数"
           },
           "OverrideIcon": null,
           "MaxValue": 3000
@@ -1875,7 +1887,7 @@
             "Text": "珍稀鱼类种群数量",
             "zh": "珍稀鱼类种群数量",
             "en": "Rare Fish Population",
-            "ja": "Rare Fish Population"
+            "ja": "レアな魚の数"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -1949,7 +1961,7 @@
         "CardType": 2,
         "zh": "香蒲丛",
         "en": "Cattail Patch",
-        "ja": "Cattail Patch",
+        "ja": "ガマの群生地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2007,7 +2019,7 @@
             "Text": "饱满度",
             "zh": "饱满度",
             "en": "Yield",
-            "ja": "Yield"
+            "ja": "収穫量"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -2121,7 +2133,7 @@
               "Text": "标记松树",
               "zh": "标记松树",
               "en": "Marked Pine Tree",
-              "ja": "Marked Pine Tree"
+              "ja": "印付きの松の木"
             }
           }
         ],
@@ -2184,7 +2196,7 @@
             "Text": "已标记",
             "zh": "已标记",
             "en": "Marked",
-            "ja": "Marked"
+            "ja": "印付き"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2924,12 +2936,12 @@
         "CardType": 8,
         "zh": "石南空地",
         "en": "Heather Glade",
-        "ja": "Heather Glade"
+        "ja": "ヒースの空き地"
       },
       "localization": {
         "zh": "动作：东方",
         "en": "Action: East",
-        "ja": "アクション：East"
+        "ja": "アクション：東"
       }
     },
     {
@@ -2940,12 +2952,12 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank"
+        "ja": "南の湖岸"
       },
       "localization": {
         "zh": "动作：南方",
         "en": "Action: South",
-        "ja": "アクション：South"
+        "ja": "アクション：南"
       }
     },
     {
@@ -2974,7 +2986,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2990,7 +3002,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3086,7 +3098,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3166,7 +3178,7 @@
     "CardType": 8,
     "zh": "石南沼泽",
     "en": "Heather Marshes",
-    "ja": "Heather Marshes",
+    "ja": "ヒースの沼",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {
@@ -3226,7 +3238,7 @@
         "Text": "树林",
         "zh": "树林",
         "en": "Trees",
-        "ja": "Trees"
+        "ja": "木"
       },
       "OverrideIcon": {
         "FileName": "Tree1"
@@ -3240,7 +3252,7 @@
         "Text": "过度生长",
         "zh": "过度生长",
         "en": "Overgrowth",
-        "ja": "Overgrowth"
+        "ja": "草木の繁茂 "
       },
       "OverrideIcon": {
         "FileName": "Overgrowth"
@@ -3254,7 +3266,7 @@
         "Text": "觅食",
         "zh": "觅食",
         "en": "Foraging",
-        "ja": "Foraging"
+        "ja": "資源集め"
       },
       "OverrideIcon": {
         "FileName": "SaturationBerries"

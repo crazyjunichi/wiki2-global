@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "梦醒了",
   "en": "The Dream finally Ends",
-  "ja": "The Dream finally Ends",
-  "UniqueIDIndex": 1108,
+  "ja": "ついに夢は終わる",
+  "UniqueIDIndex": 1149,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "梦醒了",
     "zh": "梦醒了",
     "en": "The Dream finally Ends",
-    "ja": "The Dream finally Ends"
+    "ja": "ついに夢は終わる"
   },
   "CardImage": {
     "FileName": "MoonMaiden"
@@ -855,7 +855,7 @@
     "Text": "你自梦中醒来，心中涌现从未体验过的柔软。\\n一种本不应属于，却被赐予你的温暖。\\n\\n森林第一次如此的静谧。\\n那些曾搅扰梦境的不安，如今已然消散。\\n\\n终于，狩猎为你带来了新生，此后你将重活于世。",
     "zh": "你自梦中醒来，心中涌现从未体验过的柔软。\\n一种本不应属于，却被赐予你的温暖。\\n\\n森林第一次如此的静谧。\\n那些曾搅扰梦境的不安，如今已然消散。\\n\\n终于，狩猎为你带来了新生，此后你将重活于世。",
     "en": "You wake with a newfound softness in your heart,\\nwith a warmth you did not think you deserved, yet was given to you regardless.\\n\\nFor the first time in longer than you can remember, the forest feels still.\\nThe restless pull that once stirred your sleep is gone.\\n\\nAt last, the hunt has given you back to the world.\\nAt last, you can live again.",
-    "ja": "You wake with a newfound softness in your heart,\nwith a warmth you did not think you deserved, yet was given to you regardless.\n\nFor the first time in longer than you can remember, the forest feels still.\nThe restless pull that once stirred your sleep is gone.\n\nAt last, the hunt has given you back to the world.\nAt last, you can live again."
+    "ja": "あなたは、胸の奥に芽生えた柔らかな温もりとともに目を覚ます。\\n自分には決して与えられないと思っていたぬくもりが、それでも確かにそこにあった。\\n\\n思い出せないほど長い時を経て、森は静かな安らぎを湛えている。\\nかつて眠りを乱していた、あの落ち着かぬ衝動も、もう消えていた。\\n\\nついに、狩りはあなたを世界へ返した。\\nようやく、あなたは再び生きていける。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1815,7 +1831,7 @@
         "type": "encounter",
         "zh": "猎人",
         "en": "Huntsman",
-        "ja": "Huntsman"
+        "ja": "ハントマン"
       },
       "localization": {
         "zh": "战斗：特殊效果2",

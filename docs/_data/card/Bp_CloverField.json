@@ -7,7 +7,7 @@
   "zh": "三叶草",
   "en": "Clover",
   "ja": "クローバー",
-  "UniqueIDIndex": 363,
+  "UniqueIDIndex": 375,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -668,7 +668,7 @@
         "CardType": 0,
         "zh": "新鲜三叶草",
         "en": "Fresh Clover",
-        "ja": "Fresh Clover",
+        "ja": "新鮮なクローバー",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -702,7 +702,7 @@
             "Text": "湿度",
             "zh": "湿度",
             "en": "Wetness",
-            "ja": "Wetness"
+            "ja": "水分量"
           },
           "OverrideIcon": {
             "FileName": "Water"
@@ -1168,7 +1168,7 @@
     "Text": "生长在橡木林隙中；对土壤要求低，因其固氮能力适宜用作土壤休耕。\\n\\n可用作垫料、动物饲料、人类食物或作为覆土作物。",
     "zh": "生长在橡木林隙中；对土壤要求低，因其固氮能力适宜用作土壤休耕。\\n\\n可用作垫料、动物饲料、人类食物或作为覆土作物。",
     "en": "Found in oak clearings; has very few needs and is ideal for letting fields rest because of its nutrient fixing capabilities.\\n\\nCan be used as bedding material, animal feed, human food or as a cover crop.",
-    "ja": "オークの森の平野で見つけられる。育てやすい上に地面の栄養を回復する効果がある。\\n\\nベッドの素材、餌、食料や被覆作物として使用できる。"
+    "ja": "オークの疎林で見つかる。必要条件が少なく、養分固定能力を持つため、畑を休ませる際の作物として適している。\\n\\n敷料、家畜飼料、人間用の食料、または被覆作物として利用できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1200,6 +1200,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1431,7 +1435,7 @@
             "CardType": 0,
             "zh": "新鲜三叶草",
             "en": "Fresh Clover",
-            "ja": "Fresh Clover",
+            "ja": "新鮮なクローバー",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1465,7 +1469,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -1715,14 +1719,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1730,7 +1742,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1744,7 +1756,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1758,7 +1770,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1772,7 +1784,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1847,7 +1859,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1875,7 +1887,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1969,7 +1981,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2236,7 +2248,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "健全度"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -2250,7 +2262,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -2264,7 +2276,7 @@
           "Text": "照料",
           "zh": "照料",
           "en": "Care",
-          "ja": "Care"
+          "ja": "手入れ"
         },
         "OverrideIcon": {
           "FileName": "Wakefulness4"

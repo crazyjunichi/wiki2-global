@@ -7,7 +7,7 @@
   "zh": "Invisible Stream",
   "en": "Invisible Stream",
   "ja": "Invisible Stream",
-  "UniqueIDIndex": 2391,
+  "UniqueIDIndex": 2461,
   "CardType": 13,
   "CardTags": [
     {
@@ -100,7 +100,7 @@
           "Text": "河流类型",
           "zh": "河流类型",
           "en": "River Type",
-          "ja": "River Type"
+          "ja": "川種別"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -193,8 +193,8 @@
         "Active": true,
         "CardStatName": {
           "DefaultText": "River Type",
-          "Text": "River Type",
-          "zh": "River Type",
+          "Text": "河流类型",
+          "zh": "河流类型",
           "en": "River Type",
           "ja": "River Type"
         },
@@ -620,6 +620,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -886,7 +890,7 @@
           "CardType": 2,
           "zh": "溪流",
           "en": "Stream",
-          "ja": "Stream",
+          "ja": "小川",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1637,6 +1641,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1822,8 +1830,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2103,7 +2119,7 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "状态触发",
@@ -2142,7 +2158,7 @@
       "localization": {
         "zh": "动作：制作粘土",
         "en": "Action: Make Clay",
-        "ja": "アクション：Make Clay"
+        "ja": "アクション：粘土を作る"
       }
     },
     {
@@ -2170,7 +2186,7 @@
       "CardType": 4,
       "zh": "潮润幽谷",
       "en": "Damp Hollow",
-      "ja": "Damp Hollow",
+      "ja": "湿った窪地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2274,7 +2290,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow",
+        "ja": "湿った窪地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2336,7 +2352,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -2350,7 +2366,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -2364,7 +2380,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -2392,7 +2408,7 @@
       "CardType": 4,
       "zh": "东部荒林",
       "en": "Eastern Wild Woods",
-      "ja": "Eastern Wild Woods",
+      "ja": "東の荒森",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2496,7 +2512,7 @@
         "CardType": 8,
         "zh": "东部荒林",
         "en": "Eastern Wild Woods",
-        "ja": "Eastern Wild Woods",
+        "ja": "東の荒森",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2556,7 +2572,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -2570,7 +2586,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -2584,7 +2600,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -2612,7 +2628,7 @@
       "CardType": 4,
       "zh": "狼嚎幽径",
       "en": "Howling Woods",
-      "ja": "Howling Woods",
+      "ja": "遠吠えの森",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2716,7 +2732,7 @@
         "CardType": 8,
         "zh": "狼嚎幽径",
         "en": "Howling Woods",
-        "ja": "Howling Woods",
+        "ja": "遠吠えの森",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2776,7 +2792,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -2790,7 +2806,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -2804,7 +2820,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -2832,7 +2848,7 @@
       "CardType": 4,
       "zh": "狼嚎隘口",
       "en": "Wolf Pass",
-      "ja": "Wolf Pass",
+      "ja": "狼の峠",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2936,7 +2952,7 @@
         "CardType": 8,
         "zh": "狼嚎隘口",
         "en": "Wolf Pass",
-        "ja": "Wolf Pass",
+        "ja": "狼の峠",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2996,7 +3012,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -3010,7 +3026,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -3024,7 +3040,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -3052,7 +3068,7 @@
       "CardType": 4,
       "zh": "狼牙谷",
       "en": "Fangvale",
-      "ja": "Fangvale",
+      "ja": "牙の谷",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -3156,7 +3172,7 @@
         "CardType": 8,
         "zh": "狼牙谷",
         "en": "Fangvale",
-        "ja": "Fangvale",
+        "ja": "牙の谷",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -3216,7 +3232,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -3230,7 +3246,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -3244,7 +3260,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

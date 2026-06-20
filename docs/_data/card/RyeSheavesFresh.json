@@ -7,7 +7,7 @@
   "zh": "新鲜的黑麦秆",
   "en": "Fresh Rye Stalks",
   "ja": "新鮮なライ麦の茎",
-  "UniqueIDIndex": 2233,
+  "UniqueIDIndex": 2293,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -54,7 +54,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -68,7 +68,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -135,7 +135,7 @@
       "text": "“喂/添加”",
       "icon": "",
       "type": "tag",
-      "count": 295,
+      "count": 299,
       "zh": "喂/添加",
       "en": "Feed",
       "ja": "餌",
@@ -371,7 +371,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -500,7 +500,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Spoilage"
@@ -514,7 +514,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -533,7 +533,7 @@
         "OverrideIcon": {
           "FileName": "Quality"
         },
-        "MaxValue": 100
+        "MaxValue": 96
       }
     }
   ],
@@ -559,7 +559,7 @@
       "Text": "湿度",
       "zh": "湿度",
       "en": "Hydration",
-      "ja": "Hydration"
+      "ja": "水分量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 288,
@@ -630,6 +630,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3900,7 +3904,7 @@
     "Text": "必须先干燥才能脱粒提取谷物。",
     "zh": "必须先干燥才能脱粒提取谷物。",
     "en": "Must be dried before it can be threshed to extract its grain.",
-    "ja": "Must be dried before it can be threshed to extract its grain."
+    "ja": "穀粒を取り出すためには、脱穀の前に乾燥させる必要がある。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -3916,7 +3920,7 @@
     "Text": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中高酸度、中低湿度和中低养分。\\n\\n<b>效果：</b>主食。",
     "zh": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中高酸度、中低湿度和中低养分。\\n\\n<b>效果：</b>主食。",
     "en": "<b>Found:</b> Bought from Traders. \\n\\n<b>Growth Needs:</b> Mid to High Acidity, Low to Mid Hydration and Low to Mid Nutrients.\\n\\n<b>Benefits:</b> Staple Food. ",
-    "ja": "<b>Found:</b> Bought from Traders. \n\n<b>Growth Needs:</b> Mid to High Acidity, Low to Mid Hydration and Low to Mid Nutrients.\n\n<b>Benefits:</b> Staple Food. "
+    "ja": "<b>生育地：</b>商人から購入。\\n\\n<b>生育条件：</b>中〜高い酸性度、低〜中程度の水分量、低〜中程度の栄養度を必要とする。\\n\\n<b>効果：</b>主食。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 75,
@@ -3932,6 +3936,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4117,8 +4125,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4419,7 +4435,7 @@
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     },
     {
@@ -4676,12 +4692,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {

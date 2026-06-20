@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "泡水亚麻茎",
   "en": "Soaking Flax Stems",
-  "ja": "Soaking Flax Stems",
-  "UniqueIDIndex": 1305,
+  "ja": "水に浸した亜麻の茎",
+  "UniqueIDIndex": 1347,
   "CardType": 2,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -134,7 +134,7 @@
     "Text": "泡水亚麻茎",
     "zh": "泡水亚麻茎",
     "en": "Soaking Flax Stems",
-    "ja": "Soaking Flax Stems"
+    "ja": "水に浸した亜麻の茎"
   },
   "CardImage": {
     "FileName": "Meadowgrass_Item"
@@ -932,7 +932,7 @@
       "Text": "湿度",
       "zh": "湿度",
       "en": "Wetness",
-      "ja": "Wetness"
+      "ja": "水分量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 40,
@@ -1899,7 +1899,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 40,
@@ -2861,7 +2861,7 @@
     "Text": "吸收水分来提高品质。",
     "zh": "吸收水分来提高品质。",
     "en": "Soaking up on water to increase their quality.",
-    "ja": "Soaking up on water to increase their quality."
+    "ja": "質を上げるために水に浸す。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -2877,7 +2877,7 @@
     "Text": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中低酸度、中等湿度和养分、中高土质。\\n\\n<b>用途：</b>纺织品、食品、调味品。",
     "zh": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中低酸度、中等湿度和养分、中高土质。\\n\\n<b>用途：</b>纺织品、食品、调味品。",
     "en": "<b>Found:</b> Bought from Traders. \\n\\n<b>Growth Needs:</b> Low to Mid Acidity, Mid Hydration,  Mid Nutrients and Mid to High Structure.\\n\\n<b>Benefits:</b> Textiles, Food, Seasoning. ",
-    "ja": "<b>Found:</b> Bought from Traders. \n\n<b>Growth Needs:</b> Low to Mid Acidity, Mid Hydration,  Mid Nutrients and Mid to High Structure.\n\n<b>Benefits:</b> Textiles, Food, Seasoning. "
+    "ja": "<b>入手：</b>交易商から購入。\\n\\n<b>生育条件：</b>低〜中程度の酸性度、中程度の水分量、中程度の養分量、中〜高程度の土壌構造を必要とする。\\n\\n<b>用途：</b>織物素材、食料、香辛料。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 100,
@@ -2893,6 +2893,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3078,8 +3082,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3214,7 +3226,7 @@
         "Text": "拿起",
         "zh": "拿起",
         "en": "Pick up",
-        "ja": "Pick up"
+        "ja": "取る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3249,6 +3261,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3496,7 +3512,7 @@
           "CardType": 0,
           "zh": "亚麻茎",
           "en": "Flax Stems",
-          "ja": "Flax Stems",
+          "ja": "亜麻の茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -3528,7 +3544,7 @@
               "Text": "湿度",
               "zh": "湿度",
               "en": "Wetness",
-              "ja": "Wetness"
+              "ja": "水分量"
             },
             "OverrideIcon": {
               "FileName": "Water"
@@ -3568,7 +3584,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3889,28 +3905,12 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
-      },
-      "localization": {
-        "zh": "动作：泡亚麻茎",
-        "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
       },
       "localization": {
         "zh": "动作：泡亚麻茎",
@@ -3931,7 +3931,7 @@
       "localization": {
         "zh": "动作：泡亚麻茎",
         "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
+        "ja": "アクション：亜麻の茎を浸す"
       }
     },
     {
@@ -3956,7 +3956,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -3971,7 +3971,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -4024,7 +4024,7 @@
       "localization": {
         "zh": "动作：泡亚麻茎",
         "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
+        "ja": "アクション：亜麻の茎を浸す"
       }
     },
     {
@@ -4097,7 +4097,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4112,7 +4112,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -4120,7 +4120,7 @@
       "localization": {
         "zh": "动作：泡亚麻茎",
         "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
+        "ja": "アクション：亜麻の茎を浸す"
       }
     },
     {
@@ -4145,7 +4145,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4160,7 +4160,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -4168,7 +4168,7 @@
       "localization": {
         "zh": "动作：泡亚麻茎",
         "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
+        "ja": "アクション：亜麻の茎を浸す"
       }
     },
     {
@@ -4269,18 +4269,34 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：泡亚麻茎",
+        "en": "Action: Soak Flax Stems",
+        "ja": "アクション：Soak Flax Stems"
+      }
+    },
+    {
+      "link": {
         "key": "StreamQEE",
         "icon": "RiverShore",
         "type": "card",
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：泡亚麻茎",
         "en": "Action: Soak Flax Stems",
-        "ja": "アクション：Soak Flax Stems"
+        "ja": "アクション：亜麻の茎を浸す"
       }
     }
   ],

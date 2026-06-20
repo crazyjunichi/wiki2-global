@@ -11,11 +11,11 @@
   "CardType": 4,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -990,6 +990,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1177,8 +1181,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1404,7 +1416,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -1977,6 +1989,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1992,7 +2008,7 @@
               "Text": "饱满度",
               "zh": "饱满度",
               "en": "Yield",
-              "ja": "Yield"
+              "ja": "収穫量"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -2020,7 +2036,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2127,7 +2143,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2765,7 +2781,7 @@
                       "Text": "烟雾",
                       "zh": "烟雾",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -2827,6 +2843,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3335,7 +3352,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3351,7 +3368,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3447,7 +3464,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3621,7 +3638,7 @@
         "Text": "烟雾",
         "zh": "烟雾",
         "en": "Smoke",
-        "ja": "Smoke"
+        "ja": "煙"
       },
       "OverrideIcon": {
         "FileName": "Ash"

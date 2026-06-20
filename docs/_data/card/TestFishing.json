@@ -7,7 +7,7 @@
   "zh": "Pond",
   "en": "Pond",
   "ja": "Pond",
-  "UniqueIDIndex": 2449,
+  "UniqueIDIndex": 2519,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -424,6 +424,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -973,7 +977,7 @@
                     "Text": "毛皮",
                     "zh": "毛皮",
                     "en": "Fur",
-                    "ja": "Fur"
+                    "ja": "毛皮"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -999,7 +1003,7 @@
                     "Text": "柔软度",
                     "zh": "柔软度",
                     "en": "Softness",
-                    "ja": "Softness"
+                    "ja": "柔らかさ"
                   },
                   "OverrideIcon": {
                     "FileName": "Brain"
@@ -1072,6 +1076,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1450,6 +1455,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1701,7 +1707,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [
             {
@@ -2998,6 +3007,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3183,8 +3196,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

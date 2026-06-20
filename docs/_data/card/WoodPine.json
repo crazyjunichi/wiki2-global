@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "木材",
   "en": "Wood",
-  "ja": "Wood",
-  "UniqueIDIndex": 2746,
+  "ja": "木",
+  "UniqueIDIndex": 2827,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "木材",
     "zh": "木材",
     "en": "Wood",
-    "ja": "Wood"
+    "ja": "木"
   },
   "CardImage": {
     "FileName": "Wood"
@@ -76,7 +76,7 @@
       "Text": "香气",
       "zh": "香气",
       "en": "Fragrance",
-      "ja": "Fragrance"
+      "ja": "香り"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 10000,
@@ -145,6 +145,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -528,7 +532,7 @@
       "Text": "燃料",
       "zh": "燃料",
       "en": "Fuel",
-      "ja": "Fuel"
+      "ja": "燃料"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 10000,
@@ -661,7 +665,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 96,
@@ -804,7 +808,7 @@
         "Text": "变成普通木材",
         "zh": "变成普通木材",
         "en": "trasnform into a normal wood",
-        "ja": "trasnform into a normal wood"
+        "ja": "通常の木材に変換する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -839,6 +843,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1886,7 +1894,7 @@
     "Text": "一种硬木，适合制作优质工具和建筑。也可用作燃料。",
     "zh": "一种硬木，适合制作优质工具和建筑。也可用作燃料。",
     "en": "A hardwood, ideal for quality tools and construction. Useful as fuel too.",
-    "ja": "A hardwood, ideal for quality tools and construction. Useful as fuel too."
+    "ja": "高品質な道具や建築に適した硬い木材。燃料としても有用。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [
@@ -1934,7 +1942,14 @@
         "Text": "橡木",
         "zh": "橡木",
         "en": "Oak Wood",
-        "ja": "Oak Wood"
+        "ja": "オークの木材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1987,7 +2002,14 @@
         "Text": "松木",
         "zh": "松木",
         "en": "Pine Wood",
-        "ja": "Pine Wood"
+        "ja": "松の木材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -2040,7 +2062,14 @@
         "Text": "白桦木",
         "zh": "白桦木",
         "en": "Birch Wood",
-        "ja": "Birch Wood"
+        "ja": "シラカバの木材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -2093,7 +2122,14 @@
         "Text": "柳木",
         "zh": "柳木",
         "en": "Willow Wood",
-        "ja": "Willow Wood"
+        "ja": "ヤナギの木材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -2196,6 +2232,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2381,8 +2421,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2653,666 +2701,7 @@
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],
-  "existEnvCards": [
-    {
-      "key": "Env_GrovePine_DeerGrove",
-      "icon": "PineWoods1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "鹿鸣松林",
-      "en": "Deer Grove",
-      "ja": "鹿の林",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "GrovePine_DeerGrove",
-        "icon": "PineWoods1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "鹿鸣松林",
-        "en": "Deer Grove",
-        "ja": "鹿の林",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationVegetables_Old"
-          },
-          "MaxValue": 576
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 43200
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "木"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "茂み"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    },
-    {
-      "key": "Env_GrovePine_OldHollow",
-      "icon": "DeathHollow",
-      "type": "card",
-      "CardType": 4,
-      "zh": "古旧寂谷",
-      "en": "Old Hollow",
-      "ja": "Old Hollow",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "GrovePine_OldHollow",
-        "icon": "DeathHollow",
-        "type": "card",
-        "CardType": 8,
-        "zh": "古旧寂谷",
-        "en": "Old Hollow",
-        "ja": "Old Hollow",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationVegetables_Old"
-          },
-          "MaxValue": 576
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 43200
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "Trees"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "Overgrowth"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "Foraging"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    },
-    {
-      "key": "Env_River_GrovePine_SouthernLakeBank",
-      "icon": "Lake1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "南部湖岸",
-      "en": "Southern Lake Bank",
-      "ja": "Southern Lake Bank",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "River_GrovePine_SouthernLakeBank",
-        "icon": "Lake1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "南部湖岸",
-        "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 288
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "Trees"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "Overgrowth"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "Foraging"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    }
-  ],
+  "existEnvCards": [],
   "containers": [],
   "tradingValueRange": {
     "x": 0,

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "熊精魄(召唤失败)",
   "en": "Bear Spirit",
-  "ja": "Bear Spirit",
-  "UniqueIDIndex": 1003,
+  "ja": "熊の精霊",
+  "UniqueIDIndex": 1033,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "熊精魄",
     "zh": "熊精魄",
     "en": "Bear Spirit",
-    "ja": "Bear Spirit"
+    "ja": "熊の精霊"
   },
   "CardImage": {
     "FileName": "Bear_Wild"
@@ -855,7 +855,7 @@
     "Text": "精魄不为所动。",
     "zh": "精魄不为所动。",
     "en": "Spirit is not impressed. ",
-    "ja": "Spirit is not impressed. "
+    "ja": "精霊は気に入っていない。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1597,7 +1613,7 @@
                 "CardType": 0,
                 "zh": "熊咬伤",
                 "en": "Bear Bite",
-                "ja": "Bear Bite",
+                "ja": "熊による咬傷",
                 "SpoilageTime": {
                   "Active": true,
                   "CardStatName": {
@@ -1605,7 +1621,7 @@
                     "Text": "治愈",
                     "zh": "治愈",
                     "en": "Recovery",
-                    "ja": "Recovery"
+                    "ja": "回復"
                   },
                   "OverrideIcon": {
                     "FileName": "Health"
@@ -1619,7 +1635,7 @@
                     "Text": "感染",
                     "zh": "感染",
                     "en": "Infection",
-                    "ja": "Infection"
+                    "ja": "感染"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -1633,7 +1649,7 @@
                     "Text": "疼痛",
                     "zh": "疼痛",
                     "en": "Pain",
-                    "ja": "Pain"
+                    "ja": "痛み"
                   },
                   "OverrideIcon": {
                     "FileName": "Pain"
@@ -1647,7 +1663,7 @@
                     "Text": "正在流血",
                     "zh": "正在流血",
                     "en": "Bleeding",
-                    "ja": "Bleeding"
+                    "ja": "出血中"
                   },
                   "OverrideIcon": {
                     "FileName": "Blood"
@@ -1661,7 +1677,7 @@
                     "Text": "治愈系数",
                     "zh": "治愈系数",
                     "en": "Healing Factor",
-                    "ja": "Healing Factor"
+                    "ja": "回復要素"
                   },
                   "OverrideIcon": {
                     "FileName": "Health"
@@ -1675,7 +1691,7 @@
                     "Text": "消毒系数",
                     "zh": "消毒系数",
                     "en": "Disinfectant Factor",
-                    "ja": "Disinfectant Factor"
+                    "ja": "消毒要素"
                   },
                   "OverrideIcon": {
                     "FileName": "ShieldCross"
@@ -1689,7 +1705,7 @@
                     "Text": "镇痛系数",
                     "zh": "镇痛系数",
                     "en": "Analgesic Factor",
-                    "ja": "Analgesic Factor"
+                    "ja": "鎮痛要素"
                   },
                   "OverrideIcon": {
                     "FileName": "Pain"
@@ -1703,7 +1719,7 @@
                     "Text": "凝血系数",
                     "zh": "凝血系数",
                     "en": "Coagulant Factor",
-                    "ja": "Coagulant Factor"
+                    "ja": "血液凝固要素"
                   },
                   "OverrideIcon": {
                     "FileName": "Blood"
@@ -1764,6 +1780,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2142,12 +2159,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "招霊の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       }
     }
   ],

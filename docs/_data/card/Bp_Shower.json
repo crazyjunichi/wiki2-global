@@ -7,7 +7,7 @@
   "zh": "Shower",
   "en": "Shower",
   "ja": "Shower",
-  "UniqueIDIndex": 577,
+  "UniqueIDIndex": 593,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1025,6 +1025,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1536,7 +1540,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1551,7 +1555,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1566,7 +1570,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1581,7 +1585,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1643,7 +1647,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2441,14 +2445,22 @@
   ],
   "BuildingDaytimeCost": 3,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2456,7 +2468,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2470,7 +2482,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2484,7 +2496,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2498,7 +2510,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"

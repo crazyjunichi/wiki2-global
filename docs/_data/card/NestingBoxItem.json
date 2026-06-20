@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "巢盒",
   "en": "Nesting Box",
-  "ja": "Nesting Box",
-  "UniqueIDIndex": 1869,
+  "ja": "巣箱",
+  "UniqueIDIndex": 1925,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "巢盒",
     "zh": "巢盒",
     "en": "Nesting Box",
-    "ja": "Nesting Box"
+    "ja": "巣箱"
   },
   "CardImage": {
     "FileName": "Nestbox"
@@ -856,7 +856,7 @@
               "Text": "烹煮",
               "zh": "烹煮",
               "en": "Boil",
-              "ja": "Boil"
+              "ja": "煮沸する"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1141,6 +1141,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1326,8 +1330,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1462,7 +1474,7 @@
         "Text": "放置",
         "zh": "放置",
         "en": "Place",
-        "ja": "Place"
+        "ja": "置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1497,6 +1509,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1992,7 +2008,7 @@
         "Text": "拆解",
         "zh": "拆解",
         "en": "Dismantle",
-        "ja": "Dismantle"
+        "ja": "解体する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2027,6 +2043,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2395,7 +2415,7 @@
                       "Text": "橡木板",
                       "zh": "橡木板",
                       "en": "Oak Plank",
-                      "ja": "Oak Plank"
+                      "ja": "オークの板材"
                     }
                   },
                   {
@@ -2410,7 +2430,7 @@
                       "Text": "松木板",
                       "zh": "松木板",
                       "en": "Pine Plank",
-                      "ja": "Pine Plank"
+                      "ja": "松の板材"
                     }
                   },
                   {
@@ -2425,7 +2445,7 @@
                       "Text": "桦木板",
                       "zh": "桦木板",
                       "en": "Birch Plank",
-                      "ja": "Birch Plank"
+                      "ja": "白樺の板材"
                     }
                   },
                   {
@@ -2440,7 +2460,7 @@
                       "Text": "柳木板",
                       "zh": "柳木板",
                       "en": "Willow Plank",
-                      "ja": "Willow Plank"
+                      "ja": "柳の板材"
                     }
                   },
                   {
@@ -2502,7 +2522,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -2611,6 +2631,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2994,7 +3015,7 @@
       "localization": {
         "zh": "动作：采集",
         "en": "Action: Pick Up",
-        "ja": "アクション：Pick Up"
+        "ja": "アクション：取る"
       }
     }
   ],

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "新阁楼",
   "en": "New Attic",
-  "ja": "New Attic",
-  "UniqueIDIndex": 1481,
+  "ja": "屋根裏を増設",
+  "UniqueIDIndex": 1523,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "新阁楼",
     "zh": "新阁楼",
     "en": "New Attic",
-    "ja": "New Attic"
+    "ja": "屋根裏を増設"
   },
   "CardImage": {
     "FileName": "Attic_Room"
@@ -789,7 +789,7 @@
             "Text": "干燥度",
             "zh": "干燥度",
             "en": "Dryness",
-            "ja": "Dryness"
+            "ja": "乾燥度"
           },
           "OverrideIcon": {
             "FileName": "Drying"
@@ -1115,7 +1115,7 @@
     "Text": "增加一个额外的阁楼。",
     "zh": "增加一个额外的阁楼。",
     "en": "Adds an additional attic room. ",
-    "ja": "Adds an additional attic room. "
+    "ja": "屋根裏部屋を増設する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1147,6 +1147,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1499,7 +1503,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1751,7 +1755,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1766,7 +1770,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1781,7 +1785,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1796,7 +1800,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1858,7 +1862,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2089,14 +2093,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_SharpAxe",
-            "text": "“锋利的斧”",
+            "key": "GpTag_SharpShapingTool",
+            "text": "“塑形工具”",
             "type": "tag",
-            "zh": "锋利的斧",
-            "en": "Sharp Axe",
-            "ja": "鋭い斧",
+            "zh": "塑形工具",
+            "en": "Shaping Tool",
+            "ja": "Shaping Tool",
             "SubGroups": [],
-            "count": 2,
+            "count": 3,
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -2104,7 +2108,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2132,7 +2136,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2144,7 +2148,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2168,7 +2172,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2182,7 +2186,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2196,7 +2200,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2381,7 +2385,7 @@
             "type": "tag",
             "zh": "锋利的切割工具",
             "en": "Sharp Cutting Tool",
-            "ja": "Sharp Cutting Tool",
+            "ja": "鋭利な切断工具",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -2391,7 +2395,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2419,7 +2423,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2431,7 +2435,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2455,7 +2459,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2469,7 +2473,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2483,7 +2487,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2668,7 +2672,7 @@
             "type": "tag",
             "zh": "锤击工具(通用)",
             "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "ja": "打撃工具",
             "SubGroups": [],
             "count": 27,
             "SpoilageTime": {
@@ -2678,7 +2682,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2706,7 +2710,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2718,7 +2722,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2742,7 +2746,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2756,7 +2760,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2770,7 +2774,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3092,7 +3096,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -3344,7 +3348,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -3359,7 +3363,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -3374,7 +3378,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -3389,7 +3393,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -3451,7 +3455,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -3682,14 +3686,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_SharpAxe",
-            "text": "“锋利的斧”",
+            "key": "GpTag_SharpShapingTool",
+            "text": "“塑形工具”",
             "type": "tag",
-            "zh": "锋利的斧",
-            "en": "Sharp Axe",
-            "ja": "鋭い斧",
+            "zh": "塑形工具",
+            "en": "Shaping Tool",
+            "ja": "Shaping Tool",
             "SubGroups": [],
-            "count": 2,
+            "count": 3,
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -3697,7 +3701,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3725,7 +3729,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3737,7 +3741,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3761,7 +3765,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3775,7 +3779,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3789,7 +3793,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3974,7 +3978,7 @@
             "type": "tag",
             "zh": "锋利的切割工具",
             "en": "Sharp Cutting Tool",
-            "ja": "Sharp Cutting Tool",
+            "ja": "鋭利な切断工具",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -3984,7 +3988,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -4012,7 +4016,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4024,7 +4028,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4048,7 +4052,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4062,7 +4066,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4076,7 +4080,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4261,7 +4265,7 @@
             "type": "tag",
             "zh": "锤击工具(通用)",
             "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "ja": "打撃工具",
             "SubGroups": [],
             "count": 27,
             "SpoilageTime": {
@@ -4271,7 +4275,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -4299,7 +4303,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4311,7 +4315,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4335,7 +4339,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4349,7 +4353,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4363,7 +4367,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4578,7 +4582,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -4593,7 +4597,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -4608,7 +4612,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -4623,7 +4627,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -4685,7 +4689,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -4992,8 +4996,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -5044,7 +5048,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -5557,14 +5561,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_SharpAxe",
-            "text": "“锋利的斧”",
+            "key": "GpTag_SharpShapingTool",
+            "text": "“塑形工具”",
             "type": "tag",
-            "zh": "锋利的斧",
-            "en": "Sharp Axe",
-            "ja": "鋭い斧",
+            "zh": "塑形工具",
+            "en": "Shaping Tool",
+            "ja": "Shaping Tool",
             "SubGroups": [],
-            "count": 2,
+            "count": 3,
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -5572,7 +5576,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -5600,7 +5604,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -5612,7 +5616,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5636,7 +5640,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5650,7 +5654,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5664,7 +5668,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5849,7 +5853,7 @@
             "type": "tag",
             "zh": "刨削工具",
             "en": "Shaving Tool",
-            "ja": "Shaving Tool",
+            "ja": "削り加工道具",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -5859,7 +5863,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -5887,7 +5891,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -5899,7 +5903,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5923,7 +5927,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5937,7 +5941,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5951,7 +5955,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -6136,7 +6140,7 @@
             "type": "tag",
             "zh": "锤击工具(通用)",
             "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "ja": "打撃工具",
             "SubGroups": [],
             "count": 27,
             "SpoilageTime": {
@@ -6146,7 +6150,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -6174,7 +6178,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -6186,7 +6190,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -6210,7 +6214,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -6224,7 +6228,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -6238,7 +6242,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -6440,9 +6444,134 @@
   ],
   "BuildingDaytimeCost": 12,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": true,
+    "IntValue": 6
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
+    {
+      "key": "HandAction",
+      "text": "HandAction",
+      "type": "tag",
+      "count": 1460,
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗物"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 180
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Temperature",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Cook",
+          "Text": "烹饪",
+          "zh": "烹饪",
+          "en": "Cook",
+          "ja": "焼く"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "耐久",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Spoilage"
+        },
+        "MaxValue": 46080
+      },
+      "zh": "手部动作",
+      "en": "HandAction",
+      "ja": "HandAction"
+    },
     {
       "key": "SawhorsesActionSpecial2Drops",
       "text": "SawhorsesActionSpecial2Drops",
@@ -6451,6 +6580,24 @@
       "zh": "锯木特殊2掉落",
       "en": "SawhorsesActionSpecial2Drops",
       "ja": "SawhorsesActionSpecial2Drops"
+    },
+    {
+      "key": "ShapingActionSpecial2Drops",
+      "text": "ShapingActionSpecial2Drops",
+      "type": "tag",
+      "count": 0,
+      "zh": "成型特殊2掉落",
+      "en": "ShapingActionSpecial2Drops",
+      "ja": "ShapingActionSpecial2Drops"
+    },
+    {
+      "key": "WoodworkingAction",
+      "text": "WoodworkingAction",
+      "type": "tag",
+      "count": 0,
+      "zh": "木工行动",
+      "en": "WoodworkingAction",
+      "ja": "WoodworkingAction"
     }
   ],
   "BPRandomSingleDrop": false,
@@ -6464,7 +6611,7 @@
         "CardType": 4,
         "zh": "阁楼",
         "en": "Attic",
-        "ja": "Attic",
+        "ja": "屋根裏",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -6568,7 +6715,7 @@
           "CardType": 8,
           "zh": "阁楼",
           "en": "Attic",
-          "ja": "Attic",
+          "ja": "屋根裏",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -6576,7 +6723,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -6614,7 +6761,7 @@
               "Text": "亲和度",
               "zh": "亲和度",
               "en": "Affinity",
-              "ja": "Affinity"
+              "ja": "親和性"
             },
             "OverrideIcon": null,
             "MaxValue": 10000
@@ -7143,7 +7290,7 @@
     "CardType": 2,
     "zh": "楼梯（下）",
     "en": "Stairs (Down)",
-    "ja": "Stairs (Down)",
+    "ja": "階段（下り）",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {

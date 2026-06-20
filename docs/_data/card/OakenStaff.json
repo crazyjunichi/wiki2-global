@@ -7,7 +7,7 @@
   "zh": "橡木杖",
   "en": "Oaken Staff",
   "ja": "オークの杖",
-  "UniqueIDIndex": 2004,
+  "UniqueIDIndex": 2064,
   "CardType": 0,
   "CardTags": [
     {
@@ -87,7 +87,7 @@
           "CardType": 7,
           "zh": "唤醒仪式",
           "en": "Awakening Ritual",
-          "ja": "Awakening Ritual"
+          "ja": "覚醒の儀式"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -464,7 +464,7 @@
         "text": "“精魄液体”",
         "icon": "",
         "type": "tag",
-        "count": 30,
+        "count": 32,
         "zh": "精魄液体",
         "en": "Spirit Liquid",
         "ja": "精霊水"
@@ -1019,7 +1019,7 @@
     "Text": "一种帮助施法的木制工具。也可作手杖使用。",
     "zh": "一种帮助施法的木制工具。也可作手杖使用。",
     "en": "A wooden implement to help with the casting of spells.\\nDoubles as a walking staff.",
-    "ja": "A wooden implement to help with the casting of spells.\nDoubles as a walking staff."
+    "ja": "呪文を唱える際に役立つ木製の道具。\\n歩行杖としても使用可能。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1051,6 +1051,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1333,7 +1337,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1569,8 +1576,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1866,7 +1881,7 @@
         "CardType": 7,
         "zh": "唤醒仪式",
         "en": "Awakening Ritual",
-        "ja": "Awakening Ritual"
+        "ja": "覚醒の儀式"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -1882,7 +1897,7 @@
         "CardType": 7,
         "zh": "绿法杖袋",
         "en": "Green Ward Pouch",
-        "ja": "緑色の革ポーチ"
+        "ja": "緑色の革小袋"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -1930,7 +1945,7 @@
         "CardType": 9,
         "zh": "熊精魄",
         "en": "Bear Spirit",
-        "ja": "Bear Spirit"
+        "ja": "熊の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -1946,7 +1961,39 @@
         "CardType": 9,
         "zh": "熊精魄",
         "en": "Bear Spirit",
-        "ja": "Bear Spirit"
+        "ja": "熊の精霊"
+      },
+      "localization": {
+        "zh": "被动效果：液体速率-1：精神专注-始终",
+        "en": "Passive Effect：Liquid Rate -1: tag_SpiritFocus - always",
+        "ja": "パッシブ効果：液体速度 -1：tag_SpiritFocus - 常時"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritBeaver",
+        "icon": "Beaver_Wild",
+        "type": "card",
+        "CardType": 9,
+        "zh": "河狸精魄",
+        "en": "Beaver Spirit",
+        "ja": "Beaver Spirit"
+      },
+      "localization": {
+        "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
+        "en": "Passive Effect：Liquid Rate -100 : tag_SpiritFocus - when low Mind State",
+        "ja": "パッシブ効果：液体速度 -100：tag_SpiritFocus - 心の状態が低い時"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritBeaver",
+        "icon": "Beaver_Wild",
+        "type": "card",
+        "CardType": 9,
+        "zh": "河狸精魄",
+        "en": "Beaver Spirit",
+        "ja": "Beaver Spirit"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2250,7 +2297,7 @@
         "CardType": 9,
         "zh": "青蛙精魄",
         "en": "Frog Spirit",
-        "ja": "Frog Spirit"
+        "ja": "カエルの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2266,7 +2313,7 @@
         "CardType": 9,
         "zh": "青蛙精魄",
         "en": "Frog Spirit",
-        "ja": "Frog Spirit"
+        "ja": "カエルの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2282,7 +2329,7 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2298,7 +2345,7 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2314,7 +2361,7 @@
         "CardType": 9,
         "zh": "野兔精魄",
         "en": "Hare Spirit",
-        "ja": "Hare Spirit"
+        "ja": "ノウサギの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2330,7 +2377,39 @@
         "CardType": 9,
         "zh": "野兔精魄",
         "en": "Hare Spirit",
-        "ja": "Hare Spirit"
+        "ja": "ノウサギの精霊"
+      },
+      "localization": {
+        "zh": "被动效果：液体速率-1：精神专注-始终",
+        "en": "Passive Effect：Liquid Rate -1: tag_SpiritFocus - always",
+        "ja": "パッシブ効果：液体速度 -1：tag_SpiritFocus - 常時"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritHummingWidow",
+        "icon": "Blood",
+        "type": "card",
+        "CardType": 9,
+        "zh": "嗡鸣寡妇",
+        "en": "Humming Widow",
+        "ja": "Humming Widow"
+      },
+      "localization": {
+        "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
+        "en": "Passive Effect：Liquid Rate -100 : tag_SpiritFocus - when low Mind State",
+        "ja": "パッシブ効果：液体速度 -100：tag_SpiritFocus - 心の状態が低い時"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritHummingWidow",
+        "icon": "Blood",
+        "type": "card",
+        "CardType": 9,
+        "zh": "嗡鸣寡妇",
+        "en": "Humming Widow",
+        "ja": "Humming Widow"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2346,7 +2425,7 @@
         "CardType": 9,
         "zh": "月精魄",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2362,7 +2441,7 @@
         "CardType": 9,
         "zh": "月精魄",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2378,7 +2457,7 @@
         "CardType": 9,
         "zh": "月女精魄",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2394,7 +2473,7 @@
         "CardType": 9,
         "zh": "月女精魄",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2410,7 +2489,7 @@
         "CardType": 9,
         "zh": "月兽精魄",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2426,7 +2505,7 @@
         "CardType": 9,
         "zh": "月兽精魄",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2442,7 +2521,7 @@
         "CardType": 9,
         "zh": "老鼠精魄",
         "en": "Mouse Spirit",
-        "ja": "Mouse Spirit"
+        "ja": "ネズミの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2458,7 +2537,7 @@
         "CardType": 9,
         "zh": "老鼠精魄",
         "en": "Mouse Spirit",
-        "ja": "Mouse Spirit"
+        "ja": "ネズミの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2474,7 +2553,7 @@
         "CardType": 9,
         "zh": "灰山鹑精魄",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2490,7 +2569,7 @@
         "CardType": 9,
         "zh": "灰山鹑精魄",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2506,7 +2585,7 @@
         "CardType": 9,
         "zh": "鲈鱼精魄",
         "en": "Perch Spirit",
-        "ja": "Perch Spirit"
+        "ja": "パーチの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2522,7 +2601,7 @@
         "CardType": 9,
         "zh": "鲈鱼精魄",
         "en": "Perch Spirit",
-        "ja": "Perch Spirit"
+        "ja": "パーチの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2538,7 +2617,7 @@
         "CardType": 9,
         "zh": "狗鱼精魄",
         "en": "Pike Spirit",
-        "ja": "Pike Spirit"
+        "ja": "カワカマスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2554,7 +2633,7 @@
         "CardType": 9,
         "zh": "狗鱼精魄",
         "en": "Pike Spirit",
-        "ja": "Pike Spirit"
+        "ja": "カワカマスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2570,7 +2649,7 @@
         "CardType": 9,
         "zh": "原初之狼精魄",
         "en": "Primeval Wolf Spirit",
-        "ja": "Primeval Wolf Spirit"
+        "ja": "太古オオカミの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2586,7 +2665,7 @@
         "CardType": 9,
         "zh": "原初之狼精魄",
         "en": "Primeval Wolf Spirit",
-        "ja": "Primeval Wolf Spirit"
+        "ja": "太古オオカミの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2602,7 +2681,7 @@
         "CardType": 9,
         "zh": "松鼠精魄",
         "en": "Squirrel Spirit",
-        "ja": "Squirrel Spirit"
+        "ja": "リスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2618,7 +2697,7 @@
         "CardType": 9,
         "zh": "松鼠精魄",
         "en": "Squirrel Spirit",
-        "ja": "Squirrel Spirit"
+        "ja": "リスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2634,7 +2713,7 @@
         "CardType": 9,
         "zh": "鲟鱼精魄",
         "en": "Sturgeon Spirit",
-        "ja": "Sturgeon Spirit"
+        "ja": "チョウザメの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2650,7 +2729,7 @@
         "CardType": 9,
         "zh": "鲟鱼精魄",
         "en": "Sturgeon Spirit",
-        "ja": "Sturgeon Spirit"
+        "ja": "チョウザメの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2666,7 +2745,7 @@
         "CardType": 9,
         "zh": "鳟鱼精魄",
         "en": "Trout Spirit",
-        "ja": "Trout Spirit"
+        "ja": "マスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2682,7 +2761,7 @@
         "CardType": 9,
         "zh": "鳟鱼精魄",
         "en": "Trout Spirit",
-        "ja": "Trout Spirit"
+        "ja": "マスの精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2698,7 +2777,7 @@
         "CardType": 9,
         "zh": "虚空之眼",
         "en": "Void Eye",
-        "ja": "Void Eye"
+        "ja": "虚無の瞳"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2714,7 +2793,7 @@
         "CardType": 9,
         "zh": "虚空之眼",
         "en": "Void Eye",
-        "ja": "Void Eye"
+        "ja": "虚無の瞳"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",
@@ -2762,7 +2841,7 @@
         "CardType": 9,
         "zh": "韦石精魄",
         "en": "West Stone Spirit",
-        "ja": "West Stone Spirit"
+        "ja": "西石の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-100：精神集中-当心智状态低时",
@@ -2778,7 +2857,7 @@
         "CardType": 9,
         "zh": "韦石精魄",
         "en": "West Stone Spirit",
-        "ja": "West Stone Spirit"
+        "ja": "西石の精霊"
       },
       "localization": {
         "zh": "被动效果：液体速率-1：精神专注-始终",

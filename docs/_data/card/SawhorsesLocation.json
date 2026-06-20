@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "锯木架",
   "en": "Sawhorses",
-  "ja": "Sawhorses",
-  "UniqueIDIndex": 2245,
+  "ja": "木馬台",
+  "UniqueIDIndex": 2304,
   "CardType": 2,
   "CardTags": [
     {
-      "key": "tag_FloodUnsafe",
+      "key": "NOT_USED_tag_FloodUnsafe",
       "text": "“被洪水摧毁”",
       "icon": "",
       "type": "tag",
-      "count": 20,
+      "count": 22,
       "zh": "被洪水摧毁",
       "en": "Destroyed by Floods",
       "ja": "洪水によって破壊された",
@@ -96,7 +96,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -110,7 +110,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Pike"
@@ -136,7 +136,7 @@
     "Text": "锯木架",
     "zh": "锯木架",
     "en": "Sawhorses",
-    "ja": "Sawhorses"
+    "ja": "木馬台"
   },
   "CardImage": {
     "FileName": "Sawhorses"
@@ -976,7 +976,7 @@
     "Text": "一对结实的支架，用于在切割时固定木材。可加快木板生产和木结构施工速度。可加快木板生产和木结构建造。",
     "zh": "一对结实的支架，用于在切割时固定木材。可加快木板生产和木结构施工速度。可加快木板生产和木结构建造。",
     "en": "A pair of sturdy stands for holding wood steady while cutting. Speeds up plank production and wooden construction.",
-    "ja": "A pair of sturdy stands for holding wood steady while cutting. Speeds up plank production and wooden construction."
+    "ja": "木を固定して切断するための頑丈な作業台。板材加工や建築作業を早める。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1008,6 +1008,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1290,7 +1294,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1622,7 +1629,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1632,7 +1642,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -1858,8 +1868,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1994,7 +2012,7 @@
         "Text": "拿起",
         "zh": "拿起",
         "en": "Pick up",
-        "ja": "Pick up"
+        "ja": "取る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2029,6 +2047,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2276,7 +2298,7 @@
           "CardType": 0,
           "zh": "锯木架",
           "en": "Sawhorses",
-          "ja": "Sawhorses",
+          "ja": "木馬台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2668,12 +2690,12 @@
         "CardType": 0,
         "zh": "锯木架",
         "en": "Sawhorses",
-        "ja": "Sawhorses"
+        "ja": "木馬台"
       },
       "localization": {
         "zh": "动作：放置",
         "en": "Action: Place",
-        "ja": "アクション：Place"
+        "ja": "アクション：置く"
       }
     }
   ],
@@ -2686,12 +2708,12 @@
         "CardType": 0,
         "zh": "锯木架",
         "en": "Sawhorses",
-        "ja": "Sawhorses"
+        "ja": "木馬台"
       },
       "localization": {
         "zh": "动作：放置",
         "en": "Action: Place",
-        "ja": "アクション：Place"
+        "ja": "アクション：置く"
       }
     }
   ],

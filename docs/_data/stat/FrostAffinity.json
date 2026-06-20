@@ -6,21 +6,21 @@
   "type": "stat",
   "zh": "冰霜亲和度",
   "en": "Frost Affinity",
-  "ja": "Frost Affinity",
-  "UniqueIDIndex": 3361,
+  "ja": "氷霜との親和性",
+  "UniqueIDIndex": 3450,
   "GameName": {
     "DefaultText": "Frost Affinity",
     "Text": "冰霜亲和度",
     "zh": "冰霜亲和度",
     "en": "Frost Affinity",
-    "ja": "Frost Affinity"
+    "ja": "氷霜との親和性"
   },
   "Description": {
     "DefaultText": "How much in common you have with the spirit of Frost.",
     "Text": "你与冰霜精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与冰霜精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of Frost.",
-    "ja": "How much in common you have with the spirit of Frost."
+    "ja": "霜の精霊との共鳴の深さ。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -90,7 +90,7 @@
     "Text": "亲和度不够。",
     "zh": "亲和度不够。",
     "en": "Not enough affinity.",
-    "ja": "Not enough affinity."
+    "ja": "親和性が足りない。"
   },
   "TooMuchText": {
     "DefaultText": "",
@@ -104,13 +104,55 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
         "key": "Bp_FrostEnchantment",
         "icon": "Spirit_Frost",
         "type": "card",
         "CardType": 7,
         "zh": "冰霜附魔",
         "en": "Frost Enchantment",
-        "ja": "Frost Enchantment"
+        "ja": "氷霜のエンチャント"
       },
       "name": "蓝图制作",
       "localization": {
@@ -131,7 +173,7 @@
         "CardType": 7,
         "zh": "呼唤冰霜精魄(呼唤)",
         "en": "Frost Spirit Calling",
-        "ja": "Frost Spirit Calling"
+        "ja": "氷霜の精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -152,7 +194,7 @@
         "CardType": 7,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "name": "蓝图制作",
       "localization": {
@@ -173,7 +215,7 @@
         "CardType": 7,
         "zh": "冰块",
         "en": "Ice Block",
-        "ja": "Ice Block"
+        "ja": "氷塊"
       },
       "name": "蓝图制作",
       "localization": {
@@ -215,12 +257,12 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -232,13 +274,55 @@
   "_modifierRateList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
         "key": "SpiritShrine_Frost_FrostShrine",
         "icon": "FrostShrine",
         "type": "card",
         "CardType": 2,
         "zh": "霜冻祭坛",
         "en": "Frost Shrine",
-        "ja": "Frost Shrine"
+        "ja": "氷霜の祠"
       },
       "localization": {
         "zh": "被动效果",
@@ -260,12 +344,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 100,
@@ -280,12 +364,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 250,
@@ -300,12 +384,12 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -320,12 +404,12 @@
         "CardType": 2,
         "zh": "霜冻祭坛",
         "en": "Frost Shrine",
-        "ja": "Frost Shrine"
+        "ja": "氷霜の祠"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -340,7 +424,7 @@
         "CardType": 0,
         "zh": "冰霜精魄(召唤)",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "被动效果：低亲和力",
@@ -360,7 +444,7 @@
         "CardType": 0,
         "zh": "冰霜精魄(召唤)",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "被动效果：高亲和力",

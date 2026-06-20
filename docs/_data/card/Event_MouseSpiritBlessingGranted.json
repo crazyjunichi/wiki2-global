@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "赐福",
   "en": "Blessing",
-  "ja": "Blessing",
-  "UniqueIDIndex": 1129,
+  "ja": "加護",
+  "UniqueIDIndex": 1170,
   "CardType": 3,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“获得精魄赐福”",
       "icon": "",
       "type": "tag",
-      "count": 29,
+      "count": 31,
       "zh": "获得精魄赐福",
       "en": "Granted Spirit Blessing",
       "ja": "与えられた精霊の祝福"
@@ -26,7 +26,7 @@
     "Text": "赐福",
     "zh": "赐福",
     "en": "Blessing",
-    "ja": "Blessing"
+    "ja": "加護"
   },
   "CardImage": {
     "FileName": "Mouse"
@@ -898,6 +898,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1083,8 +1087,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1219,7 +1231,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1254,6 +1266,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1463,7 +1479,7 @@
             "type": "stat",
             "zh": "逃脱援助",
             "en": "Escape Aid",
-            "ja": "Escape Aid",
+            "ja": "脱出補助",
             "max": 288,
             "min": 0
           },
@@ -1832,7 +1848,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       }
     }
   ],

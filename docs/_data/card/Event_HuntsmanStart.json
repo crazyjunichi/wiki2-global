@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "猎人",
   "en": "The Huntsman",
-  "ja": "The Huntsman",
-  "UniqueIDIndex": 1110,
+  "ja": "ハントマン",
+  "UniqueIDIndex": 1151,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "猎人",
     "zh": "猎人",
     "en": "The Huntsman",
-    "ja": "The Huntsman"
+    "ja": "ハントマン"
   },
   "CardImage": {
     "FileName": "Lake1"
@@ -855,7 +855,7 @@
     "Text": "你躺在潮湿的草地上，在黑暗的边缘瑟瑟发抖。黑夜步步紧逼。寒意悄然袭来。你知道野兽就在附近。没时间疑惑了。寻获温暖。生存。狩猎。",
     "zh": "你躺在潮湿的草地上，在黑暗的边缘瑟瑟发抖。黑夜步步紧逼。寒意悄然袭来。你知道野兽就在附近。没时间疑惑了。寻获温暖。生存。狩猎。",
     "en": "You lie in damp grass, shivering on a dark shore. Night presses close. The cold creeps in. You know the Beast is near. This is no time to falter. Find warmth. Survive. Hunt.",
-    "ja": "You lie in damp grass, shivering on a dark shore. Night presses close. The cold creeps in. You know the Beast is near. This is no time to falter. Find warmth. Survive. Hunt."
+    "ja": "湿った草の上に横たわり、暗い岸辺で震えている。夜がすぐそばまで迫っている。冷気がじわじわと染み込んでくる。獣が近くにいるのがわかる。立ち止まるな。暖を取れ。生き延びろ。狩れ。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1644,6 +1660,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

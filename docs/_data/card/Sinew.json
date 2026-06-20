@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "肌腱",
   "en": "Sinew",
-  "ja": "Sinew",
-  "UniqueIDIndex": 2272,
+  "ja": "腱繊維",
+  "UniqueIDIndex": 2333,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -54,7 +54,7 @@
           "Text": "柔韧",
           "zh": "柔韧",
           "en": "Flexibility",
-          "ja": "Flexibility"
+          "ja": "柔軟性"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -66,7 +66,7 @@
     "Text": "肌腱",
     "zh": "肌腱",
     "en": "Sinew",
-    "ja": "Sinew"
+    "ja": "腱繊維"
   },
   "CardImage": {
     "FileName": "Tendon_Dry"
@@ -444,7 +444,7 @@
         "Text": "捶打",
         "zh": "捶打",
         "en": "Pound",
-        "ja": "Pound"
+        "ja": "打ちほぐす"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -479,6 +479,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "HittingStone"
@@ -490,7 +494,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -498,7 +502,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -512,7 +516,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -526,7 +530,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -540,7 +544,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1053,7 +1057,7 @@
           "CardType": 0,
           "zh": "捶打完的肌腱",
           "en": "Pounded Sinew",
-          "ja": "Pounded Sinew",
+          "ja": "打ちほぐした腱繊維",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1609,7 +1613,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -1620,7 +1624,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1648,7 +1652,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1660,7 +1664,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1698,7 +1702,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1712,7 +1716,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2198,7 +2202,7 @@
     "Text": "必须先捶打才能制成肌腱绳。",
     "zh": "必须先捶打才能制成肌腱绳。",
     "en": "Must be pounded before it can be processed into cordage.",
-    "ja": "Must be pounded before it can be processed into cordage."
+    "ja": "紐材に加工する前に打ちほぐす必要がある。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -2230,6 +2234,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2415,8 +2423,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2694,12 +2710,12 @@
         "CardType": 0,
         "zh": "肌腱",
         "en": "Tendon",
-        "ja": "Tendon"
+        "ja": "腱"
       },
       "localization": {
         "zh": "湿度 降为零",
         "en": "Wetness Depleted",
-        "ja": "Wetness ゼロ"
+        "ja": "水分量 ゼロ"
       }
     }
   ],

@@ -7,7 +7,7 @@
   "zh": "窑炉",
   "en": "Kiln",
   "ja": "窯",
-  "UniqueIDIndex": 465,
+  "UniqueIDIndex": 480,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1110,7 +1110,7 @@
     "Text": "用于在高温下烧制陶器和在软木中提取焦油。",
     "zh": "用于在高温下烧制陶器和在软木中提取焦油。",
     "en": "Used for firing pottery at high temperatures and extracting tar out of softwoods.",
-    "ja": "高温で陶器を焼いたり、軟木からタールを抽出するためにも使われます。"
+    "ja": "高温で陶器を焼成したり、針葉樹からタールを抽出するために使用できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1142,6 +1142,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2211,14 +2215,22 @@
   ],
   "BuildingDaytimeCost": 6,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2226,7 +2238,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2240,7 +2252,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2254,7 +2266,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2268,7 +2280,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2688,7 +2700,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

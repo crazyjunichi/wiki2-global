@@ -6,21 +6,21 @@
   "type": "stat",
   "zh": "月亲和度",
   "en": "Moon Affinity",
-  "ja": "Moon Affinity",
-  "UniqueIDIndex": 3726,
+  "ja": "月への親和性",
+  "UniqueIDIndex": 3825,
   "GameName": {
     "DefaultText": "Moon Affinity",
     "Text": "月亲和度",
     "zh": "月亲和度",
     "en": "Moon Affinity",
-    "ja": "Moon Affinity"
+    "ja": "月への親和性"
   },
   "Description": {
     "DefaultText": "How much in common you have with the spirit of the Moon.\n\nSpend time outdoors under the moon to increase it.",
     "Text": "你与月精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与月精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of the Moon.\\n\\nSpend time outdoors under the moon to increase it.",
-    "ja": "How much in common you have with the spirit of the Moon.\n\nSpend time outdoors under the moon to increase it."
+    "ja": "月の精霊との共鳴の深さ。\\n\\n月の下で屋外に過ごすことで高まる。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -90,7 +90,7 @@
     "Text": "亲和度不够。",
     "zh": "亲和度不够。",
     "en": "Not enough affinity.",
-    "ja": "Not enough affinity."
+    "ja": "親和性が足りない。"
   },
   "TooMuchText": {
     "DefaultText": "",
@@ -104,13 +104,55 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
         "key": "Bp_MoonEnchantment",
         "icon": "FFMoonIcon",
         "type": "card",
         "CardType": 7,
         "zh": "月附魔",
         "en": "Moon Enchantment",
-        "ja": "Moon Enchantment"
+        "ja": "月のエンチャント"
       },
       "name": "蓝图制作",
       "localization": {
@@ -131,7 +173,7 @@
         "CardType": 7,
         "zh": "月女附魔",
         "en": "Moon Maiden Enchantment",
-        "ja": "Moon Maiden Enchantment"
+        "ja": "月乙女のエンチャント"
       },
       "name": "蓝图制作",
       "localization": {
@@ -152,7 +194,7 @@
         "CardType": 7,
         "zh": "呼唤月女精魄(呼唤)",
         "en": "Moon Maiden Spirit Calling",
-        "ja": "Moon Maiden Spirit Calling"
+        "ja": "月触れの精霊呼び"
       },
       "name": "蓝图制作",
       "localization": {
@@ -173,7 +215,7 @@
         "CardType": 7,
         "zh": "召唤月之少女中",
         "en": "Moon Maiden Summoning",
-        "ja": "Moon Maiden Summoning"
+        "ja": "月乙女の召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -194,7 +236,7 @@
         "CardType": 7,
         "zh": "呼唤月精魄(呼唤)",
         "en": "Moon Spirit Calling",
-        "ja": "Moon Spirit Calling"
+        "ja": "月の精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -215,7 +257,7 @@
         "CardType": 7,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "name": "蓝图制作",
       "localization": {
@@ -236,7 +278,7 @@
         "CardType": 7,
         "zh": "月兽附魔",
         "en": "Moontouched Enchantment",
-        "ja": "Moontouched Enchantment"
+        "ja": "月触れの祝福付与"
       },
       "name": "蓝图制作",
       "localization": {
@@ -257,7 +299,7 @@
         "CardType": 7,
         "zh": "呼唤月兽精魄中(呼唤)",
         "en": "Moontouched Spirit Calling",
-        "ja": "Moontouched Spirit Calling"
+        "ja": "月触れの精霊呼び"
       },
       "name": "蓝图制作",
       "localization": {
@@ -278,7 +320,7 @@
         "CardType": 7,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "name": "蓝图制作",
       "localization": {
@@ -299,12 +341,12 @@
         "CardType": 0,
         "zh": "月兽尸体",
         "en": "Moontouched Carcass",
-        "ja": "Moontouched Carcass"
+        "ja": "月触れの死骸"
       },
       "localization": {
         "zh": "动作：释放精魄",
         "en": "Action: Release the Spirit",
-        "ja": "アクション：Release the Spirit"
+        "ja": "アクション：精霊を解放する"
       },
       "value": {
         "x": 25,
@@ -320,12 +362,12 @@
         "CardType": 0,
         "zh": "月兽尸体",
         "en": "Moontouched Carcass",
-        "ja": "Moontouched Carcass"
+        "ja": "月触れの死骸"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -335,24 +377,24 @@
     },
     {
       "link": {
-        "key": "Carcass_PrimevalWolfCarcass",
+        "key": "Carcass_PrimevalCarcass",
         "icon": "Wolf_Dark",
         "type": "card",
         "CardType": 0,
         "zh": "原初狼尸",
         "en": "Primeval Wolf Carcass",
-        "ja": "Primeval Wolf Carcass"
+        "ja": "太古オオカミの死骸"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
         "y": 12
       },
-      "key": "Carcass_PrimevalWolfCarcass_Blessing"
+      "key": "Carcass_PrimevalCarcass_Blessing"
     },
     {
       "link": {
@@ -362,12 +404,12 @@
         "CardType": 9,
         "zh": "月精魄",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -383,12 +425,12 @@
         "CardType": 9,
         "zh": "月女精魄",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -404,12 +446,12 @@
         "CardType": 9,
         "zh": "月兽精魄",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -425,12 +467,12 @@
         "CardType": 2,
         "zh": "月石",
         "en": "Moonstone",
-        "ja": "Moonstone"
+        "ja": "月長石"
       },
       "localization": {
         "zh": "动作：交流",
         "en": "Action: Commune",
-        "ja": "アクション：Commune"
+        "ja": "アクション：交信する"
       },
       "value": {
         "x": 8,
@@ -446,12 +488,12 @@
         "CardType": 2,
         "zh": "月石",
         "en": "Moonstone",
-        "ja": "Moonstone"
+        "ja": "月長石"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -463,12 +505,54 @@
   "_modifierRateList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
         "key": "Moonlight",
         "icon": "Moon",
         "type": "stat",
         "zh": "月光",
         "en": "Moonlight",
-        "ja": "Moonlight",
+        "ja": "月光",
         "max": 100,
         "min": 0
       },
@@ -489,7 +573,7 @@
         "type": "stat",
         "zh": "月光",
         "en": "Moonlight",
-        "ja": "Moonlight",
+        "ja": "月光",
         "max": 100,
         "min": 0
       },
@@ -510,7 +594,7 @@
         "type": "stat",
         "zh": "月光",
         "en": "Moonlight",
-        "ja": "Moonlight",
+        "ja": "月光",
         "max": 100,
         "min": 0
       },
@@ -532,7 +616,7 @@
         "CardType": 2,
         "zh": "月石",
         "en": "Moonstone",
-        "ja": "Moonstone"
+        "ja": "月長石"
       },
       "localization": {
         "zh": "被动效果",
@@ -555,7 +639,7 @@
       "localization": {
         "zh": "提升你的月亲和度（通过暴露在月光下或月之祭坛）",
         "en": "Increase your Moon Affinity ( through moonlight & moonshrine exposure )",
-        "ja": "Increase your Moon Affinity ( through moonlight & moonshrine exposure )"
+        "ja": "月光や月の祠に触れて月の親和性を高める"
       },
       "value": {
         "x": 100,
@@ -570,12 +654,12 @@
         "CardType": 0,
         "zh": "月兽尸体",
         "en": "Moontouched Carcass",
-        "ja": "Moontouched Carcass"
+        "ja": "月触れの死骸"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -590,12 +674,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 100,
@@ -610,12 +694,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 250,
@@ -630,12 +714,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：由此，精魄暂时与你的灵魂绑定。",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 100,
@@ -650,12 +734,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：由此，精魄暂时与你的灵魂绑定。",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       },
       "value": {
         "x": 250,
@@ -670,12 +754,12 @@
         "CardType": 9,
         "zh": "月精魄",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -690,12 +774,12 @@
         "CardType": 9,
         "zh": "月女精魄",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -710,12 +794,12 @@
         "CardType": 9,
         "zh": "月兽精魄",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -730,12 +814,12 @@
         "CardType": 2,
         "zh": "月石",
         "en": "Moonstone",
-        "ja": "Moonstone"
+        "ja": "月長石"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 50,
@@ -750,7 +834,7 @@
         "CardType": 0,
         "zh": "月精魄(召唤)",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "被动效果：低亲和力",
@@ -770,7 +854,7 @@
         "CardType": 0,
         "zh": "月精魄(召唤)",
         "en": "Moon Spirit",
-        "ja": "Moon Spirit"
+        "ja": "月の精霊"
       },
       "localization": {
         "zh": "被动效果：高亲和力",
@@ -790,7 +874,7 @@
         "CardType": 0,
         "zh": "月女精魄(召唤)",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "被动效果：低亲和力",
@@ -810,7 +894,7 @@
         "CardType": 0,
         "zh": "月女精魄(召唤)",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "被动效果：高亲和力",
@@ -830,7 +914,7 @@
         "CardType": 0,
         "zh": "月兽精魄(召唤)",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "被动效果：Low Affinity Moon",
@@ -850,7 +934,7 @@
         "CardType": 0,
         "zh": "月兽精魄(召唤)",
         "en": "Moontouched Spirit",
-        "ja": "Moontouched Spirit"
+        "ja": "月触れの精霊"
       },
       "localization": {
         "zh": "被动效果：High Affinity Moon",

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "泉水",
   "en": "Spring",
-  "ja": "Spring",
-  "UniqueIDIndex": 792,
+  "ja": "春",
+  "UniqueIDIndex": 819,
   "CardType": 2,
   "CardTags": [
     {
@@ -97,8 +97,8 @@
         "Active": true,
         "CardStatName": {
           "DefaultText": "River Type",
-          "Text": "River Type",
-          "zh": "River Type",
+          "Text": "河流类型",
+          "zh": "河流类型",
           "en": "River Type",
           "ja": "River Type"
         },
@@ -112,7 +112,7 @@
     "Text": "泉水",
     "zh": "泉水",
     "en": "Spring",
-    "ja": "Spring"
+    "ja": "春"
   },
   "CardImage": {
     "FileName": "SacredSpring"
@@ -498,7 +498,7 @@
         "Text": "洗净鞣质",
         "zh": "洗净鞣质",
         "en": "Wash of Tannins",
-        "ja": "Wash of Tannins"
+        "ja": "タンニンを洗い流す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -533,6 +533,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1501,7 +1505,7 @@
                 "Text": "护理",
                 "zh": "护理",
                 "en": "Treatment",
-                "ja": "Treatment"
+                "ja": "加工"
               },
               "OverrideIcon": null,
               "MaxValue": 8
@@ -1513,7 +1517,7 @@
                 "Text": "护理",
                 "zh": "护理",
                 "en": "Treatment",
-                "ja": "Treatment"
+                "ja": "加工"
               },
               "OverrideIcon": null,
               "MaxValue": 8
@@ -1539,7 +1543,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -1553,7 +1557,7 @@
                 "Text": "毛皮类型",
                 "zh": "毛皮类型",
                 "en": "Fur Type",
-                "ja": "Fur Type"
+                "ja": "毛皮の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1574,7 +1578,7 @@
         "Text": "清洗敷料",
         "zh": "清洗敷料",
         "en": "Wash the Dressing",
-        "ja": "Wash the Dressing"
+        "ja": "包帯を洗う"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1609,6 +1613,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2539,7 +2547,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -2595,7 +2603,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "品質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2820,8 +2828,8 @@
           "DefaultText": "Iron",
           "Text": "铁元素",
           "zh": "铁元素",
-          "en": "Waste",
-          "ja": "ゴミ"
+          "en": "Iron",
+          "ja": "Iron"
         },
         "OverrideIcon": {
           "FileName": "Filth"
@@ -3038,8 +3046,8 @@
             "DefaultText": "Iron",
             "Text": "铁元素",
             "zh": "铁元素",
-            "en": "Waste",
-            "ja": "ゴミ"
+            "en": "Iron",
+            "ja": "Iron"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -3511,6 +3519,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3868,7 +3880,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4100,8 +4115,8 @@
               "DefaultText": "Iron",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Iron"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -4248,8 +4263,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4384,7 +4407,7 @@
         "Text": "凝视水面",
         "zh": "凝视水面",
         "en": "Gaze at Water",
-        "ja": "Gaze at Water"
+        "ja": "水を眺める"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4419,6 +4442,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4776,7 +4803,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -5141,7 +5168,7 @@
         "CardType": 2,
         "zh": "泉水",
         "en": "Spring",
-        "ja": "Spring"
+        "ja": "春"
       },
       "localization": {
         "zh": "动作：清理",
@@ -5158,7 +5185,7 @@
       "CardType": 4,
       "zh": "巨大洞穴",
       "en": "Great Cave",
-      "ja": "Great Cave",
+      "ja": "大洞窟",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -5262,7 +5289,7 @@
         "CardType": 8,
         "zh": "巨大洞穴",
         "en": "Great Cave",
-        "ja": "Great Cave",
+        "ja": "大洞窟",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -5270,7 +5297,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -5356,7 +5383,7 @@
             "Text": "烟熏",
             "zh": "烟熏",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -5372,7 +5399,7 @@
       "CardType": 4,
       "zh": "巨大洞穴",
       "en": "Great Cave",
-      "ja": "Great Cave",
+      "ja": "大洞窟",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -5476,7 +5503,7 @@
         "CardType": 8,
         "zh": "巨大洞穴",
         "en": "Great Cave",
-        "ja": "Great Cave",
+        "ja": "大洞窟",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -5484,7 +5511,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -5570,7 +5597,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"

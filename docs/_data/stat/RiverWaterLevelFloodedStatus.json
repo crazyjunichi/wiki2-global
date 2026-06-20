@@ -1,0 +1,591 @@
+{
+  "m_Name": "RiverWaterLevelFloodedStatus",
+  "key": "RiverWaterLevelFloodedStatus",
+  "exportName": "RiverWaterLevelFloodedStatus",
+  "icon": "",
+  "type": "stat",
+  "zh": "河水位洪水状态",
+  "zh_fix": "河水位洪水状态",
+  "en": "RiverWaterLevelFloodedStatus",
+  "ja": "RiverWaterLevelFloodedStatus",
+  "UniqueIDIndex": 4174,
+  "GameName": {
+    "DefaultText": "RiverWaterLevelFloodedStatus",
+    "Text": "RiverWaterLevelFloodedStatus",
+    "zh": "RiverWaterLevelFloodedStatus",
+    "en": "RiverWaterLevelFloodedStatus",
+    "ja": "RiverWaterLevelFloodedStatus"
+  },
+  "Description": {
+    "DefaultText": "Active on RiverFloodedTravelingActions when River Water level is very high unless levee is built. ",
+    "Text": "Active on RiverFloodedTravelingActions when River Water level is very high unless levee is built. ",
+    "zh": "Active on RiverFloodedTravelingActions when River Water level is very high unless levee is built. ",
+    "en": "Active on RiverFloodedTravelingActions when River Water level is very high unless levee is built. ",
+    "ja": "Active on RiverFloodedTravelingActions when River Water level is very high unless levee is built. "
+  },
+  "BaseValue": 0,
+  "MinMaxValue": {
+    "x": 0,
+    "y": 1
+  },
+  "BaseRatePerTick": 0,
+  "MinMaxRate": {
+    "x": 0,
+    "y": 0
+  },
+  "TimeOfDayMods": [],
+  "CompositeStats": [],
+  "StatPriority": 0,
+  "RequiredPerks": [],
+  "Visibility": 2,
+  "VisibleInDetailedList": false,
+  "CannotBeInspected": false,
+  "InvertedDirection": false,
+  "VisibleValueRange": {
+    "x": 0,
+    "y": 0
+  },
+  "TrendIndicatorRateRange": {
+    "x": 0,
+    "y": 0
+  },
+  "StatusesHaveNoBar": false,
+  "BarColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "BarHighlightColor": {
+    "r": 1,
+    "g": 0.72851,
+    "b": 0,
+    "a": 1
+  },
+  "DefaultStatusName": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusDescription": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "DefaultStatusIcon": null,
+  "Statuses": [
+    {
+      "GameName": {
+        "DefaultText": "Flooded River Traveling Penalty",
+        "Text": "Flooded River Traveling Penalty",
+        "zh": "Flooded River Traveling Penalty",
+        "en": "Flooded River Traveling Penalty",
+        "ja": "Flooded River Traveling Penalty"
+      },
+      "Description": {
+        "DefaultText": "Flooded Traveling Actions take 15 minutes longer",
+        "Text": "Flooded Traveling Actions take 15 minutes longer",
+        "zh": "Flooded Traveling Actions take 15 minutes longer",
+        "en": "Flooded Traveling Actions take 15 minutes longer",
+        "ja": "Flooded Traveling Actions take 15 minutes longer"
+      },
+      "StatusLog": {
+        "LogText": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "Category": null,
+        "TicksToRegister": 0
+      },
+      "Icon": null,
+      "ValueRange": {
+        "m_X": 1,
+        "m_Y": 1
+      },
+      "UsePercentageForRange": false,
+      "EffectsOnStats": [],
+      "EffectsOnActions": [
+        {
+          "Conditions": {
+            "NotInBackground": false,
+            "InBackground": false,
+            "PlayerUsesCard": 0,
+            "RequiredEnvironment": null,
+            "InvertEnvironmentRequirement": false,
+            "RequiredEnvironmentTags": [],
+            "RequiredNOTEnvironmentTags": [],
+            "RequiredContainer": [],
+            "RequiredNOTContainer": [],
+            "RequiredContainerTags": [],
+            "RequiredNOTContainerTags": [],
+            "RequiredCardsOnBoard": [],
+            "RequiredTagsOnBoard": [],
+            "RequiredCardsNOTOnBoard": [],
+            "RequiredTagsNOTOnBoard": [],
+            "RequiredLiquidContainers": [],
+            "RequiredCardsInInventory": [],
+            "RequiredTagsInInventory": [],
+            "CardWasBuiltWith": [],
+            "CardWasNOTBuiltWith": [],
+            "RequiredPlayerOwnedCards": [],
+            "RequiredPlayerNOTOwnedCards": [],
+            "ReceivingRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "GivenRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "ReceivingContainerRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "GivenContainerRequiredDurabilityRanges": {
+              "SpoilageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "UsageRange": {
+                "x": 0,
+                "y": 0
+              },
+              "FuelRange": {
+                "x": 0,
+                "y": 0
+              },
+              "ProgressRange": {
+                "x": 0,
+                "y": 0
+              },
+              "Special1Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special2Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special3Range": {
+                "x": 0,
+                "y": 0
+              },
+              "Special4Range": {
+                "x": 0,
+                "y": 0
+              },
+              "LiquidQuantityRange": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "ReceivingCardTags": [],
+            "GivenCardTags": [],
+            "ReceivingCardSpices": [],
+            "GivenCardSpices": [],
+            "RequiredEnvironmentWeight": {
+              "Active": false,
+              "FloatValue": 0,
+              "MaxValue": 0
+            },
+            "RequiredStatValues": [],
+            "RequiredNPCStatValues": [],
+            "RequiredInGameTimes": [],
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
+          },
+          "AppliesTo": [
+            {
+              "key": "FloodedRiverTravelingAction",
+              "text": "FloodedRiverTravelingAction",
+              "type": "tag",
+              "count": 26,
+              "SpecialDurability1": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Trees",
+                  "Text": "树林",
+                  "zh": "树林",
+                  "en": "Trees",
+                  "ja": "木"
+                },
+                "OverrideIcon": {
+                  "FileName": "Tree1"
+                },
+                "MaxValue": 115200
+              },
+              "SpecialDurability2": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Overgrowth",
+                  "Text": "过度生长",
+                  "zh": "过度生长",
+                  "en": "Overgrowth",
+                  "ja": "茂み"
+                },
+                "OverrideIcon": {
+                  "FileName": "Overgrowth"
+                },
+                "MaxValue": 1440
+              },
+              "SpecialDurability3": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Foraging",
+                  "Text": "觅食",
+                  "zh": "觅食",
+                  "en": "Foraging",
+                  "ja": "資源集め"
+                },
+                "OverrideIcon": {
+                  "FileName": "SaturationBerries"
+                },
+                "MaxValue": 360
+              },
+              "SpecialDurability4": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Fertility",
+                  "Text": "Fertility",
+                  "zh": "繁衍",
+                  "en": "Fertility",
+                  "ja": "Fertility"
+                },
+                "OverrideIcon": null,
+                "MaxValue": 5760
+              },
+              "zh": "淹水河流行动",
+              "en": "FloodedRiverTravelingAction",
+              "ja": "FloodedRiverTravelingAction"
+            }
+          ],
+          "ExploreDirectionFilter": [],
+          "ActionAddedSuffix": {
+            "DefaultText": "flooded",
+            "Text": "洪水",
+            "zh": "洪水",
+            "en": "flooded",
+            "ja": "flooded"
+          },
+          "BlocksAction": false,
+          "ActionBlockMessage": {
+            "DefaultText": "",
+            "Text": "",
+            "zh": "",
+            "en": "",
+            "ja": ""
+          },
+          "DurationModifier": 1,
+          "AddedStatModifiers": [],
+          "ReceivingDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "GivenDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "DropsDurabilities": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "IgnoreStatConditions": [],
+          "AddedTemporaryStatModifiers": [],
+          "OverrideActionSounds": [],
+          "DisablePitchVariation": false,
+          "OverrideFadeToBlack": false,
+          "FadeToBlack": 0,
+          "OverrideFadeMessage": {
+            "Active": false,
+            "Text": {
+              "DefaultText": "",
+              "Text": "",
+              "zh": "",
+              "en": "",
+              "ja": ""
+            }
+          }
+        }
+      ],
+      "NotifyPlayer": 0,
+      "RepeatTextNotification": 0,
+      "AlertLevel": 0,
+      "AlertSounds": [],
+      "RepeatAlertSounds": 0,
+      "AmbientSounds": [],
+      "GameOver": false,
+      "ActionsMaxTicks": 0,
+      "PreventingActionMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "CombatEffects": [],
+      "ConfidenceModifier": 0
+    }
+  ],
+  "UsesNovelty": false,
+  "NoveltyCooldownDuration": 0,
+  "StalenessMultiplier": 0,
+  "MaxStalenessStack": 0,
+  "StatActions": [],
+  "ShowActionEffects": false,
+  "NotEnoughText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "TooMuchText": {
+    "DefaultText": "",
+    "Text": "",
+    "zh": "",
+    "en": "",
+    "ja": ""
+  },
+  "StatusDebugMode": false,
+  "Transfers": [],
+  "_modifierValueList": [
+    {
+      "link": {
+        "key": "WaterLevelVisible",
+        "icon": "RiverShore",
+        "type": "stat",
+        "zh": "水位",
+        "en": "Water Level",
+        "ja": "水位",
+        "max": 7665,
+        "min": -7665
+      },
+      "localization": {
+        "zh": "状态阶段: 大水漫出",
+        "en": "Status Stage: High Overflow",
+        "ja": "ステータス段階: 水がかなり溢れてる"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "_modifierRateList": [],
+  "_requireList": [],
+  "triggers": [],
+  "max": 1,
+  "min": 0,
+  "m_GameObject": null,
+  "m_Enabled": 1,
+  "IsRuntimeOnly": true,
+  "FeedbackInfo": {
+    "Icon": null,
+    "NegativeIcon": null,
+    "StepValue": 1,
+    "Inverted": false
+  },
+  "OverrideFeedbackPrefab": null,
+  "NotEnoughIcon": null
+}

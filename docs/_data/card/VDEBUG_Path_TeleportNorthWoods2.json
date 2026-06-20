@@ -7,7 +7,7 @@
   "zh": "East",
   "en": "East",
   "ja": "East",
-  "UniqueIDIndex": 2597,
+  "UniqueIDIndex": 2676,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -99,6 +99,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1293,6 +1297,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1478,8 +1486,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1649,6 +1665,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2007,7 +2027,7 @@
                 "CardType": 4,
                 "zh": "风针松林",
                 "en": "Wind Needles",
-                "ja": "Wind Needles",
+                "ja": "風鳴る針葉",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2111,7 +2131,7 @@
                   "CardType": 8,
                   "zh": "风针松林",
                   "en": "Wind Needles",
-                  "ja": "Wind Needles",
+                  "ja": "風鳴る針葉",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -2171,7 +2191,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -2185,7 +2205,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -2199,7 +2219,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -2273,6 +2293,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2542,6 +2563,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2900,7 +2925,7 @@
                 "CardType": 4,
                 "zh": "洞穴",
                 "en": "Cave",
-                "ja": "Cave",
+                "ja": "洞窟",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3004,7 +3029,7 @@
                   "CardType": 8,
                   "zh": "洞穴",
                   "en": "Cave",
-                  "ja": "Cave",
+                  "ja": "洞窟",
                   "SpoilageTime": {
                     "Active": true,
                     "CardStatName": {
@@ -3012,7 +3037,7 @@
                       "Text": "污秽",
                       "zh": "污秽",
                       "en": "Filthiness",
-                      "ja": "Filthiness"
+                      "ja": "汚さ"
                     },
                     "OverrideIcon": {
                       "FileName": "Filth"
@@ -3098,7 +3123,7 @@
                       "Text": "烟雾",
                       "zh": "烟雾",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -3160,6 +3185,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3429,6 +3455,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -3787,7 +3817,7 @@
                 "CardType": 4,
                 "zh": "石南空地",
                 "en": "Heather Glade",
-                "ja": "Heather Glade",
+                "ja": "ヒースの空き地",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3891,7 +3921,7 @@
                   "CardType": 8,
                   "zh": "石南空地",
                   "en": "Heather Glade",
-                  "ja": "Heather Glade",
+                  "ja": "ヒースの空き地",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -3949,7 +3979,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -3963,7 +3993,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -3977,7 +4007,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -4051,6 +4081,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4320,6 +4351,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -4678,7 +4713,7 @@
                 "CardType": 4,
                 "zh": "松林峭崖",
                 "en": "Pine Cliffs",
-                "ja": "Pine Cliffs",
+                "ja": "松の崖",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -4782,7 +4817,7 @@
                   "CardType": 8,
                   "zh": "松林峭崖",
                   "en": "Pine Cliffs",
-                  "ja": "Pine Cliffs",
+                  "ja": "松の崖",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -4842,7 +4877,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -4856,7 +4891,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -4870,7 +4905,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -4944,6 +4979,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5213,6 +5249,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -5571,7 +5611,7 @@
                 "CardType": 4,
                 "zh": "松针丛林",
                 "en": "Needle Thicket",
-                "ja": "Needle Thicket",
+                "ja": "針葉の茂み",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -5675,7 +5715,7 @@
                   "CardType": 8,
                   "zh": "松针丛林",
                   "en": "Needle Thicket",
-                  "ja": "Needle Thicket",
+                  "ja": "針葉の茂み",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -5735,7 +5775,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -5749,7 +5789,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -5763,7 +5803,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -5837,6 +5877,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6106,6 +6147,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -6728,6 +6773,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6997,6 +7043,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -7355,7 +7405,7 @@
                 "CardType": 4,
                 "zh": "摇曳松林",
                 "en": "Swaying Pines",
-                "ja": "Swaying Pines",
+                "ja": "銅の針",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -7459,7 +7509,7 @@
                   "CardType": 8,
                   "zh": "摇曳松林",
                   "en": "Swaying Pines",
-                  "ja": "Swaying Pines",
+                  "ja": "銅の針",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -7519,7 +7569,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -7533,7 +7583,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -7547,7 +7597,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -7621,6 +7671,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

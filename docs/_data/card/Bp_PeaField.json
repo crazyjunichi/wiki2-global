@@ -7,7 +7,7 @@
   "zh": "豌豆",
   "en": "Peas",
   "ja": "ピース",
-  "UniqueIDIndex": 519,
+  "UniqueIDIndex": 534,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -758,7 +758,7 @@
             "Text": "干透了",
             "zh": "干透了",
             "en": "Dead",
-            "ja": "Dead"
+            "ja": "枯死"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -770,7 +770,7 @@
             "Text": "烹煮",
             "zh": "烹煮",
             "en": "Boil",
-            "ja": "Boil"
+            "ja": "煮沸する"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -1172,7 +1172,7 @@
     "Text": "从商人处购得；需要中酸度、低湿度、养分和中高土质。能增加土壤养分并改善土质。\\n\\n一种干燥后可长期保存的营养食品。",
     "zh": "从商人处购得；需要中酸度、低湿度、养分和中高土质。能增加土壤养分并改善土质。\\n\\n一种干燥后可长期保存的营养食品。",
     "en": "Bought from traders; needs medium acidity, low hydration,  medium nutrients and medium to high structure. Increases nutrient and soil structure.\\n\\nA nutritious food that is long lasting when dry.",
-    "ja": "商人から購入できる。酸度（中）、水分（低）、栄養（低）、構造（中～高）で育つ。土壌の栄養を増やし構造を改良する。\\n\\n乾燥させたら長持ちする栄養豊富な食べ物。"
+    "ja": "交易商から購入できる。中程度の酸性度、低い水分量、中程度の養分量、中〜高程度の土壌構造を必要とする。土壌の養分量と構造を改善する。\\n\\n乾燥させることで長期保存できる栄養価の高い食料。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1204,6 +1204,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1525,7 +1529,7 @@
                 "Text": "干透了",
                 "zh": "干透了",
                 "en": "Dead",
-                "ja": "Dead"
+                "ja": "枯死"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1537,7 +1541,7 @@
                 "Text": "烹煮",
                 "zh": "烹煮",
                 "en": "Boil",
-                "ja": "Boil"
+                "ja": "煮沸する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1723,14 +1727,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1738,7 +1750,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1752,7 +1764,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1766,7 +1778,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1780,7 +1792,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1855,7 +1867,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1883,7 +1895,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1977,7 +1989,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2258,7 +2270,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"

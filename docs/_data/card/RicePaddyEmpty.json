@@ -7,7 +7,7 @@
   "zh": "Empty Rice Paddy",
   "en": "Empty Rice Paddy",
   "ja": "Empty Rice Paddy",
-  "UniqueIDIndex": 2153,
+  "UniqueIDIndex": 2213,
   "CardType": 2,
   "CardTags": [
     {
@@ -124,7 +124,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -593,6 +593,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "GrassAppear"
@@ -1908,6 +1912,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2209,7 +2217,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -2609,7 +2620,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -2807,8 +2821,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3152,7 +3174,7 @@
         "CardType": 9,
         "zh": "棕色染料",
         "en": "Brown Dye",
-        "ja": "Brown Dye"
+        "ja": "茶色の染料"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3168,7 +3190,7 @@
         "CardType": 9,
         "zh": "棕色染料",
         "en": "Brown Dye",
-        "ja": "Brown Dye"
+        "ja": "茶色の染料"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3248,7 +3270,7 @@
         "CardType": 9,
         "zh": "绿色染料",
         "en": "Green Dye",
-        "ja": "Green Dye"
+        "ja": "緑色の染料"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3264,7 +3286,7 @@
         "CardType": 9,
         "zh": "绿色染料",
         "en": "Green Dye",
-        "ja": "Green Dye"
+        "ja": "緑色の染料"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3280,7 +3302,7 @@
         "CardType": 9,
         "zh": "石灰水",
         "en": "Limewater",
-        "ja": "Limewater",
+        "ja": "石灰水",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3294,7 +3316,7 @@
               "Text": "稀石灰水",
               "zh": "稀石灰水",
               "en": "Weak Limewater",
-              "ja": "Weak Limewater"
+              "ja": "薄い石灰水"
             }
           },
           {
@@ -3309,7 +3331,7 @@
               "Text": "石灰水",
               "zh": "石灰水",
               "en": "Limewater",
-              "ja": "Limewater"
+              "ja": "石灰水"
             }
           },
           {
@@ -3324,7 +3346,7 @@
               "Text": "石灰乳",
               "zh": "石灰乳",
               "en": "Milk of Lime",
-              "ja": "Milk of Lime"
+              "ja": "石灰乳"
             }
           }
         ]
@@ -3343,7 +3365,7 @@
         "CardType": 9,
         "zh": "石灰水",
         "en": "Limewater",
-        "ja": "Limewater",
+        "ja": "石灰水",
         "AlternateNames": [
           {
             "Conditions": {
@@ -3357,7 +3379,7 @@
               "Text": "稀石灰水",
               "zh": "稀石灰水",
               "en": "Weak Limewater",
-              "ja": "Weak Limewater"
+              "ja": "薄い石灰水"
             }
           },
           {
@@ -3372,7 +3394,7 @@
               "Text": "石灰水",
               "zh": "石灰水",
               "en": "Limewater",
-              "ja": "Limewater"
+              "ja": "石灰水"
             }
           },
           {
@@ -3387,7 +3409,7 @@
               "Text": "石灰乳",
               "zh": "石灰乳",
               "en": "Milk of Lime",
-              "ja": "Milk of Lime"
+              "ja": "石灰乳"
             }
           }
         ]
@@ -3406,7 +3428,7 @@
         "CardType": 9,
         "zh": "荨麻溶液",
         "en": "Nettle Solution",
-        "ja": "Nettle Solution"
+        "ja": "イラクサ溶液"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3422,7 +3444,7 @@
         "CardType": 9,
         "zh": "荨麻溶液",
         "en": "Nettle Solution",
-        "ja": "Nettle Solution"
+        "ja": "イラクサ溶液"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3438,7 +3460,7 @@
         "CardType": 9,
         "zh": "绿色染料原液",
         "en": "Raw Green Dye",
-        "ja": "Raw Green Dye"
+        "ja": "未加工の緑色染料"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3454,7 +3476,7 @@
         "CardType": 9,
         "zh": "绿色染料原液",
         "en": "Raw Green Dye",
-        "ja": "Raw Green Dye"
+        "ja": "未加工の緑色染料"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3470,7 +3492,7 @@
         "CardType": 9,
         "zh": "红色染料",
         "en": "Red Dye",
-        "ja": "Red Dye"
+        "ja": "赤色の染料"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3486,7 +3508,7 @@
         "CardType": 9,
         "zh": "红色染料",
         "en": "Red Dye",
-        "ja": "Red Dye"
+        "ja": "赤色の染料"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3502,7 +3524,7 @@
         "CardType": 9,
         "zh": "水",
         "en": "Water",
-        "ja": "Water"
+        "ja": "水"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3518,7 +3540,7 @@
         "CardType": 9,
         "zh": "水",
         "en": "Water",
-        "ja": "Water"
+        "ja": "水"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3614,7 +3636,7 @@
         "CardType": 9,
         "zh": "陈年尿液",
         "en": "Aged Urine",
-        "ja": "Aged Urine"
+        "ja": "熟成尿"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3630,7 +3652,7 @@
         "CardType": 9,
         "zh": "陈年尿液",
         "en": "Aged Urine",
-        "ja": "Aged Urine"
+        "ja": "熟成尿"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3646,7 +3668,7 @@
         "CardType": 9,
         "zh": "新鲜尿液",
         "en": "Fresh Urine",
-        "ja": "Fresh Urine"
+        "ja": "新鮮な尿"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3662,7 +3684,7 @@
         "CardType": 9,
         "zh": "新鲜尿液",
         "en": "Fresh Urine",
-        "ja": "Fresh Urine"
+        "ja": "新鮮な尿"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",
@@ -3678,7 +3700,7 @@
         "CardType": 9,
         "zh": "变质尿液",
         "en": "Stale Urine",
-        "ja": "Stale Urine"
+        "ja": "熟成尿"
       },
       "localization": {
         "zh": "被动效果：小蒸发",
@@ -3694,7 +3716,7 @@
         "CardType": 9,
         "zh": "变质尿液",
         "en": "Stale Urine",
-        "ja": "Stale Urine"
+        "ja": "熟成尿"
       },
       "localization": {
         "zh": "被动效果：大量蒸发",

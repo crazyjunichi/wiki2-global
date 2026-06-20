@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "干饲料(专有)",
   "en": "Dry Fooder(Pk)",
-  "ja": "Dry Fooder",
-  "UniqueIDIndex": 2108,
+  "ja": "乾燥飼葉",
+  "UniqueIDIndex": 2168,
   "CardType": 0,
   "CardTags": [
     {
@@ -68,7 +68,7 @@
           "Text": "便便",
           "zh": "便便",
           "en": "Poop",
-          "ja": "Poop"
+          "ja": "大便"
         },
         "OverrideIcon": {
           "FileName": "Content_Old"
@@ -108,7 +108,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "体力"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -136,7 +136,7 @@
     "Text": "干饲料",
     "zh": "干饲料",
     "en": "Dry Fooder",
-    "ja": "Dry Fooder"
+    "ja": "乾燥飼葉"
   },
   "CardImage": {
     "FileName": "Wheat_Sheaves"
@@ -197,7 +197,7 @@
       "Text": "数量",
       "zh": "数量",
       "en": "Amount",
-      "ja": "Amount"
+      "ja": "量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 12,
@@ -268,6 +268,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -695,7 +699,7 @@
       "Text": "营养",
       "zh": "营养",
       "en": "Nutrition",
-      "ja": "Nutrition"
+      "ja": "栄養"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -962,6 +966,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1209,7 +1217,7 @@
           "CardType": 0,
           "zh": "干饲料",
           "en": "Dry Fodder",
-          "ja": "Dry Fodder",
+          "ja": "乾燥した飼料",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1229,7 +1237,7 @@
               "Text": "数量",
               "zh": "数量",
               "en": "Amount",
-              "ja": "Amount"
+              "ja": "量"
             },
             "OverrideIcon": {
               "FileName": "Wheat_Sheaves"
@@ -1255,7 +1263,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1934,7 +1942,7 @@
     "Text": "需要放置后供动物食用。",
     "zh": "需要放置后供动物食用。",
     "en": "Needs to be placed for Animals to eat it. ",
-    "ja": "Needs to be placed for Animals to eat it. "
+    "ja": "動物に食べさせるには設置する必要がある。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1966,6 +1974,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2151,8 +2163,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2287,7 +2307,7 @@
         "Text": "放置",
         "zh": "放置",
         "en": "Place",
-        "ja": "Place"
+        "ja": "置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2322,6 +2342,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2569,7 +2593,7 @@
           "CardType": 2,
           "zh": "干饲料",
           "en": "Dry Fodder",
-          "ja": "Dry Fodder",
+          "ja": "乾燥した飼料",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2589,7 +2613,7 @@
               "Text": "数量",
               "zh": "数量",
               "en": "Amount",
-              "ja": "Amount"
+              "ja": "量"
             },
             "OverrideIcon": {
               "FileName": "Wheat_Sheaves"
@@ -2615,7 +2639,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"

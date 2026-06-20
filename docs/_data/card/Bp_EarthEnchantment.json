@@ -7,7 +7,7 @@
   "zh": "大地附魔",
   "en": "Earth Enchantment",
   "ja": "地のエンチャント",
-  "UniqueIDIndex": 391,
+  "UniqueIDIndex": 403,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1206,7 +1210,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1234,7 +1238,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1246,7 +1250,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1270,7 +1274,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1284,7 +1288,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1298,7 +1302,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1489,14 +1493,16 @@
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
+                "DefaultText": "Spoilage",
+                "Text": "变质",
+                "zh": "变质",
                 "en": "Spoilage",
-                "ja": ""
+                "ja": "腐敗"
               },
-              "OverrideIcon": null,
-              "MaxValue": 672
+              "OverrideIcon": {
+                "FileName": "Bacteria"
+              },
+              "MaxValue": 240
             },
             "UsageDurability": {
               "Active": false,
@@ -1508,7 +1514,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 2
             },
             "FuelCapacity": {
               "Active": false,
@@ -1571,16 +1577,18 @@
               "MaxValue": 0
             },
             "SpecialDurability4": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
+                "DefaultText": "Boil",
+                "Text": "Boil",
+                "zh": "Boil",
+                "en": "Boil",
+                "ja": "Boil"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Cooking"
+              },
+              "MaxValue": 4
             }
           },
           "RequiredQuantity": 6,
@@ -1760,14 +1768,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1775,7 +1791,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1789,7 +1805,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1803,7 +1819,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1817,7 +1833,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"

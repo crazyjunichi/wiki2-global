@@ -7,7 +7,7 @@
   "zh": "灌木丛",
   "en": "BrushWood",
   "ja": "細い枝",
-  "UniqueIDIndex": 697,
+  "UniqueIDIndex": 721,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -101,6 +101,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1603,6 +1607,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1972,7 +1980,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": true,
@@ -2303,7 +2314,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": true,
@@ -2501,8 +2515,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2672,6 +2694,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3486,8 +3512,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -3538,7 +3564,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -3662,7 +3688,7 @@
                     "Text": "耐久度",
                     "zh": "耐久度",
                     "en": "Durability",
-                    "ja": "Durability"
+                    "ja": "耐久性"
                   },
                   "OverrideIcon": {
                     "FileName": "Shield"
@@ -3700,7 +3726,7 @@
                     "Text": "营养",
                     "zh": "营养",
                     "en": "Nutrition",
-                    "ja": "Nutrition"
+                    "ja": "栄養"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -3876,13 +3902,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -4129,6 +4155,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4436,6 +4463,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5250,8 +5281,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -5302,7 +5333,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -5426,7 +5457,7 @@
                     "Text": "耐久度",
                     "zh": "耐久度",
                     "en": "Durability",
-                    "ja": "Durability"
+                    "ja": "耐久性"
                   },
                   "OverrideIcon": {
                     "FileName": "Shield"
@@ -5464,7 +5495,7 @@
                     "Text": "营养",
                     "zh": "营养",
                     "en": "Nutrition",
-                    "ja": "Nutrition"
+                    "ja": "栄養"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -5640,13 +5671,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -5893,6 +5924,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6200,6 +6232,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7014,8 +7050,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -7066,7 +7102,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -7190,7 +7226,7 @@
                     "Text": "耐久度",
                     "zh": "耐久度",
                     "en": "Durability",
-                    "ja": "Durability"
+                    "ja": "耐久性"
                   },
                   "OverrideIcon": {
                     "FileName": "Shield"
@@ -7228,7 +7264,7 @@
                     "Text": "营养",
                     "zh": "营养",
                     "en": "Nutrition",
-                    "ja": "Nutrition"
+                    "ja": "栄養"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -7404,13 +7440,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -7657,6 +7693,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

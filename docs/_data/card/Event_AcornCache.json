@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "橡子储藏点",
   "en": "Acorn Cache",
-  "ja": "Acorn Cache",
-  "UniqueIDIndex": 994,
+  "ja": "ドングリの貯蔵庫",
+  "UniqueIDIndex": 1024,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "橡子储藏点",
     "zh": "橡子储藏点",
     "en": "Acorn Cache",
-    "ja": "Acorn Cache"
+    "ja": "ドングリの貯蔵庫"
   },
   "CardImage": {
     "FileName": "Acorns"
@@ -855,7 +855,7 @@
     "Text": "你发现了一个橡子储藏点！",
     "zh": "你发现了一个橡子储藏点！",
     "en": "You found an acorn cache!",
-    "ja": "You found an acorn cache!"
+    "ja": "ドングリの貯蔵庫を見つけた！"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "真不错",
         "zh": "真不错",
         "en": "Nice",
-        "ja": "Nice"
+        "ja": "よし"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1758,6 +1774,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2136,12 +2153,12 @@
         "CardType": 8,
         "zh": "巨石林地",
         "en": "Boulder Grove",
-        "ja": "Boulder Grove"
+        "ja": "巨石の木立"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {
@@ -2248,12 +2265,12 @@
         "CardType": 8,
         "zh": "古老森林",
         "en": "Old Woods",
-        "ja": "Old Woods"
+        "ja": "古き森"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {
@@ -2264,12 +2281,12 @@
         "CardType": 8,
         "zh": "原初森林",
         "en": "Primeval Woods",
-        "ja": "Primeval Woods"
+        "ja": "太古の森"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {
@@ -2472,12 +2489,12 @@
         "CardType": 8,
         "zh": "古寂丛林",
         "en": "Old Thicket",
-        "ja": "Old Thicket"
+        "ja": "古き茂み"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {
@@ -2488,12 +2505,12 @@
         "CardType": 8,
         "zh": "幽影丛林",
         "en": "Shady Thicket",
-        "ja": "Shady Thicket"
+        "ja": "木陰の茂み"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {
@@ -2520,12 +2537,12 @@
         "CardType": 8,
         "zh": "蛮荒杂林",
         "en": "Wild Tangle",
-        "ja": "Wild Tangle"
+        "ja": "荒れ茂る茂み"
       },
       "localization": {
         "zh": "动作：觅食",
         "en": "Action: Forage",
-        "ja": "アクション：Forage"
+        "ja": "アクション：資源を集める"
       }
     },
     {

@@ -7,7 +7,7 @@
   "zh": "Solar Still",
   "en": "Solar Still",
   "ja": "Solar Still",
-  "UniqueIDIndex": 2298,
+  "UniqueIDIndex": 2359,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -377,6 +377,7 @@
       "DroppedIfNoBpIngredient": [],
       "DropCardsInsideInventory": false,
       "DropCardsInPlayerHand": false,
+      "IgnoreEnvironmentQuantityLimits": false,
       "DroppedEncounter": null,
       "EncounterNPC": null,
       "SkipEncounterEvent": false,
@@ -587,6 +588,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1256,6 +1261,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2020,13 +2029,13 @@
               "MaxValue": 0
             },
             "SpecialDurability2": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Quality",
+                "DefaultText": "",
                 "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
+                "zh": "特殊2",
+                "en": "Special2",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2326,7 +2335,7 @@
             "Text": "冰",
             "zh": "冰",
             "en": "Ice",
-            "ja": "Ice"
+            "ja": "氷"
           },
           "OverrideIcon": {
             "FileName": "Snowflake_Old"
@@ -2340,7 +2349,7 @@
             "Text": "容器温度",
             "zh": "容器温度",
             "en": "Container Temperature",
-            "ja": "Container Temperature"
+            "ja": "容器の温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -2366,7 +2375,7 @@
             "Text": "染料",
             "zh": "染料",
             "en": "Dye",
-            "ja": "Dye"
+            "ja": "染料"
           },
           "OverrideIcon": null,
           "MaxValue": 100
@@ -2378,7 +2387,7 @@
             "Text": "容器品质",
             "zh": "容器品质",
             "en": "Container Quality",
-            "ja": "Container Quality"
+            "ja": "容器の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2392,7 +2401,7 @@
             "Text": "已赐福",
             "zh": "已赐福",
             "en": "Blessed",
-            "ja": "Blessed"
+            "ja": "加護を受けている"
           },
           "OverrideIcon": {
             "FileName": "Snowflake_Old"
@@ -2484,7 +2493,7 @@
               "Text": "凝乳酶",
               "zh": "凝乳酶",
               "en": "Renet",
-              "ja": "Renet"
+              "ja": "レンネット"
             },
             "OverrideIcon": null,
             "MaxValue": 300
@@ -2579,8 +2588,8 @@
               "DefaultText": "Waste",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Waste"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -2777,7 +2786,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -3080,7 +3092,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3094,7 +3106,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3120,7 +3132,7 @@
               "Text": "染料",
               "zh": "染料",
               "en": "Dye",
-              "ja": "Dye"
+              "ja": "染料"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -3132,7 +3144,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3146,7 +3158,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3343,7 +3355,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -3879,8 +3894,8 @@
                   "DefaultText": "Iron",
                   "Text": "铁元素",
                   "zh": "铁元素",
-                  "en": "Waste",
-                  "ja": "ゴミ"
+                  "en": "Iron",
+                  "ja": "Iron"
                 },
                 "OverrideIcon": {
                   "FileName": "Filth"
@@ -3924,6 +3939,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4204,6 +4220,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4389,8 +4409,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4560,6 +4588,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5136,6 +5168,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

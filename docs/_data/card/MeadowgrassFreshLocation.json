@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "浸泡中的牧草",
   "en": "Soaking Meadowgrass",
-  "ja": "Soaking Meadowgrass",
-  "UniqueIDIndex": 1733,
+  "ja": "濡れている牧草",
+  "UniqueIDIndex": 1791,
   "CardType": 2,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -129,11 +129,11 @@
       }
     },
     {
-      "key": "tag_FloodUnsafe",
+      "key": "NOT_USED_tag_FloodUnsafe",
       "text": "“被洪水摧毁”",
       "icon": "",
       "type": "tag",
-      "count": 20,
+      "count": 22,
       "zh": "被洪水摧毁",
       "en": "Destroyed by Floods",
       "ja": "洪水によって破壊された",
@@ -214,7 +214,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -228,7 +228,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Pike"
@@ -254,7 +254,7 @@
     "Text": "浸泡中的牧草",
     "zh": "浸泡中的牧草",
     "en": "Soaking Meadowgrass",
-    "ja": "Soaking Meadowgrass"
+    "ja": "濡れている牧草"
   },
   "CardImage": {
     "FileName": "Meadowgrass_Item"
@@ -1052,7 +1052,7 @@
       "Text": "湿度",
       "zh": "湿度",
       "en": "Wetness",
-      "ja": "Wetness"
+      "ja": "水分量"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 384,
@@ -2019,7 +2019,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 50,
@@ -2981,7 +2981,7 @@
     "Text": "在浸泡足够时间后需要风干一阵子。",
     "zh": "在浸泡足够时间后需要风干一阵子。",
     "en": "Should let them dry for a few days once they've soaked up enough to increase their quality.",
-    "ja": "Should let them dry for a few days once they've soaked up enough to increase their quality."
+    "ja": "十分に水を含ませた後、数日乾燥させると品質が向上する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -3013,6 +3013,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3198,8 +3202,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3334,7 +3346,7 @@
         "Text": "拿起",
         "zh": "拿起",
         "en": "Pick up",
-        "ja": "Pick up"
+        "ja": "取る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3369,6 +3381,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3689,7 +3705,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -3765,7 +3781,7 @@
           "CardType": 0,
           "zh": "新鲜牧草",
           "en": "Fresh Meadowgrass",
-          "ja": "Fresh Meadowgrass",
+          "ja": "新鮮な牧草",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -3797,7 +3813,7 @@
               "Text": "湿度",
               "zh": "湿度",
               "en": "Wetness",
-              "ja": "Wetness"
+              "ja": "水分量"
             },
             "OverrideIcon": {
               "FileName": "Water"
@@ -3835,7 +3851,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4156,28 +4172,12 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
-      },
-      "localization": {
-        "zh": "动作：浸泡牧草",
-        "en": "Action: Soak Meadowgrass",
-        "ja": "アクション：Soak Meadowgrass"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
       },
       "localization": {
         "zh": "动作：浸泡牧草",
@@ -4198,7 +4198,7 @@
       "localization": {
         "zh": "动作：浸泡牧草",
         "en": "Action: Soak Meadowgrass",
-        "ja": "アクション：Soak Meadowgrass"
+        "ja": "アクション：草原草を浸す"
       }
     },
     {
@@ -4223,7 +4223,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4238,7 +4238,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -4287,6 +4287,22 @@
             }
           }
         ]
+      },
+      "localization": {
+        "zh": "动作：浸泡牧草",
+        "en": "Action: Soak Meadowgrass",
+        "ja": "アクション：草原草を浸す"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
       },
       "localization": {
         "zh": "动作：浸泡牧草",

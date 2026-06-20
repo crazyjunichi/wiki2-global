@@ -7,7 +7,7 @@
   "zh": "柳枝",
   "en": "Willow Twigs",
   "ja": "ヤナギの枝",
-  "UniqueIDIndex": 2720,
+  "UniqueIDIndex": 2801,
   "CardType": 0,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -52,7 +52,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -206,7 +206,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -244,7 +244,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -258,7 +258,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -272,7 +272,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1162,6 +1162,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1463,7 +1467,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1473,7 +1480,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -1832,7 +1839,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -2276,7 +2286,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -2512,8 +2525,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2889,7 +2910,7 @@
         "CardType": 7,
         "zh": "屠宰垫",
         "en": "Butchering Mat",
-        "ja": "Butchering Mat"
+        "ja": "解体用マット"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2915,6 +2936,182 @@
     },
     {
       "link": {
+        "key": "Bp_ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayBowl",
+        "icon": "Bowl_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶碗",
+        "en": "Clay Bowl",
+        "ja": "粘土のボウル"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayJar",
+        "icon": "Jar_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "小陶罐",
+        "en": "Clay Jar",
+        "ja": "粘土の瓶"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayPotCooler",
+        "icon": "",
+        "type": "card",
+        "CardType": 7,
+        "zh": "Clay Pot Cooler",
+        "en": "Clay Pot Cooler",
+        "ja": "Clay Pot Cooler"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayStoragePot",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "储物罐",
+        "en": "Storage Pot",
+        "ja": "収納ポット"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayVase",
+        "icon": "Vase_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶罐",
+        "en": "Clay Vase",
+        "ja": "粘土の壺"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CookingPot",
+        "icon": "CookingPot_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "烹饪锅",
+        "en": "Cooking Pot",
+        "ja": "料理ポット"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 7,
+        "zh": "大型坩埚",
+        "en": "Large Crucible",
+        "ja": "大型るつぼ"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 7,
+        "zh": "小型坩埚",
+        "en": "Small Crucible",
+        "ja": "小型るつぼ"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_FunnelTrap",
         "icon": "FunnelTrap",
         "type": "card",
@@ -2922,6 +3119,22 @@
         "zh": "鱼篓陷阱",
         "en": "Funnel Trap",
         "ja": "ファネルトラップ"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_GlazedVase",
+        "icon": "",
+        "type": "card",
+        "CardType": 7,
+        "zh": "Glazed Vase",
+        "en": "Glazed Vase",
+        "ja": "Glazed Vase"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2970,38 +3183,6 @@
         "zh": "陷坑",
         "en": "Pit Trap",
         "ja": "落とし穴"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_ReedCoat",
-        "icon": "Coat_Straw",
-        "type": "card",
-        "CardType": 7,
-        "zh": "芦苇大衣",
-        "en": "Reed Coat",
-        "ja": "ヨシのコート"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_ReedTunic",
-        "icon": "ReedTunic",
-        "type": "card",
-        "CardType": 7,
-        "zh": "芦苇长袍",
-        "en": "Reed Tunic",
-        "ja": "ヨシのチューニック"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3097,7 +3278,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3113,7 +3294,7 @@
         "CardType": 10,
         "zh": "新木质房间（东）",
         "en": "New Cabin Room (East)",
-        "ja": "New Cabin Room (East)"
+        "ja": "小屋部屋を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3129,7 +3310,7 @@
         "CardType": 10,
         "zh": "新木质房间（北）",
         "en": "New Cabin Room (North)",
-        "ja": "New Cabin Room (North)"
+        "ja": "小屋部屋を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3145,7 +3326,7 @@
         "CardType": 10,
         "zh": "新木质房间（南）",
         "en": "New Cabin Room (South)",
-        "ja": "New Cabin Room (South)"
+        "ja": "小屋部屋を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3161,7 +3342,7 @@
         "CardType": 10,
         "zh": "新木质房间（上）",
         "en": "New Cabin Room (Up)",
-        "ja": "New Cabin Room (Up)"
+        "ja": "小屋部屋を増設（上）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3177,7 +3358,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3295,22 +3476,6 @@
         "zh": "蓝图制作",
         "en": "Blueprint",
         "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "MudPile",
-        "icon": "Mud_Pile",
-        "type": "card",
-        "CardType": 0,
-        "zh": "泥堆",
-        "en": "Mud Pile",
-        "ja": "泥の山"
-      },
-      "localization": {
-        "zh": "动作：制作泥砖",
-        "en": "Action: Make a Mud Brick",
-        "ja": "アクション：泥レンガを作る"
       }
     },
     {

@@ -6,8 +6,8 @@
   "type": "perk",
   "zh": "宣布主权",
   "en": "Lay the Claim",
-  "ja": "Lay the Claim",
-  "UniqueIDIndex": 3413,
+  "ja": "領有権を主張する",
+  "UniqueIDIndex": 3512,
   "StartUnlocked": false,
   "ActionObjectives": [],
   "CardsOnBoardObjectives": [],
@@ -82,7 +82,7 @@
     "Text": "宣布主权",
     "zh": "宣布主权",
     "en": "Lay the Claim",
-    "ja": "Lay the Claim"
+    "ja": "領有権を主張する"
   },
   "NotificationSettings": {
     "Frequency": 1,
@@ -95,7 +95,7 @@
         "Text": "完成",
         "zh": "完成",
         "en": "Completed",
-        "ja": "Completed"
+        "ja": "完了"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -130,6 +130,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -484,7 +488,7 @@
                 "CardType": 3,
                 "zh": "宣布主权 - 完成",
                 "en": "Lay the Claim Complete",
-                "ja": "Lay the Claim Complete",
+                "ja": "領有権を主張する：完了",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -635,6 +639,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

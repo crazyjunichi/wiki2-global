@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "豌豆",
   "en": "Peas",
-  "ja": "Peas",
-  "UniqueIDIndex": 520,
+  "ja": "ピース",
+  "UniqueIDIndex": 535,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "豌豆",
     "zh": "豌豆",
     "en": "Peas",
-    "ja": "Peas"
+    "ja": "ピース"
   },
   "CardImage": {
     "FileName": "Peas_Plant"
@@ -716,7 +716,7 @@
             "Text": "成长度",
             "zh": "成长度",
             "en": "Growth",
-            "ja": "Growth"
+            "ja": "成長"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -756,7 +756,7 @@
             "Text": "干透了",
             "zh": "干透了",
             "en": "Dead",
-            "ja": "Dead"
+            "ja": "枯死"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -768,7 +768,7 @@
             "Text": "烹煮",
             "zh": "烹煮",
             "en": "Boil",
-            "ja": "Boil"
+            "ja": "煮沸する"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -832,7 +832,7 @@
     "Text": "需要干豌豆",
     "zh": "需要干豌豆",
     "en": "Dried Peas Needed",
-    "ja": "Dried Peas Needed"
+    "ja": "乾燥エンドウ豆が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1170,7 +1170,7 @@
     "Text": "从商人处购得；需要中低酸度、中等湿度、中等养分和中高土质。\\n\\n可食用。",
     "zh": "从商人处购得；需要中低酸度、中等湿度、中等养分和中高土质。\\n\\n可食用。",
     "en": "Bought from traders; needs low to medium acidity, medium hydration, medium nutrients and mid to high structure.\\n\\nEdible. ",
-    "ja": "Bought from traders; needs low to medium acidity, medium hydration, medium nutrients and mid to high structure.\n\nEdible. "
+    "ja": "交易商から購入できる。低〜中程度の酸性度、中程度の水分量、中程度の養分量、中〜高程度の土壌構造を必要とする。\\n\\n食用になる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1202,6 +1202,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1481,7 +1485,7 @@
                 "Text": "成长度",
                 "zh": "成长度",
                 "en": "Growth",
-                "ja": "Growth"
+                "ja": "成長"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1521,7 +1525,7 @@
                 "Text": "干透了",
                 "zh": "干透了",
                 "en": "Dead",
-                "ja": "Dead"
+                "ja": "枯死"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1533,7 +1537,7 @@
                 "Text": "烹煮",
                 "zh": "烹煮",
                 "en": "Boil",
-                "ja": "Boil"
+                "ja": "煮沸する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1719,14 +1723,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1734,7 +1746,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1748,7 +1760,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1762,7 +1774,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1776,7 +1788,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1851,7 +1863,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1879,7 +1891,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1973,7 +1985,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2254,7 +2266,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"

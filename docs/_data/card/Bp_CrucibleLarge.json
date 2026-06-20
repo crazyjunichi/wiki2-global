@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "大型坩埚",
   "en": "Large Crucible",
-  "ja": "Large Crucible",
-  "UniqueIDIndex": 373,
+  "ja": "大型るつぼ",
+  "UniqueIDIndex": 385,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "大型坩埚",
     "zh": "大型坩埚",
     "en": "Large Crucible",
-    "ja": "Large Crucible"
+    "ja": "大型るつぼ"
   },
   "CardImage": {
     "FileName": "CrucibleLarge"
@@ -667,7 +667,7 @@
         "text": "“Copper Tool Shape”",
         "icon": "",
         "type": "tag",
-        "count": 18,
+        "count": 20,
         "zh": "工具坯",
         "en": "Copper Tool Shape",
         "ja": "Copper Tool Shape",
@@ -678,7 +678,7 @@
             "Text": "温度",
             "zh": "温度",
             "en": "Temperature",
-            "ja": "Temperature"
+            "ja": "温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -692,7 +692,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -706,7 +706,7 @@
             "Text": "捶打",
             "zh": "捶打",
             "en": "Strikes",
-            "ja": "Strikes"
+            "ja": "打撃数"
           },
           "OverrideIcon": {
             "FileName": "Hammer"
@@ -720,7 +720,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -734,7 +734,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -748,7 +748,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -809,7 +809,7 @@
     "Text": "需要金属坯",
     "zh": "需要金属坯",
     "en": "Metal Blank Needed",
-    "ja": "Metal Blank Needed"
+    "ja": "金属未成形品が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -997,7 +997,7 @@
     "Text": "用于熔炼合金和铸造金属的粘土容器。",
     "zh": "用于熔炼合金和铸造金属的粘土容器。",
     "en": "A clay container for alloying and casting metals.",
-    "ja": "A clay container for alloying and casting metals."
+    "ja": "金属の合金化や鋳造に使用する粘土製の容器。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1029,6 +1029,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1310,7 +1314,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1324,7 +1328,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1524,7 +1528,7 @@
             "en": "Temper",
             "ja": "強化粉末",
             "SubGroups": [],
-            "count": 7,
+            "count": 17,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1535,7 +1539,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 384
             },
             "UsageDurability": {
               "Active": false,
@@ -1547,55 +1551,61 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 1
             },
             "FuelCapacity": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
+                "DefaultText": "Wetness",
+                "Text": "湿度",
+                "zh": "湿度",
+                "en": "Wetness",
+                "ja": "濡れ"
+              },
+              "OverrideIcon": {
+                "FileName": "Water"
+              },
+              "MaxValue": 30
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Growth",
+                "Text": "成长度",
+                "zh": "成长度",
+                "en": "Growth",
+                "ja": "成長"
               },
               "OverrideIcon": null,
               "MaxValue": 1
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
             },
             "SpecialDurability1": {
               "Active": false,
               "CardStatName": {
                 "DefaultText": "",
-                "Text": "SpecialDurability1",
+                "Text": "烹饪度",
                 "zh": "特殊1",
                 "en": "Special1",
                 "ja": ""
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Cooking_Old"
+              },
+              "MaxValue": 2
             },
             "SpecialDurability2": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "クオリティ"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 30
             },
             "SpecialDurability3": {
               "Active": true,
@@ -1799,14 +1809,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1814,7 +1832,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1828,7 +1846,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1842,7 +1860,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1856,7 +1874,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1940,7 +1958,7 @@
         "CardType": 0,
         "zh": "大型未烧制坩埚",
         "en": "Large Unfired Crucible",
-        "ja": "Large Unfired Crucible",
+        "ja": "大型の未焼成るつぼ",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -1996,7 +2014,7 @@
             "Text": "烧制进度",
             "zh": "烧制进度",
             "en": "Fired",
-            "ja": "Fired"
+            "ja": "焼いた"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -2010,7 +2028,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2099,7 +2117,7 @@
         "type": "stat",
         "zh": "陶艺",
         "en": "Pottery",
-        "ja": "Pottery",
+        "ja": "陶芸のスキル",
         "max": 150,
         "min": 0
       },
@@ -2127,7 +2145,7 @@
         "type": "stat",
         "zh": "陶艺",
         "en": "Pottery",
-        "ja": "Pottery",
+        "ja": "陶芸のスキル",
         "max": 150,
         "min": 0
       },
@@ -2312,7 +2330,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

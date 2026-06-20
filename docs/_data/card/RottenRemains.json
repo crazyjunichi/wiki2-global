@@ -7,7 +7,7 @@
   "zh": "腐烂物",
   "en": "Rotten Remains",
   "ja": "腐った残骸",
-  "UniqueIDIndex": 2192,
+  "UniqueIDIndex": 2252,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“喂/添加”",
       "icon": "",
       "type": "tag",
-      "count": 295,
+      "count": 299,
       "zh": "喂/添加",
       "en": "Feed",
       "ja": "餌",
@@ -264,17 +264,31 @@
         },
         "OverrideIcon": null,
         "MaxValue": 672
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "Boil",
+          "zh": "Boil",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
       }
     },
     {
       "key": "tag_FeedCarniOmni",
-      "text": "“肉食和杂食动物饲料”",
+      "text": "“Feed for Carnivores and Omnivores”",
       "icon": "",
       "type": "tag",
-      "count": 142,
-      "zh": "肉食和杂食动物饲料",
+      "count": 136,
+      "zh": "Feed for Carnivores and Omnivores",
       "en": "Feed for Carnivores and Omnivores",
-      "ja": "肉食動物と雑食動物の餌",
+      "ja": "Feed for Carnivores and Omnivores",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -324,7 +338,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -366,7 +380,7 @@
           "Text": "肉部位",
           "zh": "肉部位",
           "en": "Meat Type",
-          "ja": "Meat Type"
+          "ja": "肉の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -391,7 +405,7 @@
       "text": "“粉末”",
       "icon": "",
       "type": "tag",
-      "count": 30,
+      "count": 33,
       "zh": "粉末",
       "en": "Powder",
       "ja": "パウダー",
@@ -568,6 +582,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1021,7 +1039,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1035,7 +1053,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1144,7 +1162,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1158,7 +1176,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1310,13 +1328,251 @@
       },
       {
         "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：保存-麻袋",
+          "en": "Passive Effect：Preserve  - Sack",
+          "ja": "パッシブ効果：保存 - 袋"
+        },
+        "value": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Sack - Chilled",
+          "en": "Passive Effect：Preserve - Sack - Chilled",
+          "ja": "パッシブ効果：Preserve - Sack - Chilled"
+        },
+        "value": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
           "key": "Pk_5_1_6_ScribeGear_JarWithSootInk",
           "icon": "Jar_Clay",
           "type": "card",
           "CardType": 0,
           "zh": "小陶罐(专有)",
           "en": "Clay Jar(Pk)",
-          "ja": "Clay Jar",
+          "ja": "粘土の壺",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1348,7 +1604,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1386,7 +1642,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1473,7 +1729,29 @@
     "OnFullNotification": 0,
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
-    "durabilityKey": "UsageDurability"
+    "durabilityKey": "UsageDurability",
+    "_valueModifications": [
+      {
+        "link": {
+          "key": "Bp_NightBroth",
+          "icon": "Bowl_Clay_Water",
+          "type": "card",
+          "CardType": 7,
+          "zh": "暗夜浓汤",
+          "en": "Night Broth",
+          "ja": "Night Broth"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": -1,
+          "y": -1
+        }
+      }
+    ]
   },
   "FuelCapacity": {
     "Active": false,
@@ -2250,6 +2528,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2473,8 +2755,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2644,6 +2934,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Eating"
@@ -3544,12 +3838,12 @@
         "CardType": 0,
         "zh": "可食用的黑橡子",
         "en": "Edible Black Acorns",
-        "ja": "Edible Black Acorns"
+        "ja": "食用黒ドングリ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3560,12 +3854,12 @@
         "CardType": 0,
         "zh": "黑橡子",
         "en": "Black Acorns",
-        "ja": "Black Acorns"
+        "ja": "黒ドングリ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3576,12 +3870,12 @@
         "CardType": 0,
         "zh": "烤黑橡子",
         "en": "Roasted Black Acorns",
-        "ja": "Roasted Black Acorns"
+        "ja": "炒ったドングリ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3688,12 +3982,12 @@
         "CardType": 0,
         "zh": "越橘脂油糕",
         "en": "Billberry Fat Cake",
-        "ja": "Billberry Fat Cake"
+        "ja": "ビルベリー脂菓子"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3848,12 +4142,12 @@
         "CardType": 0,
         "zh": "血旺",
         "en": "Blood Curd",
-        "ja": "Blood Curd"
+        "ja": "血豆腐"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3864,12 +4158,12 @@
         "CardType": 0,
         "zh": "水煮血旺",
         "en": "Boiled Blood Curd",
-        "ja": "Boiled Blood Curd"
+        "ja": "茹でた血豆腐"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3880,12 +4174,12 @@
         "CardType": 0,
         "zh": "熟血旺",
         "en": "Cooked Blood Curd",
-        "ja": "Cooked Blood Curd"
+        "ja": "調理した血豆腐"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3896,12 +4190,12 @@
         "CardType": 0,
         "zh": "生血肠填料",
         "en": "Raw Blood Filling",
-        "ja": "Raw Blood Filling"
+        "ja": "生の血の具"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3912,12 +4206,12 @@
         "CardType": 0,
         "zh": "生血灌肠填料",
         "en": "Raw Rich Blood Filling",
-        "ja": "Raw Rich Blood Filling"
+        "ja": "濃厚な生の血の具"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3928,12 +4222,12 @@
         "CardType": 0,
         "zh": "血布丁",
         "en": "Blood Pudding",
-        "ja": "Blood Pudding"
+        "ja": "血のプディング"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3944,12 +4238,12 @@
         "CardType": 0,
         "zh": "黑布丁",
         "en": "Rich Blood Pudding",
-        "ja": "Rich Blood Pudding"
+        "ja": "濃厚な血のプディング"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3960,12 +4254,12 @@
         "CardType": 0,
         "zh": "水煮血灌肠",
         "en": "Boiled Rich Blood Sausage",
-        "ja": "Boiled Rich Blood Sausage"
+        "ja": "茹でた濃厚な血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3976,12 +4270,12 @@
         "CardType": 0,
         "zh": "熟血灌肠",
         "en": "Cooked Rich Blood Sausage",
-        "ja": "Cooked Rich Blood Sausage"
+        "ja": "調理した濃厚な血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -3992,12 +4286,12 @@
         "CardType": 0,
         "zh": "干血灌肠",
         "en": "Dried Rich Blood Sausage",
-        "ja": "Dried Rich Blood Sausage"
+        "ja": "干した濃厚な血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4008,12 +4302,12 @@
         "CardType": 0,
         "zh": "生血灌肠",
         "en": "Raw Rich Blood Sausage",
-        "ja": "Raw Rich Blood Sausage"
+        "ja": "濃厚な生の血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4024,12 +4318,12 @@
         "CardType": 0,
         "zh": "水煮血肠",
         "en": "Boiled Blood Sausage",
-        "ja": "Boiled Blood Sausage"
+        "ja": "茹でた血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4040,12 +4334,12 @@
         "CardType": 0,
         "zh": "熟血肠",
         "en": "Cooked Blood Sausage",
-        "ja": "Cooked Blood Sausage"
+        "ja": "調理した血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4056,12 +4350,12 @@
         "CardType": 0,
         "zh": "干血肠",
         "en": "Dried Blood Sausage",
-        "ja": "Dried Blood Sausage"
+        "ja": "干した血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4072,12 +4366,12 @@
         "CardType": 0,
         "zh": "生血肠",
         "en": "Raw Blood Sausage",
-        "ja": "Raw Blood Sausage"
+        "ja": "生の血のソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4104,12 +4398,12 @@
         "CardType": 0,
         "zh": "黄油块",
         "en": "Butter Chunk",
-        "ja": "Butter Chunk"
+        "ja": "バターの塊"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4152,7 +4446,7 @@
         "CardType": 0,
         "zh": "放完血的熊尸",
         "en": "Bled Bear Carcass",
-        "ja": "Bled Bear Carcass",
+        "ja": "放血済みの熊の死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4166,7 +4460,7 @@
               "Text": "放血中的熊尸",
               "zh": "放血中的熊尸",
               "en": "Bleeding Bear Carcass",
-              "ja": "Bleeding Bear Carcass"
+              "ja": "放血中の熊の死骸"
             }
           }
         ]
@@ -4174,7 +4468,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4185,12 +4479,12 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4233,7 +4527,7 @@
         "CardType": 0,
         "zh": "放完血的野猪尸体",
         "en": "Bled Boar Carcass",
-        "ja": "Bled Boar Carcass",
+        "ja": "放血済みのイノシシの死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4247,7 +4541,7 @@
               "Text": "放血中的野猪尸体",
               "zh": "放血中的野猪尸体",
               "en": "Bleeding Boar Carcass",
-              "ja": "Bleeding Boar Carcass"
+              "ja": "放血中のイノシシの死骸"
             }
           }
         ]
@@ -4255,7 +4549,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4266,12 +4560,12 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4298,12 +4592,12 @@
         "CardType": 0,
         "zh": "小牛尸体",
         "en": "Calf Carcass",
-        "ja": "Calf Carcass"
+        "ja": "子牛の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4314,7 +4608,7 @@
         "CardType": 0,
         "zh": "放完血的小牛尸体",
         "en": "Bled Calf Carcass",
-        "ja": "Bled Calf Carcass",
+        "ja": "血抜き済みの子牛の枝肉",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4328,7 +4622,7 @@
               "Text": "放血中的小牛尸体",
               "zh": "放血中的小牛尸体",
               "en": "Bleeding Calf Carcass",
-              "ja": "Bleeding Calf Carcass"
+              "ja": "血抜き中の子牛の死体"
             }
           }
         ]
@@ -4336,7 +4630,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4347,12 +4641,12 @@
         "CardType": 0,
         "zh": "剥皮的小牛尸体",
         "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "ja": "皮剥ぎ済みの子牛の枝肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4363,12 +4657,12 @@
         "CardType": 0,
         "zh": "牛尸体",
         "en": "Cow Carcass",
-        "ja": "Cow Carcass"
+        "ja": "牛の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4379,7 +4673,7 @@
         "CardType": 0,
         "zh": "放完血的牛尸体",
         "en": "Bled Cow Carcass",
-        "ja": "Bled Cow Carcass",
+        "ja": "血抜き済みの牛の枝肉",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4393,7 +4687,7 @@
               "Text": "放血中的牛尸体",
               "zh": "放血中的牛尸体",
               "en": "Bleeding Cow Carcass",
-              "ja": "Bleeding Cow Carcass"
+              "ja": "血抜き中の牛の枝肉"
             }
           }
         ]
@@ -4401,7 +4695,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4412,12 +4706,12 @@
         "CardType": 0,
         "zh": "剥皮的牛尸体",
         "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
+        "ja": "皮剥ぎ済みの牛の枝肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4444,7 +4738,7 @@
         "CardType": 0,
         "zh": "放完血的母鹿尸体",
         "en": "Bled Doe Carcass",
-        "ja": "Bled Doe Carcass",
+        "ja": "放血済みの雌鹿の死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4458,7 +4752,7 @@
               "Text": "放血中的母鹿尸体",
               "zh": "放血中的母鹿尸体",
               "en": "Bleeding Doe Carcass",
-              "ja": "Bleeding Doe Carcass"
+              "ja": "放血中の雌鹿の死骸"
             }
           }
         ]
@@ -4466,7 +4760,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4477,12 +4771,12 @@
         "CardType": 0,
         "zh": "剥皮的母鹿尸体",
         "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
+        "ja": "皮を剥がれた雌鹿の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4493,12 +4787,12 @@
         "CardType": 0,
         "zh": "森林猛兽尸体",
         "en": "Forest Beast Carcass",
-        "ja": "Forest Beast Carcass"
+        "ja": "森獣の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4509,7 +4803,7 @@
         "CardType": 0,
         "zh": "放完血的森林猛兽尸体",
         "en": "Bled Forest Beast Carcass",
-        "ja": "Bled Forest Beast Carcass",
+        "ja": "放血済みの森獣の死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4523,7 +4817,7 @@
               "Text": "放血中的森林猛兽尸体",
               "zh": "放血中的森林猛兽尸体",
               "en": "Bleeding Forest Beast Carcass",
-              "ja": "Bleeding Forest Beast Carcass"
+              "ja": "放血中の森獣の死骸"
             }
           }
         ]
@@ -4531,7 +4825,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4542,12 +4836,12 @@
         "CardType": 0,
         "zh": "剥皮的森林猛兽尸体",
         "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
+        "ja": "皮を剥がれた森獣の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4574,7 +4868,72 @@
         "CardType": 0,
         "zh": "野兔尸体",
         "en": "Hare Carcass",
-        "ja": "Hare Carcass"
+        "ja": "ノウサギの死骸"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "腐敗物 フル"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_HollowCarcass",
+        "icon": "Doe",
+        "type": "card",
+        "CardType": 0,
+        "zh": "空壳尸体",
+        "en": "Hollow Carcass",
+        "ja": "Hollow Carcass"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "Spoilage フル"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_HollowCarcassBleeding",
+        "icon": "Doe",
+        "type": "card",
+        "CardType": 0,
+        "zh": "放完血的空壳尸体",
+        "en": "Bled Hollow Carcass",
+        "ja": "Bled Hollow Carcass",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special3Range": {
+                "x": 1,
+                "y": 1000000000
+              }
+            },
+            "Name": {
+              "DefaultText": "Bleeding Hollow Carcass",
+              "Text": "放血中的空壳尸体",
+              "zh": "放血中的空壳尸体",
+              "en": "Bleeding Hollow Carcass",
+              "ja": "Bleeding Hollow Carcass"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "Spoilage フル"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_HollowCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -4590,12 +4949,12 @@
         "CardType": 0,
         "zh": "月兽尸体",
         "en": "Moontouched Carcass",
-        "ja": "Moontouched Carcass"
+        "ja": "月触れの死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4606,7 +4965,7 @@
         "CardType": 0,
         "zh": "放完血的月兽尸体",
         "en": "Bled Moontouched Carcass",
-        "ja": "Bled Moontouched Carcass",
+        "ja": "血抜き済みの月触れの死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4620,7 +4979,7 @@
               "Text": "放血中的月兽尸体",
               "zh": "放血中的月兽尸体",
               "en": "Bleeding Moontouched Carcass",
-              "ja": "Bleeding Moontouched Carcass"
+              "ja": "血抜き中の月触れの死骸"
             }
           }
         ]
@@ -4628,7 +4987,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4639,12 +4998,28 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_PrimevalCarcass",
+        "icon": "Wolf_Dark",
+        "type": "card",
+        "CardType": 0,
+        "zh": "原初狼尸",
+        "en": "Primeval Wolf Carcass",
+        "ja": "太古オオカミの死骸"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4655,7 +5030,7 @@
         "CardType": 0,
         "zh": "放完血的原初狼尸",
         "en": "Bled Primeval Wolf Carcass",
-        "ja": "Bled Primeval Wolf Carcass",
+        "ja": "血抜き済みの太古オオカミの枝肉",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4669,7 +5044,7 @@
               "Text": "放血中的原初狼尸",
               "zh": "放血中的原初狼尸",
               "en": "Bleeding Primeval Wolf Carcass",
-              "ja": "Bleeding Primeval Wolf Carcass"
+              "ja": "血抜き中の太古オオカミの枝肉"
             }
           }
         ]
@@ -4677,7 +5052,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4688,28 +5063,12 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_PrimevalWolfCarcass",
-        "icon": "Wolf_Dark",
-        "type": "card",
-        "CardType": 0,
-        "zh": "原初狼尸",
-        "en": "Primeval Wolf Carcass",
-        "ja": "Primeval Wolf Carcass"
-      },
-      "localization": {
-        "zh": "变质 达到最大",
-        "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4752,7 +5111,7 @@
         "CardType": 0,
         "zh": "放完血的公鹿尸体",
         "en": "Bled Stag Carcass",
-        "ja": "Bled Stag Carcass",
+        "ja": "放血済みの牡鹿の死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4766,7 +5125,7 @@
               "Text": "放血中的公鹿尸体",
               "zh": "放血中的公鹿尸体",
               "en": "Bleeding Stag Carcass",
-              "ja": "Bleeding Stag Carcass"
+              "ja": "放血中の牡鹿の死骸"
             }
           }
         ]
@@ -4774,7 +5133,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4785,12 +5144,12 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4817,7 +5176,7 @@
         "CardType": 0,
         "zh": "放完血的狼尸",
         "en": "Bled Wolf Carcass",
-        "ja": "Bled Wolf Carcass",
+        "ja": "放血済みの狼の死骸",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4831,7 +5190,7 @@
               "Text": "放血中的狼尸",
               "zh": "放血中的狼尸",
               "en": "Bleeding Wolf Carcass",
-              "ja": "Bleeding Wolf Carcass"
+              "ja": "放血中の狼の死骸"
             }
           }
         ]
@@ -4839,7 +5198,7 @@
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4850,12 +5209,12 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4866,12 +5225,12 @@
         "CardType": 0,
         "zh": "煮熟的香蒲根",
         "en": "Boiled Cattail Root",
-        "ja": "Boiled Cattail Root"
+        "ja": "茹でたガマの根"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4882,12 +5241,12 @@
         "CardType": 0,
         "zh": "切好的香蒲根",
         "en": "Cut Cattail Root",
-        "ja": "Cut Cattail Root"
+        "ja": "切ったガマの根"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4898,12 +5257,12 @@
         "CardType": 0,
         "zh": "干香蒲根",
         "en": "Dried Cattail Root",
-        "ja": "Dried Cattail Root"
+        "ja": "乾燥したガマの根"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4914,12 +5273,12 @@
         "CardType": 0,
         "zh": "香蒲根",
         "en": "Cattail Root",
-        "ja": "Cattail Root"
+        "ja": "ガマの根"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4930,12 +5289,12 @@
         "CardType": 0,
         "zh": "烤熟的香蒲根",
         "en": "Roasted Cattail Root",
-        "ja": "Roasted Cattail Root"
+        "ja": "焼いたガマの根"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4946,12 +5305,12 @@
         "CardType": 0,
         "zh": "陈年奶酪",
         "en": "Aged Cheese",
-        "ja": "Aged Cheese"
+        "ja": "熟成チーズ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4962,12 +5321,12 @@
         "CardType": 0,
         "zh": "陈年奶酪楔块",
         "en": "Aged Cheese Wedge",
-        "ja": "Aged Cheese Wedge"
+        "ja": "熟成チーズの一切れ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4978,12 +5337,12 @@
         "CardType": 0,
         "zh": "凝乳块",
         "en": "Cheese Curds",
-        "ja": "Cheese Curds"
+        "ja": "チーズ凝乳"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -4994,12 +5353,12 @@
         "CardType": 0,
         "zh": "硬质奶酪",
         "en": "Firm Cheese",
-        "ja": "Firm Cheese"
+        "ja": "しっかりとしたチーズ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5010,12 +5369,12 @@
         "CardType": 0,
         "zh": "硬质奶酪楔块",
         "en": "Firm Cheese Wedge",
-        "ja": "Firm Cheese Wedge"
+        "ja": "セミハードチーズの一切れ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5026,12 +5385,12 @@
         "CardType": 0,
         "zh": "特硬奶酪",
         "en": "Hard Cheese",
-        "ja": "Hard Cheese"
+        "ja": "硬いチーズ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5042,12 +5401,12 @@
         "CardType": 0,
         "zh": "特硬奶酪楔块",
         "en": "Hard Cheese Wedge",
-        "ja": "Hard Cheese Wedge"
+        "ja": "硬いチーズの一切れ"
       },
       "localization": {
         "zh": "成熟度 达到最大",
         "en": "Maturity Full",
-        "ja": "Maturity フル"
+        "ja": "熟成度 フル"
       }
     },
     {
@@ -5058,12 +5417,12 @@
         "CardType": 0,
         "zh": "软奶酪",
         "en": "Soft Cheese",
-        "ja": "Soft Cheese"
+        "ja": "ソフトチーズ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5074,12 +5433,12 @@
         "CardType": 0,
         "zh": "软奶酪楔块",
         "en": "Soft Cheese Wedge",
-        "ja": "Soft Cheese Wedge"
+        "ja": "ソフトチーズの一切れ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5090,12 +5449,12 @@
         "CardType": 0,
         "zh": "小灰山鹑尸体",
         "en": "Dead Chick",
-        "ja": "Dead Chick"
+        "ja": "ひよこの死骸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5106,12 +5465,12 @@
         "CardType": 0,
         "zh": "烤小龙虾",
         "en": "Roasted Crayfish",
-        "ja": "Roasted Crayfish"
+        "ja": "焼きザリガニ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5122,12 +5481,12 @@
         "CardType": 0,
         "zh": "腐烂的鸭子",
         "en": "Rotten Duck",
-        "ja": "Rotten Duck"
+        "ja": "腐敗したカモ"
       },
       "localization": {
         "zh": "动作：收获",
         "en": "Action: Harvest",
-        "ja": "アクション：Harvest"
+        "ja": "アクション：収穫"
       }
     },
     {
@@ -5138,7 +5497,7 @@
         "CardType": 0,
         "zh": "水煮鸡蛋",
         "en": "Boiled Chicken Egg",
-        "ja": "Boiled Chicken Egg"
+        "ja": "ゆで鶏卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5154,7 +5513,7 @@
         "CardType": 0,
         "zh": "烤鸡蛋",
         "en": "Roasted Chicken Egg",
-        "ja": "Roasted Chicken Egg"
+        "ja": "焼き鶏卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5186,7 +5545,7 @@
         "CardType": 0,
         "zh": "水煮灰山鹑蛋",
         "en": "Boiled Partridge Egg",
-        "ja": "Boiled Partridge Egg"
+        "ja": "ゆでヤマウズラ卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5202,7 +5561,7 @@
         "CardType": 0,
         "zh": "烤灰山鹑蛋",
         "en": "Roasted Partridge Egg",
-        "ja": "Roasted Partridge Egg"
+        "ja": "焼きヤマウズラ卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5234,7 +5593,7 @@
         "CardType": 0,
         "zh": "水煮野生鸟蛋",
         "en": "Boiled Wild Egg",
-        "ja": "Boiled Wild Egg"
+        "ja": "ゆで野生卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5250,7 +5609,7 @@
         "CardType": 0,
         "zh": "烤野生鸟蛋",
         "en": "Roasted Wild Egg",
-        "ja": "Roasted Wild Egg"
+        "ja": "焼き野生卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5266,23 +5625,7 @@
         "CardType": 0,
         "zh": "野生鸟蛋",
         "en": "Wild Egg",
-        "ja": "Wild Egg"
-      },
-      "localization": {
-        "zh": "变质 达到最大",
-        "en": "Spoilage Full",
-        "ja": "腐敗 フル"
-      }
-    },
-    {
-      "link": {
-        "key": "Fat",
-        "icon": "Fat",
-        "type": "card",
-        "CardType": 0,
-        "zh": "脂肪",
-        "en": "Fat",
-        "ja": "脂"
+        "ja": "野生卵"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5394,12 +5737,12 @@
         "CardType": 0,
         "zh": "水煮肥鱼肉",
         "en": "Boiled Fatty Fish Meat",
-        "ja": "Boiled Fatty Fish Meat"
+        "ja": "茹でた脂の乗った魚肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5410,12 +5753,12 @@
         "CardType": 0,
         "zh": "熟肥鱼肉",
         "en": "Cooked Fatty Fish Meat",
-        "ja": "Cooked Fatty Fish Meat"
+        "ja": "調理した脂の乗った魚肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5426,12 +5769,12 @@
         "CardType": 0,
         "zh": "肥鱼肉干",
         "en": "Dried Fatty Fish Meat",
-        "ja": "Dried Fatty Fish Meat"
+        "ja": "乾燥した脂の乗った魚肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5442,12 +5785,12 @@
         "CardType": 0,
         "zh": "生肥鱼肉",
         "en": "Raw Fatty Fish Meat",
-        "ja": "Raw Fatty Fish Meat"
+        "ja": "生の脂の乗った魚肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5458,12 +5801,12 @@
         "CardType": 0,
         "zh": "生鱼填料",
         "en": "Raw Fish Filling",
-        "ja": "Raw Fish Filling"
+        "ja": "生の魚の具"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5474,7 +5817,7 @@
         "CardType": 0,
         "zh": "水煮瘦鱼肉",
         "en": "Boiled Lean Fish Meat",
-        "ja": "Boiled Lean Fish Meat"
+        "ja": "ゆで赤身魚肉"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -5538,12 +5881,12 @@
         "CardType": 0,
         "zh": "红点鲑",
         "en": "Char",
-        "ja": "Char"
+        "ja": "キャラ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5634,12 +5977,12 @@
         "CardType": 0,
         "zh": "亚麻种子",
         "en": "Flax Seeds",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5650,12 +5993,12 @@
         "CardType": 0,
         "zh": "熟毒蝇伞",
         "en": "Cooked Fly Agaric",
-        "ja": "Cooked Fly Agaric"
+        "ja": "調理済みベニテングタケ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -5760,7 +6103,7 @@
               "Text": "新鲜毛皮碎料",
               "zh": "新鲜毛皮碎料",
               "en": "Fresh Fur Scraps",
-              "ja": "Fresh Fur Scraps"
+              "ja": "生毛皮の切れ端"
             }
           },
           {
@@ -5775,7 +6118,7 @@
               "Text": "新鲜松鼠皮",
               "zh": "新鲜松鼠皮",
               "en": "Fresh Squirrel Fur",
-              "ja": "Fresh Squirrel Fur"
+              "ja": "生のリス毛皮"
             }
           },
           {
@@ -5790,7 +6133,7 @@
               "Text": "小块新鲜毛皮",
               "zh": "小块新鲜毛皮",
               "en": "Small Fresh Fur",
-              "ja": "Small Fresh Fur"
+              "ja": "小さな生毛皮"
             }
           },
           {
@@ -5805,7 +6148,7 @@
               "Text": "新鲜狐狸皮",
               "zh": "新鲜狐狸皮",
               "en": "Fresh Fox Fur",
-              "ja": "Fresh Fox Fur"
+              "ja": "生のキツネ毛皮"
             }
           },
           {
@@ -5820,7 +6163,7 @@
               "Text": "新鲜野兔毛皮",
               "zh": "新鲜野兔毛皮",
               "en": "Fresh Hare Fur",
-              "ja": "Fresh Hare Fur"
+              "ja": "新鮮なノウサギの毛皮"
             }
           },
           {
@@ -5835,7 +6178,7 @@
               "Text": "新鲜野兔毛皮",
               "zh": "新鲜野兔毛皮",
               "en": "Fresh Hare Fur",
-              "ja": "Fresh Hare Fur"
+              "ja": "新鮮なノウサギの毛皮"
             }
           },
           {
@@ -5865,7 +6208,7 @@
               "Text": "中块新鲜毛皮",
               "zh": "中块新鲜毛皮",
               "en": "Medium Fresh Fur",
-              "ja": "Medium Fresh Fur"
+              "ja": "中型の生毛皮"
             }
           },
           {
@@ -5880,7 +6223,7 @@
               "Text": "新鲜狼皮",
               "zh": "新鲜狼皮",
               "en": "Fresh Wolf Fur",
-              "ja": "Fresh Wolf Fur"
+              "ja": "生のオオカミ毛皮"
             }
           },
           {
@@ -5895,7 +6238,7 @@
               "Text": "新鲜月兽毛皮",
               "zh": "新鲜月兽毛皮",
               "en": "Fresh Moontouched Fur",
-              "ja": "Fresh Moontouched Fur"
+              "ja": "新鮮な月触れの毛皮"
             }
           },
           {
@@ -5910,7 +6253,7 @@
               "Text": "新鲜原初之狼毛皮",
               "zh": "新鲜原初之狼毛皮",
               "en": "Fresh Primeval Wolf Fur",
-              "ja": "Fresh Primeval Wolf Fur"
+              "ja": "新鮮な太古狼の毛皮"
             }
           },
           {
@@ -5925,7 +6268,7 @@
               "Text": "大块新鲜毛皮",
               "zh": "大块新鲜毛皮",
               "en": "Large Fresh Fur",
-              "ja": "Large Fresh Fur"
+              "ja": "大型の生毛皮"
             }
           },
           {
@@ -5940,7 +6283,7 @@
               "Text": "特大块新鲜毛皮",
               "zh": "特大块新鲜毛皮",
               "en": "Very Large Fresh Very",
-              "ja": "Very Large Fresh Very"
+              "ja": "特大の生毛皮"
             }
           },
           {
@@ -5955,7 +6298,7 @@
               "Text": "新鲜熊皮",
               "zh": "新鲜熊皮",
               "en": "Fresh Bear Fur",
-              "ja": "Fresh Bear Fur"
+              "ja": "生のクマ毛皮"
             }
           },
           {
@@ -5970,7 +6313,7 @@
               "Text": "新鲜森林猛兽毛皮",
               "zh": "新鲜森林猛兽毛皮",
               "en": "Fresh Forest Beast Fur",
-              "ja": "Fresh Forest Beast Fur"
+              "ja": "新鮮な森獣の毛皮"
             }
           }
         ]
@@ -6021,12 +6364,12 @@
         "CardType": 0,
         "zh": "碎杜松子",
         "en": "Crushed Juniper Berries",
-        "ja": "Crushed Juniper Berries"
+        "ja": "砕いたジュニパーベリー"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6037,12 +6380,12 @@
         "CardType": 0,
         "zh": "干杜松子",
         "en": "Dried Juniper Berries",
-        "ja": "Dried Juniper Berries"
+        "ja": "乾燥ジュニパーベリー"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6053,12 +6396,12 @@
         "CardType": 0,
         "zh": "杜松子",
         "en": "Juniper Berries",
-        "ja": "Juniper Berries"
+        "ja": "ジュニパーベリー"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6069,12 +6412,12 @@
         "CardType": 0,
         "zh": "烤杜松子",
         "en": "Roasted Juniper Berries",
-        "ja": "Roasted Juniper Berries"
+        "ja": "焙煎ジュニパーベリー"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6085,12 +6428,12 @@
         "CardType": 0,
         "zh": "碎的烤杜松子",
         "en": "Crushed  Roasted Juniper Berries",
-        "ja": "Crushed  Roasted Juniper Berries"
+        "ja": "砕いた焙煎ジュニパーベリー"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6101,12 +6444,12 @@
         "CardType": 9,
         "zh": "血",
         "en": "Blood",
-        "ja": "Blood"
+        "ja": "血"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6117,12 +6460,12 @@
         "CardType": 9,
         "zh": "血旺",
         "en": "Blood Curd",
-        "ja": "Blood Curd"
+        "ja": "血豆腐"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6133,12 +6476,12 @@
         "CardType": 9,
         "zh": "熟血旺",
         "en": "Cooked Blood Curd",
-        "ja": "Cooked Blood Curd"
+        "ja": "調理した血豆腐"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6175,6 +6518,38 @@
     },
     {
       "link": {
+        "key": "LQ_RottenRemains",
+        "icon": "Flour_Acorn",
+        "type": "card",
+        "CardType": 9,
+        "zh": "腐烂物",
+        "en": "Rotten Remains",
+        "ja": "Rotten Remains"
+      },
+      "localization": {
+        "zh": "动作：取出",
+        "en": "Action: Take Out",
+        "ja": "アクション：Take Out"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_RottenRemains",
+        "icon": "Flour_Acorn",
+        "type": "card",
+        "CardType": 9,
+        "zh": "腐烂物",
+        "en": "Rotten Remains",
+        "ja": "Rotten Remains"
+      },
+      "localization": {
+        "zh": "动作：拿出10份",
+        "en": "Action: Take Out 10",
+        "ja": "アクション：Take Out 10"
+      }
+    },
+    {
+      "link": {
         "key": "MeatBoiled",
         "icon": "Meat_Cooked",
         "type": "card",
@@ -6195,7 +6570,7 @@
               "Text": "水煮碎肉",
               "zh": "水煮碎肉",
               "en": "Boiled Meat Scraps",
-              "ja": "Boiled Meat Scraps"
+              "ja": "茹でた肉片"
             }
           },
           {
@@ -6210,7 +6585,7 @@
               "Text": "水煮肩肉",
               "zh": "水煮肩肉",
               "en": "Boiled Shoulder Meat",
-              "ja": "Boiled Shoulder Meat"
+              "ja": "茹でた肩肉"
             }
           },
           {
@@ -6225,7 +6600,7 @@
               "Text": "水煮肉",
               "zh": "水煮肉",
               "en": "Boiled Meat",
-              "ja": "Boiled Meat"
+              "ja": "茹で肉"
             }
           },
           {
@@ -6240,7 +6615,7 @@
               "Text": "水煮腿肉",
               "zh": "水煮腿肉",
               "en": "Boiled Haunch Meat",
-              "ja": "Boiled Haunch Meat"
+              "ja": "茹でた腿肉"
             }
           },
           {
@@ -6255,7 +6630,7 @@
               "Text": "水煮脊肉",
               "zh": "水煮脊肉",
               "en": "Boiled Loin Meat",
-              "ja": "Boiled Loin Meat"
+              "ja": "茹でたロース肉"
             }
           }
         ]
@@ -6274,12 +6649,12 @@
         "CardType": 0,
         "zh": "水煮脑花",
         "en": "Boiled Brain",
-        "ja": "Boiled Brain"
+        "ja": "茹でた脳"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6290,12 +6665,12 @@
         "CardType": 0,
         "zh": "熟脑花",
         "en": "Cooked Brain",
-        "ja": "Cooked Brain"
+        "ja": "調理した脳"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6306,12 +6681,12 @@
         "CardType": 0,
         "zh": "干脑花",
         "en": "Dried Brain",
-        "ja": "Dried Brain"
+        "ja": "干した脳"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6322,12 +6697,12 @@
         "CardType": 0,
         "zh": "脑浆",
         "en": "Brain Mush",
-        "ja": "Brain Mush"
+        "ja": "脳の練り物"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6338,12 +6713,12 @@
         "CardType": 0,
         "zh": "脑花",
         "en": "Brain",
-        "ja": "Brain"
+        "ja": "脳"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6354,12 +6729,12 @@
         "CardType": 0,
         "zh": "肉饼",
         "en": "Meat Cake",
-        "ja": "Meat Cake"
+        "ja": "ミートローフ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6384,7 +6759,7 @@
               "Text": "熟碎肉",
               "zh": "熟碎肉",
               "en": "Cooked Meat Scraps",
-              "ja": "Cooked Meat Scraps"
+              "ja": "調理した肉片"
             }
           },
           {
@@ -6399,7 +6774,7 @@
               "Text": "熟肩肉",
               "zh": "熟肩肉",
               "en": "Cooked Shoulder Meat",
-              "ja": "Cooked Shoulder Meat"
+              "ja": "調理した肩肉"
             }
           },
           {
@@ -6414,7 +6789,7 @@
               "Text": "熟肉",
               "zh": "熟肉",
               "en": "Cooked Meat",
-              "ja": "Cooked Meat"
+              "ja": "調理した肉"
             }
           },
           {
@@ -6429,7 +6804,7 @@
               "Text": "熟腿肉",
               "zh": "熟腿肉",
               "en": "Cooked Haunch Meat",
-              "ja": "Cooked Haunch Meat"
+              "ja": "調理した腿肉"
             }
           },
           {
@@ -6444,7 +6819,7 @@
               "Text": "熟脊肉",
               "zh": "熟脊肉",
               "en": "Cooked Loin Meat",
-              "ja": "Cooked Loin Meat"
+              "ja": "調理したロース肉"
             }
           }
         ]
@@ -6477,7 +6852,7 @@
               "Text": "碎肉干",
               "zh": "碎肉干",
               "en": "Dried Meat Scraps",
-              "ja": "Dried Meat Scraps"
+              "ja": "干した肉片"
             }
           },
           {
@@ -6492,7 +6867,7 @@
               "Text": "肩肉干",
               "zh": "肩肉干",
               "en": "Dried Shoulder Meat",
-              "ja": "Dried Shoulder Meat"
+              "ja": "干した肩肉"
             }
           },
           {
@@ -6507,7 +6882,7 @@
               "Text": "肉干",
               "zh": "肉干",
               "en": "Dried Meat",
-              "ja": "Dried Meat"
+              "ja": "干した肉"
             }
           },
           {
@@ -6522,7 +6897,7 @@
               "Text": "腿肉干",
               "zh": "腿肉干",
               "en": "Dried Haunch Meat",
-              "ja": "Dried Haunch Meat"
+              "ja": "干した腿肉"
             }
           },
           {
@@ -6537,7 +6912,7 @@
               "Text": "脊肉干",
               "zh": "脊肉干",
               "en": "Dried Loin Meat",
-              "ja": "Dried Loin Meat"
+              "ja": "干したロース肉"
             }
           }
         ]
@@ -6556,12 +6931,12 @@
         "CardType": 0,
         "zh": "生肉填料",
         "en": "Raw Meat Filling",
-        "ja": "Raw Meat Filling"
+        "ja": "生の肉の具"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6572,12 +6947,12 @@
         "CardType": 0,
         "zh": "生肉灌肠填料",
         "en": "Raw Rich Meat Filling",
-        "ja": "Raw Rich Meat Filling"
+        "ja": "濃厚な生の肉の具"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6588,12 +6963,12 @@
         "CardType": 0,
         "zh": "水煮心脏",
         "en": "Boiled Heart",
-        "ja": "Boiled Heart"
+        "ja": "茹でた心臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6604,12 +6979,12 @@
         "CardType": 0,
         "zh": "熟心脏",
         "en": "Cooked Heart",
-        "ja": "Cooked Heart"
+        "ja": "調理した心臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6620,12 +6995,12 @@
         "CardType": 0,
         "zh": "心脏干",
         "en": "Dried Heart",
-        "ja": "Dried Heart"
+        "ja": "干した心臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6636,12 +7011,12 @@
         "CardType": 0,
         "zh": "心脏",
         "en": "Heart",
-        "ja": "Heart"
+        "ja": "心臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6652,12 +7027,12 @@
         "CardType": 0,
         "zh": "水煮肠子",
         "en": "Boiled Intestines",
-        "ja": "Boiled Intestines"
+        "ja": "茹でた腸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6668,12 +7043,12 @@
         "CardType": 0,
         "zh": "熟肠子",
         "en": "Cooked Intestines",
-        "ja": "Cooked Intestines"
+        "ja": "調理した腸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6684,12 +7059,12 @@
         "CardType": 0,
         "zh": "肠子干",
         "en": "Dried Intestines",
-        "ja": "Dried Intestines"
+        "ja": "干した腸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6700,12 +7075,12 @@
         "CardType": 0,
         "zh": "干净的肠子",
         "en": "Cleaned Intestines",
-        "ja": "Cleaned Intestines"
+        "ja": "洗った腸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6716,12 +7091,12 @@
         "CardType": 0,
         "zh": "肠子",
         "en": "Intestines",
-        "ja": "Intestines"
+        "ja": "腸"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6732,12 +7107,12 @@
         "CardType": 0,
         "zh": "水煮肾脏",
         "en": "Boiled Kidney",
-        "ja": "Boiled Kidney"
+        "ja": "茹でた腎臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6748,12 +7123,12 @@
         "CardType": 0,
         "zh": "熟肾脏",
         "en": "Cooked Kidney",
-        "ja": "Cooked Kidney"
+        "ja": "調理した腎臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6764,12 +7139,12 @@
         "CardType": 0,
         "zh": "肾脏干",
         "en": "Dried Kidney",
-        "ja": "Dried Kidney"
+        "ja": "干した腎臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6780,12 +7155,12 @@
         "CardType": 0,
         "zh": "干净的肾脏",
         "en": "Cleaned Kidney",
-        "ja": "Cleaned Kidney"
+        "ja": "洗った腎臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6796,12 +7171,12 @@
         "CardType": 0,
         "zh": "肾脏",
         "en": "Kidney",
-        "ja": "Kidney"
+        "ja": "腎臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6812,12 +7187,12 @@
         "CardType": 0,
         "zh": "水煮肝脏",
         "en": "Boiled Liver",
-        "ja": "Boiled Liver"
+        "ja": "茹でた肝臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6828,12 +7203,12 @@
         "CardType": 0,
         "zh": "熟肝脏",
         "en": "Cooked Liver",
-        "ja": "Cooked Liver"
+        "ja": "調理した肝臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6844,12 +7219,12 @@
         "CardType": 0,
         "zh": "肝脏干",
         "en": "Dried Liver",
-        "ja": "Dried Liver"
+        "ja": "干した肝臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6860,12 +7235,12 @@
         "CardType": 0,
         "zh": "肝脏",
         "en": "Liver",
-        "ja": "Liver"
+        "ja": "肝臓"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6876,12 +7251,12 @@
         "CardType": 0,
         "zh": "肉卷",
         "en": "Meatloaf",
-        "ja": "Meatloaf"
+        "ja": "ミートローフ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6892,12 +7267,12 @@
         "CardType": 0,
         "zh": "水煮肺",
         "en": "Boiled Lung",
-        "ja": "Boiled Lung"
+        "ja": "茹でた肺"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6908,12 +7283,12 @@
         "CardType": 0,
         "zh": "熟肺",
         "en": "Cooked Lung",
-        "ja": "Cooked Lung"
+        "ja": "調理した肺"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6924,12 +7299,12 @@
         "CardType": 0,
         "zh": "肺干",
         "en": "Dried Lung",
-        "ja": "Dried Lung"
+        "ja": "干した肺"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6940,12 +7315,12 @@
         "CardType": 0,
         "zh": "肺",
         "en": "Lung",
-        "ja": "Lung"
+        "ja": "肺"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6956,12 +7331,12 @@
         "CardType": 0,
         "zh": "水煮肉末",
         "en": "Boiled Minced Meat",
-        "ja": "Boiled Minced Meat"
+        "ja": "茹でたひき肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6972,12 +7347,12 @@
         "CardType": 0,
         "zh": "熟肉末",
         "en": "Cooked Minced Meat",
-        "ja": "Cooked Minced Meat"
+        "ja": "調理したひき肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -6988,12 +7363,12 @@
         "CardType": 0,
         "zh": "生肉末",
         "en": "Raw Minced Meat",
-        "ja": "Raw Minced Meat"
+        "ja": "生のひき肉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7018,7 +7393,7 @@
               "Text": "碎肉",
               "zh": "碎肉",
               "en": "Meat Scraps",
-              "ja": "Meat Scraps"
+              "ja": "肉片"
             }
           },
           {
@@ -7033,7 +7408,7 @@
               "Text": "肩肉",
               "zh": "肩肉",
               "en": "Shoulder Meat",
-              "ja": "Shoulder Meat"
+              "ja": "肩肉"
             }
           },
           {
@@ -7048,7 +7423,7 @@
               "Text": "肉",
               "zh": "肉",
               "en": "Meat",
-              "ja": "Meat"
+              "ja": "肉"
             }
           },
           {
@@ -7063,7 +7438,7 @@
               "Text": "腿肉",
               "zh": "腿肉",
               "en": "Haunch Meat",
-              "ja": "Haunch Meat"
+              "ja": "腿肉"
             }
           },
           {
@@ -7078,7 +7453,7 @@
               "Text": "脊肉",
               "zh": "脊肉",
               "en": "Loin Meat",
-              "ja": "Loin Meat"
+              "ja": "ロース肉"
             }
           }
         ]
@@ -7097,12 +7472,12 @@
         "CardType": 0,
         "zh": "水煮灌肠",
         "en": "Boiled Rich Sausage",
-        "ja": "Boiled Rich Sausage"
+        "ja": "茹でた濃厚なソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7113,12 +7488,12 @@
         "CardType": 0,
         "zh": "熟肉灌肠",
         "en": "Cooked Rich Sausage",
-        "ja": "Cooked Rich Sausage"
+        "ja": "調理した濃厚なソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7129,12 +7504,12 @@
         "CardType": 0,
         "zh": "干肉灌肠",
         "en": "Dried Rich Sausage",
-        "ja": "Dried Rich Sausage"
+        "ja": "干した濃厚なソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7145,12 +7520,12 @@
         "CardType": 0,
         "zh": "生肉灌肠",
         "en": "Raw Rich Sausage",
-        "ja": "Raw Rich Sausage"
+        "ja": "濃厚な生ソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7161,12 +7536,12 @@
         "CardType": 0,
         "zh": "水煮香肠",
         "en": "Boiled Sausage",
-        "ja": "Boiled Sausage"
+        "ja": "茹でたソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7177,12 +7552,12 @@
         "CardType": 0,
         "zh": "熟香肠",
         "en": "Cooked Sausage",
-        "ja": "Cooked Sausage"
+        "ja": "調理したソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7193,12 +7568,12 @@
         "CardType": 0,
         "zh": "干香肠",
         "en": "Dried Sausage",
-        "ja": "Dried Sausage"
+        "ja": "干したソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7209,12 +7584,12 @@
         "CardType": 0,
         "zh": "生香肠",
         "en": "Raw Sausage",
-        "ja": "Raw Sausage"
+        "ja": "生ソーセージ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7225,12 +7600,12 @@
         "CardType": 0,
         "zh": "水煮胃",
         "en": "Boiled Stomach",
-        "ja": "Boiled Stomach"
+        "ja": "茹でた胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7241,12 +7616,12 @@
         "CardType": 0,
         "zh": "胃干",
         "en": "Dried Stomach",
-        "ja": "Dried Stomach"
+        "ja": "乾燥した胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7257,12 +7632,12 @@
         "CardType": 0,
         "zh": "小牛胃",
         "en": "Calf Stomach",
-        "ja": "Calf Stomach"
+        "ja": "子牛の胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7273,12 +7648,12 @@
         "CardType": 0,
         "zh": "熟胃",
         "en": "Cooked Stomach",
-        "ja": "Cooked Stomach"
+        "ja": "調理した胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7289,12 +7664,12 @@
         "CardType": 0,
         "zh": "胃干",
         "en": "Dried Stomach",
-        "ja": "Dried Stomach"
+        "ja": "干した胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7305,12 +7680,12 @@
         "CardType": 0,
         "zh": "胃",
         "en": "Stomach",
-        "ja": "Stomach"
+        "ja": "胃"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7321,12 +7696,12 @@
         "CardType": 0,
         "zh": "黄油",
         "en": "Butter",
-        "ja": "Butter"
+        "ja": "バター"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7449,12 +7824,12 @@
         "CardType": 0,
         "zh": "干透了的豌豆",
         "en": "Dead Dried Peas",
-        "ja": "Dead Dried Peas"
+        "ja": "枯死した乾燥ピース"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗度 フル"
       }
     },
     {
@@ -7529,12 +7904,12 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7545,12 +7920,12 @@
         "CardType": 0,
         "zh": "橡子饼干(专有)",
         "en": "Acorn Hardtack(Pk)",
-        "ja": "Acorn Hardtack"
+        "ja": "どんぐりの乾パン"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7561,12 +7936,12 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7577,12 +7952,12 @@
         "CardType": 0,
         "zh": "干豌豆(专有)",
         "en": "Dried Peas(Pk)",
-        "ja": "Dried Peas"
+        "ja": "乾燥したピース"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7593,12 +7968,12 @@
         "CardType": 0,
         "zh": "黑麦粒(专有)",
         "en": "Rye Grains(Pk)",
-        "ja": "Rye Grains"
+        "ja": "ライ麦"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7625,12 +8000,12 @@
         "CardType": 0,
         "zh": "黑麦越橘馅饼",
         "en": "Rye Bilberry Pasty",
-        "ja": "Rye Bilberry Pasty"
+        "ja": "ライ麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7641,12 +8016,12 @@
         "CardType": 0,
         "zh": "黑麦血面包",
         "en": "Rye Bloodbread",
-        "ja": "Rye Bloodbread"
+        "ja": "ライ麦のブラッドブレッド"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7657,12 +8032,12 @@
         "CardType": 0,
         "zh": "黑麦血馅饼",
         "en": "Rye Blood Pasty",
-        "ja": "Rye Blood Pasty"
+        "ja": "ライ麦血入りパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7673,7 +8048,7 @@
         "CardType": 0,
         "zh": "黑麦面包条",
         "en": "Rye Breadloaf",
-        "ja": "Rye Breadloaf"
+        "ja": "ライ麦パンの塊"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7689,7 +8064,7 @@
         "CardType": 0,
         "zh": "生黑麦面包条",
         "en": "Raw Rye Breadloaf",
-        "ja": "Raw Rye Breadloaf"
+        "ja": "未調理のライ麦パンの塊"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7705,7 +8080,7 @@
         "CardType": 0,
         "zh": "黑麦面包片",
         "en": "Rye Bread Slice",
-        "ja": "Rye Bread Slice"
+        "ja": "ライ麦パンのスライス"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7721,12 +8096,12 @@
         "CardType": 0,
         "zh": "黑麦血面团",
         "en": "Rye Blood Dough",
-        "ja": "Rye Blood Dough"
+        "ja": "ライ麦の血生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7737,7 +8112,7 @@
         "CardType": 0,
         "zh": "黑麦鸡蛋面团",
         "en": "Rye Egg Dough",
-        "ja": "Rye Egg Dough"
+        "ja": "ライ麦と卵の生地"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7753,7 +8128,7 @@
         "CardType": 0,
         "zh": "含油黑麦面团",
         "en": "Rye Grease Dough",
-        "ja": "Rye Grease Dough"
+        "ja": "ライ麦グリース生地"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7785,7 +8160,7 @@
         "CardType": 0,
         "zh": "黑麦酸面团",
         "en": "Rye Sour Dough",
-        "ja": "Rye Sour Dough"
+        "ja": "ライ麦酸生地"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -7801,12 +8176,12 @@
         "CardType": 0,
         "zh": "黑麦鱼馅饼",
         "en": "Rye Fish Pasty",
-        "ja": "Rye Fish Pasty"
+        "ja": "ライ麦魚パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7865,12 +8240,12 @@
         "CardType": 0,
         "zh": "黑麦饼干",
         "en": "Rye Hardtack",
-        "ja": "Rye Hardtack"
+        "ja": "ライ麦の乾パン "
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7881,12 +8256,12 @@
         "CardType": 0,
         "zh": "黑麦肉馅饼",
         "en": "Rye Meat Pasty",
-        "ja": "Rye Meat Pasty"
+        "ja": "ライ麦肉パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7897,12 +8272,12 @@
         "CardType": 0,
         "zh": "生黑麦越橘馅饼",
         "en": "Raw Rye Bilberry Pasty",
-        "ja": "Raw Rye Bilberry Pasty"
+        "ja": "生のライ麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7913,12 +8288,12 @@
         "CardType": 0,
         "zh": "生黑麦血馅饼",
         "en": "Raw Rye Blood Pasty",
-        "ja": "Raw Rye Blood Pasty"
+        "ja": "生のライ麦血入りパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7929,12 +8304,12 @@
         "CardType": 0,
         "zh": "生麦芽鱼馅饼",
         "en": "Raw Rye Fish Pasty",
-        "ja": "Raw Rye Fish Pasty"
+        "ja": "生のライ麦魚パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7945,12 +8320,12 @@
         "CardType": 0,
         "zh": "生黑麦肉馅饼",
         "en": "Raw Rye Meat Pasty",
-        "ja": "Raw Rye Meat Pasty"
+        "ja": "生のライ麦肉パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7961,12 +8336,12 @@
         "CardType": 0,
         "zh": "生黑麦春莓馅饼",
         "en": "Raw Rye Springberry Pasty",
-        "ja": "Raw Rye Springberry Pasty"
+        "ja": "生のライ麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -7977,7 +8352,7 @@
         "CardType": 0,
         "zh": "黑麦圆面包",
         "en": "Rye Roundbread",
-        "ja": "Rye Roundbread"
+        "ja": "ライ麦丸パン"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -8025,12 +8400,12 @@
         "CardType": 0,
         "zh": "黑麦春莓馅饼",
         "en": "Rye Springberry Pasty",
-        "ja": "Rye Springberry Pasty"
+        "ja": "ライ麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8055,7 +8430,7 @@
               "Text": "新鲜兽皮碎料",
               "zh": "新鲜兽皮碎料",
               "en": "Fresh Skin Scraps",
-              "ja": "Fresh Skin Scraps"
+              "ja": "新鮮な皮の端切れ"
             }
           },
           {
@@ -8070,7 +8445,7 @@
               "Text": "小块新鲜兽皮",
               "zh": "小块新鲜兽皮",
               "en": "Small Fresh Skin",
-              "ja": "Small Fresh Skin"
+              "ja": "小さな生皮"
             }
           },
           {
@@ -8085,7 +8460,7 @@
               "Text": "新鲜獾皮",
               "zh": "新鲜獾皮",
               "en": "Fresh Badger Skin",
-              "ja": "Fresh Badger Skin"
+              "ja": "生のアナグマ皮"
             }
           },
           {
@@ -8100,7 +8475,7 @@
               "Text": "中块新鲜兽皮",
               "zh": "中块新鲜兽皮",
               "en": "Medium Fresh Skin",
-              "ja": "Medium Fresh Skin"
+              "ja": "中型の生皮"
             }
           },
           {
@@ -8115,7 +8490,7 @@
               "Text": "大块新鲜兽皮",
               "zh": "大块新鲜兽皮",
               "en": "Large Fresh Skin",
-              "ja": "Large Fresh Skin"
+              "ja": "大型の生皮"
             }
           },
           {
@@ -8130,7 +8505,7 @@
               "Text": "新鲜野猪皮",
               "zh": "新鲜野猪皮",
               "en": "Fresh Boar Skin",
-              "ja": "Fresh Boar Skin"
+              "ja": "生のイノシシ皮"
             }
           },
           {
@@ -8145,7 +8520,7 @@
               "Text": "新鲜母鹿皮",
               "zh": "新鲜母鹿皮",
               "en": "Fresh Doe Skin",
-              "ja": "Fresh Doe Skin"
+              "ja": "生のメスジカ皮"
             }
           },
           {
@@ -8160,7 +8535,7 @@
               "Text": "新鲜公鹿皮",
               "zh": "新鲜公鹿皮",
               "en": "Fresh Stag Skin",
-              "ja": "Fresh Stag Skin"
+              "ja": "生のオスジカ皮"
             }
           },
           {
@@ -8175,7 +8550,7 @@
               "Text": "新鲜小牛皮",
               "zh": "新鲜小牛皮",
               "en": "Fresh Calf Skin",
-              "ja": "Fresh Calf Skin"
+              "ja": "新鮮な子牛皮"
             }
           },
           {
@@ -8190,7 +8565,7 @@
               "Text": "特大块新鲜兽皮",
               "zh": "特大块新鲜兽皮",
               "en": "Very Large Fresh Skin",
-              "ja": "Very Large Fresh Skin"
+              "ja": "特大の生皮"
             }
           },
           {
@@ -8205,7 +8580,7 @@
               "Text": "新鲜牛皮",
               "zh": "新鲜牛皮",
               "en": "Fresh Cow Skin",
-              "ja": "Fresh Cow Skin"
+              "ja": "新鮮な牛皮"
             }
           }
         ]
@@ -8224,7 +8599,7 @@
         "CardType": 0,
         "zh": "新鲜毛皮",
         "en": "Fresh Fur",
-        "ja": "Fresh Fur",
+        "ja": "新しい毛皮",
         "AlternateNames": [
           {
             "Conditions": {
@@ -8238,7 +8613,7 @@
               "Text": "新鲜毛皮碎料",
               "zh": "新鲜毛皮碎料",
               "en": "Fresh Fur Scraps",
-              "ja": "Fresh Fur Scraps"
+              "ja": "生毛皮の切れ端"
             }
           },
           {
@@ -8253,7 +8628,7 @@
               "Text": "新鲜松鼠皮",
               "zh": "新鲜松鼠皮",
               "en": "Fresh Squirrel Fur",
-              "ja": "Fresh Squirrel Fur"
+              "ja": "生のリス毛皮"
             }
           },
           {
@@ -8268,7 +8643,7 @@
               "Text": "小块新鲜毛皮",
               "zh": "小块新鲜毛皮",
               "en": "Small Fresh Fur",
-              "ja": "Small Fresh Fur"
+              "ja": "小さな生毛皮"
             }
           },
           {
@@ -8283,7 +8658,7 @@
               "Text": "新鲜狐狸皮",
               "zh": "新鲜狐狸皮",
               "en": "Fresh Fox Fur",
-              "ja": "Fresh Fox Fur"
+              "ja": "生のキツネ毛皮"
             }
           },
           {
@@ -8298,7 +8673,7 @@
               "Text": "新鲜野兔毛皮",
               "zh": "新鲜野兔毛皮",
               "en": "Fresh Hare Fur",
-              "ja": "Fresh Hare Fur"
+              "ja": "新鮮なノウサギの毛皮"
             }
           },
           {
@@ -8313,7 +8688,7 @@
               "Text": "新鲜野兔毛皮",
               "zh": "新鲜野兔毛皮",
               "en": "Fresh Hare Fur",
-              "ja": "Fresh Hare Fur"
+              "ja": "新鮮なノウサギの毛皮"
             }
           },
           {
@@ -8328,7 +8703,7 @@
               "Text": "中块新鲜毛皮",
               "zh": "中块新鲜毛皮",
               "en": "Medium Fresh Fur",
-              "ja": "Medium Fresh Fur"
+              "ja": "中型の生毛皮"
             }
           },
           {
@@ -8343,7 +8718,7 @@
               "Text": "新鲜狼皮",
               "zh": "新鲜狼皮",
               "en": "Fresh Wolf Fur",
-              "ja": "Fresh Wolf Fur"
+              "ja": "生のオオカミ毛皮"
             }
           },
           {
@@ -8358,7 +8733,7 @@
               "Text": "新鲜月兽毛皮",
               "zh": "新鲜月兽毛皮",
               "en": "Fresh Moontouched Fur",
-              "ja": "Fresh Moontouched Fur"
+              "ja": "新鮮な月触れの毛皮"
             }
           },
           {
@@ -8373,7 +8748,7 @@
               "Text": "新鲜原初之狼毛皮",
               "zh": "新鲜原初之狼毛皮",
               "en": "Fresh Primeval Wolf Fur",
-              "ja": "Fresh Primeval Wolf Fur"
+              "ja": "新鮮な太古狼の毛皮"
             }
           },
           {
@@ -8388,7 +8763,7 @@
               "Text": "大块新鲜毛皮",
               "zh": "大块新鲜毛皮",
               "en": "Large Fresh Fur",
-              "ja": "Large Fresh Fur"
+              "ja": "大型の生毛皮"
             }
           },
           {
@@ -8403,7 +8778,7 @@
               "Text": "特大块新鲜毛皮",
               "zh": "特大块新鲜毛皮",
               "en": "Very Large Fresh Very",
-              "ja": "Very Large Fresh Very"
+              "ja": "特大の生毛皮"
             }
           },
           {
@@ -8418,7 +8793,7 @@
               "Text": "新鲜熊皮",
               "zh": "新鲜熊皮",
               "en": "Fresh Bear Fur",
-              "ja": "Fresh Bear Fur"
+              "ja": "生のクマ毛皮"
             }
           },
           {
@@ -8433,7 +8808,7 @@
               "Text": "新鲜森林猛兽毛皮",
               "zh": "新鲜森林猛兽毛皮",
               "en": "Fresh Forest Beast Fur",
-              "ja": "Fresh Forest Beast Fur"
+              "ja": "生の森獣の毛皮"
             }
           }
         ]
@@ -8500,12 +8875,12 @@
         "CardType": 0,
         "zh": "春莓脂油糕",
         "en": "Springberry Fat Cake",
-        "ja": "Springberry Fat Cake"
+        "ja": "スプリングベリー脂菓子"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8612,7 +8987,71 @@
         "CardType": 0,
         "zh": "死松鼠",
         "en": "Dead Squirrel",
-        "ja": "Dead Squirrel"
+        "ja": "死んだリス"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "腐敗物 フル"
+      }
+    },
+    {
+      "link": {
+        "key": "TumourBoiled",
+        "icon": "Tumour",
+        "type": "card",
+        "CardType": 0,
+        "zh": "水煮肿瘤",
+        "en": "Boiled Tumour",
+        "ja": "Boiled Tumour"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "Spoilage フル"
+      }
+    },
+    {
+      "link": {
+        "key": "TumourCooked",
+        "icon": "Tumour",
+        "type": "card",
+        "CardType": 0,
+        "zh": "烹制肿瘤",
+        "en": "Cooked Tumour",
+        "ja": "Cooked Tumour"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "Spoilage フル"
+      }
+    },
+    {
+      "link": {
+        "key": "TumourDried",
+        "icon": "Tumour",
+        "type": "card",
+        "CardType": 0,
+        "zh": "肿瘤干",
+        "en": "Dried Tumour",
+        "ja": "Dried Tumour"
+      },
+      "localization": {
+        "zh": "变质 达到最大",
+        "en": "Spoilage Full",
+        "ja": "Spoilage フル"
+      }
+    },
+    {
+      "link": {
+        "key": "TumourRaw",
+        "icon": "Tumour",
+        "type": "card",
+        "CardType": 0,
+        "zh": "生肿瘤",
+        "en": "Raw Tumour",
+        "ja": "Raw Tumour"
       },
       "localization": {
         "zh": "变质 达到最大",
@@ -8708,12 +9147,12 @@
         "CardType": 0,
         "zh": "小麦越橘馅饼",
         "en": "Wheat Bilberry Pasty",
-        "ja": "Wheat Bilberry Pasty"
+        "ja": "小麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8724,12 +9163,12 @@
         "CardType": 0,
         "zh": "小麦血面包",
         "en": "Wheat Bloodbread",
-        "ja": "Wheat Bloodbread"
+        "ja": "ライ麦のブラッドブレッド"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8740,12 +9179,12 @@
         "CardType": 0,
         "zh": "小麦血馅饼",
         "en": "Wheat Blood Pasty",
-        "ja": "Wheat Blood Pasty"
+        "ja": "小麦血入りパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8756,12 +9195,12 @@
         "CardType": 0,
         "zh": "小麦面包条",
         "en": "Wheat Breadloaf",
-        "ja": "Wheat Breadloaf"
+        "ja": "小麦のパンの塊"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8770,14 +9209,14 @@
         "icon": "BreadLoaf_Wheat",
         "type": "card",
         "CardType": 0,
-        "zh": "小麦面包条",
-        "en": "Wheat Rye Breadloaf",
-        "ja": "Wheat Rye Breadloaf"
+        "zh": "生小麦面包坯",
+        "en": "Raw Wheat Breadloaf",
+        "ja": "Raw Wheat Breadloaf"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8788,12 +9227,12 @@
         "CardType": 0,
         "zh": "小麦面包片",
         "en": "Wheat Bread Slice",
-        "ja": "Wheat Bread Slice"
+        "ja": "小麦パンのスライス"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8804,12 +9243,12 @@
         "CardType": 0,
         "zh": "小麦血面团",
         "en": "Wheat Blood Dough",
-        "ja": "Wheat Blood Dough"
+        "ja": "小麦の血入り生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8820,12 +9259,12 @@
         "CardType": 0,
         "zh": "小麦鸡蛋面团",
         "en": "Wheat Egg Dough",
-        "ja": "Wheat Egg Dough"
+        "ja": "小麦の卵入り生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8836,12 +9275,12 @@
         "CardType": 0,
         "zh": "含油小麦面团",
         "en": "Wheat Grease Dough",
-        "ja": "Wheat Grease Dough"
+        "ja": "小麦の脂入り生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8852,12 +9291,12 @@
         "CardType": 0,
         "zh": "小麦面团",
         "en": "Wheat Dough",
-        "ja": "Wheat Dough"
+        "ja": "小麦生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8868,12 +9307,12 @@
         "CardType": 0,
         "zh": "小麦酸面团",
         "en": "Wheat Sour Dough",
-        "ja": "Wheat Sour Dough"
+        "ja": "小麦の発酵生地"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8884,12 +9323,12 @@
         "CardType": 0,
         "zh": "小麦鱼馅饼",
         "en": "Wheat Fish Pasty",
-        "ja": "Wheat Fish Pasty"
+        "ja": "小麦魚パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8900,12 +9339,12 @@
         "CardType": 0,
         "zh": "小麦面饼",
         "en": "Wheat Flatbread",
-        "ja": "Wheat Flatbread"
+        "ja": "小麦のフラットブレッド"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8916,12 +9355,12 @@
         "CardType": 0,
         "zh": "小麦面粉",
         "en": "Wheat Flour",
-        "ja": "Wheat Flour"
+        "ja": "小麦の粉"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8932,12 +9371,12 @@
         "CardType": 0,
         "zh": "小麦粒",
         "en": "Wheat Grains",
-        "ja": "Wheat Grains"
+        "ja": "小麦粒"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8948,12 +9387,12 @@
         "CardType": 0,
         "zh": "小麦饼干",
         "en": "Wheat Hardtack",
-        "ja": "Wheat Hardtack"
+        "ja": "小麦の乾パン"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8964,12 +9403,12 @@
         "CardType": 0,
         "zh": "小麦肉馅饼",
         "en": "Wheat Meat Pasty",
-        "ja": "Wheat Meat Pasty"
+        "ja": "小麦肉パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8980,12 +9419,12 @@
         "CardType": 0,
         "zh": "生小麦越橘馅饼",
         "en": "Raw Wheat Bilberry Pasty",
-        "ja": "Raw Wheat Bilberry Pasty"
+        "ja": "生の小麦ビルベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -8996,12 +9435,12 @@
         "CardType": 0,
         "zh": "生小麦血馅饼",
         "en": "Raw Wheat Blood Pasty",
-        "ja": "Raw Wheat Blood Pasty"
+        "ja": "生の小麦血入りパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9012,12 +9451,12 @@
         "CardType": 0,
         "zh": "生小麦鱼馅饼",
         "en": "Raw Wheat Fish Pasty",
-        "ja": "Raw Wheat Fish Pasty"
+        "ja": "生の小麦魚パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9028,12 +9467,12 @@
         "CardType": 0,
         "zh": "生小麦肉馅饼",
         "en": "Raw Wheat Meat Pasty",
-        "ja": "Raw Wheat Meat Pasty"
+        "ja": "生の小麦肉パスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9044,12 +9483,12 @@
         "CardType": 0,
         "zh": "生小麦春莓馅饼",
         "en": "Raw Wheat Springberry Pasty",
-        "ja": "Raw Wheat Springberry Pasty"
+        "ja": "生の小麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9060,12 +9499,12 @@
         "CardType": 0,
         "zh": "小麦圆面包",
         "en": "Wheat Roundbread",
-        "ja": "Wheat Roundbread"
+        "ja": "小麦丸パン"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9076,12 +9515,12 @@
         "CardType": 0,
         "zh": "小麦春莓馅饼",
         "en": "Wheat Springberry Pasty",
-        "ja": "Wheat Springberry Pasty"
+        "ja": "小麦スプリングベリーパスティ"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9092,12 +9531,12 @@
         "CardType": 0,
         "zh": "小麦蛋糕",
         "en": "Wheat Cake",
-        "ja": "Wheat Cake"
+        "ja": "小麦菓子"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9108,12 +9547,12 @@
         "CardType": 0,
         "zh": "小麦鸡蛋面包",
         "en": "Wheat Eggbread",
-        "ja": "Wheat Eggbread"
+        "ja": "小麦の卵パン"
       },
       "localization": {
         "zh": "变质 达到最大",
         "en": "Spoilage Full",
-        "ja": "Spoilage フル"
+        "ja": "腐敗物 フル"
       }
     },
     {
@@ -9296,6 +9735,22 @@
     },
     {
       "link": {
+        "key": "Bp_NightBroth",
+        "icon": "Bowl_Clay_Water",
+        "type": "card",
+        "CardType": 7,
+        "zh": "暗夜浓汤",
+        "en": "Night Broth",
+        "ja": "Night Broth"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_RicePaddy",
         "icon": "",
         "type": "card",
@@ -9318,7 +9773,7 @@
         "CardType": 7,
         "zh": "呼唤虚空精魄(呼唤)",
         "en": "Void Spirit Calling",
-        "ja": "Void Spirit Calling"
+        "ja": "虚無の精霊召喚"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -9334,12 +9789,12 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -9350,12 +9805,12 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -9366,12 +9821,12 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -9446,12 +9901,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -9606,12 +10061,12 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "畜栏",
   "en": "Enclosure",
-  "ja": "Enclosure",
-  "UniqueIDIndex": 91,
+  "ja": "囲い",
+  "UniqueIDIndex": 92,
   "CardType": 4,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "畜栏",
     "zh": "畜栏",
     "en": "Enclosure",
-    "ja": "Enclosure"
+    "ja": "囲い"
   },
   "CardImage": null,
   "CardBackground": null,
@@ -885,6 +885,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": true,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1070,8 +1074,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1203,7 +1215,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure",
+        "ja": "囲い",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1211,7 +1223,7 @@
             "Text": "污垢",
             "zh": "污垢",
             "en": "Filth",
-            "ja": "Filth"
+            "ja": "汚れ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -1231,13 +1243,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "Flood"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -1273,7 +1285,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -1287,7 +1299,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -1664,12 +1676,12 @@
         "CardType": 2,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：进入",
         "en": "Action: Enter",
-        "ja": "アクション：Enter"
+        "ja": "アクション：入る"
       }
     }
   ],
@@ -1681,7 +1693,7 @@
     "CardType": 8,
     "zh": "畜栏",
     "en": "Enclosure",
-    "ja": "Enclosure",
+    "ja": "囲い",
     "SpoilageTime": {
       "Active": true,
       "CardStatName": {
@@ -1689,7 +1701,7 @@
         "Text": "污垢",
         "zh": "污垢",
         "en": "Filth",
-        "ja": "Filth"
+        "ja": "汚れ"
       },
       "OverrideIcon": {
         "FileName": "Filth"
@@ -1709,13 +1721,13 @@
       "MaxValue": 0
     },
     "FuelCapacity": {
-      "Active": true,
+      "Active": false,
       "CardStatName": {
-        "DefaultText": "Flood",
-        "Text": "洪水",
-        "zh": "洪水",
-        "en": "Flood",
-        "ja": "Flood"
+        "DefaultText": "",
+        "Text": "FuelCapacity",
+        "zh": "容量",
+        "en": "Fuel",
+        "ja": ""
       },
       "OverrideIcon": null,
       "MaxValue": 1
@@ -1751,7 +1763,7 @@
         "Text": "过度生长",
         "zh": "过度生长",
         "en": "Overgrowth",
-        "ja": "Overgrowth"
+        "ja": "草木の繁茂"
       },
       "OverrideIcon": {
         "FileName": "Overgrowth"
@@ -1765,7 +1777,7 @@
         "Text": "觅食",
         "zh": "觅食",
         "en": "Foraging",
-        "ja": "Foraging"
+        "ja": "資源集め"
       },
       "OverrideIcon": {
         "FileName": "SaturationBerries"

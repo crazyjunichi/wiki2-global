@@ -7,7 +7,7 @@
   "zh": "East",
   "en": "East",
   "ja": "East",
-  "UniqueIDIndex": 2593,
+  "UniqueIDIndex": 2672,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -99,6 +99,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1293,6 +1297,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1478,8 +1486,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1649,6 +1665,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2007,7 +2027,7 @@
                 "CardType": 4,
                 "zh": "平和林地",
                 "en": "Peaceful Grove",
-                "ja": "Peaceful Grove",
+                "ja": "静かな林",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2111,7 +2131,7 @@
                   "CardType": 8,
                   "zh": "平和林地",
                   "en": "Peaceful Grove",
-                  "ja": "Peaceful Grove",
+                  "ja": "静かな林",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -2171,7 +2191,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -2185,7 +2205,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "草木の繁茂"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -2199,7 +2219,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -2273,6 +2293,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2542,6 +2563,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2900,7 +2925,7 @@
                 "CardType": 4,
                 "zh": "浓荫松林",
                 "en": "Shady Pines",
-                "ja": "Shady Pines",
+                "ja": "薄暗い松林",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3004,7 +3029,7 @@
                   "CardType": 8,
                   "zh": "浓荫松林",
                   "en": "Shady Pines",
-                  "ja": "Shady Pines",
+                  "ja": "薄暗い松林",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -3064,7 +3089,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -3078,7 +3103,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "草木の繁茂"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -3092,7 +3117,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -3166,6 +3191,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3435,6 +3461,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -4059,6 +4089,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4328,6 +4359,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -4952,6 +4987,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5221,6 +5257,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -5843,6 +5883,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6112,6 +6153,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -6736,6 +6781,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -7005,6 +7051,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -7629,6 +7679,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -7898,6 +7949,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -8522,6 +8577,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "狐狸洞",
   "en": "Fox Burrow",
-  "ja": "Fox Burrow",
-  "UniqueIDIndex": 707,
+  "ja": "狐の巣穴",
+  "UniqueIDIndex": 731,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "狐狸洞",
     "zh": "狐狸洞",
     "en": "Fox Burrow",
-    "ja": "Fox Burrow"
+    "ja": "狐の巣穴"
   },
   "CardImage": {
     "FileName": "Burrow"
@@ -103,6 +103,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -343,7 +347,7 @@
             "m_GameObject": null,
             "m_Enabled": 1,
             "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
-            "UniqueIDIndex": 3060
+            "UniqueIDIndex": 3165
           },
           "UseAssociatedAgent": false,
           "TargetAgent": {
@@ -352,7 +356,7 @@
             "type": "npc",
             "zh": "狐狸",
             "en": "Fox",
-            "ja": "Fox"
+            "ja": "キツネ"
           },
           "ValueChange": {
             "x": -1,
@@ -383,7 +387,7 @@
             "type": "npc",
             "zh": "狐狸",
             "en": "Fox",
-            "ja": "Fox"
+            "ja": "キツネ"
           },
           "SetHome": 3,
           "SpecificEnv": null
@@ -906,6 +910,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -919,7 +927,7 @@
             "type": "npc",
             "zh": "狐狸",
             "en": "Fox",
-            "ja": "Fox"
+            "ja": "キツネ"
           },
           "TargetStat": {
             "m_Name": "AgentHasHome",
@@ -956,7 +964,7 @@
             "m_GameObject": null,
             "m_Enabled": 1,
             "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
-            "UniqueIDIndex": 3060
+            "UniqueIDIndex": 3165
           },
           "ConditionRange": {
             "x": 0,
@@ -1199,7 +1207,7 @@
             "m_GameObject": null,
             "m_Enabled": 1,
             "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
-            "UniqueIDIndex": 3060
+            "UniqueIDIndex": 3165
           },
           "UseAssociatedAgent": false,
           "TargetAgent": {
@@ -1208,7 +1216,7 @@
             "type": "npc",
             "zh": "狐狸",
             "en": "Fox",
-            "ja": "Fox"
+            "ja": "キツネ"
           },
           "ValueChange": {
             "x": 1,
@@ -1239,7 +1247,7 @@
             "type": "npc",
             "zh": "狐狸",
             "en": "Fox",
-            "ja": "Fox"
+            "ja": "キツネ"
           },
           "SetHome": 4,
           "SpecificEnv": null
@@ -1920,6 +1928,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2021,7 +2033,7 @@
       "CardType": 7,
       "zh": "摧毁巢穴",
       "en": "Destroy Burrow",
-      "ja": "Destroy Burrow",
+      "ja": "巣穴を壊す",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2211,8 +2223,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

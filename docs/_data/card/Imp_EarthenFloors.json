@@ -7,7 +7,7 @@
   "zh": "夯土地面",
   "en": "Earthen Floors",
   "ja": "地のフロア",
-  "UniqueIDIndex": 1490,
+  "UniqueIDIndex": 1532,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1003,7 +1007,7 @@
         "type": "stat",
         "zh": "庇护度",
         "en": "Sanctuary",
-        "ja": "Sanctuary",
+        "ja": "安息度",
         "max": 7500,
         "min": -1000
       },
@@ -1231,7 +1235,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1563,7 +1570,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1577,7 +1584,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1770,14 +1777,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_ReedsOrStraw",
-            "text": "“芦苇或稻杆”",
+            "key": "GpTag_ReedClothingStalks",
+            "text": "“茎秆”",
             "type": "tag",
-            "zh": "芦苇或稻杆",
-            "en": "Reeds or Straw",
-            "ja": "ヨシか麦",
+            "zh": "茎秆",
+            "en": "Stalks",
+            "ja": "Stalks",
             "SubGroups": [],
-            "count": 8,
+            "count": 6,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1809,24 +1816,24 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
               },
-              "MaxValue": 30
+              "MaxValue": 384
             },
             "Progress": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Growth",
-                "Text": "成长度",
-                "zh": "成长度",
-                "en": "Growth",
-                "ja": "成長"
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 0
             },
             "SpecialDurability1": {
               "Active": false,
@@ -1841,16 +1848,18 @@
               "MaxValue": 0
             },
             "SpecialDurability2": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "質"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 50
             },
             "SpecialDurability3": {
               "Active": false,
@@ -2054,8 +2063,16 @@
   ],
   "BuildingDaytimeCost": 8,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

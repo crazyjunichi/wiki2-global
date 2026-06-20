@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "脱粒机",
   "en": "Thresher",
-  "ja": "Thresher",
-  "UniqueIDIndex": 2492,
+  "ja": "脱穀具",
+  "UniqueIDIndex": 2562,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "脱粒机",
     "zh": "脱粒机",
     "en": "Thresher",
-    "ja": "Thresher"
+    "ja": "脱穀具"
   },
   "CardImage": {
     "FileName": "Thresher"
@@ -975,7 +975,7 @@
     "Text": "一种可以加快谷物脱粒速度的农具。",
     "zh": "一种可以加快谷物脱粒速度的农具。",
     "en": "A farming tool for threshing grain faster.",
-    "ja": "A farming tool for threshing grain faster."
+    "ja": "穀物をより速く脱穀するための農具。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1007,6 +1007,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1192,8 +1196,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1550,7 +1562,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AppliesTo": [
         {
@@ -1964,7 +1979,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AppliesTo": [
         {
@@ -2378,7 +2396,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AppliesTo": [
         {
@@ -2792,7 +2813,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AppliesTo": [
         {
@@ -3128,7 +3152,7 @@
         "CardType": 7,
         "zh": "脱粒机",
         "en": "Thresher",
-        "ja": "Thresher"
+        "ja": "脱穀具"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3151,7 +3175,7 @@
       "localization": {
         "zh": "动作：脱粒",
         "en": "Action: Thresh",
-        "ja": "アクション：Thresh"
+        "ja": "アクション：脱穀する"
       }
     },
     {
@@ -3162,12 +3186,12 @@
         "CardType": 0,
         "zh": "干小麦秆",
         "en": "Dry Wheat Stalks",
-        "ja": "Dry Wheat Stalks"
+        "ja": "乾燥した小麦の茎"
       },
       "localization": {
         "zh": "动作：脱粒",
         "en": "Action: Thresh",
-        "ja": "アクション：Thresh"
+        "ja": "アクション：脱穀する"
       }
     }
   ],

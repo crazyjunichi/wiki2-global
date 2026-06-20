@@ -5,14 +5,14 @@
   "icon": "Squirrel_Wild",
   "zh": "松鼠",
   "en": "Squirrel",
-  "ja": "Squirrel",
-  "UniqueIDIndex": 2795,
+  "ja": "リス",
+  "UniqueIDIndex": 2880,
   "AgentName": {
     "DefaultText": "Squirrel",
     "Text": "松鼠",
     "zh": "松鼠",
     "en": "Squirrel",
-    "ja": "Squirrel"
+    "ja": "リス"
   },
   "AgentDescription": {
     "DefaultText": "",
@@ -76,7 +76,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "f2c3d787896b6874c9974806acbe757a",
-        "UniqueIDIndex": 2806
+        "UniqueIDIndex": 2891
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -139,7 +139,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "879f824941ccad94daff21e4cde082fb",
-        "UniqueIDIndex": 3084
+        "UniqueIDIndex": 3189
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -202,7 +202,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "c6a0e93d4795420408c595ee3dbad47c",
-        "UniqueIDIndex": 3088
+        "UniqueIDIndex": 3193
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -265,7 +265,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "7ac23f79b1fb4e843b4cda85e550ff2c",
-        "UniqueIDIndex": 3087
+        "UniqueIDIndex": 3192
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -328,7 +328,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "fd3bbba2dee340449a4f550cc3c27df8",
-        "UniqueIDIndex": 3086
+        "UniqueIDIndex": 3191
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -391,7 +391,7 @@
         "m_GameObject": null,
         "m_Enabled": 1,
         "UniqueID": "b799e5eb54d234f448187ad6ccea381f",
-        "UniqueIDIndex": 3085
+        "UniqueIDIndex": 3190
       },
       "OverrideStartingValue": {
         "Active": true,
@@ -608,12 +608,207 @@
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
     "RequiredInGameTimes": [],
-    "RequiredAlreadyVisitedEnvironments": []
+    "RequiredAlreadyVisitedEnvironments": [],
+    "RequiredUnlockedBps": [],
+    "RequiredNOTUnlockedBps": [],
+    "NPCInventoryConditions": []
   },
   "StartingInventory": [],
   "TradingModifiers": [],
   "ModifyNPCStatsPerTradeValue": [],
   "AgentTags": [],
+  "HidingConditions": {
+    "NotInBackground": false,
+    "InBackground": false,
+    "PlayerUsesCard": 0,
+    "RequiredEnvironment": null,
+    "InvertEnvironmentRequirement": false,
+    "RequiredEnvironmentTags": [],
+    "RequiredNOTEnvironmentTags": [],
+    "RequiredContainer": [],
+    "RequiredNOTContainer": [],
+    "RequiredContainerTags": [],
+    "RequiredNOTContainerTags": [],
+    "RequiredCardsOnBoard": [],
+    "RequiredTagsOnBoard": [],
+    "RequiredCardsNOTOnBoard": [],
+    "RequiredTagsNOTOnBoard": [],
+    "RequiredLiquidContainers": [],
+    "RequiredCardsInInventory": [],
+    "RequiredTagsInInventory": [],
+    "CardWasBuiltWith": [],
+    "CardWasNOTBuiltWith": [],
+    "RequiredPlayerOwnedCards": [],
+    "RequiredPlayerNOTOwnedCards": [],
+    "ReceivingRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "GivenRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ReceivingContainerRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "GivenContainerRequiredDurabilityRanges": {
+      "SpoilageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "UsageRange": {
+        "x": 0,
+        "y": 0
+      },
+      "FuelRange": {
+        "x": 0,
+        "y": 0
+      },
+      "ProgressRange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special2Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special3Range": {
+        "x": 0,
+        "y": 0
+      },
+      "Special4Range": {
+        "x": 0,
+        "y": 0
+      },
+      "LiquidQuantityRange": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ReceivingCardTags": [],
+    "GivenCardTags": [],
+    "ReceivingCardSpices": [],
+    "GivenCardSpices": [],
+    "RequiredEnvironmentWeight": {
+      "Active": false,
+      "FloatValue": 0,
+      "MaxValue": 0
+    },
+    "RequiredStatValues": [],
+    "RequiredNPCStatValues": [],
+    "RequiredInGameTimes": [],
+    "RequiredAlreadyVisitedEnvironments": [],
+    "RequiredUnlockedBps": [],
+    "RequiredNOTUnlockedBps": [],
+    "NPCInventoryConditions": []
+  },
   "Interactions": [
     {
       "ButtonName": {
@@ -621,7 +816,7 @@
         "Text": "接近",
         "zh": "接近",
         "en": "Approach",
-        "ja": "Approach"
+        "ja": "近づく"
       },
       "Conditions": {
         "NotInBackground": false,
@@ -810,14 +1005,17 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "ButtonType": 1,
       "Dialog": {
         "key": "Dialogue_AgentPartridge",
         "zh": "灰山鹑",
         "en": "Partridge",
-        "ja": "Partridge",
+        "ja": "ヤマウズラ",
         "icon": "",
         "type": "dialog"
       },
@@ -864,7 +1062,7 @@
             "Text": "血迹",
             "zh": "血迹",
             "en": "Blood Trail",
-            "ja": "Blood Trail"
+            "ja": "血痕の跡"
           }
         }
       ],
@@ -1027,6 +1225,10 @@
       "NPCStatConditions": [],
       "DontPlayWhenInPlayerEnv": false,
       "DontPlayWhenInCombat": false,
+      "OverrideHiddenVolumeScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
       "AddedRealRange": 0,
       "AddedNodesRange": 0
     }
@@ -1230,7 +1432,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "PreferenceWeights": {
         "BaseWeight": 1000000000,
@@ -1449,7 +1654,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "PreferenceWeights": {
         "BaseWeight": 100,

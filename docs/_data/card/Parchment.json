@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "兽皮纸",
   "en": "Parchment",
-  "ja": "Parchment",
-  "UniqueIDIndex": 2035,
+  "ja": "羊皮紙",
+  "UniqueIDIndex": 2095,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "兽皮纸",
     "zh": "兽皮纸",
     "en": "Parchment",
-    "ja": "Parchment"
+    "ja": "羊皮紙"
   },
   "CardImage": {
     "FileName": "Parchment"
@@ -454,7 +454,7 @@
         "Text": "绘制",
         "zh": "绘制",
         "en": "Scribe",
-        "ja": "Scribe"
+        "ja": "書記"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -489,6 +489,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -843,7 +847,7 @@
                 "CardType": 3,
                 "zh": "兽皮纸",
                 "en": "Parchment",
-                "ja": "Parchment",
+                "ja": "羊皮紙",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -994,6 +998,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1535,7 +1540,7 @@
             "CardType": 0,
             "zh": "羽毛笔",
             "en": "Quill",
-            "ja": "Quill",
+            "ja": "羽ペン",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1549,7 +1554,7 @@
                   "Text": "蘸满的羽毛笔",
                   "zh": "蘸满的羽毛笔",
                   "en": "Filled Quill",
-                  "ja": "Filled Quill"
+                  "ja": "インク入り羽ペン"
                 }
               }
             ],
@@ -1586,7 +1591,7 @@
                 "Text": "墨水",
                 "zh": "墨水",
                 "en": "Ink",
-                "ja": "Ink"
+                "ja": "インク"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2137,7 +2142,7 @@
     "Text": "一块薄的皮革，非常适合用于书写。\\n\\n可以用来做笔记或绘制成地图，只需将一支蘸有墨水的羽毛笔拖到上面即可。",
     "zh": "一块薄的皮革，非常适合用于书写。\\n\\n可以用来做笔记或绘制成地图，只需将一支蘸有墨水的羽毛笔拖到上面即可。",
     "en": "A piece of thinned leather, ideal for writing on. \\n\\nCan be used for making notes or turned into a map, by dragging an inked quill to it.",
-    "ja": "A piece of thinned leather, ideal for writing on. \r\n\r\nCan be used for making notes or turned into a map, by dragging an inked quill to it."
+    "ja": "薄く加工された革片。書き物に適している。\\n\\nインクを付けた羽ペンを重ねることで、書き置きや地図を作れる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -2250,6 +2255,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2435,8 +2444,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2714,7 +2731,7 @@
         "CardType": 7,
         "zh": "兽皮纸",
         "en": "Parchment",
-        "ja": "Parchment"
+        "ja": "羊皮紙"
       },
       "localization": {
         "zh": "蓝图制作",

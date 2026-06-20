@@ -7,7 +7,7 @@
   "zh": "除菌剂",
   "en": "Fungicide",
   "ja": "殺菌剤",
-  "UniqueIDIndex": 434,
+  "UniqueIDIndex": 446,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1423,8 +1427,8 @@
                   "DefaultText": "Iron",
                   "Text": "铁元素",
                   "zh": "铁元素",
-                  "en": "Waste",
-                  "ja": "ゴミ"
+                  "en": "Iron",
+                  "ja": "Iron"
                 },
                 "OverrideIcon": {
                   "FileName": "Filth"
@@ -2614,14 +2618,22 @@
   ],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2629,7 +2641,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2643,7 +2655,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2657,7 +2669,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2671,7 +2683,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2870,14 +2882,14 @@
         "Special2Value": 0,
         "Special3Value": 0,
         "Special4Value": 0,
-        "SpoilageFrom": 0,
-        "UsageFrom": 0,
-        "FuelFrom": 0,
-        "ProgressFrom": 0,
-        "Special1From": 0,
-        "Special2From": 0,
-        "Special3From": 0,
-        "Special4From": 0
+        "SpoilageFrom": 1,
+        "UsageFrom": 1,
+        "FuelFrom": 1,
+        "ProgressFrom": 1,
+        "Special1From": 1,
+        "Special2From": 1,
+        "Special3From": 1,
+        "Special4From": 1
       },
       "DropChance": {
         "Active": false,

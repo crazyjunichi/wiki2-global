@@ -7,7 +7,7 @@
   "zh": "脂肪",
   "en": "Fat",
   "ja": "脂",
-  "UniqueIDIndex": 1243,
+  "UniqueIDIndex": 1283,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 368,
+      "count": 375,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -133,7 +133,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 328,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -251,7 +251,7 @@
       "text": "“可煮的”",
       "icon": "",
       "type": "tag",
-      "count": 199,
+      "count": 205,
       "zh": "可煮的",
       "en": "Boilable",
       "ja": "茹でれる",
@@ -369,7 +369,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -487,7 +487,7 @@
       "text": "“Quality”",
       "icon": "",
       "type": "tag",
-      "count": 251,
+      "count": 255,
       "zh": "含品质的",
       "en": "Quality",
       "ja": "Quality",
@@ -605,7 +605,7 @@
       "text": "“喂/添加”",
       "icon": "",
       "type": "tag",
-      "count": 295,
+      "count": 299,
       "zh": "喂/添加",
       "en": "Feed",
       "ja": "餌",
@@ -719,14 +719,14 @@
       }
     },
     {
-      "key": "tag_FeedCarniOmni",
-      "text": "“肉食和杂食动物饲料”",
+      "key": "tag_FeedCarniOmniSmall",
+      "text": "“Small Feed for Carnivores and Omnivores that is to small to catch interest of large animals. ”",
       "icon": "",
       "type": "tag",
-      "count": 142,
-      "zh": "肉食和杂食动物饲料",
-      "en": "Feed for Carnivores and Omnivores",
-      "ja": "肉食動物と雑食動物の餌",
+      "count": 10,
+      "zh": "肉食性和杂食性小型饲料",
+      "en": "Small Feed for Carnivores and Omnivores that is to small to catch interest of large animals. ",
+      "ja": "Small Feed for Carnivores and Omnivores that is to small to catch interest of large animals. ",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -739,21 +739,7 @@
         "OverrideIcon": {
           "FileName": "Bacteria"
         },
-        "MaxValue": 300
-      },
-      "UsageDurability": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Drying",
-          "Text": "干燥",
-          "zh": "干燥",
-          "en": "Drying",
-          "ja": "乾燥中"
-        },
-        "OverrideIcon": {
-          "FileName": "Hammer"
-        },
-        "MaxValue": 24
+        "MaxValue": 360
       },
       "FuelCapacity": {
         "Active": true,
@@ -768,20 +754,6 @@
           "FileName": "Hot"
         },
         "MaxValue": 200
-      },
-      "Progress": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Spirit",
-          "Text": "精魄",
-          "zh": "精魄",
-          "en": "Spirit",
-          "ja": "Spirit"
-        },
-        "OverrideIcon": {
-          "FileName": "Insight"
-        },
-        "MaxValue": 1
       },
       "SpecialDurability1": {
         "Active": true,
@@ -811,16 +783,126 @@
         },
         "MaxValue": 96
       },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
+      }
+    },
+    {
+      "key": "tag_ProteinsPoor",
+      "text": "“少量蛋白质”",
+      "icon": "",
+      "type": "tag",
+      "count": 30,
+      "zh": "少量蛋白质",
+      "en": "Poor Proteins",
+      "ja": "タンパク質（低）",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 120
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Happiness",
+          "Text": "幸福感",
+          "zh": "幸福感",
+          "en": "Happiness",
+          "ja": "幸せ"
+        },
+        "OverrideIcon": {
+          "FileName": "Morale2"
+        },
+        "MaxValue": 288
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Consumed",
+          "Text": "已消耗",
+          "zh": "已消耗",
+          "en": "Consumed",
+          "ja": "使い切った"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 1
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spirit",
+          "Text": "精魄",
+          "zh": "精魄",
+          "en": "Spirit",
+          "ja": "精霊"
+        },
+        "OverrideIcon": {
+          "FileName": "Insight"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Cook",
+          "Text": "烹饪",
+          "zh": "烹饪",
+          "en": "Cook",
+          "ja": "料理する"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
       "SpecialDurability3": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Meat Type",
-          "Text": "肉部位",
-          "zh": "肉部位",
-          "en": "Meat Type",
-          "ja": "Meat Type"
+          "DefaultText": "Health",
+          "Text": "健康度",
+          "zh": "健康度",
+          "en": "Health",
+          "ja": "健康状態"
         },
-        "OverrideIcon": null,
+        "OverrideIcon": {
+          "FileName": "Health"
+        },
         "MaxValue": 100
       },
       "SpecialDurability4": {
@@ -839,131 +921,11 @@
       }
     },
     {
-      "key": "tag_ProteinsRich",
-      "text": "“富含蛋白质”",
-      "icon": "",
-      "type": "tag",
-      "count": 90,
-      "zh": "富含蛋白质",
-      "en": "Rich Proteins",
-      "ja": "タンパク質（高）",
-      "SpoilageTime": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Spoilage",
-          "Text": "变质",
-          "zh": "变质",
-          "en": "Spoilage",
-          "ja": "Spoilage"
-        },
-        "OverrideIcon": {
-          "FileName": "Bacteria"
-        },
-        "MaxValue": 240
-      },
-      "UsageDurability": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Drying",
-          "Text": "干燥中",
-          "zh": "干燥中",
-          "en": "Drying",
-          "ja": "Drying"
-        },
-        "OverrideIcon": {
-          "FileName": "Hammer"
-        },
-        "MaxValue": 24
-      },
-      "FuelCapacity": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Temperature",
-          "Text": "温度",
-          "zh": "温度",
-          "en": "Temperature",
-          "ja": "Temperature"
-        },
-        "OverrideIcon": {
-          "FileName": "Hot"
-        },
-        "MaxValue": 200
-      },
-      "Progress": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Wedges",
-          "Text": "楔块",
-          "zh": "楔块",
-          "en": "Wedges",
-          "ja": "Wedges"
-        },
-        "OverrideIcon": {
-          "FileName": "CheeseWedge_Aged"
-        },
-        "MaxValue": 3
-      },
-      "SpecialDurability1": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Cook",
-          "Text": "烹饪",
-          "zh": "烹饪",
-          "en": "Cook",
-          "ja": "Cook"
-        },
-        "OverrideIcon": {
-          "FileName": "Cooking"
-        },
-        "MaxValue": 1
-      },
-      "SpecialDurability2": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Quality",
-          "Text": "品质",
-          "zh": "品质",
-          "en": "Quality",
-          "ja": "Quality"
-        },
-        "OverrideIcon": {
-          "FileName": "Quality"
-        },
-        "MaxValue": 96
-      },
-      "SpecialDurability3": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Meat Type",
-          "Text": "肉部位",
-          "zh": "肉部位",
-          "en": "Meat Type",
-          "ja": "Meat Type"
-        },
-        "OverrideIcon": null,
-        "MaxValue": 100
-      },
-      "SpecialDurability4": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Boil",
-          "Text": "烹煮",
-          "zh": "烹煮",
-          "en": "Boil",
-          "ja": "Boil"
-        },
-        "OverrideIcon": {
-          "FileName": "Cooking"
-        },
-        "MaxValue": 1
-      }
-    },
-    {
       "key": "tag_WildMeat",
       "text": "“野味”",
       "icon": "",
       "type": "tag",
-      "count": 27,
+      "count": 28,
       "zh": "野味",
       "en": "Wild Meat",
       "ja": "野生肉",
@@ -974,7 +936,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -988,7 +950,7 @@
           "Text": "干燥中",
           "zh": "干燥中",
           "en": "Drying",
-          "ja": "Drying"
+          "ja": "乾燥中"
         },
         "OverrideIcon": {
           "FileName": "Hammer"
@@ -1002,7 +964,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1016,7 +978,7 @@
           "Text": "细菌",
           "zh": "细菌",
           "en": "Bacteria",
-          "ja": "Bacteria"
+          "ja": "ばい菌"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1030,7 +992,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "料理する"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1044,7 +1006,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1058,7 +1020,7 @@
           "Text": "肉部位",
           "zh": "肉部位",
           "en": "Meat Type",
-          "ja": "Meat Type"
+          "ja": "肉の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -1070,7 +1032,7 @@
           "Text": "烹煮",
           "zh": "烹煮",
           "en": "Boil",
-          "ja": "Boil"
+          "ja": "煮る"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1294,7 +1256,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -1322,7 +1284,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1349,7 +1311,7 @@
       "text": "“可食用的”",
       "icon": "",
       "type": "tag",
-      "count": 240,
+      "count": 237,
       "zh": "可食用的",
       "en": "Edible",
       "ja": "食用",
@@ -1478,7 +1440,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1520,7 +1482,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1640,6 +1602,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1879,7 +1845,7 @@
         "ja": ""
       },
       "ReceivingCardChanges": {
-        "ModType": 2,
+        "ModType": 3,
         "TransformInto": {
           "key": "RottenRemains",
           "icon": "RottenRemains",
@@ -2145,7 +2111,7 @@
           "CardType": 8,
           "zh": "静谧洞穴",
           "en": "Still Cave",
-          "ja": "Still Cave",
+          "ja": "静寂の洞窟",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2153,7 +2119,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -2239,7 +2205,7 @@
               "Text": "烟熏",
               "zh": "烟熏",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2496,7 +2462,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2510,7 +2476,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2619,7 +2585,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2633,7 +2599,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3675,7 +3641,7 @@
           "CardType": 2,
           "zh": "冰窖",
           "en": "Ice Pit",
-          "ja": "Ice Pit",
+          "ja": "氷穴",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3683,7 +3649,7 @@
               "Text": "雪",
               "zh": "雪",
               "en": "Snow",
-              "ja": "Snow"
+              "ja": "雪"
             },
             "OverrideIcon": {
               "FileName": "Snow1"
@@ -3697,7 +3663,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3711,7 +3677,7 @@
               "Text": "冷",
               "zh": "冷",
               "en": "Cold",
-              "ja": "Cold"
+              "ja": "寒い"
             },
             "OverrideIcon": null,
             "MaxValue": 2
@@ -3759,7 +3725,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3965,8 +3931,8 @@
               "DefaultText": "Iron",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Iron"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -4074,7 +4040,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -4088,7 +4054,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -4197,7 +4163,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -4211,7 +4177,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -4432,7 +4398,7 @@
           "CardType": 0,
           "zh": "小陶罐(专有)",
           "en": "Clay Jar(Pk)",
-          "ja": "Clay Jar",
+          "ja": "粘土の壺",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -4464,7 +4430,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -4502,7 +4468,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4550,10 +4516,10 @@
       {
         "link": {
           "key": "HagPond",
-          "icon": "Pond",
+          "icon": "HagPond",
           "type": "card",
           "CardType": 2,
-          "zh": "老妪池塘",
+          "zh": "老巫池塘",
           "en": "Hag Pond",
           "ja": "Hag Pond",
           "SpoilageTime": {
@@ -4668,10 +4634,10 @@
       {
         "link": {
           "key": "HagPond",
-          "icon": "Pond",
+          "icon": "HagPond",
           "type": "card",
           "CardType": 2,
-          "zh": "老妪池塘",
+          "zh": "老巫池塘",
           "en": "Hag Pond",
           "ja": "Hag Pond",
           "SpoilageTime": {
@@ -4882,8 +4848,8 @@
             "Active": true,
             "CardStatName": {
               "DefaultText": "River Type",
-              "Text": "River Type",
-              "zh": "River Type",
+              "Text": "河流类型",
+              "zh": "河流类型",
               "en": "River Type",
               "ja": "River Type"
             },
@@ -4901,242 +4867,6 @@
         "value": {
           "x": 48,
           "y": 48
-        }
-      },
-      {
-        "link": {
-          "key": "MosquitoPond",
-          "icon": "Pond",
-          "type": "card",
-          "CardType": 2,
-          "zh": "蚊虫池塘",
-          "en": "Mosquito Pond",
-          "ja": "Mosquito Pond",
-          "SpoilageTime": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpoilageTime",
-              "zh": "时间",
-              "en": "Spoilage",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "UsageDurability": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "UsageDurability",
-              "zh": "耐久",
-              "en": "Usage",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Frog Population",
-              "Text": "青蛙种群",
-              "zh": "青蛙种群",
-              "en": "Frog Population",
-              "ja": "Frog Population"
-            },
-            "OverrideIcon": null,
-            "MaxValue": 20000
-          },
-          "Progress": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability1": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability1",
-              "zh": "特殊1",
-              "en": "Special1",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1000
-          },
-          "SpecialDurability2": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability2",
-              "zh": "特殊2",
-              "en": "Special2",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability3": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability3",
-              "zh": "特殊3",
-              "en": "Special3",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability4": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          }
-        },
-        "localization": {
-          "DefaultText": "Fish",
-          "Text": "钓鱼",
-          "zh": "钓鱼",
-          "en": "Fish",
-          "ja": "Fish"
-        },
-        "value": {
-          "x": 48,
-          "y": 48
-        }
-      },
-      {
-        "link": {
-          "key": "MosquitoPond",
-          "icon": "Pond",
-          "type": "card",
-          "CardType": 2,
-          "zh": "蚊虫池塘",
-          "en": "Mosquito Pond",
-          "ja": "Mosquito Pond",
-          "SpoilageTime": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpoilageTime",
-              "zh": "时间",
-              "en": "Spoilage",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "UsageDurability": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "UsageDurability",
-              "zh": "耐久",
-              "en": "Usage",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Frog Population",
-              "Text": "青蛙种群",
-              "zh": "青蛙种群",
-              "en": "Frog Population",
-              "ja": "Frog Population"
-            },
-            "OverrideIcon": null,
-            "MaxValue": 20000
-          },
-          "Progress": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability1": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability1",
-              "zh": "特殊1",
-              "en": "Special1",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1000
-          },
-          "SpecialDurability2": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability2",
-              "zh": "特殊2",
-              "en": "Special2",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability3": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability3",
-              "zh": "特殊3",
-              "en": "Special3",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          },
-          "SpecialDurability4": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 0
-          }
-        },
-        "localization": {
-          "DefaultText": "Spearfish",
-          "Text": "叉鱼",
-          "zh": "叉鱼",
-          "en": "Spearfish",
-          "ja": "Spearfish"
-        },
-        "value": {
-          "x": -48,
-          "y": -48
         }
       },
       {
@@ -5397,7 +5127,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -5412,7 +5142,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "湿地"
               }
             },
             {
@@ -5552,7 +5282,7 @@
               "Text": "河流类型",
               "zh": "河流类型",
               "en": "River Type",
-              "ja": "River Type"
+              "ja": "川種別"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -5592,7 +5322,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -5607,7 +5337,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "湿地"
               }
             },
             {
@@ -5747,7 +5477,7 @@
               "Text": "河流类型",
               "zh": "河流类型",
               "en": "River Type",
-              "ja": "River Type"
+              "ja": "川種別"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -6087,7 +5817,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -6102,7 +5832,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "沼地"
               }
             }
           ],
@@ -6173,7 +5903,7 @@
               "Text": "罕见鱼类种群数量",
               "zh": "罕见鱼类种群数量",
               "en": "Uncommon Fish Population",
-              "ja": "Uncommon Fish Population"
+              "ja": "アンコモンな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 3000
@@ -6185,7 +5915,7 @@
               "Text": "珍稀鱼类种群数量",
               "zh": "珍稀鱼类种群数量",
               "en": "Rare Fish Population",
-              "ja": "Rare Fish Population"
+              "ja": "レアな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -6208,7 +5938,7 @@
           "Text": "钓鱼",
           "zh": "钓鱼",
           "en": "Fish",
-          "ja": "Fish"
+          "ja": "魚"
         },
         "value": {
           "x": 48,
@@ -6237,7 +5967,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -6252,7 +5982,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "沼地"
               }
             }
           ],
@@ -6323,7 +6053,7 @@
               "Text": "罕见鱼类种群数量",
               "zh": "罕见鱼类种群数量",
               "en": "Uncommon Fish Population",
-              "ja": "Uncommon Fish Population"
+              "ja": "アンコモンな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 3000
@@ -6335,7 +6065,7 @@
               "Text": "珍稀鱼类种群数量",
               "zh": "珍稀鱼类种群数量",
               "en": "Rare Fish Population",
-              "ja": "Rare Fish Population"
+              "ja": "レアな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -6358,7 +6088,7 @@
           "Text": "叉鱼",
           "zh": "叉鱼",
           "en": "Spearfish",
-          "ja": "Spearfish"
+          "ja": "スピアフィッシュ"
         },
         "value": {
           "x": -48,
@@ -6387,7 +6117,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -6402,7 +6132,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "沼地"
               }
             }
           ],
@@ -6473,7 +6203,7 @@
               "Text": "罕见鱼类种群数量",
               "zh": "罕见鱼类种群数量",
               "en": "Uncommon Fish Population",
-              "ja": "Uncommon Fish Population"
+              "ja": "アンコモンな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 3000
@@ -6485,7 +6215,7 @@
               "Text": "珍稀鱼类种群数量",
               "zh": "珍稀鱼类种群数量",
               "en": "Rare Fish Population",
-              "ja": "Rare Fish Population"
+              "ja": "レアな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -6508,7 +6238,7 @@
           "Text": "钓鱼",
           "zh": "钓鱼",
           "en": "Fish",
-          "ja": "Fish"
+          "ja": "魚"
         },
         "value": {
           "x": 48,
@@ -6537,7 +6267,7 @@
                 "Text": "湖泊",
                 "zh": "湖泊",
                 "en": "Lake",
-                "ja": "Lake"
+                "ja": "湖"
               }
             },
             {
@@ -6552,7 +6282,7 @@
                 "Text": "沼泽",
                 "zh": "沼泽",
                 "en": "Marsh",
-                "ja": "Marsh"
+                "ja": "沼地"
               }
             }
           ],
@@ -6623,7 +6353,7 @@
               "Text": "罕见鱼类种群数量",
               "zh": "罕见鱼类种群数量",
               "en": "Uncommon Fish Population",
-              "ja": "Uncommon Fish Population"
+              "ja": "アンコモンな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 3000
@@ -6635,7 +6365,7 @@
               "Text": "珍稀鱼类种群数量",
               "zh": "珍稀鱼类种群数量",
               "en": "Rare Fish Population",
-              "ja": "Rare Fish Population"
+              "ja": "レアな魚の数"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -6658,7 +6388,7 @@
           "Text": "叉鱼",
           "zh": "叉鱼",
           "en": "Spearfish",
-          "ja": "Spearfish"
+          "ja": "スピアフィッシュ"
         },
         "value": {
           "x": -48,
@@ -7251,6 +6981,246 @@
             },
             "OverrideIcon": null,
             "MaxValue": 1000
+          }
+        },
+        "localization": {
+          "DefaultText": "Spearfish",
+          "Text": "叉鱼",
+          "zh": "叉鱼",
+          "en": "Spearfish",
+          "ja": "Spearfish"
+        },
+        "value": {
+          "x": -48,
+          "y": -48
+        }
+      },
+      {
+        "link": {
+          "key": "SpiritShrine_Bugs_MosquitoPond",
+          "icon": "MosquitoPond",
+          "type": "card",
+          "CardType": 2,
+          "zh": "蚊虫池塘",
+          "en": "Mosquito Pond",
+          "ja": "Mosquito Pond",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Frog Population",
+              "Text": "青蛙种群",
+              "zh": "青蛙种群",
+              "en": "Frog Population",
+              "ja": "Frog Population"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 20000
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1000
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spirit",
+              "Text": "精魄",
+              "zh": "精魄",
+              "en": "Spirit",
+              "ja": "Spirit"
+            },
+            "OverrideIcon": {
+              "FileName": "AlarmClock_Old"
+            },
+            "MaxValue": 672
+          }
+        },
+        "localization": {
+          "DefaultText": "Fish",
+          "Text": "钓鱼",
+          "zh": "钓鱼",
+          "en": "Fish",
+          "ja": "Fish"
+        },
+        "value": {
+          "x": 48,
+          "y": 48
+        }
+      },
+      {
+        "link": {
+          "key": "SpiritShrine_Bugs_MosquitoPond",
+          "icon": "MosquitoPond",
+          "type": "card",
+          "CardType": 2,
+          "zh": "蚊虫池塘",
+          "en": "Mosquito Pond",
+          "ja": "Mosquito Pond",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Frog Population",
+              "Text": "青蛙种群",
+              "zh": "青蛙种群",
+              "en": "Frog Population",
+              "ja": "Frog Population"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 20000
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1000
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spirit",
+              "Text": "精魄",
+              "zh": "精魄",
+              "en": "Spirit",
+              "ja": "Spirit"
+            },
+            "OverrideIcon": {
+              "FileName": "AlarmClock_Old"
+            },
+            "MaxValue": 672
           }
         },
         "localization": {
@@ -8117,7 +8087,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -8137,7 +8107,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -8664,6 +8634,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -10336,6 +10310,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -10890,7 +10868,7 @@
           "CardType": 0,
           "zh": "含油小麦面团",
           "en": "Wheat Grease Dough",
-          "ja": "Wheat Grease Dough",
+          "ja": "小麦の脂入り生地",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -10898,7 +10876,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -10924,7 +10902,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -10950,7 +10928,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "料理する"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -10964,7 +10942,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11146,7 +11124,7 @@
             "CardType": 0,
             "zh": "小麦面团",
             "en": "Wheat Dough",
-            "ja": "Wheat Dough",
+            "ja": "小麦生地",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -11154,7 +11132,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -11168,7 +11146,7 @@
                 "Text": "干燥中",
                 "zh": "干燥中",
                 "en": "Drying",
-                "ja": "Drying"
+                "ja": "乾燥中"
               },
               "OverrideIcon": {
                 "FileName": "Hammer"
@@ -11182,7 +11160,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -11208,7 +11186,7 @@
                 "Text": "烹饪",
                 "zh": "烹饪",
                 "en": "Cook",
-                "ja": "Cook"
+                "ja": "料理する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -11222,7 +11200,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -11236,7 +11214,7 @@
                 "Text": "发酵",
                 "zh": "发酵",
                 "en": "Yeast",
-                "ja": "Yeast"
+                "ja": "酵母"
               },
               "OverrideIcon": {
                 "FileName": "RoundBread_Wheat"
@@ -11307,6 +11285,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -11861,7 +11843,7 @@
           "CardType": 0,
           "zh": "含油黑麦面团",
           "en": "Rye Grease Dough",
-          "ja": "Rye Grease Dough",
+          "ja": "ライ麦グリース生地",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -12139,7 +12121,7 @@
                 "Text": "干燥中",
                 "zh": "干燥中",
                 "en": "Drying",
-                "ja": "Drying"
+                "ja": "乾燥中"
               },
               "OverrideIcon": {
                 "FileName": "Hammer"
@@ -12707,8 +12689,8 @@
     "DefaultText": "Melts when heated up and can enrich food placed in a container with it.",
     "Text": "加热后会融化，可以为同一容器中的食物调味增香。",
     "zh": "加热后会融化，可以为同一容器中的食物调味增香。",
-    "en": "Can be used to flavour and enrich food when heated up.",
-    "ja": "熱したら食べ物をより美味しく、栄養豊富にできる。"
+    "en": "Melts when heated up and can enrich food placed in a container with it.",
+    "ja": "Melts when heated up and can enrich food placed in a container with it."
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -12749,6 +12731,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -13031,7 +13017,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -13344,7 +13333,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -13657,7 +13649,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -13963,7 +13958,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -14269,7 +14267,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -14582,7 +14583,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -14780,8 +14784,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -14951,6 +14963,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Eating"
@@ -14962,7 +14978,7 @@
           "key": "CarnivorousAction",
           "text": "CarnivorousAction",
           "type": "tag",
-          "count": 129,
+          "count": 133,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -15068,7 +15084,7 @@
               "Text": "凝乳酶",
               "zh": "凝乳酶",
               "en": "Rennet",
-              "ja": "Rennet"
+              "ja": "レンネット"
             },
             "OverrideIcon": {
               "FileName": "Stomach_Cooked"
@@ -15083,7 +15099,7 @@
           "key": "EatingAction",
           "text": "EatingAction",
           "type": "tag",
-          "count": 231,
+          "count": 235,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -15781,7 +15797,7 @@
         "Text": "剔肉",
         "zh": "剔肉",
         "en": "Butcher",
-        "ja": "Butcher"
+        "ja": "解体する"
       }
     },
     {
@@ -15817,7 +15833,7 @@
         "Text": "剔肉",
         "zh": "剔肉",
         "en": "Butcher",
-        "ja": "Butcher"
+        "ja": "解体する"
       }
     },
     {
@@ -15828,14 +15844,14 @@
         "CardType": 0,
         "zh": "死鸭子",
         "en": "Dead Duck",
-        "ja": "Dead Duck"
+        "ja": "カモの死骸"
       },
       "localization": {
         "DefaultText": "Cut Open",
         "Text": "切开",
         "zh": "切开",
         "en": "Cut Open",
-        "ja": "Cut Open"
+        "ja": "切り開く"
       }
     },
     {
@@ -15853,7 +15869,7 @@
         "Text": "剔肉",
         "zh": "剔肉",
         "en": "Butcher",
-        "ja": "Butcher"
+        "ja": "解体する"
       }
     },
     {
@@ -15864,14 +15880,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -15882,14 +15898,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -15900,14 +15916,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -15918,14 +15934,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -15936,14 +15952,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -15954,14 +15970,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -15972,14 +15988,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -15990,14 +16006,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -16008,14 +16024,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -16080,12 +16096,12 @@
         "CardType": 0,
         "zh": "血旺",
         "en": "Blood Curd",
-        "ja": "Blood Curd"
+        "ja": "血豆腐"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16288,7 +16304,7 @@
         "CardType": 7,
         "zh": "脂肪块",
         "en": "Fat Chunk",
-        "ja": "Fat Chunk"
+        "ja": "脂の塊"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16320,7 +16336,7 @@
         "CardType": 7,
         "zh": "平弓",
         "en": "Flatbow",
-        "ja": "Flatbow"
+        "ja": "フラットボウ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16336,7 +16352,7 @@
         "CardType": 7,
         "zh": "框鼓",
         "en": "Frame Drum",
-        "ja": "Frame Drum"
+        "ja": "フレームドラム"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16368,7 +16384,7 @@
         "CardType": 7,
         "zh": "冰鞋",
         "en": "Ice Skates",
-        "ja": "Ice Skates"
+        "ja": "氷靴"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16384,7 +16400,7 @@
         "CardType": 7,
         "zh": "风箱",
         "en": "Bellows",
-        "ja": "Bellows"
+        "ja": "ふいご"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16400,7 +16416,7 @@
         "CardType": 7,
         "zh": "松脂膏",
         "en": "Pine Salve",
-        "ja": "Pine Salve"
+        "ja": "松脂バーム"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16416,7 +16432,7 @@
         "CardType": 7,
         "zh": "雪橇",
         "en": "Sledge",
-        "ja": "Sledge"
+        "ja": "ソリ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16458,29 +16474,13 @@
     },
     {
       "link": {
-        "key": "Bp_TranquilizerCoating",
-        "icon": "Coating_Tranquilizer",
-        "type": "card",
-        "CardType": 7,
-        "zh": "麻醉涂层",
-        "en": "Tranquilizer Coating",
-        "ja": "鎮静コーティング"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
         "key": "Bp_WolfsbaneCoating",
         "icon": "Coating_Wolfsbane",
         "type": "card",
         "CardType": 7,
-        "zh": "乌头涂层",
-        "en": "Wolfsbane Coating",
-        "ja": "トリカブトのコーティング"
+        "zh": "乌头麻醉涂层",
+        "en": "Wolfsbane Tranquilizer Coating",
+        "ja": "Wolfsbane Tranquilizer Coating"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16496,12 +16496,12 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -16512,12 +16512,12 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -16528,12 +16528,12 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -16565,7 +16565,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -16581,7 +16581,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -16598,22 +16598,6 @@
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
         "ja": "アクション：中に捨てる"
-      }
-    },
-    {
-      "link": {
-        "key": "DogFriend",
-        "icon": "",
-        "type": "card",
-        "CardType": 0,
-        "zh": "Dog Friend",
-        "en": "Dog Friend",
-        "ja": "Dog Friend"
-      },
-      "localization": {
-        "zh": "动作：Feed",
-        "en": "Action: Feed",
-        "ja": "アクション：Feed"
       }
     },
     {
@@ -16640,12 +16624,12 @@
         "CardType": 0,
         "zh": "生肥鱼肉",
         "en": "Raw Fatty Fish Meat",
-        "ja": "Raw Fatty Fish Meat"
+        "ja": "生の脂の乗った魚肉"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16661,7 +16645,7 @@
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16672,12 +16656,12 @@
         "CardType": 0,
         "zh": "亚麻种子",
         "en": "Flax Seeds",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16704,12 +16688,12 @@
         "CardType": 0,
         "zh": "碎杜松子",
         "en": "Crushed Juniper Berries",
-        "ja": "Crushed Juniper Berries"
+        "ja": "砕いたジュニパーベリー"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16720,12 +16704,12 @@
         "CardType": 0,
         "zh": "碎的烤杜松子",
         "en": "Crushed  Roasted Juniper Berries",
-        "ja": "Crushed  Roasted Juniper Berries"
+        "ja": "砕いた焙煎ジュニパーベリー"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -16768,7 +16752,7 @@
         "CardType": 9,
         "zh": "越橘酒",
         "en": "Billberry Wine",
-        "ja": "Billberry Wine",
+        "ja": "ビルベリーワイン",
         "AlternateNames": [
           {
             "Conditions": {
@@ -16782,7 +16766,7 @@
               "Text": "烈越橘酒",
               "zh": "烈越橘酒",
               "en": "Strong Billberry Wine",
-              "ja": "Strong Billberry Wine"
+              "ja": "強化ビルベリーワイン"
             }
           }
         ]
@@ -16847,7 +16831,7 @@
               "Text": "烈白桦酒",
               "zh": "烈白桦酒",
               "en": "Strong Birch Wine",
-              "ja": "Strong Birch Wine"
+              "ja": "強化シラカバのワイン "
             }
           }
         ]
@@ -16882,7 +16866,7 @@
         "CardType": 9,
         "zh": "火根粉",
         "en": "Fireroot Powder",
-        "ja": "Fireroot Powder"
+        "ja": "ファイアルート粉末"
       },
       "localization": {
         "zh": "动作：添加",
@@ -16898,7 +16882,7 @@
         "CardType": 9,
         "zh": "霜叶粉",
         "en": "Frostleaf Powder",
-        "ja": "Frostleaf Powder"
+        "ja": "フロストリーフ粉末"
       },
       "localization": {
         "zh": "动作：添加",
@@ -16928,7 +16912,7 @@
               "Text": "烈黑麦艾尔啤酒",
               "zh": "烈黑麦艾尔啤酒",
               "en": "Strong Rye Ale",
-              "ja": "Strong Rye Ale"
+              "ja": "強化ライ麦エール"
             }
           }
         ]
@@ -16963,7 +16947,7 @@
         "CardType": 9,
         "zh": "黑麦汁",
         "en": "Rye Wort",
-        "ja": "Rye Wort"
+        "ja": "ライ麦麦汁"
       },
       "localization": {
         "zh": "动作：添加",
@@ -16995,12 +16979,12 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：降低变质",
         "en": "Action: Lower Spoilage",
-        "ja": "アクション：Lower Spoilage"
+        "ja": "アクション：腐敗速度を下げる"
       }
     },
     {
@@ -17057,7 +17041,7 @@
               "Text": "烈春莓酒",
               "zh": "烈春莓酒",
               "en": "Strong Springberry Wine",
-              "ja": "Strong Springberry Wine"
+              "ja": "強化スプリングベリーワイン"
             }
           }
         ]
@@ -17076,7 +17060,7 @@
         "CardType": 9,
         "zh": "小麦艾尔啤酒",
         "en": "Wheat Ale",
-        "ja": "Wheat Ale",
+        "ja": "小麦エール",
         "AlternateNames": [
           {
             "Conditions": {
@@ -17090,7 +17074,7 @@
               "Text": "烈小麦艾尔啤酒",
               "zh": "烈小麦艾尔啤酒",
               "en": "Strong Wheat Ale",
-              "ja": "Strong Wheat Ale"
+              "ja": "強化小麦エール"
             }
           }
         ]
@@ -17098,7 +17082,7 @@
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17109,12 +17093,12 @@
         "CardType": 9,
         "zh": "小麦糖浆",
         "en": "Wheat Syrup",
-        "ja": "Wheat Syrup"
+        "ja": "小麦シロップ"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17125,12 +17109,12 @@
         "CardType": 9,
         "zh": "麦芽汁",
         "en": "Wheat Wort",
-        "ja": "Wheat Wort"
+        "ja": "小麦麦汁"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17141,7 +17125,7 @@
         "CardType": 9,
         "zh": "蒜粉",
         "en": "Garlic Powder",
-        "ja": "Garlic Powder"
+        "ja": "ガーリック粉末"
       },
       "localization": {
         "zh": "动作：添加",
@@ -17157,7 +17141,7 @@
         "CardType": 9,
         "zh": "乌头粉",
         "en": "Wolfsbane Powder",
-        "ja": "Wolfsbane Powder"
+        "ja": "トリカブト粉末"
       },
       "localization": {
         "zh": "动作：添加",
@@ -17173,12 +17157,12 @@
         "CardType": 0,
         "zh": "生肉末",
         "en": "Raw Minced Meat",
-        "ja": "Raw Minced Meat"
+        "ja": "生のひき肉"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17189,12 +17173,12 @@
         "CardType": 0,
         "zh": "黄油",
         "en": "Butter",
-        "ja": "Butter"
+        "ja": "バター"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17205,12 +17189,12 @@
         "CardType": 0,
         "zh": "奶油",
         "en": "Cream",
-        "ja": "Cream"
+        "ja": "クリーム"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17237,12 +17221,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -17283,7 +17267,7 @@
               "Text": "毛皮碎料",
               "zh": "毛皮碎料",
               "en": "Pelt Scraps",
-              "ja": "Pelt Scraps"
+              "ja": "ぺルトの切れ端"
             }
           },
           {
@@ -17298,7 +17282,7 @@
               "Text": "松鼠皮",
               "zh": "松鼠皮",
               "en": "Squirrel Pelt",
-              "ja": "Squirrel Pelt"
+              "ja": "リスぺルト"
             }
           },
           {
@@ -17313,7 +17297,7 @@
               "Text": "小块毛皮",
               "zh": "小块毛皮",
               "en": "Small Pelt",
-              "ja": "Small Pelt"
+              "ja": "小さなぺルト"
             }
           },
           {
@@ -17328,7 +17312,7 @@
               "Text": "小块缝补毛皮",
               "zh": "小块缝补毛皮",
               "en": "Small Patched Pelt",
-              "ja": "Small Patched Pelt"
+              "ja": "継ぎ当てされた小さなぺルト"
             }
           },
           {
@@ -17343,7 +17327,7 @@
               "Text": "狐狸皮",
               "zh": "狐狸皮",
               "en": "Fox Pelt",
-              "ja": "Fox Pelt"
+              "ja": "キツネぺルト"
             }
           },
           {
@@ -17358,7 +17342,7 @@
               "Text": "野兔毛皮",
               "zh": "野兔毛皮",
               "en": "Hare Pelt",
-              "ja": "Hare Pelt"
+              "ja": "ノウサギぺルト"
             }
           },
           {
@@ -17373,7 +17357,7 @@
               "Text": "中块毛皮",
               "zh": "中块毛皮",
               "en": "Medium Pelt",
-              "ja": "Medium Pelt"
+              "ja": "中型のぺルト"
             }
           },
           {
@@ -17388,7 +17372,7 @@
               "Text": "中块缝补毛皮",
               "zh": "中块缝补毛皮",
               "en": "Medium Patched Pelt",
-              "ja": "Medium Patched Pelt"
+              "ja": "継ぎ当てされた中型のぺルト"
             }
           },
           {
@@ -17403,7 +17387,7 @@
               "Text": "狼皮",
               "zh": "狼皮",
               "en": "Wolf Pelt",
-              "ja": "Wolf Pelt"
+              "ja": "オオカミぺルト"
             }
           },
           {
@@ -17418,7 +17402,7 @@
               "Text": "大块毛皮",
               "zh": "大块毛皮",
               "en": "Large Pelt",
-              "ja": "Large Pelt"
+              "ja": "大型のぺルト"
             }
           },
           {
@@ -17433,7 +17417,7 @@
               "Text": "大块缝补毛皮",
               "zh": "大块缝补毛皮",
               "en": "Large Patched Pelt",
-              "ja": "Large Patched Pelt"
+              "ja": "継ぎ当てされた大型のぺルト"
             }
           },
           {
@@ -17448,7 +17432,7 @@
               "Text": "特大块毛皮",
               "zh": "特大块毛皮",
               "en": "Very Large Pelt",
-              "ja": "Very Large Pelt"
+              "ja": "大型のぺルト"
             }
           },
           {
@@ -17463,7 +17447,7 @@
               "Text": "特大块缝补毛皮",
               "zh": "特大块缝补毛皮",
               "en": "Very Large Patched Pelt",
-              "ja": "Very Large Patched Pelt"
+              "ja": "継ぎ当てされた特大のぺルト"
             }
           },
           {
@@ -17478,7 +17462,7 @@
               "Text": "熊皮",
               "zh": "熊皮",
               "en": "Bear Pelt",
-              "ja": "Bear Pelt"
+              "ja": "クマぺルト"
             }
           }
         ]
@@ -17589,7 +17573,7 @@
               "Text": "皮革碎料",
               "zh": "皮革碎料",
               "en": "Leather Scraps",
-              "ja": "Leather Scraps"
+              "ja": "革の残り物"
             }
           },
           {
@@ -17604,7 +17588,7 @@
               "Text": "小块皮革",
               "zh": "小块皮革",
               "en": "Small Leather",
-              "ja": "Small Leather"
+              "ja": "小型の革"
             }
           },
           {
@@ -17619,7 +17603,7 @@
               "Text": "小块缝补皮革",
               "zh": "小块缝补皮革",
               "en": "Small Patched Leather",
-              "ja": "Small Patched Leather"
+              "ja": "継ぎ当てされた小型の革"
             }
           },
           {
@@ -17634,7 +17618,7 @@
               "Text": "獾皮革",
               "zh": "獾皮革",
               "en": "Badger Leather",
-              "ja": "Badger Leather"
+              "ja": "アナグマ革"
             }
           },
           {
@@ -17649,7 +17633,7 @@
               "Text": "中块皮革",
               "zh": "中块皮革",
               "en": "Medium Leather",
-              "ja": "Medium Leather"
+              "ja": "中型の革"
             }
           },
           {
@@ -17664,7 +17648,7 @@
               "Text": "中块缝补皮革",
               "zh": "中块缝补皮革",
               "en": "Medium Patched Leather",
-              "ja": "Medium Patched Leather"
+              "ja": "継ぎ当てされた中型の革"
             }
           },
           {
@@ -17679,7 +17663,7 @@
               "Text": "大块皮革",
               "zh": "大块皮革",
               "en": "Large Leather",
-              "ja": "Large Leather"
+              "ja": "大型の革"
             }
           },
           {
@@ -17694,7 +17678,7 @@
               "Text": "大块缝补皮革",
               "zh": "大块缝补皮革",
               "en": "Large Patched Leather",
-              "ja": "Large Patched Leather"
+              "ja": "継ぎ当てされた大型の革"
             }
           },
           {
@@ -17709,7 +17693,7 @@
               "Text": "野猪皮革",
               "zh": "野猪皮革",
               "en": "Boar Leather",
-              "ja": "Boar Leather"
+              "ja": "イノシシ革"
             }
           },
           {
@@ -17724,7 +17708,7 @@
               "Text": "母鹿皮革",
               "zh": "母鹿皮革",
               "en": "Doe Leather",
-              "ja": "Doe Leather"
+              "ja": "メスジカ革"
             }
           },
           {
@@ -17739,7 +17723,7 @@
               "Text": "公鹿皮革",
               "zh": "公鹿皮革",
               "en": "Stag Leather",
-              "ja": "Stag Leather"
+              "ja": "オスジカ革"
             }
           },
           {
@@ -17754,7 +17738,7 @@
               "Text": "特大块皮革",
               "zh": "特大块皮革",
               "en": "Very Large Leather",
-              "ja": "Very Large Leather"
+              "ja": "特大の革"
             }
           },
           {
@@ -17769,7 +17753,7 @@
               "Text": "特大块缝补皮革",
               "zh": "特大块缝补皮革",
               "en": "Very Large Patched Leather",
-              "ja": "Very Large Patched Leather"
+              "ja": "継ぎ当てされた特大の革"
             }
           }
         ]
@@ -17777,7 +17761,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -17916,12 +17900,12 @@
         "CardType": 0,
         "zh": "干松子",
         "en": "Dried Pine Nuts",
-        "ja": "Dried Pine Nuts"
+        "ja": "乾燥した松の実"
       },
       "localization": {
         "zh": "动作：温度",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17964,7 +17948,7 @@
         "CardType": 0,
         "zh": "小陶罐(专有)",
         "en": "Clay Jar(Pk)",
-        "ja": "Clay Jar"
+        "ja": "粘土の壺"
       },
       "localization": {
         "zh": "放置于容器",
@@ -17980,12 +17964,12 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -17996,12 +17980,12 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -18012,12 +17996,12 @@
         "CardType": 0,
         "zh": "水袋(专有)",
         "en": "Waterskin(Pk)",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：防水",
         "en": "Action: Waterproof",
-        "ja": "アクション：Waterproof"
+        "ja": "アクション：防水"
       }
     },
     {
@@ -18028,12 +18012,12 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     },
     {
@@ -18060,7 +18044,7 @@
         "CardType": 0,
         "zh": "大块皮革",
         "en": "Large Leather",
-        "ja": "Large Leather",
+        "ja": "大型の革",
         "AlternateNames": [
           {
             "Conditions": {
@@ -18078,7 +18062,7 @@
               "Text": "大块皮革",
               "zh": "大块皮革",
               "en": "Large Leather",
-              "ja": "Large Leather"
+              "ja": "大型の革"
             }
           },
           {
@@ -18097,7 +18081,7 @@
               "Text": "大块皮革",
               "zh": "大块皮革",
               "en": "Large Leather",
-              "ja": "Large Leather"
+              "ja": "大型の革"
             }
           },
           {
@@ -18116,7 +18100,7 @@
               "Text": "大块缝补皮革",
               "zh": "大块缝补皮革",
               "en": "Large Patched Leather",
-              "ja": "Large Patched Leather"
+              "ja": "継ぎ当てされた大型の革"
             }
           },
           {
@@ -18135,7 +18119,7 @@
               "Text": "大块缝补皮革",
               "zh": "大块缝补皮革",
               "en": "Large Patched Leather",
-              "ja": "Large Patched Leather"
+              "ja": "継ぎ当てされた大型の革"
             }
           },
           {
@@ -18150,7 +18134,7 @@
               "Text": "野猪皮革",
               "zh": "野猪皮革",
               "en": "Boar Leather",
-              "ja": "Boar Leather"
+              "ja": "イノシシ革"
             }
           },
           {
@@ -18165,7 +18149,7 @@
               "Text": "母鹿皮革",
               "zh": "母鹿皮革",
               "en": "Doe Leather",
-              "ja": "Doe Leather"
+              "ja": "メスジカ革"
             }
           },
           {
@@ -18180,7 +18164,7 @@
               "Text": "公鹿皮革",
               "zh": "公鹿皮革",
               "en": "Stag Leather",
-              "ja": "Stag Leather"
+              "ja": "オスジカ革"
             }
           },
           {
@@ -18195,7 +18179,7 @@
               "Text": "小牛皮革",
               "zh": "小牛皮革",
               "en": "Calf Leather",
-              "ja": "Calf Leather"
+              "ja": "子牛革"
             }
           }
         ]
@@ -18203,7 +18187,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -18214,7 +18198,7 @@
         "CardType": 0,
         "zh": "中块皮革",
         "en": "Medium Leather",
-        "ja": "Medium Leather",
+        "ja": "中型の革",
         "AlternateNames": [
           {
             "Conditions": {
@@ -18232,7 +18216,7 @@
               "Text": "中块皮革",
               "zh": "中块皮革",
               "en": "Medium Leather",
-              "ja": "Medium Leather"
+              "ja": "中型の革"
             }
           },
           {
@@ -18251,7 +18235,7 @@
               "Text": "中块皮革",
               "zh": "中块皮革",
               "en": "Medium Leather",
-              "ja": "Medium Leather"
+              "ja": "中型の革"
             }
           },
           {
@@ -18270,7 +18254,7 @@
               "Text": "中块缝补皮革",
               "zh": "中块缝补皮革",
               "en": "Medium Patched Leather",
-              "ja": "Medium Patched Leather"
+              "ja": "継ぎ当てされた中型の革"
             }
           },
           {
@@ -18289,7 +18273,7 @@
               "Text": "中块缝补皮革",
               "zh": "中块缝补皮革",
               "en": "Medium Patched Leather",
-              "ja": "Medium Patched Leather"
+              "ja": "継ぎ当てされた中型の革"
             }
           },
           {
@@ -18304,7 +18288,7 @@
               "Text": "狼皮革",
               "zh": "狼皮革",
               "en": "Wolf Leather",
-              "ja": "Wolf Leather"
+              "ja": "オオカミの革"
             }
           },
           {
@@ -18319,7 +18303,7 @@
               "Text": "月触皮革",
               "zh": "月触皮革",
               "en": "Moontouched Leather",
-              "ja": "Moontouched Leather"
+              "ja": "月触れの革"
             }
           },
           {
@@ -18334,7 +18318,7 @@
               "Text": "原初狼皮革",
               "zh": "原初狼皮革",
               "en": "Primeval Wolf Leather",
-              "ja": "Primeval Wolf Leather"
+              "ja": "太古狼の革"
             }
           }
         ]
@@ -18342,7 +18326,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -18353,7 +18337,7 @@
         "CardType": 0,
         "zh": "皮革碎料",
         "en": "Leather Scraps",
-        "ja": "Leather Scraps",
+        "ja": "革の残り物",
         "AlternateNames": [
           {
             "Conditions": {
@@ -18371,7 +18355,7 @@
               "Text": "皮革碎料",
               "zh": "皮革碎料",
               "en": "Leather Scraps",
-              "ja": "Leather Scraps"
+              "ja": "革の残り物"
             }
           },
           {
@@ -18390,7 +18374,7 @@
               "Text": "皮革碎料",
               "zh": "皮革碎料",
               "en": "Leather Scraps",
-              "ja": "Leather Scraps"
+              "ja": "革の残り物"
             }
           },
           {
@@ -18405,7 +18389,7 @@
               "Text": "松鼠皮革",
               "zh": "松鼠皮革",
               "en": "Squirrel Leather",
-              "ja": "Squirrel Leather"
+              "ja": "リス革"
             }
           }
         ]
@@ -18413,7 +18397,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -18424,7 +18408,7 @@
         "CardType": 0,
         "zh": "小块皮革",
         "en": "Small Leather",
-        "ja": "Small Leather",
+        "ja": "小型の革",
         "AlternateNames": [
           {
             "Conditions": {
@@ -18442,7 +18426,7 @@
               "Text": "小块皮革",
               "zh": "小块皮革",
               "en": "Small Leather",
-              "ja": "Small Leather"
+              "ja": "小型の革"
             }
           },
           {
@@ -18461,7 +18445,7 @@
               "Text": "小块皮革",
               "zh": "小块皮革",
               "en": "Small Leather",
-              "ja": "Small Leather"
+              "ja": "小型の革"
             }
           },
           {
@@ -18480,7 +18464,7 @@
               "Text": "小块缝补皮革",
               "zh": "小块缝补皮革",
               "en": "Small Patched Leather",
-              "ja": "Small Patched Leather"
+              "ja": "継ぎ当てされた小型の革"
             }
           },
           {
@@ -18499,7 +18483,7 @@
               "Text": "小块缝补皮革",
               "zh": "小块缝补皮革",
               "en": "Small Patched Leather",
-              "ja": "Small Patched Leather"
+              "ja": "継ぎ当てされた小型の革"
             }
           },
           {
@@ -18514,7 +18498,7 @@
               "Text": "狐皮革",
               "zh": "狐皮革",
               "en": "Fox Leather",
-              "ja": "Fox Leather"
+              "ja": "キツネ革"
             }
           },
           {
@@ -18529,7 +18513,7 @@
               "Text": "獾皮革",
               "zh": "獾皮革",
               "en": "Badger Leather",
-              "ja": "Badger Leather"
+              "ja": "アナグマ革"
             }
           },
           {
@@ -18544,7 +18528,7 @@
               "Text": "野兔皮革",
               "zh": "野兔皮革",
               "en": "Hare Leather",
-              "ja": "Hare Leather"
+              "ja": "ノウサギ革"
             }
           },
           {
@@ -18567,7 +18551,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -18578,7 +18562,7 @@
         "CardType": 0,
         "zh": "特大块皮革",
         "en": "Very Large Leather",
-        "ja": "Very Large Leather",
+        "ja": "特大の革",
         "AlternateNames": [
           {
             "Conditions": {
@@ -18596,7 +18580,7 @@
               "Text": "特大块皮革",
               "zh": "特大块皮革",
               "en": "Very Large Leather",
-              "ja": "Very Large Leather"
+              "ja": "特大の革"
             }
           },
           {
@@ -18615,7 +18599,7 @@
               "Text": "特大块皮革",
               "zh": "特大块皮革",
               "en": "Very Large Leather",
-              "ja": "Very Large Leather"
+              "ja": "特大の革"
             }
           },
           {
@@ -18634,7 +18618,7 @@
               "Text": "特大块缝补皮革",
               "zh": "特大块缝补皮革",
               "en": "Very Large Patched Leather",
-              "ja": "Very Large Patched Leather"
+              "ja": "継ぎ当てされた特大の革"
             }
           },
           {
@@ -18653,7 +18637,7 @@
               "Text": "特大块缝补皮革",
               "zh": "特大块缝补皮革",
               "en": "Very Large Patched Leather",
-              "ja": "Very Large Patched Leather"
+              "ja": "継ぎ当てされた特大の革"
             }
           },
           {
@@ -18668,7 +18652,7 @@
               "Text": "熊皮革",
               "zh": "熊皮革",
               "en": "Bear Leather",
-              "ja": "Bear Leather"
+              "ja": "クマ革"
             }
           },
           {
@@ -18683,7 +18667,7 @@
               "Text": "森林猛兽皮革",
               "zh": "森林猛兽皮革",
               "en": "Forest Beast Leather",
-              "ja": "Forest Beast Leather"
+              "ja": "森獣の革"
             }
           },
           {
@@ -18698,7 +18682,7 @@
               "Text": "牛皮革",
               "zh": "牛皮革",
               "en": "Cow Leather",
-              "ja": "Cow Leather"
+              "ja": "牛の皮"
             }
           }
         ]
@@ -18706,7 +18690,7 @@
       "localization": {
         "zh": "动作：护理",
         "en": "Action: Treat",
-        "ja": "アクション：Treat"
+        "ja": "アクション：手入れする"
       }
     },
     {
@@ -18765,12 +18749,12 @@
         "CardType": 0,
         "zh": "水袋",
         "en": "Waterskin",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：防水",
         "en": "Action: Waterproof",
-        "ja": "アクション：Waterproof"
+        "ja": "アクション：防水"
       }
     },
     {

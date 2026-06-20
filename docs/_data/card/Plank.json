@@ -7,7 +7,7 @@
   "zh": "木板",
   "en": "Wooden Plank",
   "ja": "木の板",
-  "UniqueIDIndex": 2121,
+  "UniqueIDIndex": 2181,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -66,7 +66,29 @@
     "OnFullNotification": 0,
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
-    "durabilityKey": "SpoilageTime"
+    "durabilityKey": "SpoilageTime",
+    "_valueModifications": [
+      {
+        "link": {
+          "key": "Bp_PotteryWheel",
+          "icon": "PotteryWheel",
+          "type": "card",
+          "CardType": 7,
+          "zh": "陶轮",
+          "en": "Pottery Wheel",
+          "ja": "Pottery Wheel"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": -1,
+          "y": -1
+        }
+      }
+    ]
   },
   "UsageDurability": {
     "Active": false,
@@ -110,7 +132,29 @@
     "OnFullNotification": 0,
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
-    "durabilityKey": "UsageDurability"
+    "durabilityKey": "UsageDurability",
+    "_valueModifications": [
+      {
+        "link": {
+          "key": "Bp_PotteryWheel",
+          "icon": "PotteryWheel",
+          "type": "card",
+          "CardType": 7,
+          "zh": "陶轮",
+          "en": "Pottery Wheel",
+          "ja": "Pottery Wheel"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": -1,
+          "y": -1
+        }
+      }
+    ]
   },
   "FuelCapacity": {
     "Active": false,
@@ -164,7 +208,7 @@
       "Text": "干燥度",
       "zh": "干燥度",
       "en": "Dryness",
-      "ja": "Dryness"
+      "ja": "乾燥度"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 23040,
@@ -331,7 +375,7 @@
               "Text": "干燥度",
               "zh": "干燥度",
               "en": "Dryness",
-              "ja": "Dryness"
+              "ja": "乾燥度"
             },
             "OverrideIcon": {
               "FileName": "Drying"
@@ -707,7 +751,7 @@
               "Text": "干燥度",
               "zh": "干燥度",
               "en": "Dryness",
-              "ja": "Dryness"
+              "ja": "乾燥度"
             },
             "OverrideIcon": {
               "FileName": "Drying"
@@ -1303,7 +1347,14 @@
         "Text": "橡木板",
         "zh": "橡木板",
         "en": "Oak Plank",
-        "ja": "Oak Plank"
+        "ja": "オークの板材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1356,7 +1407,14 @@
         "Text": "松木板",
         "zh": "松木板",
         "en": "Pine Plank",
-        "ja": "Pine Plank"
+        "ja": "松の板材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1409,7 +1467,14 @@
         "Text": "桦木板",
         "zh": "桦木板",
         "en": "Birch Plank",
-        "ja": "Birch Plank"
+        "ja": "白樺の板材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1462,7 +1527,14 @@
         "Text": "柳木板",
         "zh": "柳木板",
         "en": "Willow Plank",
-        "ja": "Willow Plank"
+        "ja": "柳の板材"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1517,6 +1589,13 @@
         "en": "Alder Plank",
         "ja": "Alder Plank"
       },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
       "Art": {
         "SeasonID": "",
         "CardImage": null,
@@ -1553,6 +1632,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1738,8 +1821,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2113,12 +2204,12 @@
         "CardType": 0,
         "zh": "巢盒",
         "en": "Nesting Box",
-        "ja": "Nesting Box"
+        "ja": "巣箱"
       },
       "localization": {
         "zh": "动作：拆解",
         "en": "Action: Dismantle",
-        "ja": "アクション：Dismantle"
+        "ja": "アクション：解体する"
       }
     }
   ],
@@ -2189,13 +2280,29 @@
     },
     {
       "link": {
+        "key": "Bp_FiberBreak",
+        "icon": "FiberBreak",
+        "type": "card",
+        "CardType": 7,
+        "zh": "纤维破碎架",
+        "en": "Fiber Break",
+        "ja": "Fiber Break"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_Flatbow",
         "icon": "Flatbow",
         "type": "card",
         "CardType": 7,
         "zh": "平弓",
         "en": "Flatbow",
-        "ja": "Flatbow"
+        "ja": "フラットボウ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2211,7 +2318,7 @@
         "CardType": 7,
         "zh": "框鼓",
         "en": "Frame Drum",
-        "ja": "Frame Drum"
+        "ja": "フレームドラム"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2227,7 +2334,7 @@
         "CardType": 7,
         "zh": "风箱",
         "en": "Bellows",
-        "ja": "Bellows"
+        "ja": "ふいご"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2285,13 +2392,29 @@
     },
     {
       "link": {
+        "key": "Bp_PotteryWheel",
+        "icon": "PotteryWheel",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶轮",
+        "en": "Pottery Wheel",
+        "ja": "Pottery Wheel"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_RusticBarrel",
         "icon": "BarrelRustic",
         "type": "card",
         "CardType": 7,
         "zh": "粗制木桶",
         "en": "Rustic Barrel",
-        "ja": "Rustic Barrel"
+        "ja": "シンプルな樽"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2339,7 +2462,7 @@
         "CardType": 7,
         "zh": "锯木架",
         "en": "Sawhorses",
-        "ja": "Sawhorses"
+        "ja": "木馬台"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2403,7 +2526,7 @@
         "CardType": 7,
         "zh": "滑雪板",
         "en": "Skis",
-        "ja": "Skis"
+        "ja": "スキー"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2419,7 +2542,7 @@
         "CardType": 7,
         "zh": "雪橇",
         "en": "Sledge",
-        "ja": "Sledge"
+        "ja": "ソリ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2435,7 +2558,55 @@
         "CardType": 7,
         "zh": "烟熏屋",
         "en": "Smokehouse",
-        "ja": "スモークハウス"
+        "ja": "燻製小屋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_SpinningWheel",
+        "icon": "Spinning_Wheel",
+        "type": "card",
+        "CardType": 7,
+        "zh": "纺车",
+        "en": "Spinning Wheel",
+        "ja": "Spinning Wheel"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_TreadleLoom",
+        "icon": "TreadleLoom",
+        "type": "card",
+        "CardType": 7,
+        "zh": "踏板织机",
+        "en": "Treadle Loom",
+        "ja": "Treadle Loom"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_Wheelbarrow",
+        "icon": "Wheelbarrow",
+        "type": "card",
+        "CardType": 7,
+        "zh": "手推车",
+        "en": "Wheelbarrow",
+        "ja": "Wheelbarrow"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2451,7 +2622,7 @@
         "CardType": 7,
         "zh": "工作台",
         "en": "Workbench",
-        "ja": "Workbench"
+        "ja": "作業台"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2467,7 +2638,7 @@
         "CardType": 10,
         "zh": "新阁楼（东）",
         "en": "New Attic (East)",
-        "ja": "New Attic (East)"
+        "ja": "屋根裏を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2483,7 +2654,7 @@
         "CardType": 10,
         "zh": "新阁楼（北）",
         "en": "New Attic (North)",
-        "ja": "New Attic (North)"
+        "ja": "屋根裏を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2499,7 +2670,7 @@
         "CardType": 10,
         "zh": "新阁楼（南）",
         "en": "New Attic (South)",
-        "ja": "New Attic (South)"
+        "ja": "屋根裏を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2515,7 +2686,7 @@
         "CardType": 10,
         "zh": "新阁楼",
         "en": "New Attic",
-        "ja": "New Attic"
+        "ja": "屋根裏を増設"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2531,7 +2702,7 @@
         "CardType": 10,
         "zh": "新阁楼（西）",
         "en": "New Attic (West)",
-        "ja": "New Attic (West)"
+        "ja": "屋根裏を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2547,7 +2718,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2563,7 +2734,7 @@
         "CardType": 10,
         "zh": "新木质房间（东）",
         "en": "New Cabin Room (East)",
-        "ja": "New Cabin Room (East)"
+        "ja": "小屋部屋を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2579,7 +2750,7 @@
         "CardType": 10,
         "zh": "新木质房间（北）",
         "en": "New Cabin Room (North)",
-        "ja": "New Cabin Room (North)"
+        "ja": "小屋部屋を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2595,7 +2766,7 @@
         "CardType": 10,
         "zh": "新木质房间（南）",
         "en": "New Cabin Room (South)",
-        "ja": "New Cabin Room (South)"
+        "ja": "小屋部屋を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2611,7 +2782,7 @@
         "CardType": 10,
         "zh": "新木质房间（上）",
         "en": "New Cabin Room (Up)",
-        "ja": "New Cabin Room (Up)"
+        "ja": "小屋部屋を増設（上）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2627,7 +2798,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2659,7 +2830,7 @@
         "CardType": 10,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2675,7 +2846,7 @@
         "CardType": 10,
         "zh": "窗户",
         "en": "Windows",
-        "ja": "Windows"
+        "ja": "窓"
       },
       "localization": {
         "zh": "蓝图制作",

@@ -7,7 +7,7 @@
   "zh": "池塘",
   "en": "Pond",
   "ja": "池",
-  "UniqueIDIndex": 2124,
+  "UniqueIDIndex": 2184,
   "CardType": 2,
   "CardTags": [
     {
@@ -100,7 +100,7 @@
           "Text": "河流类型",
           "zh": "河流类型",
           "en": "River Type",
-          "ja": "River Type"
+          "ja": "川種別"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -193,8 +193,8 @@
         "Active": true,
         "CardStatName": {
           "DefaultText": "River Type",
-          "Text": "River Type",
-          "zh": "River Type",
+          "Text": "河流类型",
+          "zh": "河流类型",
           "en": "River Type",
           "ja": "River Type"
         },
@@ -762,7 +762,7 @@
           "Text": "打湿",
           "zh": "打湿",
           "en": "Wet",
-          "ja": "Wet"
+          "ja": "濡れ"
         },
         "value": {
           "x": 1,
@@ -1041,6 +1041,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "DigMud"
@@ -1052,7 +1056,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1060,7 +1064,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1074,7 +1078,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1088,7 +1092,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1102,7 +1106,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1477,8 +1481,8 @@
               "DefaultText": "Iron",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Iron"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -1727,7 +1731,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -1883,7 +1887,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -1897,7 +1901,7 @@
                     "Text": "研磨",
                     "zh": "研磨",
                     "en": "Mill",
-                    "ja": "Mill"
+                    "ja": "製粉"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 1
@@ -2048,6 +2052,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2822,7 +2827,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2850,7 +2855,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2862,7 +2867,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2888,7 +2893,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2902,7 +2907,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2958,6 +2963,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3475,6 +3484,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3807,7 +3817,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -3922,6 +3932,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4159,7 +4170,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -4396,7 +4407,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -4408,7 +4422,7 @@
               "count": 2,
               "zh": "多份鱼饵",
               "en": "Numerous Fishing Bait",
-              "ja": "Numerous Fishing Bait",
+              "ja": "多数の釣り餌",
               "SpoilageTime": {
                 "Active": true,
                 "CardStatName": {
@@ -4698,7 +4712,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -4746,7 +4763,7 @@
                   "Text": "精魄",
                   "zh": "精魄",
                   "en": "Spirit",
-                  "ja": "Spirit"
+                  "ja": "精霊"
                 },
                 "OverrideIcon": {
                   "FileName": "Insight"
@@ -4774,7 +4791,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -5070,7 +5087,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -5949,6 +5969,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6409,12 +6433,336 @@
               "AddSpicesFromOtherCard": false,
               "AddedFlavours": [],
               "AddedSpiceTags": []
+            },
+            {
+              "DroppedCard": {
+                "key": "W_Leech",
+                "icon": "Leech",
+                "type": "card",
+                "CardType": 0,
+                "zh": "水蛭",
+                "en": "Leech",
+                "ja": "Leech",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "Recovery"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 192
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria_Old"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "Pain"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 75
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 500
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "Healing Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability2",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "Analgesic Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 2
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": true,
+                "BaseDropChance": -20,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [
+                  {
+                    "InputStat": {
+                      "key": "HummingWidowLeechProtection",
+                      "icon": "Leech",
+                      "type": "stat",
+                      "zh": "嗡鸣寡妇水蛭防护",
+                      "en": "Humming Widow Leech Protection",
+                      "ja": "Humming Widow Leech Protection",
+                      "max": 6,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 6
+                      },
+                      "OutputValueRange": {
+                        "x": -10,
+                        "y": -60
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Summer",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "夏季",
+                      "en": "Summer Counter",
+                      "ja": "Summer Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 2880
+                      },
+                      "OutputValueRange": {
+                        "x": 20,
+                        "y": 20
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Winter",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "冬季",
+                      "en": "Winter Counter",
+                      "ja": "Winter Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "OutputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "WhenOutOfRange": 3,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  }
+                ],
+                "CardsModifiers": [
+                  {
+                    "Card": {
+                      "Target": {
+                        "key": "tag_LeechHabitat",
+                        "text": "“水蛭栖息地”",
+                        "icon": "",
+                        "type": "tag",
+                        "count": 8,
+                        "zh": "水蛭栖息地",
+                        "en": "Leech Habitat",
+                        "ja": "Leech Habitat",
+                        "SpecialDurability1": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Trees",
+                            "Text": "树林",
+                            "zh": "树林",
+                            "en": "Trees",
+                            "ja": "Trees"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Tree1"
+                          },
+                          "MaxValue": 115200
+                        },
+                        "SpecialDurability2": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Overgrowth",
+                            "Text": "过度生长",
+                            "zh": "过度生长",
+                            "en": "Overgrowth",
+                            "ja": "Overgrowth"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Overgrowth"
+                          },
+                          "MaxValue": 1440
+                        },
+                        "SpecialDurability3": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Foraging",
+                            "Text": "觅食",
+                            "zh": "觅食",
+                            "en": "Foraging",
+                            "ja": "Foraging"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "SaturationBerries"
+                          },
+                          "MaxValue": 360
+                        },
+                        "SpecialDurability4": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Fertility",
+                            "Text": "Fertility",
+                            "zh": "繁衍",
+                            "en": "Fertility",
+                            "ja": "Fertility"
+                          },
+                          "OverrideIcon": null,
+                          "MaxValue": 5760
+                        }
+                      }
+                    },
+                    "OnlyGivenCard": false,
+                    "OnlyInHand": false,
+                    "NotInHand": false,
+                    "ExcludeInventory": false,
+                    "OnlyInInventory": false,
+                    "LookInside": 0,
+                    "MaxChancePerCard": 60,
+                    "MaxStack": 0,
+                    "ScaleByDurabilities": {
+                      "MaskValue": 0
+                    }
+                  }
+                ],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
             }
           ],
           "DropSavedBpIngredients": false,
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6659,7 +7007,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6768,12 +7116,336 @@
               "AddSpicesFromOtherCard": false,
               "AddedFlavours": [],
               "AddedSpiceTags": []
+            },
+            {
+              "DroppedCard": {
+                "key": "W_Leech",
+                "icon": "Leech",
+                "type": "card",
+                "CardType": 0,
+                "zh": "水蛭",
+                "en": "Leech",
+                "ja": "Leech",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "Recovery"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 192
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria_Old"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "Pain"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 75
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 500
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "Healing Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability2",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "Analgesic Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 2
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": true,
+                "BaseDropChance": -20,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [
+                  {
+                    "InputStat": {
+                      "key": "HummingWidowLeechProtection",
+                      "icon": "Leech",
+                      "type": "stat",
+                      "zh": "嗡鸣寡妇水蛭防护",
+                      "en": "Humming Widow Leech Protection",
+                      "ja": "Humming Widow Leech Protection",
+                      "max": 6,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 6
+                      },
+                      "OutputValueRange": {
+                        "x": -10,
+                        "y": -60
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Summer",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "夏季",
+                      "en": "Summer Counter",
+                      "ja": "Summer Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 2880
+                      },
+                      "OutputValueRange": {
+                        "x": 20,
+                        "y": 20
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Winter",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "冬季",
+                      "en": "Winter Counter",
+                      "ja": "Winter Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "OutputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "WhenOutOfRange": 3,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  }
+                ],
+                "CardsModifiers": [
+                  {
+                    "Card": {
+                      "Target": {
+                        "key": "tag_LeechHabitat",
+                        "text": "“水蛭栖息地”",
+                        "icon": "",
+                        "type": "tag",
+                        "count": 8,
+                        "zh": "水蛭栖息地",
+                        "en": "Leech Habitat",
+                        "ja": "Leech Habitat",
+                        "SpecialDurability1": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Trees",
+                            "Text": "树林",
+                            "zh": "树林",
+                            "en": "Trees",
+                            "ja": "Trees"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Tree1"
+                          },
+                          "MaxValue": 115200
+                        },
+                        "SpecialDurability2": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Overgrowth",
+                            "Text": "过度生长",
+                            "zh": "过度生长",
+                            "en": "Overgrowth",
+                            "ja": "Overgrowth"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Overgrowth"
+                          },
+                          "MaxValue": 1440
+                        },
+                        "SpecialDurability3": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Foraging",
+                            "Text": "觅食",
+                            "zh": "觅食",
+                            "en": "Foraging",
+                            "ja": "Foraging"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "SaturationBerries"
+                          },
+                          "MaxValue": 360
+                        },
+                        "SpecialDurability4": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Fertility",
+                            "Text": "Fertility",
+                            "zh": "繁衍",
+                            "en": "Fertility",
+                            "ja": "Fertility"
+                          },
+                          "OverrideIcon": null,
+                          "MaxValue": 5760
+                        }
+                      }
+                    },
+                    "OnlyGivenCard": false,
+                    "OnlyInHand": false,
+                    "NotInHand": false,
+                    "ExcludeInventory": false,
+                    "OnlyInInventory": false,
+                    "LookInside": 0,
+                    "MaxChancePerCard": 60,
+                    "MaxStack": 0,
+                    "ScaleByDurabilities": {
+                      "MaskValue": 0
+                    }
+                  }
+                ],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
             }
           ],
           "DropSavedBpIngredients": false,
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -7122,7 +7794,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -7359,7 +8031,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -7407,7 +8082,7 @@
                   "Text": "精魄",
                   "zh": "精魄",
                   "en": "Spirit",
-                  "ja": "Spirit"
+                  "ja": "精霊"
                 },
                 "OverrideIcon": {
                   "FileName": "Insight"
@@ -7435,7 +8110,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -7731,7 +8406,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -8538,7 +9216,7 @@
                 "Text": "锋利度",
                 "zh": "锋利度",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -8564,7 +9242,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -8576,7 +9254,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -8588,7 +9266,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -8602,7 +9280,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -8616,7 +9294,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -8634,10 +9312,10 @@
     {
       "ActionName": {
         "DefaultText": "Fill",
-        "Text": "Fill",
-        "zh": "Fill",
+        "Text": "取水",
+        "zh": "取水",
         "en": "Fill",
-        "ja": "Fill"
+        "ja": "塞ぐ"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -8672,6 +9350,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -9538,7 +10220,7 @@
                 "Text": "染料",
                 "zh": "染料",
                 "en": "Dye",
-                "ja": "Dye"
+                "ja": "染料"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -9597,7 +10279,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -9636,7 +10318,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -9650,7 +10332,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -9664,7 +10346,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -9692,7 +10374,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -9706,7 +10388,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -9717,7 +10399,7 @@
             "text": "“可精魄附魔武器”",
             "icon": "",
             "type": "tag",
-            "count": 43,
+            "count": 44,
             "zh": "精魄附魔武器",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -9728,7 +10410,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -9756,7 +10438,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -9768,7 +10450,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -9806,7 +10488,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -9870,6 +10552,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -10827,7 +11513,7 @@
             "CardType": 0,
             "zh": "新鲜荨麻茎",
             "en": "Fresh Nettle Stems",
-            "ja": "Fresh Nettle Stems",
+            "ja": "新鮮なイラクサの茎",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -10913,7 +11599,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -10947,7 +11633,7 @@
         "Text": "泡亚麻茎",
         "zh": "泡亚麻茎",
         "en": "Soak Flax Stems",
-        "ja": "Soak Flax Stems"
+        "ja": "亜麻の茎を浸す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -10982,6 +11668,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -11685,7 +12375,7 @@
           "CardType": 2,
           "zh": "泡水亚麻茎",
           "en": "Soaking Flax Stems",
-          "ja": "Soaking Flax Stems",
+          "ja": "水に浸した亜麻の茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -11719,7 +12409,7 @@
               "Text": "湿度",
               "zh": "湿度",
               "en": "Wetness",
-              "ja": "Wetness"
+              "ja": "水分量"
             },
             "OverrideIcon": {
               "FileName": "Water"
@@ -11757,7 +12447,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11939,7 +12629,7 @@
             "CardType": 0,
             "zh": "亚麻茎",
             "en": "Flax Stems",
-            "ja": "Flax Stems",
+            "ja": "亜麻の茎",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -11971,7 +12661,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -12011,7 +12701,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -12094,6 +12784,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -13171,7 +13865,7 @@
         "Text": "浸泡牧草",
         "zh": "浸泡牧草",
         "en": "Soak Meadowgrass",
-        "ja": "Soak Meadowgrass"
+        "ja": "草原草を浸す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -13206,6 +13900,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -13909,7 +14607,7 @@
           "CardType": 2,
           "zh": "浸泡中的牧草",
           "en": "Soaking Meadowgrass",
-          "ja": "Soaking Meadowgrass",
+          "ja": "濡れている牧草",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -13943,7 +14641,7 @@
               "Text": "湿度",
               "zh": "湿度",
               "en": "Wetness",
-              "ja": "Wetness"
+              "ja": "水分量"
             },
             "OverrideIcon": {
               "FileName": "Thirst_Old"
@@ -13981,7 +14679,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -14163,7 +14861,7 @@
             "CardType": 0,
             "zh": "新鲜牧草",
             "en": "Fresh Meadowgrass",
-            "ja": "Fresh Meadowgrass",
+            "ja": "新鮮な牧草",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -14195,7 +14893,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -14233,7 +14931,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -14281,7 +14979,7 @@
         "Text": "洗净鞣质",
         "zh": "洗净鞣质",
         "en": "Wash of Tannins",
-        "ja": "Wash of Tannins"
+        "ja": "タンニンを洗い流す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -14316,6 +15014,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -15284,7 +15986,7 @@
                 "Text": "护理",
                 "zh": "护理",
                 "en": "Treatment",
-                "ja": "Treatment"
+                "ja": "加工"
               },
               "OverrideIcon": null,
               "MaxValue": 8
@@ -15296,7 +15998,7 @@
                 "Text": "护理",
                 "zh": "护理",
                 "en": "Treatment",
-                "ja": "Treatment"
+                "ja": "加工"
               },
               "OverrideIcon": null,
               "MaxValue": 8
@@ -15322,7 +16024,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -15336,7 +16038,7 @@
                 "Text": "毛皮类型",
                 "zh": "毛皮类型",
                 "en": "Fur Type",
-                "ja": "Fur Type"
+                "ja": "毛皮の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -15357,7 +16059,7 @@
         "Text": "清洗",
         "zh": "清洗",
         "en": "Wash",
-        "ja": "Wash"
+        "ja": "体を洗う"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -15392,6 +16094,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -16322,7 +17028,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -16336,7 +17042,7 @@
                 "Text": "细菌",
                 "zh": "细菌",
                 "en": "Bacteria",
-                "ja": "Bacteria"
+                "ja": "ばい菌"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -16350,7 +17056,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -16364,7 +17070,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Rennet",
-                "ja": "Rennet"
+                "ja": "レンネット"
               },
               "OverrideIcon": {
                 "FileName": "Stomach_Cooked"
@@ -16436,6 +17142,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -17366,7 +18076,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -17422,7 +18132,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "品質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -17473,7 +18183,7 @@
         "Text": "打湿",
         "zh": "打湿",
         "en": "Wet",
-        "ja": "Wet"
+        "ja": "濡れ"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -17508,6 +18218,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -18376,6 +19090,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -18913,6 +19631,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -19467,6 +20189,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -20482,6 +21208,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -20764,7 +21494,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -20774,7 +21507,7 @@
             "type": "stat",
             "zh": "轮廓",
             "en": "Profile",
-            "ja": "Profile",
+            "ja": "プロフィール",
             "max": 150,
             "min": 0
           },
@@ -21000,8 +21733,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -21171,6 +21912,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Drink"
@@ -21182,7 +21927,7 @@
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 58,
+          "count": 59,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -21273,8 +22018,8 @@
               "DefaultText": "Waste",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Waste"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -21284,16 +22029,16 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Bacteria",
-              "Text": "细菌",
-              "zh": "细菌",
-              "en": "Bacteria",
-              "ja": "ばい菌"
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
             },
             "OverrideIcon": {
-              "FileName": "Bacteria"
+              "FileName": "Spoilage"
             },
-            "MaxValue": 4800
+            "MaxValue": 16
           },
           "zh": "饮水动作",
           "en": "DrinkingAction",
@@ -21835,6 +22580,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "DiveShort"
@@ -21882,7 +22631,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -21896,7 +22645,7 @@
               "Text": "树林",
               "zh": "树林",
               "en": "Trees",
-              "ja": "Trees"
+              "ja": "木"
             },
             "OverrideIcon": {
               "FileName": "Tree1"
@@ -21910,7 +22659,7 @@
               "Text": "过度生长",
               "zh": "过度生长",
               "en": "Overgrowth",
-              "ja": "Overgrowth"
+              "ja": "草木の繁茂 "
             },
             "OverrideIcon": {
               "FileName": "Overgrowth"
@@ -21924,7 +22673,7 @@
               "Text": "觅食",
               "zh": "觅食",
               "en": "Foraging",
-              "ja": "Foraging"
+              "ja": "資源集め"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -22194,7 +22943,525 @@
       "ResetWhenDone": null,
       "StatInterruptions": [],
       "StartDialog": null,
-      "ProducedCards": [],
+      "ProducedCards": [
+        {
+          "CollectionName": "1",
+          "CollectionMessages": [],
+          "CountsAsSuccess": false,
+          "RevealInventory": false,
+          "CollectionUses": {
+            "m_X": 0,
+            "m_Y": 0
+          },
+          "CollectionWeight": 0,
+          "StatsDropChanceModifiers": [],
+          "NPCStatsDropChanceModifiers": [],
+          "CardDropChanceModifiers": [],
+          "DurabilitiesDropChanceModifier": {
+            "Spoilage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Usage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Fuel": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Progress": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special1": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special2": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special3": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special4": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            }
+          },
+          "CreatedLiquid": {
+            "LiquidCard": null,
+            "Quantity": {
+              "x": 0,
+              "y": 0
+            },
+            "Durabilities": {
+              "Spoilage": 0,
+              "Usage": 0,
+              "Fuel": 0,
+              "Progress": 0,
+              "Special1": 0,
+              "Special2": 0,
+              "Special3": 0,
+              "Special4": 0,
+              "SpoilageValue": 0,
+              "UsageValue": 0,
+              "FuelValue": 0,
+              "ProgressValue": 0,
+              "Special1Value": 0,
+              "Special2Value": 0,
+              "Special3Value": 0,
+              "Special4Value": 0,
+              "SpoilageFrom": 0,
+              "UsageFrom": 0,
+              "FuelFrom": 0,
+              "ProgressFrom": 0,
+              "Special1From": 0,
+              "Special2From": 0,
+              "Special3From": 0,
+              "Special4From": 0
+            }
+          },
+          "DroppedCards": [
+            {
+              "DroppedCard": {
+                "key": "W_Leech",
+                "icon": "Leech",
+                "type": "card",
+                "CardType": 0,
+                "zh": "水蛭",
+                "en": "Leech",
+                "ja": "Leech",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Recovery",
+                    "Text": "治愈",
+                    "zh": "治愈",
+                    "en": "Recovery",
+                    "ja": "Recovery"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 192
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Bacteria_Old"
+                  },
+                  "MaxValue": 288
+                },
+                "FuelCapacity": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Pain",
+                    "Text": "疼痛",
+                    "zh": "疼痛",
+                    "en": "Pain",
+                    "ja": "Pain"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 75
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 500
+                },
+                "SpecialDurability1": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Healing Factor",
+                    "Text": "治愈系数",
+                    "zh": "治愈系数",
+                    "en": "Healing Factor",
+                    "ja": "Healing Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Health"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability2",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Analgesic Factor",
+                    "Text": "镇痛系数",
+                    "zh": "镇痛系数",
+                    "en": "Analgesic Factor",
+                    "ja": "Analgesic Factor"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Pain"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 2
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": true,
+                "BaseDropChance": -20,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [
+                  {
+                    "InputStat": {
+                      "key": "HummingWidowLeechProtection",
+                      "icon": "Leech",
+                      "type": "stat",
+                      "zh": "嗡鸣寡妇水蛭防护",
+                      "en": "Humming Widow Leech Protection",
+                      "ja": "Humming Widow Leech Protection",
+                      "max": 6,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 6
+                      },
+                      "OutputValueRange": {
+                        "x": -15,
+                        "y": -40
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Summer",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "夏季",
+                      "en": "Summer Counter",
+                      "ja": "Summer Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 1,
+                        "y": 2880
+                      },
+                      "OutputValueRange": {
+                        "x": 20,
+                        "y": 20
+                      },
+                      "WhenOutOfRange": 0,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  },
+                  {
+                    "InputStat": {
+                      "key": "SeasonCounter_Winter",
+                      "icon": "",
+                      "type": "stat",
+                      "zh": "冬季",
+                      "en": "Winter Counter",
+                      "ja": "Winter Counter",
+                      "max": 2880,
+                      "min": 0
+                    },
+                    "UseStatPercentage": false,
+                    "Value": {
+                      "Active": true,
+                      "InputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "OutputValueRange": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "WhenOutOfRange": 3,
+                      "OutOfRangeCustomValue": 0
+                    }
+                  }
+                ],
+                "CardsModifiers": [
+                  {
+                    "Card": {
+                      "Target": {
+                        "key": "tag_LeechHabitat",
+                        "text": "“水蛭栖息地”",
+                        "icon": "",
+                        "type": "tag",
+                        "count": 8,
+                        "zh": "水蛭栖息地",
+                        "en": "Leech Habitat",
+                        "ja": "Leech Habitat",
+                        "SpecialDurability1": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Trees",
+                            "Text": "树林",
+                            "zh": "树林",
+                            "en": "Trees",
+                            "ja": "Trees"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Tree1"
+                          },
+                          "MaxValue": 115200
+                        },
+                        "SpecialDurability2": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Overgrowth",
+                            "Text": "过度生长",
+                            "zh": "过度生长",
+                            "en": "Overgrowth",
+                            "ja": "Overgrowth"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "Overgrowth"
+                          },
+                          "MaxValue": 1440
+                        },
+                        "SpecialDurability3": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Foraging",
+                            "Text": "觅食",
+                            "zh": "觅食",
+                            "en": "Foraging",
+                            "ja": "Foraging"
+                          },
+                          "OverrideIcon": {
+                            "FileName": "SaturationBerries"
+                          },
+                          "MaxValue": 360
+                        },
+                        "SpecialDurability4": {
+                          "Active": true,
+                          "CardStatName": {
+                            "DefaultText": "Fertility",
+                            "Text": "Fertility",
+                            "zh": "繁衍",
+                            "en": "Fertility",
+                            "ja": "Fertility"
+                          },
+                          "OverrideIcon": null,
+                          "MaxValue": 5760
+                        }
+                      }
+                    },
+                    "OnlyGivenCard": false,
+                    "OnlyInHand": false,
+                    "NotInHand": false,
+                    "ExcludeInventory": false,
+                    "OnlyInInventory": false,
+                    "LookInside": 0,
+                    "MaxChancePerCard": 40,
+                    "MaxStack": 0,
+                    "ScaleByDurabilities": {
+                      "MaskValue": 0
+                    }
+                  }
+                ],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
+            }
+          ],
+          "DropSavedBpIngredients": false,
+          "DroppedIfNoBpIngredient": [],
+          "DropCardsInsideInventory": false,
+          "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
+          "DroppedEncounter": null,
+          "EncounterNPC": null,
+          "SkipEncounterEvent": false,
+          "StatModifications": [],
+          "ReceivingCardDurabilityModifications": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "BpDropDurabilityChangesReplaceStartingValue": {
+            "MaskValue": 0
+          },
+          "DropsStatInterpolatedDurabilityChanges": []
+        }
+      ],
       "StatModifications": [
         {
           "Stat": {
@@ -22721,7 +23988,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -22958,7 +24225,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -23006,7 +24276,7 @@
                   "Text": "彩度",
                   "zh": "彩度",
                   "en": "Colour Intensity",
-                  "ja": "Colour Intensity"
+                  "ja": "色の濃さ"
                 },
                 "OverrideIcon": {
                   "FileName": "Urine"
@@ -23020,7 +24290,7 @@
                   "Text": "毛皮",
                   "zh": "毛皮",
                   "en": "Fur",
-                  "ja": "Fur"
+                  "ja": "毛皮"
                 },
                 "OverrideIcon": {
                   "FileName": "Fur_Cured"
@@ -23034,7 +24304,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -23048,7 +24318,7 @@
                   "Text": "柔软度",
                   "zh": "柔软度",
                   "en": "Softness",
-                  "ja": "Softness"
+                  "ja": "柔らかさ"
                 },
                 "OverrideIcon": {
                   "FileName": "Brain"
@@ -23062,7 +24332,7 @@
                   "Text": "颜色",
                   "zh": "颜色",
                   "en": "Colour",
-                  "ja": "Colour"
+                  "ja": "色"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 100
@@ -23361,6 +24631,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "DiveShort"
@@ -23372,7 +24646,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -23380,7 +24654,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -23394,7 +24668,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -23408,7 +24682,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -23422,7 +24696,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -24062,7 +25336,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -24299,7 +25573,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [
             null
@@ -24597,6 +25874,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "DigMud"
@@ -24608,7 +25889,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -24616,7 +25897,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -24630,7 +25911,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -24644,7 +25925,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -24658,7 +25939,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -25033,8 +26314,8 @@
               "DefaultText": "Iron",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Iron"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -25283,7 +26564,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -25439,7 +26720,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -25453,7 +26734,7 @@
                     "Text": "研磨",
                     "zh": "研磨",
                     "en": "Mill",
-                    "ja": "Mill"
+                    "ja": "製粉"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 1
@@ -25604,6 +26885,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -26133,6 +27415,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -26534,6 +27820,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -26972,6 +28259,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -27172,7 +28460,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -27427,6 +28715,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -27834,6 +29126,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -28078,7 +29371,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -28193,6 +29486,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -28573,7 +29867,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow"
+        "ja": "湿った窪地"
       },
       "localization": {
         "zh": "状态触发",
@@ -28623,7 +29917,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow"
+        "ja": "湿った窪地"
       },
       "localization": {
         "zh": "状态触发",
@@ -28660,7 +29954,7 @@
       "localization": {
         "zh": "动作：制作粘土",
         "en": "Action: Make Clay",
-        "ja": "アクション：Make Clay"
+        "ja": "アクション：粘土を作る"
       }
     },
     {
@@ -28677,6 +29971,22 @@
         "zh": "状态触发",
         "en": "Stats Change",
         "ja": "状態変化"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_SpiritHummingWidow",
+        "icon": "Blood",
+        "type": "card",
+        "CardType": 9,
+        "zh": "嗡鸣寡妇",
+        "en": "Humming Widow",
+        "ja": "Humming Widow"
+      },
+      "localization": {
+        "zh": "动作：驱散虫群",
+        "en": "Action: Dispel Swarms",
+        "ja": "アクション：Dispel Swarms"
       }
     },
     {
@@ -28704,7 +30014,7 @@
       "CardType": 4,
       "zh": "潮润幽谷",
       "en": "Damp Hollow",
-      "ja": "Damp Hollow",
+      "ja": "湿った窪地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -28808,7 +30118,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow",
+        "ja": "湿った窪地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -28870,7 +30180,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -28884,7 +30194,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -28898,7 +30208,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

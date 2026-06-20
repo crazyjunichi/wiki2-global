@@ -7,7 +7,7 @@
   "zh": "抹灰墙",
   "en": "Plastered Walls",
   "ja": "塗り壁",
-  "UniqueIDIndex": 1547,
+  "UniqueIDIndex": 1589,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -696,13 +696,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "洪水"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -750,7 +750,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -764,7 +764,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -856,13 +856,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "洪水"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -910,7 +910,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -924,7 +924,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -1232,6 +1232,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1324,7 +1328,7 @@
         "type": "stat",
         "zh": "庇护度",
         "en": "Sanctuary",
-        "ja": "Sanctuary",
+        "ja": "安息度",
         "max": 7500,
         "min": -1000
       },
@@ -1552,7 +1556,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -2936,8 +2943,16 @@
   ],
   "BuildingDaytimeCost": 8,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

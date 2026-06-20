@@ -7,7 +7,7 @@
   "zh": "Chest",
   "en": "Chest",
   "ja": "Chest",
-  "UniqueIDIndex": 2437,
+  "UniqueIDIndex": 2507,
   "CardType": 1,
   "CardTags": [],
   "CardName": {
@@ -99,6 +99,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -901,6 +905,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1406,6 +1414,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2362,7 +2371,7 @@
         "key": "EatingAction",
         "text": "EatingAction",
         "type": "tag",
-        "count": 231,
+        "count": 235,
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -2840,7 +2849,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 2,
       "DurationRdmVariation": 0,
@@ -3253,7 +3265,7 @@
                 "Text": "碎肉",
                 "zh": "碎肉",
                 "en": "Meat Scraps",
-                "ja": "Meat Scraps"
+                "ja": "肉片"
               }
             },
             {
@@ -3268,7 +3280,7 @@
                 "Text": "肩肉",
                 "zh": "肩肉",
                 "en": "Shoulder Meat",
-                "ja": "Shoulder Meat"
+                "ja": "肩肉"
               }
             },
             {
@@ -3283,7 +3295,7 @@
                 "Text": "肉",
                 "zh": "肉",
                 "en": "Meat",
-                "ja": "Meat"
+                "ja": "肉"
               }
             },
             {
@@ -3298,7 +3310,7 @@
                 "Text": "腿肉",
                 "zh": "腿肉",
                 "en": "Haunch Meat",
-                "ja": "Haunch Meat"
+                "ja": "腿肉"
               }
             },
             {
@@ -3313,7 +3325,7 @@
                 "Text": "脊肉",
                 "zh": "脊肉",
                 "en": "Loin Meat",
-                "ja": "Loin Meat"
+                "ja": "ロース肉"
               }
             }
           ],
@@ -3406,7 +3418,7 @@
               "Text": "肉部位",
               "zh": "肉部位",
               "en": "Meat Type",
-              "ja": "Meat Type"
+              "ja": "肉の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -3616,7 +3628,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 0,
       "DurationRdmVariation": 0,
@@ -4122,6 +4137,13 @@
         "en": "Alt 1",
         "ja": "Alt 1"
       },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
       "Art": {
         "SeasonID": "",
         "CardImage": null,
@@ -4174,6 +4196,13 @@
         "zh": "Alt 2",
         "en": "Alt 2",
         "ja": "Alt 2"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -4228,6 +4257,13 @@
         "en": "Alt 3",
         "ja": "Alt 3"
       },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
       "Art": {
         "SeasonID": "",
         "CardImage": null,
@@ -4281,6 +4317,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4574,7 +4614,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4967,7 +5010,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "PerformEvenIfTransferIs0": false,
       "CheckConditionsOnEveryTarget": false,
@@ -5238,8 +5284,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -5409,6 +5463,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5835,6 +5893,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6261,6 +6323,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6501,7 +6567,7 @@
             "m_GameObject": null,
             "m_Enabled": 1,
             "UniqueID": "4f60d4497a50f3b4ea0eabae2e48457f",
-            "UniqueIDIndex": 4339
+            "UniqueIDIndex": 4482
           },
           "UseAssociatedAgent": false,
           "TargetAgent": {
@@ -6740,6 +6806,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6980,7 +7050,7 @@
             "m_GameObject": null,
             "m_Enabled": 1,
             "UniqueID": "4f60d4497a50f3b4ea0eabae2e48457f",
-            "UniqueIDIndex": 4339
+            "UniqueIDIndex": 4482
           },
           "UseAssociatedAgent": false,
           "TargetAgent": {
@@ -7219,6 +7289,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7751,6 +7825,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -8196,6 +8274,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -8648,6 +8730,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -9074,6 +9160,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -9302,7 +9392,7 @@
           "icon": "Spear_GhostBronze",
           "zh": "矛手",
           "en": "Spearfighter",
-          "ja": "Spearfighter",
+          "ja": "槍戦士",
           "type": "perk"
         }
       ],

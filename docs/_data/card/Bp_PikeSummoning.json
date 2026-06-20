@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "召唤仪式",
   "en": "Summoning Ritual",
-  "ja": "Summoning Ritual",
-  "UniqueIDIndex": 525,
+  "ja": "召喚の儀式",
+  "UniqueIDIndex": 540,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "召唤仪式",
     "zh": "召唤仪式",
     "en": "Summoning Ritual",
-    "ja": "Summoning Ritual"
+    "ja": "召喚の儀式"
   },
   "CardImage": {
     "FileName": "Pike"
@@ -879,7 +879,7 @@
     "Text": "暂时将狗鱼精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将狗鱼精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds a pike spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds a pike spirit to your soul, making you both a bit more like the other."
+    "ja": "一時的に月の精霊をあなたの魂に結びつけ、互いを少しずつ似た存在にする。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1015,7 +1019,7 @@
         "CardType": 0,
         "zh": "狗鱼精魄(召唤)",
         "en": "Pike Spirit",
-        "ja": "Pike Spirit",
+        "ja": "カワカマスの精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1023,7 +1027,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1049,7 +1053,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1297,7 +1301,7 @@
       "Text": "尸体没有精魄。",
       "zh": "尸体没有精魄。",
       "en": "Carcass has no spirit.",
-      "ja": "Carcass has no spirit."
+      "ja": "死骸に精霊は宿っていない。"
     },
     "SpecificFailMessages": []
   },
@@ -1359,7 +1363,7 @@
                 "Text": "精魄",
                 "zh": "精魄",
                 "en": "Spirit",
-                "ja": "Spirit"
+                "ja": "精霊"
               },
               "OverrideIcon": {
                 "FileName": "Insight"
@@ -1884,14 +1888,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1899,7 +1911,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1913,7 +1925,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1927,7 +1939,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1941,7 +1953,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2016,7 +2028,7 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual",
+        "ja": "召喚の儀式",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2777,7 +2789,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"

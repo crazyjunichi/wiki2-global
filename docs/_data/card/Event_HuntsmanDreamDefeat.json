@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "梦醒了",
   "en": "The Dream finally Ends",
-  "ja": "The Dream finally Ends",
-  "UniqueIDIndex": 1107,
+  "ja": "ついに夢は終わる",
+  "UniqueIDIndex": 1148,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "梦醒了",
     "zh": "梦醒了",
     "en": "The Dream finally Ends",
-    "ja": "The Dream finally Ends"
+    "ja": "ついに夢は終わる"
   },
   "CardImage": {
     "FileName": "MoonMaiden_NoMaiden"
@@ -855,7 +855,7 @@
     "Text": "你自梦中醒来，心中痛楚。内心的某个声音已然沉寂、消亡。这是你所希望的吗？那是你的灵魂所在吗？\\n\\n你已然化身自己的伤痕，再也无法与内心和解。是时候面对你命中注定的痛苦了，任由它吞噬，直到死亡将你解脱。\\n\\n狩猎不再呼唤你，那透过松林的风，此刻也离你远去。月亮仍会升起，但再也不会充盈你的希冀。",
     "zh": "你自梦中醒来，心中痛楚。内心的某个声音已然沉寂、消亡。这是你所希望的吗？那是你的灵魂所在吗？\\n\\n你已然化身自己的伤痕，再也无法与内心和解。是时候面对你命中注定的痛苦了，任由它吞噬，直到死亡将你解脱。\\n\\n狩猎不再呼唤你，那透过松林的风，此刻也离你远去。月亮仍会升起，但再也不会充盈你的希冀。",
     "en": "You wake with a deep pain in your heart. Something inside you has grown quiet. Something in you has died. Was it your hope? Was it your soul?\\n\\nYou have become your wounds, and you know you will never again be able to live at peace with yourself. It is time now to welcome your fated pain, and let it consume you until death chooses, one day, to release you.\\n\\nThe hunt no longer calls to you. The wind through the pines feels distant now. The moon will rise again, but it will no longer fill you with hope.",
-    "ja": "You wake with a deep pain in your heart. Something inside you has grown quiet. Something in you has died. Was it your hope? Was it your soul?\n\nYou have become your wounds, and you know you will never again be able to live at peace with yourself. It is time now to welcome your fated pain, and let it consume you until death chooses, one day, to release you.\n\nThe hunt no longer calls to you. The wind through the pines feels distant now. The moon will rise again, but it will no longer fill you with hope."
+    "ja": "深い胸の痛みとともに目を覚ます。\\n心の奥で、何かが静かに息絶えていた。\\n何かを失ってしまったのだ。\\nそれは希望だったのか。\\nそれとも魂だったのか。\\n\\nあなたは、自らの傷そのものとなってしまった。\\nもう二度と、自分自身と穏やかに生きていくことはできないと悟っている。\\n今こそ、運命づけられたこの痛みを受け入れ、それに身を委ねる時だ。\\nいつの日か、死があなたを解き放ってくれるその瞬間まで。\\n\\nもはや狩りはあなたを呼ばない。\\n松林を吹き抜ける風も、今ではどこか遠く感じられる。\\n月は再び昇るだろう。\\nだが、その光があなたの胸を希望で満たすことは、もうない。 "
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1832,7 +1848,7 @@
         "type": "encounter",
         "zh": "猎人",
         "en": "Huntsman",
-        "ja": "Huntsman"
+        "ja": "ハントマン"
       },
       "localization": {
         "zh": "战斗：特殊效果1",

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "出口",
   "en": "Exit",
-  "ja": "Exit",
-  "UniqueIDIndex": 716,
+  "ja": "出る",
+  "UniqueIDIndex": 740,
   "CardType": 2,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "污秽",
           "zh": "污秽",
           "en": "Filthiness",
-          "ja": "Filthiness"
+          "ja": "汚さ"
         },
         "OverrideIcon": {
           "FileName": "Filth"
@@ -40,7 +40,7 @@
           "Text": "洪水",
           "zh": "洪水",
           "en": "Flood",
-          "ja": "Flood"
+          "ja": "洪水"
         },
         "OverrideIcon": null,
         "MaxValue": 1
@@ -52,7 +52,7 @@
           "Text": "亲和度",
           "zh": "亲和度",
           "en": "Affinity",
-          "ja": "Affinity"
+          "ja": "親和性"
         },
         "OverrideIcon": null,
         "MaxValue": 10000
@@ -76,7 +76,7 @@
           "Text": "洪水损害",
           "zh": "洪水损害",
           "en": "Flood Damage",
-          "ja": "Flood Damage"
+          "ja": "洪水の被害"
         },
         "OverrideIcon": null,
         "MaxValue": 1
@@ -88,7 +88,7 @@
           "Text": "蒸汽",
           "zh": "蒸汽",
           "en": "Steam",
-          "ja": "Steam"
+          "ja": "蒸気"
         },
         "OverrideIcon": {
           "FileName": "AloeGel_Old"
@@ -102,7 +102,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -116,7 +116,7 @@
     "Text": "出口",
     "zh": "出口",
     "en": "Exit",
-    "ja": "Exit"
+    "ja": "出る"
   },
   "CardImage": {
     "FileName": "Cabin_Inside"
@@ -354,7 +354,7 @@
           "CardType": 2,
           "zh": "出口",
           "en": "Exit",
-          "ja": "Exit",
+          "ja": "出る",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -422,7 +422,7 @@
               "Text": "洪水损害",
               "zh": "洪水损害",
               "en": "Flood Damage",
-              "ja": "Flood Damage"
+              "ja": "洪水の被害"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -473,7 +473,7 @@
           "CardType": 2,
           "zh": "出口",
           "en": "Exit",
-          "ja": "Exit"
+          "ja": "出る"
         },
         "localization": {
           "zh": "状态触发",
@@ -495,7 +495,7 @@
       "Text": "洪水损害",
       "zh": "洪水损害",
       "en": "Flood Damage",
-      "ja": "Flood Damage"
+      "ja": "洪水の被害"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -568,6 +568,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -916,7 +920,7 @@
           "DroppedCards": [
             {
               "DroppedCard": {
-                "key": "Event_FloodDamageFloodWaters",
+                "key": "NOT_USED_Event_FloodDamageFloodWaters",
                 "icon": "RiverShore",
                 "type": "card",
                 "CardType": 3,
@@ -1073,6 +1077,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1295,12 +1300,12 @@
           "CardType": 2,
           "zh": "出口",
           "en": "Exit",
-          "ja": "Exit"
+          "ja": "出る"
         },
         "localization": {
           "zh": "洪水损害 达到最大",
           "en": "Flood Damage Full",
-          "ja": "Flood Damage フル"
+          "ja": "洪水の被害 フル"
         },
         "value": {
           "x": -1,
@@ -1317,7 +1322,7 @@
           "CardType": 2,
           "zh": "出口",
           "en": "Exit",
-          "ja": "Exit",
+          "ja": "出る",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1385,7 +1390,7 @@
               "Text": "洪水损害",
               "zh": "洪水损害",
               "en": "Flood Damage",
-              "ja": "Flood Damage"
+              "ja": "洪水の被害"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -1566,6 +1571,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2460,6 +2469,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2807,7 +2820,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3005,8 +3021,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3141,7 +3165,7 @@
         "Text": "离开",
         "zh": "离开",
         "en": "Exit",
-        "ja": "Exit"
+        "ja": "出る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3176,6 +3200,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 2,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3535,7 +3563,7 @@
         "Text": "正在离开小屋……",
         "zh": "正在离开小屋……",
         "en": "Exiting the Cabin...",
-        "ja": "Exiting the Cabin..."
+        "ja": "小屋を退出中・・・"
       },
       "FadeTips": false,
       "TravelToPreviousEnv": true,
@@ -3714,7 +3742,7 @@
         "CardType": 2,
         "zh": "出口",
         "en": "Exit",
-        "ja": "Exit"
+        "ja": "出る"
       },
       "localization": {
         "zh": "信任 降为零",
@@ -3826,7 +3854,7 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "被动效果：大型动物过度拥挤（-1幸福度）",
@@ -3842,7 +3870,7 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "被动效果：中型动物过度拥挤（-0.25幸福度）",
@@ -3858,7 +3886,7 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.1幸福度）",
@@ -3874,7 +3902,7 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.025幸福度）",
@@ -3890,7 +3918,7 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "被动效果：大型动物过度拥挤（-1幸福度）",
@@ -3906,7 +3934,7 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "被动效果：中型动物过度拥挤（-0.25幸福度）",
@@ -3922,7 +3950,7 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.1幸福度）",
@@ -3938,7 +3966,7 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.025幸福度）",
@@ -3954,7 +3982,7 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "被动效果：大型动物过度拥挤（-1幸福度）",
@@ -3970,7 +3998,7 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "被动效果：中型动物过度拥挤（-0.25幸福度）",
@@ -3986,7 +4014,7 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.1幸福度）",
@@ -4002,7 +4030,7 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "被动效果：小型动物过度拥挤（-0.025幸福度）",
@@ -4018,7 +4046,7 @@
         "CardType": 0,
         "zh": "小牛",
         "en": "Calf",
-        "ja": "Calf"
+        "ja": "子牛"
       },
       "localization": {
         "zh": "被动效果：Overcrowding tag_largeAnimal (-0.1 happines)",
@@ -4034,7 +4062,7 @@
         "CardType": 0,
         "zh": "牛",
         "en": "Cow",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "被动效果：Overcrowding tag_largeAnimal (-0.1 happines)",
@@ -4050,7 +4078,7 @@
         "CardType": 0,
         "zh": "公牛",
         "en": "Bull",
-        "ja": "Bull"
+        "ja": "オス牛"
       },
       "localization": {
         "zh": "被动效果：Overcrowding tag_largeAnimal (-0.1 happines)",
@@ -4258,7 +4286,7 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "被动效果：大型动物过度拥挤（-0.5幸福度）",
@@ -4274,7 +4302,7 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "被动效果：过度拥挤（中等动物-0.1幸福度）",
@@ -4291,7 +4319,7 @@
       "CardType": 4,
       "zh": "木屋",
       "en": "Cabin",
-      "ja": "Cabin",
+      "ja": "小屋",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4395,7 +4423,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin",
+        "ja": "小屋",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -4403,7 +4431,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -4423,13 +4451,13 @@
           "MaxValue": 0
         },
         "FuelCapacity": {
-          "Active": true,
+          "Active": false,
           "CardStatName": {
-            "DefaultText": "Flood",
-            "Text": "洪水",
-            "zh": "洪水",
-            "en": "Flood",
-            "ja": "Flood"
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -4441,7 +4469,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -4477,7 +4505,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -4491,7 +4519,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"

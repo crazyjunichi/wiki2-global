@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "点燃的多孔菌",
   "en": "Lit Bracket Fungus",
-  "ja": "Lit Bracket Fungus",
-  "UniqueIDIndex": 692,
+  "ja": "着火したサルノコシカケ",
+  "UniqueIDIndex": 716,
   "CardType": 0,
   "CardTags": [
     {
@@ -18,7 +18,7 @@
       "count": 2,
       "zh": "火绒",
       "en": "Tinder",
-      "ja": "Tinder",
+      "ja": "火口",
       "FuelCapacity": {
         "Active": true,
         "CardStatName": {
@@ -54,7 +54,7 @@
     "Text": "点燃的多孔菌",
     "zh": "点燃的多孔菌",
     "en": "Lit Bracket Fungus",
-    "ja": "Lit Bracket Fungus"
+    "ja": "着火したサルノコシカケ"
   },
   "CardImage": {
     "FileName": "BracketFungus_Dry"
@@ -232,6 +232,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1312,7 +1316,7 @@
     "Text": "拖到火堆以点燃。",
     "zh": "拖到火堆以点燃。",
     "en": "Drag to a fire to start it.",
-    "ja": "Drag to a fire to start it."
+    "ja": "火へドラッグして着火する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1344,6 +1348,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1529,8 +1537,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1808,14 +1824,14 @@
         "CardType": 0,
         "zh": "干多孔菌",
         "en": "Dried Bracket Fungus",
-        "ja": "Dried Bracket Fungus"
+        "ja": "乾燥したサルノコシカケ"
       },
       "localization": {
         "DefaultText": "Light with Hand Drill",
         "Text": "钻木取火",
         "zh": "钻木取火",
         "en": "Light with Hand Drill",
-        "ja": "Light with Hand Drill"
+        "ja": "火おこし器で火をつける"
       }
     },
     {
@@ -1826,14 +1842,14 @@
         "CardType": 0,
         "zh": "干多孔菌",
         "en": "Dried Bracket Fungus",
-        "ja": "Dried Bracket Fungus"
+        "ja": "乾燥したサルノコシカケ"
       },
       "localization": {
         "DefaultText": "Light with Bow Drill",
         "Text": "钻木取火",
         "zh": "钻木取火",
         "en": "Light with Bow Drill",
-        "ja": "Light with Bow Drill"
+        "ja": "火おこし棒で火をつける"
       }
     },
     {
@@ -1844,14 +1860,14 @@
         "CardType": 0,
         "zh": "干多孔菌",
         "en": "Dried Bracket Fungus",
-        "ja": "Dried Bracket Fungus"
+        "ja": "乾燥したサルノコシカケ"
       },
       "localization": {
         "DefaultText": "Light Tinder",
         "Text": "点燃火绒",
         "zh": "点燃火绒",
         "en": "Light Tinder",
-        "ja": "Light Tinder"
+        "ja": "火口に火をつける"
       }
     },
     {
@@ -1862,12 +1878,30 @@
         "CardType": 0,
         "zh": "火镰",
         "en": "Iron Striker",
-        "ja": "Iron Striker"
+        "ja": "鉄製ストライカー"
       },
       "localization": {
         "zh": "动作：点燃火绒",
         "en": "Action: Light Tinder",
-        "ja": "アクション：Light Tinder"
+        "ja": "アクション：火口に火をつける"
+      }
+    },
+    {
+      "link": {
+        "key": "ToolOrWeapon_FireStrikerWithFlint_Metal",
+        "icon": "FireStriker_Iron_Flint",
+        "type": "card",
+        "CardType": 0,
+        "zh": "火镰",
+        "en": "Iron Striker",
+        "ja": "Iron Striker"
+      },
+      "localization": {
+        "DefaultText": "Light Tinder",
+        "Text": "点燃火绒",
+        "zh": "点燃火绒",
+        "en": "Light Tinder",
+        "ja": "Light Tinder"
       }
     }
   ],
@@ -1960,12 +1994,12 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：点燃",
         "en": "Action: Light Fire",
-        "ja": "アクション：Light Fire"
+        "ja": "アクション：火をつける"
       }
     },
     {
@@ -2085,12 +2119,12 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：点燃",
         "en": "Action: Light Fire",
-        "ja": "アクション：Light Fire"
+        "ja": "アクション：火をつける"
       }
     }
   ],

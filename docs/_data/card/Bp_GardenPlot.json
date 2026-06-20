@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "菜园",
   "en": "Garden Plot",
-  "ja": "ガーデンスペース",
-  "UniqueIDIndex": 439,
+  "ja": "ガーデン区画",
+  "UniqueIDIndex": 451,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "菜园",
     "zh": "菜园",
     "en": "Garden Plot",
-    "ja": "ガーデンスペース"
+    "ja": "ガーデン区画"
   },
   "CardImage": {
     "FileName": "GardenPlot"
@@ -670,7 +670,7 @@
           "type": "stat",
           "zh": "药草学",
           "en": "Herbalism",
-          "ja": "Herbalism",
+          "ja": "薬草学",
           "max": 150,
           "min": 0
         },
@@ -1029,7 +1029,7 @@
     "Text": "植物和蘑菇可以在这里生长，只要它们具有适当的酸度、养分和湿度。\\n\\n过度施肥会导致螨虫病，湿度过高会导致真菌感染。经常检查你的花园，帮助你的植物长得更强壮。",
     "zh": "植物和蘑菇可以在这里生长，只要它们具有适当的酸度、养分和湿度。\\n\\n过度施肥会导致螨虫病，湿度过高会导致真菌感染。经常检查你的花园，帮助你的植物长得更强壮。",
     "en": "Plants and mushrooms can grow here, provided they have the right level of acidity, nutrition and hydration.\\n\\nExcessive fertilizing can lead to mites, and excessive hydration to fungus. Inspecting your gardens often can help your plants grow stronger.",
-    "ja": "酸度、栄養、水分が合ってれば植物とキノコを育てられる。\\n\\n肥料が多いとダニが発生し、水分が多いと菌類が生える可能性がある。定期的にガーデンを確認すれば健康に育てられる。"
+    "ja": "酸性度、養分量、水分量が適していれば、植物やキノコを育てられる。\\n\\n肥料が多すぎるとダニが発生し、水分が多すぎると菌類が繁殖する可能性がある。定期的に庭を手入れすることで、植物はより健康に育つ。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1061,6 +1061,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1568,14 +1572,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1583,7 +1595,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1597,7 +1609,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1611,7 +1623,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1625,7 +1637,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1834,14 +1846,14 @@
         "Special2Value": 0,
         "Special3Value": 0,
         "Special4Value": 0,
-        "SpoilageFrom": 0,
-        "UsageFrom": 0,
-        "FuelFrom": 0,
-        "ProgressFrom": 0,
-        "Special1From": 0,
-        "Special2From": 0,
-        "Special3From": 0,
-        "Special4From": 0
+        "SpoilageFrom": 1,
+        "UsageFrom": 1,
+        "FuelFrom": 1,
+        "ProgressFrom": 1,
+        "Special1From": 1,
+        "Special2From": 1,
+        "Special3From": 1,
+        "Special4From": 1
       },
       "DropChance": {
         "Active": false,
@@ -1870,7 +1882,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },

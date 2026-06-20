@@ -159,7 +159,7 @@
         "type": "stat",
         "zh": "轮廓",
         "en": "Profile",
-        "ja": "Profile",
+        "ja": "プロフィール",
         "max": 150,
         "min": 0
       },
@@ -254,7 +254,7 @@
         "type": "stat",
         "zh": "感知",
         "en": "Perception",
-        "ja": "Perception",
+        "ja": "知覚",
         "max": 150,
         "min": 0
       },
@@ -339,6 +339,37 @@
           "y": 0
         }
       }
+    },
+    {
+      "Stat": {
+        "key": "HagBargainFear",
+        "icon": "",
+        "type": "stat",
+        "zh": "女巫交易恐惧",
+        "en": "Hag Fear Bargain",
+        "ja": "Hag Fear Bargain",
+        "max": 10000,
+        "min": 0
+      },
+      "AddedValue": {
+        "InterpolatedAddedValue": {
+          "Active": true,
+          "InputValueRange": {
+            "x": 0,
+            "y": 10000
+          },
+          "OutputValueRange": {
+            "x": 0,
+            "y": -10000
+          },
+          "WhenOutOfRange": 0,
+          "OutOfRangeCustomValue": 0
+        },
+        "RandomAddedValue": {
+          "x": 0,
+          "y": 0
+        }
+      }
     }
   ],
   "PlayerCoverCalculation": [],
@@ -350,7 +381,7 @@
         "type": "stat",
         "zh": "护甲赐福",
         "en": "ArmorBlessing",
-        "ja": "ArmorBlessing",
+        "ja": "防護の加護",
         "max": 215,
         "min": 0
       },
@@ -691,7 +722,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "RequiredEncounterValues": [],
         "PreClashDistanceChange": 1,
@@ -910,7 +944,7 @@
           "Text": "失败",
           "zh": "失败",
           "en": "Defeat",
-          "ja": "Defeat"
+          "ja": "敗北"
         },
         "ActionSuccessLog": {
           "LogText": {
@@ -918,7 +952,7 @@
             "Text": "某种东西在你内心破碎了……",
             "zh": "某种东西在你内心破碎了……",
             "en": "something breaks in you...",
-            "ja": "something breaks in you..."
+            "ja": "あなたの中で何かが壊れる・・・"
           },
           "AlternateLogTexts": [],
           "TextSettings": {
@@ -949,7 +983,7 @@
             "Text": "某种东西在你内心破碎了……",
             "zh": "某种东西在你内心破碎了……",
             "en": "something breaks in you...",
-            "ja": "something breaks in you..."
+            "ja": "あなたの中で何かが壊れる・・・"
           },
           "AlternateLogTexts": [],
           "TextSettings": {
@@ -1166,7 +1200,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "RequiredEncounterValues": [],
         "PreClashDistanceChange": 1,
@@ -2148,7 +2185,10 @@
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredInGameTimes": [],
-      "RequiredAlreadyVisitedEnvironments": []
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredUnlockedBps": [],
+      "RequiredNOTUnlockedBps": [],
+      "NPCInventoryConditions": []
     },
     "RequiredEncounterValues": [],
     "PreClashDistanceChange": 1,
@@ -2303,7 +2343,7 @@
           "type": "stat",
           "zh": "逃脱援助",
           "en": "Escape Aid",
-          "ja": "Escape Aid",
+          "ja": "脱出補助",
           "max": 288,
           "min": 0
         },
@@ -2602,7 +2642,10 @@
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredInGameTimes": [],
-      "RequiredAlreadyVisitedEnvironments": []
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredUnlockedBps": [],
+      "RequiredNOTUnlockedBps": [],
+      "NPCInventoryConditions": []
     },
     "RequiredEncounterValues": [],
     "PreClashDistanceChange": 0,
@@ -3024,7 +3067,10 @@
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredInGameTimes": [],
-      "RequiredAlreadyVisitedEnvironments": []
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredUnlockedBps": [],
+      "RequiredNOTUnlockedBps": [],
+      "NPCInventoryConditions": []
     },
     "RequiredEncounterValues": [],
     "PreClashDistanceChange": 0,
@@ -3446,7 +3492,10 @@
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredInGameTimes": [],
-      "RequiredAlreadyVisitedEnvironments": []
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredUnlockedBps": [],
+      "RequiredNOTUnlockedBps": [],
+      "NPCInventoryConditions": []
     },
     "RequiredEncounterValues": [],
     "PreClashDistanceChange": 0,
@@ -3869,7 +3918,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "RequiredEncounterValues": [],
       "PreClashDistanceChange": 0,
@@ -4176,7 +4228,7 @@
           "type": "stat",
           "zh": "追逐援助",
           "en": "Chasing Aid",
-          "ja": "Chasing Aid",
+          "ja": "追跡支援",
           "max": 288,
           "min": 0
         },
@@ -5421,18 +5473,18 @@
   "ChaseEncounter": null,
   "ChaseNPC": null,
   "m_GameObject": {
-    "key": "AgentDuty_WolfPack_EatVeryLargeCarcass",
+    "key": "AgentDuty_Bird_EatCarniOmniSmall",
     "icon": "",
     "type": "npc",
-    "zh": "Wolf Pack Eat Carcass",
-    "en": "Wolf Pack Eat Carcass",
-    "ja": "Wolf Pack Eat Carcass"
+    "zh": "Bird Eat Carni Omni Small",
+    "en": "Bird Eat Carni Omni Small",
+    "ja": "Bird Eat Carni Omni Small"
   },
   "m_Enabled": 1,
   "LogParent": null,
   "LogTextPrefab": null,
   "LogSeparatorPrefab": {
-    "FileName": "Salve_Healing"
+    "FileName": "Wolf"
   },
   "LogScroll": null,
   "EnemySuccessTextSettings": {
@@ -5491,22 +5543,155 @@
   "WeaponsEquipmentButtonsParent": null,
   "WeaponNameText": null,
   "ContinueButtonObject": {
-    "key": "SpiritSpeaker_SpiritualTools_Sub1_DrinkSpiritTea",
+    "key": "Huntsman2_Skin-Bearer_Sub2_CureOrTanAFleshedSkin",
     "icon": "",
-    "zh": "饮用神奇茶",
-    "en": "Drink Spirit Tea",
-    "ja": "Drink Spirit Tea",
+    "zh": "风干或鞣制一张刮净的皮",
+    "en": "Cure or Tan a Fleshed Skin",
+    "ja": "肉を削いだ毛皮をなめすか乾燥させる",
     "type": "quest"
   },
   "ContinueButton": null,
   "ChaseButtonObject": {
-    "key": "LQ_SpiritBoar",
-    "icon": "Boar_Wild",
+    "key": "Wildman_BigGameHunting_Sub3_Stag",
+    "icon": "",
+    "zh": "公鹿",
+    "en": "Stag",
+    "ja": "雄鹿",
+    "type": "quest"
+  },
+  "ChaseButton": null,
+  "LeaveBeButton": {
+    "key": "AgentTag_WolfLonePrey",
+    "icon": "",
+    "type": "tag",
+    "zh": "孤狼猎物",
+    "en": "AgentTag_WolfLonePrey",
+    "ja": "AgentTag_WolfLonePrey"
+  },
+  "EscapeButton": null,
+  "SwitchHandButtonsParent": {
+    "key": "SpiritMushroomsOldTreeMature",
+    "icon": "SpiritMushrooms_Item",
     "type": "card",
-    "CardType": 9,
-    "zh": "野猪精魄",
-    "en": "Boar Spirit",
-    "ja": "イノシシの精霊",
+    "CardType": 0,
+    "zh": "成熟的灵魂菇(成熟)",
+    "en": "Mature Spirit Mushrooms",
+    "ja": "成長した精霊キノコ",
+    "SpoilageTime": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "SpoilageTime",
+        "zh": "时间",
+        "en": "Spoilage",
+        "ja": ""
+      },
+      "OverrideIcon": null,
+      "MaxValue": 384
+    },
+    "UsageDurability": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "UsageDurability",
+        "zh": "耐久",
+        "en": "Usage",
+        "ja": ""
+      },
+      "OverrideIcon": null,
+      "MaxValue": 96
+    },
+    "FuelCapacity": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "FuelCapacity",
+        "zh": "容量",
+        "en": "Fuel",
+        "ja": ""
+      },
+      "OverrideIcon": {
+        "FileName": "Thirst_Old"
+      },
+      "MaxValue": 96
+    },
+    "Progress": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "Progress",
+        "zh": "进度",
+        "en": "Progress",
+        "ja": ""
+      },
+      "OverrideIcon": {
+        "FileName": "Growth"
+      },
+      "MaxValue": 1440
+    },
+    "SpecialDurability1": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "SpecialDurability1",
+        "zh": "特殊1",
+        "en": "Special1",
+        "ja": ""
+      },
+      "OverrideIcon": null,
+      "MaxValue": 576
+    },
+    "SpecialDurability2": {
+      "Active": true,
+      "CardStatName": {
+        "DefaultText": "Health",
+        "Text": "健康度",
+        "zh": "健康度",
+        "en": "Health",
+        "ja": "体力"
+      },
+      "OverrideIcon": {
+        "FileName": "Health"
+      },
+      "MaxValue": 96
+    },
+    "SpecialDurability3": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "SpecialDurability3",
+        "zh": "特殊3",
+        "en": "Special3",
+        "ja": ""
+      },
+      "OverrideIcon": {
+        "FileName": "Mites"
+      },
+      "MaxValue": 100
+    },
+    "SpecialDurability4": {
+      "Active": false,
+      "CardStatName": {
+        "DefaultText": "",
+        "Text": "SpecialDurability4",
+        "zh": "特殊4",
+        "en": "Special4",
+        "ja": ""
+      },
+      "OverrideIcon": {
+        "FileName": "Fungus"
+      },
+      "MaxValue": 288
+    }
+  },
+  "CancelAmmoSelectionButton": {
+    "key": "Bones",
+    "icon": "Bones",
+    "type": "card",
+    "CardType": 0,
+    "zh": "骨头",
+    "en": "Bones",
+    "ja": "骨",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {
@@ -5535,15 +5720,13 @@
       "Active": false,
       "CardStatName": {
         "DefaultText": "",
-        "Text": "温度",
+        "Text": "FuelCapacity",
         "zh": "容量",
         "en": "Fuel",
         "ja": ""
       },
-      "OverrideIcon": {
-        "FileName": "Hot_Old"
-      },
-      "MaxValue": 200
+      "OverrideIcon": null,
+      "MaxValue": 0
     },
     "Progress": {
       "Active": false,
@@ -5591,310 +5774,21 @@
         "ja": ""
       },
       "OverrideIcon": null,
-      "MaxValue": 0
+      "MaxValue": 1
     },
     "SpecialDurability4": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "SpecialDurability4",
-        "zh": "特殊4",
-        "en": "Special4",
-        "ja": ""
-      },
-      "OverrideIcon": null,
-      "MaxValue": 0
-    }
-  },
-  "ChaseButton": null,
-  "LeaveBeButton": {
-    "key": "AgentDuty_Bear_WanderingPineGrovesAutumn",
-    "icon": "",
-    "type": "npc",
-    "zh": "Bear Wondering Pine Groves Autumn",
-    "en": "Bear Wondering Pine Groves Autumn",
-    "ja": "Bear Wondering Pine Groves Autumn"
-  },
-  "EscapeButton": null,
-  "SwitchHandButtonsParent": {
-    "key": "Carcass_BoarCarcassSkinned",
-    "icon": "Boar_Skinned",
-    "type": "card",
-    "CardType": 0,
-    "zh": "剥皮的野猪尸体",
-    "en": "Skinned Boar Carcass",
-    "ja": "Skinned Boar Carcass",
-    "SpoilageTime": {
       "Active": true,
       "CardStatName": {
-        "DefaultText": "Spoilage",
-        "Text": "变质",
-        "zh": "变质",
-        "en": "Spoilage",
-        "ja": "Spoilage"
+        "DefaultText": "Boil",
+        "Text": "烹煮",
+        "zh": "烹煮",
+        "en": "Boil",
+        "ja": "Boil"
       },
       "OverrideIcon": {
-        "FileName": "Bacteria"
-      },
-      "MaxValue": 360
-    },
-    "UsageDurability": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "UsageDurability",
-        "zh": "耐久",
-        "en": "Usage",
-        "ja": ""
-      },
-      "OverrideIcon": null,
-      "MaxValue": 1
-    },
-    "FuelCapacity": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Consumed",
-        "Text": "已消耗",
-        "zh": "已消耗",
-        "en": "Consumed",
-        "ja": "Consumed"
-      },
-      "OverrideIcon": {
-        "FileName": "Bacteria"
-      },
-      "MaxValue": 1
-    },
-    "Progress": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "Progress",
-        "zh": "进度",
-        "en": "Progress",
-        "ja": ""
-      },
-      "OverrideIcon": {
-        "FileName": "Insight"
-      },
-      "MaxValue": 1
-    },
-    "SpecialDurability1": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Weight",
-        "Text": "重量",
-        "zh": "重量",
-        "en": "Weight",
-        "ja": "Weight"
-      },
-      "OverrideIcon": {
-        "FileName": "Weight_Old"
-      },
-      "MaxValue": 6000
-    },
-    "SpecialDurability2": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Quality",
-        "Text": "品质",
-        "zh": "品质",
-        "en": "Quality",
-        "ja": "Quality"
-      },
-      "OverrideIcon": {
-        "FileName": "Quality"
-      },
-      "MaxValue": 16
-    },
-    "SpecialDurability3": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Butchering Progress",
-        "Text": "屠宰进度",
-        "zh": "屠宰进度",
-        "en": "Butchering Progress",
-        "ja": "Butchering Progress"
-      },
-      "OverrideIcon": {
-        "FileName": "Knife_Copper"
+        "FileName": "Cooking"
       },
       "MaxValue": 4
-    },
-    "SpecialDurability4": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "SpecialDurability4",
-        "zh": "特殊4",
-        "en": "Special4",
-        "ja": ""
-      },
-      "OverrideIcon": null,
-      "MaxValue": 0
-    }
-  },
-  "CancelAmmoSelectionButton": {
-    "key": "BearCoat",
-    "icon": "BearCoat",
-    "type": "card",
-    "CardType": 0,
-    "zh": "熊皮大衣",
-    "en": "Bear Coat",
-    "ja": "Bear Coat",
-    "AlternateNames": [
-      {
-        "Conditions": {
-          "Special1Range": {
-            "x": 2,
-            "y": 2
-          }
-        },
-        "Name": {
-          "DefaultText": "Green Bear Coat",
-          "Text": "绿色熊皮大衣",
-          "zh": "绿色熊皮大衣",
-          "en": "Green Bear Coat",
-          "ja": "Green Bear Coat"
-        }
-      },
-      {
-        "Conditions": {
-          "Special1Range": {
-            "x": 3,
-            "y": 3
-          }
-        },
-        "Name": {
-          "DefaultText": "Red Bear Coat",
-          "Text": "红色熊皮大衣",
-          "zh": "红色熊皮大衣",
-          "en": "Red Bear Coat",
-          "ja": "Red Bear Coat"
-        }
-      },
-      {
-        "Conditions": {
-          "Special1Range": {
-            "x": 100,
-            "y": 100
-          }
-        },
-        "Name": {
-          "DefaultText": "Brown Bear Coat",
-          "Text": "棕色熊皮大衣",
-          "zh": "棕色熊皮大衣",
-          "en": "Brown Bear Coat",
-          "ja": "Brown Bear Coat"
-        }
-      }
-    ],
-    "SpoilageTime": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "SpoilageTime",
-        "zh": "时间",
-        "en": "Spoilage",
-        "ja": ""
-      },
-      "OverrideIcon": null,
-      "MaxValue": 0
-    },
-    "UsageDurability": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "耐久",
-        "zh": "耐久",
-        "en": "Usage",
-        "ja": ""
-      },
-      "OverrideIcon": {
-        "FileName": "Spoilage"
-      },
-      "MaxValue": 46080
-    },
-    "FuelCapacity": {
-      "Active": false,
-      "CardStatName": {
-        "DefaultText": "",
-        "Text": "FuelCapacity",
-        "zh": "容量",
-        "en": "Fuel",
-        "ja": ""
-      },
-      "OverrideIcon": {
-        "FileName": "Water"
-      },
-      "MaxValue": 12
-    },
-    "Progress": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Colour Intensity",
-        "Text": "彩度",
-        "zh": "彩度",
-        "en": "Colour Intensity",
-        "ja": "Colour Intensity"
-      },
-      "OverrideIcon": {
-        "FileName": "Urine"
-      },
-      "MaxValue": 23040
-    },
-    "SpecialDurability1": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Fur",
-        "Text": "毛皮",
-        "zh": "毛皮",
-        "en": "Fur",
-        "ja": "Fur"
-      },
-      "OverrideIcon": {
-        "FileName": "Fur_Cured"
-      },
-      "MaxValue": 100
-    },
-    "SpecialDurability2": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Quality",
-        "Text": "品质",
-        "zh": "品质",
-        "en": "Quality",
-        "ja": "Quality"
-      },
-      "OverrideIcon": {
-        "FileName": "Quality"
-      },
-      "MaxValue": 100
-    },
-    "SpecialDurability3": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Softness",
-        "Text": "柔软度",
-        "zh": "柔软度",
-        "en": "Softness",
-        "ja": "Softness"
-      },
-      "OverrideIcon": {
-        "FileName": "Brain"
-      },
-      "MaxValue": 2
-    },
-    "SpecialDurability4": {
-      "Active": true,
-      "CardStatName": {
-        "DefaultText": "Colour",
-        "Text": "颜色",
-        "zh": "颜色",
-        "en": "Colour",
-        "ja": "Colour"
-      },
-      "OverrideIcon": null,
-      "MaxValue": 100
     }
   },
   "WeaponSelectionPopup": null,

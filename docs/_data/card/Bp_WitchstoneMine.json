@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "巫石矿井",
   "en": "Witchstone Mine",
-  "ja": "Witchstone Mine",
-  "UniqueIDIndex": 678,
+  "ja": "ウィッチストーン鉱山",
+  "UniqueIDIndex": 701,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "巫石矿井",
     "zh": "巫石矿井",
     "en": "Witchstone Mine",
-    "ja": "Witchstone Mine"
+    "ja": "ウィッチストーン鉱山"
   },
   "CardImage": {
     "FileName": "Mines"
@@ -670,7 +670,7 @@
           "type": "stat",
           "zh": "金工",
           "en": "Smithing",
-          "ja": "Smithing",
+          "ja": "鍛造",
           "max": 150,
           "min": 0
         },
@@ -691,7 +691,7 @@
     "Text": "需要更高的金工技能",
     "zh": "需要更高的金工技能",
     "en": "More Smithing Needed",
-    "ja": "More Smithing Needed"
+    "ja": "より高い鍛冶のスキルが必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -704,7 +704,7 @@
         "CardType": 2,
         "zh": "巫石矿井",
         "en": "Witchstone Mine",
-        "ja": "Witchstone Mine",
+        "ja": "ウィッチストーン鉱山",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -827,7 +827,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -1056,6 +1056,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1282,22 +1286,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1319,13 +1323,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1575,22 +1579,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1612,13 +1616,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1868,22 +1872,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1905,13 +1909,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2161,22 +2165,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2198,13 +2202,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2454,22 +2458,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2491,13 +2495,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2747,22 +2751,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2784,13 +2788,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3040,22 +3044,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3077,13 +3081,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3333,22 +3337,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3370,13 +3374,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3626,22 +3630,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3663,13 +3667,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3919,22 +3923,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3956,13 +3960,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4338,7 +4342,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -4981,7 +4985,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -5495,14 +5499,22 @@
   ],
   "BuildingDaytimeCost": 10,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 3,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -5510,7 +5522,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -5524,7 +5536,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -5538,7 +5550,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -5552,7 +5564,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -5619,7 +5631,7 @@
       "key": "PickaxeActionSpecial2Drops",
       "text": "PickaxeActionSpecial2Drops",
       "type": "tag",
-      "count": 3,
+      "count": 4,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -5634,9 +5646,32 @@
         },
         "MaxValue": 12
       },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spirit",
+          "Text": "Spirit",
+          "zh": "Spirit",
+          "en": "Spirit",
+          "ja": "Spirit"
+        },
+        "OverrideIcon": {
+          "FileName": "AlarmClock_Old"
+        },
+        "MaxValue": 672
+      },
       "zh": "镐特殊2掉落",
       "en": "PickaxeActionSpecial2Drops",
       "ja": "PickaxeActionSpecial2Drops"
+    },
+    {
+      "key": "PickaxeActionLenghty",
+      "text": "PickaxeActionLenghty",
+      "type": "tag",
+      "count": 0,
+      "zh": "镐长时间行动",
+      "en": "PickaxeActionLenghty",
+      "ja": "PickaxeActionLenghty"
     }
   ],
   "BPRandomSingleDrop": false,
@@ -5650,7 +5685,7 @@
         "CardType": 2,
         "zh": "巫石矿井",
         "en": "Witchstone Mine",
-        "ja": "Witchstone Mine",
+        "ja": "ウィッチストーン鉱山",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -5954,7 +5989,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },
@@ -6153,7 +6188,7 @@
       "CardType": 10,
       "zh": "新门（北）",
       "en": "New Door (North)",
-      "ja": "New Door (North)",
+      "ja": "新しいドア（北）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6258,7 +6293,7 @@
       "CardType": 10,
       "zh": "新门（南）",
       "en": "New Door (South)",
-      "ja": "New Door (South)",
+      "ja": "新しいドア（南）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6363,7 +6398,7 @@
       "CardType": 10,
       "zh": "新门（西）",
       "en": "New Door (West)",
-      "ja": "New Door (West)",
+      "ja": "新しいドア（西）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6468,7 +6503,7 @@
       "CardType": 10,
       "zh": "新门（东）",
       "en": "New Door (East)",
-      "ja": "New Door (East)",
+      "ja": "新しいドア（東）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6573,7 +6608,7 @@
       "CardType": 10,
       "zh": "新巫石矿井（东）",
       "en": "New Witchstone Mine (East)",
-      "ja": "New Witchstone Mine (East)",
+      "ja": "新しいウィッチストーン鉱山（東）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6678,7 +6713,7 @@
       "CardType": 10,
       "zh": "新巫石矿井（北）",
       "en": "New Witchstone Mine (North)",
-      "ja": "New Witchstone Mine (North)",
+      "ja": "新しいウィッチストーン鉱山（北）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6783,7 +6818,7 @@
       "CardType": 10,
       "zh": "新巫石矿井（南）",
       "en": "New Witchstone Mine (South)",
-      "ja": "New Witchstone Mine (South)",
+      "ja": "新しいウィッチストーン鉱山（南）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6888,7 +6923,7 @@
       "CardType": 10,
       "zh": "新巫石矿井（西）",
       "en": "New Witchstone Mine (West)",
-      "ja": "New Witchstone Mine (West)",
+      "ja": "新しいウィッチストーン鉱山（西）",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {

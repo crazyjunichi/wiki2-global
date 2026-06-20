@@ -7,7 +7,7 @@
   "zh": "右屋扩建",
   "en": "Right Room Expansion",
   "ja": "右の泥小屋の拡張",
-  "UniqueIDIndex": 1952,
+  "UniqueIDIndex": 2011,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -924,6 +924,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1410,12 +1414,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -1449,7 +1453,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2253,12 +2257,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -2292,7 +2296,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2894,8 +2898,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -2946,7 +2950,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -3200,7 +3204,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -3215,7 +3219,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -3298,7 +3302,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -3491,12 +3495,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -3530,7 +3534,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3775,8 +3779,16 @@
   ],
   "BuildingDaytimeCost": 8,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

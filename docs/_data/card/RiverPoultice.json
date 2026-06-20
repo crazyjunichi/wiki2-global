@@ -7,7 +7,7 @@
   "zh": "河流药膏",
   "en": "River Poultice",
   "ja": "湿布",
-  "UniqueIDIndex": 2187,
+  "UniqueIDIndex": 2247,
   "CardType": 0,
   "CardTags": [
     {
@@ -196,6 +196,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -938,6 +942,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -964,7 +972,7 @@
               "Text": "耐久度",
               "zh": "耐久度",
               "en": "Durability",
-              "ja": "Durability"
+              "ja": "耐久性"
             },
             "OverrideIcon": {
               "FileName": "Shield"
@@ -1020,7 +1028,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "品質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1518,6 +1526,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2568,6 +2580,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2854,7 +2870,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -3159,7 +3178,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -3464,7 +3486,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -3769,7 +3794,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -3974,8 +4002,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

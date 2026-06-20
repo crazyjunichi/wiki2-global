@@ -7,7 +7,7 @@
   "zh": "芦苇裙",
   "en": "Reed Skirt",
   "ja": "ヨシのスカート",
-  "UniqueIDIndex": 559,
+  "UniqueIDIndex": 576,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -663,14 +663,14 @@
       "ObjectiveName": "1",
       "CompletionWeight": 1,
       "Tag": {
-        "key": "tag_Reeds",
-        "text": "“芦苇”",
+        "key": "tag_ReedClothingStalks",
+        "text": "“茎秆”",
         "icon": "",
         "type": "tag",
-        "count": 9,
-        "zh": "芦苇",
-        "en": "Reeds",
-        "ja": "ヨシ",
+        "count": 6,
+        "zh": "茎秆",
+        "en": "Stalks",
+        "ja": "Stalks",
         "FuelCapacity": {
           "Active": true,
           "CardStatName": {
@@ -678,12 +678,12 @@
             "Text": "湿度",
             "zh": "湿度",
             "en": "Wetness",
-            "ja": "Wetness"
+            "ja": "水分量"
           },
           "OverrideIcon": {
             "FileName": "Water"
           },
-          "MaxValue": 30
+          "MaxValue": 384
         },
         "Progress": {
           "Active": true,
@@ -692,7 +692,7 @@
             "Text": "营养",
             "zh": "营养",
             "en": "Nutrition",
-            "ja": "Nutrition"
+            "ja": "栄養"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -706,7 +706,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -989,6 +989,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1216,7 +1220,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -1231,7 +1235,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -1314,7 +1318,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -1507,14 +1511,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_ReedsOrStraw",
-            "text": "“芦苇或稻杆”",
+            "key": "GpTag_ReedClothingStalks",
+            "text": "“茎秆”",
             "type": "tag",
-            "zh": "芦苇或稻杆",
-            "en": "Reeds or Straw",
-            "ja": "ヨシか麦",
+            "zh": "茎秆",
+            "en": "Stalks",
+            "ja": "Stalks",
             "SubGroups": [],
-            "count": 8,
+            "count": 6,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1546,24 +1550,24 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
               },
-              "MaxValue": 30
+              "MaxValue": 384
             },
             "Progress": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Growth",
-                "Text": "成长度",
-                "zh": "成长度",
-                "en": "Growth",
-                "ja": "成長"
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 0
             },
             "SpecialDurability1": {
               "Active": false,
@@ -1578,16 +1582,18 @@
               "MaxValue": 0
             },
             "SpecialDurability2": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "質"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 50
             },
             "SpecialDurability3": {
               "Active": false,
@@ -1791,14 +1797,22 @@
   ],
   "BuildingDaytimeCost": 6,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1806,7 +1820,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1820,7 +1834,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1834,7 +1848,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1848,7 +1862,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1915,7 +1929,7 @@
       "key": "CraftAction",
       "text": "CraftAction",
       "type": "tag",
-      "count": 75,
+      "count": 76,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -1937,7 +1951,7 @@
           "Text": "彩度",
           "zh": "彩度",
           "en": "Colour Intensity",
-          "ja": "Colour Intensity"
+          "ja": "色の濃さ"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -1951,7 +1965,7 @@
           "Text": "毛皮",
           "zh": "毛皮",
           "en": "Fur",
-          "ja": "Fur"
+          "ja": "毛皮"
         },
         "OverrideIcon": {
           "FileName": "Fur_Cured"
@@ -1965,7 +1979,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1979,7 +1993,7 @@
           "Text": "柔软度",
           "zh": "柔软度",
           "en": "Softness",
-          "ja": "Softness"
+          "ja": "柔らかさ"
         },
         "OverrideIcon": {
           "FileName": "Brain"
@@ -1993,7 +2007,7 @@
           "Text": "颜色",
           "zh": "颜色",
           "en": "Colour",
-          "ja": "Colour"
+          "ja": "色"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -2234,8 +2248,8 @@
         "min": 0
       },
       "ValueModifier": {
-        "x": 5,
-        "y": 5
+        "x": 1,
+        "y": 1
       },
       "RateModifier": {
         "x": 0,

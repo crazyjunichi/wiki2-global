@@ -7,7 +7,7 @@
   "zh": "未烧制的粘土大锅",
   "en": "Unfired Clay Cauldron",
   "ja": "焼いてない粘土の鍋",
-  "UniqueIDIndex": 846,
+  "UniqueIDIndex": 875,
   "CardType": 0,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "烧制进度",
           "zh": "烧制进度",
           "en": "Fired",
-          "ja": "Fired"
+          "ja": "焼いた"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -52,7 +52,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -100,7 +100,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -126,7 +126,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -138,7 +138,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -152,7 +152,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -166,7 +166,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -177,7 +177,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -214,7 +214,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -228,7 +228,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -242,7 +242,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -268,7 +268,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -282,7 +282,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -605,6 +605,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1766,6 +1770,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1951,8 +1959,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

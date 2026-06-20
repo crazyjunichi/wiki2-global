@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "烟熏屋",
   "en": "Smokehouse",
-  "ja": "スモークハウス",
-  "UniqueIDIndex": 603,
+  "ja": "燻製小屋",
+  "UniqueIDIndex": 621,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "烟熏屋",
     "zh": "烟熏屋",
     "en": "Smokehouse",
-    "ja": "スモークハウス"
+    "ja": "燻製小屋"
   },
   "CardImage": {
     "FileName": "Oven_On"
@@ -667,7 +667,7 @@
     "Text": "需要木板",
     "zh": "需要木板",
     "en": "Planks Needed",
-    "ja": "木の板が必要"
+    "ja": "木板が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1416,7 +1420,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1431,7 +1435,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1446,7 +1450,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1461,7 +1465,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1523,7 +1527,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1779,7 +1783,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1794,7 +1798,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1809,7 +1813,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1824,7 +1828,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1886,7 +1890,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2136,7 +2140,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -2151,7 +2155,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -2234,7 +2238,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2430,14 +2434,22 @@
   ],
   "BuildingDaytimeCost": 6,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2445,7 +2457,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2459,7 +2471,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2473,7 +2485,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2487,7 +2499,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2907,7 +2919,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

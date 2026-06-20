@@ -7,7 +7,7 @@
   "zh": "线团",
   "en": "Yarn",
   "ja": "毛糸",
-  "UniqueIDIndex": 2756,
+  "UniqueIDIndex": 2837,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -54,7 +54,7 @@
           "Text": "柔韧",
           "zh": "柔韧",
           "en": "Flexibility",
-          "ja": "Flexibility"
+          "ja": "柔軟性"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -342,6 +342,124 @@
     "TradingValueCustomRanges": [],
     "durabilityKey": "SpecialDurability2",
     "_valueModifications": [
+      {
+        "link": {
+          "key": "Fibers",
+          "icon": "Fibers",
+          "type": "card",
+          "CardType": 0,
+          "zh": "纤维",
+          "en": "Fibers",
+          "ja": "繊維",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "CanBeCombed",
+              "Text": "CanBeCombed",
+              "zh": "CanBeCombed",
+              "en": "CanBeCombed",
+              "ja": "CanBeCombed"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 47.5
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "蓝图材料",
+          "en": "Blueprint Material",
+          "ja": "ブループリント材料"
+        },
+        "value": {
+          "x": 0,
+          "y": 47.5
+        }
+      },
       {
         "link": {
           "key": "Fibers",
@@ -1060,6 +1178,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1245,8 +1367,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1416,6 +1546,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1423,7 +1557,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1431,7 +1565,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1445,7 +1579,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1459,7 +1593,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1473,7 +1607,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1921,7 +2055,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -1936,7 +2070,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -2019,7 +2153,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -2090,6 +2224,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2475,6 +2610,22 @@
         "en": "Blueprint",
         "ja": "ブループリント"
       }
+    },
+    {
+      "link": {
+        "key": "Bp_YarnSpinningWheel",
+        "icon": "Yarn",
+        "type": "card",
+        "CardType": 7,
+        "zh": "线团",
+        "en": "Yarn",
+        "ja": "Yarn"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
     }
   ],
   "_useFor": [
@@ -2487,6 +2638,22 @@
         "zh": "大块的布",
         "en": "Large cloth",
         "ja": "大きな布"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClothLargeTreadle",
+        "icon": "Cloth_Large",
+        "type": "card",
+        "CardType": 7,
+        "zh": "大块的布",
+        "en": "Large cloth",
+        "ja": "Large cloth"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2512,6 +2679,22 @@
     },
     {
       "link": {
+        "key": "Bp_ClothMediumTreadle",
+        "icon": "Cloth_Medium",
+        "type": "card",
+        "CardType": 7,
+        "zh": "布",
+        "en": "Cloth",
+        "ja": "Cloth"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_ClothSmall",
         "icon": "Cloth_Small",
         "type": "card",
@@ -2519,6 +2702,22 @@
         "zh": "布片",
         "en": "Small Cloth",
         "ja": "小さい布"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClothSmallTreadle",
+        "icon": "Cloth_Small",
+        "type": "card",
+        "CardType": 7,
+        "zh": "布片",
+        "en": "Small Cloth",
+        "ja": "Small Cloth"
       },
       "localization": {
         "zh": "蓝图制作",

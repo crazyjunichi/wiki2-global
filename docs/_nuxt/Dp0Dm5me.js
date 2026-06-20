@@ -1,1 +1,0 @@
-import{_ as r,c as o,o as t,h as n}from"./Cj_vZP2E.js";const c={},s={class:"border-l-5 border-current/20 bg-current/2 my-2 p-4"};function _(e,a){return t(),o("div",s,[n(e.$slots,"default")])}const l=Object.assign(r(c,[["render",_]]),{__name:"Quote"});export{l as _};

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "召唤月之少女中",
   "en": "Moon Maiden Summoning",
-  "ja": "Moon Maiden Summoning",
-  "UniqueIDIndex": 493,
+  "ja": "月乙女の召喚",
+  "UniqueIDIndex": 507,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "召唤月之少女中",
     "zh": "召唤月之少女中",
     "en": "Moon Maiden Summoning",
-    "ja": "Moon Maiden Summoning"
+    "ja": "月乙女の召喚"
   },
   "CardImage": {
     "FileName": "MoonMaiden"
@@ -855,7 +855,7 @@
     "Text": "暂时将月女精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将月女精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds the moon maiden's spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds the moon maiden's spirit to your soul, making you both a bit more like the other."
+    "ja": "月触れの精霊を一時的に魂へ結び付ける。\\n\\n互いが少しずつ、相手に似たものへ変わっていく。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -871,7 +871,7 @@
     "Text": "夏之花，松之血，失刻之物。\\n于满月下焚祭之，唤我挚爱至身边。",
     "zh": "夏之花，松之血，失刻之物。\\n于满月下焚祭之，唤我挚爱至身边。",
     "en": "Summer flowers, blood of pine, and a carving shaped by loss.\\nBurn beneath the fullest moon, and call my love to me.",
-    "ja": "Summer flowers, blood of pine, and a carving shaped by loss.\nBurn beneath the fullest moon, and call my love to me."
+    "ja": "夏の花々、松の血、そして喪失を刻んだ彫り物。\\n満ちきった月の下でそれを燃やし、我が愛をこの身へ呼び寄せよ。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 0,
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -991,7 +995,7 @@
         "CardType": 0,
         "zh": "月女精魄(召唤)",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit",
+        "ja": "月乙女の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -999,7 +1003,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1025,7 +1029,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1163,7 +1167,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -1199,7 +1203,7 @@
         "type": "stat",
         "zh": "月相可见",
         "en": "Moon Phase",
-        "ja": "Moon Phase",
+        "ja": "月齢",
         "max": 6,
         "min": 0
       },
@@ -1307,7 +1311,7 @@
             "type": "tag",
             "zh": "帚石南花",
             "en": "Heather Flowers",
-            "ja": "Heather Flowers",
+            "ja": "ヒースの花",
             "SubGroups": [],
             "count": 3,
             "SpoilageTime": {
@@ -1355,7 +1359,7 @@
                 "Text": "研磨加成",
                 "zh": "研磨加成",
                 "en": "Milling Bonus",
-                "ja": "Milling Bonus"
+                "ja": "製粉ボーナス"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3065,14 +3069,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -3080,7 +3092,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -3094,7 +3106,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -3108,7 +3120,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -3122,7 +3134,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -3197,7 +3209,7 @@
         "CardType": 0,
         "zh": "月女精魄(召唤)",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit",
+        "ja": "月乙女の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -3205,7 +3217,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -3231,7 +3243,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -3468,7 +3480,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -3505,7 +3517,7 @@
         "type": "stat",
         "zh": "月之本能",
         "en": "Moon Urge",
-        "ja": "Moon Urge",
+        "ja": "月の衝動",
         "max": 96,
         "min": 0
       },
@@ -3952,7 +3964,7 @@
         "key": "MoonMaidenDream",
         "zh": "月之少女",
         "en": "Moon Maiden",
-        "ja": "Moon Maiden",
+        "ja": "月乙女",
         "icon": "",
         "type": "dialog"
       },

@@ -7,7 +7,7 @@
   "zh": "碱液",
   "en": "Lye",
   "ja": "あく",
-  "UniqueIDIndex": 1649,
+  "UniqueIDIndex": 1696,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 328,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -144,7 +144,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Staleness",
-          "ja": "Staleness"
+          "ja": "熟成度"
         },
         "OverrideIcon": null,
         "MaxValue": 672
@@ -156,7 +156,7 @@
           "Text": "液体温度",
           "zh": "液体温度",
           "en": "Liquid Temperature",
-          "ja": "Liquid Temperature"
+          "ja": "液体温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -170,7 +170,7 @@
           "Text": "媒染剂",
           "zh": "媒染剂",
           "en": "Mordant",
-          "ja": "Mordant"
+          "ja": "媒染剤"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -398,7 +398,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -418,7 +418,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -674,7 +674,7 @@
       "Text": "媒染剂",
       "zh": "媒染剂",
       "en": "Mordant",
-      "ja": "Mordant"
+      "ja": "媒染剤"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 300,
@@ -1354,6 +1354,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1476,7 +1480,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -1490,7 +1494,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1675,7 +1679,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -1873,8 +1880,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

@@ -7,7 +7,7 @@
   "zh": "处理铁渣",
   "en": "Process Iron Slag",
   "ja": "Process Iron Slag",
-  "UniqueIDIndex": 554,
+  "UniqueIDIndex": 570,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1046,6 +1046,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1559,9 +1563,9 @@
             "type": "tag",
             "zh": "锤击工具(硬)",
             "en": "Hard Hammering Tool",
-            "ja": "Hard Hammering Tool",
+            "ja": "硬質打撃工具",
             "SubGroups": [],
-            "count": 5,
+            "count": 3,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1624,7 +1628,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 0
             },
             "SpecialDurability2": {
               "Active": true,
@@ -1844,14 +1848,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1859,7 +1871,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1873,7 +1885,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1887,7 +1899,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1901,7 +1913,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2147,7 +2159,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },

@@ -7,7 +7,7 @@
   "zh": "派",
   "en": "Pie",
   "ja": "Pie",
-  "UniqueIDIndex": 522,
+  "UniqueIDIndex": 537,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -678,7 +678,7 @@
             "Text": "变质",
             "zh": "变质",
             "en": "Spoilage",
-            "ja": "Spoilage"
+            "ja": "腐敗物"
           },
           "OverrideIcon": {
             "FileName": "Bacteria"
@@ -692,7 +692,7 @@
             "Text": "温度",
             "zh": "温度",
             "en": "Temperature",
-            "ja": "Temperature"
+            "ja": "温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -706,7 +706,7 @@
             "Text": "烹饪",
             "zh": "烹饪",
             "en": "Cook",
-            "ja": "Cook"
+            "ja": "料理する"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -720,7 +720,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -1003,6 +1003,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1226,7 +1230,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1252,7 +1256,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1278,7 +1282,7 @@
                 "Text": "烹饪",
                 "zh": "烹饪",
                 "en": "Cook",
-                "ja": "Cook"
+                "ja": "料理する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1292,7 +1296,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1513,7 +1517,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1539,7 +1543,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1565,7 +1569,7 @@
                 "Text": "烹饪",
                 "zh": "烹饪",
                 "en": "Cook",
-                "ja": "Cook"
+                "ja": "料理する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1579,7 +1583,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1800,7 +1804,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1826,7 +1830,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1852,7 +1856,7 @@
                 "Text": "烹饪",
                 "zh": "烹饪",
                 "en": "Cook",
-                "ja": "Cook"
+                "ja": "料理する"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1866,7 +1870,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2075,14 +2079,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2090,7 +2102,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2104,7 +2116,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2118,7 +2130,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2132,7 +2144,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"

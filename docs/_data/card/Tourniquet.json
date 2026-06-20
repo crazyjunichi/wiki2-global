@@ -7,7 +7,7 @@
   "zh": "止血带",
   "en": "Tourniquet",
   "ja": "止血帯",
-  "UniqueIDIndex": 2536,
+  "UniqueIDIndex": 2610,
   "CardType": 0,
   "CardTags": [
     {
@@ -121,7 +121,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -334,6 +334,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -841,6 +845,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1087,7 +1092,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -1996,6 +2001,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2108,7 +2117,7 @@
             "text": "“袋子”",
             "icon": "",
             "type": "tag",
-            "count": 15,
+            "count": 17,
             "zh": "袋子",
             "en": "Bag",
             "ja": "カバン",
@@ -2147,7 +2156,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -2161,7 +2170,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -2345,7 +2354,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -2581,8 +2593,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2752,6 +2772,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3413,6 +3437,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

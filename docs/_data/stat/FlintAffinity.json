@@ -7,7 +7,7 @@
   "zh": "燧石亲和度",
   "en": "Flint Affinity",
   "ja": "火打ちの親和性",
-  "UniqueIDIndex": 3329,
+  "UniqueIDIndex": 3434,
   "GameName": {
     "DefaultText": "Flint Affinity",
     "Text": "燧石亲和度",
@@ -104,6 +104,48 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
         "key": "Bp_FlintBlessing",
         "icon": "Flint",
         "type": "card",
@@ -131,7 +173,7 @@
         "CardType": 7,
         "zh": "呼唤燧爪精魄(呼唤)",
         "en": "Flintclaw Spirit Calling",
-        "ja": "Flintclaw Spirit Calling"
+        "ja": "フリントクロウの精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -295,29 +337,6 @@
     },
     {
       "link": {
-        "key": "FlintVein",
-        "icon": "FlintVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "燧石矿脉",
-        "en": "Flint Vein",
-        "ja": "火打石の脈"
-      },
-      "localization": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘"
-      },
-      "value": {
-        "x": 5,
-        "y": 5
-      },
-      "key": "FlintVein_Mine"
-    },
-    {
-      "link": {
         "key": "LQ_SpiritFlintclaw",
         "icon": "Spirit_Flintclaw",
         "type": "card",
@@ -329,7 +348,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -350,7 +369,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -380,32 +399,51 @@
         "y": 5
       },
       "key": "SpiritShrine_Flint_FlintMotherLode_Mine"
-    },
-    {
-      "link": {
-        "key": "SpiritShrine_Flint_FlintMotherLode",
-        "icon": "FlintVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "燧石母矿脉",
-        "en": "Flint Mother Lode",
-        "ja": "火打石の大鉱脈"
-      },
-      "localization": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘"
-      },
-      "value": {
-        "x": 5,
-        "y": 5
-      },
-      "key": "SpiritShrine_Flint_FlintMotherLode_Mine"
     }
   ],
   "_modifierRateList": [
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
     {
       "link": {
         "key": "SpiritShrine_Flint_FlintMotherLode",
@@ -481,7 +519,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,
@@ -501,7 +539,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,

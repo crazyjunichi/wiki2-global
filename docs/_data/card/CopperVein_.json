@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "铜矿脉",
   "en": "Copper Vein",
-  "ja": "Copper Vein",
-  "UniqueIDIndex": 921,
+  "ja": "銅鉱脈",
+  "UniqueIDIndex": 951,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "铜矿脉",
     "zh": "铜矿脉",
     "en": "Copper Vein",
-    "ja": "Copper Vein"
+    "ja": "銅鉱脈"
   },
   "CardImage": {
     "FileName": "Copper_Vein"
@@ -147,6 +147,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -530,14 +534,14 @@
           "CardType": 2,
           "zh": "铜矿脉",
           "en": "Copper Vein",
-          "ja": "Copper Vein"
+          "ja": "銅鉱脈"
         },
         "localization": {
           "DefaultText": "Mine",
           "Text": "采掘",
           "zh": "采掘",
           "en": "Mine",
-          "ja": "Mine"
+          "ja": "採掘する"
         },
         "value": {
           "x": -1,
@@ -825,7 +829,7 @@
         "Text": "采掘",
         "zh": "采掘",
         "en": "Mine",
-        "ja": "Mine"
+        "ja": "採掘する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -860,6 +864,10 @@
       "StackCompatible": false,
       "DaytimeCost": 10,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "HittingStone"
@@ -871,7 +879,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -879,7 +887,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -893,7 +901,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -907,7 +915,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -921,7 +929,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -983,6 +991,29 @@
           "zh": "手部动作",
           "en": "HandAction",
           "ja": "HandAction"
+        },
+        {
+          "key": "PickaxeActionSpecial3Drops",
+          "text": "PickaxeActionSpecial3Drops",
+          "type": "tag",
+          "count": 1,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Shield"
+            },
+            "MaxValue": 6
+          },
+          "zh": "镐特殊3掉落",
+          "en": "PickaxeActionSpecial3Drops",
+          "ja": "PickaxeActionSpecial3Drops"
         }
       ],
       "RequiredStatValues": [
@@ -1373,7 +1404,7 @@
                 "CardType": 0,
                 "zh": "绿石",
                 "en": "Greenstone",
-                "ja": "Greenstone",
+                "ja": "グリーンストーン",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -1419,7 +1450,7 @@
                     "Text": "熔炼",
                     "zh": "熔炼",
                     "en": "Smelted",
-                    "ja": "Smelted"
+                    "ja": "精錬済み"
                   },
                   "OverrideIcon": {
                     "FileName": "Cooking"
@@ -1447,7 +1478,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "品質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -1461,7 +1492,7 @@
                     "Text": "研磨",
                     "zh": "研磨",
                     "en": "Mill",
-                    "ja": "Mill"
+                    "ja": "粉砕"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 1
@@ -1537,7 +1568,7 @@
                 "CardType": 0,
                 "zh": "绿石",
                 "en": "Greenstone",
-                "ja": "Greenstone",
+                "ja": "グリーンストーン",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -1583,7 +1614,7 @@
                     "Text": "熔炼",
                     "zh": "熔炼",
                     "en": "Smelted",
-                    "ja": "Smelted"
+                    "ja": "精錬済み"
                   },
                   "OverrideIcon": {
                     "FileName": "Cooking"
@@ -1611,7 +1642,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "品質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -1625,7 +1656,7 @@
                     "Text": "研磨",
                     "zh": "研磨",
                     "en": "Mill",
-                    "ja": "Mill"
+                    "ja": "粉砕"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 1
@@ -1688,7 +1719,7 @@
                       "type": "stat",
                       "zh": "金工",
                       "en": "Smithing",
-                      "ja": "Smithing",
+                      "ja": "鍛造",
                       "max": 150,
                       "min": 0
                     },
@@ -1725,6 +1756,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1925,7 +1957,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -2452,7 +2484,7 @@
             "CardType": 0,
             "zh": "镐",
             "en": "Pickaxe",
-            "ja": "Pickaxe",
+            "ja": "ツルハシ",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -3238,7 +3270,7 @@
     "Text": "可采绿石。",
     "zh": "可采绿石。",
     "en": "Can be mined for greenstone.",
-    "ja": "Can be mined for greenstone."
+    "ja": "採掘してグリーンストーンを得られる"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -3270,6 +3302,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3371,7 +3407,7 @@
       "CardType": 7,
       "zh": "绿石",
       "en": "Greenstone",
-      "ja": "Greenstone",
+      "ja": "グリーンストーン",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -3561,8 +3597,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3856,7 +3900,7 @@
         "CardType": 8,
         "zh": "洞穴",
         "en": "Cave",
-        "ja": "Cave"
+        "ja": "洞窟"
       },
       "localization": {
         "zh": "状态触发",
@@ -3890,7 +3934,7 @@
         "CardType": 8,
         "zh": "洞穴",
         "en": "Cave",
-        "ja": "Cave"
+        "ja": "洞窟"
       },
       "localization": {
         "zh": "状态触发",
@@ -4105,7 +4149,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -4121,7 +4165,7 @@
       "CardType": 4,
       "zh": "洞穴",
       "en": "Cave",
-      "ja": "Cave",
+      "ja": "洞窟",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4225,7 +4269,7 @@
         "CardType": 8,
         "zh": "洞穴",
         "en": "Cave",
-        "ja": "Cave",
+        "ja": "洞窟",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -4233,7 +4277,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -4319,7 +4363,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -4335,7 +4379,7 @@
       "CardType": 4,
       "zh": "铜矿井",
       "en": "Copper Mine",
-      "ja": "Copper Mine",
+      "ja": "銅の鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4439,7 +4483,7 @@
         "CardType": 8,
         "zh": "铜矿井",
         "en": "Copper Mine",
-        "ja": "Copper Mine",
+        "ja": "銅の鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -4447,7 +4491,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -4473,7 +4517,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -4485,7 +4529,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -4521,7 +4565,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -4535,7 +4579,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -4551,7 +4595,7 @@
       "CardType": 4,
       "zh": "铜矿井",
       "en": "Copper Mine",
-      "ja": "Copper Mine",
+      "ja": "銅の鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4655,7 +4699,7 @@
         "CardType": 8,
         "zh": "铜矿井",
         "en": "Copper Mine",
-        "ja": "Copper Mine",
+        "ja": "銅の鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -4663,7 +4707,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -4689,7 +4733,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -4701,7 +4745,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -4737,7 +4781,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -4751,7 +4795,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"

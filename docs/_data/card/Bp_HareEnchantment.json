@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "野兔附魔",
   "en": "Hare Enchantment",
-  "ja": "Hare Enchantment",
-  "UniqueIDIndex": 450,
+  "ja": "ノウサギのエンチャント",
+  "UniqueIDIndex": 462,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "野兔附魔",
     "zh": "野兔附魔",
     "en": "Hare Enchantment",
-    "ja": "Hare Enchantment"
+    "ja": "ノウサギのエンチャント"
   },
   "CardImage": {
     "FileName": "Hare_Wild"
@@ -879,7 +879,7 @@
     "Text": "用野兔精魄的赐福附魔一件物品，使你更加警觉，并提高你的耐力恢复、生育能力和运气。",
     "zh": "用野兔精魄的赐福附魔一件物品，使你更加警觉，并提高你的耐力恢复、生育能力和运气。",
     "en": "Enchants an object with the blessings of a hare spirit, making you more alert, and increasing your stamina recovery, your fertility and luck.",
-    "ja": "Enchants an object with the blessings of a hare spirit, making you more alert, and increasing your stamina recovery, your fertility and luck."
+    "ja": "ノウサギの精霊の祝福を物体に付与し、警戒心を高め、スタミナ回復、繁殖力、運を向上させる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1180,7 +1184,7 @@
       "Text": "尸体没有精魄。",
       "zh": "尸体没有精魄。",
       "en": "Carcass has no spirit.",
-      "ja": "Carcass has no spirit."
+      "ja": "死骸に精霊は宿っていない。"
     },
     "SpecificFailMessages": []
   },
@@ -1206,7 +1210,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1234,7 +1238,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1246,7 +1250,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1270,7 +1274,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1284,7 +1288,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1298,7 +1302,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1483,7 +1487,7 @@
             "type": "tag",
             "zh": "野兔供奉",
             "en": "Hare Favorite",
-            "ja": "Hare Favorite",
+            "ja": "ノウサギのお気に入り",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -1772,14 +1776,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1787,7 +1799,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1801,7 +1813,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1815,7 +1827,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1829,7 +1841,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1904,7 +1916,7 @@
         "CardType": 9,
         "zh": "野兔精魄",
         "en": "Hare Spirit",
-        "ja": "Hare Spirit",
+        "ja": "ノウサギの精霊",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2173,7 +2185,7 @@
         "type": "stat",
         "zh": "野兔本能",
         "en": "Hare Urge",
-        "ja": "Hare Urge",
+        "ja": "ノウサギの衝動",
         "max": 96,
         "min": 0
       },
@@ -2621,7 +2633,7 @@
       "CardType": 0,
       "zh": "野兔尸体",
       "en": "Hare Carcass",
-      "ja": "Hare Carcass",
+      "ja": "ノウサギの死骸",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2629,7 +2641,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2655,7 +2667,7 @@
           "Text": "已消耗",
           "zh": "已消耗",
           "en": "Consumed",
-          "ja": "Consumed"
+          "ja": "使い切った"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2669,7 +2681,7 @@
           "Text": "精魄",
           "zh": "精魄",
           "en": "Spirit",
-          "ja": "Spirit"
+          "ja": "精霊"
         },
         "OverrideIcon": {
           "FileName": "Insight"
@@ -2695,7 +2707,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2737,7 +2749,7 @@
         "CardType": 0,
         "zh": "野兔尸体",
         "en": "Hare Carcass",
-        "ja": "Hare Carcass"
+        "ja": "ノウサギの死骸"
       },
       "localization": {
         "zh": "内部蓝图制作",

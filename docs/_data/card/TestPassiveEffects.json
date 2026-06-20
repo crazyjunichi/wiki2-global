@@ -7,7 +7,7 @@
   "zh": "Testing",
   "en": "Testing",
   "ja": "Testing",
-  "UniqueIDIndex": 2460,
+  "UniqueIDIndex": 2530,
   "CardType": 1,
   "CardTags": [],
   "CardName": {
@@ -1004,6 +1004,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1133,7 +1137,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -1228,8 +1232,8 @@
                 "DefaultText": "Waste",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Waste"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -1428,7 +1432,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1664,8 +1671,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

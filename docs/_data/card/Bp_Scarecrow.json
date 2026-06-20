@@ -7,7 +7,7 @@
   "zh": "Scarecrow",
   "en": "Scarecrow",
   "ja": "Scarecrow",
-  "UniqueIDIndex": 573,
+  "UniqueIDIndex": 589,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -904,6 +904,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1188,8 +1192,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -1240,7 +1244,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1494,7 +1498,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -1509,7 +1513,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -1592,7 +1596,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -1789,111 +1793,7 @@
       "CannotRevertToThisStage": false,
       "RequiredElements": [
         {
-          "RequiredCard": {
-            "key": "Sack",
-            "icon": "",
-            "type": "card",
-            "CardType": 0,
-            "zh": "布袋",
-            "en": "Sack",
-            "ja": "袋",
-            "SpoilageTime": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
-                "en": "Spoilage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "UsageDurability": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "UsageDurability",
-                "zh": "耐久",
-                "en": "Usage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "FuelCapacity": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability1": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability1",
-                "zh": "特殊1",
-                "en": "Special1",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability2": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability3": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability4": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            }
-          },
+          "RequiredCard": null,
           "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
@@ -2594,14 +2494,22 @@
   ],
   "BuildingDaytimeCost": 3,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2609,7 +2517,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2623,7 +2531,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2637,7 +2545,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2651,7 +2559,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"

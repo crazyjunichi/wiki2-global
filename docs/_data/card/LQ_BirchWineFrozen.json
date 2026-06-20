@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "冻结的白桦酒",
   "en": "Frozen Birch Wine",
-  "ja": "Frozen Birch Wine",
-  "UniqueIDIndex": 1622,
+  "ja": "凍ったカバ酒",
+  "UniqueIDIndex": 1665,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 328,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -134,7 +134,7 @@
     "Text": "冻结的白桦酒",
     "zh": "冻结的白桦酒",
     "en": "Frozen Birch Wine",
-    "ja": "Frozen Birch Wine"
+    "ja": "凍ったカバ酒"
   },
   "CardImage": {
     "FileName": "Thirst_Old"
@@ -151,7 +151,7 @@
       "Text": "细菌",
       "zh": "细菌",
       "en": "Bacteria",
-      "ja": "Bacteria"
+      "ja": "ばい菌"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 11520,
@@ -198,7 +198,7 @@
         "Text": "白桦酒变质了！",
         "zh": "白桦酒变质了！",
         "en": "Birch Wine Spoiled!",
-        "ja": "Birch Wine Spoiled!"
+        "ja": "カバ酒が腐敗した！"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -226,6 +226,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -711,7 +715,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -719,7 +723,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -747,7 +751,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -761,7 +765,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -775,7 +779,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -789,7 +793,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -803,140 +807,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
-            },
-            "OverrideIcon": {
-              "FileName": "Alcohol_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability4": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Filth"
-            },
-            "MaxValue": 2
-          }
-        },
-        "localization": {
-          "zh": "被动效果：煮沸蒸发浓缩",
-          "en": "Passive Effect：Boiled Evaporation Concentration",
-          "ja": "パッシブ効果：煮沸蒸発濃縮"
-        },
-        "value": {
-          "x": -2,
-          "y": -2
-        },
-        "isMultiplier": false
-      },
-      {
-        "link": {
-          "key": "LQ_BirchWineFrozen",
-          "icon": "Thirst_Old",
-          "type": "card",
-          "CardType": 9,
-          "zh": "冻结的白桦酒",
-          "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
-          "SpoilageTime": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Bacteria",
-              "Text": "细菌",
-              "zh": "细菌",
-              "en": "Bacteria",
-              "ja": "Bacteria"
-            },
-            "OverrideIcon": {
-              "FileName": "Bacteria"
-            },
-            "MaxValue": 11520
-          },
-          "UsageDurability": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "UsageDurability",
-              "zh": "耐久",
-              "en": "Usage",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Shield"
-            },
-            "MaxValue": 1000
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Liquid Temperature",
-              "Text": "液体温度",
-              "zh": "液体温度",
-              "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
-            },
-            "OverrideIcon": {
-              "FileName": "Hot"
-            },
-            "MaxValue": 200
-          },
-          "Progress": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Ice",
-              "Text": "结冰",
-              "zh": "结冰",
-              "en": "Ice",
-              "ja": "Ice"
-            },
-            "OverrideIcon": {
-              "FileName": "Snowflake_Old"
-            },
-            "MaxValue": 1000000
-          },
-          "SpecialDurability1": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Sweetness",
-              "Text": "甜度",
-              "zh": "甜度",
-              "en": "Sweetness",
-              "ja": "Sweetness"
-            },
-            "OverrideIcon": {
-              "FileName": "SaturationSugar_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability2": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Quality",
-              "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "Quality"
-            },
-            "OverrideIcon": {
-              "FileName": "Quality"
-            },
-            "MaxValue": 96
-          },
-          "SpecialDurability3": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Alcohol",
-              "Text": "酒精",
-              "zh": "酒精",
-              "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -977,7 +848,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -985,7 +856,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1013,7 +884,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1027,7 +898,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1041,7 +912,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -1055,7 +926,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1069,7 +940,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -1158,7 +1029,7 @@
       "Text": "液体温度",
       "zh": "液体温度",
       "en": "Liquid Temperature",
-      "ja": "Liquid Temperature"
+      "ja": "液体温度"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 200,
@@ -1269,7 +1140,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1289,7 +1160,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1304,7 +1175,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1312,7 +1183,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1340,7 +1211,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1354,7 +1225,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1368,7 +1239,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -1382,7 +1253,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1396,7 +1267,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -1633,7 +1504,7 @@
       "Text": "结冰",
       "zh": "结冰",
       "en": "Ice",
-      "ja": "Ice"
+      "ja": "氷"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1000000,
@@ -1676,7 +1547,7 @@
         "Text": "白桦酒解冻了！",
         "zh": "白桦酒解冻了！",
         "en": "Birch Wine Thawed!",
-        "ja": "Birch Wine Thawed!"
+        "ja": "カバ酒が解凍された！"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -1704,6 +1575,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1965,7 +1840,7 @@
                 "Text": "烈白桦酒",
                 "zh": "烈白桦酒",
                 "en": "Strong Birch Wine",
-                "ja": "Strong Birch Wine"
+                "ja": "強化シラカバのワイン "
               }
             }
           ],
@@ -2018,7 +1893,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2224,14 +2099,14 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine"
+          "ja": "凍ったカバ酒"
         },
         "localization": {
           "DefaultText": "Remove ice layer",
           "Text": "移除结冰层",
           "zh": "移除结冰层",
           "en": "Remove ice layer",
-          "ja": "Remove ice layer"
+          "ja": "氷の層を取り除く"
         },
         "value": {
           "x": -160,
@@ -2248,7 +2123,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2256,7 +2131,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2284,7 +2159,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2298,7 +2173,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2312,7 +2187,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -2326,7 +2201,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2340,7 +2215,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -2381,7 +2256,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2389,7 +2264,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2417,7 +2292,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2431,7 +2306,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2445,7 +2320,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -2459,7 +2334,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2473,7 +2348,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -2517,7 +2392,7 @@
       "Text": "甜度",
       "zh": "甜度",
       "en": "Sweetness",
-      "ja": "Sweetness"
+      "ja": "甘さ"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -2563,7 +2438,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2571,7 +2446,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2599,7 +2474,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2613,7 +2488,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2627,7 +2502,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -2641,7 +2516,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2655,7 +2530,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -2698,7 +2573,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 96,
@@ -2744,7 +2619,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2752,7 +2627,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2780,7 +2655,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2794,7 +2669,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2808,7 +2683,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -2822,7 +2697,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2836,140 +2711,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
-            },
-            "OverrideIcon": {
-              "FileName": "Alcohol_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability4": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Filth"
-            },
-            "MaxValue": 2
-          }
-        },
-        "localization": {
-          "zh": "被动效果：煮沸蒸发浓缩",
-          "en": "Passive Effect：Boiled Evaporation Concentration",
-          "ja": "パッシブ効果：煮沸蒸発濃縮"
-        },
-        "value": {
-          "x": 0.0083,
-          "y": 0.0083
-        },
-        "isMultiplier": false
-      },
-      {
-        "link": {
-          "key": "LQ_BirchWineFrozen",
-          "icon": "Thirst_Old",
-          "type": "card",
-          "CardType": 9,
-          "zh": "冻结的白桦酒",
-          "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
-          "SpoilageTime": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Bacteria",
-              "Text": "细菌",
-              "zh": "细菌",
-              "en": "Bacteria",
-              "ja": "Bacteria"
-            },
-            "OverrideIcon": {
-              "FileName": "Bacteria"
-            },
-            "MaxValue": 11520
-          },
-          "UsageDurability": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "UsageDurability",
-              "zh": "耐久",
-              "en": "Usage",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Shield"
-            },
-            "MaxValue": 1000
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Liquid Temperature",
-              "Text": "液体温度",
-              "zh": "液体温度",
-              "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
-            },
-            "OverrideIcon": {
-              "FileName": "Hot"
-            },
-            "MaxValue": 200
-          },
-          "Progress": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Ice",
-              "Text": "结冰",
-              "zh": "结冰",
-              "en": "Ice",
-              "ja": "Ice"
-            },
-            "OverrideIcon": {
-              "FileName": "Snowflake_Old"
-            },
-            "MaxValue": 1000000
-          },
-          "SpecialDurability1": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Sweetness",
-              "Text": "甜度",
-              "zh": "甜度",
-              "en": "Sweetness",
-              "ja": "Sweetness"
-            },
-            "OverrideIcon": {
-              "FileName": "SaturationSugar_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability2": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Quality",
-              "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "Quality"
-            },
-            "OverrideIcon": {
-              "FileName": "Quality"
-            },
-            "MaxValue": 96
-          },
-          "SpecialDurability3": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Alcohol",
-              "Text": "酒精",
-              "zh": "酒精",
-              "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -3010,7 +2752,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3018,7 +2760,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3046,7 +2788,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3060,7 +2802,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3074,7 +2816,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -3088,7 +2830,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3102,7 +2844,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -3145,7 +2887,7 @@
       "Text": "酒精",
       "zh": "酒精",
       "en": "Alcohol",
-      "ja": "Alcohol"
+      "ja": "アルコール"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -3191,7 +2933,7 @@
           "CardType": 9,
           "zh": "冻结的白桦酒",
           "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
+          "ja": "凍ったカバ酒",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3199,7 +2941,7 @@
               "Text": "细菌",
               "zh": "细菌",
               "en": "Bacteria",
-              "ja": "Bacteria"
+              "ja": "ばい菌"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3227,7 +2969,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3241,7 +2983,7 @@
               "Text": "结冰",
               "zh": "结冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -3255,7 +2997,7 @@
               "Text": "甜度",
               "zh": "甜度",
               "en": "Sweetness",
-              "ja": "Sweetness"
+              "ja": "甘さ"
             },
             "OverrideIcon": {
               "FileName": "SaturationSugar_Old"
@@ -3269,7 +3011,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3283,140 +3025,7 @@
               "Text": "酒精",
               "zh": "酒精",
               "en": "Alcohol",
-              "ja": "Alcohol"
-            },
-            "OverrideIcon": {
-              "FileName": "Alcohol_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability4": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Filth"
-            },
-            "MaxValue": 2
-          }
-        },
-        "localization": {
-          "zh": "被动效果：煮沸蒸发浓缩",
-          "en": "Passive Effect：Boiled Evaporation Concentration",
-          "ja": "パッシブ効果：煮沸蒸発濃縮"
-        },
-        "value": {
-          "x": -5,
-          "y": -5
-        },
-        "isMultiplier": false
-      },
-      {
-        "link": {
-          "key": "LQ_BirchWineFrozen",
-          "icon": "Thirst_Old",
-          "type": "card",
-          "CardType": 9,
-          "zh": "冻结的白桦酒",
-          "en": "Frozen Birch Wine",
-          "ja": "Frozen Birch Wine",
-          "SpoilageTime": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Bacteria",
-              "Text": "细菌",
-              "zh": "细菌",
-              "en": "Bacteria",
-              "ja": "Bacteria"
-            },
-            "OverrideIcon": {
-              "FileName": "Bacteria"
-            },
-            "MaxValue": 11520
-          },
-          "UsageDurability": {
-            "Active": false,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "UsageDurability",
-              "zh": "耐久",
-              "en": "Usage",
-              "ja": ""
-            },
-            "OverrideIcon": {
-              "FileName": "Shield"
-            },
-            "MaxValue": 1000
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Liquid Temperature",
-              "Text": "液体温度",
-              "zh": "液体温度",
-              "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
-            },
-            "OverrideIcon": {
-              "FileName": "Hot"
-            },
-            "MaxValue": 200
-          },
-          "Progress": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Ice",
-              "Text": "结冰",
-              "zh": "结冰",
-              "en": "Ice",
-              "ja": "Ice"
-            },
-            "OverrideIcon": {
-              "FileName": "Snowflake_Old"
-            },
-            "MaxValue": 1000000
-          },
-          "SpecialDurability1": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Sweetness",
-              "Text": "甜度",
-              "zh": "甜度",
-              "en": "Sweetness",
-              "ja": "Sweetness"
-            },
-            "OverrideIcon": {
-              "FileName": "SaturationSugar_Old"
-            },
-            "MaxValue": 100
-          },
-          "SpecialDurability2": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Quality",
-              "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "Quality"
-            },
-            "OverrideIcon": {
-              "FileName": "Quality"
-            },
-            "MaxValue": 96
-          },
-          "SpecialDurability3": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Alcohol",
-              "Text": "酒精",
-              "zh": "酒精",
-              "en": "Alcohol",
-              "ja": "Alcohol"
+              "ja": "アルコール"
             },
             "OverrideIcon": {
               "FileName": "Alcohol_Old"
@@ -3511,7 +3120,7 @@
         "Text": "移除结冰层",
         "zh": "移除结冰层",
         "en": "Remove ice layer",
-        "ja": "Remove ice layer"
+        "ja": "氷の層を取り除く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3546,6 +3155,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4243,7 +3856,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -4254,7 +3867,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -4282,7 +3895,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4294,7 +3907,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4332,7 +3945,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4346,7 +3959,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4832,7 +4445,7 @@
     "Text": "必须解冻后才能饮用。可以分离冰块，得到一杯更小、更烈的饮品。",
     "zh": "必须解冻后才能饮用。可以分离冰块，得到一杯更小、更烈的饮品。",
     "en": "Cannot be poured until thawed. Ice can be removed to leave a smaller, stronger drink.",
-    "ja": "Cannot be poured until thawed. Ice can be removed to leave a smaller, stronger drink."
+    "ja": "解凍するまで注げない。氷を取り除けば、量は減るがより強い酒が残る。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -4913,6 +4526,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -5000,300 +4617,6 @@
   "PassiveStatEffects": [],
   "PassiveEffects": [
     {
-      "EffectName": "Boiled Evaporation Concentration",
-      "OnlyWhenEquipped": false,
-      "EquippedOnBodyOnly": false,
-      "OnlyWhenNOTEquipped": false,
-      "OnlyWhenInHand": false,
-      "OnlyOnBaseActions": false,
-      "OnlyOnNOTBaseActions": false,
-      "OnlyWhenNOTInBG": false,
-      "Conditions": {
-        "NotInBackground": false,
-        "InBackground": false,
-        "PlayerUsesCard": 0,
-        "RequiredEnvironment": null,
-        "InvertEnvironmentRequirement": false,
-        "RequiredEnvironmentTags": [],
-        "RequiredNOTEnvironmentTags": [],
-        "RequiredContainer": [],
-        "RequiredNOTContainer": [],
-        "RequiredContainerTags": [],
-        "RequiredNOTContainerTags": [],
-        "RequiredCardsOnBoard": [],
-        "RequiredTagsOnBoard": [],
-        "RequiredCardsNOTOnBoard": [],
-        "RequiredTagsNOTOnBoard": [],
-        "RequiredLiquidContainers": [],
-        "RequiredCardsInInventory": [],
-        "RequiredTagsInInventory": [],
-        "CardWasBuiltWith": [],
-        "CardWasNOTBuiltWith": [],
-        "RequiredPlayerOwnedCards": [],
-        "RequiredPlayerNOTOwnedCards": [],
-        "ReceivingRequiredDurabilityRanges": {
-          "SpoilageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "UsageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "FuelRange": {
-            "x": 100,
-            "y": 200
-          },
-          "ProgressRange": {
-            "x": 0,
-            "y": 0
-          },
-          "Special1Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special2Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special3Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special4Range": {
-            "x": 0,
-            "y": 0
-          },
-          "LiquidQuantityRange": {
-            "x": 6,
-            "y": 0
-          }
-        },
-        "GivenRequiredDurabilityRanges": {
-          "SpoilageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "UsageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "FuelRange": {
-            "x": 0,
-            "y": 0
-          },
-          "ProgressRange": {
-            "x": 0,
-            "y": 0
-          },
-          "Special1Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special2Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special3Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special4Range": {
-            "x": 0,
-            "y": 0
-          },
-          "LiquidQuantityRange": {
-            "x": 0,
-            "y": 0
-          }
-        },
-        "ReceivingContainerRequiredDurabilityRanges": {
-          "SpoilageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "UsageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "FuelRange": {
-            "x": 0,
-            "y": 0
-          },
-          "ProgressRange": {
-            "x": 0,
-            "y": 0
-          },
-          "Special1Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special2Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special3Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special4Range": {
-            "x": 0,
-            "y": 0
-          },
-          "LiquidQuantityRange": {
-            "x": 0,
-            "y": 0
-          }
-        },
-        "GivenContainerRequiredDurabilityRanges": {
-          "SpoilageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "UsageRange": {
-            "x": 0,
-            "y": 0
-          },
-          "FuelRange": {
-            "x": 0,
-            "y": 0
-          },
-          "ProgressRange": {
-            "x": 0,
-            "y": 0
-          },
-          "Special1Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special2Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special3Range": {
-            "x": 0,
-            "y": 0
-          },
-          "Special4Range": {
-            "x": 0,
-            "y": 0
-          },
-          "LiquidQuantityRange": {
-            "x": 0,
-            "y": 0
-          }
-        },
-        "ReceivingCardTags": [],
-        "GivenCardTags": [],
-        "ReceivingCardSpices": [],
-        "GivenCardSpices": [],
-        "RequiredEnvironmentWeight": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0
-        },
-        "RequiredStatValues": [],
-        "RequiredNPCStatValues": [],
-        "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
-      },
-      "StatModifiers": [],
-      "EffectStacksWithRequiredCards": false,
-      "OnBoardEffectCap": 0,
-      "EffectScalesWithDurabilities": {
-        "Active": false,
-        "Inputs": [],
-        "EffectScalingOutput": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "SpoilageRateModifier": {
-        "Active": true,
-        "FloatValue": -2
-      },
-      "MultiplySpoilageRate": false,
-      "UsageRateModifier": {
-        "Active": false,
-        "FloatValue": 0
-      },
-      "MultiplyUsageRate": false,
-      "FuelRateModifier": {
-        "Active": false,
-        "FloatValue": 0
-      },
-      "MultiplyFuelRate": false,
-      "ConsumableChargesModifier": {
-        "Active": false,
-        "FloatValue": 0
-      },
-      "MultiplyConsumableChargesRate": false,
-      "Special1RateModifier": {
-        "Active": false,
-        "FloatValue": 0
-      },
-      "MultiplySpecial1Rate": false,
-      "Special2RateModifier": {
-        "Active": true,
-        "FloatValue": 0.0083
-      },
-      "MultiplySpecial2Rate": false,
-      "Special3RateModifier": {
-        "Active": true,
-        "FloatValue": -5
-      },
-      "MultiplySpecial3Rate": false,
-      "Special4RateModifier": {
-        "Active": false,
-        "FloatValue": 0
-      },
-      "MultiplySpecial4Rate": false,
-      "LiquidRateModifier": -5,
-      "UpdateDurabilityConcentrations": {
-        "MaskValue": 32
-      },
-      "GeneratedLiquid": {
-        "LiquidCard": null,
-        "Quantity": {
-          "x": 0,
-          "y": 0
-        },
-        "Durabilities": {
-          "Spoilage": 0,
-          "Usage": 0,
-          "Fuel": 0,
-          "Progress": 0,
-          "Special1": 0,
-          "Special2": 0,
-          "Special3": 0,
-          "Special4": 0,
-          "SpoilageValue": 0,
-          "UsageValue": 0,
-          "FuelValue": 0,
-          "ProgressValue": 0,
-          "Special1Value": 0,
-          "Special2Value": 0,
-          "Special3Value": 0,
-          "Special4Value": 0,
-          "SpoilageFrom": 0,
-          "UsageFrom": 0,
-          "FuelFrom": 0,
-          "ProgressFrom": 0,
-          "Special1From": 0,
-          "Special2From": 0,
-          "Special3From": 0,
-          "Special4From": 0
-        }
-      },
-      "WeightCapacityModifier": 0,
-      "DroppedCards": [],
-      "name": {
-        "en": "Boiled Evaporation Concentration",
-        "zh": "煮沸蒸发浓缩",
-        "ja": "煮沸蒸発濃縮"
-      }
-    },
-    {
       "EffectName": "Leak",
       "OnlyWhenEquipped": false,
       "EquippedOnBodyOnly": false,
@@ -5329,7 +4652,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -5343,7 +4666,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -5528,7 +4851,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5662,7 +4988,7 @@
                 "Text": "容器温度",
                 "zh": "容器温度",
                 "en": "Container Temperature",
-                "ja": "Container Temperature"
+                "ja": "容器の温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -5676,7 +5002,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -5861,7 +5187,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5995,7 +5324,7 @@
                 "Text": "容器温度",
                 "zh": "容器温度",
                 "en": "Container Temperature",
-                "ja": "Container Temperature"
+                "ja": "容器の温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -6009,7 +5338,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -6194,7 +5523,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -6488,7 +5820,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -6622,7 +5957,7 @@
                 "Text": "容器温度",
                 "zh": "容器温度",
                 "en": "Container Temperature",
-                "ja": "Container Temperature"
+                "ja": "容器の温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -6636,7 +5971,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -6783,7 +6118,7 @@
                 "Text": "洪水",
                 "zh": "洪水",
                 "en": "Flood",
-                "ja": "Flood"
+                "ja": "洪水"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -6831,7 +6166,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -6845,7 +6180,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -7044,7 +6379,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -7338,7 +6676,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -7536,8 +6877,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -7829,7 +7178,7 @@
               "Text": "烈白桦酒",
               "zh": "烈白桦酒",
               "en": "Strong Birch Wine",
-              "ja": "Strong Birch Wine"
+              "ja": "強化シラカバのワイン "
             }
           }
         ]
@@ -7837,7 +7186,7 @@
       "localization": {
         "zh": "冰 达到最大",
         "en": "Ice Full",
-        "ja": "Ice フル"
+        "ja": "氷 フル"
       }
     }
   ],

@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "刮皮梁",
   "en": "Fleshing Beam",
-  "ja": "Fleshing Beam",
-  "UniqueIDIndex": 1306,
+  "ja": "肉削ぎ台",
+  "UniqueIDIndex": 1348,
   "CardType": 0,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -120,7 +120,7 @@
     "Text": "刮皮梁",
     "zh": "刮皮梁",
     "en": "Fleshing Beam",
-    "ja": "Fleshing Beam"
+    "ja": "肉削ぎ台"
   },
   "CardImage": {
     "FileName": "FleshingBeam"
@@ -551,7 +551,7 @@
         "text": "“精魄液体”",
         "icon": "",
         "type": "tag",
-        "count": 30,
+        "count": 32,
         "zh": "精魄液体",
         "en": "Spirit Liquid",
         "ja": "精霊水"
@@ -1106,7 +1106,7 @@
     "Text": "用于刮净兽皮的倾斜圆木。\\n\\n\\n需要先放置才能生效。",
     "zh": "用于刮净兽皮的倾斜圆木。\\n\\n\\n需要先放置才能生效。",
     "en": "A slanted log used for scraping hides clean.\\n\\n\\nNeeds to be placed to work.",
-    "ja": "A slanted log used for scraping hides clean.\n\n\nNeeds to be placed to work."
+    "ja": "獣皮を削ぎ清めるための傾斜丸太。\\n\\n\\n使用するには設置が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1138,6 +1138,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1323,8 +1327,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1500,7 +1512,7 @@
         "Text": "放置",
         "zh": "放置",
         "en": "Place",
-        "ja": "Place"
+        "ja": "置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1535,6 +1547,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1549,7 +1565,7 @@
             "CardType": 2,
             "zh": "刮皮梁",
             "en": "Fleshing Beam",
-            "ja": "Fleshing Beam",
+            "ja": "肉削ぎ台",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1903,7 +1919,7 @@
           "CardType": 2,
           "zh": "刮皮梁",
           "en": "Fleshing Beam",
-          "ja": "Fleshing Beam",
+          "ja": "肉削ぎ台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2303,7 +2319,7 @@
         "CardType": 7,
         "zh": "刮皮梁",
         "en": "Fleshing Beam",
-        "ja": "Fleshing Beam"
+        "ja": "肉削ぎ台"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2319,12 +2335,12 @@
         "CardType": 2,
         "zh": "刮皮梁",
         "en": "Fleshing Beam",
-        "ja": "Fleshing Beam"
+        "ja": "肉削ぎ台"
       },
       "localization": {
         "zh": "动作：拿起",
         "en": "Action: Pick up",
-        "ja": "アクション：Pick up"
+        "ja": "アクション：取る"
       }
     }
   ],
@@ -2337,7 +2353,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2353,7 +2369,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2449,7 +2465,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",

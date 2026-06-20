@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "屠宰垫",
   "en": "Butchering Mat",
-  "ja": "Butchering Mat",
-  "UniqueIDIndex": 320,
+  "ja": "解体用マット",
+  "UniqueIDIndex": 326,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "屠宰垫",
     "zh": "屠宰垫",
     "en": "Butchering Mat",
-    "ja": "Butchering Mat"
+    "ja": "解体用マット"
   },
   "CardImage": {
     "FileName": "Mat"
@@ -678,7 +678,7 @@
             "Text": "湿度",
             "zh": "湿度",
             "en": "Wetness",
-            "ja": "Wetness"
+            "ja": "水分量"
           },
           "OverrideIcon": {
             "FileName": "Water"
@@ -692,7 +692,7 @@
             "Text": "营养",
             "zh": "营养",
             "en": "Nutrition",
-            "ja": "Nutrition"
+            "ja": "栄養"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -706,7 +706,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -769,7 +769,7 @@
     "Text": "需要芦苇",
     "zh": "需要芦苇",
     "en": "Reeds Needed",
-    "ja": "Reeds Needed"
+    "ja": "ヨシが必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -957,7 +957,7 @@
     "Text": "一种有助于在屠宰过程中保持干净的垫子。",
     "zh": "一种有助于在屠宰过程中保持干净的垫子。",
     "en": "A mat that helps keep things clean while butchering.",
-    "ja": "A mat that helps keep things clean while butchering."
+    "ja": "解体作業時の汚れを抑えるマット。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -989,6 +989,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1197,12 +1201,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -1236,7 +1240,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -1481,14 +1485,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1496,7 +1508,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1510,7 +1522,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1524,7 +1536,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1538,7 +1550,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1613,7 +1625,7 @@
         "CardType": 0,
         "zh": "屠宰垫",
         "en": "Butchering Mat",
-        "ja": "Butchering Mat",
+        "ja": "解体用マット",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1621,7 +1633,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"

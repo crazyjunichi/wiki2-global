@@ -7,7 +7,7 @@
   "zh": "粘土大锅",
   "en": "Clay Cauldron",
   "ja": "粘土の鍋",
-  "UniqueIDIndex": 349,
+  "UniqueIDIndex": 356,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1046,6 +1046,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1327,7 +1331,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1341,7 +1345,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1541,7 +1545,7 @@
             "en": "Temper",
             "ja": "強化粉末",
             "SubGroups": [],
-            "count": 7,
+            "count": 17,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1552,7 +1556,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 384
             },
             "UsageDurability": {
               "Active": false,
@@ -1564,55 +1568,61 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 1
             },
             "FuelCapacity": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
+                "DefaultText": "Wetness",
+                "Text": "湿度",
+                "zh": "湿度",
+                "en": "Wetness",
+                "ja": "濡れ"
+              },
+              "OverrideIcon": {
+                "FileName": "Water"
+              },
+              "MaxValue": 30
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Growth",
+                "Text": "成长度",
+                "zh": "成长度",
+                "en": "Growth",
+                "ja": "成長"
               },
               "OverrideIcon": null,
               "MaxValue": 1
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
             },
             "SpecialDurability1": {
               "Active": false,
               "CardStatName": {
                 "DefaultText": "",
-                "Text": "SpecialDurability1",
+                "Text": "烹饪度",
                 "zh": "特殊1",
                 "en": "Special1",
                 "ja": ""
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Cooking_Old"
+              },
+              "MaxValue": 2
             },
             "SpecialDurability2": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "クオリティ"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 30
             },
             "SpecialDurability3": {
               "Active": true,
@@ -1815,15 +1825,23 @@
     }
   ],
   "BuildingDaytimeCost": 3,
-  "BuildingMiniTicks": 0,
+  "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1831,7 +1849,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1845,7 +1863,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1859,7 +1877,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1873,7 +1891,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1944,6 +1962,15 @@
       "zh": "主要陶艺动作",
       "en": "PotteryActionMajor",
       "ja": "PotteryActionMajor"
+    },
+    {
+      "key": "PotteryWheelActionSpecial2Drops",
+      "text": "PotteryWheelActionSpecial2Drops",
+      "type": "tag",
+      "count": 0,
+      "zh": "陶轮特殊2掉落",
+      "en": "PotteryWheelActionSpecial2Drops",
+      "ja": "PotteryWheelActionSpecial2Drops"
     }
   ],
   "BPRandomSingleDrop": false,
@@ -2115,7 +2142,7 @@
         "type": "stat",
         "zh": "陶艺",
         "en": "Pottery",
-        "ja": "Pottery",
+        "ja": "陶芸のスキル",
         "max": 150,
         "min": 0
       },
@@ -2300,7 +2327,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

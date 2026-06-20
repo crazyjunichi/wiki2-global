@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "冰块",
   "en": "Ice Block",
-  "ja": "Ice Block",
-  "UniqueIDIndex": 1473,
+  "ja": "氷塊",
+  "UniqueIDIndex": 1515,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -66,7 +66,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -80,7 +80,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -106,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -120,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -132,7 +132,7 @@
     "Text": "冰块",
     "zh": "冰块",
     "en": "Ice Block",
-    "ja": "Ice Block"
+    "ja": "氷塊"
   },
   "CardImage": {
     "FileName": "IceBlock"
@@ -149,7 +149,7 @@
       "Text": "完整度",
       "zh": "完整度",
       "en": "Integrity",
-      "ja": "Integrity"
+      "ja": "耐久度"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 9,
@@ -192,7 +192,7 @@
         "Text": "冰块融化了。",
         "zh": "冰块融化了。",
         "en": "Ice Block melted.",
-        "ja": "Ice Block melted."
+        "ja": "氷塊が溶けた。"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -220,6 +220,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -603,7 +607,7 @@
           "CardType": 0,
           "zh": "冰块",
           "en": "Ice Block",
-          "ja": "Ice Block",
+          "ja": "氷塊",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -611,7 +615,7 @@
               "Text": "完整度",
               "zh": "完整度",
               "en": "Integrity",
-              "ja": "Integrity"
+              "ja": "耐久度"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -768,7 +772,7 @@
           "CardType": 7,
           "zh": "霜冻祭坛",
           "en": "Frost Shrine",
-          "ja": "Frost Shrine"
+          "ja": "氷霜の祠"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1525,7 +1529,7 @@
     "Text": "一块沉重的冰。可用作建筑材料或填充冰窖。",
     "zh": "一块沉重的冰。可用作建筑材料或填充冰窖。",
     "en": "A heavy chunk of ice. Used as a construction material or to charge an ice pit.",
-    "ja": "A heavy chunk of ice. Used as a construction material or to charge an ice pit."
+    "ja": "重い氷の塊。建築素材や氷穴の冷却に使われる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1557,6 +1561,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1698,7 +1706,7 @@
                 "Text": "洪水",
                 "zh": "洪水",
                 "en": "Flood",
-                "ja": "Flood"
+                "ja": "洪水"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1746,7 +1754,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -1760,7 +1768,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -1959,7 +1967,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -2157,8 +2168,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2436,7 +2455,7 @@
         "CardType": 7,
         "zh": "冰块",
         "en": "Ice Block",
-        "ja": "Ice Block"
+        "ja": "氷塊"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2454,7 +2473,7 @@
         "CardType": 7,
         "zh": "冰霜附魔",
         "en": "Frost Enchantment",
-        "ja": "Frost Enchantment"
+        "ja": "氷霜のエンチャント"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2470,7 +2489,7 @@
         "CardType": 7,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2486,7 +2505,7 @@
         "CardType": 7,
         "zh": "霜冻祭坛",
         "en": "Frost Shrine",
-        "ja": "Frost Shrine"
+        "ja": "氷霜の祠"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2502,12 +2521,12 @@
         "CardType": 2,
         "zh": "冰窖",
         "en": "Ice Pit",
-        "ja": "Ice Pit"
+        "ja": "氷穴"
       },
       "localization": {
         "zh": "动作：加冰",
         "en": "Action: Add Ice",
-        "ja": "アクション：Add Ice"
+        "ja": "アクション：氷を足す"
       }
     }
   ],

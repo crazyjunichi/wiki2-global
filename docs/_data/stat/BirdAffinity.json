@@ -7,7 +7,7 @@
   "zh": "禽鸟亲和度",
   "en": "Bird Affinity",
   "ja": "鳥の親和性",
-  "UniqueIDIndex": 3131,
+  "UniqueIDIndex": 3238,
   "GameName": {
     "DefaultText": "Bird Affinity",
     "Text": "禽鸟亲和度",
@@ -20,7 +20,7 @@
     "Text": "你与鸟精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与鸟精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of Birds.\\n\\nHunt birds or spend time near them to increase it.",
-    "ja": "How much in common you have with the spirit of Birds.\n\nHunt birds or spend time near them to increase it."
+    "ja": "鳥の精霊との共鳴の深さ。\\n\\n鳥を狩ったり、その近くで過ごすことで高まる。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -104,13 +104,55 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
         "key": "Bp_PartridgeEnchantment",
         "icon": "Partridge_Wild",
         "type": "card",
         "CardType": 7,
         "zh": "灰山鹑附魔",
         "en": "Partridge Enchantment",
-        "ja": "Partridge Enchantment"
+        "ja": "ヤマウズラの加護"
       },
       "name": "蓝图制作",
       "localization": {
@@ -131,12 +173,12 @@
         "CardType": 0,
         "zh": "死鸡",
         "en": "Dead Chicken",
-        "ja": "Dead Chicken"
+        "ja": "死んだニワトリ"
       },
       "localization": {
         "zh": "动作：释放精魄",
         "en": "Action: Release the Spirit",
-        "ja": "アクション：Release the Spirit"
+        "ja": "アクション：精霊を解放する"
       },
       "value": {
         "x": 25,
@@ -152,12 +194,12 @@
         "CardType": 0,
         "zh": "死公鸡",
         "en": "Dead Cock",
-        "ja": "Dead Cock"
+        "ja": "雄鶏の死骸"
       },
       "localization": {
         "zh": "动作：释放精魄",
         "en": "Action: Release the Spirit",
-        "ja": "アクション：Release the Spirit"
+        "ja": "アクション：精霊を解放する"
       },
       "value": {
         "x": 25,
@@ -178,7 +220,7 @@
       "localization": {
         "zh": "动作：释放精魄",
         "en": "Action: Release the Spirit",
-        "ja": "アクション：Release the Spirit"
+        "ja": "アクション：精霊を解放する"
       },
       "value": {
         "x": 25,
@@ -199,7 +241,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -232,13 +274,55 @@
   "_modifierRateList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
         "key": "ChickenFreeChick",
         "icon": "Chicken_Chick",
         "type": "card",
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "被动效果",
@@ -258,7 +342,7 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "被动效果",
@@ -278,7 +362,7 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "被动效果",
@@ -405,7 +489,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,
@@ -420,7 +504,7 @@
         "CardType": 0,
         "zh": "灰山鹑精魄(召唤)",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "被动效果：低亲和力",
@@ -440,7 +524,7 @@
         "CardType": 0,
         "zh": "灰山鹑精魄(召唤)",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "被动效果：高亲和力",

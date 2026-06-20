@@ -7,7 +7,7 @@
   "zh": "青芦苇",
   "en": "Fresh Reeds",
   "ja": "新鮮なヨシ",
-  "UniqueIDIndex": 2146,
+  "UniqueIDIndex": 2206,
   "CardType": 0,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -52,7 +52,71 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 40
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      }
+    },
+    {
+      "key": "tag_BrickBinder",
+      "text": "“抗裂剂”",
+      "icon": "",
+      "type": "tag",
+      "count": 10,
+      "zh": "抗裂剂",
+      "en": "Temper",
+      "ja": "Temper",
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Wetness",
+          "Text": "湿度",
+          "zh": "湿度",
+          "en": "Wetness",
+          "ja": "水分量"
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 40
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Nutrition",
+          "Text": "营养",
+          "zh": "营养",
+          "en": "Nutrition",
+          "ja": "栄養"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -206,7 +270,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -220,7 +284,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -234,7 +298,59 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 50
+      }
+    },
+    {
+      "key": "tag_ReedClothingStalks",
+      "text": "“茎秆”",
+      "icon": "",
+      "type": "tag",
+      "count": 6,
+      "zh": "茎秆",
+      "en": "Stalks",
+      "ja": "Stalks",
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Wetness",
+          "Text": "湿度",
+          "zh": "湿度",
+          "en": "Wetness",
+          "ja": "水分量"
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 384
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Nutrition",
+          "Text": "营养",
+          "zh": "营养",
+          "en": "Nutrition",
+          "ja": "栄養"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -426,6 +542,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -719,7 +839,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -922,9 +1042,9 @@
           "ja": "キャンプファイヤー"
         },
         "localization": {
-          "zh": "转化：Remove Wetness - Clothes, Reed, Malting Rye",
-          "en": "Action: Remove Wetness - Clothes, Reed, Malting Rye",
-          "ja": "アクション：Remove Wetness - Clothes, Reed, Malting Rye"
+          "zh": "转化：Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel",
+          "en": "Action: Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel",
+          "ja": "アクション：Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel"
         },
         "value": {
           "x": -0.75,
@@ -939,12 +1059,12 @@
           "CardType": 0,
           "zh": "陶盆",
           "en": "Clay Basin",
-          "ja": "Clay Basin"
+          "ja": "粘土のたらい"
         },
         "localization": {
           "zh": "转化：浸泡芦苇",
           "en": "Action: Soak Reeds",
-          "ja": "アクション：Soak Reeds"
+          "ja": "アクション：ヨシを浸す"
         },
         "value": {
           "x": 2,
@@ -982,9 +1102,9 @@
           "ja": "暖炉"
         },
         "localization": {
-          "zh": "转化：Remove Wetness - Clothes, Reed, Malting Rye",
-          "en": "Action: Remove Wetness - Clothes, Reed, Malting Rye",
-          "ja": "アクション：Remove Wetness - Clothes, Reed, Malting Rye"
+          "zh": "转化：Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel",
+          "en": "Action: Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel",
+          "ja": "アクション：Remove Wetness - Clothes, Reed, Malting Rye, Clover, Sorrel"
         },
         "value": {
           "x": -0.75,
@@ -1079,9 +1199,9 @@
           ]
         },
         "localization": {
-          "zh": "转化：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye",
-          "en": "Action: Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye",
-          "ja": "アクション：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye"
+          "zh": "转化：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel",
+          "en": "Action: Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel",
+          "ja": "アクション：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel"
         },
         "value": {
           "x": -3,
@@ -1176,9 +1296,9 @@
           ]
         },
         "localization": {
-          "zh": "转化：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye",
-          "en": "Action: Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye",
-          "ja": "アクション：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye"
+          "zh": "转化：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel",
+          "en": "Action: Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel",
+          "ja": "アクション：Drying Temperature: Remove Wetness - Clothes, Reed, Malted Rye, Clover, Sorrel"
         },
         "value": {
           "x": -3,
@@ -1596,12 +1716,12 @@
           "CardType": 0,
           "zh": "陶盆",
           "en": "Clay Basin",
-          "ja": "Clay Basin"
+          "ja": "粘土のたらい"
         },
         "localization": {
           "zh": "转化：浸泡芦苇",
           "en": "Action: Soak Reeds",
-          "ja": "アクション：Soak Reeds"
+          "ja": "アクション：ヨシを浸す"
         },
         "value": {
           "x": -0.131,
@@ -2208,6 +2328,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2612,7 +2736,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -2732,11 +2859,11 @@
         "RequiredContainerTags": [],
         "RequiredNOTContainerTags": [
           {
-            "key": "tag_FloodSafe",
+            "key": "NOT_USED_tag_FloodSafe",
             "text": "“不怕洪水”",
             "icon": "",
             "type": "tag",
-            "count": 137,
+            "count": 138,
             "zh": "不怕洪水",
             "en": "Safe from Floods",
             "ja": "洪水から安全",
@@ -2813,7 +2940,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Snowflake_Old"
@@ -2827,7 +2954,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -3030,7 +3157,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3343,7 +3473,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3353,7 +3486,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -3712,7 +3845,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3948,8 +4084,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4227,12 +4371,12 @@
         "CardType": 2,
         "zh": "香蒲丛",
         "en": "Cattail Patch",
-        "ja": "Cattail Patch"
+        "ja": "ガマの群生地"
       },
       "localization": {
         "zh": "动作：采集",
         "en": "Action: Harvest",
-        "ja": "アクション：Harvest"
+        "ja": "アクション：収穫"
       }
     },
     {
@@ -4243,14 +4387,14 @@
         "CardType": 2,
         "zh": "香蒲丛",
         "en": "Cattail Patch",
-        "ja": "Cattail Patch"
+        "ja": "ガマの群生地"
       },
       "localization": {
         "DefaultText": "Harvest",
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     },
     {
@@ -4361,7 +4505,7 @@
         "CardType": 7,
         "zh": "屠宰垫",
         "en": "Butchering Mat",
-        "ja": "Butchering Mat"
+        "ja": "解体用マット"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4393,7 +4537,7 @@
         "CardType": 7,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4426,6 +4570,22 @@
         "zh": "粘土大锅",
         "en": "Clay Cauldron",
         "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4521,7 +4681,7 @@
         "CardType": 7,
         "zh": "大型坩埚",
         "en": "Large Crucible",
-        "ja": "Large Crucible"
+        "ja": "大型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4537,23 +4697,7 @@
         "CardType": 7,
         "zh": "小型坩埚",
         "en": "Small Crucible",
-        "ja": "Small Crucible"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_FermentationBin",
-        "icon": "FermentingBin_Clay",
-        "type": "card",
-        "CardType": 7,
-        "zh": "发酵桶",
-        "en": "Fermentation Bin",
-        "ja": "発酵箱"
+        "ja": "小型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4793,12 +4937,12 @@
         "CardType": 0,
         "zh": "小牛",
         "en": "Calf",
-        "ja": "Calf"
+        "ja": "子牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4809,12 +4953,12 @@
         "CardType": 0,
         "zh": "牛",
         "en": "Cow",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4825,12 +4969,12 @@
         "CardType": 0,
         "zh": "公牛",
         "en": "Bull",
-        "ja": "Bull"
+        "ja": "オス牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4884,10 +5028,10 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -4905,7 +5049,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4921,7 +5065,7 @@
         "CardType": 10,
         "zh": "新木质房间（东）",
         "en": "New Cabin Room (East)",
-        "ja": "New Cabin Room (East)"
+        "ja": "小屋部屋を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4937,7 +5081,7 @@
         "CardType": 10,
         "zh": "新木质房间（北）",
         "en": "New Cabin Room (North)",
-        "ja": "New Cabin Room (North)"
+        "ja": "小屋部屋を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4953,7 +5097,7 @@
         "CardType": 10,
         "zh": "新木质房间（南）",
         "en": "New Cabin Room (South)",
-        "ja": "New Cabin Room (South)"
+        "ja": "小屋部屋を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4969,7 +5113,7 @@
         "CardType": 10,
         "zh": "新木质房间（上）",
         "en": "New Cabin Room (Up)",
-        "ja": "New Cabin Room (Up)"
+        "ja": "小屋部屋を増設（上）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4985,7 +5129,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -5049,7 +5193,7 @@
         "CardType": 10,
         "zh": "冰窖",
         "en": "Ice Pit",
-        "ja": "Ice Pit"
+        "ja": "氷穴"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -5139,22 +5283,6 @@
     },
     {
       "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：泡芦苇",
-        "en": "Action: Soak Reeds",
-        "ja": "アクション：Soak Reeds"
-      }
-    },
-    {
-      "link": {
         "key": "MudPile",
         "icon": "Mud_Pile",
         "type": "card",
@@ -5177,12 +5305,12 @@
         "CardType": 0,
         "zh": "芦苇大衣(专有)",
         "en": "Reed Coat(Pk)",
-        "ja": "Reed Coat"
+        "ja": "ヨシのコート"
       },
       "localization": {
         "zh": "动作：修复",
         "en": "Action: Repair",
-        "ja": "アクション：Repair"
+        "ja": "アクション：修理"
       }
     },
     {
@@ -5287,7 +5415,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5302,7 +5430,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -5428,7 +5556,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5443,7 +5571,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5451,7 +5579,7 @@
       "localization": {
         "zh": "动作：浸泡芦苇",
         "en": "Action: Soak Reeds",
-        "ja": "アクション：Soak Reeds"
+        "ja": "アクション：ヨシを浸す"
       }
     },
     {
@@ -5476,7 +5604,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5491,7 +5619,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5499,7 +5627,7 @@
       "localization": {
         "zh": "动作：泡芦苇",
         "en": "Action: Soak Reeds",
-        "ja": "アクション：Soak Reeds"
+        "ja": "アクション：ヨシを浸す"
       }
     },
     {
@@ -5600,18 +5728,34 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：泡芦苇",
+        "en": "Action: Soak Reeds",
+        "ja": "アクション：Soak Reeds"
+      }
+    },
+    {
+      "link": {
         "key": "StreamQEE",
         "icon": "RiverShore",
         "type": "card",
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：泡芦苇",
         "en": "Action: Soak Reeds",
-        "ja": "アクション：Soak Reeds"
+        "ja": "アクション：ヨシを浸す"
       }
     }
   ],

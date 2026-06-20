@@ -7,7 +7,7 @@
   "zh": "脂肪块",
   "en": "Fat Chunk",
   "ja": "脂の塊",
-  "UniqueIDIndex": 1244,
+  "UniqueIDIndex": 1284,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 368,
+      "count": 375,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -133,7 +133,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -262,7 +262,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -304,7 +304,115 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
+      }
+    },
+    {
+      "key": "tag_ProteinsMedium",
+      "text": "“中量蛋白质”",
+      "icon": "",
+      "type": "tag",
+      "count": 24,
+      "zh": "中量蛋白质",
+      "en": "Medium Proteins",
+      "ja": "タンパク質（中）",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Torpor",
+          "Text": "Torpor",
+          "zh": "Torpor",
+          "en": "Torpor",
+          "ja": "Torpor"
+        },
+        "OverrideIcon": {
+          "FileName": "Sleepy_Old"
+        },
+        "MaxValue": 6
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Drying",
+          "Text": "干燥",
+          "zh": "干燥",
+          "en": "Drying",
+          "ja": "乾燥中"
+        },
+        "OverrideIcon": {
+          "FileName": "Hammer"
+        },
+        "MaxValue": 24
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Temperature",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spirit",
+          "Text": "精魄",
+          "zh": "精魄",
+          "en": "Spirit",
+          "ja": "精霊"
+        },
+        "OverrideIcon": {
+          "FileName": "Insight"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Burned",
+          "Text": "烤焦的",
+          "zh": "烤焦的",
+          "en": "Burned",
+          "ja": "焦げた"
+        },
+        "OverrideIcon": {
+          "FileName": "Flame"
+        },
+        "MaxValue": 8
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -424,6 +532,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1059,7 +1171,7 @@
           "CardType": 8,
           "zh": "静谧洞穴",
           "en": "Still Cave",
-          "ja": "Still Cave",
+          "ja": "静寂の洞窟",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1067,7 +1179,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -1153,7 +1265,7 @@
               "Text": "烟熏",
               "zh": "烟熏",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1370,7 +1482,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1384,7 +1496,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1493,7 +1605,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1507,7 +1619,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2390,7 +2502,7 @@
           "CardType": 2,
           "zh": "冰窖",
           "en": "Ice Pit",
-          "ja": "Ice Pit",
+          "ja": "氷穴",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2398,7 +2510,7 @@
               "Text": "雪",
               "zh": "雪",
               "en": "Snow",
-              "ja": "Snow"
+              "ja": "雪"
             },
             "OverrideIcon": {
               "FileName": "Snow1"
@@ -2412,7 +2524,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2426,7 +2538,7 @@
               "Text": "冷",
               "zh": "冷",
               "en": "Cold",
-              "ja": "Cold"
+              "ja": "寒い"
             },
             "OverrideIcon": null,
             "MaxValue": 2
@@ -2474,7 +2586,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -2595,7 +2707,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -2609,7 +2721,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2718,7 +2830,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -2732,7 +2844,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2953,7 +3065,7 @@
           "CardType": 0,
           "zh": "小陶罐(专有)",
           "en": "Clay Jar(Pk)",
-          "ja": "Clay Jar",
+          "ja": "粘土の壺",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2985,7 +3097,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3023,7 +3135,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4473,6 +4585,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6561,6 +6677,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7552,7 +7672,7 @@
                 "Text": "媒染剂",
                 "zh": "媒染剂",
                 "en": "Mordant",
-                "ja": "Mordant"
+                "ja": "媒染剤"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -7647,6 +7767,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -8164,6 +8288,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -8827,7 +8952,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -8855,7 +8980,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -8867,7 +8992,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -8879,7 +9004,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -8893,7 +9018,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -8907,7 +9032,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -9392,8 +9517,8 @@
     "DefaultText": "Needs to be cut it into smaller pieces before using it. Melts when heated up and can enrich food placed in a container with it.",
     "Text": "使用前需要先切成小块。加热后会融化，可以为同一容器中的食物调味增香。",
     "zh": "使用前需要先切成小块。加热后会融化，可以为同一容器中的食物调味增香。",
-    "en": "Needs to be cut it into smaller pieces before using it.",
-    "ja": "小さく切ってから使わないといけない。"
+    "en": "Needs to be cut it into smaller pieces before using it. Melts when heated up and can enrich food placed in a container with it.",
+    "ja": "Needs to be cut it into smaller pieces before using it. Melts when heated up and can enrich food placed in a container with it."
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -9425,6 +9550,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -9707,7 +9836,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -10020,7 +10152,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -10333,7 +10468,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -10639,7 +10777,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -10945,7 +11086,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -11258,7 +11402,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -11456,8 +11603,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -11735,7 +11890,7 @@
         "CardType": 7,
         "zh": "脂肪块",
         "en": "Fat Chunk",
-        "ja": "Fat Chunk"
+        "ja": "脂の塊"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -11751,14 +11906,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     },
     {
@@ -11769,14 +11924,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -11787,14 +11942,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -11805,14 +11960,14 @@
         "CardType": 0,
         "zh": "剥皮的熊尸",
         "en": "Skinned Bear Carcass",
-        "ja": "Skinned Bear Carcass"
+        "ja": "皮を剥がれた熊の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -11823,14 +11978,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     },
     {
@@ -11841,14 +11996,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -11859,14 +12014,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -11877,14 +12032,14 @@
         "CardType": 0,
         "zh": "剥皮的野猪尸体",
         "en": "Skinned Boar Carcass",
-        "ja": "Skinned Boar Carcass"
+        "ja": "皮を剥がれたイノシシの死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -11895,7 +12050,295 @@
         "CardType": 0,
         "zh": "剥皮的小牛尸体",
         "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "ja": "皮剥ぎ済みの子牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Disembowel",
+        "Text": "开膛破肚",
+        "zh": "开膛破肚",
+        "en": "Disembowel",
+        "ja": "腹を捌く"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCalfCarcassSkinned",
+        "icon": "Calf_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的小牛尸体",
+        "en": "Skinned Calf Carcass",
+        "ja": "皮剥ぎ済みの子牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCalfCarcassSkinned",
+        "icon": "Calf_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的小牛尸体",
+        "en": "Skinned Calf Carcass",
+        "ja": "皮剥ぎ済みの子牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Loin Meat",
+        "Text": "收获脊肉",
+        "zh": "收获脊肉",
+        "en": "Harvest Loin Meat",
+        "ja": "ロース肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCalfCarcassSkinned",
+        "icon": "Calf_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的小牛尸体",
+        "en": "Skinned Calf Carcass",
+        "ja": "皮剥ぎ済みの子牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCarcassSkinned",
+        "icon": "Cow_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的牛尸体",
+        "en": "Skinned Cow Carcass",
+        "ja": "皮剥ぎ済みの牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Disembowel",
+        "Text": "开膛破肚",
+        "zh": "开膛破肚",
+        "en": "Disembowel",
+        "ja": "腹を捌く"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCarcassSkinned",
+        "icon": "Cow_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的牛尸体",
+        "en": "Skinned Cow Carcass",
+        "ja": "皮剥ぎ済みの牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCarcassSkinned",
+        "icon": "Cow_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的牛尸体",
+        "en": "Skinned Cow Carcass",
+        "ja": "皮剥ぎ済みの牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Loin Meat",
+        "Text": "收获脊肉",
+        "zh": "收获脊肉",
+        "en": "Harvest Loin Meat",
+        "ja": "ロース肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_CowCarcassSkinned",
+        "icon": "Cow_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的牛尸体",
+        "en": "Skinned Cow Carcass",
+        "ja": "皮剥ぎ済みの牛の枝肉"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_DoeCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的母鹿尸体",
+        "en": "Skinned Doe Carcass",
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Disembowel",
+        "Text": "开膛破肚",
+        "zh": "开膛破肚",
+        "en": "Disembowel",
+        "ja": "腹を捌く"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_DoeCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的母鹿尸体",
+        "en": "Skinned Doe Carcass",
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_DoeCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的母鹿尸体",
+        "en": "Skinned Doe Carcass",
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Loin Meat",
+        "Text": "收获脊肉",
+        "zh": "收获脊肉",
+        "en": "Harvest Loin Meat",
+        "ja": "ロース肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_DoeCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的母鹿尸体",
+        "en": "Skinned Doe Carcass",
+        "ja": "皮を剥がれた雌鹿の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Disembowel",
+        "Text": "开膛破肚",
+        "zh": "开膛破肚",
+        "en": "Disembowel",
+        "ja": "腹を捌く"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Haunch Meat",
+        "Text": "收获腿肉",
+        "zh": "收获腿肉",
+        "en": "Harvest Haunch Meat",
+        "ja": "腿肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Loin Meat",
+        "Text": "收获脊肉",
+        "zh": "收获脊肉",
+        "en": "Harvest Loin Meat",
+        "ja": "ロース肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_ForestBeastCarcassSkinned",
+        "icon": "Bear_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的森林猛兽尸体",
+        "en": "Skinned Forest Beast Carcass",
+        "ja": "皮を剥がれた森獣の死骸"
+      },
+      "localization": {
+        "DefaultText": "Harvest Shoulder Meat",
+        "Text": "收获肩肉",
+        "zh": "收获肩肉",
+        "en": "Harvest Shoulder Meat",
+        "ja": "肩肉を採取する"
+      }
+    },
+    {
+      "link": {
+        "key": "Carcass_HollowCarcassSkinned",
+        "icon": "Doe_Skinned",
+        "type": "card",
+        "CardType": 0,
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Disembowel",
@@ -11907,13 +12350,13 @@
     },
     {
       "link": {
-        "key": "Carcass_CowCalfCarcassSkinned",
-        "icon": "Calf_Skinned",
+        "key": "Carcass_HollowCarcassSkinned",
+        "icon": "Doe_Skinned",
         "type": "card",
         "CardType": 0,
-        "zh": "剥皮的小牛尸体",
-        "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
@@ -11925,13 +12368,13 @@
     },
     {
       "link": {
-        "key": "Carcass_CowCalfCarcassSkinned",
-        "icon": "Calf_Skinned",
+        "key": "Carcass_HollowCarcassSkinned",
+        "icon": "Doe_Skinned",
         "type": "card",
         "CardType": 0,
-        "zh": "剥皮的小牛尸体",
-        "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
@@ -11943,229 +12386,13 @@
     },
     {
       "link": {
-        "key": "Carcass_CowCalfCarcassSkinned",
-        "icon": "Calf_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的小牛尸体",
-        "en": "Skinned Calf Carcass",
-        "ja": "Skinned Calf Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Shoulder Meat",
-        "Text": "收获肩肉",
-        "zh": "收获肩肉",
-        "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_CowCarcassSkinned",
-        "icon": "Cow_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的牛尸体",
-        "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
-      },
-      "localization": {
-        "DefaultText": "Disembowel",
-        "Text": "开膛破肚",
-        "zh": "开膛破肚",
-        "en": "Disembowel",
-        "ja": "Disembowel"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_CowCarcassSkinned",
-        "icon": "Cow_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的牛尸体",
-        "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Haunch Meat",
-        "Text": "收获腿肉",
-        "zh": "收获腿肉",
-        "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_CowCarcassSkinned",
-        "icon": "Cow_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的牛尸体",
-        "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Loin Meat",
-        "Text": "收获脊肉",
-        "zh": "收获脊肉",
-        "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_CowCarcassSkinned",
-        "icon": "Cow_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的牛尸体",
-        "en": "Skinned Cow Carcass",
-        "ja": "Skinned Cow Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Shoulder Meat",
-        "Text": "收获肩肉",
-        "zh": "收获肩肉",
-        "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_DoeCarcassSkinned",
+        "key": "Carcass_HollowCarcassSkinned",
         "icon": "Doe_Skinned",
         "type": "card",
         "CardType": 0,
-        "zh": "剥皮的母鹿尸体",
-        "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
-      },
-      "localization": {
-        "DefaultText": "Disembowel",
-        "Text": "开膛破肚",
-        "zh": "开膛破肚",
-        "en": "Disembowel",
-        "ja": "Disembowel"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_DoeCarcassSkinned",
-        "icon": "Doe_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的母鹿尸体",
-        "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Haunch Meat",
-        "Text": "收获腿肉",
-        "zh": "收获腿肉",
-        "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_DoeCarcassSkinned",
-        "icon": "Doe_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的母鹿尸体",
-        "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Loin Meat",
-        "Text": "收获脊肉",
-        "zh": "收获脊肉",
-        "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_DoeCarcassSkinned",
-        "icon": "Doe_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的母鹿尸体",
-        "en": "Skinned Doe Carcass",
-        "ja": "Skinned Doe Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Shoulder Meat",
-        "Text": "收获肩肉",
-        "zh": "收获肩肉",
-        "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
-      },
-      "localization": {
-        "DefaultText": "Disembowel",
-        "Text": "开膛破肚",
-        "zh": "开膛破肚",
-        "en": "Disembowel",
-        "ja": "Disembowel"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Haunch Meat",
-        "Text": "收获腿肉",
-        "zh": "收获腿肉",
-        "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
-      },
-      "localization": {
-        "DefaultText": "Harvest Loin Meat",
-        "Text": "收获脊肉",
-        "zh": "收获脊肉",
-        "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
-      }
-    },
-    {
-      "link": {
-        "key": "Carcass_ForestBeastCarcassSkinned",
-        "icon": "Bear_Skinned",
-        "type": "card",
-        "CardType": 0,
-        "zh": "剥皮的森林猛兽尸体",
-        "en": "Skinned Forest Beast Carcass",
-        "ja": "Skinned Forest Beast Carcass"
+        "zh": "剥皮的空壳尸体",
+        "en": "Skinned Hollow Carcass",
+        "ja": "Skinned Hollow Carcass"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
@@ -12183,14 +12410,14 @@
         "CardType": 0,
         "zh": "剥皮的月兽尸体",
         "en": "Skinned Moontouched Carcass",
-        "ja": "Skinned Moontouched Carcass"
+        "ja": "皮を剥がれた月触れの死骸"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     },
     {
@@ -12201,14 +12428,14 @@
         "CardType": 0,
         "zh": "剥皮的原初狼尸",
         "en": "Skinned Primeval Wolf Carcass",
-        "ja": "Skinned Primeval Wolf Carcass"
+        "ja": "皮剥ぎ済みの太古オオカミの枝肉"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     },
     {
@@ -12219,14 +12446,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     },
     {
@@ -12237,14 +12464,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Haunch Meat",
         "Text": "收获腿肉",
         "zh": "收获腿肉",
         "en": "Harvest Haunch Meat",
-        "ja": "Harvest Haunch Meat"
+        "ja": "腿肉を採取する"
       }
     },
     {
@@ -12255,14 +12482,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Loin Meat",
         "Text": "收获脊肉",
         "zh": "收获脊肉",
         "en": "Harvest Loin Meat",
-        "ja": "Harvest Loin Meat"
+        "ja": "ロース肉を採取する"
       }
     },
     {
@@ -12273,14 +12500,14 @@
         "CardType": 0,
         "zh": "剥皮的公鹿尸体",
         "en": "Skinned Stag Carcass",
-        "ja": "Skinned Stag Carcass"
+        "ja": "皮を剥がれた牡鹿の死骸"
       },
       "localization": {
         "DefaultText": "Harvest Shoulder Meat",
         "Text": "收获肩肉",
         "zh": "收获肩肉",
         "en": "Harvest Shoulder Meat",
-        "ja": "Harvest Shoulder Meat"
+        "ja": "肩肉を採取する"
       }
     },
     {
@@ -12291,14 +12518,14 @@
         "CardType": 0,
         "zh": "剥皮的狼尸",
         "en": "Skinned Wolf Carcass",
-        "ja": "Skinned Wolf Carcass"
+        "ja": "皮を剥がれた狼の死骸"
       },
       "localization": {
         "DefaultText": "Disembowel",
         "Text": "开膛破肚",
         "zh": "开膛破肚",
         "en": "Disembowel",
-        "ja": "Disembowel"
+        "ja": "腹を捌く"
       }
     }
   ],
@@ -12316,7 +12543,167 @@
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarFeeder",
+        "icon": "",
+        "type": "card",
+        "CardType": 2,
+        "zh": "Boar Feeder",
+        "en": "Boar Feeder",
+        "ja": "Boar Feeder"
+      },
+      "localization": {
+        "zh": "动作：Feed",
+        "en": "Action: Feed",
+        "ja": "アクション：Feed"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarFeederEmpty",
+        "icon": "",
+        "type": "card",
+        "CardType": 2,
+        "zh": "Boar Feeder",
+        "en": "Boar Feeder",
+        "ja": "Boar Feeder"
+      },
+      "localization": {
+        "zh": "动作：Feed",
+        "en": "Action: Feed",
+        "ja": "アクション：Feed"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarFreeFemale",
+        "icon": "Boar_Tamed",
+        "type": "card",
+        "CardType": 0,
+        "zh": "母猪",
+        "en": "Sow",
+        "ja": "雌イノシシ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarFreeMale",
+        "icon": "Boar_Tamed",
+        "type": "card",
+        "CardType": 0,
+        "zh": "野猪",
+        "en": "Boar",
+        "ja": "イノシシ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarFreePiglet",
+        "icon": "Boar_Piglet",
+        "type": "card",
+        "CardType": 0,
+        "zh": "猪崽",
+        "en": "Piglet",
+        "ja": "子豚"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarTiedFemale",
+        "icon": "Boar",
+        "type": "card",
+        "CardType": 0,
+        "zh": "绑起的母猪",
+        "en": "Tied up Sow",
+        "ja": "縛った雌イノシシ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "BoarTiedMale",
+        "icon": "Boar",
+        "type": "card",
+        "CardType": 0,
+        "zh": "绑起的野猪",
+        "en": "Tied up Boar",
+        "ja": "縛ったイノシシ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "ChickenFreeChick",
+        "icon": "Chicken_Chick",
+        "type": "card",
+        "CardType": 0,
+        "zh": "鸡仔",
+        "en": "Chicken Chick",
+        "ja": "ひよこ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "ChickenFreeFemale",
+        "icon": "Chicken_Live",
+        "type": "card",
+        "CardType": 0,
+        "zh": "母鸡",
+        "en": "Chicken",
+        "ja": "ニワトリ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "ChickenFreeMale",
+        "icon": "Cock_Live",
+        "type": "card",
+        "CardType": 0,
+        "zh": "公鸡",
+        "en": "Cock",
+        "ja": "雄鶏"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -12343,12 +12730,156 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：降低变质",
         "en": "Action: Lower Spoilage",
-        "ja": "アクション：Lower Spoilage"
+        "ja": "アクション：腐敗速度を下げる"
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationEnclosure",
+        "icon": "Enclosure",
+        "type": "card",
+        "CardType": 8,
+        "zh": "畜栏",
+        "en": "Enclosure",
+        "ja": "囲い"
+      },
+      "localization": {
+        "zh": "动作：扔进去",
+        "en": "Action: Throw Inside",
+        "ja": "アクション：中に投げる"
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointEnclosure",
+        "icon": "Enclosure",
+        "type": "card",
+        "CardType": 8,
+        "zh": "畜栏",
+        "en": "Enclosure",
+        "ja": "囲い"
+      },
+      "localization": {
+        "zh": "动作：扔进去",
+        "en": "Action: Throw Inside",
+        "ja": "アクション：中に投げる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeFeeder",
+        "icon": "Feeder",
+        "type": "card",
+        "CardType": 2,
+        "zh": "灰山鹑喂食器",
+        "en": "Partridge Feeder",
+        "ja": "ヤマウズラの餌箱"
+      },
+      "localization": {
+        "zh": "动作：添入",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeFeederEmpty",
+        "icon": "Feeder",
+        "type": "card",
+        "CardType": 2,
+        "zh": "灰山鹑喂食器",
+        "en": "Partridge Feeder",
+        "ja": "ヤマウズラの餌箱"
+      },
+      "localization": {
+        "zh": "动作：添入",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeFreeChick",
+        "icon": "Partridge_Chick",
+        "type": "card",
+        "CardType": 0,
+        "zh": "灰山鹑仔",
+        "en": "Partridge Chick",
+        "ja": "ヤマウズラのひな"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeFreeFemale",
+        "icon": "Partridge_Live",
+        "type": "card",
+        "CardType": 0,
+        "zh": "灰山鹑",
+        "en": "Partridge",
+        "ja": "ヤマウズラ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeFreeMale",
+        "icon": "Partridge_Live",
+        "type": "card",
+        "CardType": 0,
+        "zh": "公灰山鹑",
+        "en": "Male Partridge",
+        "ja": "雄ヤマウズラ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeTiedFemale",
+        "icon": "Partridge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "灰山鹑",
+        "en": "Partridge",
+        "ja": "ヤマウズラ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "PartridgeTiedMale",
+        "icon": "Partridge",
+        "type": "card",
+        "CardType": 0,
+        "zh": "公灰山鹑",
+        "en": "Male Partridge",
+        "ja": "雄のヤマウズラ"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -12359,12 +12890,28 @@
         "CardType": 0,
         "zh": "小陶罐(专有)",
         "en": "Clay Jar(Pk)",
-        "ja": "Clay Jar"
+        "ja": "粘土の壺"
       },
       "localization": {
         "zh": "放置于容器",
         "en": "Put in container",
         "ja": "コンテナに入れる"
+      }
+    },
+    {
+      "link": {
+        "key": "Pk_5_25_StartingCattle_PregnantCow",
+        "icon": "Boar_Tamed",
+        "type": "card",
+        "CardType": 0,
+        "zh": "牛(专有)",
+        "en": "Cow(Pk)",
+        "ja": "牛"
+      },
+      "localization": {
+        "zh": "动作：喂食",
+        "en": "Action: Feed",
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -12380,7 +12927,7 @@
       "localization": {
         "zh": "动作：添加",
         "en": "Action: Add",
-        "ja": "アクション：Add"
+        "ja": "アクション：入れる"
       }
     }
   ],

@@ -204,7 +204,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AppliesTo": [],
       "ExploreDirectionFilter": [],
@@ -436,7 +439,7 @@
             "Text": "已赐福",
             "zh": "已赐福",
             "en": "Blessed",
-            "ja": "Blessed"
+            "ja": "加護を受けている"
           },
           "OverrideIcon": {
             "FileName": "Snowflake_Old"
@@ -555,7 +558,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -666,7 +669,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -1002,13 +1005,13 @@
       }
     },
     {
-      "key": "DryingRack",
-      "icon": "DryingRack",
+      "key": "ClothSack",
+      "icon": "Sack_Cloth",
       "type": "card",
-      "CardType": 2,
-      "zh": "晾晒架",
-      "en": "Drying Rack",
-      "ja": "物干し",
+      "CardType": 0,
+      "zh": "布袋",
+      "en": "Cloth Sack",
+      "ja": "Cloth Sack",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -1096,13 +1099,120 @@
         "MaxValue": 672
       },
       "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      }
+    },
+    {
+      "key": "DryingRack",
+      "icon": "DryingRack",
+      "type": "card",
+      "CardType": 2,
+      "zh": "晾晒架",
+      "en": "Drying Rack",
+      "ja": "物干し",
+      "SpoilageTime": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpoilageTime",
+          "zh": "时间",
+          "en": "Spoilage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "FuelCapacity": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "FuelCapacity",
+          "zh": "容量",
+          "en": "Fuel",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "Progress": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability2",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Blessed",
+          "Text": "已赐福",
+          "zh": "已赐福",
+          "en": "Blessed",
+          "ja": "加護を受けている"
+        },
+        "OverrideIcon": {
+          "FileName": "Snowflake_Old"
+        },
+        "MaxValue": 672
+      },
+      "SpecialDurability4": {
         "Active": true,
         "CardStatName": {
           "DefaultText": "Smoke",
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1201,7 +1311,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -1518,7 +1628,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -1860,7 +1970,7 @@
       "CardType": 0,
       "zh": "皮革包(专有)",
       "en": "Leather Sack(Pk)",
-      "ja": "Leather Sack",
+      "ja": "革の袋",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -1965,7 +2075,7 @@
       "CardType": 0,
       "zh": "箭筒(专有)",
       "en": "Quiver(Pk)",
-      "ja": "Quiver",
+      "ja": "矢筒",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2070,7 +2180,7 @@
       "CardType": 0,
       "zh": "皮革包(专有)",
       "en": "Leather Sack(Pk)",
-      "ja": "Leather Sack",
+      "ja": "革の袋",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -2255,117 +2365,12 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
         },
         "MaxValue": 672
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      }
-    },
-    {
-      "key": "Sack",
-      "icon": "",
-      "type": "card",
-      "CardType": 0,
-      "zh": "布袋",
-      "en": "Sack",
-      "ja": "袋",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
       },
       "SpecialDurability4": {
         "Active": false,
@@ -2467,7 +2472,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -2494,7 +2499,7 @@
       "CardType": 0,
       "zh": "雪橇",
       "en": "Sledge",
-      "ja": "Sledge",
+      "ja": "ソリ",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2502,7 +2507,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Spoilage"
@@ -2706,6 +2711,119 @@
         "OverrideIcon": null,
         "MaxValue": 0
       }
+    },
+    {
+      "key": "Wheelbarrow",
+      "icon": "Wheelbarrow",
+      "type": "card",
+      "CardType": 0,
+      "zh": "手推车",
+      "en": "Wheelbarrow",
+      "ja": "Wheelbarrow",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "Spoilage"
+        },
+        "OverrideIcon": {
+          "FileName": "Spoilage"
+        },
+        "MaxValue": 2688
+      },
+      "UsageDurability": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "耐久",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Spoilage"
+        },
+        "MaxValue": 46080
+      },
+      "FuelCapacity": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "FuelCapacity",
+          "zh": "容量",
+          "en": "Fuel",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 12
+      },
+      "Progress": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability1": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability1",
+          "zh": "特殊1",
+          "en": "Special1",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability2": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "品质",
+          "zh": "特殊2",
+          "en": "Special2",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability3": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability3",
+          "zh": "特殊3",
+          "en": "Special3",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      },
+      "SpecialDurability4": {
+        "Active": false,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "SpecialDurability4",
+          "zh": "特殊4",
+          "en": "Special4",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 0
+      }
     }
   ],
   "count": 0,
@@ -2747,7 +2865,7 @@
       "Text": "已赐福",
       "zh": "已赐福",
       "en": "Blessed",
-      "ja": "Blessed"
+      "ja": "加護を受けている"
     },
     "OverrideIcon": {
       "FileName": "Snowflake_Old"
@@ -2761,7 +2879,7 @@
       "Text": "烟雾",
       "zh": "烟雾",
       "en": "Smoke",
-      "ja": "Smoke"
+      "ja": "煙"
     },
     "OverrideIcon": {
       "FileName": "Ash"

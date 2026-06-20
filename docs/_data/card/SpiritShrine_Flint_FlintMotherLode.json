@@ -7,7 +7,7 @@
   "zh": "燧石母矿脉",
   "en": "Flint Mother Lode",
   "ja": "火打石の大鉱脈",
-  "UniqueIDIndex": 2348,
+  "UniqueIDIndex": 2418,
   "CardType": 2,
   "CardTags": [
     {
@@ -82,7 +82,7 @@
           "Text": "韦石亲密关系",
           "zh": "韦石亲密关系",
           "en": "West Stone Propinquity",
-          "ja": "West Stone Propinquity"
+          "ja": "ウエストストーン"
         },
         "OverrideIcon": {
           "FileName": "WestStone_1"
@@ -209,28 +209,6 @@
     "TradingValueCustomRanges": [],
     "durabilityKey": "UsageDurability",
     "_valueModifications": [
-      {
-        "link": {
-          "key": "SpiritShrine_Flint_FlintMotherLode",
-          "icon": "FlintVein",
-          "type": "card",
-          "CardType": 2,
-          "zh": "燧石母矿脉",
-          "en": "Flint Mother Lode",
-          "ja": "火打石の大鉱脈"
-        },
-        "localization": {
-          "DefaultText": "Mine",
-          "Text": "采掘",
-          "zh": "采掘",
-          "en": "Mine",
-          "ja": "採掘"
-        },
-        "value": {
-          "x": -1,
-          "y": -1
-        }
-      },
       {
         "link": {
           "key": "SpiritShrine_Flint_FlintMotherLode",
@@ -535,7 +513,7 @@
         "localization": {
           "zh": "动作：赐福",
           "en": "Action: Blessing",
-          "ja": "アクション：Blessing"
+          "ja": "アクション：加護"
         },
         "value": {
           "x": -1000000000,
@@ -593,6 +571,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "HittingStone"
@@ -604,7 +586,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -612,7 +594,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -626,7 +608,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -640,7 +622,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -654,7 +636,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -716,1813 +698,43 @@
           "zh": "手部动作",
           "en": "HandAction",
           "ja": "HandAction"
-        }
-      ],
-      "RequiredStatValues": [
-        {
-          "Stat": {
-            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
-            "icon": "",
-            "type": "stat",
-            "zh": "光亮",
-            "en": "Light",
-            "ja": "光",
-            "max": 100,
-            "min": 0
-          },
-          "TriggerRange": {
-            "x": 10,
-            "y": 100
-          },
-          "NotifyWhenNotMet": true,
-          "HideAllWhenNotMet": false
         },
         {
-          "Stat": {
-            "key": "Stamina",
-            "icon": "Stamina",
-            "type": "stat",
-            "zh": "耐力",
-            "en": "Stamina",
-            "ja": "スタミナ",
-            "max": 32,
-            "min": 0
-          },
-          "TriggerRange": {
-            "x": 16,
-            "y": 100
-          },
-          "NotifyWhenNotMet": true,
-          "HideAllWhenNotMet": false
-        }
-      ],
-      "RequiredNPCStatValues": [],
-      "RequiredCardsOnBoard": [],
-      "RequiredTagsOnBoard": [],
-      "RequiredAlreadyVisitedEnvironments": [],
-      "RequiredReceivingContainer": [],
-      "RequiredReceivingContainerTag": [],
-      "RequiredNOTReceivingContainerTag": [],
-      "RequiredReceivingContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": true,
-          "FloatValue": 0.05,
-          "MaxValue": 1,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "RequiredActiveHidingGroups": [],
-      "HideIfConditionsNotMet": false,
-      "NotBaseAction": false,
-      "Cancellable": false,
-      "InstantStatModifications": false,
-      "DontDoStatModificationsOnCancel": false,
-      "InstantDurabilityModifications": false,
-      "ReceivingCardFlavourBonus": false,
-      "GivenCardFlavourBonus": false,
-      "ResetWhenDone": null,
-      "StatInterruptions": [],
-      "StartDialog": null,
-      "ProducedCards": [
-        {
-          "CollectionName": "",
-          "CollectionMessages": [],
-          "CountsAsSuccess": false,
-          "RevealInventory": false,
-          "CollectionUses": {
-            "m_X": 0,
-            "m_Y": 0
-          },
-          "CollectionWeight": 1,
-          "StatsDropChanceModifiers": [],
-          "NPCStatsDropChanceModifiers": [],
-          "CardDropChanceModifiers": [],
-          "DurabilitiesDropChanceModifier": {
-            "Spoilage": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Usage": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Fuel": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Progress": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Special1": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Special2": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Special3": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            },
-            "Special4": {
-              "Active": false,
-              "DurabilityRange": {
-                "x": 0,
-                "y": 0
-              },
-              "InterpWeightRange": {
-                "m_X": 0,
-                "m_Y": 0
-              },
-              "WhenOutOfRange": 0
-            }
-          },
-          "CreatedLiquid": {
-            "LiquidCard": null,
-            "Quantity": {
-              "x": 0,
-              "y": 0
-            },
-            "Durabilities": {
-              "Spoilage": 0,
-              "Usage": 0,
-              "Fuel": 0,
-              "Progress": 0,
-              "Special1": 0,
-              "Special2": 0,
-              "Special3": 0,
-              "Special4": 0,
-              "SpoilageValue": 0,
-              "UsageValue": 0,
-              "FuelValue": 0,
-              "ProgressValue": 0,
-              "Special1Value": 0,
-              "Special2Value": 0,
-              "Special3Value": 0,
-              "Special4Value": 0,
-              "SpoilageFrom": 0,
-              "UsageFrom": 0,
-              "FuelFrom": 0,
-              "ProgressFrom": 0,
-              "Special1From": 0,
-              "Special2From": 0,
-              "Special3From": 0,
-              "Special4From": 0
-            }
-          },
-          "DroppedCards": [
-            {
-              "DroppedCard": {
-                "key": "Flint",
-                "icon": "Flint",
-                "type": "card",
-                "CardType": 0,
-                "zh": "燧石",
-                "en": "Flint",
-                "ja": "火打石",
-                "SpoilageTime": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpoilageTime",
-                    "zh": "时间",
-                    "en": "Spoilage",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "UsageDurability": {
-                  "Active": true,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "进度",
-                    "zh": "耐久",
-                    "en": "Usage",
-                    "ja": ""
-                  },
-                  "OverrideIcon": {
-                    "FileName": "Hammer"
-                  },
-                  "MaxValue": 20
-                },
-                "FuelCapacity": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "FuelCapacity",
-                    "zh": "容量",
-                    "en": "Fuel",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "Progress": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "Progress",
-                    "zh": "进度",
-                    "en": "Progress",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability1": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability1",
-                    "zh": "特殊1",
-                    "en": "Special1",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability2": {
-                  "Active": true,
-                  "CardStatName": {
-                    "DefaultText": "Quality",
-                    "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
-                  },
-                  "OverrideIcon": {
-                    "FileName": "Quality"
-                  },
-                  "MaxValue": 100
-                },
-                "SpecialDurability3": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability3",
-                    "zh": "特殊3",
-                    "en": "Special3",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability4": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability4",
-                    "zh": "特殊4",
-                    "en": "Special4",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                }
-              },
-              "Quantity": {
-                "m_X": 1,
-                "m_Y": 1
-              },
-              "FinishUnlocking": false,
-              "TransferRules": {
-                "Spoilage": 0,
-                "Usage": 0,
-                "Fuel": 0,
-                "Progress": 0,
-                "Special1": 0,
-                "Special2": 0,
-                "Special3": 0,
-                "Special4": 0,
-                "SpoilageValue": 0,
-                "UsageValue": 0,
-                "FuelValue": 0,
-                "ProgressValue": 0,
-                "Special1Value": 0,
-                "Special2Value": 0,
-                "Special3Value": 0,
-                "Special4Value": 0,
-                "SpoilageFrom": 0,
-                "UsageFrom": 0,
-                "FuelFrom": 0,
-                "ProgressFrom": 0,
-                "Special1From": 0,
-                "Special2From": 0,
-                "Special3From": 0,
-                "Special4From": 0
-              },
-              "DropChance": {
-                "Active": true,
-                "BaseDropChance": 100,
-                "DurabilitiesModifiers": [],
-                "StatsModifiers": [],
-                "CardsModifiers": [],
-                "NPCStatsModifiers": []
-              },
-              "DropsDurabilityMultipliers": [],
-              "DropsStatMultipliers": [],
-              "AddFlavoursFromTargetCard": false,
-              "AddFlavoursFromOtherCard": false,
-              "AddSpicesFromTargetCard": false,
-              "AddSpicesFromOtherCard": false,
-              "AddedFlavours": [],
-              "AddedSpiceTags": []
-            },
-            {
-              "DroppedCard": {
-                "key": "Flint",
-                "icon": "Flint",
-                "type": "card",
-                "CardType": 0,
-                "zh": "燧石",
-                "en": "Flint",
-                "ja": "火打石",
-                "SpoilageTime": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpoilageTime",
-                    "zh": "时间",
-                    "en": "Spoilage",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "UsageDurability": {
-                  "Active": true,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "进度",
-                    "zh": "耐久",
-                    "en": "Usage",
-                    "ja": ""
-                  },
-                  "OverrideIcon": {
-                    "FileName": "Hammer"
-                  },
-                  "MaxValue": 20
-                },
-                "FuelCapacity": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "FuelCapacity",
-                    "zh": "容量",
-                    "en": "Fuel",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "Progress": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "Progress",
-                    "zh": "进度",
-                    "en": "Progress",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability1": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability1",
-                    "zh": "特殊1",
-                    "en": "Special1",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability2": {
-                  "Active": true,
-                  "CardStatName": {
-                    "DefaultText": "Quality",
-                    "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
-                  },
-                  "OverrideIcon": {
-                    "FileName": "Quality"
-                  },
-                  "MaxValue": 100
-                },
-                "SpecialDurability3": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability3",
-                    "zh": "特殊3",
-                    "en": "Special3",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                },
-                "SpecialDurability4": {
-                  "Active": false,
-                  "CardStatName": {
-                    "DefaultText": "",
-                    "Text": "SpecialDurability4",
-                    "zh": "特殊4",
-                    "en": "Special4",
-                    "ja": ""
-                  },
-                  "OverrideIcon": null,
-                  "MaxValue": 0
-                }
-              },
-              "Quantity": {
-                "m_X": 1,
-                "m_Y": 1
-              },
-              "FinishUnlocking": false,
-              "TransferRules": {
-                "Spoilage": 0,
-                "Usage": 0,
-                "Fuel": 0,
-                "Progress": 0,
-                "Special1": 0,
-                "Special2": 0,
-                "Special3": 0,
-                "Special4": 0,
-                "SpoilageValue": 0,
-                "UsageValue": 0,
-                "FuelValue": 0,
-                "ProgressValue": 0,
-                "Special1Value": 0,
-                "Special2Value": 0,
-                "Special3Value": 0,
-                "Special4Value": 0,
-                "SpoilageFrom": 0,
-                "UsageFrom": 0,
-                "FuelFrom": 0,
-                "ProgressFrom": 0,
-                "Special1From": 0,
-                "Special2From": 0,
-                "Special3From": 0,
-                "Special4From": 0
-              },
-              "DropChance": {
-                "Active": true,
-                "BaseDropChance": 0,
-                "DurabilitiesModifiers": [],
-                "StatsModifiers": [
-                  {
-                    "InputStat": {
-                      "key": "FlintKnack",
-                      "icon": "Flint",
-                      "type": "stat",
-                      "zh": "燧石加工",
-                      "en": "Flint Knack",
-                      "ja": "火打石の才能",
-                      "max": 288,
-                      "min": 0
-                    },
-                    "UseStatPercentage": false,
-                    "Value": {
-                      "Active": true,
-                      "InputValueRange": {
-                        "x": 0,
-                        "y": 288
-                      },
-                      "OutputValueRange": {
-                        "x": 0,
-                        "y": 100
-                      },
-                      "WhenOutOfRange": 0,
-                      "OutOfRangeCustomValue": 0
-                    }
-                  }
-                ],
-                "CardsModifiers": [],
-                "NPCStatsModifiers": []
-              },
-              "DropsDurabilityMultipliers": [],
-              "DropsStatMultipliers": [],
-              "AddFlavoursFromTargetCard": false,
-              "AddFlavoursFromOtherCard": false,
-              "AddSpicesFromTargetCard": false,
-              "AddSpicesFromOtherCard": false,
-              "AddedFlavours": [],
-              "AddedSpiceTags": []
-            }
-          ],
-          "DropSavedBpIngredients": false,
-          "DroppedIfNoBpIngredient": [],
-          "DropCardsInsideInventory": false,
-          "DropCardsInPlayerHand": false,
-          "DroppedEncounter": null,
-          "EncounterNPC": null,
-          "SkipEncounterEvent": false,
-          "StatModifications": [],
-          "ReceivingCardDurabilityModifications": {
-            "SpoilageChange": {
-              "x": 0,
-              "y": 0
-            },
-            "UsageChange": {
-              "x": 0,
-              "y": 0
-            },
-            "FuelChange": {
-              "x": 0,
-              "y": 0
-            },
-            "ChargesChange": {
-              "x": 0,
-              "y": 0
-            },
-            "Special1Change": {
-              "x": 0,
-              "y": 0
-            },
-            "Special2Change": {
-              "x": 0,
-              "y": 0
-            },
-            "Special3Change": {
-              "x": 0,
-              "y": 0
-            },
-            "Special4Change": {
-              "x": 0,
-              "y": 0
-            }
-          },
-          "BpDropDurabilityChangesReplaceStartingValue": {
-            "MaskValue": 0
-          },
-          "DropsStatInterpolatedDurabilityChanges": []
-        }
-      ],
-      "StatModifications": [
-        {
-          "Stat": {
-            "key": "HandDamage",
-            "icon": "",
-            "type": "stat",
-            "zh": "手掌损伤",
-            "en": "Hand Damage",
-            "ja": "手のダメージ",
-            "max": 1000,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": 50,
-            "y": 50
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": false,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "FlintAffinity",
-            "icon": "Flint",
-            "type": "stat",
-            "zh": "燧石亲和度",
-            "en": "Flint Affinity",
-            "ja": "火打ちの親和性",
-            "max": 1000,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": 5,
-            "y": 5
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "FlintUrge",
-            "icon": "Flint",
-            "type": "stat",
-            "zh": "燧石本能",
-            "en": "Flint Urge",
-            "ja": "火打石の欲求",
-            "max": 96,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": -12,
-            "y": -12
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "Focus",
-            "icon": "Focus",
-            "type": "stat",
-            "zh": "专注度",
-            "en": "Focus",
-            "ja": "集中力",
-            "max": 96,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": 2,
-            "y": 2
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "Stamina",
-            "icon": "Stamina",
-            "type": "stat",
-            "zh": "耐力",
-            "en": "Stamina",
-            "ja": "スタミナ",
-            "max": 32,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": -10,
-            "y": -10
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "Filth",
-            "icon": "Filth",
-            "type": "stat",
-            "zh": "污垢",
-            "en": "Filth",
-            "ja": "汚れ",
-            "max": 500,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": 2,
-            "y": 2
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        },
-        {
-          "Stat": {
-            "key": "Gratification",
-            "icon": "Morale2",
-            "type": "stat",
-            "zh": "满足感",
-            "en": "Gratification",
-            "ja": "Gratification",
-            "max": 100,
-            "min": -100
-          },
-          "ValueModifier": {
-            "x": -2,
-            "y": -2
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        }
-      ],
-      "InterpolatedStatModifications": [],
-      "NPCStatModifications": [],
-      "TemporaryStatModifications": [],
-      "MovePlayer": {
-        "MoveOption": 0,
-        "ToEnv": null,
-        "Pathfinding": null,
-        "Direction": 0
-      },
-      "MoveReceivingCard": {
-        "Card": null,
-        "UseCardinalDirection": false,
-        "MoveInDirection": 0,
-        "Pathfinding": null
-      },
-      "MoveNPC": [],
-      "SetNPCHome": [],
-      "ExtraDurabilityModifications": [],
-      "BlueprintsFullUnlock": [],
-      "CompletedImprovements": [],
-      "AddedInRunPerks": [],
-      "DontShowDestroyMessage": false,
-      "CustomDestroyMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoCardsAffectedMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "ReceivingCardChanges": {
-        "ModType": 1,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": -1,
-          "y": -1
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CustomWindowPrefab": null,
-      "OpenQuestLog": false,
-      "OpenMap": false,
-      "UpdateMap": false,
-      "EditDescription": false,
-      "FadeToBlack": 0,
-      "FadeMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "FadeTips": false,
-      "TravelToPreviousEnv": false,
-      "TravelToOtherRoom": false,
-      "RoomDirection": 0,
-      "ExitDirection": 0,
-      "RequiredGivenContainer": [],
-      "RequiredGivenContainerTag": [],
-      "RequiredGivenContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "GivenCardChanges": {
-        "ModType": 1,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": -1,
-          "y": -1
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CreatedLiquidInGivenCard": {
-        "LiquidCard": null,
-        "Quantity": {
-          "x": 0,
-          "y": 0
-        },
-        "Durabilities": {
-          "Spoilage": 0,
-          "Usage": 0,
-          "Fuel": 0,
-          "Progress": 0,
-          "Special1": 0,
-          "Special2": 0,
-          "Special3": 0,
-          "Special4": 0,
-          "SpoilageValue": 0,
-          "UsageValue": 0,
-          "FuelValue": 0,
-          "ProgressValue": 0,
-          "Special1Value": 0,
-          "Special2Value": 0,
-          "Special3Value": 0,
-          "Special4Value": 0,
-          "SpoilageFrom": 0,
-          "UsageFrom": 0,
-          "FuelFrom": 0,
-          "ProgressFrom": 0,
-          "Special1From": 0,
-          "Special2From": 0,
-          "Special3From": 0,
-          "Special4From": 0
-        }
-      },
-      "CarryOverGivenCard": false,
-      "CompatibleCards": {
-        "TriggerCards": [
-          {
-            "key": "Antler",
-            "icon": "Antler",
-            "type": "card",
-            "CardType": 0,
-            "zh": "鹿角",
-            "en": "Antler",
-            "ja": "角のピック",
-            "SpoilageTime": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
-                "en": "Spoilage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "UsageDurability": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "UsageDurability",
-                "zh": "耐久",
-                "en": "Usage",
-                "ja": ""
-              },
-              "OverrideIcon": {
-                "FileName": "Shield"
-              },
-              "MaxValue": 30
-            },
-            "FuelCapacity": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability1": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability1",
-                "zh": "特殊1",
-                "en": "Special1",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability2": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 100
-            },
-            "SpecialDurability3": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability4": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            }
-          }
-        ],
-        "TriggerTags": []
-      },
-      "NOTCompatibleCards": {
-        "TriggerCards": [],
-        "TriggerTags": []
-      },
-      "WorksInverted": false,
-      "WorksBothWays": false
-    },
-    {
-      "ActionName": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘"
-      },
-      "ActionDescription": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoveltyShared": false,
-      "VictorySettings": {
-        "Victory": false,
-        "SpecialEnding": false,
-        "VictoryMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        }
-      },
-      "UnavailableInDemo": false,
-      "SaveGame": false,
-      "ConfirmPopup": false,
-      "CustomConfirmText": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NotInterruptedByEncounters": false,
-      "StackCompatible": false,
-      "DaytimeCost": 4,
-      "UseMiniTicks": 0,
-      "ActionSounds": [
-        {
-          "FileName": "HittingStone"
-        }
-      ],
-      "DisablePitchVariation": false,
-      "ActionTags": [
-        {
-          "key": "HandAction",
-          "text": "HandAction",
+          "key": "PickaxeActionSpecial2Drops",
+          "text": "PickaxeActionSpecial2Drops",
           "type": "tag",
-          "count": 1450,
-          "SpoilageTime": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
-              "en": "Spoilage",
-              "ja": "Spoilage"
-            },
-            "OverrideIcon": {
-              "FileName": "Bacteria"
-            },
-            "MaxValue": 180
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Temperature",
-              "Text": "温度",
-              "zh": "温度",
-              "en": "Temperature",
-              "ja": "Temperature"
-            },
-            "OverrideIcon": {
-              "FileName": "Hot"
-            },
-            "MaxValue": 200
-          },
-          "SpecialDurability1": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Cook",
-              "Text": "烹饪",
-              "zh": "烹饪",
-              "en": "Cook",
-              "ja": "Cook"
-            },
-            "OverrideIcon": {
-              "FileName": "Cooking"
-            },
-            "MaxValue": 1
-          },
-          "SpecialDurability2": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Quality",
-              "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "Quality"
-            },
-            "OverrideIcon": {
-              "FileName": "Quality"
-            },
-            "MaxValue": 96
-          },
-          "SpecialDurability4": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Boil",
-              "Text": "烹煮",
-              "zh": "烹煮",
-              "en": "Boil",
-              "ja": "Boil"
-            },
-            "OverrideIcon": {
-              "FileName": "Cooking"
-            },
-            "MaxValue": 4
-          },
-          "Progress": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1
-          },
-          "SpecialDurability3": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Mill",
-              "Text": "研磨",
-              "zh": "研磨",
-              "en": "Mill",
-              "ja": "製粉"
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1
-          },
+          "count": 4,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
               "DefaultText": "",
-              "Text": "耐久",
+              "Text": "UsageDurability",
               "zh": "耐久",
               "en": "Usage",
               "ja": ""
             },
             "OverrideIcon": {
-              "FileName": "Spoilage"
+              "FileName": "Shield"
             },
-            "MaxValue": 46080
+            "MaxValue": 12
           },
-          "zh": "手部动作",
-          "en": "HandAction",
-          "ja": "HandAction"
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spirit",
+              "Text": "Spirit",
+              "zh": "Spirit",
+              "en": "Spirit",
+              "ja": "Spirit"
+            },
+            "OverrideIcon": {
+              "FileName": "AlarmClock_Old"
+            },
+            "MaxValue": 672
+          },
+          "zh": "镐特殊2掉落",
+          "en": "PickaxeActionSpecial2Drops",
+          "ja": "PickaxeActionSpecial2Drops"
         }
       ],
       "RequiredStatValues": [
@@ -3253,6 +1465,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3527,7 +1740,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -4049,28 +2262,14 @@
         "TriggerCards": [],
         "TriggerTags": [
           {
-            "key": "tag_HammeringToolGeneral",
+            "key": "tag_MiningTool",
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
-            "zh": "锤击工具(通用)",
+            "count": 5,
+            "zh": "锤",
             "en": "Hammer",
-            "ja": "ハンマー",
-            "SpoilageTime": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
-              },
-              "OverrideIcon": {
-                "FileName": "Knife_Blank_Copper"
-              },
-              "MaxValue": 1000
-            },
+            "ja": "Hammer",
             "UsageDurability": {
               "Active": true,
               "CardStatName": {
@@ -4083,19 +2282,7 @@
               "OverrideIcon": {
                 "FileName": "Shield"
               },
-              "MaxValue": 30
-            },
-            "FuelCapacity": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
-              },
-              "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 10000
             },
             "Progress": {
               "Active": true,
@@ -4109,26 +2296,14 @@
               "OverrideIcon": null,
               "MaxValue": 1000
             },
-            "SpecialDurability1": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "Sharpness",
-                "zh": "Sharpness",
-                "en": "Sharpness",
-                "ja": "Sharpness"
-              },
-              "OverrideIcon": null,
-              "MaxValue": 1
-            },
             "SpecialDurability2": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
+                "DefaultText": "Metal Quality",
+                "Text": "总金属品质",
+                "zh": "总金属品质",
+                "en": "Metal Quality",
+                "ja": "Metal Quality"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4674,6 +2849,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -5077,8 +3256,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -5213,7 +3400,7 @@
         "Text": "赐福",
         "zh": "赐福",
         "en": "Blessing",
-        "ja": "Blessing"
+        "ja": "加護"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -5248,6 +3435,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5532,7 +3723,7 @@
           "Text": "赐福尚未准备好。",
           "zh": "赐福尚未准备好。",
           "en": "The blessing is not ready yet.",
-          "ja": "The blessing is not ready yet."
+          "ja": "加護はまだ発動できない。"
         },
         "SpecificFailMessages": []
       },
@@ -5862,6 +4053,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6699,7 +4891,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"

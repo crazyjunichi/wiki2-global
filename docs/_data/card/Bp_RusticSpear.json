@@ -7,7 +7,7 @@
   "zh": "简易长矛",
   "en": "Rustic Spear",
   "ja": "シンプルな槍",
-  "UniqueIDIndex": 565,
+  "UniqueIDIndex": 582,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -739,8 +739,8 @@
             },
             "Name": {
               "DefaultText": "Alder Long Stick",
-              "Text": "Alder Long Stick",
-              "zh": "Alder Long Stick",
+              "Text": "桤木长木棍",
+              "zh": "桤木长木棍",
               "en": "Alder Long Stick",
               "ja": "Alder Long Stick"
             }
@@ -791,7 +791,7 @@
             "Text": "干燥度",
             "zh": "干燥度",
             "en": "Dryness",
-            "ja": "Dryness"
+            "ja": "乾燥度"
           },
           "OverrideIcon": {
             "FileName": "Drying"
@@ -1095,7 +1095,7 @@
     "Text": "一种近战武器，具有较长的攻击距离。适合狩猎大型猎物和防御掠食者。",
     "zh": "一种近战武器，具有较长的攻击距离。适合狩猎大型猎物和防御掠食者。",
     "en": "A close combat weapon with good reach. Good for hunting large game and defending yourself from predators.",
-    "ja": "リーチがある接近武器。大きい動物の狩りや危険な動物から自分を守るために使える。"
+    "ja": "間合いの長い近接武器。大型獣の狩猟や捕食者から身を守るのに適している。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1127,6 +1127,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1429,8 +1433,8 @@
                 },
                 "Name": {
                   "DefaultText": "Alder Long Stick",
-                  "Text": "Alder Long Stick",
-                  "zh": "Alder Long Stick",
+                  "Text": "桤木长木棍",
+                  "zh": "桤木长木棍",
                   "en": "Alder Long Stick",
                   "ja": "Alder Long Stick"
                 }
@@ -1481,7 +1485,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1731,7 +1735,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1759,7 +1763,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1771,7 +1775,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1795,7 +1799,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1809,7 +1813,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1823,7 +1827,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2006,14 +2010,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2021,7 +2033,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2035,7 +2047,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2049,7 +2061,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2063,7 +2075,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2130,7 +2142,7 @@
       "key": "CraftAction",
       "text": "CraftAction",
       "type": "tag",
-      "count": 75,
+      "count": 76,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -2152,7 +2164,7 @@
           "Text": "彩度",
           "zh": "彩度",
           "en": "Colour Intensity",
-          "ja": "Colour Intensity"
+          "ja": "色の濃さ"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -2166,7 +2178,7 @@
           "Text": "毛皮",
           "zh": "毛皮",
           "en": "Fur",
-          "ja": "Fur"
+          "ja": "毛皮"
         },
         "OverrideIcon": {
           "FileName": "Fur_Cured"
@@ -2180,7 +2192,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2194,7 +2206,7 @@
           "Text": "柔软度",
           "zh": "柔软度",
           "en": "Softness",
-          "ja": "Softness"
+          "ja": "柔らかさ"
         },
         "OverrideIcon": {
           "FileName": "Brain"
@@ -2208,7 +2220,7 @@
           "Text": "颜色",
           "zh": "颜色",
           "en": "Colour",
-          "ja": "Colour"
+          "ja": "色"
         },
         "OverrideIcon": null,
         "MaxValue": 100

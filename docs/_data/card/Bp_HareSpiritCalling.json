@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "呼唤野兔精魄(呼唤)",
   "en": "Hare Spirit Calling",
-  "ja": "Hare Spirit Calling",
-  "UniqueIDIndex": 451,
+  "ja": "ノウサギの精霊召喚",
+  "UniqueIDIndex": 463,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "呼唤野兔精魄",
     "zh": "呼唤野兔精魄",
     "en": "Hare Spirit Calling",
-    "ja": "Hare Spirit Calling"
+    "ja": "ノウサギの精霊召喚"
   },
   "CardImage": {
     "FileName": "Hare_Wild"
@@ -879,7 +879,7 @@
     "Text": "暂时将野兔精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将野兔精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds a hare spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds a hare spirit to your soul, making you both a bit more like the other."
+    "ja": "一時的にノウサギの精霊をあなたの魂に結びつけ、互いを少しずつ似た存在にする。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1015,7 +1019,7 @@
         "CardType": 0,
         "zh": "野兔精魄(召唤)",
         "en": "Hare Spirit",
-        "ja": "Hare Spirit",
+        "ja": "ノウサギの精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1023,7 +1027,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1049,7 +1053,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1313,7 +1317,7 @@
             "type": "tag",
             "zh": "野兔供奉",
             "en": "Hare Favorite",
-            "ja": "Hare Favorite",
+            "ja": "ノウサギのお気に入り",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -1602,14 +1606,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1617,7 +1629,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1631,7 +1643,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1645,7 +1657,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1659,7 +1671,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1734,7 +1746,7 @@
         "CardType": 0,
         "zh": "野兔精魄(召唤)",
         "en": "Hare Spirit",
-        "ja": "Hare Spirit",
+        "ja": "ノウサギの精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1742,7 +1754,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1768,7 +1780,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1968,7 +1980,7 @@
         "type": "stat",
         "zh": "野兔本能",
         "en": "Hare Urge",
-        "ja": "Hare Urge",
+        "ja": "ノウサギの衝動",
         "max": 96,
         "min": 0
       },

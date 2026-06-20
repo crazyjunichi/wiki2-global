@@ -7,7 +7,7 @@
   "zh": "泡水荨麻茎",
   "en": "Soaking Nettle Stems",
   "ja": "イラクサの茎を浸してる",
-  "UniqueIDIndex": 1877,
+  "UniqueIDIndex": 1933,
   "CardType": 2,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可烹饪的”",
       "icon": "",
       "type": "tag",
-      "count": 112,
+      "count": 113,
       "zh": "可烹饪的",
       "en": "Cookable",
       "ja": "料理できる",
@@ -129,11 +129,11 @@
       }
     },
     {
-      "key": "tag_FloodUnsafe",
+      "key": "NOT_USED_tag_FloodUnsafe",
       "text": "“被洪水摧毁”",
       "icon": "",
       "type": "tag",
-      "count": 20,
+      "count": 22,
       "zh": "被洪水摧毁",
       "en": "Destroyed by Floods",
       "ja": "洪水によって破壊された",
@@ -214,7 +214,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -228,7 +228,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Pike"
@@ -2997,7 +2997,7 @@
     "Text": "<b>产地：</b>橡树区域的河岸和林隙。\\n\\n<b>需求：</b>低酸度、中等湿度、中高养分。\\n\\n<b>用途：</b>纺织。",
     "zh": "<b>产地：</b>橡树区域的河岸和林隙。\\n\\n<b>需求：</b>低酸度、中等湿度、中高养分。\\n\\n<b>用途：</b>纺织。",
     "en": "<b>Found:</b> Oaken Clearings and Oaken River Banks.\\n\\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\\n\\n<b>Benefits:</b> Textiles.",
-    "ja": "<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\n\n<b>Benefits:</b> Textiles."
+    "ja": "<b>生育地：</b>オークの空き地とオークの川辺。\\n\\n<b>生育条件：</b>低い酸性度、中程度の水分量、中〜高程度の栄養度を必要とする。\\n\\n<b>効果：</b>織物素材。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 100,
@@ -3013,6 +3013,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3198,8 +3202,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3369,6 +3381,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3616,7 +3632,7 @@
           "CardType": 0,
           "zh": "新鲜荨麻茎",
           "en": "Fresh Nettle Stems",
-          "ja": "Fresh Nettle Stems",
+          "ja": "新鮮なイラクサの茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -3702,7 +3718,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -4009,28 +4025,12 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
-      },
-      "localization": {
-        "zh": "动作：泡荨麻茎",
-        "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
       },
       "localization": {
         "zh": "动作：泡荨麻茎",
@@ -4076,7 +4076,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4091,7 +4091,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -4217,7 +4217,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4232,7 +4232,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -4240,7 +4240,7 @@
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     },
     {
@@ -4265,7 +4265,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -4280,7 +4280,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -4288,7 +4288,7 @@
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     },
     {
@@ -4389,18 +4389,34 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：泡荨麻茎",
+        "en": "Action: Soak Nettle Stems",
+        "ja": "アクション：Soak Nettle Stems"
+      }
+    },
+    {
+      "link": {
         "key": "StreamQEE",
         "icon": "RiverShore",
         "type": "card",
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     }
   ],

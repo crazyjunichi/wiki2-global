@@ -7,7 +7,7 @@
   "zh": "盐",
   "en": "Salt",
   "ja": "塩",
-  "UniqueIDIndex": 1665,
+  "UniqueIDIndex": 1719,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 368,
+      "count": 375,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -366,7 +366,7 @@
           "Text": "皮类型",
           "zh": "皮类型",
           "en": "Skin Type",
-          "ja": "Skin Type"
+          "ja": "皮の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -451,7 +451,7 @@
           "CardType": 8,
           "zh": "静谧洞穴",
           "en": "Still Cave",
-          "ja": "Still Cave",
+          "ja": "静寂の洞窟",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -459,7 +459,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -545,7 +545,7 @@
               "Text": "烟熏",
               "zh": "烟熏",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -572,7 +572,7 @@
           "CardType": 2,
           "zh": "冰窖",
           "en": "Ice Pit",
-          "ja": "Ice Pit",
+          "ja": "氷穴",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -580,7 +580,7 @@
               "Text": "雪",
               "zh": "雪",
               "en": "Snow",
-              "ja": "Snow"
+              "ja": "雪"
             },
             "OverrideIcon": {
               "FileName": "Snow1"
@@ -594,7 +594,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -608,7 +608,7 @@
               "Text": "冷",
               "zh": "冷",
               "en": "Cold",
-              "ja": "Cold"
+              "ja": "寒い"
             },
             "OverrideIcon": null,
             "MaxValue": 2
@@ -656,7 +656,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -777,7 +777,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -791,7 +791,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -900,7 +900,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -914,7 +914,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1295,6 +1295,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2010,7 +2014,7 @@
             "text": "“可食用的”",
             "icon": "",
             "type": "tag",
-            "count": 240,
+            "count": 237,
             "zh": "可食用的",
             "en": "Edible",
             "ja": "食用",
@@ -2603,7 +2607,7 @@
     "Text": "一种可以为大多数食物增添风味的珍贵调味料。",
     "zh": "一种可以为大多数食物增添风味的珍贵调味料。",
     "en": "A valuable spice that can enhance most meals.",
-    "ja": "A valuable spice that can enhance most meals."
+    "ja": "多くの料理の風味を引き立てる貴重な香辛料。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -2648,6 +2652,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2833,8 +2841,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2969,7 +2985,7 @@
         "Text": "取出",
         "zh": "取出",
         "en": "Take Out",
-        "ja": "Take Out"
+        "ja": "取り出す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3004,6 +3020,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3513,6 +3533,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3747,7 +3768,7 @@
         "Text": "拿出10份",
         "zh": "拿出10份",
         "en": "Take Out 10",
-        "ja": "Take Out 10"
+        "ja": "１０個取り出す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3782,6 +3803,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4291,6 +4316,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4669,7 +4695,7 @@
         "CardType": 0,
         "zh": "袋子",
         "en": "Pouch",
-        "ja": "Pouch"
+        "ja": "小袋"
       },
       "localization": {
         "zh": "默认液体",
@@ -4687,12 +4713,12 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：降低变质",
         "en": "Action: Lower Spoilage",
-        "ja": "アクション：Lower Spoilage"
+        "ja": "アクション：腐敗速度を下げる"
       }
     }
   ],

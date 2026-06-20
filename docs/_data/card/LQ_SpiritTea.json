@@ -7,7 +7,7 @@
   "zh": "神奇茶",
   "en": "Spirit Tea",
   "ja": "精霊茶",
-  "UniqueIDIndex": 1696,
+  "UniqueIDIndex": 1752,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 328,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -133,7 +133,7 @@
       "text": "“Quality”",
       "icon": "",
       "type": "tag",
-      "count": 251,
+      "count": 255,
       "zh": "含品质的",
       "en": "Quality",
       "ja": "Quality",
@@ -342,6 +342,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1508,7 +1512,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1757,7 +1761,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1777,7 +1781,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -2840,6 +2844,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2951,7 +2959,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -2990,7 +2998,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3004,7 +3012,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -3018,7 +3026,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -3046,7 +3054,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -3060,7 +3068,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -3243,7 +3251,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3253,7 +3264,7 @@
             "type": "stat",
             "zh": "精魄噪音",
             "en": "Spiritual Noise",
-            "ja": "Spiritual Noise",
+            "ja": "霊障",
             "max": 13,
             "min": 0
           },
@@ -3415,7 +3426,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3429,7 +3440,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -3614,7 +3625,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3908,7 +3922,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4221,7 +4238,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4534,7 +4554,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4847,7 +4870,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5227,7 +5253,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -5627,7 +5653,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -6016,8 +6045,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -6187,6 +6224,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Drink"
@@ -6198,7 +6239,7 @@
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 58,
+          "count": 59,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -6289,8 +6330,8 @@
               "DefaultText": "Waste",
               "Text": "铁元素",
               "zh": "铁元素",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "en": "Iron",
+              "ja": "Waste"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -6300,16 +6341,16 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Bacteria",
-              "Text": "细菌",
-              "zh": "细菌",
-              "en": "Bacteria",
-              "ja": "ばい菌"
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
             },
             "OverrideIcon": {
-              "FileName": "Bacteria"
+              "FileName": "Spoilage"
             },
-            "MaxValue": 4800
+            "MaxValue": 16
           },
           "zh": "饮水动作",
           "en": "DrinkingAction",
@@ -7071,7 +7112,7 @@
         "CardType": 9,
         "zh": "灵魂菇粉",
         "en": "Spirit Mushrooms Powder",
-        "ja": "Spirit Mushrooms Powder"
+        "ja": "スピリットマッシュルームの粉末"
       },
       "localization": {
         "zh": "动作：浸泡",
@@ -7087,12 +7128,12 @@
         "CardType": 9,
         "zh": "灵魂菇粉(专有)",
         "en": "Spirit Mushrooms Powder(Pk)",
-        "ja": "Spirit Mushrooms Powder"
+        "ja": "精霊キノコ の粉末"
       },
       "localization": {
         "zh": "动作：浸泡",
         "en": "Action: Soak",
-        "ja": "アクション：Soak"
+        "ja": "アクション：浸す"
       }
     },
     {
@@ -7121,7 +7162,7 @@
         "CardType": 9,
         "zh": "灵魂菇粉",
         "en": "Spirit Mushrooms Powder",
-        "ja": "Spirit Mushrooms Powder"
+        "ja": "スピリットマッシュルームの粉末"
       },
       "localization": {
         "zh": "动作：浸泡",

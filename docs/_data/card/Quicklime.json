@@ -7,7 +7,7 @@
   "zh": "生石灰",
   "en": "Quicklime",
   "ja": "石灰",
-  "UniqueIDIndex": 2138,
+  "UniqueIDIndex": 2198,
   "CardType": 0,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -52,7 +52,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -70,6 +70,94 @@
         },
         "OverrideIcon": null,
         "MaxValue": 1
+      }
+    },
+    {
+      "key": "tag_Powder",
+      "text": "“粉末”",
+      "icon": "",
+      "type": "tag",
+      "count": 33,
+      "zh": "粉末",
+      "en": "Powder",
+      "ja": "パウダー",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 3600
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "FuelCapacity",
+          "zh": "容量",
+          "en": "Fuel",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Milling Bonus",
+          "Text": "研磨加成",
+          "zh": "研磨加成",
+          "en": "Milling Bonus",
+          "ja": "製粉ボーナス"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
       }
     }
   ],
@@ -129,7 +217,614 @@
     "OnFullNotification": 0,
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
-    "durabilityKey": "SpoilageTime"
+    "durabilityKey": "SpoilageTime",
+    "_rateModifications": [
+      {
+        "link": {
+          "key": "ClayJar",
+          "icon": "Jar_Clay",
+          "type": "card",
+          "CardType": 0,
+          "zh": "小陶罐",
+          "en": "Clay Jar",
+          "ja": "粘土の瓶",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Temperature",
+              "Text": "容器温度",
+              "zh": "容器温度",
+              "en": "Container Temperature",
+              "ja": "容器の温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Quality",
+              "Text": "容器品质",
+              "zh": "容器品质",
+              "en": "Container Quality",
+              "ja": "容器の質"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "加護を受けている"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：保存-陶罐",
+          "en": "Passive Effect：Preserve - Clay Jar",
+          "ja": "パッシブ効果：保存 - 粘土壺"
+        },
+        "value": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClayJar",
+          "icon": "Jar_Clay",
+          "type": "card",
+          "CardType": 0,
+          "zh": "小陶罐",
+          "en": "Clay Jar",
+          "ja": "粘土の瓶",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Temperature",
+              "Text": "容器温度",
+              "zh": "容器温度",
+              "en": "Container Temperature",
+              "ja": "容器の温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Quality",
+              "Text": "容器品质",
+              "zh": "容器品质",
+              "en": "Container Quality",
+              "ja": "容器の質"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "加護を受けている"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Clay Jar - Chilled",
+          "en": "Passive Effect：Preserve - Clay Jar - Chilled",
+          "ja": "パッシブ効果：Preserve - Clay Jar - Chilled"
+        },
+        "value": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：保存-麻袋",
+          "en": "Passive Effect：Preserve  - Sack",
+          "ja": "パッシブ効果：保存 - 袋"
+        },
+        "value": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Sack - Chilled",
+          "en": "Passive Effect：Preserve - Sack - Chilled",
+          "ja": "パッシブ効果：Preserve - Sack - Chilled"
+        },
+        "value": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "Pk_5_1_6_ScribeGear_JarWithSootInk",
+          "icon": "Jar_Clay",
+          "type": "card",
+          "CardType": 0,
+          "zh": "小陶罐(专有)",
+          "en": "Clay Jar(Pk)",
+          "ja": "粘土の壺",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Temperature",
+              "Text": "容器温度",
+              "zh": "容器温度",
+              "en": "Container Temperature",
+              "ja": "容器の温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Quality",
+              "Text": "容器品质",
+              "zh": "容器品质",
+              "en": "Container Quality",
+              "ja": "容器の質"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：保存-陶罐",
+          "en": "Passive Effect：Preserve - Clay Jar",
+          "ja": "パッシブ効果：保存 - 粘土壺"
+        },
+        "value": {
+          "x": -0.6,
+          "y": -0.6
+        },
+        "isMultiplier": false
+      }
+    ]
   },
   "UsageDurability": {
     "Active": false,
@@ -561,6 +1256,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -748,7 +1447,7 @@
               "Text": "混合物太浓稠了......",
               "zh": "混合物太浓稠了......",
               "en": "The mixture is too thick...",
-              "ja": "The mixture is too thick..."
+              "ja": "混合液が濃すぎる・・・"
             }
           },
           {
@@ -760,7 +1459,7 @@
               "Text": "温度还不够......",
               "zh": "温度还不够......",
               "en": "Not hot enough...",
-              "ja": "Not hot enough..."
+              "ja": "熱が足りない・・・"
             }
           }
         ]
@@ -1256,7 +1955,7 @@
           "CardType": 9,
           "zh": "石灰水",
           "en": "Limewater",
-          "ja": "Limewater",
+          "ja": "石灰水",
           "AlternateNames": [
             {
               "Conditions": {
@@ -1270,7 +1969,7 @@
                 "Text": "稀石灰水",
                 "zh": "稀石灰水",
                 "en": "Weak Limewater",
-                "ja": "Weak Limewater"
+                "ja": "薄い石灰水"
               }
             },
             {
@@ -1285,7 +1984,7 @@
                 "Text": "石灰水",
                 "zh": "石灰水",
                 "en": "Limewater",
-                "ja": "Limewater"
+                "ja": "石灰水"
               }
             },
             {
@@ -1300,7 +1999,7 @@
                 "Text": "石灰乳",
                 "zh": "石灰乳",
                 "en": "Milk of Lime",
-                "ja": "Milk of Lime"
+                "ja": "石灰乳"
               }
             }
           ],
@@ -1337,7 +2036,7 @@
               "Text": "液体温度",
               "zh": "液体温度",
               "en": "Liquid Temperature",
-              "ja": "Liquid Temperature"
+              "ja": "液体温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1351,7 +2050,7 @@
               "Text": "浓稠度",
               "zh": "浓稠度",
               "en": "Thickness",
-              "ja": "Thickness"
+              "ja": "濃度"
             },
             "OverrideIcon": {
               "FileName": "Powder_Garlic"
@@ -1575,7 +2274,7 @@
                 "Text": "凝乳酶",
                 "zh": "凝乳酶",
                 "en": "Renet",
-                "ja": "Renet"
+                "ja": "レンネット"
               },
               "OverrideIcon": null,
               "MaxValue": 300
@@ -1601,7 +2300,7 @@
                 "Text": "液体温度",
                 "zh": "液体温度",
                 "en": "Liquid Temperature",
-                "ja": "Liquid Temperature"
+                "ja": "液体温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -1615,7 +2314,7 @@
                 "Text": "浓稠度",
                 "zh": "浓稠度",
                 "en": "Thickness",
-                "ja": "Thickness"
+                "ja": "濃度"
               },
               "OverrideIcon": {
                 "FileName": "Powder_Garlic"
@@ -1670,8 +2369,8 @@
                 "DefaultText": "Iron",
                 "Text": "铁元素",
                 "zh": "铁元素",
-                "en": "Waste",
-                "ja": "ゴミ"
+                "en": "Iron",
+                "ja": "Iron"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2191,6 +2890,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2376,8 +3079,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2649,6 +3360,38 @@
   "_gotFrom": [
     {
       "link": {
+        "key": "LQ_Quicklime",
+        "icon": "Powder_Garlic",
+        "type": "card",
+        "CardType": 9,
+        "zh": "生石灰",
+        "en": "Quicklime",
+        "ja": "Quicklime"
+      },
+      "localization": {
+        "zh": "动作：取出",
+        "en": "Action: Take Out",
+        "ja": "アクション：Take Out"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_Quicklime",
+        "icon": "Powder_Garlic",
+        "type": "card",
+        "CardType": 9,
+        "zh": "生石灰",
+        "en": "Quicklime",
+        "ja": "Quicklime"
+      },
+      "localization": {
+        "zh": "动作：拿出10份",
+        "en": "Action: Take Out 10",
+        "ja": "アクション：Take Out 10"
+      }
+    },
+    {
+      "link": {
         "key": "MortarBurnt",
         "icon": "MortarBurnt",
         "type": "card",
@@ -2743,7 +3486,7 @@
         "CardType": 7,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2776,6 +3519,22 @@
         "zh": "粘土大锅",
         "en": "Clay Cauldron",
         "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2871,7 +3630,7 @@
         "CardType": 7,
         "zh": "大型坩埚",
         "en": "Large Crucible",
-        "ja": "Large Crucible"
+        "ja": "大型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2887,23 +3646,7 @@
         "CardType": 7,
         "zh": "小型坩埚",
         "en": "Small Crucible",
-        "ja": "Small Crucible"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_FermentationBin",
-        "icon": "FermentingBin_Clay",
-        "type": "card",
-        "CardType": 7,
-        "zh": "发酵桶",
-        "en": "Fermentation Bin",
-        "ja": "発酵箱"
+        "ja": "小型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2957,22 +3700,6 @@
         "zh": "动作：中和",
         "en": "Action: Neutralize",
         "ja": "アクション：中和する"
-      }
-    },
-    {
-      "link": {
-        "key": "MudPile",
-        "icon": "Mud_Pile",
-        "type": "card",
-        "CardType": 0,
-        "zh": "泥堆",
-        "en": "Mud Pile",
-        "ja": "泥の山"
-      },
-      "localization": {
-        "zh": "动作：制作泥砖",
-        "en": "Action: Make a Mud Brick",
-        "ja": "アクション：泥レンガを作る"
       }
     },
     {

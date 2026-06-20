@@ -7,7 +7,7 @@
   "zh": "木炭",
   "en": "Charcoal",
   "ja": "木炭",
-  "UniqueIDIndex": 820,
+  "UniqueIDIndex": 847,
   "CardType": 0,
   "CardTags": [
     {
@@ -133,7 +133,7 @@
       "text": "“tag_MetalTraderInterest”",
       "icon": "",
       "type": "tag",
-      "count": 83,
+      "count": 90,
       "zh": "tag_MetalTraderInterest",
       "en": "tag_MetalTraderInterest",
       "ja": "tag_MetalTraderInterest",
@@ -144,7 +144,7 @@
           "Text": "锋利",
           "zh": "锋利",
           "en": "Sharpness",
-          "ja": "Sharpness"
+          "ja": "切れ味"
         },
         "OverrideIcon": {
           "FileName": "Knife_Blank_Copper"
@@ -172,7 +172,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -186,7 +186,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -200,7 +200,7 @@
           "Text": "捶打",
           "zh": "捶打",
           "en": "Strikes",
-          "ja": "Strikes"
+          "ja": "打撃数"
         },
         "OverrideIcon": {
           "FileName": "Hammer"
@@ -214,7 +214,7 @@
           "Text": "总金属品质",
           "zh": "总金属品质",
           "en": "Metal Quality",
-          "ja": "Metal Quality"
+          "ja": "金属の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -228,7 +228,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -242,7 +242,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -609,6 +609,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1114,6 +1118,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1765,6 +1770,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1772,7 +1781,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1780,7 +1789,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1794,7 +1803,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1808,7 +1817,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1822,7 +1831,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2407,6 +2416,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3051,7 +3061,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -3062,7 +3072,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3090,7 +3100,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3102,7 +3112,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3140,7 +3150,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3154,7 +3164,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3672,6 +3682,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3857,8 +3871,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4146,22 +4168,6 @@
     },
     {
       "link": {
-        "key": "Bloomery",
-        "icon": "Bloomery_On",
-        "type": "card",
-        "CardType": 2,
-        "zh": "块炼炉",
-        "en": "Bloomery",
-        "ja": "Bloomery"
-      },
-      "localization": {
-        "zh": "容量 降为零",
-        "en": "Fuel Depleted",
-        "ja": " ゼロ"
-      }
-    },
-    {
-      "link": {
         "key": "CampfireExtinguished",
         "icon": "Campfire_Off",
         "type": "card",
@@ -4174,6 +4180,22 @@
         "zh": "动作：取出木炭和灰烬",
         "en": "Action: Take Charcoal and Ash",
         "ja": "アクション：木炭と灰を取る"
+      }
+    },
+    {
+      "link": {
+        "key": "CharcoalMound",
+        "icon": "Burrow",
+        "type": "card",
+        "CardType": 2,
+        "zh": "炭堆",
+        "en": "Charcoal Mound",
+        "ja": "Charcoal Mound"
+      },
+      "localization": {
+        "zh": "动作：挖掘",
+        "en": "Action: Dig up",
+        "ja": "アクション：Dig up"
       }
     },
     {
@@ -4222,54 +4244,6 @@
         "zh": "动作：取出木炭和灰烬",
         "en": "Action: Take Charcoal and Ash",
         "ja": "アクション：木炭と灰を取る"
-      }
-    },
-    {
-      "link": {
-        "key": "Forge",
-        "icon": "Forge_On",
-        "type": "card",
-        "CardType": 2,
-        "zh": "锻造台",
-        "en": "Forge",
-        "ja": "Forge"
-      },
-      "localization": {
-        "zh": "容量 降为零",
-        "en": "Fuel Depleted",
-        "ja": " ゼロ"
-      }
-    },
-    {
-      "link": {
-        "key": "Furnace",
-        "icon": "Furnace_On",
-        "type": "card",
-        "CardType": 2,
-        "zh": "熔炉",
-        "en": "Furnace",
-        "ja": "Furnace"
-      },
-      "localization": {
-        "zh": "容量 降为零",
-        "en": "Fuel Depleted",
-        "ja": " ゼロ"
-      }
-    },
-    {
-      "link": {
-        "key": "Kiln",
-        "icon": "Oven_On",
-        "type": "card",
-        "CardType": 2,
-        "zh": "窑炉",
-        "en": "Kiln",
-        "ja": "窯"
-      },
-      "localization": {
-        "zh": "容量 降为零",
-        "en": "Fuel Depleted",
-        "ja": " ゼロ"
       }
     },
     {
@@ -4405,12 +4379,12 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：取出木炭和灰烬",
         "en": "Action: Take Charcoal and Ash",
-        "ja": "アクション：Take Charcoal and Ash"
+        "ja": "アクション：木炭と灰を取る"
       }
     },
     {
@@ -4679,12 +4653,12 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：添入木炭",
         "en": "Action: Feed Charcoal",
-        "ja": "アクション：Feed Charcoal"
+        "ja": "アクション：木炭を入れる"
       }
     },
     {
@@ -4695,12 +4669,12 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：添入木炭",
         "en": "Action: Feed Charcoal",
-        "ja": "アクション：Feed Charcoal"
+        "ja": "アクション：木炭を入れる"
       }
     },
     {
@@ -5009,12 +4983,12 @@
         "CardType": 2,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：添入木炭",
         "en": "Action: Feed Charcoal",
-        "ja": "アクション：Feed Charcoal"
+        "ja": "アクション：木炭を入れる"
       }
     },
     {
@@ -5025,12 +4999,12 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：添入木炭",
         "en": "Action: Feed Charcoal",
-        "ja": "アクション：Feed Charcoal"
+        "ja": "アクション：木炭を入れる"
       }
     },
     {

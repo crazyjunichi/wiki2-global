@@ -1,0 +1,1 @@
+import{n as e,c as n,o,h as s}from"./TLiix_Tp.js";const _={class:"text-hint"},a=e({__name:"hint",props:{highlight:{type:Boolean}},setup(c){return(t,p)=>(o(),n("span",_,[s(t.$slots,"default")]))}}),i=Object.assign(a,{__name:"Hint"});export{i as _};

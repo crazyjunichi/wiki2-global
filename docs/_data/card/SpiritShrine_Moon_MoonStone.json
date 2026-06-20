@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "月石",
   "en": "Moonstone",
-  "ja": "Moonstone",
-  "UniqueIDIndex": 2350,
+  "ja": "月長石",
+  "UniqueIDIndex": 2420,
   "CardType": 2,
   "CardTags": [
     {
@@ -82,7 +82,7 @@
           "Text": "韦石亲密关系",
           "zh": "韦石亲密关系",
           "en": "West Stone Propinquity",
-          "ja": "West Stone Propinquity"
+          "ja": "ウエストストーン"
         },
         "OverrideIcon": {
           "FileName": "WestStone_1"
@@ -110,7 +110,7 @@
     "Text": "月石",
     "zh": "月石",
     "en": "Moonstone",
-    "ja": "Moonstone"
+    "ja": "月長石"
   },
   "CardImage": {
     "FileName": "Moonstone"
@@ -492,12 +492,12 @@
           "CardType": 2,
           "zh": "月石",
           "en": "Moonstone",
-          "ja": "Moonstone"
+          "ja": "月長石"
         },
         "localization": {
           "zh": "动作：赐福",
           "en": "Action: Blessing",
-          "ja": "アクション：Blessing"
+          "ja": "アクション：祝福"
         },
         "value": {
           "x": -1000000000,
@@ -984,7 +984,7 @@
     "Text": "为向月精魄献祭并祈求其祝福而建造的祭坛。",
     "zh": "为向月精魄献祭并祈求其祝福而建造的祭坛。",
     "en": "A shrine made to honor the moon spirit and seek its blessings.",
-    "ja": "A shrine made to honor the moon spirit and seek its blessings."
+    "ja": "月の精霊を祀り、その加護を求めるための祠。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1016,6 +1016,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1108,7 +1112,7 @@
         "type": "stat",
         "zh": "月之本能",
         "en": "Moon Urge",
-        "ja": "Moon Urge",
+        "ja": "月の衝動",
         "max": 96,
         "min": 0
       },
@@ -1145,7 +1149,7 @@
         "type": "stat",
         "zh": "月赐福",
         "en": "Moon Blessing",
-        "ja": "Moon Blessing",
+        "ja": "月の加護",
         "max": 288,
         "min": 0
       },
@@ -1182,7 +1186,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -1229,7 +1233,7 @@
       "CardType": 7,
       "zh": "月附魔",
       "en": "Moon Enchantment",
-      "ja": "Moon Enchantment",
+      "ja": "月のエンチャント",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -1334,7 +1338,7 @@
       "CardType": 7,
       "zh": "召唤仪式",
       "en": "Summoning Ritual",
-      "ja": "Summoning Ritual",
+      "ja": "召喚の儀式",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -1524,8 +1528,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1660,7 +1672,7 @@
         "Text": "交流",
         "zh": "交流",
         "en": "Commune",
-        "ja": "Commune"
+        "ja": "交信する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1695,6 +1707,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2096,6 +2112,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2377,7 +2394,7 @@
                 "CardType": 3,
                 "zh": "幻影",
                 "en": "Apparition",
-                "ja": "Apparition",
+                "ja": "幻影",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2528,6 +2545,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2580,7 +2598,7 @@
             "type": "stat",
             "zh": "月亲和度",
             "en": "Moon Affinity",
-            "ja": "Moon Affinity",
+            "ja": "月への親和性",
             "max": 1000,
             "min": 0
           },
@@ -2617,7 +2635,7 @@
             "type": "stat",
             "zh": "月之本能",
             "en": "Moon Urge",
-            "ja": "Moon Urge",
+            "ja": "月の衝動",
             "max": 96,
             "min": 0
           },
@@ -2874,7 +2892,7 @@
         "Text": "赐福",
         "zh": "赐福",
         "en": "Blessing",
-        "ja": "Blessing"
+        "ja": "祝福"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2909,6 +2927,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2992,7 +3014,7 @@
             "type": "stat",
             "zh": "月亲和度",
             "en": "Moon Affinity",
-            "ja": "Moon Affinity",
+            "ja": "月への親和性",
             "max": 1000,
             "min": 0
           },
@@ -3211,7 +3233,7 @@
           "Text": "赐福尚未准备好。",
           "zh": "赐福尚未准备好。",
           "en": "The blessing is not ready yet.",
-          "ja": "The blessing is not ready yet."
+          "ja": "加護はまだ発動できない。"
         },
         "SpecificFailMessages": []
       },
@@ -3390,7 +3412,7 @@
                 "CardType": 3,
                 "zh": "赐福",
                 "en": "Blessing",
-                "ja": "Blessing",
+                "ja": "祝福",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3541,6 +3563,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3630,7 +3653,7 @@
             "type": "stat",
             "zh": "月亲和度",
             "en": "Moon Affinity",
-            "ja": "Moon Affinity",
+            "ja": "月への親和性",
             "max": 1000,
             "min": 0
           },
@@ -3667,7 +3690,7 @@
             "type": "stat",
             "zh": "月之本能",
             "en": "Moon Urge",
-            "ja": "Moon Urge",
+            "ja": "月の衝動",
             "max": 96,
             "min": 0
           },
@@ -4180,7 +4203,7 @@
       "CardType": 4,
       "zh": "月丘",
       "en": "Moon Hills",
-      "ja": "Moon Hills",
+      "ja": "月の丘",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4284,7 +4307,7 @@
         "CardType": 8,
         "zh": "月丘",
         "en": "Moon Hills",
-        "ja": "Moon Hills",
+        "ja": "月の丘",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -4342,7 +4365,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -4356,7 +4379,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -4370,7 +4393,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

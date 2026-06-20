@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "笔记",
   "en": "Note",
-  "ja": "Note",
-  "UniqueIDIndex": 1999,
+  "ja": "メモ",
+  "UniqueIDIndex": 2059,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "笔记",
     "zh": "笔记",
     "en": "Note",
-    "ja": "Note"
+    "ja": "メモ"
   },
   "CardImage": {
     "FileName": "Note"
@@ -454,7 +454,7 @@
         "Text": "编辑",
         "zh": "编辑",
         "en": "Edit",
-        "ja": "Edit"
+        "ja": "編集"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -489,6 +489,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -839,6 +843,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1380,7 +1385,7 @@
             "CardType": 0,
             "zh": "羽毛笔",
             "en": "Quill",
-            "ja": "Quill",
+            "ja": "羽ペン",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1394,7 +1399,7 @@
                   "Text": "蘸满的羽毛笔",
                   "zh": "蘸满的羽毛笔",
                   "en": "Filled Quill",
-                  "ja": "Filled Quill"
+                  "ja": "インク入り羽ペン"
                 }
               }
             ],
@@ -1431,7 +1436,7 @@
                 "Text": "墨水",
                 "zh": "墨水",
                 "en": "Ink",
-                "ja": "Ink"
+                "ja": "インク"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2095,6 +2100,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2280,8 +2289,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2559,12 +2576,12 @@
         "CardType": 3,
         "zh": "兽皮纸",
         "en": "Parchment",
-        "ja": "Parchment"
+        "ja": "羊皮紙"
       },
       "localization": {
         "zh": "动作：笔记",
         "en": "Action: Note",
-        "ja": "アクション：Note"
+        "ja": "アクション：メモ"
       }
     }
   ],

@@ -7,7 +7,7 @@
   "zh": "屋顶损坏",
   "en": "Roof Damage",
   "ja": "屋根のダメージ",
-  "UniqueIDIndex": 957,
+  "UniqueIDIndex": 987,
   "CardType": 11,
   "CardTags": [],
   "CardName": {
@@ -145,6 +145,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -835,6 +839,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1842,6 +1850,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [
     {
       "key": "Dmg_RoofCollapsed",
@@ -2040,7 +2052,7 @@
         "type": "stat",
         "zh": "庇护度",
         "en": "Sanctuary",
-        "ja": "Sanctuary",
+        "ja": "安息度",
         "max": 7500,
         "min": -1000
       },
@@ -2305,12 +2317,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Reeds",
-            "text": "“芦苇”",
+            "key": "GpTag_InsulationMaterial",
+            "text": "“隔热材料”",
             "type": "tag",
-            "zh": "芦苇",
-            "en": "Reeds",
-            "ja": "ヨシ",
+            "zh": "隔热材料",
+            "en": "Insulation Material",
+            "ja": "Insulation Material",
             "SubGroups": [],
             "count": 9,
             "SpoilageTime": {
@@ -2344,7 +2356,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2589,8 +2601,16 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2786,7 +2806,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "AffectedCards": [
         {
@@ -3145,13 +3168,13 @@
             "MaxValue": 0
           },
           "FuelCapacity": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Flood",
-              "Text": "洪水",
-              "zh": "洪水",
-              "en": "Flood",
-              "ja": "洪水"
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -3199,7 +3222,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -3213,7 +3236,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -3256,13 +3279,13 @@
             "MaxValue": 0
           },
           "FuelCapacity": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Flood",
-              "Text": "洪水",
-              "zh": "洪水",
-              "en": "Flood",
-              "ja": "洪水"
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -3310,7 +3333,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -3324,7 +3347,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"

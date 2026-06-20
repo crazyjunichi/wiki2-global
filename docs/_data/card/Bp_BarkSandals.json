@@ -7,7 +7,7 @@
   "zh": "树皮凉鞋",
   "en": "Bark Sandals",
   "ja": "樹皮のサンダル",
-  "UniqueIDIndex": 298,
+  "UniqueIDIndex": 301,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1416,7 +1420,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -1431,7 +1435,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -1514,7 +1518,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2010,7 +2014,7 @@
                   "Text": "皮革绳",
                   "zh": "皮革绳",
                   "en": "Leather Cordage",
-                  "ja": "Leather Cordage"
+                  "ja": "革の紐"
                 }
               },
               {
@@ -2025,7 +2029,7 @@
                   "Text": "肌腱绳",
                   "zh": "肌腱绳",
                   "en": "Sinew Cordage",
-                  "ja": "Sinew Cordage"
+                  "ja": "腱繊維の紐"
                 }
               }
             ],
@@ -2108,7 +2112,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -2304,14 +2308,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2319,7 +2331,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2333,7 +2345,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2347,7 +2359,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2361,7 +2373,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2428,7 +2440,7 @@
       "key": "CraftAction",
       "text": "CraftAction",
       "type": "tag",
-      "count": 75,
+      "count": 76,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -2450,7 +2462,7 @@
           "Text": "彩度",
           "zh": "彩度",
           "en": "Colour Intensity",
-          "ja": "Colour Intensity"
+          "ja": "色の濃さ"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -2464,7 +2476,7 @@
           "Text": "毛皮",
           "zh": "毛皮",
           "en": "Fur",
-          "ja": "Fur"
+          "ja": "毛皮"
         },
         "OverrideIcon": {
           "FileName": "Fur_Cured"
@@ -2478,7 +2490,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2492,7 +2504,7 @@
           "Text": "柔软度",
           "zh": "柔软度",
           "en": "Softness",
-          "ja": "Softness"
+          "ja": "柔らかさ"
         },
         "OverrideIcon": {
           "FileName": "Brain"
@@ -2506,7 +2518,7 @@
           "Text": "颜色",
           "zh": "颜色",
           "en": "Colour",
-          "ja": "Colour"
+          "ja": "色"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -2677,14 +2689,14 @@
         "Special2Value": 0,
         "Special3Value": 0,
         "Special4Value": 0,
-        "SpoilageFrom": 0,
-        "UsageFrom": 0,
-        "FuelFrom": 0,
-        "ProgressFrom": 0,
-        "Special1From": 0,
-        "Special2From": 0,
-        "Special3From": 0,
-        "Special4From": 0
+        "SpoilageFrom": 1,
+        "UsageFrom": 1,
+        "FuelFrom": 1,
+        "ProgressFrom": 1,
+        "Special1From": 1,
+        "Special2From": 1,
+        "Special3From": 1,
+        "Special4From": 1
       },
       "DropChance": {
         "Active": false,
@@ -2925,7 +2937,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

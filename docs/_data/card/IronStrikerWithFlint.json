@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "火镰",
   "en": "Iron Striker",
-  "ja": "Iron Striker",
-  "UniqueIDIndex": 1556,
+  "ja": "鉄製ストライカー",
+  "UniqueIDIndex": 1598,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -66,7 +66,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -80,7 +80,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -106,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -120,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -131,7 +131,7 @@
       "text": "“美丽的/好看的”",
       "icon": "",
       "type": "tag",
-      "count": 25,
+      "count": 26,
       "zh": "美丽的/好看的",
       "en": "Pretty",
       "ja": "綺麗",
@@ -187,6 +187,20 @@
         "OverrideIcon": null,
         "MaxValue": 96
       },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Flint",
+          "Text": "燧石",
+          "zh": "燧石",
+          "en": "Flint",
+          "ja": "Flint"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 50
+      },
       "SpecialDurability2": {
         "Active": true,
         "CardStatName": {
@@ -194,7 +208,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -208,7 +222,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -222,7 +236,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -234,7 +248,7 @@
     "Text": "火镰",
     "zh": "火镰",
     "en": "Iron Striker",
-    "ja": "Iron Striker"
+    "ja": "鉄製ストライカー"
   },
   "CardImage": {
     "FileName": "FireStriker_Iron_Flint"
@@ -545,6 +559,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -792,7 +810,7 @@
           "CardType": 0,
           "zh": "火镰",
           "en": "Iron Striker",
-          "ja": "Iron Striker",
+          "ja": "鉄製ストライカー",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1036,14 +1054,14 @@
           "CardType": 0,
           "zh": "火镰",
           "en": "Iron Striker",
-          "ja": "Iron Striker"
+          "ja": "鉄製ストライカー"
         },
         "localization": {
           "DefaultText": "Light Tinder",
           "Text": "点燃火绒",
           "zh": "点燃火绒",
           "en": "Light Tinder",
-          "ja": "Light Tinder"
+          "ja": "火口に火をつける"
         },
         "value": {
           "x": -2,
@@ -1058,14 +1076,14 @@
           "CardType": 0,
           "zh": "火镰",
           "en": "Iron Striker",
-          "ja": "Iron Striker"
+          "ja": "鉄製ストライカー"
         },
         "localization": {
           "DefaultText": "Light Tinder",
           "Text": "点燃火绒",
           "zh": "点燃火绒",
           "en": "Light Tinder",
-          "ja": "Light Tinder"
+          "ja": "火口に火をつける"
         },
         "value": {
           "x": -2,
@@ -1176,7 +1194,7 @@
         "Text": "点燃火绒",
         "zh": "点燃火绒",
         "en": "Light Tinder",
-        "ja": "Light Tinder"
+        "ja": "火口に火をつける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1211,6 +1229,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2131,7 +2153,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -2157,7 +2179,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2218,7 +2240,7 @@
         "Text": "点燃火绒",
         "zh": "点燃火绒",
         "en": "Light Tinder",
-        "ja": "Light Tinder"
+        "ja": "火口に火をつける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2253,6 +2275,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2913,7 +2939,7 @@
           "CardType": 0,
           "zh": "点燃的多孔菌",
           "en": "Lit Bracket Fungus",
-          "ja": "Lit Bracket Fungus",
+          "ja": "着火したサルノコシカケ",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -3171,7 +3197,7 @@
             "CardType": 0,
             "zh": "干多孔菌",
             "en": "Dried Bracket Fungus",
-            "ja": "Dried Bracket Fungus",
+            "ja": "乾燥したサルノコシカケ",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -3179,7 +3205,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -3231,7 +3257,7 @@
                 "Text": "烤焦的",
                 "zh": "烤焦的",
                 "en": "Burned",
-                "ja": "Burned"
+                "ja": "焦げた"
               },
               "OverrideIcon": {
                 "FileName": "Flame"
@@ -3760,7 +3786,7 @@
     "Text": "一种生火装置。用它点燃火绒。",
     "zh": "一种生火装置。用它点燃火绒。",
     "en": "A fire starting device. Use it on tinder.",
-    "ja": "A fire starting device. Use it on tinder."
+    "ja": "火起こし用の器具。焚き付けに使用する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -3792,6 +3818,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3977,8 +4007,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4113,7 +4151,7 @@
         "Text": "拿出燧石",
         "zh": "拿出燧石",
         "en": "Take out Flint",
-        "ja": "Take out Flint"
+        "ja": "火打ち石を取り出す"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4148,6 +4186,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4657,6 +4699,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4747,7 +4790,7 @@
           "CardType": 0,
           "zh": "火镰",
           "en": "Iron Striker",
-          "ja": "Iron Striker",
+          "ja": "鉄製ストライカー",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {

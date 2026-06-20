@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "新鲜荨麻茎",
   "en": "Fresh Nettle Stems",
-  "ja": "Fresh Nettle Stems",
-  "UniqueIDIndex": 1876,
+  "ja": "新鮮なイラクサの茎",
+  "UniqueIDIndex": 1932,
   "CardType": 0,
   "CardTags": [
     {
@@ -158,7 +158,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -172,7 +172,71 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 40
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      }
+    },
+    {
+      "key": "tag_BrickBinder",
+      "text": "“抗裂剂”",
+      "icon": "",
+      "type": "tag",
+      "count": 10,
+      "zh": "抗裂剂",
+      "en": "Temper",
+      "ja": "Temper",
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Wetness",
+          "Text": "湿度",
+          "zh": "湿度",
+          "en": "Wetness",
+          "ja": "水分量"
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 40
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Nutrition",
+          "Text": "营养",
+          "zh": "营养",
+          "en": "Nutrition",
+          "ja": "栄養"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -316,7 +380,7 @@
     "Text": "新鲜荨麻茎",
     "zh": "新鲜荨麻茎",
     "en": "Fresh Nettle Stems",
-    "ja": "Fresh Nettle Stems"
+    "ja": "新鮮なイラクサの茎"
   },
   "CardImage": {
     "FileName": "Nettle_Stems"
@@ -492,6 +556,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -739,7 +807,7 @@
           "CardType": 0,
           "zh": "干荨麻茎",
           "en": "Dried Nettle Stems",
-          "ja": "Dried Nettle Stems",
+          "ja": "乾燥したイラクサの茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -785,7 +853,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -813,7 +881,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -827,7 +895,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -987,12 +1055,12 @@
           "CardType": 0,
           "zh": "陶盆",
           "en": "Clay Basin",
-          "ja": "Clay Basin"
+          "ja": "粘土のたらい"
         },
         "localization": {
           "zh": "转化：浸泡荨麻",
           "en": "Action: Soak Nettles",
-          "ja": "アクション：Soak Nettles"
+          "ja": "アクション：イラクサを浸す"
         },
         "value": {
           "x": 1,
@@ -1007,7 +1075,7 @@
           "CardType": 0,
           "zh": "新鲜荨麻茎",
           "en": "Fresh Nettle Stems",
-          "ja": "Fresh Nettle Stems",
+          "ja": "新鮮なイラクサの茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1093,7 +1161,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -1174,8 +1242,8 @@
       },
       "ActionDescription": {
         "DefaultText": "Nettle has taken.",
-        "Text": "Nettle has taken.",
-        "zh": "Nettle has taken.",
+        "Text": "荨麻已扎根。",
+        "zh": "荨麻已扎根。",
         "en": "Nettle has taken.",
         "ja": "Nettle has taken."
       },
@@ -1205,6 +1273,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1414,7 +1486,7 @@
             "type": "stat",
             "zh": "药草学",
             "en": "Herbalism",
-            "ja": "Herbalism",
+            "ja": "薬草学",
             "max": 150,
             "min": 0
           },
@@ -2087,12 +2159,12 @@
           "CardType": 0,
           "zh": "陶盆",
           "en": "Clay Basin",
-          "ja": "Clay Basin"
+          "ja": "粘土のたらい"
         },
         "localization": {
           "zh": "转化：浸泡荨麻",
           "en": "Action: Soak Nettles",
-          "ja": "アクション：Soak Nettles"
+          "ja": "アクション：イラクサを浸す"
         },
         "value": {
           "x": -0.5,
@@ -2389,7 +2461,7 @@
           "CardType": 0,
           "zh": "新鲜荨麻茎",
           "en": "Fresh Nettle Stems",
-          "ja": "Fresh Nettle Stems",
+          "ja": "新鮮なイラクサの茎",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2475,7 +2547,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -2631,7 +2703,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -1,
@@ -2763,7 +2835,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -0.5,
@@ -2897,7 +2969,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -1,
@@ -3031,7 +3103,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -0.5,
@@ -3046,14 +3118,14 @@
           "CardType": 0,
           "zh": "新鲜荨麻茎",
           "en": "Fresh Nettle Stems",
-          "ja": "Fresh Nettle Stems"
+          "ja": "新鮮なイラクサの茎"
         },
         "localization": {
           "DefaultText": "Grind",
           "Text": "研磨",
           "zh": "研磨",
           "en": "Grind",
-          "ja": "Grind"
+          "ja": "粉砕"
         },
         "value": {
           "x": 25,
@@ -3070,7 +3142,7 @@
       "Text": "研磨",
       "zh": "研磨",
       "en": "Mill",
-      "ja": "Mill"
+      "ja": "製粉"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -3143,6 +3215,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3390,7 +3466,7 @@
           "CardType": 0,
           "zh": "荨麻泥",
           "en": "Nettle Mash",
-          "ja": "Nettle Mash",
+          "ja": "イラクサのすり潰し",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -4446,7 +4522,7 @@
         "Text": "研磨",
         "zh": "研磨",
         "en": "Grind",
-        "ja": "Grind"
+        "ja": "粉砕"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4481,6 +4557,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "GrindingLeaves"
@@ -4492,7 +4572,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -4500,7 +4580,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -4514,7 +4594,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -4528,7 +4608,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -4542,7 +4622,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4831,7 +4911,7 @@
             "type": "stat",
             "zh": "药草学",
             "en": "Herbalism",
-            "ja": "Herbalism",
+            "ja": "薬草学",
             "max": 150,
             "min": 0
           },
@@ -5092,7 +5172,7 @@
           "CardType": 0,
           "zh": "荨麻泥",
           "en": "Nettle Mash",
-          "ja": "Nettle Mash",
+          "ja": "イラクサのすり潰し",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -5651,7 +5731,7 @@
             "CardType": 0,
             "zh": "石臼和石杵",
             "en": "Stone Mortar and Pestle",
-            "ja": "Stone Mortar and Pestle",
+            "ja": "石の乳鉢と乳棒",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -5758,7 +5838,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -5769,7 +5849,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -5797,7 +5877,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -5809,7 +5889,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5847,7 +5927,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5861,7 +5941,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -6363,7 +6443,7 @@
     "Text": "<b>产地：</b>橡树区域的河岸和林隙。\\n\\n<b>需求：</b>低酸度、中等湿度、中高养分。\\n\\n<b>用途：</b>纺织。",
     "zh": "<b>产地：</b>橡树区域的河岸和林隙。\\n\\n<b>需求：</b>低酸度、中等湿度、中高养分。\\n\\n<b>用途：</b>纺织。",
     "en": "<b>Found:</b> Oaken Clearings and Oaken River Banks.\\n\\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\\n\\n<b>Benefits:</b> Textiles.",
-    "ja": "<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\n\n<b>Benefits:</b> Textiles."
+    "ja": "<b>生育地：</b>オークの空き地とオークの川辺。\\n\\n<b>生育条件：</b>低い酸性度、中程度の水分量、中〜高程度の栄養度を必要とする。\\n\\n<b>効果：</b>織物素材。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 100,
@@ -6379,6 +6459,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -6661,7 +6745,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -6859,8 +6946,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -7030,6 +7125,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -7037,7 +7136,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -7045,7 +7144,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -7059,7 +7158,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -7073,7 +7172,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -7087,7 +7186,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -7205,7 +7304,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "水分量"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -7219,7 +7318,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -7233,7 +7332,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -7247,7 +7346,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -7261,7 +7360,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -7275,7 +7374,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -7788,6 +7887,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -7951,7 +8051,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -8312,6 +8412,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -8319,7 +8423,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -8327,7 +8431,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -8341,7 +8445,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -8355,7 +8459,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -8369,7 +8473,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -8956,6 +9060,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -9156,7 +9261,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -9649,7 +9754,7 @@
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     },
     {
@@ -9699,11 +9804,203 @@
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     }
   ],
   "_useFor": [
+    {
+      "link": {
+        "key": "Bp_ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayBowl",
+        "icon": "Bowl_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶碗",
+        "en": "Clay Bowl",
+        "ja": "粘土のボウル"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayCauldron",
+        "icon": "Cauldron_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "粘土大锅",
+        "en": "Clay Cauldron",
+        "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayJar",
+        "icon": "Jar_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "小陶罐",
+        "en": "Clay Jar",
+        "ja": "粘土の瓶"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayPotCooler",
+        "icon": "",
+        "type": "card",
+        "CardType": 7,
+        "zh": "Clay Pot Cooler",
+        "en": "Clay Pot Cooler",
+        "ja": "Clay Pot Cooler"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayStoragePot",
+        "icon": "StoragePot_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "储物罐",
+        "en": "Storage Pot",
+        "ja": "収納ポット"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayVase",
+        "icon": "Vase_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "陶罐",
+        "en": "Clay Vase",
+        "ja": "粘土の壺"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CookingPot",
+        "icon": "CookingPot_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "烹饪锅",
+        "en": "Cooking Pot",
+        "ja": "料理ポット"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CrucibleLarge",
+        "icon": "CrucibleLarge",
+        "type": "card",
+        "CardType": 7,
+        "zh": "大型坩埚",
+        "en": "Large Crucible",
+        "ja": "大型るつぼ"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_CrucibleSmall",
+        "icon": "Crucible",
+        "type": "card",
+        "CardType": 7,
+        "zh": "小型坩埚",
+        "en": "Small Crucible",
+        "ja": "小型るつぼ"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_GlazedVase",
+        "icon": "",
+        "type": "card",
+        "CardType": 7,
+        "zh": "Glazed Vase",
+        "en": "Glazed Vase",
+        "ja": "Glazed Vase"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
     {
       "link": {
         "key": "Bp_MudBricks",
@@ -9760,12 +10057,12 @@
         "CardType": 0,
         "zh": "小牛",
         "en": "Calf",
-        "ja": "Calf"
+        "ja": "子牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -9776,12 +10073,12 @@
         "CardType": 0,
         "zh": "牛",
         "en": "Cow",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -9792,21 +10089,21 @@
         "CardType": 0,
         "zh": "公牛",
         "en": "Bull",
-        "ja": "Bull"
+        "ja": "オス牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -9824,7 +10121,7 @@
         "CardType": 10,
         "zh": "冰窖",
         "en": "Ice Pit",
-        "ja": "Ice Pit"
+        "ja": "氷穴"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -9846,22 +10143,6 @@
         "zh": "动作：治疗植物",
         "en": "Action: Heal Plant",
         "ja": "アクション：植物を回復する"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：泡荨麻茎",
-        "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
       }
     },
     {
@@ -9934,7 +10215,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -9949,7 +10230,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -10075,7 +10356,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -10090,7 +10371,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -10098,7 +10379,7 @@
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     },
     {
@@ -10123,7 +10404,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -10138,7 +10419,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -10146,7 +10427,7 @@
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     },
     {
@@ -10247,18 +10528,34 @@
     },
     {
       "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：泡荨麻茎",
+        "en": "Action: Soak Nettle Stems",
+        "ja": "アクション：Soak Nettle Stems"
+      }
+    },
+    {
+      "link": {
         "key": "StreamQEE",
         "icon": "RiverShore",
         "type": "card",
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：泡荨麻茎",
         "en": "Action: Soak Nettle Stems",
-        "ja": "アクション：Soak Nettle Stems"
+        "ja": "アクション：イラクサの茎を浸す"
       }
     }
   ],

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "铸造宽头箭头",
   "en": "Cast Broadhead Arrows",
-  "ja": "Cast Broadhead Arrows",
-  "UniqueIDIndex": 327,
+  "ja": "鋳造幅広矢",
+  "UniqueIDIndex": 333,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "铸造宽头箭头",
     "zh": "铸造宽头箭头",
     "en": "Cast Broadhead Arrows",
-    "ja": "Cast Broadhead Arrows"
+    "ja": "鋳造幅広矢"
   },
   "CardImage": {
     "FileName": "CastingMold"
@@ -691,7 +691,7 @@
     "Text": "需要更高的箭术技能。",
     "zh": "需要更高的箭术技能。",
     "en": "More Archery Needed",
-    "ja": "More Archery Needed"
+    "ja": "弓術のスキルが足りない"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -879,7 +879,7 @@
     "Text": "金属箭头。",
     "zh": "金属箭头。",
     "en": "Metal arrow heads.",
-    "ja": "Metal arrow heads."
+    "ja": "金属製の矢じり。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1142,7 +1146,7 @@
             "CardType": 0,
             "zh": "小型熔融坩埚",
             "en": "Small Molten Crucible",
-            "ja": "Small Molten Crucible",
+            "ja": "小型の溶融るつぼ",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1156,7 +1160,7 @@
                   "Text": "熔融铜",
                   "zh": "熔融铜",
                   "en": "Molten Copper",
-                  "ja": "Molten Copper"
+                  "ja": "溶融した銅"
                 }
               },
               {
@@ -1171,7 +1175,7 @@
                   "Text": "熔融鬼铜",
                   "zh": "熔融鬼铜",
                   "en": "Molten Ghost Bronze",
-                  "ja": "Molten Ghost Bronze"
+                  "ja": "溶融したゴーストブロンズ"
                 }
               },
               {
@@ -1186,7 +1190,7 @@
                   "Text": "熔融锡",
                   "zh": "熔融锡",
                   "en": "Molten Tin",
-                  "ja": "Molten Tin"
+                  "ja": "溶けたスズ"
                 }
               },
               {
@@ -1201,7 +1205,7 @@
                   "Text": "熔融青铜",
                   "zh": "熔融青铜",
                   "en": "Molten Tin Bronze",
-                  "ja": "Molten Tin Bronze"
+                  "ja": "溶けたスズ青銅"
                 }
               },
               {
@@ -1216,7 +1220,7 @@
                   "Text": "熔融白铜",
                   "zh": "熔融白铜",
                   "en": "Molten White Bronze",
-                  "ja": "Molten White Bronze"
+                  "ja": "溶けた白青銅"
                 }
               }
             ],
@@ -1265,7 +1269,7 @@
                 "Text": "熔炼",
                 "zh": "熔炼",
                 "en": "Smelted",
-                "ja": "Smelted"
+                "ja": "精錬済み"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1291,7 +1295,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1305,7 +1309,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1319,7 +1323,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1390,7 +1394,7 @@
               "CardType": 0,
               "zh": "小型空坩埚",
               "en": "Small Empty Crucible",
-              "ja": "Small Empty Crucible",
+              "ja": "空の小型るつぼ",
               "SpoilageTime": {
                 "Active": false,
                 "CardStatName": {
@@ -1959,7 +1963,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1973,7 +1977,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2169,14 +2173,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2184,7 +2196,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2198,7 +2210,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2212,7 +2224,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2226,7 +2238,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2301,7 +2313,7 @@
         "CardType": 0,
         "zh": "金属宽头箭头模具",
         "en": "Metal Broadhead Arrows Mold",
-        "ja": "Metal Broadhead Arrows Mold",
+        "ja": "金属製幅広矢の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -2315,7 +2327,7 @@
               "Text": "铜宽头箭头模具",
               "zh": "铜宽头箭头模具",
               "en": "Copper Broadhead Arrows Mold",
-              "ja": "Copper Broadhead Arrows Mold"
+              "ja": "銅製幅広矢の鋳型"
             }
           },
           {
@@ -2330,7 +2342,7 @@
               "Text": "鬼铜宽头箭头模具",
               "zh": "鬼铜宽头箭头模具",
               "en": "Ghost Bronze Broadhead Arrows Mold",
-              "ja": "Ghost Bronze Broadhead Arrows Mold"
+              "ja": "ゴーストブロンズ製幅広矢の鋳型"
             }
           },
           {
@@ -2345,7 +2357,7 @@
               "Text": "锡宽头箭头模具",
               "zh": "锡宽头箭头模具",
               "en": "Tin Broadhead Arrows Mold",
-              "ja": "Tin Broadhead Arrows Mold"
+              "ja": "スズの幅広矢先矢型"
             }
           },
           {
@@ -2360,7 +2372,7 @@
               "Text": "青铜宽头箭头模具",
               "zh": "青铜宽头箭头模具",
               "en": "Tin Bronze Broadhead Arrows Mold",
-              "ja": "Tin Bronze Broadhead Arrows Mold"
+              "ja": "スズ青銅の幅広矢先矢型"
             }
           },
           {
@@ -2375,7 +2387,7 @@
               "Text": "白铜宽头箭头模具",
               "zh": "白铜宽头箭头模具",
               "en": "White Bronze Broadhead Arrows Mold",
-              "ja": "White Bronze Broadhead Arrows Mold"
+              "ja": "白青銅の幅広矢先矢型"
             }
           }
         ],
@@ -2454,7 +2466,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2468,7 +2480,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2482,7 +2494,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -2545,7 +2557,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },
@@ -2573,7 +2585,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },

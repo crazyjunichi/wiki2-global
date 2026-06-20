@@ -7,7 +7,7 @@
   "zh": "火亲和度",
   "en": "Fire Affinity",
   "ja": "炎の親和性",
-  "UniqueIDIndex": 3317,
+  "UniqueIDIndex": 3422,
   "GameName": {
     "DefaultText": "Fire Affinity",
     "Text": "火亲和度",
@@ -20,7 +20,7 @@
     "Text": "你与火精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与火精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of fire.\\n\\nStart fires, feed them and gaze into their flames to increase it.",
-    "ja": "How much in common you have with the spirit of fire.\n\nStart fires, feed them and gaze into their flames to increase it."
+    "ja": "火の精霊との共鳴の深さ。\\n\\n火を起こし、燃料を足し、その炎を見つめることで高まる。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -102,6 +102,48 @@
   "StatusDebugMode": false,
   "Transfers": [],
   "_modifierValueList": [
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
     {
       "link": {
         "key": "Bloomery",
@@ -194,7 +236,7 @@
         "CardType": 7,
         "zh": "呼唤火精魄(呼唤)",
         "en": "Fire Spirit Calling",
-        "ja": "Fire Spirit Calling"
+        "ja": "火の精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -584,12 +626,12 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：取暖",
         "en": "Action: Warm Up",
-        "ja": "アクション：Warm Up"
+        "ja": "アクション：温める"
       },
       "value": {
         "x": 2,
@@ -605,12 +647,12 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：在火边等待",
         "en": "Action: Wait by Fire",
-        "ja": "アクション：Wait by Fire"
+        "ja": "アクション：火のそばで待つ"
       },
       "value": {
         "x": 2,
@@ -757,7 +799,7 @@
       "localization": {
         "zh": "动作：取暖",
         "en": "Action: Warm Up",
-        "ja": "アクション：Warm Up"
+        "ja": "アクション：温める"
       },
       "value": {
         "x": 2,
@@ -778,7 +820,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -1072,7 +1114,7 @@
       "localization": {
         "zh": "动作：取暖",
         "en": "Action: Warm Up",
-        "ja": "アクション：Warm Up"
+        "ja": "アクション：温める"
       },
       "value": {
         "x": 2,
@@ -1108,12 +1150,12 @@
         "CardType": 2,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：取暖",
         "en": "Action: Warm Up",
-        "ja": "アクション：Warm Up"
+        "ja": "アクション：温める"
       },
       "value": {
         "x": 2,
@@ -1129,12 +1171,12 @@
         "CardType": 2,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：在火边等待",
         "en": "Action: Wait by Fire",
-        "ja": "アクション：Wait by Fire"
+        "ja": "アクション：火のそばで待つ"
       },
       "value": {
         "x": 2,
@@ -1150,14 +1192,14 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "DefaultText": "Light Fire",
         "Text": "点燃",
         "zh": "点燃",
         "en": "Light Fire",
-        "ja": "Light Fire"
+        "ja": "火をつける"
       },
       "value": {
         "x": 10,
@@ -1173,14 +1215,14 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "DefaultText": "Light Fire",
         "Text": "点燃",
         "zh": "点燃",
         "en": "Light Fire",
-        "ja": "Light Fire"
+        "ja": "火をつける"
       },
       "value": {
         "x": 10,
@@ -1285,7 +1327,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -1301,12 +1343,12 @@
         "CardType": 2,
         "zh": "霜冻祭坛",
         "en": "Frost Shrine",
-        "ja": "Frost Shrine"
+        "ja": "氷霜の祠"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -1336,6 +1378,48 @@
     }
   ],
   "_modifierRateList": [
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
     {
       "link": {
         "key": "SpiritShrine_Fire_RitualPyre",
@@ -1531,7 +1615,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,
@@ -1551,7 +1635,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,

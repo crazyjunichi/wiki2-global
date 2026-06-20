@@ -7,15 +7,15 @@
   "zh": "Levee",
   "en": "Levee",
   "ja": "Levee",
-  "UniqueIDIndex": 1601,
+  "UniqueIDIndex": 1643,
   "CardType": 13,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -228,6 +228,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -618,7 +622,7 @@
           "Text": "修复",
           "zh": "修复",
           "en": "Repair",
-          "ja": "Repair"
+          "ja": "修理"
         },
         "value": {
           "x": 576,
@@ -952,7 +956,7 @@
         "Text": "修复",
         "zh": "修复",
         "en": "Repair",
-        "ja": "Repair"
+        "ja": "修理"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -987,6 +991,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -994,7 +1002,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1002,7 +1010,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1016,7 +1024,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1030,7 +1038,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1044,7 +1052,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1119,7 +1127,7 @@
               "Text": "饱满度",
               "zh": "饱满度",
               "en": "Yield",
-              "ja": "Yield"
+              "ja": "収穫量"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -1147,7 +1155,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -2652,7 +2660,7 @@
     "Text": "用于抵御洪水的加高屏障。",
     "zh": "用于抵御洪水的加高屏障。",
     "en": "A raised barrier meant to protect against floods.",
-    "ja": "A raised barrier meant to protect against floods."
+    "ja": "洪水から守るための高い防壁。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -2684,6 +2692,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2966,7 +2978,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3202,8 +3217,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3593,7 +3616,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes"
+        "ja": "ヒースの沼"
       },
       "localization": {
         "zh": "状态触发",
@@ -3609,7 +3632,7 @@
         "CardType": 8,
         "zh": "北部湖岸",
         "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank"
+        "ja": "北の湖畔"
       },
       "localization": {
         "zh": "状态触发",
@@ -3673,7 +3696,7 @@
         "CardType": 8,
         "zh": "湖心岛",
         "en": "Lake Island",
-        "ja": "Lake Island"
+        "ja": "湖島"
       },
       "localization": {
         "zh": "状态触发",
@@ -3705,7 +3728,7 @@
         "CardType": 8,
         "zh": "河道隘口",
         "en": "River Pass",
-        "ja": "River Pass"
+        "ja": "川の渡り場"
       },
       "localization": {
         "zh": "状态触发",
@@ -3737,7 +3760,7 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank"
+        "ja": "南の湖岸"
       },
       "localization": {
         "zh": "状态触发",
@@ -3803,7 +3826,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3819,7 +3842,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3915,7 +3938,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -4107,7 +4130,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes"
+        "ja": "ヒースの沼"
       },
       "localization": {
         "zh": "状态触发",
@@ -4123,7 +4146,7 @@
         "CardType": 8,
         "zh": "北部湖岸",
         "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank"
+        "ja": "北の湖畔"
       },
       "localization": {
         "zh": "状态触发",
@@ -4187,7 +4210,7 @@
         "CardType": 8,
         "zh": "湖心岛",
         "en": "Lake Island",
-        "ja": "Lake Island"
+        "ja": "湖島"
       },
       "localization": {
         "zh": "状态触发",
@@ -4219,7 +4242,7 @@
         "CardType": 8,
         "zh": "河道隘口",
         "en": "River Pass",
-        "ja": "River Pass"
+        "ja": "川の渡り場"
       },
       "localization": {
         "zh": "状态触发",
@@ -4251,7 +4274,7 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank"
+        "ja": "南の湖岸"
       },
       "localization": {
         "zh": "状态触发",
@@ -4316,7 +4339,7 @@
       "CardType": 4,
       "zh": "石南沼泽",
       "en": "Heather Marshes",
-      "ja": "Heather Marshes",
+      "ja": "ヒースの沼",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4420,7 +4443,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes",
+        "ja": "ヒースの沼",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -4480,7 +4503,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -4494,7 +4517,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -4508,7 +4531,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -4536,7 +4559,7 @@
       "CardType": 4,
       "zh": "湖心岛",
       "en": "Lake Island",
-      "ja": "Lake Island",
+      "ja": "湖島",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4640,7 +4663,7 @@
         "CardType": 8,
         "zh": "湖心岛",
         "en": "Lake Island",
-        "ja": "Lake Island",
+        "ja": "湖島",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -4698,7 +4721,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -4712,7 +4735,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -4726,7 +4749,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -4754,7 +4777,7 @@
       "CardType": 4,
       "zh": "北部湖岸",
       "en": "Northern Lake Bank",
-      "ja": "Northern Lake Bank",
+      "ja": "北の湖畔",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -4858,7 +4881,7 @@
         "CardType": 8,
         "zh": "北部湖岸",
         "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank",
+        "ja": "北の湖畔",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -4916,7 +4939,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -4930,7 +4953,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -4944,7 +4967,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -4958,7 +4981,7 @@
             "Text": "丰饶度",
             "zh": "丰饶度",
             "en": "Fertility",
-            "ja": "Fertility"
+            "ja": "繁殖力"
           },
           "OverrideIcon": null,
           "MaxValue": 5760
@@ -5190,7 +5213,7 @@
       "CardType": 4,
       "zh": "河道隘口",
       "en": "River Pass",
-      "ja": "River Pass",
+      "ja": "川の渡り場",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -5294,7 +5317,7 @@
         "CardType": 8,
         "zh": "河道隘口",
         "en": "River Pass",
-        "ja": "River Pass",
+        "ja": "川の渡り場",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -5352,7 +5375,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -5366,7 +5389,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -5380,7 +5403,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -5626,7 +5649,7 @@
       "CardType": 4,
       "zh": "南部湖岸",
       "en": "Southern Lake Bank",
-      "ja": "Southern Lake Bank",
+      "ja": "南の湖岸",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -5730,7 +5753,7 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank",
+        "ja": "南の湖岸",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -5788,7 +5811,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -5802,7 +5825,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -5816,7 +5839,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

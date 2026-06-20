@@ -6,21 +6,21 @@
   "type": "stat",
   "zh": "运不了那么重",
   "en": "Can't haul so much",
-  "ja": "Can't haul so much",
-  "UniqueIDIndex": 3163,
+  "ja": "これ以上運べない",
+  "UniqueIDIndex": 3271,
   "GameName": {
     "DefaultText": "Can't haul so much",
     "Text": "运不了那么重",
     "zh": "运不了那么重",
     "en": "Can't haul so much",
-    "ja": "Can't haul so much"
+    "ja": "これ以上運べない"
   },
   "Description": {
     "DefaultText": "Prevents movement actions if you are holding more than 1 large cart.",
     "Text": "如果您携带超过 1 个旧式雪橇，则会阻止移动。",
     "zh": "如果您携带超过 1 个旧式雪橇，则会阻止移动。",
     "en": "Prevents movement actions if you are holding more than 1 large cart.",
-    "ja": "Prevents movement actions if you are holding more than 1 large cart."
+    "ja": "大型カートを複数所持していると移動行動が制限される。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -83,7 +83,7 @@
         "Text": "你运不了那么重。",
         "zh": "你运不了那么重。",
         "en": "You cannot haul so much.",
-        "ja": "You cannot haul so much."
+        "ja": "これ以上運ぶことはできない。"
       },
       "Description": {
         "DefaultText": "",
@@ -301,7 +301,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AppliesTo": [
             {
@@ -316,7 +319,7 @@
                   "Text": "饱满度",
                   "zh": "饱满度",
                   "en": "Yield",
-                  "ja": "Yield"
+                  "ja": "収穫量"
                 },
                 "OverrideIcon": {
                   "FileName": "SaturationBerries"
@@ -344,7 +347,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -465,7 +468,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -479,7 +482,7 @@
                   "Text": "树林",
                   "zh": "树林",
                   "en": "Trees",
-                  "ja": "Trees"
+                  "ja": "木"
                 },
                 "OverrideIcon": {
                   "FileName": "Tree1"
@@ -493,7 +496,7 @@
                   "Text": "过度生长",
                   "zh": "过度生长",
                   "en": "Overgrowth",
-                  "ja": "Overgrowth"
+                  "ja": "草木の繁茂 "
                 },
                 "OverrideIcon": {
                   "FileName": "Overgrowth"
@@ -507,7 +510,7 @@
                   "Text": "觅食",
                   "zh": "觅食",
                   "en": "Foraging",
-                  "ja": "Foraging"
+                  "ja": "資源集め"
                 },
                 "OverrideIcon": {
                   "FileName": "SaturationBerries"
@@ -557,7 +560,7 @@
             "Text": "你运不了那么重。",
             "zh": "你运不了那么重。",
             "en": "You cannot haul so much.",
-            "ja": "You cannot haul so much."
+            "ja": "これ以上運ぶことはできない。"
           },
           "DurationModifier": 2,
           "AddedStatModifiers": [],
@@ -711,7 +714,7 @@
     "Text": "腿的状态不能攀爬。",
     "zh": "腿的状态不能攀爬。",
     "en": "My Leg is not in shape for this action.",
-    "ja": "My Leg is not in shape for this action."
+    "ja": "脚の状態が悪く、この行動はできない。"
   },
   "TooMuchText": {
     "DefaultText": "",
@@ -731,7 +734,7 @@
         "CardType": 0,
         "zh": "雪橇",
         "en": "Sledge",
-        "ja": "Sledge"
+        "ja": "ソリ"
       },
       "localization": {
         "zh": "被动效果：Can't haul so much",
@@ -752,6 +755,26 @@
         "zh": "旧式雪橇",
         "en": "Travois",
         "ja": "そり"
+      },
+      "localization": {
+        "zh": "被动效果：移动惩罚",
+        "en": "Passive Effect：Movement Penalty",
+        "ja": "パッシブ効果：移動ペナルティ"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "Wheelbarrow",
+        "icon": "Wheelbarrow",
+        "type": "card",
+        "CardType": 0,
+        "zh": "手推车",
+        "en": "Wheelbarrow",
+        "ja": "Wheelbarrow"
       },
       "localization": {
         "zh": "被动效果：移动惩罚",

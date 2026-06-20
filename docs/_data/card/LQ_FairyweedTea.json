@@ -1,12 +1,13 @@
 {
   "m_Name": "LQ_FairyweedTea",
   "key": "LQ_FairyweedTea",
+  "exportName": "LQ_FairyweedTea",
   "icon": "",
   "type": "card",
   "zh": "仙灵茶",
   "en": "Fairy Tea",
   "ja": "妖精茶",
-  "UniqueIDIndex": 1546,
+  "UniqueIDIndex": 1677,
   "CardType": 9,
   "CardTags": [
     {
@@ -14,7 +15,7 @@
       "text": "“可加热的”",
       "icon": "",
       "type": "tag",
-      "count": 314,
+      "count": 338,
       "zh": "可加热的",
       "en": "Heatable",
       "ja": "熱しても良い",
@@ -132,7 +133,7 @@
       "text": "“Quality”",
       "icon": "",
       "type": "tag",
-      "count": 242,
+      "count": 255,
       "zh": "含品质的",
       "en": "Quality",
       "ja": "Quality",
@@ -341,6 +342,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -688,6 +693,7 @@
             "MaxValue": 0
           }
         },
+        "TransformToLiquidQuantity": 0,
         "TransferSpoilage": false,
         "TransferUsage": false,
         "TransferFuel": false,
@@ -830,7 +836,7 @@
         "localization": {
           "zh": "动作：饮用",
           "en": "Action: Drink",
-          "ja": "アクション：飲む"
+          "ja": "アクション：Drink"
         },
         "value": {
           "x": -250,
@@ -889,16 +895,18 @@
             "MaxValue": 200
           },
           "Progress": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "Thickness"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
           },
           "SpecialDurability1": {
             "Active": false,
@@ -1012,16 +1020,18 @@
             "MaxValue": 200
           },
           "Progress": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "Thickness"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
           },
           "SpecialDurability1": {
             "Active": false,
@@ -1135,16 +1145,18 @@
             "MaxValue": 200
           },
           "Progress": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "Thickness"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
           },
           "SpecialDurability1": {
             "Active": false,
@@ -1322,6 +1334,26 @@
       },
       {
         "link": {
+          "key": "FirePit",
+          "icon": "Firepit_On",
+          "type": "card",
+          "CardType": 2,
+          "zh": "火坑",
+          "en": "Fire Pit",
+          "ja": "Fire Pit"
+        },
+        "localization": {
+          "zh": "转化：加热烹饪容器、水容器及可加热物品",
+          "en": "Action: Heat up Cooking and Water Containers and Heatables",
+          "ja": "アクション：調理容器、水容器、および加熱可能なものを加熱する"
+        },
+        "value": {
+          "x": 200,
+          "y": 200
+        }
+      },
+      {
+        "link": {
           "key": "Fireplace",
           "icon": "Fireplace_On",
           "type": "card",
@@ -1353,7 +1385,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1373,7 +1405,7 @@
         "localization": {
           "zh": "转化：加热可加热物品",
           "en": "Action: Heats up Heatables",
-          "ja": "アクション：Heats up Heatables"
+          "ja": "アクション：加熱可能なものを加熱する"
         },
         "value": {
           "x": 200,
@@ -1430,16 +1462,18 @@
             "MaxValue": 200
           },
           "Progress": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "Progress",
-              "zh": "进度",
-              "en": "Progress",
-              "ja": ""
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "Thickness"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
           },
           "SpecialDurability1": {
             "Active": false,
@@ -1700,17 +1734,17 @@
     ]
   },
   "Progress": {
-    "Active": false,
+    "Active": true,
     "FloatValue": 0,
     "CardStatName": {
-      "DefaultText": "",
-      "Text": "Progress",
-      "zh": "进度",
-      "en": "Progress",
-      "ja": ""
+      "DefaultText": "Thickness",
+      "Text": "浓稠度",
+      "zh": "浓稠度",
+      "en": "Thickness",
+      "ja": "Thickness"
     },
     "RandomStartingOffset": 0,
-    "MaxValue": 0,
+    "MaxValue": 100,
     "RestrictToSpecificValues": false,
     "ValidValues": [],
     "RatePerDaytimePoint": 0,
@@ -1725,10 +1759,12 @@
       "Active": false,
       "FloatValue": 0
     },
-    "HidingOptions": 0,
+    "HidingOptions": 3,
     "TextDisplay": 0,
     "NumberPrecision": 0,
-    "OverrideIcon": null,
+    "OverrideIcon": {
+      "FileName": "SaturationCauldron"
+    },
     "SortInverted": false,
     "ResetWhenLoadedAtZero": false,
     "HasActionOnZero": false,
@@ -2432,6 +2468,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2554,7 +2594,7 @@
                 "Text": "防水",
                 "zh": "防水",
                 "en": "Waterproofing",
-                "ja": "Waterproofing"
+                "ja": "防水性"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -2568,7 +2608,7 @@
                 "Text": "温度",
                 "zh": "温度",
                 "en": "Temperature",
-                "ja": "Temperature"
+                "ja": "温度"
               },
               "OverrideIcon": {
                 "FileName": "Hot"
@@ -2753,7 +2793,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3047,7 +3090,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3360,7 +3406,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3673,7 +3722,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3986,7 +4038,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4184,8 +4239,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4196,6 +4259,7 @@
   "BlueprintContainerCardChanges": {
     "ModType": 0,
     "TransformInto": null,
+    "TransformToLiquidQuantity": 0,
     "TransferSpoilage": false,
     "TransferUsage": false,
     "TransferFuel": false,
@@ -4319,7 +4383,7 @@
         "Text": "饮用",
         "zh": "饮用",
         "en": "Drink",
-        "ja": "飲む"
+        "ja": "Drink"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4354,6 +4418,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Drink"
@@ -4365,7 +4433,7 @@
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 52,
+          "count": 59,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -4454,10 +4522,10 @@
             "Active": true,
             "CardStatName": {
               "DefaultText": "Waste",
-              "Text": "残渣",
-              "zh": "残渣",
-              "en": "Waste",
-              "ja": "ゴミ"
+              "Text": "铁元素",
+              "zh": "铁元素",
+              "en": "Iron",
+              "ja": "Waste"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -4759,7 +4827,7 @@
       ],
       "InterpolatedStatModifications": [
         {
-          "InputDurability": 64,
+          "InputDurability": 8,
           "OutputStat": {
             "key": "FairyweedEffect",
             "icon": "Fairyweed_Item",
@@ -4774,10 +4842,10 @@
             "Active": true,
             "InputValueRange": {
               "x": 0,
-              "y": 96
+              "y": 100
             },
             "OutputValueRange": {
-              "x": 75,
+              "x": 0,
               "y": 150
             },
             "WhenOutOfRange": 1,
@@ -4785,7 +4853,7 @@
           }
         },
         {
-          "InputDurability": 64,
+          "InputDurability": 8,
           "OutputStat": {
             "key": "FairyweedSoporificEffect",
             "icon": "Wakefulness2",
@@ -4800,11 +4868,37 @@
             "Active": true,
             "InputValueRange": {
               "x": 0,
-              "y": 96
+              "y": 100
             },
             "OutputValueRange": {
-              "x": 150,
+              "x": 0,
               "y": 75
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "Satiation",
+            "icon": "Hunger",
+            "type": "stat",
+            "zh": "饱食度",
+            "en": "Satiation",
+            "ja": "飽き",
+            "max": 330,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 20
             },
             "WhenOutOfRange": 1,
             "OutOfRangeCustomValue": 0
@@ -4955,6 +5049,7 @@
             "MaxValue": 0
           }
         },
+        "TransformToLiquidQuantity": 0,
         "TransferSpoilage": false,
         "TransferUsage": false,
         "TransferFuel": false,
@@ -5235,40 +5330,11 @@
   "UseContainerForEffectConditions": false,
   "BlueprintFinishedDialog": null,
   "BlueprintNPCStatModifications": [],
+  "UniqueFlavourFadeRates": [],
+  "EverlastingFlavours": [],
+  "DontShowWoundPopup": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
-    {
-      "link": {
-        "key": "FairyweedDried",
-        "icon": "Fairyweed_Item",
-        "type": "card",
-        "CardType": 0,
-        "zh": "干仙灵草",
-        "en": "Dry Fairyweed",
-        "ja": "乾燥した精霊草"
-      },
-      "localization": {
-        "zh": "动作：浸泡",
-        "en": "Action: Soak",
-        "ja": "アクション：浸す"
-      }
-    },
-    {
-      "link": {
-        "key": "FairyweedFresh",
-        "icon": "Fairyweed_Item",
-        "type": "card",
-        "CardType": 0,
-        "zh": "新鲜仙灵草",
-        "en": "Fresh Fairyweed",
-        "ja": "新しい精霊草"
-      },
-      "localization": {
-        "zh": "动作：浸泡",
-        "en": "Action: Soak",
-        "ja": "アクション：浸す"
-      }
-    },
     {
       "link": {
         "key": "FairyweedPowder",
@@ -5293,7 +5359,7 @@
         "CardType": 9,
         "zh": "仙灵草粉",
         "en": "Fairyweed Powder",
-        "ja": "Fairyweed Powder"
+        "ja": "妖精草粉末"
       },
       "localization": {
         "zh": "动作：浸泡",
@@ -5302,7 +5368,40 @@
       }
     }
   ],
-  "_useFor": [],
+  "_useFor": [
+    {
+      "link": {
+        "key": "FairyweedPowder",
+        "icon": "Powder_Fairyweed",
+        "type": "card",
+        "CardType": 0,
+        "zh": "仙灵草粉",
+        "en": "Fairyweed Powder",
+        "ja": "精霊草の粉"
+      },
+      "localization": {
+        "zh": "动作：浸泡",
+        "en": "Action: Soak",
+        "ja": "アクション：Soak"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_FairyweedPowder",
+        "icon": "Powder_Fairyweed",
+        "type": "card",
+        "CardType": 9,
+        "zh": "仙灵草粉",
+        "en": "Fairyweed Powder",
+        "ja": "妖精草粉末"
+      },
+      "localization": {
+        "zh": "动作：浸泡",
+        "en": "Action: Soak",
+        "ja": "アクション：Soak"
+      }
+    }
+  ],
   "existEnvCards": [],
   "containers": [],
   "tradingValueRange": {

@@ -7,7 +7,7 @@
   "zh": "重制铁锭",
   "en": "Remake Iron Bar",
   "ja": "Remake Iron Bar",
-  "UniqueIDIndex": 561,
+  "UniqueIDIndex": 578,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -667,7 +667,7 @@
         "text": "“Copper Tool Shape”",
         "icon": "",
         "type": "tag",
-        "count": 18,
+        "count": 20,
         "zh": "工具坯",
         "en": "Copper Tool Shape",
         "ja": "Copper Tool Shape",
@@ -678,7 +678,7 @@
             "Text": "温度",
             "zh": "温度",
             "en": "Temperature",
-            "ja": "Temperature"
+            "ja": "温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -692,7 +692,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -706,7 +706,7 @@
             "Text": "捶打",
             "zh": "捶打",
             "en": "Strikes",
-            "ja": "Strikes"
+            "ja": "打撃数"
           },
           "OverrideIcon": {
             "FileName": "Hammer"
@@ -720,7 +720,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -734,7 +734,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -748,7 +748,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -1029,6 +1029,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1255,39 +1259,39 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_SmallHeatedIronBlank",
+            "key": "GpTag_SmallHeatedIronBlankOrShape",
             "text": "“小型加热铁坯”",
             "type": "tag",
             "zh": "小型加热铁坯",
             "en": "Small Heated Iron Blank",
             "ja": "Small Heated Iron Blank",
             "SubGroups": [],
-            "count": 10,
+            "count": 25,
             "SpoilageTime": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
-                "en": "Spoilage",
-                "ja": ""
+                "DefaultText": "Beauty",
+                "Text": "美观",
+                "zh": "美观",
+                "en": "Beauty",
+                "ja": "Beauty"
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 1000
             },
             "UsageDurability": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
                 "DefaultText": "",
-                "Text": "进度",
+                "Text": "UsageDurability",
                 "zh": "耐久",
                 "en": "Usage",
                 "ja": ""
               },
               "OverrideIcon": {
-                "FileName": "Hammer"
+                "FileName": "Shield"
               },
-              "MaxValue": 20
+              "MaxValue": 10000
             },
             "FuelCapacity": {
               "Active": true,
@@ -1318,18 +1322,16 @@
               "MaxValue": 8
             },
             "SpecialDurability1": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Strikes",
-                "Text": "捶打",
-                "zh": "捶打",
-                "en": "Strikes",
-                "ja": "Strikes"
+                "DefaultText": "",
+                "Text": "SpecialDurability1",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
               },
-              "OverrideIcon": {
-                "FileName": "Hammer"
-              },
-              "MaxValue": 100
+              "OverrideIcon": null,
+              "MaxValue": 0
             },
             "SpecialDurability2": {
               "Active": true,
@@ -1551,9 +1553,9 @@
             "type": "tag",
             "zh": "锤击工具(硬)",
             "en": "Hard Hammering Tool",
-            "ja": "Hard Hammering Tool",
+            "ja": "硬質打撃工具",
             "SubGroups": [],
-            "count": 5,
+            "count": 3,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1616,7 +1618,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 1
+              "MaxValue": 0
             },
             "SpecialDurability2": {
               "Active": true,
@@ -1836,14 +1838,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1851,7 +1861,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1865,7 +1875,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1879,7 +1889,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1893,7 +1903,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1994,7 +2004,7 @@
               "DefaultText": "Unfinished Copper Bar",
               "Text": "半成品铜锭",
               "zh": "半成品铜锭",
-              "en": "Unfinished Lump of Copper",
+              "en": "Unfinished Copper Bar",
               "ja": "Unfinished Copper Bar"
             }
           },
@@ -2013,7 +2023,7 @@
               "DefaultText": "Unfinished Ghost Bronze Bar",
               "Text": "半成品鬼铜锭",
               "zh": "半成品鬼铜锭",
-              "en": "Unfinished Lump of Ghost Bronze",
+              "en": "Unfinished Ghost Bronze Bar",
               "ja": "Unfinished Ghost Bronze Bar"
             }
           },
@@ -2032,7 +2042,7 @@
               "DefaultText": "Unfinished Tin Bar",
               "Text": "半成品锡锭",
               "zh": "半成品锡锭",
-              "en": "Unfinished Lump of Tin",
+              "en": "Unfinished Tin Bar",
               "ja": "Unfinished Tin Bar"
             }
           },
@@ -2051,7 +2061,7 @@
               "DefaultText": "Unfinished Tin Bronze Bar",
               "Text": "半成品青铜锭",
               "zh": "半成品青铜锭",
-              "en": "Unfinished Lump of Tin Bronze",
+              "en": "Unfinished Tin Bronze Bar",
               "ja": "Unfinished Tin Bronze Bar"
             }
           },
@@ -2070,7 +2080,7 @@
               "DefaultText": "Unfinished White Bronze Bar",
               "Text": "半成品白铜锭",
               "zh": "半成品白铜锭",
-              "en": "Unfinished Lump of White Bronze",
+              "en": "Unfinished White Bronze Bar",
               "ja": "Unfinished White Bronze Bar"
             }
           },
@@ -2108,7 +2118,7 @@
               "DefaultText": "Unfinished Heated Copper Bar",
               "Text": "加热的半成品铜锭",
               "zh": "加热的半成品铜锭",
-              "en": "Unfinished Heated Lump of Copper",
+              "en": "Unfinished Heated Copper Bar",
               "ja": "Unfinished Heated Copper Bar"
             }
           },
@@ -2127,7 +2137,7 @@
               "DefaultText": "Unfinished Heated Ghost Bronze Bar",
               "Text": "加热的半成品鬼铜锭",
               "zh": "加热的半成品鬼铜锭",
-              "en": "Unfinished Heated Lump of Ghost Bronze",
+              "en": "Unfinished Heated Ghost Bronze Bar",
               "ja": "Unfinished Heated Ghost Bronze Bar"
             }
           },
@@ -2146,7 +2156,7 @@
               "DefaultText": "Unfinished Heated Tin Bar",
               "Text": "加热的半成品锡锭",
               "zh": "加热的半成品锡锭",
-              "en": "Unfinished Heated Lump of TIn",
+              "en": "Unfinished Heated Tin Bar",
               "ja": "Unfinished Heated Tin Bar"
             }
           },
@@ -2165,7 +2175,7 @@
               "DefaultText": "Unfinished Heated TIn Bronze Bar",
               "Text": "加热的半成品青铜锭",
               "zh": "加热的半成品青铜锭",
-              "en": "Unfinished Heated Lump of TIn Bronze",
+              "en": "Unfinished Heated TIn Bronze Bar",
               "ja": "Unfinished Heated TIn Bronze Bar"
             }
           },
@@ -2184,7 +2194,7 @@
               "DefaultText": "Unfinished Heated White Bronze Bar",
               "Text": "加热的半成品白铜锭",
               "zh": "加热的半成品白铜锭",
-              "en": "Unfinished Heated Lump of White Bronze",
+              "en": "Unfinished Heated White Bronze Bar",
               "ja": "Unfinished Heated White Bronze Bar"
             }
           },
@@ -2241,7 +2251,7 @@
             "Text": "温度",
             "zh": "温度",
             "en": "Temperature",
-            "ja": "Temperature"
+            "ja": "温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -2255,7 +2265,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -2269,7 +2279,7 @@
             "Text": "捶打",
             "zh": "捶打",
             "en": "Strikes",
-            "ja": "Strikes"
+            "ja": "打撃数"
           },
           "OverrideIcon": {
             "FileName": "Hammer"
@@ -2283,7 +2293,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2297,7 +2307,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2311,7 +2321,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -2375,7 +2385,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },

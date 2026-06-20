@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "工作台",
   "en": "Workbench",
-  "ja": "Workbench",
-  "UniqueIDIndex": 2754,
+  "ja": "作業台",
+  "UniqueIDIndex": 2835,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "工作台",
     "zh": "工作台",
     "en": "Workbench",
-    "ja": "Workbench"
+    "ja": "作業台"
   },
   "CardImage": {
     "FileName": "Workbench"
@@ -855,7 +855,7 @@
     "Text": "一张专门用于制作工具和加工材料的桌子。\\n\\n\\n需要先放置才能生效。",
     "zh": "一张专门用于制作工具和加工材料的桌子。\\n\\n\\n需要先放置才能生效。",
     "en": "A specialized table for crafting tools and shaping materials.\\n\\n\\nNeeds to be placed to work.",
-    "ja": "A specialized table for crafting tools and shaping materials.\n\n\nNeeds to be placed to work."
+    "ja": "道具の製作や素材加工に特化した作業台。\\n\\n\\n使用するには設置が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "组装",
         "zh": "组装",
         "en": "Build",
-        "ja": "Build"
+        "ja": "建築する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 3,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1250,7 +1266,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1258,7 +1274,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1272,7 +1288,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1286,7 +1302,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1300,7 +1316,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1412,7 +1428,7 @@
             "CardType": 2,
             "zh": "工作台",
             "en": "Workbench",
-            "ja": "Workbench",
+            "ja": "作業台",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1524,7 +1540,7 @@
             "CardType": 7,
             "zh": "工作台",
             "en": "Workbench",
-            "ja": "Workbench",
+            "ja": "作業台",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1883,7 +1899,7 @@
           "CardType": 2,
           "zh": "工作台",
           "en": "Workbench",
-          "ja": "Workbench",
+          "ja": "作業台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2275,12 +2291,12 @@
         "CardType": 2,
         "zh": "工作台",
         "en": "Workbench",
-        "ja": "Workbench"
+        "ja": "作業台"
       },
       "localization": {
         "zh": "动作：拆卸并搬起",
         "en": "Action: Take apart and pick up",
-        "ja": "アクション：Take apart and pick up"
+        "ja": "アクション：解体して回収する"
       }
     }
   ],

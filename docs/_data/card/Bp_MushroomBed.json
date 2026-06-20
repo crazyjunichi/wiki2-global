@@ -7,7 +7,7 @@
   "zh": "菌床",
   "en": "Mushroom Bed",
   "ja": "キノコの菌床",
-  "UniqueIDIndex": 504,
+  "UniqueIDIndex": 518,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1000,6 +1000,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1237,14 +1241,16 @@
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
+                "DefaultText": "Spoilage",
+                "Text": "变质",
+                "zh": "变质",
                 "en": "Spoilage",
-                "ja": ""
+                "ja": "腐敗"
               },
-              "OverrideIcon": null,
-              "MaxValue": 672
+              "OverrideIcon": {
+                "FileName": "Bacteria"
+              },
+              "MaxValue": 240
             },
             "UsageDurability": {
               "Active": false,
@@ -1256,7 +1262,7 @@
                 "ja": ""
               },
               "OverrideIcon": null,
-              "MaxValue": 0
+              "MaxValue": 2
             },
             "FuelCapacity": {
               "Active": false,
@@ -1319,16 +1325,18 @@
               "MaxValue": 0
             },
             "SpecialDurability4": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
+                "DefaultText": "Boil",
+                "Text": "Boil",
+                "zh": "Boil",
+                "en": "Boil",
+                "ja": "Boil"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Cooking"
+              },
+              "MaxValue": 4
             }
           },
           "RequiredQuantity": 6,
@@ -1505,7 +1513,7 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_DryLeavesOrStraw",
+            "key": "NOT_USED_GpTag_DryLeavesOrStraw",
             "text": "“枯叶或稻草”",
             "type": "tag",
             "zh": "枯叶或稻草",
@@ -1520,7 +1528,7 @@
                 "Text": "耐久度",
                 "zh": "耐久度",
                 "en": "Durability",
-                "ja": "Durability"
+                "ja": "耐久性"
               },
               "OverrideIcon": {
                 "FileName": "Shield"
@@ -1558,7 +1566,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1807,7 +1815,7 @@
                   "Text": "橡木板",
                   "zh": "橡木板",
                   "en": "Oak Plank",
-                  "ja": "Oak Plank"
+                  "ja": "オークの板材"
                 }
               },
               {
@@ -1822,7 +1830,7 @@
                   "Text": "松木板",
                   "zh": "松木板",
                   "en": "Pine Plank",
-                  "ja": "Pine Plank"
+                  "ja": "松の板材"
                 }
               },
               {
@@ -1837,7 +1845,7 @@
                   "Text": "桦木板",
                   "zh": "桦木板",
                   "en": "Birch Plank",
-                  "ja": "Birch Plank"
+                  "ja": "白樺の板材"
                 }
               },
               {
@@ -1852,7 +1860,7 @@
                   "Text": "柳木板",
                   "zh": "柳木板",
                   "en": "Willow Plank",
-                  "ja": "Willow Plank"
+                  "ja": "柳の板材"
                 }
               },
               {
@@ -1914,7 +1922,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2148,14 +2156,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2163,7 +2179,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2177,7 +2193,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2191,7 +2207,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2205,7 +2221,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2452,7 +2468,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },

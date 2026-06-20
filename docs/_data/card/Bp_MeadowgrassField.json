@@ -7,7 +7,7 @@
   "zh": "牧草",
   "en": "Meadowgrass",
   "ja": "牧草",
-  "UniqueIDIndex": 488,
+  "UniqueIDIndex": 502,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -1160,7 +1160,7 @@
     "Text": "生长在松树林隙中；不怎么需要照料，能够改善土质，适宜用作土壤休耕。\\n\\n可用作垫料、屋顶材料、动物饲料或作为覆土作物。夏季结籽。",
     "zh": "生长在松树林隙中；不怎么需要照料，能够改善土质，适宜用作土壤休耕。\\n\\n可用作垫料、屋顶材料、动物饲料或作为覆土作物。夏季结籽。",
     "en": "Found in pine clearings; has very few needs and is ideal for letting fields rest because of its soil structure improving capabilities.\\n\\nCan be used as bedding material, roofing, animal feed or as a cover crop. Produces seeds in summer.",
-    "ja": "松の平地で見つけられる。育てやすい上に土壌構造を改良する効果がある。\\n\\nベッドや屋根の素材、餌、食料や被覆作物として使用できる。夏になると種が採れるようになる。"
+    "ja": "松の疎林で見つかる。必要条件が少なく、土壌構造を改善する性質を持つため、畑を休ませる際の作物として適している。\\n\\n敷料、屋根材、家畜飼料、または被覆作物として利用できる。夏になると種子を実らせる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1192,6 +1192,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1699,14 +1703,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1714,7 +1726,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1728,7 +1740,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1742,7 +1754,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1756,7 +1768,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1831,7 +1843,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1859,7 +1871,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1953,7 +1965,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2220,7 +2232,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "健全度"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -2234,7 +2246,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -2248,7 +2260,7 @@
           "Text": "照料",
           "zh": "照料",
           "en": "Care",
-          "ja": "Care"
+          "ja": "手入れ"
         },
         "OverrideIcon": {
           "FileName": "Wakefulness4"

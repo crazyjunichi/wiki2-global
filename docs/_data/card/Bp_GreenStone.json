@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "绿石",
   "en": "Greenstone",
-  "ja": "Greenstone",
-  "UniqueIDIndex": 444,
+  "ja": "グリーンストーン",
+  "UniqueIDIndex": 456,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "绿石",
     "zh": "绿石",
     "en": "Greenstone",
-    "ja": "Greenstone"
+    "ja": "グリーンストーン"
   },
   "CardImage": {
     "FileName": "Greenstone"
@@ -855,7 +855,7 @@
     "Text": "可以在熔炉中熔炼以获得铜块和绿炉石。\\n\\n也可以先将其粉碎以提高其品质。",
     "zh": "可以在熔炉中熔炼以获得铜块和绿炉石。\\n\\n也可以先将其粉碎以提高其品质。",
     "en": "Can be smelted in a Furnace to obtain Copper Nuggets and Greenstone Slag. \\n\\nIt can also be crushed first to improve its quality.",
-    "ja": "Can be smelted in a Furnace to obtain Copper Nuggets and Greenstone Slag. \n\nIt can also be crushed first to improve its quality."
+    "ja": "炉で精錬すると銅粒とグリーンストーンスラグを得られる。\\n\\n先に粉砕することで品質を向上できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2020,8 +2024,8 @@
                   "DefaultText": "Iron",
                   "Text": "铁元素",
                   "zh": "铁元素",
-                  "en": "Waste",
-                  "ja": "ゴミ"
+                  "en": "Iron",
+                  "ja": "Iron"
                 },
                 "OverrideIcon": {
                   "FileName": "Filth"
@@ -2153,22 +2157,22 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_HammeringToolGeneral",
-            "text": "“锤击工具”",
+            "key": "GpTag_MiningTools",
+            "text": "“采矿工具”",
             "type": "tag",
-            "zh": "锤击工具(通用)",
-            "en": "Hammering Tool",
-            "ja": "Hammering Tool",
+            "zh": "采矿工具",
+            "en": "Mining Tool",
+            "ja": "Mining Tool",
             "SubGroups": [],
-            "count": 27,
+            "count": 5,
             "SpoilageTime": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Sharpness",
-                "Text": "锋利",
-                "zh": "锋利",
-                "en": "Sharpness",
-                "ja": "Sharpness"
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2190,13 +2194,13 @@
               "MaxValue": 10000
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Recently Sharpened",
-                "Text": "近期磨利",
-                "zh": "近期磨利",
-                "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2443,7 +2447,21 @@
           "key": "PickaxeActionSpecial3Drops",
           "text": "PickaxeActionSpecial3Drops",
           "type": "tag",
-          "count": 0,
+          "count": 1,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Shield"
+            },
+            "MaxValue": 6
+          },
           "zh": "镐特殊3掉落",
           "en": "PickaxeActionSpecial3Drops",
           "ja": "PickaxeActionSpecial3Drops"
@@ -2453,14 +2471,22 @@
   ],
   "BuildingDaytimeCost": 10,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2468,7 +2494,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2482,7 +2508,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2496,7 +2522,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2510,7 +2536,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2572,6 +2598,38 @@
       "zh": "手部动作",
       "en": "HandAction",
       "ja": "HandAction"
+    },
+    {
+      "key": "PickaxeActionSpecial3Drops",
+      "text": "PickaxeActionSpecial3Drops",
+      "type": "tag",
+      "count": 1,
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "UsageDurability",
+          "zh": "耐久",
+          "en": "Usage",
+          "ja": ""
+        },
+        "OverrideIcon": {
+          "FileName": "Shield"
+        },
+        "MaxValue": 6
+      },
+      "zh": "镐特殊3掉落",
+      "en": "PickaxeActionSpecial3Drops",
+      "ja": "PickaxeActionSpecial3Drops"
+    },
+    {
+      "key": "PickaxeActionLenghty",
+      "text": "PickaxeActionLenghty",
+      "type": "tag",
+      "count": 0,
+      "zh": "镐长时间行动",
+      "en": "PickaxeActionLenghty",
+      "ja": "PickaxeActionLenghty"
     }
   ],
   "BPRandomSingleDrop": false,
@@ -2585,7 +2643,7 @@
         "CardType": 0,
         "zh": "绿石",
         "en": "Greenstone",
-        "ja": "Greenstone",
+        "ja": "グリーンストーン",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2631,7 +2689,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -2659,7 +2717,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "品質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2673,7 +2731,7 @@
             "Text": "研磨",
             "zh": "研磨",
             "en": "Mill",
-            "ja": "Mill"
+            "ja": "粉砕"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2749,7 +2807,7 @@
         "CardType": 0,
         "zh": "绿石",
         "en": "Greenstone",
-        "ja": "Greenstone",
+        "ja": "グリーンストーン",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2795,7 +2853,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -2823,7 +2881,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "品質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2837,7 +2895,7 @@
             "Text": "研磨",
             "zh": "研磨",
             "en": "Mill",
-            "ja": "Mill"
+            "ja": "粉砕"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2900,7 +2958,7 @@
               "type": "stat",
               "zh": "金工",
               "en": "Smithing",
-              "ja": "Smithing",
+              "ja": "鍛造",
               "max": 150,
               "min": 0
             },
@@ -2941,7 +2999,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },
@@ -3417,7 +3475,7 @@
       "CardType": 2,
       "zh": "铜矿脉",
       "en": "Copper Vein",
-      "ja": "Copper Vein",
+      "ja": "銅鉱脈",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -3527,7 +3585,7 @@
         "CardType": 2,
         "zh": "铜矿脉",
         "en": "Copper Vein",
-        "ja": "Copper Vein"
+        "ja": "銅鉱脈"
       },
       "localization": {
         "zh": "内部蓝图制作",

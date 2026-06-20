@@ -2,12 +2,12 @@
   "m_Name": "SpiritShrine_Willow_SacredWillow",
   "key": "SpiritShrine_Willow_SacredWillow",
   "exportName": "SpiritShrine_Willow_SacredWillow",
-  "icon": "SacredOak",
+  "icon": "SacredWillow",
   "type": "card",
   "zh": "神圣柳树",
   "en": "Sacred Willow",
   "ja": "Sacred Willow",
-  "UniqueIDIndex": 2354,
+  "UniqueIDIndex": 2424,
   "CardType": 2,
   "CardTags": [
     {
@@ -82,7 +82,7 @@
           "Text": "韦石亲密关系",
           "zh": "韦石亲密关系",
           "en": "West Stone Propinquity",
-          "ja": "West Stone Propinquity"
+          "ja": "ウエストストーン"
         },
         "OverrideIcon": {
           "FileName": "WestStone_1"
@@ -113,7 +113,7 @@
     "ja": "Sacred Willow"
   },
   "CardImage": {
-    "FileName": "SacredOak"
+    "FileName": "SacredWillow"
   },
   "CardBackground": null,
   "ShowImageAboveTitle": false,
@@ -332,6 +332,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -904,13 +908,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -995,6 +999,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1206,7 +1211,7 @@
               "Text": "干燥度",
               "zh": "干燥度",
               "en": "Dryness",
-              "ja": "Dryness"
+              "ja": "乾燥度"
             },
             "OverrideIcon": {
               "FileName": "Drying"
@@ -1401,7 +1406,7 @@
       {
         "link": {
           "key": "SpiritShrine_Willow_SacredWillow",
-          "icon": "SacredOak",
+          "icon": "SacredWillow",
           "type": "card",
           "CardType": 2,
           "zh": "神圣柳树",
@@ -1423,7 +1428,7 @@
       {
         "link": {
           "key": "SpiritShrine_Willow_SacredWillow",
-          "icon": "SacredOak",
+          "icon": "SacredWillow",
           "type": "card",
           "CardType": 2,
           "zh": "神圣柳树",
@@ -1632,7 +1637,7 @@
       {
         "link": {
           "key": "SpiritShrine_Willow_SacredWillow",
-          "icon": "SacredOak",
+          "icon": "SacredWillow",
           "type": "card",
           "CardType": 2,
           "zh": "神圣柳树",
@@ -1700,6 +1705,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ChoppingTree_Shorter"
@@ -1711,7 +1720,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1719,7 +1728,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1733,7 +1742,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1747,7 +1756,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1761,7 +1770,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2406,6 +2415,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3356,6 +3366,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ChoppingTree_Shorter"
@@ -3367,7 +3381,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3375,7 +3389,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3389,7 +3403,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3403,7 +3417,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -3417,7 +3431,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4044,6 +4058,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5035,7 +5050,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -5061,7 +5076,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -5073,7 +5088,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5099,7 +5114,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5113,7 +5128,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5631,6 +5646,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -5913,7 +5932,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -6149,8 +6171,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -6320,6 +6350,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6934,6 +6968,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

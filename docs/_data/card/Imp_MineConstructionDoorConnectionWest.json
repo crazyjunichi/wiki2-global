@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "新门（西）",
   "en": "New Door (West)",
-  "ja": "New Door (West)",
-  "UniqueIDIndex": 1500,
+  "ja": "新しいドア（西）",
+  "UniqueIDIndex": 1542,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "新门（西）",
     "zh": "新门（西）",
     "en": "New Door (West)",
-    "ja": "New Door (West)"
+    "ja": "新しいドア（西）"
   },
   "CardImage": {
     "FileName": "Mines"
@@ -879,7 +879,7 @@
     "Text": "连接两个矿井隧道。",
     "zh": "连接两个矿井隧道。",
     "en": "Connects two mine tunnels.",
-    "ja": "Connects two mine tunnels."
+    "ja": "二つの坑道を接続する。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1263,7 +1267,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -1777,8 +1781,16 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2103,7 +2115,7 @@
     "CardType": 2,
     "zh": "矿井（西）",
     "en": "Mine (West)",
-    "ja": "Mine (West)",
+    "ja": "鉱山（西）",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {
@@ -2208,7 +2220,7 @@
     "CardType": 2,
     "zh": "矿井（东）",
     "en": "Mine (East)",
-    "ja": "Mine (East)",
+    "ja": "鉱山（東）",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {
@@ -2599,13 +2611,13 @@
               "MaxValue": 1440
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2683,7 +2695,7 @@
           "CardType": 4,
           "zh": "畜栏",
           "en": "Enclosure",
-          "ja": "Enclosure",
+          "ja": "囲い",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2787,7 +2799,7 @@
             "CardType": 8,
             "zh": "畜栏",
             "en": "Enclosure",
-            "ja": "Enclosure",
+            "ja": "囲い",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -2795,7 +2807,7 @@
                 "Text": "污垢",
                 "zh": "污垢",
                 "en": "Filth",
-                "ja": "Filth"
+                "ja": "汚れ"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2815,13 +2827,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "Flood"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2857,7 +2869,7 @@
                 "Text": "过度生长",
                 "zh": "过度生长",
                 "en": "Overgrowth",
-                "ja": "Overgrowth"
+                "ja": "草木の繁茂"
               },
               "OverrideIcon": {
                 "FileName": "Overgrowth"
@@ -2871,7 +2883,7 @@
                 "Text": "觅食",
                 "zh": "觅食",
                 "en": "Foraging",
-                "ja": "Foraging"
+                "ja": "資源集め"
               },
               "OverrideIcon": {
                 "FileName": "SaturationBerries"
@@ -3033,13 +3045,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3087,7 +3099,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -3101,7 +3113,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -3249,13 +3261,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3303,7 +3315,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -3317,7 +3329,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -3507,13 +3519,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3561,7 +3573,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -3575,7 +3587,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -3723,13 +3735,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3777,7 +3789,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -3791,7 +3803,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -3941,13 +3953,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3995,7 +4007,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -4009,7 +4021,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -4157,13 +4169,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4211,7 +4223,7 @@
                 "Text": "蒸汽",
                 "zh": "蒸汽",
                 "en": "Steam",
-                "ja": "Steam"
+                "ja": "蒸気"
               },
               "OverrideIcon": {
                 "FileName": "AloeGel_Old"
@@ -4225,7 +4237,7 @@
                 "Text": "烟雾",
                 "zh": "烟雾",
                 "en": "Smoke",
-                "ja": "Smoke"
+                "ja": "煙"
               },
               "OverrideIcon": {
                 "FileName": "Ash"
@@ -4416,13 +4428,13 @@
               "MaxValue": 1440
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "洪水"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4500,7 +4512,7 @@
           "CardType": 4,
           "zh": "畜栏",
           "en": "Enclosure",
-          "ja": "Enclosure",
+          "ja": "囲い",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -4604,7 +4616,7 @@
             "CardType": 8,
             "zh": "畜栏",
             "en": "Enclosure",
-            "ja": "Enclosure",
+            "ja": "囲い",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -4612,7 +4624,7 @@
                 "Text": "污垢",
                 "zh": "污垢",
                 "en": "Filth",
-                "ja": "Filth"
+                "ja": "汚れ"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -4632,13 +4644,13 @@
               "MaxValue": 0
             },
             "FuelCapacity": {
-              "Active": true,
+              "Active": false,
               "CardStatName": {
-                "DefaultText": "Flood",
-                "Text": "洪水",
-                "zh": "洪水",
-                "en": "Flood",
-                "ja": "Flood"
+                "DefaultText": "",
+                "Text": "FuelCapacity",
+                "zh": "容量",
+                "en": "Fuel",
+                "ja": ""
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4674,7 +4686,7 @@
                 "Text": "过度生长",
                 "zh": "过度生长",
                 "en": "Overgrowth",
-                "ja": "Overgrowth"
+                "ja": "草木の繁茂"
               },
               "OverrideIcon": {
                 "FileName": "Overgrowth"
@@ -4688,7 +4700,7 @@
                 "Text": "觅食",
                 "zh": "觅食",
                 "en": "Foraging",
-                "ja": "Foraging"
+                "ja": "資源集め"
               },
               "OverrideIcon": {
                 "FileName": "SaturationBerries"

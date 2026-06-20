@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "刮皮梁",
   "en": "Fleshing Beam",
-  "ja": "Fleshing Beam",
-  "UniqueIDIndex": 1307,
+  "ja": "肉削ぎ台",
+  "UniqueIDIndex": 1349,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "刮皮梁",
     "zh": "刮皮梁",
     "en": "Fleshing Beam",
-    "ja": "Fleshing Beam"
+    "ja": "肉削ぎ台"
   },
   "CardImage": {
     "FileName": "FleshingBeam"
@@ -446,7 +446,7 @@
         "text": "“精魄液体”",
         "icon": "",
         "type": "tag",
-        "count": 30,
+        "count": 32,
         "zh": "精魄液体",
         "en": "Spirit Liquid",
         "ja": "精霊水"
@@ -1001,7 +1001,7 @@
     "Text": "用于刮净兽皮的倾斜圆木。需要先放置才能生效。",
     "zh": "用于刮净兽皮的倾斜圆木。需要先放置才能生效。",
     "en": "A slanted log used for scraping hides clean. Needs to be placed to work. ",
-    "ja": "A slanted log used for scraping hides clean. Needs to be placed to work. "
+    "ja": "獣皮を削いで綺麗にするための傾いた丸太。使用するには設置が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1033,6 +1033,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1315,7 +1319,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1647,7 +1654,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1657,7 +1667,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -1883,8 +1893,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2060,7 +2078,7 @@
         "Text": "拿起",
         "zh": "拿起",
         "en": "Pick up",
-        "ja": "Pick up"
+        "ja": "取る"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2095,6 +2113,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2342,7 +2364,7 @@
           "CardType": 0,
           "zh": "刮皮梁",
           "en": "Fleshing Beam",
-          "ja": "Fleshing Beam",
+          "ja": "肉削ぎ台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2742,12 +2764,12 @@
         "CardType": 0,
         "zh": "刮皮梁",
         "en": "Fleshing Beam",
-        "ja": "Fleshing Beam"
+        "ja": "肉削ぎ台"
       },
       "localization": {
         "zh": "动作：放置",
         "en": "Action: Place",
-        "ja": "アクション：Place"
+        "ja": "アクション：置く"
       }
     }
   ],
@@ -2760,12 +2782,12 @@
         "CardType": 0,
         "zh": "刮皮梁",
         "en": "Fleshing Beam",
-        "ja": "Fleshing Beam"
+        "ja": "肉削ぎ台"
       },
       "localization": {
         "zh": "动作：放置",
         "en": "Action: Place",
-        "ja": "アクション：Place"
+        "ja": "アクション：置く"
       }
     }
   ],

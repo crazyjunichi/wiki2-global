@@ -7,21 +7,21 @@
   "zh": "陶艺",
   "zh_fix": "陶艺",
   "en": "Pottery",
-  "ja": "Pottery",
-  "UniqueIDIndex": 4093,
+  "ja": "陶芸のスキル",
+  "UniqueIDIndex": 4232,
   "GameName": {
     "DefaultText": "Pottery",
     "Text": "陶艺",
     "zh": "陶艺",
     "en": "Pottery",
-    "ja": "Pottery"
+    "ja": "陶芸のスキル"
   },
   "Description": {
     "DefaultText": "Increases the quality of your clay crafts.",
     "Text": "提升陶制品的品质。",
     "zh": "提升陶制品的品质。",
     "en": "Increases the quality of your clay crafts.",
-    "ja": "Increases the quality of your clay crafts."
+    "ja": "粘土細工の質が向上する。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -81,9 +81,9 @@
   },
   "Statuses": [],
   "UsesNovelty": true,
-  "NoveltyCooldownDuration": 0,
-  "StalenessMultiplier": 0.5,
-  "MaxStalenessStack": 4,
+  "NoveltyCooldownDuration": 672,
+  "StalenessMultiplier": 0.75,
+  "MaxStalenessStack": 5,
   "StatActions": [],
   "ShowActionEffects": false,
   "NotEnoughText": {
@@ -132,7 +132,7 @@
         "CardType": 7,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "name": "蓝图制作",
       "localization": {
@@ -185,6 +185,27 @@
       "value": {
         "x": 2,
         "y": 2
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
+      },
+      "name": "蓝图制作",
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      },
+      "value": {
+        "x": 0.5,
+        "y": 0.5
       }
     },
     {
@@ -321,7 +342,7 @@
         "CardType": 7,
         "zh": "大型坩埚",
         "en": "Large Crucible",
-        "ja": "Large Crucible"
+        "ja": "大型るつぼ"
       },
       "name": "蓝图制作",
       "localization": {
@@ -342,7 +363,7 @@
         "CardType": 7,
         "zh": "小型坩埚",
         "en": "Small Crucible",
-        "ja": "Small Crucible"
+        "ja": "小型るつぼ"
       },
       "name": "蓝图制作",
       "localization": {
@@ -357,24 +378,26 @@
     },
     {
       "link": {
-        "key": "Bp_FermentationBin",
-        "icon": "FermentingBin_Clay",
+        "key": "Clay",
+        "icon": "Clay",
         "type": "card",
-        "CardType": 7,
-        "zh": "发酵桶",
-        "en": "Fermentation Bin",
-        "ja": "発酵箱"
+        "CardType": 0,
+        "zh": "粘土",
+        "en": "Clay",
+        "ja": "粘土"
       },
-      "name": "蓝图制作",
       "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
+        "DefaultText": "Craft Bowl",
+        "Text": "制作碗",
+        "zh": "制作碗",
+        "en": "Craft Bowl",
+        "ja": "ボウルを作る"
       },
       "value": {
         "x": 0.5,
         "y": 0.5
-      }
+      },
+      "key": "Clay_Craft Bowl"
     },
     {
       "link": {

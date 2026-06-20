@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "亚麻",
   "en": "Flax",
-  "ja": "Flax",
-  "UniqueIDIndex": 411,
+  "ja": "亜麻",
+  "UniqueIDIndex": 423,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "亚麻",
     "zh": "亚麻",
     "en": "Flax",
-    "ja": "Flax"
+    "ja": "亜麻"
   },
   "CardImage": {
     "FileName": "Flax_Plant"
@@ -668,7 +668,7 @@
         "CardType": 0,
         "zh": "亚麻种子",
         "en": "Flax Seeds",
-        "ja": "Flax Seeds",
+        "ja": "亜麻の種",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -676,7 +676,7 @@
             "Text": "变质",
             "zh": "变质",
             "en": "Spoilage",
-            "ja": "Spoilage"
+            "ja": "腐敗物"
           },
           "OverrideIcon": {
             "FileName": "Bacteria"
@@ -716,7 +716,7 @@
             "Text": "成长度",
             "zh": "成长度",
             "en": "Growth",
-            "ja": "Growth"
+            "ja": "成長"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -740,7 +740,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -828,7 +828,7 @@
     "Text": "需要亚麻种子",
     "zh": "需要亚麻种子",
     "en": "Flax Seeds Needed",
-    "ja": "Flax Seeds Needed"
+    "ja": "亜麻の種が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1166,7 +1166,7 @@
     "Text": "从商人处购买；需要低到中等酸度、中等湿度、中等养分和中到高等土质。\\n\\n可用于制作细线和布料，其种子可食用。",
     "zh": "从商人处购买；需要低到中等酸度、中等湿度、中等养分和中到高等土质。\\n\\n可用于制作细线和布料，其种子可食用。",
     "en": "Bought from traders; needs low to medium acidity, medium hydration, medium nutrients and mid to high structure.\\n\\nCan be used to make twine and cloth and for its edible seeds.",
-    "ja": "Bought from traders; needs low to medium acidity, medium hydration, medium nutrients and mid to high structure.\n\nCan be used to make twine and cloth and for its edible seeds."
+    "ja": "交易商から購入できる。低〜中程度の酸性度、中程度の水分量、中程度の養分量、中〜高程度の土壌構造を必要とする。\\n\\n繊維は紐や布の製作に使用でき、種子は食用になる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1198,6 +1198,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1429,7 +1433,7 @@
             "CardType": 0,
             "zh": "亚麻种子",
             "en": "Flax Seeds",
-            "ja": "Flax Seeds",
+            "ja": "亜麻の種",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -1437,7 +1441,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "Spoilage"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1477,7 +1481,7 @@
                 "Text": "成长度",
                 "zh": "成长度",
                 "en": "Growth",
-                "ja": "Growth"
+                "ja": "成長"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1501,7 +1505,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1711,14 +1715,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1726,7 +1738,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1740,7 +1752,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1754,7 +1766,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1768,7 +1780,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1843,7 +1855,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -1871,7 +1883,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -1965,7 +1977,7 @@
         "type": "stat",
         "zh": "药草学",
         "en": "Herbalism",
-        "ja": "Herbalism",
+        "ja": "薬草学",
         "max": 150,
         "min": 0
       },
@@ -2154,7 +2166,7 @@
       "CardType": 2,
       "zh": "生长中的亚麻田",
       "en": "Growing Flax Field",
-      "ja": "Growing Flax Field",
+      "ja": "生育中の亜麻畑",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2162,7 +2174,7 @@
           "Text": "养分",
           "zh": "养分",
           "en": "Nutrients",
-          "ja": "Nutrients"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Filth"
@@ -2176,7 +2188,7 @@
           "Text": "土壤酸度",
           "zh": "土壤酸度",
           "en": "Acidity",
-          "ja": "Acidity"
+          "ja": "酸度"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -2190,7 +2202,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Hydration",
-          "ja": "Hydration"
+          "ja": "水分"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -2204,7 +2216,7 @@
           "Text": "土质",
           "zh": "土质",
           "en": "Structure",
-          "ja": "Structure"
+          "ja": "構成"
         },
         "OverrideIcon": {
           "FileName": "Shield"
@@ -2218,7 +2230,7 @@
           "Text": "成长度",
           "zh": "成长度",
           "en": "Growth",
-          "ja": "Growth"
+          "ja": "成長"
         },
         "OverrideIcon": {
           "FileName": "Growth"
@@ -2232,7 +2244,7 @@
           "Text": "健康度",
           "zh": "健康度",
           "en": "Health",
-          "ja": "Health"
+          "ja": "体力"
         },
         "OverrideIcon": {
           "FileName": "Health"
@@ -2246,7 +2258,7 @@
           "Text": "饱满度",
           "zh": "饱满度",
           "en": "Yield",
-          "ja": "Yield"
+          "ja": "収穫量"
         },
         "OverrideIcon": {
           "FileName": "SaturationBerries"
@@ -2260,7 +2272,7 @@
           "Text": "照料",
           "zh": "照料",
           "en": "Care",
-          "ja": "Care"
+          "ja": "手入れ"
         },
         "OverrideIcon": {
           "FileName": "Wakefulness4"

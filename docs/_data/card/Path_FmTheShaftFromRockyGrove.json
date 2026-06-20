@@ -7,7 +7,7 @@
   "zh": "仙灵洞",
   "en": "Fairy Hole",
   "ja": "妖精のトンネル",
-  "UniqueIDIndex": 2055,
+  "UniqueIDIndex": 2115,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -909,6 +909,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1094,8 +1098,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1265,6 +1277,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1308,7 +1324,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1322,7 +1338,7 @@
               "Text": "树林",
               "zh": "树林",
               "en": "Trees",
-              "ja": "Trees"
+              "ja": "木"
             },
             "OverrideIcon": {
               "FileName": "Tree1"
@@ -1336,7 +1352,7 @@
               "Text": "过度生长",
               "zh": "过度生长",
               "en": "Overgrowth",
-              "ja": "Overgrowth"
+              "ja": "草木の繁茂 "
             },
             "OverrideIcon": {
               "FileName": "Overgrowth"
@@ -1350,7 +1366,7 @@
               "Text": "觅食",
               "zh": "觅食",
               "en": "Foraging",
-              "ja": "Foraging"
+              "ja": "資源集め"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -2108,7 +2124,7 @@
                       "Text": "烟雾",
                       "zh": "烟雾",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -2170,6 +2186,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2718,7 +2735,7 @@
                       "Text": "烟雾",
                       "zh": "烟雾",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -2780,6 +2797,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2862,7 +2880,7 @@
                 "type": "stat",
                 "zh": "攀爬援助",
                 "en": "Climbing Aid",
-                "ja": "Climbing Aid",
+                "ja": "登攀補助",
                 "max": 288,
                 "min": 0
               },
@@ -3344,7 +3362,7 @@
                       "Text": "烟雾",
                       "zh": "烟雾",
                       "en": "Smoke",
-                      "ja": "Smoke"
+                      "ja": "煙"
                     },
                     "OverrideIcon": {
                       "FileName": "Ash"
@@ -3406,6 +3424,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

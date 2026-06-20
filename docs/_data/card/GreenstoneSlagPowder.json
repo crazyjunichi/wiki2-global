@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "绿炉石粉末",
   "en": "Greenstone Slag Powder",
-  "ja": "Greenstone Slag Powder",
-  "UniqueIDIndex": 1380,
+  "ja": "グリーンストーン鉱滓粉末",
+  "UniqueIDIndex": 1422,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "绿炉石粉末",
     "zh": "绿炉石粉末",
     "en": "Greenstone Slag Powder",
-    "ja": "Greenstone Slag Powder"
+    "ja": "グリーンストーン鉱滓粉末"
   },
   "CardImage": {
     "FileName": "Slag_Powder"
@@ -255,7 +255,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -859,7 +859,7 @@
     "Text": "可精炼为绿石粉。",
     "zh": "可精炼为绿石粉。",
     "en": "Can be refined into greenstone powder.",
-    "ja": "Can be refined into greenstone powder."
+    "ja": "グリーンストーン粉末へ精製できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -891,16 +891,20 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
-  "AlwaysUpdate": false,
+  "AlwaysUpdate": true,
   "CannotBeTrashed": false,
   "CanBeTrashed": false,
   "CarriesOverTo": [],
   "CanDragItemsToTravel": false,
   "DoesNotPile": false,
-  "ToggleablePiling": false,
+  "ToggleablePiling": true,
   "DoesNotPinAutomatically": false,
   "Ambience": {
     "InternalName": "",
@@ -1076,8 +1080,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1355,12 +1367,12 @@
         "CardType": 0,
         "zh": "绿炉石",
         "en": "Greenstone Slag",
-        "ja": "Greenstone Slag"
+        "ja": "グリーンストーン鉱滓"
       },
       "localization": {
         "zh": "研磨 达到最大",
         "en": "Mill Full",
-        "ja": "Mill フル"
+        "ja": "製粉 フル"
       }
     },
     {
@@ -1371,14 +1383,14 @@
         "CardType": 0,
         "zh": "绿炉石",
         "en": "Greenstone Slag",
-        "ja": "Greenstone Slag"
+        "ja": "グリーンストーン鉱滓"
       },
       "localization": {
         "DefaultText": "Grind",
         "Text": "研磨",
         "zh": "研磨",
         "en": "Grind",
-        "ja": "Grind"
+        "ja": "粉砕"
       }
     }
   ],
@@ -1391,7 +1403,7 @@
         "CardType": 7,
         "zh": "淘洗炉石",
         "en": "Slag Panning",
-        "ja": "Slag Panning"
+        "ja": "スラグ選鉱"
       },
       "localization": {
         "zh": "蓝图制作",

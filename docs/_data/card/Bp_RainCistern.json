@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "雨水窖",
   "en": "Rain Cistern",
-  "ja": "Rain Cistern",
-  "UniqueIDIndex": 557,
+  "ja": "雨水貯水槽",
+  "UniqueIDIndex": 574,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "雨水窖",
     "zh": "雨水窖",
     "en": "Rain Cistern",
-    "ja": "Rain Cistern"
+    "ja": "雨水貯水槽"
   },
   "CardImage": {
     "FileName": "Cistern"
@@ -736,7 +736,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -750,7 +750,7 @@
             "Text": "研磨",
             "zh": "研磨",
             "en": "Mill",
-            "ja": "Mill"
+            "ja": "製粉"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -824,7 +824,7 @@
     "Text": "需要粘土",
     "zh": "需要粘土",
     "en": "Needs Clay",
-    "ja": "Needs Clay"
+    "ja": "粘土が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -969,13 +969,13 @@
             "MaxValue": 1440
           },
           "FuelCapacity": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Flood",
-              "Text": "洪水",
-              "zh": "洪水",
-              "en": "Flood",
-              "ja": "洪水"
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -1255,7 +1255,7 @@
     "Text": "用于集雨的大型储水容器。",
     "zh": "用于集雨的大型储水容器。",
     "en": "A large water container for storing rainwater.",
-    "ja": "A large water container for storing rainwater."
+    "ja": "雨水を貯めるための大きな水容器。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1287,6 +1287,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2136,7 +2140,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2150,7 +2154,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2346,14 +2350,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2361,7 +2373,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2375,7 +2387,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2389,7 +2401,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2403,7 +2415,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2478,7 +2490,7 @@
         "CardType": 2,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern",
+        "ja": "雨水貯水槽",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2536,7 +2548,7 @@
             "Text": "染料",
             "zh": "染料",
             "en": "Dye",
-            "ja": "Dye"
+            "ja": "染料"
           },
           "OverrideIcon": null,
           "MaxValue": 100
@@ -2821,7 +2833,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

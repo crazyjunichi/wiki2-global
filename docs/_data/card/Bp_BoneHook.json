@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "骨钩",
   "en": "Bone Hook",
-  "ja": "Bone Hook",
-  "UniqueIDIndex": 313,
+  "ja": "骨のフック",
+  "UniqueIDIndex": 319,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "骨钩",
     "zh": "骨钩",
     "en": "Bone Hook",
-    "ja": "Bone Hook"
+    "ja": "骨のフック"
   },
   "CardImage": {
     "FileName": "Hook_Bone"
@@ -668,7 +668,7 @@
         "CardType": 0,
         "zh": "骨头碎片",
         "en": "Bone Pieces",
-        "ja": "Bone Pieces",
+        "ja": "骨片",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -748,7 +748,7 @@
             "Text": "研磨",
             "zh": "研磨",
             "en": "Mill",
-            "ja": "Mill"
+            "ja": "製粉"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -824,7 +824,7 @@
     "Text": "需要骨头碎片",
     "zh": "需要骨头碎片",
     "en": "Bone Pieces Needed",
-    "ja": "Bone Pieces Needed"
+    "ja": "骨片が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1012,7 +1012,7 @@
     "Text": "钓鱼竿的必备部件。",
     "zh": "钓鱼竿的必备部件。",
     "en": "An essential component for a fishing rod.",
-    "ja": "An essential component for a fishing rod."
+    "ja": "釣り竿に欠かせないパーツ。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1044,6 +1044,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1257,7 +1261,7 @@
             "CardType": 0,
             "zh": "骨头碎片",
             "en": "Bone Pieces",
-            "ja": "Bone Pieces",
+            "ja": "骨片",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1337,7 +1341,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1547,7 +1551,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1575,7 +1579,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1587,7 +1591,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1611,7 +1615,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1625,7 +1629,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1639,7 +1643,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1822,14 +1826,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1837,7 +1849,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1851,7 +1863,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1865,7 +1877,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1879,7 +1891,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1946,7 +1958,7 @@
       "key": "CraftAction",
       "text": "CraftAction",
       "type": "tag",
-      "count": 75,
+      "count": 76,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -1968,7 +1980,7 @@
           "Text": "彩度",
           "zh": "彩度",
           "en": "Colour Intensity",
-          "ja": "Colour Intensity"
+          "ja": "色の濃さ"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -1982,7 +1994,7 @@
           "Text": "毛皮",
           "zh": "毛皮",
           "en": "Fur",
-          "ja": "Fur"
+          "ja": "毛皮"
         },
         "OverrideIcon": {
           "FileName": "Fur_Cured"
@@ -1996,7 +2008,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2010,7 +2022,7 @@
           "Text": "柔软度",
           "zh": "柔软度",
           "en": "Softness",
-          "ja": "Softness"
+          "ja": "柔らかさ"
         },
         "OverrideIcon": {
           "FileName": "Brain"
@@ -2024,7 +2036,7 @@
           "Text": "颜色",
           "zh": "颜色",
           "en": "Colour",
-          "ja": "Colour"
+          "ja": "色"
         },
         "OverrideIcon": null,
         "MaxValue": 100

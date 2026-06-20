@@ -7,7 +7,7 @@
   "zh": "赐福",
   "en": "Spawner Event",
   "ja": "祝福",
-  "UniqueIDIndex": 949,
+  "UniqueIDIndex": 979,
   "CardType": 3,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“获得精魄赐福”",
       "icon": "",
       "type": "tag",
-      "count": 29,
+      "count": 31,
       "zh": "获得精魄赐福",
       "en": "Granted Spirit Blessing",
       "ja": "与えられた精霊の祝福"
@@ -898,6 +898,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1083,8 +1087,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1254,6 +1266,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1642,7 +1658,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -1804,7 +1820,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -1968,7 +1984,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2130,7 +2146,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2292,7 +2308,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2456,7 +2472,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2496,7 +2512,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -2618,7 +2634,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2743,6 +2759,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3012,6 +3029,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3591,7 +3612,7 @@
             "type": "stat",
             "zh": "虚空亲和度",
             "en": "Void Affinity",
-            "ja": "Void Affinity",
+            "ja": "虚無親和性",
             "max": 1000,
             "min": 0
           },
@@ -3920,6 +3941,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4927,6 +4952,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5196,6 +5222,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5596,7 +5626,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -5758,7 +5788,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -5920,7 +5950,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6082,7 +6112,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6232,7 +6262,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -6246,7 +6276,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6412,7 +6442,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6578,7 +6608,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6730,7 +6760,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -6744,7 +6774,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -6855,6 +6885,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

@@ -7,7 +7,7 @@
   "zh": "狐精魄",
   "en": "Fox Spirit",
   "ja": "キツネの精霊",
-  "UniqueIDIndex": 1681,
+  "UniqueIDIndex": 1736,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“精魄液体”",
       "icon": "",
       "type": "tag",
-      "count": 30,
+      "count": 32,
       "zh": "精魄液体",
       "en": "Spirit Liquid",
       "ja": "精霊水"
@@ -344,7 +344,7 @@
               "Text": "已消耗",
               "zh": "已消耗",
               "en": "Consumed",
-              "ja": "Consumed"
+              "ja": "使い切った"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -358,7 +358,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -565,6 +565,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -572,7 +576,7 @@
           "key": "SpiritSpellAction",
           "text": "SpiritSpellAction",
           "type": "tag",
-          "count": 24,
+          "count": 28,
           "zh": "灵魂施法动作",
           "en": "SpiritSpellAction",
           "ja": "SpiritSpellAction"
@@ -1728,7 +1732,7 @@
         "Text": "赐福",
         "zh": "赐福",
         "en": "Bless",
-        "ja": "Bless"
+        "ja": "加護を授ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1763,6 +1767,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1770,7 +1778,7 @@
           "key": "SpiritSpellAction",
           "text": "SpiritSpellAction",
           "type": "tag",
-          "count": 24,
+          "count": 28,
           "zh": "灵魂施法动作",
           "en": "SpiritSpellAction",
           "ja": "SpiritSpellAction"
@@ -2629,7 +2637,7 @@
                 "Text": "已赐福",
                 "zh": "已赐福",
                 "en": "Blessed",
-                "ja": "Blessed"
+                "ja": "加護を受けている"
               },
               "OverrideIcon": {
                 "FileName": "Fox_Wild"
@@ -3149,6 +3157,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3260,7 +3272,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -3299,7 +3311,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3313,7 +3325,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -3327,7 +3339,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -3355,7 +3367,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -3369,7 +3381,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -3552,7 +3564,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3562,7 +3577,7 @@
             "type": "stat",
             "zh": "精魄噪音",
             "en": "Spiritual Noise",
-            "ja": "Spiritual Noise",
+            "ja": "霊障",
             "max": 13,
             "min": 0
           },
@@ -3713,7 +3728,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -3752,7 +3767,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -3766,7 +3781,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -3780,7 +3795,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -3808,7 +3823,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -3822,7 +3837,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -4005,7 +4020,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4015,7 +4033,7 @@
             "type": "stat",
             "zh": "追踪援助",
             "en": "Tracking Aid",
-            "ja": "Tracking Aid",
+            "ja": "追跡支援",
             "max": 288,
             "min": 0
           },
@@ -4166,7 +4184,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -4205,7 +4223,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -4219,7 +4237,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -4233,7 +4251,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -4261,7 +4279,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -4275,7 +4293,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -4458,7 +4476,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -4820,7 +4841,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5125,7 +5149,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5248,7 +5275,7 @@
             "text": "“精魄附魔”",
             "icon": "",
             "type": "tag",
-            "count": 82,
+            "count": 84,
             "zh": "可容纳精魄",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -5287,7 +5314,7 @@
                 "Text": "湿度",
                 "zh": "湿度",
                 "en": "Wetness",
-                "ja": "Wetness"
+                "ja": "濡れ具合"
               },
               "OverrideIcon": {
                 "FileName": "Water"
@@ -5301,7 +5328,7 @@
                 "Text": "彩度",
                 "zh": "彩度",
                 "en": "Colour Intensity",
-                "ja": "Colour Intensity"
+                "ja": "色の濃さ"
               },
               "OverrideIcon": {
                 "FileName": "Urine"
@@ -5315,7 +5342,7 @@
                 "Text": "毛皮",
                 "zh": "毛皮",
                 "en": "Fur",
-                "ja": "Fur"
+                "ja": "毛皮"
               },
               "OverrideIcon": {
                 "FileName": "Fur_Cured"
@@ -5343,7 +5370,7 @@
                 "Text": "柔软度",
                 "zh": "柔软度",
                 "en": "Softness",
-                "ja": "Softness"
+                "ja": "柔らかさ"
               },
               "OverrideIcon": {
                 "FileName": "Brain"
@@ -5357,7 +5384,7 @@
                 "Text": "颜色",
                 "zh": "颜色",
                 "en": "Colour",
-                "ja": "Colour"
+                "ja": "色"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -5370,7 +5397,7 @@
             "text": "“精魄”",
             "icon": "",
             "type": "tag",
-            "count": 29,
+            "count": 31,
             "zh": "精魄附身",
             "en": "Spirit",
             "ja": "精霊",
@@ -5603,7 +5630,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5726,7 +5756,7 @@
             "text": "“可精魄附魔武器”",
             "icon": "",
             "type": "tag",
-            "count": 43,
+            "count": 44,
             "zh": "精魄附魔武器",
             "en": "Enchantable by Spirit",
             "ja": "精霊でエンチャントできる",
@@ -5737,7 +5767,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -5765,7 +5795,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -5777,7 +5807,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5815,7 +5845,7 @@
                 "Text": "柔韧",
                 "zh": "柔韧",
                 "en": "Flexibility",
-                "ja": "Flexibility"
+                "ja": "柔軟性"
               },
               "OverrideIcon": null,
               "MaxValue": 100
@@ -5840,7 +5870,7 @@
             "text": "“精魄”",
             "icon": "",
             "type": "tag",
-            "count": 29,
+            "count": 31,
             "zh": "精魄附身",
             "en": "Spirit",
             "ja": "精霊",
@@ -6073,7 +6103,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -6196,7 +6229,7 @@
             "text": "“精魄”",
             "icon": "",
             "type": "tag",
-            "count": 29,
+            "count": 31,
             "zh": "精魄附身",
             "en": "Spirit",
             "ja": "精霊",
@@ -6430,7 +6463,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -6666,8 +6702,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -6802,7 +6846,7 @@
         "Text": "赐福",
         "zh": "赐福",
         "en": "Blessing",
-        "ja": "Blessing"
+        "ja": "加護"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -6837,6 +6881,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7265,7 +7313,7 @@
             "type": "stat",
             "zh": "追踪援助",
             "en": "Tracking Aid",
-            "ja": "Tracking Aid",
+            "ja": "追跡支援",
             "max": 288,
             "min": 0
           },

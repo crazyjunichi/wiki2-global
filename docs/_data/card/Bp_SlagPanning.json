@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "淘洗炉石",
   "en": "Slag Panning",
-  "ja": "Slag Panning",
-  "UniqueIDIndex": 582,
+  "ja": "スラグ選鉱",
+  "UniqueIDIndex": 598,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "淘洗炉石",
     "zh": "淘洗炉石",
     "en": "Slag Panning",
-    "ja": "Slag Panning"
+    "ja": "スラグ選鉱"
   },
   "CardImage": {
     "FileName": "Plate_Clay"
@@ -668,7 +668,7 @@
         "CardType": 0,
         "zh": "绿炉石粉末",
         "en": "Greenstone Slag Powder",
-        "ja": "Greenstone Slag Powder",
+        "ja": "グリーンストーン鉱滓粉末",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -738,7 +738,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -826,7 +826,7 @@
     "Text": "需要绿炉石粉末",
     "zh": "需要绿炉石粉末",
     "en": "Greenstone Slag Powder Needed",
-    "ja": "Greenstone Slag Powder Needed"
+    "ja": "グリーンストーンのスラグ粉末が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1046,6 +1046,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1259,7 +1263,7 @@
             "CardType": 0,
             "zh": "绿炉石粉末",
             "en": "Greenstone Slag Powder",
-            "ja": "Greenstone Slag Powder",
+            "ja": "グリーンストーン鉱滓粉末",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1329,7 +1333,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2084,8 +2088,8 @@
                   "DefaultText": "Iron",
                   "Text": "铁元素",
                   "zh": "铁元素",
-                  "en": "Waste",
-                  "ja": "ゴミ"
+                  "en": "Iron",
+                  "ja": "Iron"
                 },
                 "OverrideIcon": {
                   "FileName": "Filth"
@@ -2220,14 +2224,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2235,7 +2247,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2249,7 +2261,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2263,7 +2275,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2277,7 +2289,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2352,7 +2364,7 @@
         "CardType": 0,
         "zh": "绿石粉",
         "en": "Greenstone Powder",
-        "ja": "Greenstone Powder",
+        "ja": "グリーンストーン粉末",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2398,7 +2410,7 @@
             "Text": "熔炼",
             "zh": "熔炼",
             "en": "Smelted",
-            "ja": "Smelted"
+            "ja": "精錬済み"
           },
           "OverrideIcon": {
             "FileName": "Cooking"
@@ -2426,7 +2438,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "品質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2440,7 +2452,7 @@
             "Text": "研磨",
             "zh": "研磨",
             "en": "Mill",
-            "ja": "Mill"
+            "ja": "粉砕"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2518,7 +2530,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },

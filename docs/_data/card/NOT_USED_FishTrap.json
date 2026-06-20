@@ -7,7 +7,7 @@
   "zh": "Fish Trap",
   "en": "Fish Trap",
   "ja": "Fish Trap",
-  "UniqueIDIndex": 1940,
+  "UniqueIDIndex": 1999,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1258,7 +1274,7 @@
               "Text": "饱满度",
               "zh": "饱满度",
               "en": "Yield",
-              "ja": "Yield"
+              "ja": "収穫量"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -1286,7 +1302,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1482,7 +1498,7 @@
                 "Text": "河流类型",
                 "zh": "河流类型",
                 "en": "River Type",
-                "ja": "River Type"
+                "ja": "川種別"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2020,6 +2036,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -2027,7 +2047,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2035,7 +2055,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2049,7 +2069,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2063,7 +2083,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -2077,7 +2097,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2525,7 +2545,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -2540,7 +2560,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -2623,7 +2643,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -2848,6 +2868,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

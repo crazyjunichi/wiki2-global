@@ -7,7 +7,7 @@
   "zh": "木盘",
   "en": "Wooden Plate",
   "ja": "木の皿",
-  "UniqueIDIndex": 2742,
+  "UniqueIDIndex": 2823,
   "CardType": 0,
   "CardTags": [
     {
@@ -50,7 +50,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -76,7 +76,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -88,7 +88,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -102,7 +102,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -116,7 +116,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -207,7 +207,7 @@
       "text": "“Used for containers that the bear can eat from”",
       "icon": "",
       "type": "tag",
-      "count": 27,
+      "count": 29,
       "zh": "不安全(熊)",
       "en": "Used for containers that the bear can eat from",
       "ja": "Used for containers that the bear can eat from",
@@ -284,7 +284,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -904,7 +904,7 @@
           "text": "“可食用的”",
           "icon": "",
           "type": "tag",
-          "count": 240,
+          "count": 237,
           "zh": "可食用的",
           "en": "Edible",
           "ja": "食用",
@@ -1127,7 +1127,7 @@
         "key": "EatingAction",
         "text": "EatingAction",
         "type": "tag",
-        "count": 231,
+        "count": 235,
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1509,6 +1509,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1694,8 +1698,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

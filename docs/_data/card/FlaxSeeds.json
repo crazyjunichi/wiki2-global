@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "亚麻种子",
   "en": "Flax Seeds",
-  "ja": "Flax Seeds",
-  "UniqueIDIndex": 1302,
+  "ja": "亜麻の種",
+  "UniqueIDIndex": 1344,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 368,
+      "count": 375,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -133,7 +133,7 @@
       "text": "“喂/添加”",
       "icon": "",
       "type": "tag",
-      "count": 295,
+      "count": 299,
       "zh": "喂/添加",
       "en": "Feed",
       "ja": "餌",
@@ -603,14 +603,14 @@
       }
     },
     {
-      "key": "tag_FeedHerbiOmni",
-      "text": "“草食和杂食动物饲料”",
+      "key": "tag_FeedHerbiOmniTiny",
+      "text": "“Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ”",
       "icon": "",
       "type": "tag",
-      "count": 70,
-      "zh": "草食和杂食动物饲料",
-      "en": "Feed for Herbivores and Omnivores",
-      "ja": "雑食動物と草食動物の餌",
+      "count": 5,
+      "zh": "草食性和杂食性极小型饲料",
+      "en": "Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ",
+      "ja": "Tiny Feed for Herbivores and Omnivores that does not catch interest small or bigger animals. ",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -618,19 +618,19 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "腐敗"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
         },
-        "MaxValue": 3600
+        "MaxValue": 11520
       },
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
           "DefaultText": "Drying",
-          "Text": "干燥",
-          "zh": "干燥",
+          "Text": "干燥中",
+          "zh": "干燥中",
           "en": "Drying",
           "ja": "乾燥中"
         },
@@ -646,7 +646,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -656,11 +656,11 @@
       "Progress": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
+          "DefaultText": "Growth",
+          "Text": "成长度",
+          "zh": "成长度",
+          "en": "Growth",
+          "ja": "成長"
         },
         "OverrideIcon": null,
         "MaxValue": 1
@@ -668,16 +668,16 @@
       "SpecialDurability1": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Cook",
-          "Text": "烹饪",
-          "zh": "烹饪",
-          "en": "Cook",
-          "ja": "Cook"
+          "DefaultText": "Burned",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Burned",
+          "ja": "焦げた"
         },
         "OverrideIcon": {
-          "FileName": "Cooking"
+          "FileName": "Flame"
         },
-        "MaxValue": 1
+        "MaxValue": 8
       },
       "SpecialDurability2": {
         "Active": true,
@@ -686,38 +686,12 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "クオリティ"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
         },
         "MaxValue": 96
-      },
-      "SpecialDurability3": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Mill",
-          "Text": "研磨",
-          "zh": "研磨",
-          "en": "Mill",
-          "ja": "製粉"
-        },
-        "OverrideIcon": null,
-        "MaxValue": 1
-      },
-      "SpecialDurability4": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Boil",
-          "Text": "烹煮",
-          "zh": "烹煮",
-          "en": "Boil",
-          "ja": "Boil"
-        },
-        "OverrideIcon": {
-          "FileName": "Cooking"
-        },
-        "MaxValue": 4
       }
     }
   ],
@@ -726,7 +700,7 @@
     "Text": "亚麻种子",
     "zh": "亚麻种子",
     "en": "Flax Seeds",
-    "ja": "Flax Seeds"
+    "ja": "亜麻の種"
   },
   "CardImage": {
     "FileName": "Rye_Grain"
@@ -743,7 +717,7 @@
       "Text": "变质",
       "zh": "变质",
       "en": "Spoilage",
-      "ja": "Spoilage"
+      "ja": "腐敗物"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 11520,
@@ -790,7 +764,7 @@
         "Text": "亚麻种子变质了！",
         "zh": "亚麻种子变质了！",
         "en": "Flax Seeds Spoiled!",
-        "ja": "Flax Seeds Spoiled!"
+        "ja": "亜麻の種が腐敗した！"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -818,6 +792,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1303,7 +1281,7 @@
           "CardType": 8,
           "zh": "静谧洞穴",
           "en": "Still Cave",
-          "ja": "Still Cave",
+          "ja": "静寂の洞窟",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1311,7 +1289,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -1397,7 +1375,7 @@
               "Text": "烟熏",
               "zh": "烟熏",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1543,7 +1521,7 @@
           "CardType": 2,
           "zh": "冰窖",
           "en": "Ice Pit",
-          "ja": "Ice Pit",
+          "ja": "氷穴",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1551,7 +1529,7 @@
               "Text": "雪",
               "zh": "雪",
               "en": "Snow",
-              "ja": "Snow"
+              "ja": "雪"
             },
             "OverrideIcon": {
               "FileName": "Snow1"
@@ -1565,7 +1543,7 @@
               "Text": "冰",
               "zh": "冰",
               "en": "Ice",
-              "ja": "Ice"
+              "ja": "氷"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1579,7 +1557,7 @@
               "Text": "冷",
               "zh": "冷",
               "en": "Cold",
-              "ja": "Cold"
+              "ja": "寒い"
             },
             "OverrideIcon": null,
             "MaxValue": 2
@@ -1627,7 +1605,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1748,7 +1726,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -1762,7 +1740,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1871,7 +1849,7 @@
               "Text": "蒸汽",
               "zh": "蒸汽",
               "en": "Steam",
-              "ja": "Steam"
+              "ja": "蒸気"
             },
             "OverrideIcon": {
               "FileName": "AloeGel_Old"
@@ -1885,7 +1863,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -1958,7 +1936,7 @@
           "CardType": 7,
           "zh": "亚麻",
           "en": "Flax",
-          "ja": "Flax"
+          "ja": "亜麻"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -2026,7 +2004,7 @@
       "Text": "成长度",
       "zh": "成长度",
       "en": "Growth",
-      "ja": "Growth"
+      "ja": "成長"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -2099,6 +2077,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2308,7 +2290,7 @@
             "type": "stat",
             "zh": "药草学",
             "en": "Herbalism",
-            "ja": "Herbalism",
+            "ja": "薬草学",
             "max": 150,
             "min": 0
           },
@@ -2384,7 +2366,7 @@
           "CardType": 0,
           "zh": "生长中的亚麻",
           "en": "Growing Flax",
-          "ja": "Growing Flax",
+          "ja": "生育中の亜麻",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2430,7 +2412,7 @@
               "Text": "成长度",
               "zh": "成长度",
               "en": "Growth",
-              "ja": "Growth"
+              "ja": "成長"
             },
             "OverrideIcon": {
               "FileName": "Growth"
@@ -2458,7 +2440,7 @@
               "Text": "健康度",
               "zh": "健康度",
               "en": "Health",
-              "ja": "Health"
+              "ja": "健全度"
             },
             "OverrideIcon": {
               "FileName": "Health"
@@ -2472,7 +2454,7 @@
               "Text": "螨虫侵害",
               "zh": "螨虫侵害",
               "en": "Mite Infestation",
-              "ja": "Mite Infestation"
+              "ja": "ダニの発生"
             },
             "OverrideIcon": {
               "FileName": "Mites"
@@ -2486,7 +2468,7 @@
               "Text": "真菌感染",
               "zh": "真菌感染",
               "en": "Fungal Infection",
-              "ja": "Fungal Infection"
+              "ja": "菌の感染"
             },
             "OverrideIcon": {
               "FileName": "Fungus"
@@ -2933,7 +2915,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 96,
@@ -3096,7 +3078,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -1,
@@ -3228,7 +3210,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -0.5,
@@ -3362,7 +3344,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -1,
@@ -3496,7 +3478,7 @@
           "Text": "加入尿液",
           "zh": "加入尿液",
           "en": "Add Urine",
-          "ja": "Add Urine"
+          "ja": "尿を加える"
         },
         "value": {
           "x": -0.5,
@@ -4419,7 +4401,7 @@
         "Text": "添加",
         "zh": "添加",
         "en": "Add",
-        "ja": "Add"
+        "ja": "入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4454,6 +4436,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5072,7 +5058,7 @@
             "type": "spice",
             "zh": "亚麻种子",
             "en": "Flax Seeds",
-            "ja": "Flax Seeds"
+            "ja": "亜麻の種"
           }
         ],
         "SpoilageChange": {
@@ -5169,7 +5155,7 @@
             "text": "“可食用的”",
             "icon": "",
             "type": "tag",
-            "count": 240,
+            "count": 237,
             "zh": "可食用的",
             "en": "Edible",
             "ja": "食用",
@@ -5762,7 +5748,7 @@
     "Text": "可食用的种子，可用作调味品。",
     "zh": "可食用的种子，可用作调味品。",
     "en": "Edible seeds, can be used as seasoning.",
-    "ja": "Edible seeds, can be used as seasoning."
+    "ja": "食用になる種子。香辛料としても利用できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -5778,7 +5764,7 @@
     "Text": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中低酸度、中等湿度和中高土质。春季中等养分下产量最高。\\n\\n<b>用途：</b>纺织品、食品、调味品。",
     "zh": "<b>获取：</b>从商人处购得。\\n\\n<b>需求：</b>中低酸度、中等湿度和中高土质。春季中等养分下产量最高。\\n\\n<b>用途：</b>纺织品、食品、调味品。",
     "en": "<b>Found:</b> Bought from Traders. \\n\\n<b>Growth Needs:</b> Low to Mid Acidity, Mid Hydration and Mid to High Structure. Produces the most yield on Medium Nutrients during Spring.\\n\\n<b>Benefits:</b> Textiles, Food, Seasoning. ",
-    "ja": "<b>Found:</b> Bought from Traders. \n\n<b>Growth Needs:</b> Low to Mid Acidity, Mid Hydration and Mid to High Structure. Produces the most yield on Medium Nutrients during Spring.\n\n<b>Benefits:</b> Textiles, Food, Seasoning. "
+    "ja": "<b>入手：</b>交易商から購入。\\n\\n<b>生育条件：</b>低〜中程度の酸性度、中程度の水分量、中〜高程度の土壌構造を必要とする。春の中程度の養分環境で最も高い収穫量を得られる。\\n\\n<b>用途：</b>織物、食料、香辛料。"
   },
   "NotAutoSolvableEvent": false,
   "ObjectWeight": 50,
@@ -5820,7 +5806,7 @@
       "type": "spice",
       "zh": "亚麻种子",
       "en": "Flax Seeds",
-      "ja": "Flax Seeds"
+      "ja": "亜麻の種"
     }
   ],
   "FlavourFadeRate": 0,
@@ -5828,6 +5814,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -6013,8 +6003,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -6149,7 +6147,7 @@
         "Text": "吃掉",
         "zh": "吃掉",
         "en": "Eat",
-        "ja": "Eat"
+        "ja": "食べる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -6184,6 +6182,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "Eating"
@@ -6312,7 +6314,7 @@
           "key": "EatingAction",
           "text": "EatingAction",
           "type": "tag",
-          "count": 231,
+          "count": 235,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -6854,7 +6856,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -7282,12 +7284,12 @@
         "CardType": 2,
         "zh": "成熟的亚麻田(成熟)",
         "en": "Mature Flax Field",
-        "ja": "Mature Flax Field"
+        "ja": "成熟した亜麻畑"
       },
       "localization": {
         "zh": "动作：收获",
         "en": "Action: Harvest",
-        "ja": "アクション：Harvest"
+        "ja": "アクション：収穫"
       }
     },
     {
@@ -7298,14 +7300,14 @@
         "CardType": 2,
         "zh": "成熟的亚麻田(成熟)",
         "en": "Mature Flax Field",
-        "ja": "Mature Flax Field"
+        "ja": "成熟した亜麻畑"
       },
       "localization": {
         "DefaultText": "Harvest",
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     },
     {
@@ -7316,12 +7318,12 @@
         "CardType": 0,
         "zh": "亚麻(成熟)",
         "en": "Flax",
-        "ja": "Flax"
+        "ja": "亜麻"
       },
       "localization": {
         "zh": "动作：收获",
         "en": "Action: Harvest",
-        "ja": "アクション：Harvest"
+        "ja": "アクション：収穫"
       }
     },
     {
@@ -7332,14 +7334,14 @@
         "CardType": 0,
         "zh": "亚麻(成熟)",
         "en": "Flax",
-        "ja": "Flax"
+        "ja": "亜麻"
       },
       "localization": {
         "DefaultText": "Harvest",
         "Text": "收获",
         "zh": "收获",
         "en": "Harvest",
-        "ja": "Harvest"
+        "ja": "収穫"
       }
     },
     {
@@ -7350,7 +7352,7 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "状态触发",
@@ -7366,7 +7368,7 @@
         "CardType": 0,
         "zh": "亚麻种子(专有)",
         "en": "Flax Seeds(Pk)",
-        "ja": "Flax Seeds"
+        "ja": "亜麻の種"
       },
       "localization": {
         "zh": "状态触发",
@@ -7556,7 +7558,7 @@
         "CardType": 7,
         "zh": "亚麻",
         "en": "Flax",
-        "ja": "Flax"
+        "ja": "亜麻"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -7572,7 +7574,7 @@
         "CardType": 7,
         "zh": "老鼠附魔",
         "en": "Mouse Enchantment",
-        "ja": "Mouse Enchantment"
+        "ja": "ネズミの加護"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -7588,7 +7590,7 @@
         "CardType": 7,
         "zh": "灰山鹑附魔",
         "en": "Partridge Enchantment",
-        "ja": "Partridge Enchantment"
+        "ja": "ヤマウズラの加護"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -7604,12 +7606,12 @@
         "CardType": 0,
         "zh": "鸡仔",
         "en": "Chicken Chick",
-        "ja": "Chicken Chick"
+        "ja": "ひよこ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -7620,12 +7622,12 @@
         "CardType": 0,
         "zh": "母鸡",
         "en": "Chicken",
-        "ja": "Chicken"
+        "ja": "ニワトリ"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -7636,12 +7638,12 @@
         "CardType": 0,
         "zh": "公鸡",
         "en": "Cock",
-        "ja": "Cock"
+        "ja": "雄鶏"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -7844,12 +7846,12 @@
         "CardType": 9,
         "zh": "冰霜精魄",
         "en": "Frost Spirit",
-        "ja": "Frost Spirit"
+        "ja": "霜の精霊"
       },
       "localization": {
         "zh": "动作：降低变质",
         "en": "Action: Lower Spoilage",
-        "ja": "アクション：Lower Spoilage"
+        "ja": "アクション：腐敗速度を下げる"
       }
     },
     {
@@ -7876,12 +7878,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -8020,12 +8022,12 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {

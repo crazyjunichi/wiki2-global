@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "召唤仪式",
   "en": "Summoning Ritual",
-  "ja": "Summoning Ritual",
-  "UniqueIDIndex": 1125,
+  "ja": "召喚の儀式",
+  "UniqueIDIndex": 1166,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "召唤仪式",
     "zh": "召唤仪式",
     "en": "Summoning Ritual",
-    "ja": "Summoning Ritual"
+    "ja": "召喚の儀式"
   },
   "CardImage": {
     "FileName": "Moontouched"
@@ -855,7 +855,7 @@
     "Text": "由此，精魄暂时与你的灵魂绑定。",
     "zh": "由此，精魄暂时与你的灵魂绑定。",
     "en": "Where a spirit is temporarily bound to your soul.",
-    "ja": "Where a spirit is temporarily bound to your soul."
+    "ja": "精霊が一時的に魂へ結び付けられている状態。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "由此，精魄暂时与你的灵魂绑定。",
         "zh": "由此，精魄暂时与你的灵魂绑定。",
         "en": "Bind",
-        "ja": "Bind"
+        "ja": "結び付ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1483,7 +1499,7 @@
                 "type": "stat",
                 "zh": "月亲和度",
                 "en": "Moon Affinity",
-                "ja": "Moon Affinity",
+                "ja": "月への親和性",
                 "max": 1000,
                 "min": 0
               },
@@ -1640,7 +1656,7 @@
                 "CardType": 3,
                 "zh": "月兽精魄(召唤失败)",
                 "en": "Moontouched Spirit",
-                "ja": "Moontouched Spirit",
+                "ja": "月触れの精霊",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -1791,6 +1807,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1873,7 +1890,7 @@
                 "type": "stat",
                 "zh": "月亲和度",
                 "en": "Moon Affinity",
-                "ja": "Moon Affinity",
+                "ja": "月への親和性",
                 "max": 1000,
                 "min": 0
               },
@@ -2051,7 +2068,7 @@
                 "CardType": 3,
                 "zh": "召唤仪式(召唤成功)",
                 "en": "Summoning Ritual",
-                "ja": "Summoning Ritual",
+                "ja": "召喚の儀式",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2202,6 +2219,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2436,7 +2454,7 @@
         "Text": "忽略",
         "zh": "忽略",
         "en": "Ignore",
-        "ja": "Ignore"
+        "ja": "無視する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2471,6 +2489,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],

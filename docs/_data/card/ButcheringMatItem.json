@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "屠宰垫",
   "en": "Butchering Mat",
-  "ja": "Butchering Mat",
-  "UniqueIDIndex": 711,
+  "ja": "解体用マット",
+  "UniqueIDIndex": 735,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "锋利",
           "zh": "锋利",
           "en": "Sharpness",
-          "ja": "Sharpness"
+          "ja": "切れ味"
         },
         "OverrideIcon": {
           "FileName": "Knife_Blank_Copper"
@@ -68,7 +68,7 @@
           "Text": "美观",
           "zh": "美观",
           "en": "Beauty",
-          "ja": "Beauty"
+          "ja": "美しさ"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -94,7 +94,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -120,7 +120,7 @@
     "Text": "屠宰垫",
     "zh": "屠宰垫",
     "en": "Butchering Mat",
-    "ja": "Butchering Mat"
+    "ja": "解体用マット"
   },
   "CardImage": {
     "FileName": "Mat"
@@ -137,7 +137,7 @@
       "Text": "污秽",
       "zh": "污秽",
       "en": "Filthiness",
-      "ja": "Filthiness"
+      "ja": "汚さ"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -184,7 +184,7 @@
         "Text": "屠宰垫脏透了！",
         "zh": "屠宰垫脏透了！",
         "en": "Butchering Mat Filthy!",
-        "ja": "Butchering Mat Filthy!"
+        "ja": "解体マットがひどく汚れている！"
       },
       "NoveltyShared": false,
       "VictorySettings": {
@@ -212,6 +212,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -459,7 +463,7 @@
           "CardType": 0,
           "zh": "肮脏的屠宰垫",
           "en": "Filthy Butchering Mat",
-          "ja": "Filthy Butchering Mat",
+          "ja": "汚れた解体マット",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1541,7 +1545,7 @@
     "Text": "一种有助于在屠宰过程中保持干净的垫子。\\n\\n需要先放置才能生效。",
     "zh": "一种有助于在屠宰过程中保持干净的垫子。\\n\\n需要先放置才能生效。",
     "en": "A mat that helps keep things clean while butchering.\\n\\nNeeds to be placed to work.",
-    "ja": "A mat that helps keep things clean while butchering.\n\nNeeds to be placed to work."
+    "ja": "解体作業用の敷きマット。\\n\\n使用するには設置が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1654,6 +1658,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1839,8 +1847,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1975,7 +1991,7 @@
         "Text": "放置",
         "zh": "放置",
         "en": "Place",
-        "ja": "Place"
+        "ja": "置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2010,6 +2026,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2024,7 +2044,7 @@
             "CardType": 2,
             "zh": "屠宰垫",
             "en": "Butchering Mat",
-            "ja": "Butchering Mat",
+            "ja": "解体用マット",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -2032,7 +2052,7 @@
                 "Text": "污秽",
                 "zh": "污秽",
                 "en": "Filthiness",
-                "ja": "Filthiness"
+                "ja": "汚さ"
               },
               "OverrideIcon": {
                 "FileName": "Filth"
@@ -2376,7 +2396,7 @@
           "CardType": 2,
           "zh": "屠宰垫",
           "en": "Butchering Mat",
-          "ja": "Butchering Mat",
+          "ja": "解体用マット",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2384,7 +2404,7 @@
               "Text": "污秽",
               "zh": "污秽",
               "en": "Filthiness",
-              "ja": "Filthiness"
+              "ja": "汚さ"
             },
             "OverrideIcon": {
               "FileName": "Filth"
@@ -2774,7 +2794,7 @@
         "CardType": 7,
         "zh": "屠宰垫",
         "en": "Butchering Mat",
-        "ja": "Butchering Mat"
+        "ja": "解体用マット"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2790,12 +2810,12 @@
         "CardType": 2,
         "zh": "屠宰垫",
         "en": "Butchering Mat",
-        "ja": "Butchering Mat"
+        "ja": "解体用マット"
       },
       "localization": {
         "zh": "动作：拿起",
         "en": "Action: Pick Up",
-        "ja": "アクション：Pick Up"
+        "ja": "アクション：取る"
       }
     }
   ],
@@ -2936,12 +2956,12 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：添入燃料",
         "en": "Action: Feed Fuel",
-        "ja": "アクション：Feed Fuel"
+        "ja": "アクション：燃料を入れる"
       }
     },
     {
@@ -2952,12 +2972,12 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "动作：添入燃料",
         "en": "Action: Feed Fuel",
-        "ja": "アクション：Feed Fuel"
+        "ja": "アクション：燃料を入れる"
       }
     },
     {
@@ -3218,12 +3238,12 @@
         "CardType": 2,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：添入燃料",
         "en": "Action: Feed Fuel",
-        "ja": "アクション：Feed Fuel"
+        "ja": "アクション：燃料を入れる"
       }
     },
     {
@@ -3234,12 +3254,12 @@
         "CardType": 2,
         "zh": "桑拿炉(熄灭)",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "动作：添入燃料",
         "en": "Action: Feed Fuel",
-        "ja": "アクション：Feed Fuel"
+        "ja": "アクション：燃料を入れる"
       }
     },
     {

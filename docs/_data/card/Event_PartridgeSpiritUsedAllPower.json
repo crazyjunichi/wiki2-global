@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "灰山鹑精魄(耗尽)",
   "en": "Partridge Spirit",
-  "ja": "Partridge Spirit",
-  "UniqueIDIndex": 1145,
+  "ja": "ヤマウズラの精霊",
+  "UniqueIDIndex": 1186,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "灰山鹑精魄",
     "zh": "灰山鹑精魄",
     "en": "Partridge Spirit",
-    "ja": "Partridge Spirit"
+    "ja": "ヤマウズラの精霊"
   },
   "CardImage": {
     "FileName": "Partridge_Wild"
@@ -855,7 +855,7 @@
     "Text": "精魄用尽了它的力量，离开你了。",
     "zh": "精魄用尽了它的力量，离开你了。",
     "en": "The Spirit used all its power and is now leaving you. ",
-    "ja": "The Spirit used all its power and is now leaving you. "
+    "ja": "精霊は力を使い果たし、あなたのもとを去っていく。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1778,12 +1794,12 @@
         "CardType": 0,
         "zh": "灰山鹑精魄(召唤)",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "耗时 降为零",
         "en": "Duration Depleted",
-        "ja": "Duration ゼロ"
+        "ja": "待ち時間 ゼロ"
       }
     },
     {
@@ -1794,7 +1810,7 @@
         "CardType": 0,
         "zh": "灰山鹑精魄(召唤)",
         "en": "Partridge Spirit",
-        "ja": "Partridge Spirit"
+        "ja": "ヤマウズラの精霊"
       },
       "localization": {
         "zh": "NoMoreLiquid 降为零",

@@ -7,7 +7,7 @@
   "zh": "残骸",
   "en": "Debris",
   "ja": "瓦礫",
-  "UniqueIDIndex": 946,
+  "UniqueIDIndex": 976,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -143,6 +143,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -698,6 +702,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1713,6 +1718,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1936,8 +1945,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2107,6 +2124,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2642,7 +2663,7 @@
                     "Text": "耐久度",
                     "zh": "耐久度",
                     "en": "Durability",
-                    "ja": "Durability"
+                    "ja": "耐久性"
                   },
                   "OverrideIcon": {
                     "FileName": "Shield"
@@ -2680,7 +2701,7 @@
                     "Text": "营养",
                     "zh": "营养",
                     "en": "Nutrition",
-                    "ja": "Nutrition"
+                    "ja": "栄養"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -3041,7 +3062,7 @@
                       "Text": "皮革绳",
                       "zh": "皮革绳",
                       "en": "Leather Cordage",
-                      "ja": "Leather Cordage"
+                      "ja": "革の紐"
                     }
                   },
                   {
@@ -3056,7 +3077,7 @@
                       "Text": "肌腱绳",
                       "zh": "肌腱绳",
                       "en": "Sinew Cordage",
-                      "ja": "Sinew Cordage"
+                      "ja": "腱繊維の紐"
                     }
                   }
                 ],
@@ -3139,7 +3160,7 @@
                     "Text": "柔韧",
                     "zh": "柔韧",
                     "en": "Flexibility",
-                    "ja": "Flexibility"
+                    "ja": "柔軟性"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 100
@@ -3259,7 +3280,7 @@
                     "Text": "营养",
                     "zh": "营养",
                     "en": "Nutrition",
-                    "ja": "Nutrition"
+                    "ja": "栄養"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -3526,6 +3547,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

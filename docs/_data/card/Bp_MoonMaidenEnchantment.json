@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "月女附魔",
   "en": "Moon Maiden Enchantment",
-  "ja": "Moon Maiden Enchantment",
-  "UniqueIDIndex": 491,
+  "ja": "月乙女のエンチャント",
+  "UniqueIDIndex": 505,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "月女附魔",
     "zh": "月女附魔",
     "en": "Moon Maiden Enchantment",
-    "ja": "Moon Maiden Enchantment"
+    "ja": "月乙女のエンチャント"
   },
   "CardImage": {
     "FileName": "MoonMaiden"
@@ -879,7 +879,7 @@
     "Text": "用月女精魄的赐福附魔一件物品，增强你的潜行能力和夜视能力，并保护你免受狼群的攻击。增加勇气的同时也难以抑制悲伤。",
     "zh": "用月女精魄的赐福附魔一件物品，增强你的潜行能力和夜视能力，并保护你免受狼群的攻击。增加勇气的同时也难以抑制悲伤。",
     "en": "Enchants an object with the blessings of the moon maiden spirit's, boosting your stealth and night vision, protecting you from wolves and boosting your courage while increasing your grief. ",
-    "ja": "Enchants an object with the blessings of the moon maiden spirit's, boosting your stealth and night vision, protecting you from wolves and boosting your courage while increasing your grief. "
+    "ja": "月乙女の精霊の祝福を品に宿す。\\n隠密性と夜目を高め、狼から身を守り、勇気を授ける。\\nその代わりに胸の悲嘆はより深く積もっていく。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1070,7 +1074,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -1198,7 +1202,7 @@
       "Text": "尸体没有精魄。",
       "zh": "尸体没有精魄。",
       "en": "Carcass has no spirit.",
-      "ja": "Carcass has no spirit."
+      "ja": "死骸には精霊が宿っていない。"
     },
     "SpecificFailMessages": []
   },
@@ -1224,7 +1228,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -1252,7 +1256,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -1264,7 +1268,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1288,7 +1292,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1302,7 +1306,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1316,7 +1320,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2065,14 +2069,22 @@
   ],
   "BuildingDaytimeCost": 2,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2080,7 +2092,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2094,7 +2106,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2108,7 +2120,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2122,7 +2134,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2197,7 +2209,7 @@
         "CardType": 9,
         "zh": "月女精魄",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit",
+        "ja": "月乙女の精霊",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -2429,7 +2441,7 @@
         "type": "stat",
         "zh": "月亲和度",
         "en": "Moon Affinity",
-        "ja": "Moon Affinity",
+        "ja": "月への親和性",
         "max": 1000,
         "min": 0
       },
@@ -2466,7 +2478,7 @@
         "type": "stat",
         "zh": "月之本能",
         "en": "Moon Urge",
-        "ja": "Moon Urge",
+        "ja": "月の衝動",
         "max": 96,
         "min": 0
       },
@@ -2914,7 +2926,7 @@
       "CardType": 0,
       "zh": "月女精魄(召唤)",
       "en": "Moon Maiden Spirit",
-      "ja": "Moon Maiden Spirit",
+      "ja": "月乙女の精霊",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2922,7 +2934,7 @@
           "Text": "共鸣",
           "zh": "共鸣",
           "en": "Attunement",
-          "ja": "Attunement"
+          "ja": "調和"
         },
         "OverrideIcon": {
           "FileName": "Morale1"
@@ -2948,7 +2960,7 @@
           "Text": "耗时",
           "zh": "耗时",
           "en": "Duration",
-          "ja": "Duration"
+          "ja": "待ち時間"
         },
         "OverrideIcon": {
           "FileName": "Spoilage"
@@ -3026,7 +3038,7 @@
         "CardType": 0,
         "zh": "月女精魄(召唤)",
         "en": "Moon Maiden Spirit",
-        "ja": "Moon Maiden Spirit"
+        "ja": "月乙女の精霊"
       },
       "localization": {
         "zh": "内部蓝图制作",

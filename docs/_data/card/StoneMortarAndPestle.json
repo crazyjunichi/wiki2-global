@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "石臼和石杵",
   "en": "Stone Mortar and Pestle",
-  "ja": "Stone Mortar and Pestle",
-  "UniqueIDIndex": 2383,
+  "ja": "石の乳鉢と乳棒",
+  "UniqueIDIndex": 2453,
   "CardType": 0,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -120,7 +120,7 @@
     "Text": "石臼和石杵",
     "zh": "石臼和石杵",
     "en": "Stone Mortar and Pestle",
-    "ja": "Stone Mortar and Pestle"
+    "ja": "石の乳鉢と乳棒"
   },
   "CardImage": {
     "FileName": "Mortar&Pestle"
@@ -962,7 +962,7 @@
     "Text": "用于将物体更彻底地碾成粉末的石碗。",
     "zh": "用于将物体更彻底地碾成粉末的石碗。",
     "en": "A stone bowl for crushing things into powder more thoroughly.",
-    "ja": "A stone bowl for crushing things into powder more thoroughly."
+    "ja": "素材をより細かく粉末状にできる石鉢。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -994,6 +994,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1179,8 +1183,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1490,12 +1502,12 @@
         "CardType": 0,
         "zh": "可食用的黑橡子",
         "en": "Edible Black Acorns",
-        "ja": "Edible Black Acorns"
+        "ja": "食用黒ドングリ"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1602,7 +1614,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -1618,7 +1630,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -1639,7 +1651,7 @@
       "localization": {
         "zh": "动作：碾碎",
         "en": "Action: Crush",
-        "ja": "アクション：Crush"
+        "ja": "アクション：砕く"
       }
     },
     {
@@ -1714,12 +1726,12 @@
         "CardType": 0,
         "zh": "绿石",
         "en": "Greenstone",
-        "ja": "Greenstone"
+        "ja": "グリーンストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1730,12 +1742,12 @@
         "CardType": 0,
         "zh": "绿炉石",
         "en": "Greenstone Slag",
-        "ja": "Greenstone Slag"
+        "ja": "グリーンストーン鉱滓"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1746,7 +1758,7 @@
         "CardType": 0,
         "zh": "干燥的帚石南花",
         "en": "Dry Heather Flowers",
-        "ja": "Dry Heather Flowers"
+        "ja": "乾燥したヒースの花"
       },
       "localization": {
         "zh": "动作：研磨",
@@ -1762,12 +1774,12 @@
         "CardType": 0,
         "zh": "脑花",
         "en": "Brain",
-        "ja": "Brain"
+        "ja": "脳"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1858,7 +1870,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -1943,7 +1955,7 @@
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1959,7 +1971,7 @@
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1970,12 +1982,12 @@
         "CardType": 0,
         "zh": "干荨麻茎",
         "en": "Dried Nettle Stems",
-        "ja": "Dried Nettle Stems"
+        "ja": "乾燥したイラクサの茎"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -1986,12 +1998,12 @@
         "CardType": 0,
         "zh": "新鲜荨麻茎",
         "en": "Fresh Nettle Stems",
-        "ja": "Fresh Nettle Stems"
+        "ja": "新鮮なイラクサの茎"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -2002,12 +2014,12 @@
         "CardType": 0,
         "zh": "黑麦粒(专有)",
         "en": "Rye Grains(Pk)",
-        "ja": "Rye Grains"
+        "ja": "ライ麦"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -2034,7 +2046,7 @@
         "CardType": 0,
         "zh": "黑麦麦芽",
         "en": "Malted Rye",
-        "ja": "Malted Rye"
+        "ja": "麦芽ライ麦"
       },
       "localization": {
         "zh": "动作：研磨",
@@ -2066,12 +2078,12 @@
         "CardType": 0,
         "zh": "小麦粒",
         "en": "Wheat Grains",
-        "ja": "Wheat Grains"
+        "ja": "小麦粒"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -2082,12 +2094,12 @@
         "CardType": 0,
         "zh": "小麦麦芽",
         "en": "Malted Wheat",
-        "ja": "Malted Wheat"
+        "ja": "小麦麦芽"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -2130,12 +2142,12 @@
         "CardType": 0,
         "zh": "巫石",
         "en": "Witchstone",
-        "ja": "Witchstone"
+        "ja": "ウィッチストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {
@@ -2146,12 +2158,12 @@
         "CardType": 0,
         "zh": "衰败巫石",
         "en": "Dead Witchstone",
-        "ja": "Dead Witchstone"
+        "ja": "死んだウィッチストーン"
       },
       "localization": {
         "zh": "动作：研磨",
         "en": "Action: Grind",
-        "ja": "アクション：Grind"
+        "ja": "アクション：粉砕"
       }
     },
     {

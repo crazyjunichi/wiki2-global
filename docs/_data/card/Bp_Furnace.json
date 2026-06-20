@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "熔炉",
   "en": "Furnace",
-  "ja": "Furnace",
-  "UniqueIDIndex": 438,
+  "ja": "溶鉱炉",
+  "UniqueIDIndex": 450,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "熔炉",
     "zh": "熔炉",
     "en": "Furnace",
-    "ja": "Furnace"
+    "ja": "溶鉱炉"
   },
   "CardImage": {
     "FileName": "Furnace_On"
@@ -826,7 +826,7 @@
     "Text": "需要窑炉",
     "zh": "需要窑炉",
     "en": "Kiln Needed",
-    "ja": "Kiln Needed"
+    "ja": "窯が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1033,7 +1033,7 @@
     "Text": "温度足够高，足以熔炼铜的熔炉。\\n\\n需要风箱或在多风的区域才能达到足够高的温度。",
     "zh": "温度足够高，足以熔炼铜的熔炉。\\n\\n需要风箱或在多风的区域才能达到足够高的温度。",
     "en": "A furnace hot enough to smelt copper.\\n\\nRequires bellows or a windy location to reach high enough temperatures.",
-    "ja": "A furnace hot enough to smelt copper.\n\nRequires bellows or a windy location to reach high enough temperatures."
+    "ja": "銅を精錬できる高温の炉。\\n\\nふいご、または風の強い場所が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1065,6 +1065,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2134,14 +2138,22 @@
   ],
   "BuildingDaytimeCost": 6,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 2,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2149,7 +2161,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2163,7 +2175,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2177,7 +2189,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2191,7 +2203,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2266,7 +2278,7 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace",
+        "ja": "溶鉱炉",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -2274,7 +2286,7 @@
             "Text": "温度",
             "zh": "温度",
             "en": "Temperature",
-            "ja": "Temperature"
+            "ja": "温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -2611,7 +2623,7 @@
         "type": "stat",
         "zh": "满足感",
         "en": "Gratification",
-        "ja": "Gratification",
+        "ja": "満足感",
         "max": 100,
         "min": -100
       },

@@ -7,7 +7,7 @@
   "zh": "风亲和度",
   "en": "Wind Affinity",
   "ja": "風の親和性",
-  "UniqueIDIndex": 4599,
+  "UniqueIDIndex": 4731,
   "GameName": {
     "DefaultText": "Wind Affinity",
     "Text": "风亲和度",
@@ -20,7 +20,7 @@
     "Text": "你与风精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与风精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of Wind.\\n\\nSpend time in windy or high places to increase it.",
-    "ja": "How much in common you have with the spirit of Wind.\n\nSpend time in windy or high places to increase it."
+    "ja": "風の精霊との共鳴の深さ。\\n\\n風の強い場所や高所で過ごすことで高まる。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -104,6 +104,48 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -250,
+        "y": -250
+      }
+    },
+    {
+      "link": {
         "key": "Bp_WindBlessing",
         "icon": "Spirit_Wind",
         "type": "card",
@@ -152,7 +194,7 @@
         "CardType": 7,
         "zh": "呼唤风精魄(呼唤)",
         "en": "Wind Spirit Calling",
-        "ja": "Wind Spirit Calling"
+        "ja": "風の精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -283,7 +325,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -299,7 +341,7 @@
         "CardType": 2,
         "zh": "韦石",
         "en": "West Stone",
-        "ja": "West Stone",
+        "ja": "ウエストストーン",
         "AlternateNames": [
           {
             "Conditions": {
@@ -313,7 +355,7 @@
               "Text": "韦石",
               "zh": "韦石",
               "en": "West Stone",
-              "ja": "West Stone"
+              "ja": "ウエストストーン"
             }
           },
           {
@@ -328,7 +370,7 @@
               "Text": "韦石",
               "zh": "韦石",
               "en": "West Stone",
-              "ja": "West Stone"
+              "ja": "ウエストストーン"
             }
           }
         ]
@@ -336,7 +378,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：祝福"
       },
       "value": {
         "x": 12,
@@ -378,7 +420,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 12,
@@ -446,7 +488,7 @@
               "Text": "标记橡树",
               "zh": "标记橡树",
               "en": "Marked Oak Tree",
-              "ja": "Marked Oak Tree"
+              "ja": "印付きのオークの木"
             }
           }
         ]
@@ -484,7 +526,7 @@
               "Text": "标记松树",
               "zh": "标记松树",
               "en": "Marked Pine Tree",
-              "ja": "Marked Pine Tree"
+              "ja": "印付きの松の木"
             }
           }
         ]
@@ -504,13 +546,55 @@
   "_modifierRateList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": -0.1,
+        "y": -0.1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": -0.25,
+        "y": -0.25
+      }
+    },
+    {
+      "link": {
         "key": "ClearingPine_MoonHillsQEE",
         "icon": "Woods9",
         "type": "card",
         "CardType": 8,
         "zh": "月丘",
         "en": "Moon Hills",
-        "ja": "Moon Hills"
+        "ja": "月の丘"
       },
       "localization": {
         "zh": "被动效果",
@@ -570,7 +654,7 @@
         "CardType": 8,
         "zh": "摇曳松林",
         "en": "Swaying Pines",
-        "ja": "Swaying Pines"
+        "ja": "銅の針"
       },
       "localization": {
         "zh": "被动效果：Wind Affinity",
@@ -590,7 +674,7 @@
         "CardType": 8,
         "zh": "摇曳松林",
         "en": "Swaying Pines",
-        "ja": "Swaying Pines"
+        "ja": "銅の針"
       },
       "localization": {
         "zh": "被动效果",
@@ -650,7 +734,7 @@
         "CardType": 8,
         "zh": "风针松林",
         "en": "Wind Needles",
-        "ja": "Wind Needles"
+        "ja": "風鳴る針葉"
       },
       "localization": {
         "zh": "被动效果",
@@ -737,7 +821,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,
@@ -757,7 +841,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       },
       "value": {
         "x": 50,

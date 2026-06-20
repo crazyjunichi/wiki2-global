@@ -7,7 +7,7 @@
   "zh": "苔藓",
   "en": "Moss",
   "ja": "Moss",
-  "UniqueIDIndex": 1826,
+  "UniqueIDIndex": 1882,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "耐久度",
           "zh": "耐久度",
           "en": "Durability",
-          "ja": "Durability"
+          "ja": "耐久性"
         },
         "OverrideIcon": {
           "FileName": "Shield"
@@ -52,21 +52,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
-        },
-        "OverrideIcon": {
-          "FileName": "Quality"
-        },
-        "MaxValue": 100
-      },
-      "SpecialDurability2": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Quality",
-          "Text": "品质",
-          "zh": "品质",
-          "en": "Quality",
-          "ja": "クオリティ"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -90,7 +76,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Spoilage"
@@ -104,7 +90,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -123,7 +109,7 @@
         "OverrideIcon": {
           "FileName": "Quality"
         },
-        "MaxValue": 100
+        "MaxValue": 96
       }
     },
     {
@@ -260,7 +246,7 @@
           "Text": "耐久度",
           "zh": "耐久度",
           "en": "Durability",
-          "ja": "Durability"
+          "ja": "耐久性"
         },
         "OverrideIcon": {
           "FileName": "Shield"
@@ -316,7 +302,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "品質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -446,6 +432,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -977,7 +967,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -1037,12 +1027,12 @@
           "CardType": 0,
           "zh": "熊咬伤",
           "en": "Bear Bite",
-          "ja": "Bear Bite"
+          "ja": "熊による咬傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -1057,12 +1047,12 @@
           "CardType": 0,
           "zh": "熊爪痕",
           "en": "Bear Clawmarks",
-          "ja": "Bear Clawmarks"
+          "ja": "熊の爪痕"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -1157,12 +1147,12 @@
           "CardType": 0,
           "zh": "森林猛兽咬伤",
           "en": "Forest Beast Bite",
-          "ja": "Forest Beast Bite"
+          "ja": "森の獣による咬傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -1177,12 +1167,12 @@
           "CardType": 0,
           "zh": "森林猛兽爪痕",
           "en": "Forest Beast Clawmarks",
-          "ja": "Forest Beast Clawmarks"
+          "ja": "森の獣による爪傷"
         },
         "localization": {
           "zh": "转化：敷料",
           "en": "Action: Dressing",
-          "ja": "アクション：Dressing"
+          "ja": "アクション：包帯"
         },
         "value": {
           "x": -1,
@@ -1483,7 +1473,7 @@
           "CardType": 0,
           "zh": "左臂撕裂伤",
           "en": "Arm Laceration",
-          "ja": "Arm Laceration"
+          "ja": "腕の裂傷"
         },
         "localization": {
           "zh": "转化：压迫",
@@ -2515,6 +2505,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2816,7 +2810,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -2826,7 +2823,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -3185,7 +3182,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -3644,7 +3644,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [
           {
@@ -4112,7 +4115,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [
           {
@@ -4355,8 +4361,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -4892,12 +4906,12 @@
         "CardType": 2,
         "zh": "泉水",
         "en": "Spring",
-        "ja": "Spring"
+        "ja": "春"
       },
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -5079,10 +5093,10 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -5137,7 +5151,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -5154,22 +5168,6 @@
         "zh": "动作：修复庇护所",
         "en": "Action: Repair Shelter",
         "ja": "アクション：シェルターを修理する"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：清洗敷料",
-        "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
       }
     },
     {
@@ -5196,12 +5194,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -5242,7 +5240,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5257,7 +5255,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -5383,7 +5381,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5398,7 +5396,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5406,7 +5404,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -5431,7 +5429,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -5446,7 +5444,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -5454,7 +5452,7 @@
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     },
     {
@@ -5577,12 +5575,28 @@
         "CardType": 2,
         "zh": "雪棚",
         "en": "Snow Shelter",
-        "ja": "Snow Shelter"
+        "ja": "雪シェルター"
       },
       "localization": {
         "zh": "动作：修复",
         "en": "Action: Repair",
-        "ja": "アクション：Repair"
+        "ja": "アクション：修理"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：清洗敷料",
+        "en": "Action: Wash the Dressing",
+        "ja": "アクション：Wash the Dressing"
       }
     },
     {
@@ -5609,12 +5623,12 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：清洗敷料",
         "en": "Action: Wash the Dressing",
-        "ja": "アクション：Wash the Dressing"
+        "ja": "アクション：包帯を洗う"
       }
     }
   ],

@@ -7,7 +7,7 @@
   "zh": "粘土",
   "en": "Clay",
   "ja": "粘土",
-  "UniqueIDIndex": 839,
+  "UniqueIDIndex": 868,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -66,7 +66,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -80,7 +80,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -106,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -120,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -131,7 +131,7 @@
       "text": "“粉末”",
       "icon": "",
       "type": "tag",
-      "count": 30,
+      "count": 33,
       "zh": "粉末",
       "en": "Powder",
       "ja": "パウダー",
@@ -469,7 +469,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -483,7 +483,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -592,7 +592,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -606,7 +606,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -639,13 +639,251 @@
       },
       {
         "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：保存-麻袋",
+          "en": "Passive Effect：Preserve  - Sack",
+          "ja": "パッシブ効果：保存 - 袋"
+        },
+        "value": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Sack - Chilled",
+          "en": "Passive Effect：Preserve - Sack - Chilled",
+          "ja": "パッシブ効果：Preserve - Sack - Chilled"
+        },
+        "value": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
           "key": "Pk_5_1_6_ScribeGear_JarWithSootInk",
           "icon": "Jar_Clay",
           "type": "card",
           "CardType": 0,
           "zh": "小陶罐(专有)",
           "en": "Clay Jar(Pk)",
-          "ja": "Clay Jar",
+          "ja": "粘土の壺",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -677,7 +915,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -715,7 +953,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -812,7 +1050,7 @@
           "CardType": 7,
           "zh": "铸造宽头箭头",
           "en": "Cast Broadhead Arrows",
-          "ja": "Cast Broadhead Arrows"
+          "ja": "鋳造幅広矢"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -832,7 +1070,7 @@
           "CardType": 7,
           "zh": "铸造箭头",
           "en": "Cast Arrow Heads",
-          "ja": "Cast Arrow Heads"
+          "ja": "鋳造された矢じり"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -852,7 +1090,7 @@
           "CardType": 7,
           "zh": "铸造斧刃头",
           "en": "Cast Axe Head",
-          "ja": "Cast Axe Head"
+          "ja": "鋳造された斧頭"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -872,7 +1110,7 @@
           "CardType": 7,
           "zh": "铸造屠宰刀刃片",
           "en": "Cast Butchering Knife Blade",
-          "ja": "Cast Butchering Knife Blade"
+          "ja": "鋳造解体用ナイフの刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -892,7 +1130,7 @@
           "CardType": 7,
           "zh": "铸造凿刃",
           "en": "Cast Chisel Blade",
-          "ja": "Cast Chisel Blade"
+          "ja": "鋳造されたのみ刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -912,7 +1150,7 @@
           "CardType": 7,
           "zh": "铸造拉刀刃片",
           "en": "Cast Drawknife Blade",
-          "ja": "Cast Drawknife Blade"
+          "ja": "鋳造ドローナイフの刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -932,7 +1170,7 @@
           "CardType": 7,
           "zh": "铸造锄头",
           "en": "Cast Hoe Head",
-          "ja": "Cast Hoe Head"
+          "ja": "鋳造されたクワの刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -952,7 +1190,7 @@
           "CardType": 7,
           "zh": "铸造狩猎长矛头",
           "en": "Cast Hunting Spearhead",
-          "ja": "Cast Hunting Spearhead"
+          "ja": "鋳造狩猟用槍先"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -972,7 +1210,7 @@
           "CardType": 7,
           "zh": "铸造刀刃片",
           "en": "Cast Knife Blade",
-          "ja": "Cast Knife Blade"
+          "ja": "鋳造されたナイフ刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -992,7 +1230,7 @@
           "CardType": 7,
           "zh": "铸造肉钩",
           "en": "Cast Meat Hook",
-          "ja": "Cast Meat Hook"
+          "ja": "鋳造の肉吊りフック"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1012,7 +1250,7 @@
           "CardType": 7,
           "zh": "铸造大镰刀头",
           "en": "Cast Scythe Blade",
-          "ja": "Cast Scythe Blade"
+          "ja": "鋳造された大鎌刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1032,7 +1270,7 @@
           "CardType": 7,
           "zh": "铸造铲子头",
           "en": "Cast Shovel Head",
-          "ja": "Cast Shovel Head"
+          "ja": "鋳造されたシャベル頭"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1052,7 +1290,7 @@
           "CardType": 7,
           "zh": "铸造镰刀头",
           "en": "Cast Sickle Blade",
-          "ja": "Cast Sickle Blade"
+          "ja": "鋳造された鎌刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1072,7 +1310,7 @@
           "CardType": 7,
           "zh": "铸造剥皮刀刃片",
           "en": "Cast Skinning Knife Blade",
-          "ja": "Cast Skinning Knife Blade"
+          "ja": "鋳造皮剥ぎナイフの刃"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1092,7 +1330,7 @@
           "CardType": 7,
           "zh": "铸造矛头",
           "en": "Cast Spear Head",
-          "ja": "Cast Spear Head"
+          "ja": "鋳造された槍先"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1112,7 +1350,7 @@
           "CardType": 7,
           "zh": "铸造勺型钻头",
           "en": "Cast Spoon Bit",
-          "ja": "Cast Spoon Bit"
+          "ja": "鋳造スプーンビット"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1267,7 +1505,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 50,
     "MaxValue": 50,
@@ -1383,7 +1621,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1440,7 +1678,7 @@
           "Text": "碾碎",
           "zh": "碾碎",
           "en": "Crush",
-          "ja": "Crush"
+          "ja": "砕く"
         },
         "value": {
           "x": 10,
@@ -1462,7 +1700,7 @@
           "Text": "碾碎",
           "zh": "碾碎",
           "en": "Crush",
-          "ja": "Crush"
+          "ja": "砕く"
         },
         "value": {
           "x": 25,
@@ -1519,7 +1757,7 @@
       "Text": "研磨",
       "zh": "研磨",
       "en": "Mill",
-      "ja": "Mill"
+      "ja": "製粉"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -1875,7 +2113,7 @@
         "Text": "碾碎",
         "zh": "碾碎",
         "en": "Crush",
-        "ja": "Crush"
+        "ja": "砕く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1910,6 +2148,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -1917,7 +2159,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1925,7 +2167,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1939,7 +2181,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1953,7 +2195,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1967,7 +2209,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2385,7 +2627,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -2911,7 +3153,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -2922,7 +3164,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2950,7 +3192,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2962,7 +3204,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3000,7 +3242,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3014,7 +3256,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3035,7 +3277,7 @@
         "Text": "碾碎",
         "zh": "碾碎",
         "en": "Crush",
-        "ja": "Crush"
+        "ja": "砕く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3070,6 +3312,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -3077,7 +3323,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3085,7 +3331,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3099,7 +3345,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3113,7 +3359,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -3127,7 +3373,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3545,7 +3791,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -4072,7 +4318,7 @@
             "CardType": 0,
             "zh": "石臼和石杵",
             "en": "Stone Mortar and Pestle",
-            "ja": "Stone Mortar and Pestle",
+            "ja": "石の乳鉢と乳棒",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -4223,6 +4469,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -4230,7 +4480,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -4238,7 +4488,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -4252,7 +4502,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -4266,7 +4516,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -4280,7 +4530,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -4569,7 +4819,7 @@
             "type": "stat",
             "zh": "陶艺",
             "en": "Pottery",
-            "ja": "Pottery",
+            "ja": "陶芸のスキル",
             "max": 150,
             "min": 0
           },
@@ -4754,7 +5004,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -5515,7 +5765,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5529,7 +5779,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -5557,6 +5807,1334 @@
       },
       "WorksInverted": false,
       "WorksBothWays": false
+    },
+    {
+      "ActionName": {
+        "DefaultText": "Craft Bowl",
+        "Text": "制作碗",
+        "zh": "制作碗",
+        "en": "Craft Bowl",
+        "ja": "ボウルを作る"
+      },
+      "ActionDescription": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoveltyShared": false,
+      "VictorySettings": {
+        "Victory": false,
+        "SpecialEnding": false,
+        "VictoryMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        }
+      },
+      "UnavailableInDemo": false,
+      "SaveGame": false,
+      "ConfirmPopup": false,
+      "CustomConfirmText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NotInterruptedByEncounters": false,
+      "StackCompatible": false,
+      "DaytimeCost": 2,
+      "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
+      "ActionSounds": [],
+      "DisablePitchVariation": false,
+      "ActionTags": [
+        {
+          "key": "HandAction",
+          "text": "HandAction",
+          "type": "tag",
+          "count": 1460,
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗物"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 180
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Temperature",
+              "Text": "温度",
+              "zh": "温度",
+              "en": "Temperature",
+              "ja": "温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Cook",
+              "Text": "烹饪",
+              "zh": "烹饪",
+              "en": "Cook",
+              "ja": "焼く"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "質"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Boil",
+              "Text": "烹煮",
+              "zh": "烹煮",
+              "en": "Boil",
+              "ja": "Boil"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Mill",
+              "Text": "研磨",
+              "zh": "研磨",
+              "en": "Mill",
+              "ja": "製粉"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "耐久",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Spoilage"
+            },
+            "MaxValue": 46080
+          },
+          "zh": "手部动作",
+          "en": "HandAction",
+          "ja": "HandAction"
+        }
+      ],
+      "RequiredStatValues": [
+        {
+          "Stat": {
+            "key": "Light_79290cafb08e48f4d871704c20e69b1c",
+            "icon": "",
+            "type": "stat",
+            "zh": "光亮",
+            "en": "Light",
+            "ja": "光",
+            "max": 100,
+            "min": 0
+          },
+          "TriggerRange": {
+            "x": 10,
+            "y": 100
+          },
+          "NotifyWhenNotMet": true,
+          "HideAllWhenNotMet": false
+        }
+      ],
+      "RequiredNPCStatValues": [],
+      "RequiredCardsOnBoard": [],
+      "RequiredTagsOnBoard": [],
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredReceivingContainer": [],
+      "RequiredReceivingContainerTag": [],
+      "RequiredNOTReceivingContainerTag": [],
+      "RequiredReceivingContainerDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingLiquidContent": {
+        "IsActive": false,
+        "RequiredLiquid": null,
+        "RequiredGroup": null,
+        "RequiredQuantity": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "RequiredActiveHidingGroups": [],
+      "HideIfConditionsNotMet": false,
+      "NotBaseAction": false,
+      "Cancellable": false,
+      "InstantStatModifications": false,
+      "DontDoStatModificationsOnCancel": false,
+      "InstantDurabilityModifications": false,
+      "ReceivingCardFlavourBonus": false,
+      "GivenCardFlavourBonus": false,
+      "ResetWhenDone": null,
+      "StatInterruptions": [],
+      "StartDialog": null,
+      "ProducedCards": [],
+      "StatModifications": [
+        {
+          "Stat": {
+            "key": "Skill_Pottery",
+            "icon": "Bowl_Clay",
+            "type": "stat",
+            "zh": "陶艺",
+            "en": "Pottery",
+            "ja": "陶芸のスキル",
+            "max": 150,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Filth",
+            "icon": "Filth",
+            "type": "stat",
+            "zh": "污垢",
+            "en": "Filth",
+            "ja": "汚れ",
+            "max": 500,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 10,
+            "y": 10
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Focus",
+            "icon": "Focus",
+            "type": "stat",
+            "zh": "专注度",
+            "en": "Focus",
+            "ja": "集中力",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 2,
+            "y": 2
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Stamina",
+            "icon": "Stamina",
+            "type": "stat",
+            "zh": "耐力",
+            "en": "Stamina",
+            "ja": "スタミナ",
+            "max": 32,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Weight",
+            "icon": "Weight2",
+            "type": "stat",
+            "zh": "体重",
+            "en": "Weight",
+            "ja": "体重",
+            "max": 1000000,
+            "min": 293999
+          },
+          "ValueModifier": {
+            "x": -3,
+            "y": -3
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
+        {
+          "Stat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "満足感",
+            "max": 100,
+            "min": -100
+          },
+          "ValueModifier": {
+            "x": 1,
+            "y": 1
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": false,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "InterpolatedStatModifications": [],
+      "NPCStatModifications": [],
+      "TemporaryStatModifications": [],
+      "MovePlayer": {
+        "MoveOption": 0,
+        "ToEnv": null,
+        "Pathfinding": null,
+        "Direction": 0
+      },
+      "MoveReceivingCard": {
+        "Card": null,
+        "UseCardinalDirection": false,
+        "MoveInDirection": 0,
+        "Pathfinding": null
+      },
+      "MoveNPC": [],
+      "SetNPCHome": [],
+      "ExtraDurabilityModifications": [],
+      "BlueprintsFullUnlock": [
+        {
+          "key": "Bp_ClayBowl",
+          "icon": "Bowl_Clay",
+          "type": "card",
+          "CardType": 7,
+          "zh": "陶碗",
+          "en": "Clay Bowl",
+          "ja": "粘土のボウル",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        }
+      ],
+      "CompletedImprovements": [],
+      "AddedInRunPerks": [],
+      "DontShowDestroyMessage": false,
+      "CustomDestroyMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoCardsAffectedMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "ReceivingCardChanges": {
+        "ModType": 2,
+        "TransformInto": {
+          "key": "ClayBowlUnfired",
+          "icon": "Bowl_Clay",
+          "type": "card",
+          "CardType": 0,
+          "zh": "未烧制的陶碗",
+          "en": "Unfired Clay Bowl",
+          "ja": "焼いてない粘土のボウル",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fired",
+              "Text": "烧制进度",
+              "zh": "烧制进度",
+              "en": "Fired",
+              "ja": "焼く"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 12
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "TransformToLiquidQuantity": 0,
+        "TransferSpoilage": false,
+        "TransferUsage": false,
+        "TransferFuel": false,
+        "TransferCharges": false,
+        "TransferSpecial1": false,
+        "TransferSpecial2": false,
+        "TransferSpecial3": false,
+        "TransferSpecial4": false,
+        "TransferInventory": false,
+        "TransferSavedIngredients": false,
+        "AverageGivenAndReceivingCards": false,
+        "TransferLiquid": false,
+        "SpoilageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UsageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "FuelTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ProgressTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special1TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special2TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special3TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special4TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ModifyDurability": false,
+        "ModifyLiquid": false,
+        "DropOnDestroyList": false,
+        "LiquidEffectScaling": 0,
+        "AddFlavoursFromTargetCard": false,
+        "AddFlavoursFromOtherCard": false,
+        "AddSpicesFromTargetCard": false,
+        "AddSpicesFromOtherCard": false,
+        "AddedFlavours": [],
+        "AddedSpiceTags": [],
+        "SpoilageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpoilageFromOtherCard": false,
+        "UsageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetUsageFromOtherCard": false,
+        "FuelChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetFuelFromOtherCard": false,
+        "ChargesChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetProgressFromOtherCard": false,
+        "LiquidQuantityChange": {
+          "x": 0,
+          "y": 0
+        },
+        "Special1Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial1FromOtherCard": false,
+        "Special2Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial2FromOtherCard": false,
+        "Special3Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial3FromOtherCard": false,
+        "Special4Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial4FromOtherCard": false,
+        "StatInterpolatedDurabilityChanges": [],
+        "DurabilityInterpolatedTransfers": [],
+        "ScaleChangesPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UseOtherCardForLiquidQuantity": false
+      },
+      "CustomWindowPrefab": null,
+      "OpenQuestLog": false,
+      "OpenMap": false,
+      "UpdateMap": false,
+      "EditDescription": false,
+      "FadeToBlack": 0,
+      "FadeMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "FadeTips": false,
+      "TravelToPreviousEnv": false,
+      "TravelToOtherRoom": false,
+      "RoomDirection": 0,
+      "ExitDirection": 0,
+      "RequiredGivenContainer": [],
+      "RequiredGivenContainerTag": [],
+      "RequiredGivenContainerDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredGivenDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 15,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredGivenLiquidContent": {
+        "IsActive": false,
+        "RequiredLiquid": null,
+        "RequiredGroup": null,
+        "RequiredQuantity": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "GivenCardChanges": {
+        "ModType": 0,
+        "TransformInto": null,
+        "TransformToLiquidQuantity": 0,
+        "TransferSpoilage": false,
+        "TransferUsage": false,
+        "TransferFuel": false,
+        "TransferCharges": false,
+        "TransferSpecial1": false,
+        "TransferSpecial2": false,
+        "TransferSpecial3": false,
+        "TransferSpecial4": false,
+        "TransferInventory": false,
+        "TransferSavedIngredients": false,
+        "AverageGivenAndReceivingCards": false,
+        "TransferLiquid": false,
+        "SpoilageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UsageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "FuelTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ProgressTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special1TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special2TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special3TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special4TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ModifyDurability": false,
+        "ModifyLiquid": true,
+        "DropOnDestroyList": false,
+        "LiquidEffectScaling": 0,
+        "AddFlavoursFromTargetCard": false,
+        "AddFlavoursFromOtherCard": false,
+        "AddSpicesFromTargetCard": false,
+        "AddSpicesFromOtherCard": false,
+        "AddedFlavours": [],
+        "AddedSpiceTags": [],
+        "SpoilageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpoilageFromOtherCard": false,
+        "UsageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetUsageFromOtherCard": false,
+        "FuelChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetFuelFromOtherCard": false,
+        "ChargesChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetProgressFromOtherCard": false,
+        "LiquidQuantityChange": {
+          "x": -15,
+          "y": -15
+        },
+        "Special1Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial1FromOtherCard": false,
+        "Special2Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial2FromOtherCard": false,
+        "Special3Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial3FromOtherCard": false,
+        "Special4Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial4FromOtherCard": false,
+        "StatInterpolatedDurabilityChanges": [],
+        "DurabilityInterpolatedTransfers": [],
+        "ScaleChangesPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UseOtherCardForLiquidQuantity": false
+      },
+      "CreatedLiquidInGivenCard": {
+        "LiquidCard": null,
+        "Quantity": {
+          "x": 0,
+          "y": 0
+        },
+        "Durabilities": {
+          "Spoilage": 0,
+          "Usage": 0,
+          "Fuel": 0,
+          "Progress": 0,
+          "Special1": 0,
+          "Special2": 0,
+          "Special3": 0,
+          "Special4": 0,
+          "SpoilageValue": 0,
+          "UsageValue": 0,
+          "FuelValue": 0,
+          "ProgressValue": 0,
+          "Special1Value": 0,
+          "Special2Value": 0,
+          "Special3Value": 0,
+          "Special4Value": 0,
+          "SpoilageFrom": 0,
+          "UsageFrom": 0,
+          "FuelFrom": 0,
+          "ProgressFrom": 0,
+          "Special1From": 0,
+          "Special2From": 0,
+          "Special3From": 0,
+          "Special4From": 0
+        }
+      },
+      "CarryOverGivenCard": false,
+      "CompatibleCards": {
+        "TriggerCards": [],
+        "TriggerTags": [
+          {
+            "key": "tag_TemperLiquid",
+            "text": "“Temper Liquid”",
+            "icon": "",
+            "type": "tag",
+            "count": 2,
+            "zh": "调和液体",
+            "en": "Temper Liquid",
+            "ja": "Temper Liquid"
+          }
+        ]
+      },
+      "NOTCompatibleCards": {
+        "TriggerCards": [],
+        "TriggerTags": []
+      },
+      "WorksInverted": false,
+      "WorksBothWays": false
     }
   ],
   "OnStatsChangeActions": [
@@ -5566,7 +7144,7 @@
         "Text": "为品质添加石磨研磨加成",
         "zh": "为品质添加石磨研磨加成",
         "en": "Add QuernMillingBonus to Quality",
-        "ja": "Add QuernMillingBonus to Quality"
+        "ja": "Dev?"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -5601,6 +7179,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6522,6 +8104,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -6707,8 +8293,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -7075,7 +8669,7 @@
         "Text": "制作粘土",
         "zh": "制作粘土",
         "en": "Make Clay",
-        "ja": "Make Clay"
+        "ja": "粘土を作る"
       }
     },
     {
@@ -7099,10 +8693,10 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -7115,10 +8709,10 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -7132,36 +8726,34 @@
     },
     {
       "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
+        "key": "LQ_Clay",
+        "icon": "Clay",
         "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
+        "CardType": 9,
+        "zh": "粘土",
+        "en": "Clay",
+        "ja": "Clay"
       },
       "localization": {
-        "zh": "动作：挖泥巴",
-        "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "zh": "动作：取出",
+        "en": "Action: Take Out",
+        "ja": "アクション：Take Out"
       }
     },
     {
       "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
+        "key": "LQ_Clay",
+        "icon": "Clay",
         "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
+        "CardType": 9,
+        "zh": "粘土",
+        "en": "Clay",
+        "ja": "Clay"
       },
       "localization": {
-        "DefaultText": "Dig Up Mud",
-        "Text": "挖泥巴",
-        "zh": "挖泥巴",
-        "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "zh": "动作：拿出10份",
+        "en": "Action: Take Out 10",
+        "ja": "アクション：Take Out 10"
       }
     },
     {
@@ -7270,7 +8862,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7285,7 +8877,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -7363,7 +8955,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7378,7 +8970,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -7556,7 +9148,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7571,7 +9163,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7579,7 +9171,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥をすくう"
       }
     },
     {
@@ -7604,7 +9196,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7619,7 +9211,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7629,7 +9221,7 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     },
     {
@@ -7654,7 +9246,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7669,7 +9261,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7677,7 +9269,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥をすくう"
       }
     },
     {
@@ -7702,7 +9294,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7717,7 +9309,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -7727,7 +9319,7 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     },
     {
@@ -7944,18 +9536,36 @@
     },
     {
       "link": {
-        "key": "StreamQEE",
-        "icon": "RiverShore",
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
         "type": "card",
         "CardType": 2,
-        "zh": "溪流",
-        "en": "Stream",
-        "ja": "Stream"
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
       },
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
         "ja": "アクション：Dig up Mud"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "DefaultText": "Dig Up Mud",
+        "Text": "挖泥巴",
+        "zh": "挖泥巴",
+        "en": "Dig Up Mud",
+        "ja": "Dig Up Mud"
       }
     },
     {
@@ -7966,14 +9576,30 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
+      },
+      "localization": {
+        "zh": "动作：挖泥巴",
+        "en": "Action: Dig up Mud",
+        "ja": "アクション：泥をすくう"
+      }
+    },
+    {
+      "link": {
+        "key": "StreamQEE",
+        "icon": "RiverShore",
+        "type": "card",
+        "CardType": 2,
+        "zh": "溪流",
+        "en": "Stream",
+        "ja": "小川"
       },
       "localization": {
         "DefaultText": "Dig Up Mud",
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     },
     {
@@ -8034,7 +9660,7 @@
         "CardType": 7,
         "zh": "铸造宽头箭头",
         "en": "Cast Broadhead Arrows",
-        "ja": "Cast Broadhead Arrows"
+        "ja": "鋳造幅広矢"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8050,7 +9676,7 @@
         "CardType": 7,
         "zh": "铸造箭头",
         "en": "Cast Arrow Heads",
-        "ja": "Cast Arrow Heads"
+        "ja": "鋳造された矢じり"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8066,7 +9692,7 @@
         "CardType": 7,
         "zh": "铸造斧刃头",
         "en": "Cast Axe Head",
-        "ja": "Cast Axe Head"
+        "ja": "鋳造された斧頭"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8082,7 +9708,7 @@
         "CardType": 7,
         "zh": "铸造屠宰刀刃片",
         "en": "Cast Butchering Knife Blade",
-        "ja": "Cast Butchering Knife Blade"
+        "ja": "鋳造解体用ナイフの刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8098,7 +9724,7 @@
         "CardType": 7,
         "zh": "铸造凿刃",
         "en": "Cast Chisel Blade",
-        "ja": "Cast Chisel Blade"
+        "ja": "鋳造されたのみ刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8114,7 +9740,7 @@
         "CardType": 7,
         "zh": "铸造拉刀刃片",
         "en": "Cast Drawknife Blade",
-        "ja": "Cast Drawknife Blade"
+        "ja": "鋳造ドローナイフの刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8130,7 +9756,7 @@
         "CardType": 7,
         "zh": "铸造锄头",
         "en": "Cast Hoe Head",
-        "ja": "Cast Hoe Head"
+        "ja": "鋳造されたクワの刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8146,7 +9772,7 @@
         "CardType": 7,
         "zh": "铸造狩猎长矛头",
         "en": "Cast Hunting Spearhead",
-        "ja": "Cast Hunting Spearhead"
+        "ja": "鋳造狩猟用槍先"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8162,7 +9788,7 @@
         "CardType": 7,
         "zh": "铸造刀刃片",
         "en": "Cast Knife Blade",
-        "ja": "Cast Knife Blade"
+        "ja": "鋳造されたナイフ刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8178,7 +9804,7 @@
         "CardType": 7,
         "zh": "铸造肉钩",
         "en": "Cast Meat Hook",
-        "ja": "Cast Meat Hook"
+        "ja": "鋳造の肉吊りフック"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8194,7 +9820,7 @@
         "CardType": 7,
         "zh": "铸造大镰刀头",
         "en": "Cast Scythe Blade",
-        "ja": "Cast Scythe Blade"
+        "ja": "鋳造された大鎌刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8210,7 +9836,7 @@
         "CardType": 7,
         "zh": "铸造铲子头",
         "en": "Cast Shovel Head",
-        "ja": "Cast Shovel Head"
+        "ja": "鋳造されたシャベル頭"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8226,7 +9852,7 @@
         "CardType": 7,
         "zh": "铸造镰刀头",
         "en": "Cast Sickle Blade",
-        "ja": "Cast Sickle Blade"
+        "ja": "鋳造された鎌刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8242,7 +9868,7 @@
         "CardType": 7,
         "zh": "铸造剥皮刀刃片",
         "en": "Cast Skinning Knife Blade",
-        "ja": "Cast Skinning Knife Blade"
+        "ja": "鋳造皮剥ぎナイフの刃"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8258,7 +9884,7 @@
         "CardType": 7,
         "zh": "铸造矛头",
         "en": "Cast Spear Head",
-        "ja": "Cast Spear Head"
+        "ja": "鋳造された槍先"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8274,7 +9900,7 @@
         "CardType": 7,
         "zh": "铸造勺型钻头",
         "en": "Cast Spoon Bit",
-        "ja": "Cast Spoon Bit"
+        "ja": "鋳造スプーンビット"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8306,7 +9932,7 @@
         "CardType": 7,
         "zh": "陶盆",
         "en": "Clay Basin",
-        "ja": "Clay Basin"
+        "ja": "粘土のたらい"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8339,6 +9965,22 @@
         "zh": "粘土大锅",
         "en": "Clay Cauldron",
         "ja": "粘土の鍋"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_ClayFermentationBin",
+        "icon": "FermentingBin_Clay",
+        "type": "card",
+        "CardType": 7,
+        "zh": "发酵桶",
+        "en": "Fermentation Bin",
+        "ja": "発酵箱"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8450,7 +10092,7 @@
         "CardType": 7,
         "zh": "大型坩埚",
         "en": "Large Crucible",
-        "ja": "Large Crucible"
+        "ja": "大型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8466,23 +10108,7 @@
         "CardType": 7,
         "zh": "小型坩埚",
         "en": "Small Crucible",
-        "ja": "Small Crucible"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_FermentationBin",
-        "icon": "FermentingBin_Clay",
-        "type": "card",
-        "CardType": 7,
-        "zh": "发酵桶",
-        "en": "Fermentation Bin",
-        "ja": "発酵箱"
+        "ja": "小型るつぼ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8610,7 +10236,7 @@
         "CardType": 7,
         "zh": "雨水窖",
         "en": "Rain Cistern",
-        "ja": "Rain Cistern"
+        "ja": "雨水貯水槽"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8642,7 +10268,7 @@
         "CardType": 7,
         "zh": "鲟鱼附魔",
         "en": "Sturgeon Enchantment",
-        "ja": "Sturgeon Enchantment"
+        "ja": "チョウザメの加護"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8695,7 +10321,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -8711,7 +10337,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -8754,7 +10380,7 @@
         "CardType": 10,
         "zh": "冰窖",
         "en": "Ice Pit",
-        "ja": "Ice Pit"
+        "ja": "氷穴"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8850,7 +10476,7 @@
         "CardType": 10,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "蓝图制作",

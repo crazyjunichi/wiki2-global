@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "呼唤熊精魄(呼唤)",
   "en": "Bear Spirit Calling",
-  "ja": "Bear Spirit Calling",
-  "UniqueIDIndex": 302,
+  "ja": "熊の精霊召喚",
+  "UniqueIDIndex": 305,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "呼唤熊精魄",
     "zh": "呼唤熊精魄",
     "en": "Bear Spirit Calling",
-    "ja": "Bear Spirit Calling"
+    "ja": "熊の精霊召喚"
   },
   "CardImage": {
     "FileName": "Bear_Wild"
@@ -879,7 +879,7 @@
     "Text": "暂时将熊精魄融入你的灵魂，使你们融为一体。",
     "zh": "暂时将熊精魄融入你的灵魂，使你们融为一体。",
     "en": "Temporarily binds a bear spirit to your soul, making you both a bit more like the other.",
-    "ja": "Temporarily binds a bear spirit to your soul, making you both a bit more like the other."
+    "ja": "一時的にアナグマの精霊を魂に結び付け、少しずつ互いに似た存在となる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -911,6 +911,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1015,7 +1019,7 @@
         "CardType": 0,
         "zh": "熊精魄(召唤)",
         "en": "Bear Spirit",
-        "ja": "Bear Spirit",
+        "ja": "熊の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1023,7 +1027,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1049,7 +1053,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1359,7 +1363,7 @@
                 "Text": "精魄",
                 "zh": "精魄",
                 "en": "Spirit",
-                "ja": "Spirit"
+                "ja": "精霊"
               },
               "OverrideIcon": {
                 "FileName": "Insight"
@@ -1597,14 +1601,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1612,7 +1624,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1626,7 +1638,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1640,7 +1652,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1654,7 +1666,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1729,7 +1741,7 @@
         "CardType": 0,
         "zh": "熊精魄(召唤)",
         "en": "Bear Spirit",
-        "ja": "Bear Spirit",
+        "ja": "熊の精霊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -1737,7 +1749,7 @@
             "Text": "共鸣",
             "zh": "共鸣",
             "en": "Attunement",
-            "ja": "Attunement"
+            "ja": "調和"
           },
           "OverrideIcon": {
             "FileName": "Morale1"
@@ -1763,7 +1775,7 @@
             "Text": "耗时",
             "zh": "耗时",
             "en": "Duration",
-            "ja": "Duration"
+            "ja": "待ち時間"
           },
           "OverrideIcon": {
             "FileName": "Spoilage"
@@ -1963,7 +1975,7 @@
         "type": "stat",
         "zh": "熊之本能",
         "en": "Bear Urge",
-        "ja": "Bear Urge",
+        "ja": "熊の衝動",
         "max": 96,
         "min": 0
       },

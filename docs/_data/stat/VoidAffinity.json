@@ -6,21 +6,21 @@
   "type": "stat",
   "zh": "虚空亲和度",
   "en": "Void Affinity",
-  "ja": "Void Affinity",
-  "UniqueIDIndex": 4524,
+  "ja": "虚無親和性",
+  "UniqueIDIndex": 4655,
   "GameName": {
     "DefaultText": "Void Affinity",
     "Text": "虚空亲和度",
     "zh": "虚空亲和度",
     "en": "Void Affinity",
-    "ja": "Void Affinity"
+    "ja": "虚無親和性"
   },
   "Description": {
     "DefaultText": "How much in common you have with the spirit of the Void.\n\nSpend time derealized to increase it.",
     "Text": "你与虚无精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "zh": "你与虚无精魄的融合程度。\\n\\n狩猎野兽或在它们附近逗留均可得到提升。",
     "en": "How much in common you have with the spirit of the Void.\\n\\nSpend time derealized to increase it.",
-    "ja": "How much in common you have with the spirit of the Void.\n\nSpend time derealized to increase it."
+    "ja": "虚無の精霊との共鳴の深さ。\\n\\n現実感を失った状態で過ごすことで高まる。"
   },
   "BaseValue": 0,
   "MinMaxValue": {
@@ -90,7 +90,7 @@
     "Text": "亲和度不够。",
     "zh": "亲和度不够。",
     "en": "Not enough affinity.",
-    "ja": "Not enough affinity."
+    "ja": "親和性が足りない。"
   },
   "TooMuchText": {
     "DefaultText": "",
@@ -104,13 +104,55 @@
   "_modifierValueList": [
     {
       "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": 250,
+        "y": 250
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": 500,
+        "y": 500
+      }
+    },
+    {
+      "link": {
         "key": "Bp_VoidSpiritCalling",
         "icon": "Spirit_VoidDark",
         "type": "card",
         "CardType": 7,
         "zh": "呼唤虚空精魄(呼唤)",
         "en": "Void Spirit Calling",
-        "ja": "Void Spirit Calling"
+        "ja": "虚無の精霊召喚"
       },
       "name": "蓝图制作",
       "localization": {
@@ -152,12 +194,12 @@
         "CardType": 9,
         "zh": "虚空之眼",
         "en": "Void Eye",
-        "ja": "Void Eye"
+        "ja": "虚無の瞳"
       },
       "localization": {
         "zh": "动作：虚空赐福",
         "en": "Action: Void Blessing",
-        "ja": "アクション：Void Blessing"
+        "ja": "アクション：虚無の加護"
       },
       "value": {
         "x": 12,
@@ -166,7 +208,50 @@
       "key": "LQ_SpiritVoid_Void Blessing"
     }
   ],
-  "_modifierRateList": [],
+  "_modifierRateList": [
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 中级",
+        "en": "Status Stage: Intermediate",
+        "ja": "ステータス段階: Intermediate"
+      },
+      "value": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "link": {
+        "key": "HollownessStatus",
+        "icon": "",
+        "type": "stat",
+        "zh": "空壳化状态",
+        "en": "Hollowness Status",
+        "ja": "Hollowness Status",
+        "max": 10,
+        "min": 0
+      },
+      "localization": {
+        "zh": "状态阶段: 高",
+        "en": "Status Stage: High",
+        "ja": "ステータス段階: High"
+      },
+      "value": {
+        "x": 2,
+        "y": 2
+      }
+    }
+  ],
   "_requireList": [
     {
       "link": {
@@ -176,7 +261,7 @@
         "CardType": 0,
         "zh": "虚空之眼(召唤)",
         "en": "Void Eye",
-        "ja": "Void Eye"
+        "ja": "虚無の瞳"
       },
       "localization": {
         "zh": "被动效果：低亲和力",
@@ -196,7 +281,7 @@
         "CardType": 0,
         "zh": "虚空之眼(召唤)",
         "en": "Void Eye",
-        "ja": "Void Eye"
+        "ja": "虚無の瞳"
       },
       "localization": {
         "zh": "被动效果：高亲和力",

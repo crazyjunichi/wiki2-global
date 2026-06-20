@@ -7,7 +7,7 @@
   "zh": "赐福",
   "en": "Blessing",
   "ja": "祝福",
-  "UniqueIDIndex": 1036,
+  "UniqueIDIndex": 1072,
   "CardType": 3,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“获得精魄赐福”",
       "icon": "",
       "type": "tag",
-      "count": 29,
+      "count": 31,
       "zh": "获得精魄赐福",
       "en": "Granted Spirit Blessing",
       "ja": "与えられた精霊の祝福"
@@ -630,16 +630,18 @@
             "MaxValue": 0
           },
           "SpecialDurability4": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
+              "DefaultText": "Boil",
+              "Text": "Boil",
+              "zh": "Boil",
+              "en": "Boil",
+              "ja": "Boil"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
           }
         },
         "localization": {
@@ -748,16 +750,18 @@
             "MaxValue": 0
           },
           "SpecialDurability4": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
+              "DefaultText": "Boil",
+              "Text": "Boil",
+              "zh": "Boil",
+              "en": "Boil",
+              "ja": "Boil"
             },
-            "OverrideIcon": null,
-            "MaxValue": 0
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
           }
         },
         "localization": {
@@ -1950,6 +1954,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2135,8 +2143,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2306,6 +2322,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2937,7 +2957,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Blessing",
-        "ja": "アクション：Blessing"
+        "ja": "アクション：加護"
       }
     }
   ],

@@ -7,7 +7,7 @@
   "zh": "热焦油",
   "en": "Heated Tar",
   "ja": "熱いタール",
-  "UniqueIDIndex": 1433,
+  "UniqueIDIndex": 1475,
   "CardType": 0,
   "CardTags": [
     {
@@ -156,6 +156,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -645,7 +649,7 @@
           "CardType": 7,
           "zh": "凿子",
           "en": "Chisel",
-          "ja": "Chisel"
+          "ja": "のみ"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -665,7 +669,7 @@
           "CardType": 7,
           "zh": "勺型钻",
           "en": "Spoon Auger",
-          "ja": "Spoon Auger"
+          "ja": "繰り錐"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -975,7 +979,7 @@
           "CardType": 7,
           "zh": "风箱",
           "en": "Bellows",
-          "ja": "Bellows"
+          "ja": "ふいご"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -995,7 +999,7 @@
           "CardType": 7,
           "zh": "凿子",
           "en": "Chisel",
-          "ja": "Chisel"
+          "ja": "のみ"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1015,7 +1019,7 @@
           "CardType": 7,
           "zh": "勺型钻",
           "en": "Spoon Auger",
-          "ja": "Spoon Auger"
+          "ja": "繰り錐"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -2519,6 +2523,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2801,7 +2809,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3095,7 +3106,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3389,7 +3403,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3587,8 +3604,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3916,7 +3941,7 @@
         "CardType": 7,
         "zh": "风箱",
         "en": "Bellows",
-        "ja": "Bellows"
+        "ja": "ふいご"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3932,7 +3957,7 @@
         "CardType": 7,
         "zh": "凿子",
         "en": "Chisel",
-        "ja": "Chisel"
+        "ja": "のみ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3948,7 +3973,7 @@
         "CardType": 7,
         "zh": "勺型钻",
         "en": "Spoon Auger",
-        "ja": "Spoon Auger"
+        "ja": "繰り錐"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3964,12 +3989,12 @@
         "CardType": 0,
         "zh": "水袋(专有)",
         "en": "Waterskin(Pk)",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：超强防水",
         "en": "Action: Strong Waterproof",
-        "ja": "アクション：Strong Waterproof"
+        "ja": "アクション：高い防水性"
       }
     },
     {
@@ -4012,12 +4037,12 @@
         "CardType": 0,
         "zh": "水袋",
         "en": "Waterskin",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：防水",
         "en": "Action: Waterproof",
-        "ja": "アクション：Waterproof"
+        "ja": "アクション：防水"
       }
     }
   ],

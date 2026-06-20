@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "幻影",
   "en": "Apparition",
-  "ja": "Apparition",
-  "UniqueIDIndex": 1111,
+  "ja": "幻影",
+  "UniqueIDIndex": 1152,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "幻影",
     "zh": "幻影",
     "en": "Apparition",
-    "ja": "Apparition"
+    "ja": "幻影"
   },
   "CardImage": {
     "FileName": "MoonMaiden"
@@ -855,7 +855,7 @@
     "Text": "某些东西引动了你的目光。难道是黑暗中眼花了？\\n\\n一瞬间，你看见了她。沐浴在月光下，转瞬即逝。\\n",
     "zh": "某些东西引动了你的目光。难道是黑暗中眼花了？\\n\\n一瞬间，你看见了她。沐浴在月光下，转瞬即逝。\\n",
     "en": "Something catches your attention. Are your eyes playing tricks in the dark?\\n\\nFor a moment, you see her. Bathed in moonlight. And then she's gone.\\n",
-    "ja": "Something catches your attention. Are your eyes playing tricks in the dark?\n\nFor a moment, you see her. Bathed in moonlight. And then she's gone.\n"
+    "ja": "何かが目を引いた。暗闇が、目を惑わせているのだろうか？\\n\\nほんの一瞬、彼女が見えた。\\n月明かりを浴びながら。\\nそして、消えた。\\n"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1452,7 +1468,7 @@
             "type": "stat",
             "zh": "月女赐福",
             "en": "Moon Maiden Blessing",
-            "ja": "Moon Maiden Blessing",
+            "ja": "月の乙女の加護",
             "max": 288,
             "min": 0
           },
@@ -1870,12 +1886,12 @@
         "CardType": 2,
         "zh": "月石",
         "en": "Moonstone",
-        "ja": "Moonstone"
+        "ja": "月長石"
       },
       "localization": {
         "zh": "动作：交流",
         "en": "Action: Commune",
-        "ja": "アクション：Commune"
+        "ja": "アクション：交信する"
       }
     }
   ],

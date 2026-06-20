@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "锯木架",
   "en": "Sawhorses",
-  "ja": "Sawhorses",
-  "UniqueIDIndex": 2244,
+  "ja": "木馬台",
+  "UniqueIDIndex": 2303,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "锯木架",
     "zh": "锯木架",
     "en": "Sawhorses",
-    "ja": "Sawhorses"
+    "ja": "木馬台"
   },
   "CardImage": {
     "FileName": "Sawhorses"
@@ -855,7 +855,7 @@
     "Text": "一对结实的支架，用于在切割时固定木材。可加快木板生产和木结构建造速度。\\n\\n需要先放置才能生效。",
     "zh": "一对结实的支架，用于在切割时固定木材。可加快木板生产和木结构建造速度。\\n\\n需要先放置才能生效。",
     "en": "A pair of sturdy stands for holding wood steady while cutting. Speeds up plank production and wooden construction.\\n\\n\\nNeeds to be placed to work.",
-    "ja": "A pair of sturdy stands for holding wood steady while cutting. Speeds up plank production and wooden construction.\n\n\nNeeds to be placed to work."
+    "ja": "木を固定して切断するための頑丈な作業台。木板の生産や木造建築を早める。\\n\\n\\n使用するには設置が必要。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "放置",
         "zh": "放置",
         "en": "Place",
-        "ja": "Place"
+        "ja": "置く"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1257,7 +1273,7 @@
             "CardType": 2,
             "zh": "锯木架",
             "en": "Sawhorses",
-            "ja": "Sawhorses",
+            "ja": "木馬台",
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1603,7 +1619,7 @@
           "CardType": 2,
           "zh": "锯木架",
           "en": "Sawhorses",
-          "ja": "Sawhorses",
+          "ja": "木馬台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1995,7 +2011,7 @@
         "CardType": 7,
         "zh": "锯木架",
         "en": "Sawhorses",
-        "ja": "Sawhorses"
+        "ja": "木馬台"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2011,12 +2027,12 @@
         "CardType": 2,
         "zh": "锯木架",
         "en": "Sawhorses",
-        "ja": "Sawhorses"
+        "ja": "木馬台"
       },
       "localization": {
         "zh": "动作：拿起",
         "en": "Action: Pick up",
-        "ja": "アクション：Pick up"
+        "ja": "アクション：取る"
       }
     }
   ],

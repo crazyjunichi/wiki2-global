@@ -7,7 +7,7 @@
   "zh": "直肠压力",
   "en": "Rectal Pressure",
   "ja": "直腸圧",
-  "UniqueIDIndex": 4032,
+  "UniqueIDIndex": 4170,
   "GameName": {
     "DefaultText": "Rectal Pressure",
     "Text": "直肠压力",
@@ -439,6 +439,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -981,6 +985,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1107,7 +1112,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -1381,7 +1386,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -1415,7 +1423,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -1463,7 +1471,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -1477,7 +1485,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -1778,6 +1786,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2335,7 +2347,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -2369,7 +2384,7 @@
                   "Text": "洪水",
                   "zh": "洪水",
                   "en": "Flood",
-                  "ja": "Flood"
+                  "ja": "洪水"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
@@ -2417,7 +2432,7 @@
                   "Text": "蒸汽",
                   "zh": "蒸汽",
                   "en": "Steam",
-                  "ja": "Steam"
+                  "ja": "蒸気"
                 },
                 "OverrideIcon": {
                   "FileName": "AloeGel_Old"
@@ -2431,7 +2446,7 @@
                   "Text": "烟雾",
                   "zh": "烟雾",
                   "en": "Smoke",
-                  "ja": "Smoke"
+                  "ja": "煙"
                 },
                 "OverrideIcon": {
                   "FileName": "Ash"
@@ -2764,7 +2779,7 @@
       "localization": {
         "zh": "动作：排便",
         "en": "Action: Defecate",
-        "ja": "アクション：Defecate"
+        "ja": "アクション：排便する"
       },
       "value": {
         "x": -384,
@@ -2996,7 +3011,7 @@
       "localization": {
         "zh": "动作：排便",
         "en": "Action: Defecate",
-        "ja": "アクション：Defecate"
+        "ja": "アクション：排便する"
       },
       "value": {
         "x": 171,

@@ -7,7 +7,7 @@
   "zh": "黑麦面包条",
   "en": "Rye Bread Loaf",
   "ja": "ライ麦パン",
-  "UniqueIDIndex": 568,
+  "UniqueIDIndex": 585,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -668,7 +668,7 @@
         "CardType": 0,
         "zh": "黑麦酸面团",
         "en": "Rye Sour Dough",
-        "ja": "Rye Sour Dough",
+        "ja": "ライ麦酸生地",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -832,7 +832,7 @@
     "Text": "需要黑麦酸面团",
     "zh": "需要黑麦酸面团",
     "en": "Rye Sour Dough Needed",
-    "ja": "Rye Sour Dough Needed"
+    "ja": "ライ麦の発酵生地が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1020,7 +1020,7 @@
     "Text": "可以分成多块的一条大面包。",
     "zh": "可以分成多块的一条大面包。",
     "en": "A large loaf of bread that can be split into multiple pieces.",
-    "ja": "A large loaf of bread that can be split into multiple pieces."
+    "ja": "いくつかの部分に分けられる大きなパン。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1052,6 +1052,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1265,7 +1269,7 @@
             "CardType": 0,
             "zh": "黑麦酸面团",
             "en": "Rye Sour Dough",
-            "ja": "Rye Sour Dough",
+            "ja": "ライ麦酸生地",
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -1551,14 +1555,22 @@
   ],
   "BuildingDaytimeCost": 3,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1566,7 +1578,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1580,7 +1592,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1594,7 +1606,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1608,7 +1620,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -1683,7 +1695,7 @@
         "CardType": 0,
         "zh": "生黑麦面包条",
         "en": "Raw Rye Breadloaf",
-        "ja": "Raw Rye Breadloaf",
+        "ja": "未調理のライ麦パンの塊",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {

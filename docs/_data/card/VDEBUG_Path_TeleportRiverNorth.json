@@ -7,7 +7,7 @@
   "zh": "East",
   "en": "East",
   "ja": "East",
-  "UniqueIDIndex": 2601,
+  "UniqueIDIndex": 2680,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -99,6 +99,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1293,6 +1297,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1478,8 +1486,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1649,6 +1665,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2007,7 +2027,7 @@
                 "CardType": 4,
                 "zh": "北部湖岸",
                 "en": "Northern Lake Bank",
-                "ja": "Northern Lake Bank",
+                "ja": "北の湖畔",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2111,7 +2131,7 @@
                   "CardType": 8,
                   "zh": "北部湖岸",
                   "en": "Northern Lake Bank",
-                  "ja": "Northern Lake Bank",
+                  "ja": "北の湖畔",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -2169,7 +2189,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -2183,7 +2203,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -2197,7 +2217,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -2211,7 +2231,7 @@
                       "Text": "丰饶度",
                       "zh": "丰饶度",
                       "en": "Fertility",
-                      "ja": "Fertility"
+                      "ja": "繁殖力"
                     },
                     "OverrideIcon": null,
                     "MaxValue": 5760
@@ -2271,6 +2291,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2540,6 +2561,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -2898,7 +2923,7 @@
                 "CardType": 4,
                 "zh": "湖心岛",
                 "en": "Lake Island",
-                "ja": "Lake Island",
+                "ja": "湖島",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3002,7 +3027,7 @@
                   "CardType": 8,
                   "zh": "湖心岛",
                   "en": "Lake Island",
-                  "ja": "Lake Island",
+                  "ja": "湖島",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -3060,7 +3085,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -3074,7 +3099,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -3088,7 +3113,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -3162,6 +3187,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3431,6 +3457,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -3789,7 +3819,7 @@
                 "CardType": 4,
                 "zh": "南部湖岸",
                 "en": "Southern Lake Bank",
-                "ja": "Southern Lake Bank",
+                "ja": "南の湖岸",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -3893,7 +3923,7 @@
                   "CardType": 8,
                   "zh": "南部湖岸",
                   "en": "Southern Lake Bank",
-                  "ja": "Southern Lake Bank",
+                  "ja": "南の湖岸",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -3951,7 +3981,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -3965,7 +3995,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -3979,7 +4009,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -4053,6 +4083,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4322,6 +4353,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -4680,7 +4715,7 @@
                 "CardType": 4,
                 "zh": "河道隘口",
                 "en": "River Pass",
-                "ja": "River Pass",
+                "ja": "川の渡り場",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -4784,7 +4819,7 @@
                   "CardType": 8,
                   "zh": "河道隘口",
                   "en": "River Pass",
-                  "ja": "River Pass",
+                  "ja": "川の渡り場",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -4842,7 +4877,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -4856,7 +4891,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "雑草"
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -4870,7 +4905,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -4944,6 +4979,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5213,6 +5249,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -5571,7 +5611,7 @@
                 "CardType": 4,
                 "zh": "石南沼泽",
                 "en": "Heather Marshes",
-                "ja": "Heather Marshes",
+                "ja": "ヒースの沼",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -5675,7 +5715,7 @@
                   "CardType": 8,
                   "zh": "石南沼泽",
                   "en": "Heather Marshes",
-                  "ja": "Heather Marshes",
+                  "ja": "ヒースの沼",
                   "SpoilageTime": {
                     "Active": false,
                     "CardStatName": {
@@ -5735,7 +5775,7 @@
                       "Text": "树林",
                       "zh": "树林",
                       "en": "Trees",
-                      "ja": "Trees"
+                      "ja": "木"
                     },
                     "OverrideIcon": {
                       "FileName": "Tree1"
@@ -5749,7 +5789,7 @@
                       "Text": "过度生长",
                       "zh": "过度生长",
                       "en": "Overgrowth",
-                      "ja": "Overgrowth"
+                      "ja": "草木の繁茂 "
                     },
                     "OverrideIcon": {
                       "FileName": "Overgrowth"
@@ -5763,7 +5803,7 @@
                       "Text": "觅食",
                       "zh": "觅食",
                       "en": "Foraging",
-                      "ja": "Foraging"
+                      "ja": "資源集め"
                     },
                     "OverrideIcon": {
                       "FileName": "SaturationBerries"
@@ -5837,6 +5877,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6106,6 +6147,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -6728,6 +6773,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6997,6 +7043,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -7619,6 +7669,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -7888,6 +7939,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ExploreBushes"
@@ -8510,6 +8565,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,

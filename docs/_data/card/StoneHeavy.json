@@ -7,7 +7,7 @@
   "zh": "大石块",
   "en": "Heavy Stone",
   "ja": "重い石",
-  "UniqueIDIndex": 2380,
+  "UniqueIDIndex": 2450,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -66,7 +66,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -80,7 +80,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -106,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -120,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -134,7 +134,7 @@
       "count": 35,
       "zh": "钻孔工具",
       "en": "Drilling Tool",
-      "ja": "Drilling Tool",
+      "ja": "穴開け道具",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -142,7 +142,7 @@
           "Text": "锋利",
           "zh": "锋利",
           "en": "Sharpness",
-          "ja": "Sharpness"
+          "ja": "切れ味"
         },
         "OverrideIcon": {
           "FileName": "Knife_Blank_Copper"
@@ -170,7 +170,7 @@
           "Text": "近期磨利",
           "zh": "近期磨利",
           "en": "Recently Sharpened",
-          "ja": "Recently Sharpened"
+          "ja": "研いだばかり"
         },
         "OverrideIcon": null,
         "MaxValue": 1
@@ -182,7 +182,7 @@
           "Text": "美观",
           "zh": "美观",
           "en": "Beauty",
-          "ja": "Beauty"
+          "ja": "美しさ"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -232,18 +232,18 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
       }
     },
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -320,7 +320,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -334,7 +334,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -759,6 +759,10 @@
       "StackCompatible": false,
       "DaytimeCost": 4,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "HittingStone"
@@ -770,7 +774,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -778,7 +782,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -792,7 +796,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -806,7 +810,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -820,7 +824,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2733,6 +2737,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2918,8 +2926,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3277,12 +3293,12 @@
         "CardType": 8,
         "zh": "巨石林地",
         "en": "Boulder Grove",
-        "ja": "Boulder Grove"
+        "ja": "巨石の木立"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -3367,114 +3383,18 @@
     },
     {
       "link": {
-        "key": "River_ClearingPine_NorthernLakeBank",
-        "icon": "Lake1",
+        "key": "River_ClearingOak_RiverClearing",
+        "icon": "River1",
         "type": "card",
         "CardType": 8,
-        "zh": "北部湖岸",
-        "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank"
+        "zh": "河畔林隙",
+        "en": "River Clearing",
+        "ja": "川沿いの平地"
       },
       "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：Clear"
-      }
-    },
-    {
-      "link": {
-        "key": "River_GrovePine_LakeIsland",
-        "icon": "LakeIsland",
-        "type": "card",
-        "CardType": 8,
-        "zh": "湖心岛",
-        "en": "Lake Island",
-        "ja": "Lake Island"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：Clear"
-      }
-    },
-    {
-      "link": {
-        "key": "River_GrovePine_NorthernRapids",
-        "icon": "PineRapids1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "北部湍流",
-        "en": "Northern Rapids",
-        "ja": "北の急流"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：クリア"
-      }
-    },
-    {
-      "link": {
-        "key": "River_GrovePine_RiverPass",
-        "icon": "PineRapids1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "河道隘口",
-        "en": "River Pass",
-        "ja": "River Pass"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：Clear"
-      }
-    },
-    {
-      "link": {
-        "key": "River_GrovePine_RockyBank",
-        "icon": "PineRapids1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "岩脊河岸",
-        "en": "Rocky Bank",
-        "ja": "岩だらけの川岸"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：クリア"
-      }
-    },
-    {
-      "link": {
-        "key": "River_GrovePine_SouthernLakeBank",
-        "icon": "Lake1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "南部湖岸",
-        "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：Clear"
-      }
-    },
-    {
-      "link": {
-        "key": "River_ThicketPine_SouthernRapids",
-        "icon": "PineRapids1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "南部湍流",
-        "en": "Southern Rapids",
-        "ja": "南の急流"
-      },
-      "localization": {
-        "zh": "动作：清理",
-        "en": "Action: Clear",
-        "ja": "アクション：クリア"
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
       }
     },
     {
@@ -3509,6 +3429,22 @@
         "zh": "敲碎",
         "en": "Crush",
         "ja": "叩き壊す"
+      }
+    },
+    {
+      "link": {
+        "key": "ThicketPine_PineSlopesQEE",
+        "icon": "Woods9",
+        "type": "card",
+        "CardType": 8,
+        "zh": "松林坡地",
+        "en": "Pine Slopes",
+        "ja": "松林の斜面"
+      },
+      "localization": {
+        "zh": "动作：清理",
+        "en": "Action: Clear",
+        "ja": "アクション：取り除く"
       }
     }
   ],
@@ -3745,7 +3681,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3761,7 +3697,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3777,12 +3713,12 @@
         "CardType": 0,
         "zh": "小牛",
         "en": "Calf",
-        "ja": "Calf"
+        "ja": "子牛"
       },
       "localization": {
         "zh": "动作：屠宰",
         "en": "Action: Kill",
-        "ja": "アクション：Kill"
+        "ja": "アクション：殺す"
       }
     },
     {
@@ -3793,12 +3729,12 @@
         "CardType": 0,
         "zh": "牛",
         "en": "Cow",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：屠宰",
         "en": "Action: Kill",
-        "ja": "アクション：Kill"
+        "ja": "アクション：殺す"
       }
     },
     {
@@ -3809,12 +3745,12 @@
         "CardType": 0,
         "zh": "公牛",
         "en": "Bull",
-        "ja": "Bull"
+        "ja": "オス牛"
       },
       "localization": {
         "zh": "动作：屠宰",
         "en": "Action: Kill",
-        "ja": "アクション：Kill"
+        "ja": "アクション：殺す"
       }
     },
     {
@@ -3841,7 +3777,7 @@
         "CardType": 2,
         "zh": "熔炉(熄灭)",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "放置于容器",
@@ -3985,7 +3921,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4001,7 +3937,7 @@
         "CardType": 10,
         "zh": "新木质房间（东）",
         "en": "New Cabin Room (East)",
-        "ja": "New Cabin Room (East)"
+        "ja": "小屋部屋を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4017,7 +3953,7 @@
         "CardType": 10,
         "zh": "新木质房间（北）",
         "en": "New Cabin Room (North)",
-        "ja": "New Cabin Room (North)"
+        "ja": "小屋部屋を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4033,7 +3969,7 @@
         "CardType": 10,
         "zh": "新木质房间（南）",
         "en": "New Cabin Room (South)",
-        "ja": "New Cabin Room (South)"
+        "ja": "小屋部屋を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4049,7 +3985,7 @@
         "CardType": 10,
         "zh": "新木质房间（上）",
         "en": "New Cabin Room (Up)",
-        "ja": "New Cabin Room (Up)"
+        "ja": "小屋部屋を増設（上）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4065,7 +4001,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4081,7 +4017,7 @@
         "CardType": 10,
         "zh": "桑拿炉",
         "en": "Sauna Stove",
-        "ja": "Sauna Stove"
+        "ja": "サウナストーブ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4193,7 +4129,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -4366,12 +4302,12 @@
         "CardType": 0,
         "zh": "牛(专有)",
         "en": "Cow(Pk)",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：屠宰",
         "en": "Action: Kill",
-        "ja": "アクション：Kill"
+        "ja": "アクション：殺す"
       }
     },
     {
@@ -4382,7 +4318,7 @@
         "CardType": 0,
         "zh": "钝宽头箭头",
         "en": "Blunt Broadhead Arrow",
-        "ja": "Blunt Broadhead Arrow",
+        "ja": "鈍った幅広矢",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4396,7 +4332,7 @@
               "Text": "钝铜宽头箭头",
               "zh": "钝铜宽头箭头",
               "en": "Blunt Copper Broadhead Arrow",
-              "ja": "Blunt Copper Broadhead Arrow"
+              "ja": "鈍った銅の幅広矢"
             }
           },
           {
@@ -4411,7 +4347,7 @@
               "Text": "钝鬼铜宽头箭",
               "zh": "钝鬼铜宽头箭",
               "en": "Blunt Ghost Bronze Broadhead Arrow",
-              "ja": "Blunt Ghost Bronze Broadhead Arrow"
+              "ja": "鈍った幽青銅の幅広矢"
             }
           },
           {
@@ -4426,7 +4362,7 @@
               "Text": "钝锡宽头箭",
               "zh": "钝锡宽头箭",
               "en": "Blunt Tin Broadhead Arrow",
-              "ja": "Blunt Tin Broadhead Arrow"
+              "ja": "鈍ったスズの幅広鏃矢"
             }
           },
           {
@@ -4441,7 +4377,7 @@
               "Text": "钝青铜宽头箭",
               "zh": "钝青铜宽头箭",
               "en": "Blunt Tin Bronze Broadhead Arrow",
-              "ja": "Blunt Tin Bronze Broadhead Arrow"
+              "ja": "鈍ったスズ青銅の幅広鏃矢"
             }
           },
           {
@@ -4456,7 +4392,7 @@
               "Text": "钝白铜宽头箭",
               "zh": "钝白铜宽头箭",
               "en": "Blunt White Bronze Broadhead Arrow",
-              "ja": "Blunt White Bronze Broadhead Arrow"
+              "ja": "鈍った白青銅の幅広鏃矢"
             }
           },
           {
@@ -4479,7 +4415,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -4490,7 +4426,7 @@
         "CardType": 0,
         "zh": "钝金属箭",
         "en": "Blunt Metal Arrow",
-        "ja": "Blunt Metal Arrow",
+        "ja": "鈍った金属の矢",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4504,7 +4440,7 @@
               "Text": "钝铜箭",
               "zh": "钝铜箭",
               "en": "Blunt Copper Arrow",
-              "ja": "Blunt Copper Arrow"
+              "ja": "鈍った銅の矢"
             }
           },
           {
@@ -4519,7 +4455,7 @@
               "Text": "钝鬼铜箭",
               "zh": "钝鬼铜箭",
               "en": "Blunt Ghost Bronze Arrow",
-              "ja": "Blunt Ghost Bronze Arrow"
+              "ja": "鈍った幽青銅の矢"
             }
           },
           {
@@ -4534,7 +4470,7 @@
               "Text": "钝锡箭",
               "zh": "钝锡箭",
               "en": "Blunt Tin Arrow",
-              "ja": "Blunt Tin Arrow"
+              "ja": "鈍ったスズの矢"
             }
           },
           {
@@ -4549,7 +4485,7 @@
               "Text": "钝青铜箭",
               "zh": "钝青铜箭",
               "en": "Blunt Tin Bronze Arrow",
-              "ja": "Blunt Tin Bronze Arrow"
+              "ja": "鈍ったスズ青銅の矢"
             }
           },
           {
@@ -4564,7 +4500,7 @@
               "Text": "钝白铜箭",
               "zh": "钝白铜箭",
               "en": "Blunt White Bronze Arrow",
-              "ja": "Blunt White Bronze Arrow"
+              "ja": "鈍った白青銅の矢"
             }
           },
           {
@@ -4587,7 +4523,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -4598,7 +4534,7 @@
         "CardType": 0,
         "zh": "钝金属斧",
         "en": "Blunt Metal Axe",
-        "ja": "Blunt Metal Axe",
+        "ja": "鈍った金属の斧",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4612,7 +4548,7 @@
               "Text": "钝铜斧",
               "zh": "钝铜斧",
               "en": "Blunt Copper Axe",
-              "ja": "Blunt Copper Axe"
+              "ja": "鈍った銅の斧"
             }
           },
           {
@@ -4627,7 +4563,7 @@
               "Text": "钝鬼铜斧",
               "zh": "钝鬼铜斧",
               "en": "Blunt Ghost Bronze Axe",
-              "ja": "Blunt Ghost Bronze Axe"
+              "ja": "鈍った幽青銅の斧"
             }
           },
           {
@@ -4642,7 +4578,7 @@
               "Text": "钝锡斧",
               "zh": "钝锡斧",
               "en": "Blunt Tin Axe",
-              "ja": "Blunt Tin Axe"
+              "ja": "鈍ったスズの斧"
             }
           },
           {
@@ -4657,7 +4593,7 @@
               "Text": "钝青铜斧",
               "zh": "钝青铜斧",
               "en": "Blunt Tin Bronze Axe",
-              "ja": "Blunt Tin Bronze Axe"
+              "ja": "鈍ったスズ青銅の斧"
             }
           },
           {
@@ -4672,7 +4608,7 @@
               "Text": "钝白铜斧",
               "zh": "钝白铜斧",
               "en": "Blunt White Bronze Axe",
-              "ja": "Blunt White Bronze Axe"
+              "ja": "鈍った白青銅の斧"
             }
           },
           {
@@ -4695,7 +4631,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -4706,7 +4642,7 @@
         "CardType": 0,
         "zh": "钝金属屠宰刀",
         "en": "Blunt Metal Butchering Knife",
-        "ja": "Blunt Metal Butchering Knife",
+        "ja": "刃こぼれした金属製の解体ナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4720,7 +4656,7 @@
               "Text": "钝铜屠宰刀",
               "zh": "钝铜屠宰刀",
               "en": "Blunt Copper Butchering Knife",
-              "ja": "Blunt Copper Butchering Knife"
+              "ja": "刃こぼれした銅の解体ナイフ"
             }
           },
           {
@@ -4735,7 +4671,7 @@
               "Text": "钝鬼铜屠宰刀",
               "zh": "钝鬼铜屠宰刀",
               "en": "Blunt Ghost Bronze Butchering Knife",
-              "ja": "Blunt Ghost Bronze Butchering Knife"
+              "ja": "刃こぼれした幽青銅の解体ナイフ"
             }
           },
           {
@@ -4750,7 +4686,7 @@
               "Text": "钝锡屠宰刀",
               "zh": "钝锡屠宰刀",
               "en": "Blunt Tin Butchering Knife",
-              "ja": "Blunt Tin Butchering Knife"
+              "ja": "刃こぼれしたスズの解体ナイフ"
             }
           },
           {
@@ -4765,7 +4701,7 @@
               "Text": "钝青铜屠宰刀",
               "zh": "钝青铜屠宰刀",
               "en": "Blunt Tin Bronze Butchering Knife",
-              "ja": "Blunt Tin Bronze Butchering Knife"
+              "ja": "刃こぼれしたスズ青銅の解体ナイフ"
             }
           },
           {
@@ -4780,7 +4716,7 @@
               "Text": "钝白铜屠宰刀",
               "zh": "钝白铜屠宰刀",
               "en": "Blunt White Bronze Butchering Knife",
-              "ja": "Blunt White Bronze Butchering Knife"
+              "ja": "刃こぼれした白青銅の解体ナイフ"
             }
           },
           {
@@ -4803,7 +4739,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -4814,7 +4750,7 @@
         "CardType": 0,
         "zh": "钝金属凿",
         "en": "Blunt Metal Chisel",
-        "ja": "Blunt Metal Chisel",
+        "ja": "刃こぼれした金属製のみ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4828,7 +4764,7 @@
               "Text": "钝铜凿",
               "zh": "钝铜凿",
               "en": "Blunt Copper Chisel",
-              "ja": "Blunt Copper Chisel"
+              "ja": "再び使うには石で研ぐ必要がある。"
             }
           },
           {
@@ -4843,7 +4779,7 @@
               "Text": "钝鬼铜凿",
               "zh": "钝鬼铜凿",
               "en": "Blunt Ghost Bronze Chisel",
-              "ja": "Blunt Ghost Bronze Chisel"
+              "ja": "刃こぼれした銅ののみ"
             }
           },
           {
@@ -4858,7 +4794,7 @@
               "Text": "钝锡凿",
               "zh": "钝锡凿",
               "en": "Blunt Tin Chisel",
-              "ja": "Blunt Tin Chisel"
+              "ja": "刃こぼれした幽青銅ののみ"
             }
           },
           {
@@ -4873,7 +4809,7 @@
               "Text": "钝青铜凿",
               "zh": "钝青铜凿",
               "en": "Blunt Tin Bronze Chisel",
-              "ja": "Blunt Tin Bronze Chisel"
+              "ja": "刃こぼれしたスズののみ"
             }
           },
           {
@@ -4888,7 +4824,7 @@
               "Text": "钝白铜凿",
               "zh": "钝白铜凿",
               "en": "Blunt White Bronze Chisel",
-              "ja": "Blunt White Bronze Chisel"
+              "ja": "刃こぼれしたスズ青銅ののみ"
             }
           },
           {
@@ -4911,7 +4847,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -4922,7 +4858,7 @@
         "CardType": 0,
         "zh": "钝金属拉刀",
         "en": "Blunt Metal Drawknife",
-        "ja": "Blunt Metal Drawknife",
+        "ja": "刃こぼれした金属製ドローナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -4936,7 +4872,7 @@
               "Text": "钝铜拉刀",
               "zh": "钝铜拉刀",
               "en": "Blunt Copper Drawknife",
-              "ja": "Blunt Copper Drawknife"
+              "ja": "刃こぼれした銅のドローナイフ"
             }
           },
           {
@@ -4951,7 +4887,7 @@
               "Text": "钝鬼铜拉刀",
               "zh": "钝鬼铜拉刀",
               "en": "Blunt Ghost Bronze Drawknife",
-              "ja": "Blunt Ghost Bronze Drawknife"
+              "ja": "刃こぼれした幽青銅のドローナイフ"
             }
           },
           {
@@ -4966,7 +4902,7 @@
               "Text": "钝锡拉刀",
               "zh": "钝锡拉刀",
               "en": "Blunt Tin Drawknife",
-              "ja": "Blunt Tin Drawknife"
+              "ja": "刃こぼれしたスズのドローナイフ"
             }
           },
           {
@@ -4981,7 +4917,7 @@
               "Text": "钝青铜拉刀",
               "zh": "钝青铜拉刀",
               "en": "Blunt Tin Bronze Drawknife",
-              "ja": "Blunt Tin Bronze Drawknife"
+              "ja": "刃こぼれしたスズ青銅のドローナイフ"
             }
           },
           {
@@ -4996,7 +4932,7 @@
               "Text": "钝白铜拉刀",
               "zh": "钝白铜拉刀",
               "en": "Blunt White Bronze Drawknife",
-              "ja": "Blunt White Bronze Drawknife"
+              "ja": "刃こぼれした白青銅のドローナイフ"
             }
           },
           {
@@ -5019,6 +4955,39 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
+        "ja": "アクション：研ぐ"
+      }
+    },
+    {
+      "link": {
+        "key": "ToolOrWeaponBlunt_Handsaw_Metal",
+        "icon": "Handsaw_Iron",
+        "type": "card",
+        "CardType": 0,
+        "zh": "钝金属手锯",
+        "en": "Blunt Metal Handsaw",
+        "ja": "Blunt Metal Handsaw",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 200,
+                "y": 200
+              }
+            },
+            "Name": {
+              "DefaultText": "Blunt Iron Handsaw",
+              "Text": "钝铁手锯",
+              "zh": "钝铁手锯",
+              "en": "Blunt Iron Handsaw",
+              "ja": "Blunt Iron Handsaw"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：磨利",
+        "en": "Action: Sharpen",
         "ja": "アクション：Sharpen"
       }
     },
@@ -5030,7 +4999,7 @@
         "CardType": 0,
         "zh": "钝金属锄头",
         "en": "Blunt Metal Hoe",
-        "ja": "Blunt Metal Hoe",
+        "ja": "刃こぼれした金属製クワ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5044,7 +5013,7 @@
               "Text": "钝铜锄头",
               "zh": "钝铜锄头",
               "en": "Blunt Copper Hoe",
-              "ja": "Blunt Copper Hoe"
+              "ja": "刃こぼれした銅のクワ"
             }
           },
           {
@@ -5059,7 +5028,7 @@
               "Text": "钝鬼铜锄头",
               "zh": "钝鬼铜锄头",
               "en": "Blunt Ghost Bronze Hoe",
-              "ja": "Blunt Ghost Bronze Hoe"
+              "ja": "刃こぼれした幽青銅のクワ"
             }
           },
           {
@@ -5074,7 +5043,7 @@
               "Text": "钝锡锄头",
               "zh": "钝锡锄头",
               "en": "Blunt Tin Hoe",
-              "ja": "Blunt Tin Hoe"
+              "ja": "刃こぼれしたスズのクワ"
             }
           },
           {
@@ -5089,7 +5058,7 @@
               "Text": "钝青铜锄头",
               "zh": "钝青铜锄头",
               "en": "Blunt Tin Bronze Hoe",
-              "ja": "Blunt Tin Bronze Hoe"
+              "ja": "刃こぼれしたスズ青銅のクワ"
             }
           },
           {
@@ -5104,7 +5073,7 @@
               "Text": "钝白铜锄头",
               "zh": "钝白铜锄头",
               "en": "Blunt White Bronze Hoe",
-              "ja": "Blunt White Bronze Hoe"
+              "ja": "刃こぼれした白青銅のクワ"
             }
           },
           {
@@ -5127,7 +5096,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5138,7 +5107,7 @@
         "CardType": 0,
         "zh": "钝金属刀",
         "en": "Blunt Metal Knife",
-        "ja": "Blunt Metal Knife",
+        "ja": "鈍った金属ナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5152,7 +5121,7 @@
               "Text": "钝铜刀",
               "zh": "钝铜刀",
               "en": "Blunt Copper Knife",
-              "ja": "Blunt Copper Knife"
+              "ja": "鈍った銅のナイフ"
             }
           },
           {
@@ -5167,7 +5136,7 @@
               "Text": "钝鬼铜刀",
               "zh": "钝鬼铜刀",
               "en": "Blunt Ghost Bronze Knife",
-              "ja": "Blunt Ghost Bronze Knife"
+              "ja": "鈍った幽青銅のナイフ"
             }
           },
           {
@@ -5182,7 +5151,7 @@
               "Text": "钝锡刀",
               "zh": "钝锡刀",
               "en": "Blunt Tin Knife",
-              "ja": "Blunt Tin Knife"
+              "ja": "鈍ったスズのナイフ"
             }
           },
           {
@@ -5197,7 +5166,7 @@
               "Text": "钝青铜刀",
               "zh": "钝青铜刀",
               "en": "Blunt Tin Bronze Knife",
-              "ja": "Blunt Tin Bronze Knife"
+              "ja": "鈍ったスズ青銅のナイフ"
             }
           },
           {
@@ -5212,7 +5181,7 @@
               "Text": "钝白铜刀",
               "zh": "钝白铜刀",
               "en": "Blunt White Bronze Knife",
-              "ja": "Blunt White Bronze Knife"
+              "ja": "鈍った白青銅のナイフ"
             }
           },
           {
@@ -5235,7 +5204,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5246,7 +5215,7 @@
         "CardType": 0,
         "zh": "钝金属大镰刀",
         "en": "Blunt Metal Scythe",
-        "ja": "Blunt Metal Scythe",
+        "ja": "刃こぼれした金属製大鎌",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5260,7 +5229,7 @@
               "Text": "钝铜大镰刀",
               "zh": "钝铜大镰刀",
               "en": "Blunt Copper Scythe",
-              "ja": "Blunt Copper Scythe"
+              "ja": "鈍った銅の大鎌"
             }
           },
           {
@@ -5275,7 +5244,7 @@
               "Text": "钝鬼铜大镰刀",
               "zh": "钝鬼铜大镰刀",
               "en": "Blunt Ghost Bronze Scythe",
-              "ja": "Blunt Ghost Bronze Scythe"
+              "ja": "鈍った幽青銅の大鎌"
             }
           },
           {
@@ -5290,7 +5259,7 @@
               "Text": "钝锡大镰刀",
               "zh": "钝锡大镰刀",
               "en": "Blunt Tin Scythe",
-              "ja": "Blunt Tin Scythe"
+              "ja": "鈍ったスズの大鎌"
             }
           },
           {
@@ -5305,7 +5274,7 @@
               "Text": "钝青铜大镰刀",
               "zh": "钝青铜大镰刀",
               "en": "Blunt Tin Bronze Scythe",
-              "ja": "Blunt Tin Bronze Scythe"
+              "ja": "鈍ったスズ青銅の大鎌"
             }
           },
           {
@@ -5320,7 +5289,7 @@
               "Text": "钝白铜大镰刀",
               "zh": "钝白铜大镰刀",
               "en": "Blunt White Bronze Scythe",
-              "ja": "Blunt White Bronze Scythe"
+              "ja": "鈍った白青銅の大鎌"
             }
           },
           {
@@ -5343,7 +5312,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5354,7 +5323,7 @@
         "CardType": 0,
         "zh": "钝金属铲子",
         "en": "Blunt Metal Shovel",
-        "ja": "Blunt Metal Shovel",
+        "ja": "鈍った金属製シャベル",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5368,7 +5337,7 @@
               "Text": "钝铜铲子",
               "zh": "钝铜铲子",
               "en": "Blunt Copper Shovel",
-              "ja": "Blunt Copper Shovel"
+              "ja": "鈍った銅製シャベル"
             }
           },
           {
@@ -5383,7 +5352,7 @@
               "Text": "钝鬼铜铲子",
               "zh": "钝鬼铜铲子",
               "en": "Blunt Ghost Bronze Shovel",
-              "ja": "Blunt Ghost Bronze Shovel"
+              "ja": "鈍った幽青銅のシャベル"
             }
           },
           {
@@ -5398,7 +5367,7 @@
               "Text": "钝锡铲子",
               "zh": "钝锡铲子",
               "en": "Blunt Tin Shovel",
-              "ja": "Blunt Tin Shovel"
+              "ja": "鈍ったスズのシャベル"
             }
           },
           {
@@ -5413,7 +5382,7 @@
               "Text": "钝青铜铲子",
               "zh": "钝青铜铲子",
               "en": "Blunt Tin Bronze Shovel",
-              "ja": "Blunt Tin Bronze Shovel"
+              "ja": "鈍ったスズ青銅のシャベル"
             }
           },
           {
@@ -5428,7 +5397,7 @@
               "Text": "钝白铜铲子",
               "zh": "钝白铜铲子",
               "en": "Blunt White Bronze Shovel",
-              "ja": "Blunt White Bronze Shovel"
+              "ja": "鈍った白青銅のシャベル"
             }
           },
           {
@@ -5451,7 +5420,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5462,7 +5431,7 @@
         "CardType": 0,
         "zh": "钝金属镰刀",
         "en": "Blunt Metal Sickle",
-        "ja": "Blunt Metal Sickle",
+        "ja": "鈍った金属製の鎌",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5476,7 +5445,7 @@
               "Text": "钝铜镰刀",
               "zh": "钝铜镰刀",
               "en": "Blunt Copper Sickle",
-              "ja": "Blunt Copper Sickle"
+              "ja": "鈍った銅の鎌"
             }
           },
           {
@@ -5491,7 +5460,7 @@
               "Text": "钝鬼铜镰刀",
               "zh": "钝鬼铜镰刀",
               "en": "Blunt Ghost Bronze Sickle",
-              "ja": "Blunt Ghost Bronze Sickle"
+              "ja": "鈍った幽青銅の鎌"
             }
           },
           {
@@ -5506,7 +5475,7 @@
               "Text": "钝锡镰刀",
               "zh": "钝锡镰刀",
               "en": "Blunt Tin Sickle",
-              "ja": "Blunt Tin Sickle"
+              "ja": "鈍ったスズの鎌"
             }
           },
           {
@@ -5521,7 +5490,7 @@
               "Text": "钝青铜镰刀",
               "zh": "钝青铜镰刀",
               "en": "Blunt Tin Bronze Sickle",
-              "ja": "Blunt Tin Bronze Sickle"
+              "ja": "鈍ったスズ青銅の鎌"
             }
           },
           {
@@ -5535,7 +5504,7 @@
               "DefaultText": "Blunt white Bronze Sickle",
               "Text": "钝白铜镰刀",
               "zh": "钝白铜镰刀",
-              "en": "Blunt White Bronze Sickle",
+              "en": "Blunt white Bronze Sickle",
               "ja": "Blunt white Bronze Sickle"
             }
           },
@@ -5559,7 +5528,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5570,7 +5539,7 @@
         "CardType": 0,
         "zh": "钝金属剥皮刀",
         "en": "Blunt Metal Skinning Knife",
-        "ja": "Blunt Metal Skinning Knife",
+        "ja": "刃こぼれした金属製皮剥ぎナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5584,7 +5553,7 @@
               "Text": "钝铜剥皮刀",
               "zh": "钝铜剥皮刀",
               "en": "Blunt Copper Skinning Knife",
-              "ja": "Blunt Copper Skinning Knife"
+              "ja": "刃こぼれした銅の皮剥ぎナイフ"
             }
           },
           {
@@ -5599,7 +5568,7 @@
               "Text": "钝鬼铜剥皮刀",
               "zh": "钝鬼铜剥皮刀",
               "en": "Blunt Ghost Bronze Skinning Knife",
-              "ja": "Blunt Ghost Bronze Skinning Knife"
+              "ja": "刃こぼれした幽青銅の皮剥ぎナイフ"
             }
           },
           {
@@ -5614,7 +5583,7 @@
               "Text": "钝锡剥皮刀",
               "zh": "钝锡剥皮刀",
               "en": "Blunt Tin Skinning Knife",
-              "ja": "Blunt Tin Skinning Knife"
+              "ja": "刃こぼれしたスズの皮剥ぎナイフ"
             }
           },
           {
@@ -5629,7 +5598,7 @@
               "Text": "钝青铜剥皮刀",
               "zh": "钝青铜剥皮刀",
               "en": "Blunt Tin Bronze Skinning Knife",
-              "ja": "Blunt Tin Bronze Skinning Knife"
+              "ja": "刃こぼれしたスズ青銅の皮剥ぎナイフ"
             }
           },
           {
@@ -5644,7 +5613,7 @@
               "Text": "钝白铜剥皮刀",
               "zh": "钝白铜剥皮刀",
               "en": "Blunt White Bronze Skinning Knife",
-              "ja": "Blunt White Bronze Skinning Knife"
+              "ja": "刃こぼれした白青銅の皮剥ぎナイフ"
             }
           },
           {
@@ -5667,7 +5636,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5678,7 +5647,7 @@
         "CardType": 0,
         "zh": "钝狩猎长矛",
         "en": "Blunt Hunting Spear",
-        "ja": "Blunt Hunting Spear",
+        "ja": "鈍った狩猟槍",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5692,7 +5661,7 @@
               "Text": "钝铜狩猎长矛",
               "zh": "钝铜狩猎长矛",
               "en": "Blunt Copper Hunting Spear",
-              "ja": "Blunt Copper Hunting Spear"
+              "ja": "鈍った銅の狩猟槍"
             }
           },
           {
@@ -5707,7 +5676,7 @@
               "Text": "钝鬼铜狩猎长矛",
               "zh": "钝鬼铜狩猎长矛",
               "en": "Blunt Ghost Bronze Hunting Spear",
-              "ja": "Blunt Ghost Bronze Hunting Spear"
+              "ja": "鈍った幽青銅の狩猟槍"
             }
           },
           {
@@ -5722,7 +5691,7 @@
               "Text": "钝锡狩猎长矛",
               "zh": "钝锡狩猎长矛",
               "en": "Blunt Tin Hunting Spear",
-              "ja": "Blunt Tin Hunting Spear"
+              "ja": "鈍ったスズの狩猟槍"
             }
           },
           {
@@ -5737,7 +5706,7 @@
               "Text": "钝青铜狩猎长矛",
               "zh": "钝青铜狩猎长矛",
               "en": "Blunt Tin Bronze Hunting Spear",
-              "ja": "Blunt Tin Bronze Hunting Spear"
+              "ja": "鈍ったスズ青銅の狩猟槍"
             }
           },
           {
@@ -5752,7 +5721,7 @@
               "Text": "钝白铜狩猎长矛",
               "zh": "钝白铜狩猎长矛",
               "en": "Blunt White Bronze Hunting Spear",
-              "ja": "Blunt White Bronze Hunting Spear"
+              "ja": "鈍った白青銅の狩猟槍"
             }
           },
           {
@@ -5775,7 +5744,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5786,7 +5755,7 @@
         "CardType": 0,
         "zh": "钝金属矛",
         "en": "Blunt Metal Spear",
-        "ja": "Blunt Metal Spear",
+        "ja": "鈍った金属の槍",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5800,7 +5769,7 @@
               "Text": "钝铜矛",
               "zh": "钝铜矛",
               "en": "Blunt Copper Spear",
-              "ja": "Blunt Copper Spear"
+              "ja": "鈍った銅の槍"
             }
           },
           {
@@ -5815,7 +5784,7 @@
               "Text": "钝鬼铜矛",
               "zh": "钝鬼铜矛",
               "en": "Blunt Ghost Bronze Spear",
-              "ja": "Blunt Ghost Bronze Spear"
+              "ja": "鈍った幽青銅の槍"
             }
           },
           {
@@ -5830,7 +5799,7 @@
               "Text": "钝锡矛",
               "zh": "钝锡矛",
               "en": "Blunt Tin Spear",
-              "ja": "Blunt Tin Spear"
+              "ja": "鈍ったスズの槍"
             }
           },
           {
@@ -5845,7 +5814,7 @@
               "Text": "钝青铜矛",
               "zh": "钝青铜矛",
               "en": "Blunt Tin Bronze Spear",
-              "ja": "Blunt Tin Bronze Spear"
+              "ja": "鈍ったスズ青銅の槍"
             }
           },
           {
@@ -5860,7 +5829,7 @@
               "Text": "钝白铜矛",
               "zh": "钝白铜矛",
               "en": "Blunt White Bronze Spear",
-              "ja": "Blunt White Bronze Spear"
+              "ja": "鈍った白青銅の槍"
             }
           },
           {
@@ -5883,7 +5852,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -5894,7 +5863,7 @@
         "CardType": 0,
         "zh": "钝金属勺型钻",
         "en": "Blunt Metal Spoon Auger",
-        "ja": "Blunt Metal Spoon Auger",
+        "ja": "刃こぼれした金属製繰り錐",
         "AlternateNames": [
           {
             "Conditions": {
@@ -5908,7 +5877,7 @@
               "Text": "钝铜勺型钻",
               "zh": "钝铜勺型钻",
               "en": "Blunt Copper Spoon Auger",
-              "ja": "Blunt Copper Spoon Auger"
+              "ja": "刃こぼれした銅の繰り錐"
             }
           },
           {
@@ -5923,7 +5892,7 @@
               "Text": "钝鬼铜勺型钻",
               "zh": "钝鬼铜勺型钻",
               "en": "Blunt Ghost Bronze Spoon Auger",
-              "ja": "Blunt Ghost Bronze Spoon Auger"
+              "ja": "刃こぼれした幽青銅の繰り錐"
             }
           },
           {
@@ -5938,7 +5907,7 @@
               "Text": "钝锡勺型钻",
               "zh": "钝锡勺型钻",
               "en": "Blunt Tin Spoon Auger",
-              "ja": "Blunt Tin Spoon Auger"
+              "ja": "刃こぼれしたスズの繰り錐"
             }
           },
           {
@@ -5953,7 +5922,7 @@
               "Text": "钝青铜勺型钻",
               "zh": "钝青铜勺型钻",
               "en": "Blunt Tin Bronze Spoon Auger",
-              "ja": "Blunt Tin Bronze Spoon Auger"
+              "ja": "刃こぼれしたスズ青銅の繰り錐"
             }
           },
           {
@@ -5968,7 +5937,7 @@
               "Text": "钝白铜勺型钻",
               "zh": "钝白铜勺型钻",
               "en": "Blunt White Bronze Spoon Auger",
-              "ja": "Blunt White Bronze Spoon Auger"
+              "ja": "刃こぼれした白青銅の繰り錐"
             }
           },
           {
@@ -5991,7 +5960,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6002,7 +5971,7 @@
         "CardType": 0,
         "zh": "宽头箭",
         "en": "Broadhead Arrow",
-        "ja": "Broadhead Arrow",
+        "ja": "幅広矢",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6016,7 +5985,7 @@
               "Text": "铜宽头箭",
               "zh": "铜宽头箭",
               "en": "Copper Broadhead Arrow",
-              "ja": "Copper Broadhead Arrow"
+              "ja": "銅の幅広矢"
             }
           },
           {
@@ -6031,7 +6000,7 @@
               "Text": "鬼铜宽头箭",
               "zh": "鬼铜宽头箭",
               "en": "Ghost Bronze Broadhead Arrow",
-              "ja": "Ghost Bronze Broadhead Arrow"
+              "ja": "幽青銅の幅広矢"
             }
           },
           {
@@ -6046,7 +6015,7 @@
               "Text": "锡宽头箭",
               "zh": "锡宽头箭",
               "en": "Tin Broadhead Arrow",
-              "ja": "Tin Broadhead Arrow"
+              "ja": "スズの幅広鏃矢"
             }
           },
           {
@@ -6061,7 +6030,7 @@
               "Text": "青铜宽头箭",
               "zh": "青铜宽头箭",
               "en": "Tin Bronze Broadhead Arrow",
-              "ja": "Tin Bronze Broadhead Arrow"
+              "ja": "スズ青銅の幅広鏃矢"
             }
           },
           {
@@ -6076,7 +6045,7 @@
               "Text": "白铜宽头箭",
               "zh": "白铜宽头箭",
               "en": "White Bronze Broadhead Arrow",
-              "ja": "White Bronze Broadhead Arrow"
+              "ja": "白青銅の幅広鏃矢"
             }
           },
           {
@@ -6099,7 +6068,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6110,7 +6079,7 @@
         "CardType": 0,
         "zh": "金属箭",
         "en": "Metal Arrow",
-        "ja": "Metal Arrow",
+        "ja": "金属の矢",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6124,7 +6093,7 @@
               "Text": "铜箭",
               "zh": "铜箭",
               "en": "Copper Arrow",
-              "ja": "Copper Arrow"
+              "ja": "銅の矢"
             }
           },
           {
@@ -6139,7 +6108,7 @@
               "Text": "鬼铜箭",
               "zh": "鬼铜箭",
               "en": "Ghost Bronze Arrow",
-              "ja": "Ghost Bronze Arrow"
+              "ja": "幽青銅の矢"
             }
           },
           {
@@ -6154,7 +6123,7 @@
               "Text": "锡箭",
               "zh": "锡箭",
               "en": "Tin Arrow",
-              "ja": "Tin Arrow"
+              "ja": "スズの矢"
             }
           },
           {
@@ -6169,7 +6138,7 @@
               "Text": "青铜箭",
               "zh": "青铜箭",
               "en": "Tin Bronze Arrow",
-              "ja": "Tin Bronze Arrow"
+              "ja": "スズ青銅の矢"
             }
           },
           {
@@ -6184,7 +6153,7 @@
               "Text": "白铜箭",
               "zh": "白铜箭",
               "en": "White Bronze Arrow",
-              "ja": "White Bronze Arrow"
+              "ja": "白青銅の矢"
             }
           },
           {
@@ -6207,7 +6176,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6218,7 +6187,7 @@
         "CardType": 0,
         "zh": "金属斧",
         "en": "Metal Axe",
-        "ja": "Metal Axe",
+        "ja": "金属の斧",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6232,7 +6201,7 @@
               "Text": "铜斧",
               "zh": "铜斧",
               "en": "Copper Axe",
-              "ja": "Copper Axe"
+              "ja": "銅の斧"
             }
           },
           {
@@ -6247,7 +6216,7 @@
               "Text": "鬼铜斧",
               "zh": "鬼铜斧",
               "en": "Ghost Bronze Axe",
-              "ja": "Ghost Bronze Axe"
+              "ja": "幽青銅の斧"
             }
           },
           {
@@ -6262,7 +6231,7 @@
               "Text": "锡斧",
               "zh": "锡斧",
               "en": "Tin Axe",
-              "ja": "Tin Axe"
+              "ja": "スズの斧"
             }
           },
           {
@@ -6277,7 +6246,7 @@
               "Text": "青铜斧",
               "zh": "青铜斧",
               "en": "Tin Bronze Axe",
-              "ja": "Tin Bronze Axe"
+              "ja": "スズ青銅の斧"
             }
           },
           {
@@ -6292,7 +6261,7 @@
               "Text": "白铜斧",
               "zh": "白铜斧",
               "en": "White Bronze Axe",
-              "ja": "White Bronze Axe"
+              "ja": "白青銅の斧"
             }
           },
           {
@@ -6315,7 +6284,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6326,7 +6295,7 @@
         "CardType": 0,
         "zh": "金属屠宰刀",
         "en": "Metal Butchering Knife",
-        "ja": "Metal Butchering Knife",
+        "ja": "金属製の解体ナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6340,7 +6309,7 @@
               "Text": "铜屠宰刀",
               "zh": "铜屠宰刀",
               "en": "Copper Butchering Knife",
-              "ja": "Copper Butchering Knife"
+              "ja": "銅の解体ナイフ"
             }
           },
           {
@@ -6355,7 +6324,7 @@
               "Text": "鬼铜屠宰刀",
               "zh": "鬼铜屠宰刀",
               "en": "Ghost Bronze Butchering Knife",
-              "ja": "Ghost Bronze Butchering Knife"
+              "ja": "幽青銅の解体ナイフ"
             }
           },
           {
@@ -6370,7 +6339,7 @@
               "Text": "锡屠宰刀",
               "zh": "锡屠宰刀",
               "en": "Tin Butchering Knife",
-              "ja": "Tin Butchering Knife"
+              "ja": "スズの解体ナイフ"
             }
           },
           {
@@ -6385,7 +6354,7 @@
               "Text": "青铜屠宰刀",
               "zh": "青铜屠宰刀",
               "en": "Tin Bronze Butchering Knife",
-              "ja": "Tin Bronze Butchering Knife"
+              "ja": "スズ青銅の解体ナイフ"
             }
           },
           {
@@ -6400,7 +6369,7 @@
               "Text": "白铜屠宰刀",
               "zh": "白铜屠宰刀",
               "en": "White Bronze Butchering Knife",
-              "ja": "White Bronze Butchering Knife"
+              "ja": "白青銅の解体ナイフ"
             }
           },
           {
@@ -6423,7 +6392,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6434,7 +6403,7 @@
         "CardType": 0,
         "zh": "金属凿子",
         "en": "Metal Chisel",
-        "ja": "Metal Chisel",
+        "ja": "金属製ののみ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6448,7 +6417,7 @@
               "Text": "铜凿",
               "zh": "铜凿",
               "en": "Copper Chisel",
-              "ja": "Copper Chisel"
+              "ja": "銅ののみ"
             }
           },
           {
@@ -6463,7 +6432,7 @@
               "Text": "鬼铜凿",
               "zh": "鬼铜凿",
               "en": "Ghost Bronze Chisel",
-              "ja": "Ghost Bronze Chisel"
+              "ja": "幽青銅ののみ"
             }
           },
           {
@@ -6478,7 +6447,7 @@
               "Text": "锡凿",
               "zh": "锡凿",
               "en": "Tin Chisel",
-              "ja": "Tin Chisel"
+              "ja": "スズののみ"
             }
           },
           {
@@ -6493,7 +6462,7 @@
               "Text": "青铜凿",
               "zh": "青铜凿",
               "en": "Tin Bronze Chisel",
-              "ja": "Tin Bronze Chisel"
+              "ja": "スズ青銅ののみ"
             }
           },
           {
@@ -6508,7 +6477,7 @@
               "Text": "白铜凿",
               "zh": "白铜凿",
               "en": "White Bronze Chisel",
-              "ja": "White Bronze Chisel"
+              "ja": "白青銅ののみ"
             }
           },
           {
@@ -6531,7 +6500,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6542,7 +6511,7 @@
         "CardType": 0,
         "zh": "金属拉刀",
         "en": "Metal Drawknife",
-        "ja": "Metal Drawknife",
+        "ja": "金属製のドローナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6556,7 +6525,7 @@
               "Text": "铜拉刀",
               "zh": "铜拉刀",
               "en": "Copper Drawknife",
-              "ja": "Copper Drawknife"
+              "ja": "銅のドローナイフ"
             }
           },
           {
@@ -6571,7 +6540,7 @@
               "Text": "鬼铜拉刀",
               "zh": "鬼铜拉刀",
               "en": "Ghost Bronze Drawknife",
-              "ja": "Ghost Bronze Drawknife"
+              "ja": "幽青銅のドローナイフ"
             }
           },
           {
@@ -6586,7 +6555,7 @@
               "Text": "锡拉刀",
               "zh": "锡拉刀",
               "en": "Tin Drawknife",
-              "ja": "Tin Drawknife"
+              "ja": "スズのドローナイフ"
             }
           },
           {
@@ -6601,7 +6570,7 @@
               "Text": "青铜拉刀",
               "zh": "青铜拉刀",
               "en": "Tin Bronze Drawknife",
-              "ja": "Tin Bronze Drawknife"
+              "ja": "スズ青銅のドローナイフ"
             }
           },
           {
@@ -6616,7 +6585,7 @@
               "Text": "白铜拉刀",
               "zh": "白铜拉刀",
               "en": "White Bronze Drawknife",
-              "ja": "White Bronze Drawknife"
+              "ja": "白青銅のドローナイフ"
             }
           },
           {
@@ -6639,6 +6608,39 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
+        "ja": "アクション：研ぐ"
+      }
+    },
+    {
+      "link": {
+        "key": "ToolOrWeapon_Handsaw_Metal",
+        "icon": "Handsaw_Iron",
+        "type": "card",
+        "CardType": 0,
+        "zh": "金属手锯",
+        "en": "Metal Handsaw",
+        "ja": "Metal Handsaw",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "Special4Range": {
+                "x": 200,
+                "y": 200
+              }
+            },
+            "Name": {
+              "DefaultText": "Iron Handsaw",
+              "Text": "铁手锯",
+              "zh": "铁手锯",
+              "en": "Iron Handsaw",
+              "ja": "Iron Handsaw"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：磨利",
+        "en": "Action: Sharpen",
         "ja": "アクション：Sharpen"
       }
     },
@@ -6650,7 +6652,7 @@
         "CardType": 0,
         "zh": "金属锄",
         "en": "Metal Hoe",
-        "ja": "Metal Hoe",
+        "ja": "金属製の鍬",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6664,7 +6666,7 @@
               "Text": "铜锄",
               "zh": "铜锄",
               "en": "Copper Hoe",
-              "ja": "Copper Hoe"
+              "ja": "銅のクワ"
             }
           },
           {
@@ -6679,7 +6681,7 @@
               "Text": "鬼铜锄",
               "zh": "鬼铜锄",
               "en": "Ghost Bronze Hoe",
-              "ja": "Ghost Bronze Hoe"
+              "ja": "幽青銅のクワ"
             }
           },
           {
@@ -6694,7 +6696,7 @@
               "Text": "锡锄",
               "zh": "锡锄",
               "en": "Tin Hoe",
-              "ja": "Tin Hoe"
+              "ja": "スズのクワ"
             }
           },
           {
@@ -6709,7 +6711,7 @@
               "Text": "青铜锄",
               "zh": "青铜锄",
               "en": "Tin Bronze Hoe",
-              "ja": "Tin Bronze Hoe"
+              "ja": "スズ青銅のクワ"
             }
           },
           {
@@ -6724,7 +6726,7 @@
               "Text": "白铜锄",
               "zh": "白铜锄",
               "en": "White Bronze Hoe",
-              "ja": "White Bronze Hoe"
+              "ja": "白青銅のクワ"
             }
           },
           {
@@ -6747,7 +6749,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6758,7 +6760,7 @@
         "CardType": 0,
         "zh": "金属刀",
         "en": "Metal Knife",
-        "ja": "Metal Knife",
+        "ja": "金属ナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6772,7 +6774,7 @@
               "Text": "铜刀",
               "zh": "铜刀",
               "en": "Copper Knife",
-              "ja": "Copper Knife"
+              "ja": "銅のナイフ"
             }
           },
           {
@@ -6787,7 +6789,7 @@
               "Text": "鬼铜刀",
               "zh": "鬼铜刀",
               "en": "Ghost Bronze Knife",
-              "ja": "Ghost Bronze Knife"
+              "ja": "幽青銅のナイフ"
             }
           },
           {
@@ -6802,7 +6804,7 @@
               "Text": "锡刀",
               "zh": "锡刀",
               "en": "Tin Knife",
-              "ja": "Tin Knife"
+              "ja": "スズのナイフ"
             }
           },
           {
@@ -6817,7 +6819,7 @@
               "Text": "青铜刀",
               "zh": "青铜刀",
               "en": "Tin Bronze Knife",
-              "ja": "Tin Bronze Knife"
+              "ja": "スズ青銅のナイフ"
             }
           },
           {
@@ -6832,7 +6834,7 @@
               "Text": "白铜刀",
               "zh": "白铜刀",
               "en": "White Bronze Knife",
-              "ja": "White Bronze Knife"
+              "ja": "白青銅のナイフ"
             }
           },
           {
@@ -6855,7 +6857,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6866,7 +6868,7 @@
         "CardType": 2,
         "zh": "金属肉钩",
         "en": "Metal Meat Hook",
-        "ja": "Metal Meat Hook",
+        "ja": "金属製の肉吊りフック",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6880,7 +6882,7 @@
               "Text": "铜肉钩",
               "zh": "铜肉钩",
               "en": "Copper Meat Hook",
-              "ja": "Copper Meat Hook"
+              "ja": "銅の肉吊りフック"
             }
           },
           {
@@ -6895,7 +6897,7 @@
               "Text": "鬼铜肉钩",
               "zh": "鬼铜肉钩",
               "en": "Ghost Bronze Meat Hook",
-              "ja": "Ghost Bronze Meat Hook"
+              "ja": "幽青銅の肉吊りフック"
             }
           },
           {
@@ -6910,7 +6912,7 @@
               "Text": "锡肉钩",
               "zh": "锡肉钩",
               "en": "Tin Meat Hook",
-              "ja": "Tin Meat Hook"
+              "ja": "スズの肉吊りフック"
             }
           },
           {
@@ -6925,7 +6927,7 @@
               "Text": "青铜肉钩",
               "zh": "青铜肉钩",
               "en": "Tin Bronze Meat Hook",
-              "ja": "Tin Bronze Meat Hook"
+              "ja": "スズ青銅の肉吊りフック"
             }
           },
           {
@@ -6940,7 +6942,7 @@
               "Text": "白铜肉钩",
               "zh": "白铜肉钩",
               "en": "White Bronze Meat Hook",
-              "ja": "White Bronze Meat Hook"
+              "ja": "白青銅の肉吊りフック"
             }
           },
           {
@@ -6963,7 +6965,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -6974,7 +6976,7 @@
         "CardType": 0,
         "zh": "金属大镰刀",
         "en": "Metal Scythe",
-        "ja": "Metal Scythe",
+        "ja": "金属製の大鎌",
         "AlternateNames": [
           {
             "Conditions": {
@@ -6988,7 +6990,7 @@
               "Text": "铜大镰刀",
               "zh": "铜大镰刀",
               "en": "Copper Scythe",
-              "ja": "Copper Scythe"
+              "ja": "銅の大鎌"
             }
           },
           {
@@ -7003,7 +7005,7 @@
               "Text": "鬼铜大镰刀",
               "zh": "鬼铜大镰刀",
               "en": "Ghost Bronze Scythe",
-              "ja": "Ghost Bronze Scythe"
+              "ja": "幽青銅の大鎌"
             }
           },
           {
@@ -7018,7 +7020,7 @@
               "Text": "锡大镰刀",
               "zh": "锡大镰刀",
               "en": "Tin Scythe",
-              "ja": "Tin Scythe"
+              "ja": "スズの大鎌"
             }
           },
           {
@@ -7033,7 +7035,7 @@
               "Text": "青铜大镰刀",
               "zh": "青铜大镰刀",
               "en": "Tin Bronze Scythe",
-              "ja": "Tin Bronze Scythe"
+              "ja": "スズ青銅の大鎌"
             }
           },
           {
@@ -7048,7 +7050,7 @@
               "Text": "白铜大镰刀",
               "zh": "白铜大镰刀",
               "en": "White Bronze Scythe",
-              "ja": "White Bronze Scythe"
+              "ja": "白青銅の大鎌"
             }
           },
           {
@@ -7071,18 +7073,18 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
       "link": {
         "key": "ToolOrWeapon_Shovel_Metal",
-        "icon": "CopperShovel",
+        "icon": "Shovel_Copper",
         "type": "card",
         "CardType": 0,
         "zh": "金属铲",
         "en": "Metal Shovel",
-        "ja": "Metal Shovel",
+        "ja": "金属製シャベル",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7096,7 +7098,7 @@
               "Text": "铜铲子",
               "zh": "铜铲子",
               "en": "Copper Shovel",
-              "ja": "Copper Shovel"
+              "ja": "銅のシャベル"
             }
           },
           {
@@ -7111,7 +7113,7 @@
               "Text": "鬼铜铲子",
               "zh": "鬼铜铲子",
               "en": "Ghost Bronze Shovel",
-              "ja": "Ghost Bronze Shovel"
+              "ja": "幽青銅のシャベル"
             }
           },
           {
@@ -7126,7 +7128,7 @@
               "Text": "锡铲子",
               "zh": "锡铲子",
               "en": "Tin Shovel",
-              "ja": "Tin Shovel"
+              "ja": "スズのシャベル"
             }
           },
           {
@@ -7141,7 +7143,7 @@
               "Text": "青铜铲子",
               "zh": "青铜铲子",
               "en": "Tin Bronze Shovel",
-              "ja": "Tin Bronze Shovel"
+              "ja": "スズ青銅のシャベル"
             }
           },
           {
@@ -7156,7 +7158,7 @@
               "Text": "白铜铲子",
               "zh": "白铜铲子",
               "en": "White Bronze Shovel",
-              "ja": "White Bronze Shovel"
+              "ja": "白青銅のシャベル"
             }
           },
           {
@@ -7179,7 +7181,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -7190,7 +7192,7 @@
         "CardType": 0,
         "zh": "金属镰刀",
         "en": "Metal Sickle",
-        "ja": "Metal Sickle",
+        "ja": "金属製の鎌",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7204,7 +7206,7 @@
               "Text": "铜镰刀",
               "zh": "铜镰刀",
               "en": "Copper Sickle",
-              "ja": "Copper Sickle"
+              "ja": "銅の鎌"
             }
           },
           {
@@ -7219,7 +7221,7 @@
               "Text": "鬼铜镰刀",
               "zh": "鬼铜镰刀",
               "en": "Ghost Bronze Sickle",
-              "ja": "Ghost Bronze Sickle"
+              "ja": "幽青銅の鎌"
             }
           },
           {
@@ -7234,7 +7236,7 @@
               "Text": "锡镰刀",
               "zh": "锡镰刀",
               "en": "Tin Sickle",
-              "ja": "Tin Sickle"
+              "ja": "スズの鎌"
             }
           },
           {
@@ -7249,7 +7251,7 @@
               "Text": "青铜镰刀",
               "zh": "青铜镰刀",
               "en": "Tin Bronze Sickle",
-              "ja": "Tin Bronze Sickle"
+              "ja": "スズ青銅の鎌"
             }
           },
           {
@@ -7264,7 +7266,7 @@
               "Text": "白铜镰刀",
               "zh": "白铜镰刀",
               "en": "White Bronze Sickle",
-              "ja": "White Bronze Sickle"
+              "ja": "白青銅の鎌"
             }
           },
           {
@@ -7287,7 +7289,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -7298,7 +7300,7 @@
         "CardType": 0,
         "zh": "金属剥皮刀",
         "en": "Metal Skinning Knife",
-        "ja": "Metal Skinning Knife",
+        "ja": "金属製の皮剥ぎナイフ",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7312,7 +7314,7 @@
               "Text": "铜剥皮刀",
               "zh": "铜剥皮刀",
               "en": "Copper Skinning Knife",
-              "ja": "Copper Skinning Knife"
+              "ja": "銅の皮剥ぎナイフ"
             }
           },
           {
@@ -7327,7 +7329,7 @@
               "Text": "鬼铜剥皮刀",
               "zh": "鬼铜剥皮刀",
               "en": "Ghost Bronze Skinning Knife",
-              "ja": "Ghost Bronze Skinning Knife"
+              "ja": "幽青銅の皮剥ぎナイフ"
             }
           },
           {
@@ -7342,7 +7344,7 @@
               "Text": "锡剥皮刀",
               "zh": "锡剥皮刀",
               "en": "Tin Skinning Knife",
-              "ja": "Tin Skinning Knife"
+              "ja": "スズの皮剥ぎナイフ"
             }
           },
           {
@@ -7357,7 +7359,7 @@
               "Text": "青铜剥皮刀",
               "zh": "青铜剥皮刀",
               "en": "Tin Bronze Skinning Knife",
-              "ja": "Tin Bronze Skinning Knife"
+              "ja": "スズ青銅の皮剥ぎナイフ"
             }
           },
           {
@@ -7371,7 +7373,7 @@
               "DefaultText": "Iron Skinning Knife",
               "Text": "铁制剥皮刀",
               "zh": "铁制剥皮刀",
-              "en": "White Bronze Skinning Knife",
+              "en": "Iron Skinning Knife",
               "ja": "Iron Skinning Knife"
             }
           }
@@ -7380,7 +7382,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -7391,7 +7393,7 @@
         "CardType": 0,
         "zh": "狩猎长矛",
         "en": "Hunting Spear",
-        "ja": "Hunting Spear",
+        "ja": "狩猟槍",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7405,7 +7407,7 @@
               "Text": "铜狩猎长矛",
               "zh": "铜狩猎长矛",
               "en": "Copper Hunting Spear",
-              "ja": "Copper Hunting Spear"
+              "ja": "銅の狩猟槍"
             }
           },
           {
@@ -7420,7 +7422,7 @@
               "Text": "鬼铜狩猎长矛",
               "zh": "鬼铜狩猎长矛",
               "en": "Ghost Bronze Hunting Spear",
-              "ja": "Ghost Bronze Hunting Spear"
+              "ja": "幽青銅の狩猟槍"
             }
           },
           {
@@ -7435,7 +7437,7 @@
               "Text": "锡狩猎长矛",
               "zh": "锡狩猎长矛",
               "en": "Tin Hunting Spear",
-              "ja": "Tin Hunting Spear"
+              "ja": "スズの狩猟槍"
             }
           },
           {
@@ -7450,7 +7452,7 @@
               "Text": "青铜狩猎长矛",
               "zh": "青铜狩猎长矛",
               "en": "Tin Bronze Hunting Spear",
-              "ja": "Tin Bronze Hunting Spear"
+              "ja": "スズ青銅の狩猟槍"
             }
           },
           {
@@ -7465,7 +7467,7 @@
               "Text": "白铜狩猎长矛",
               "zh": "白铜狩猎长矛",
               "en": "White Bronze Hunting Spear",
-              "ja": "White Bronze Hunting Spear"
+              "ja": "白青銅の狩猟槍"
             }
           },
           {
@@ -7488,7 +7490,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -7499,7 +7501,7 @@
         "CardType": 0,
         "zh": "金属矛",
         "en": "Metal Spear",
-        "ja": "Metal Spear",
+        "ja": "金属の槍",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7513,7 +7515,7 @@
               "Text": "铜矛",
               "zh": "铜矛",
               "en": "Copper Spear",
-              "ja": "Copper Spear"
+              "ja": "銅の槍"
             }
           },
           {
@@ -7528,7 +7530,7 @@
               "Text": "鬼铜矛",
               "zh": "鬼铜矛",
               "en": "Ghost Bronze Spear",
-              "ja": "Ghost Bronze Spear"
+              "ja": "幽青銅の槍"
             }
           },
           {
@@ -7543,7 +7545,7 @@
               "Text": "锡矛",
               "zh": "锡矛",
               "en": "Tin Spear",
-              "ja": "Tin Spear"
+              "ja": "スズの槍"
             }
           },
           {
@@ -7558,7 +7560,7 @@
               "Text": "青铜矛",
               "zh": "青铜矛",
               "en": "Tin Bronze Spear",
-              "ja": "Tin Bronze Spear"
+              "ja": "スズ青銅の槍"
             }
           },
           {
@@ -7573,7 +7575,7 @@
               "Text": "白铜矛",
               "zh": "白铜矛",
               "en": "White Bronze Spear",
-              "ja": "White Bronze Spear"
+              "ja": "白青銅の槍"
             }
           },
           {
@@ -7596,7 +7598,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     },
     {
@@ -7607,7 +7609,7 @@
         "CardType": 0,
         "zh": "金属勺型钻",
         "en": "Metal Spoon Auger",
-        "ja": "Metal Spoon Auger",
+        "ja": "金属製の繰り錐",
         "AlternateNames": [
           {
             "Conditions": {
@@ -7621,7 +7623,7 @@
               "Text": "铜勺型钻",
               "zh": "铜勺型钻",
               "en": "Copper Spoon Auger",
-              "ja": "Copper Spoon Auger"
+              "ja": "銅の繰り錐"
             }
           },
           {
@@ -7636,7 +7638,7 @@
               "Text": "鬼铜勺型钻",
               "zh": "鬼铜勺型钻",
               "en": "Ghost Bronze Spoon Auger",
-              "ja": "Ghost Bronze Spoon Auger"
+              "ja": "幽青銅の繰り錐"
             }
           },
           {
@@ -7651,7 +7653,7 @@
               "Text": "锡勺型钻",
               "zh": "锡勺型钻",
               "en": "Tin Spoon Auger",
-              "ja": "Tin Spoon Auger"
+              "ja": "スズの繰り錐"
             }
           },
           {
@@ -7666,7 +7668,7 @@
               "Text": "青铜勺型钻",
               "zh": "青铜勺型钻",
               "en": "Tin Bronze Spoon Auger",
-              "ja": "Tin Bronze Spoon Auger"
+              "ja": "スズ青銅の繰り錐"
             }
           },
           {
@@ -7681,7 +7683,7 @@
               "Text": "白铜勺型钻",
               "zh": "白铜勺型钻",
               "en": "White Bronze Spoon Auger",
-              "ja": "White Bronze Spoon Auger"
+              "ja": "白青銅の繰り錐"
             }
           },
           {
@@ -7704,7 +7706,7 @@
       "localization": {
         "zh": "动作：磨利",
         "en": "Action: Sharpen",
-        "ja": "アクション：Sharpen"
+        "ja": "アクション：研ぐ"
       }
     }
   ],
@@ -7716,7 +7718,7 @@
       "CardType": 4,
       "zh": "洞穴",
       "en": "Cave",
-      "ja": "Cave",
+      "ja": "洞窟",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -7820,7 +7822,7 @@
         "CardType": 8,
         "zh": "洞穴",
         "en": "Cave",
-        "ja": "Cave",
+        "ja": "洞窟",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -7828,7 +7830,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -7914,7 +7916,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -7930,7 +7932,7 @@
       "CardType": 4,
       "zh": "巨石林地",
       "en": "Boulder Grove",
-      "ja": "Boulder Grove",
+      "ja": "巨石の木立",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8034,7 +8036,7 @@
         "CardType": 8,
         "zh": "巨石林地",
         "en": "Boulder Grove",
-        "ja": "Boulder Grove",
+        "ja": "巨石の木立",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -8092,7 +8094,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -8106,7 +8108,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -8120,7 +8122,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -8148,7 +8150,7 @@
       "CardType": 4,
       "zh": "神秘林地",
       "en": "Mysterious Grove",
-      "ja": "Mysterious Grove",
+      "ja": "不思議な木立",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8341,446 +8343,6 @@
             "zh": "觅食",
             "en": "Foraging",
             "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    },
-    {
-      "key": "Env_GrovePine_DeerGrove",
-      "icon": "PineWoods1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "鹿鸣松林",
-      "en": "Deer Grove",
-      "ja": "鹿の林",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "GrovePine_DeerGrove",
-        "icon": "PineWoods1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "鹿鸣松林",
-        "en": "Deer Grove",
-        "ja": "鹿の林",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationVegetables_Old"
-          },
-          "MaxValue": 576
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 43200
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "木"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "茂み"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    },
-    {
-      "key": "Env_GrovePine_OldHollow",
-      "icon": "DeathHollow",
-      "type": "card",
-      "CardType": 4,
-      "zh": "古旧寂谷",
-      "en": "Old Hollow",
-      "ja": "Old Hollow",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "GrovePine_OldHollow",
-        "icon": "DeathHollow",
-        "type": "card",
-        "CardType": 8,
-        "zh": "古旧寂谷",
-        "en": "Old Hollow",
-        "ja": "Old Hollow",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 10000
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationVegetables_Old"
-          },
-          "MaxValue": 576
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 43200
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "Trees"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "Overgrowth"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "Foraging"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -9462,7 +9024,7 @@
       "CardType": 4,
       "zh": "铜矿井",
       "en": "Copper Mine",
-      "ja": "Copper Mine",
+      "ja": "銅の鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9566,7 +9128,7 @@
         "CardType": 8,
         "zh": "铜矿井",
         "en": "Copper Mine",
-        "ja": "Copper Mine",
+        "ja": "銅の鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -9574,7 +9136,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -9600,7 +9162,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -9612,7 +9174,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -9648,7 +9210,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -9662,7 +9224,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -9678,7 +9240,7 @@
       "CardType": 4,
       "zh": "燧石矿井",
       "en": "Flint Mine",
-      "ja": "Flint Mine",
+      "ja": "火打石鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9782,7 +9344,7 @@
         "CardType": 8,
         "zh": "燧石矿井",
         "en": "Flint Mine",
-        "ja": "Flint Mine",
+        "ja": "火打石鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -9790,7 +9352,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -9816,7 +9378,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -9828,7 +9390,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -9864,7 +9426,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -9878,7 +9440,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -9894,7 +9456,7 @@
       "CardType": 4,
       "zh": "巫石矿井",
       "en": "Witchstone Mine",
-      "ja": "Witchstone Mine",
+      "ja": "ウィッチストーン鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9998,7 +9560,7 @@
         "CardType": 8,
         "zh": "巫石矿井",
         "en": "Witchstone Mine",
-        "ja": "Witchstone Mine",
+        "ja": "ウィッチストーン鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -10006,7 +9568,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -10032,7 +9594,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -10044,7 +9606,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -10080,7 +9642,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -10094,7 +9656,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -10110,7 +9672,7 @@
       "CardType": 4,
       "zh": "铜矿井",
       "en": "Copper Mine",
-      "ja": "Copper Mine",
+      "ja": "銅の鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10214,7 +9776,7 @@
         "CardType": 8,
         "zh": "铜矿井",
         "en": "Copper Mine",
-        "ja": "Copper Mine",
+        "ja": "銅の鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -10222,7 +9784,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -10248,7 +9810,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -10260,7 +9822,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -10296,7 +9858,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -10310,7 +9872,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -10326,7 +9888,7 @@
       "CardType": 4,
       "zh": "燧石矿井",
       "en": "Flint Mine",
-      "ja": "Flint Mine",
+      "ja": "火打石鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10430,7 +9992,7 @@
         "CardType": 8,
         "zh": "燧石矿井",
         "en": "Flint Mine",
-        "ja": "Flint Mine",
+        "ja": "火打石鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -10438,7 +10000,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -10464,7 +10026,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -10476,7 +10038,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -10512,7 +10074,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -10526,7 +10088,7 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
@@ -10542,7 +10104,7 @@
       "CardType": 4,
       "zh": "巫石矿井",
       "en": "Witchstone Mine",
-      "ja": "Witchstone Mine",
+      "ja": "ウィッチストーン鉱山",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10646,7 +10208,7 @@
         "CardType": 8,
         "zh": "巫石矿井",
         "en": "Witchstone Mine",
-        "ja": "Witchstone Mine",
+        "ja": "ウィッチストーン鉱山",
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
@@ -10654,7 +10216,7 @@
             "Text": "污秽",
             "zh": "污秽",
             "en": "Filthiness",
-            "ja": "Filthiness"
+            "ja": "汚さ"
           },
           "OverrideIcon": {
             "FileName": "Filth"
@@ -10680,7 +10242,7 @@
             "Text": "洪水",
             "zh": "洪水",
             "en": "Flood",
-            "ja": "Flood"
+            "ja": "洪水"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -10692,7 +10254,7 @@
             "Text": "亲和度",
             "zh": "亲和度",
             "en": "Affinity",
-            "ja": "Affinity"
+            "ja": "親和性"
           },
           "OverrideIcon": null,
           "MaxValue": 10000
@@ -10728,7 +10290,7 @@
             "Text": "蒸汽",
             "zh": "蒸汽",
             "en": "Steam",
-            "ja": "Steam"
+            "ja": "蒸気"
           },
           "OverrideIcon": {
             "FileName": "AloeGel_Old"
@@ -10742,230 +10304,12 @@
             "Text": "烟雾",
             "zh": "烟雾",
             "en": "Smoke",
-            "ja": "Smoke"
+            "ja": "煙"
           },
           "OverrideIcon": {
             "FileName": "Ash"
           },
           "MaxValue": 4
-        }
-      }
-    },
-    {
-      "key": "Env_River_ClearingOak_RiverClearing",
-      "icon": "River1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "河畔林隙",
-      "en": "River Clearing",
-      "ja": "川沿いの平地",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "River_ClearingOak_RiverClearing",
-        "icon": "River1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "河畔林隙",
-        "en": "River Clearing",
-        "ja": "川沿いの平地",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 288
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "木"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 115200
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "茂み"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 1440
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 360
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
         }
       }
     },
@@ -11167,224 +10511,6 @@
             "zh": "觅食",
             "en": "Foraging",
             "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 720
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    },
-    {
-      "key": "Env_River_GrovePine_SouthernLakeBank",
-      "icon": "Lake1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "南部湖岸",
-      "en": "Southern Lake Bank",
-      "ja": "Southern Lake Bank",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "River_GrovePine_SouthernLakeBank",
-        "icon": "Lake1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "南部湖岸",
-        "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 288
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "Trees"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 345600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "Overgrowth"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 2880
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "Foraging"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

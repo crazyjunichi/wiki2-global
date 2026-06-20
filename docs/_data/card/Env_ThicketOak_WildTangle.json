@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "蛮荒杂林",
   "en": "Wild Tangle",
-  "ja": "Wild Tangle",
-  "UniqueIDIndex": 133,
+  "ja": "荒れ茂る茂み",
+  "UniqueIDIndex": 134,
   "CardType": 4,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -150,7 +150,7 @@
     "Text": "蛮荒杂林",
     "zh": "蛮荒杂林",
     "en": "Wild Tangle",
-    "ja": "Wild Tangle"
+    "ja": "荒れ茂る茂み"
   },
   "CardImage": null,
   "CardBackground": null,
@@ -1020,6 +1020,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1283,8 +1287,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1416,7 +1428,7 @@
         "CardType": 8,
         "zh": "蛮荒杂林",
         "en": "Wild Tangle",
-        "ja": "Wild Tangle",
+        "ja": "荒れ茂る茂み",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -1476,7 +1488,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -1490,7 +1502,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -1504,7 +1516,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -1594,7 +1606,7 @@
               "Text": "标记橡树",
               "zh": "标记橡树",
               "en": "Marked Oak Tree",
-              "ja": "Marked Oak Tree"
+              "ja": "印付きのオークの木"
             }
           }
         ],
@@ -1657,7 +1669,7 @@
             "Text": "已标记",
             "zh": "已标记",
             "en": "Marked",
-            "ja": "Marked"
+            "ja": "印付き"
           },
           "OverrideIcon": null,
           "MaxValue": 1
@@ -2060,12 +2072,12 @@
         "CardType": 8,
         "zh": "原初森林",
         "en": "Primeval Woods",
-        "ja": "Primeval Woods"
+        "ja": "太古の森"
       },
       "localization": {
         "zh": "动作：北方",
         "en": "Action: North",
-        "ja": "アクション：North"
+        "ja": "アクション：北"
       }
     },
     {
@@ -2076,12 +2088,12 @@
         "CardType": 8,
         "zh": "幽影丛林",
         "en": "Shady Thicket",
-        "ja": "Shady Thicket"
+        "ja": "木陰の茂み"
       },
       "localization": {
         "zh": "动作：西方",
         "en": "Action: West",
-        "ja": "アクション：West"
+        "ja": "アクション：西"
       }
     },
     {
@@ -2092,12 +2104,12 @@
         "CardType": 8,
         "zh": "松针山坡",
         "en": "Needle Slopes",
-        "ja": "Needle Slopes"
+        "ja": "針葉樹の斜面"
       },
       "localization": {
         "zh": "动作：南方",
         "en": "Action: South",
-        "ja": "アクション：South"
+        "ja": "アクション：南"
       }
     },
     {
@@ -2126,7 +2138,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2142,7 +2154,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2238,7 +2250,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -2318,7 +2330,7 @@
     "CardType": 8,
     "zh": "蛮荒杂林",
     "en": "Wild Tangle",
-    "ja": "Wild Tangle",
+    "ja": "荒れ茂る茂み",
     "SpoilageTime": {
       "Active": false,
       "CardStatName": {
@@ -2378,7 +2390,7 @@
         "Text": "树林",
         "zh": "树林",
         "en": "Trees",
-        "ja": "Trees"
+        "ja": "木"
       },
       "OverrideIcon": {
         "FileName": "Tree1"
@@ -2392,7 +2404,7 @@
         "Text": "过度生长",
         "zh": "过度生长",
         "en": "Overgrowth",
-        "ja": "Overgrowth"
+        "ja": "雑草"
       },
       "OverrideIcon": {
         "FileName": "Overgrowth"
@@ -2406,7 +2418,7 @@
         "Text": "觅食",
         "zh": "觅食",
         "en": "Foraging",
-        "ja": "Foraging"
+        "ja": "資源集め"
       },
       "OverrideIcon": {
         "FileName": "SaturationBerries"

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "工作台",
   "en": "Workbench",
-  "ja": "Workbench",
-  "UniqueIDIndex": 2755,
+  "ja": "作業台",
+  "UniqueIDIndex": 2836,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "工作台",
     "zh": "工作台",
     "en": "Workbench",
-    "ja": "Workbench"
+    "ja": "作業台"
   },
   "CardImage": {
     "FileName": "Workbench"
@@ -855,7 +855,7 @@
     "Text": "一张专门用于制作工具和加工材料的桌子。",
     "zh": "一张专门用于制作工具和加工材料的桌子。",
     "en": "A specialized table for crafting tools and shaping materials.",
-    "ja": "A specialized table for crafting tools and shaping materials."
+    "ja": "道具作りや素材加工に使う専用作業台。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1169,7 +1173,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1179,7 +1186,7 @@
             "type": "stat",
             "zh": "庇护度",
             "en": "Sanctuary",
-            "ja": "Sanctuary",
+            "ja": "安息度",
             "max": 7500,
             "min": -1000
           },
@@ -1501,7 +1508,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [
         {
@@ -1737,8 +1747,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1873,7 +1891,7 @@
         "Text": "拆卸并搬起",
         "zh": "拆卸并搬起",
         "en": "Take apart and pick up",
-        "ja": "Take apart and pick up"
+        "ja": "解体して回収する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1908,6 +1926,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2155,7 +2177,7 @@
           "CardType": 0,
           "zh": "工作台",
           "en": "Workbench",
-          "ja": "Workbench",
+          "ja": "作業台",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2547,7 +2569,7 @@
         "CardType": 7,
         "zh": "工作台",
         "en": "Workbench",
-        "ja": "Workbench"
+        "ja": "作業台"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -2563,12 +2585,12 @@
         "CardType": 0,
         "zh": "工作台",
         "en": "Workbench",
-        "ja": "Workbench"
+        "ja": "作業台"
       },
       "localization": {
         "zh": "动作：组装",
         "en": "Action: Build",
-        "ja": "アクション：Build"
+        "ja": "アクション：建築する"
       }
     }
   ],
@@ -2581,12 +2603,12 @@
         "CardType": 0,
         "zh": "工作台",
         "en": "Workbench",
-        "ja": "Workbench"
+        "ja": "作業台"
       },
       "localization": {
         "zh": "动作：组装",
         "en": "Action: Build",
-        "ja": "アクション：Build"
+        "ja": "アクション：建築する"
       }
     }
   ],

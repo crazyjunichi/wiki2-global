@@ -7,7 +7,7 @@
   "zh": "供奉",
   "en": "Appeasement",
   "ja": "Appeasement",
-  "UniqueIDIndex": 291,
+  "UniqueIDIndex": 294,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -934,6 +934,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1487,14 +1491,22 @@
   ],
   "BuildingDaytimeCost": 4,
   "BuildingMiniTicks": 1,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1502,7 +1514,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -1516,7 +1528,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -1530,7 +1542,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -1544,7 +1556,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2211,7 +2223,7 @@
   "_blueprintContainerCard": [
     {
       "key": "SpiritShrine_Rott_RottenOak",
-      "icon": "SacredOak",
+      "icon": "RottenOak",
       "type": "card",
       "CardType": 2,
       "zh": "枯橡树",
@@ -2259,8 +2271,8 @@
         "Active": true,
         "CardStatName": {
           "DefaultText": "Cut",
-          "Text": "分割",
-          "zh": "分割",
+          "Text": "砍倒进程",
+          "zh": "砍倒进程",
           "en": "Cut",
           "ja": "Cut"
         },
@@ -2331,7 +2343,7 @@
     {
       "link": {
         "key": "SpiritShrine_Rott_RottenOak",
-        "icon": "SacredOak",
+        "icon": "RottenOak",
         "type": "card",
         "CardType": 2,
         "zh": "枯橡树",

@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "衰败巫石粉末",
   "en": "Dead Witchstone Dust",
-  "ja": "Dead Witchstone Dust",
-  "UniqueIDIndex": 2724,
+  "ja": "死んだウィッチストーン粉末",
+  "UniqueIDIndex": 2805,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "衰败巫石粉末",
     "zh": "衰败巫石粉末",
     "en": "Dead Witchstone Dust",
-    "ja": "Dead Witchstone Dust"
+    "ja": "死んだウィッチストーン粉末"
   },
   "CardImage": {
     "FileName": "Witchstone_Dust_Dead"
@@ -863,7 +863,7 @@
     "Text": "一种剧毒材料，应远离阳光。\\n\\n可用于在坩埚中制造鬼铜。",
     "zh": "一种剧毒材料，应远离阳光。\\n\\n可用于在坩埚中制造鬼铜。",
     "en": "A highly poisonous material that should be kept away from sunlight.\\n\\nIt can be used to create ghost bronze in a crucible.",
-    "ja": "A highly poisonous material that should be kept away from sunlight.\n\nIt can be used to create ghost bronze in a crucible."
+    "ja": "日光を避けて保管すべき猛毒性の物質。\\n\\nるつぼ内でゴーストブロンズを作る材料として使用できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -895,6 +895,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1080,8 +1084,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1359,14 +1371,14 @@
         "CardType": 0,
         "zh": "衰败巫石",
         "en": "Dead Witchstone",
-        "ja": "Dead Witchstone"
+        "ja": "死んだウィッチストーン"
       },
       "localization": {
         "DefaultText": "Grind",
         "Text": "研磨",
         "zh": "研磨",
         "en": "Grind",
-        "ja": "Grind"
+        "ja": "粉砕"
       }
     },
     {
@@ -1377,12 +1389,12 @@
         "CardType": 0,
         "zh": "巫石粉末",
         "en": "Witchstone Dust",
-        "ja": "Witchstone Dust"
+        "ja": "ウィッチストーン粉末"
       },
       "localization": {
         "zh": "品质 降为零",
         "en": "Quality Depleted",
-        "ja": "Quality ゼロ"
+        "ja": "質 ゼロ"
       }
     }
   ],
@@ -1395,7 +1407,7 @@
         "CardType": 7,
         "zh": "鬼铜",
         "en": "Ghost Bronze",
-        "ja": "Ghost Bronze"
+        "ja": "ゴーストブロンズ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -1411,7 +1423,7 @@
         "CardType": 7,
         "zh": "鬼铜",
         "en": "Ghost Bronze",
-        "ja": "Ghost Bronze"
+        "ja": "ゴーストブロンズ"
       },
       "localization": {
         "zh": "蓝图制作",

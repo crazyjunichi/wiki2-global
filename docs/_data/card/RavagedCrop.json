@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "被毁的庄稼",
   "en": "Ravaged Crop",
-  "ja": "Ravaged Crop",
-  "UniqueIDIndex": 2142,
+  "ja": "荒らされた作物",
+  "UniqueIDIndex": 2202,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "被毁的庄稼",
     "zh": "被毁的庄稼",
     "en": "Ravaged Crop",
-    "ja": "Ravaged Crop"
+    "ja": "荒らされた作物"
   },
   "CardImage": {
     "FileName": "RottenRemains"
@@ -103,6 +103,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1297,6 +1301,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1381,45 +1389,7 @@
   "IsDarkPlace": false,
   "IsHotPlace": false,
   "IsTravelCard": false,
-  "PassiveStatEffects": [
-    {
-      "Stat": {
-        "key": "Discomfort",
-        "icon": "Discomfort",
-        "type": "stat",
-        "zh": "不适",
-        "en": "Discomfort",
-        "ja": "深い",
-        "max": 2500,
-        "min": 0
-      },
-      "ValueModifier": {
-        "x": 50,
-        "y": 50
-      },
-      "RateModifier": {
-        "x": 0,
-        "y": 0
-      },
-      "MinValueModifier": {
-        "x": 0,
-        "y": 0
-      },
-      "MaxValueModifier": {
-        "x": 0,
-        "y": 0
-      },
-      "CannotModifyBeyond": {
-        "Active": false,
-        "FloatValue": 0,
-        "MaxValue": 0
-      },
-      "ApplyEachTick": false,
-      "InstantModifier": false,
-      "IgnoreNovelty": false,
-      "IsInverse": false
-    }
-  ],
+  "PassiveStatEffects": [],
   "PassiveEffects": [],
   "RemotePassiveEffects": [],
   "EffectsToContainer": [],
@@ -1520,8 +1490,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

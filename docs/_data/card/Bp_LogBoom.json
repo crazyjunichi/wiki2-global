@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "原木围栏",
   "en": "Log Boom",
-  "ja": "Log Boom",
-  "UniqueIDIndex": 483,
+  "ja": "流木止め",
+  "UniqueIDIndex": 498,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "原木围栏",
     "zh": "原木围栏",
     "en": "Log Boom",
-    "ja": "Log Boom"
+    "ja": "流木止め"
   },
   "CardImage": {
     "FileName": "LogBoom"
@@ -789,7 +789,7 @@
             "Text": "干燥度",
             "zh": "干燥度",
             "en": "Dryness",
-            "ja": "Dryness"
+            "ja": "乾燥度"
           },
           "OverrideIcon": {
             "FileName": "Drying"
@@ -903,7 +903,7 @@
     "Text": "需要原木",
     "zh": "需要原木",
     "en": "Log Needed",
-    "ja": "Log Needed"
+    "ja": "丸太が必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -1175,7 +1175,7 @@
     "Text": "拦截顺流而下的原木和木筏。",
     "zh": "拦截顺流而下的原木和木筏。",
     "en": "Catches logs and rafts drifting downriver.",
-    "ja": "Catches logs and rafts drifting downriver."
+    "ja": "川を流れる丸太や筏をせき止める。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1207,6 +1207,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1537,7 +1541,7 @@
             }
           },
           "RequiredTabGroup": null,
-          "RequiredQuantity": 8,
+          "RequiredQuantity": 5,
           "Spoilage": {
             "Active": false,
             "FloatValue": 0,
@@ -1837,7 +1841,7 @@
                 "Text": "干燥度",
                 "zh": "干燥度",
                 "en": "Dryness",
-                "ja": "Dryness"
+                "ja": "乾燥度"
               },
               "OverrideIcon": {
                 "FileName": "Drying"
@@ -2073,14 +2077,22 @@
   ],
   "BuildingDaytimeCost": 8,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2088,7 +2100,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2102,7 +2114,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2116,7 +2128,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2130,7 +2142,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2197,7 +2209,7 @@
       "key": "CraftAction",
       "text": "CraftAction",
       "type": "tag",
-      "count": 75,
+      "count": 76,
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
@@ -2219,7 +2231,7 @@
           "Text": "彩度",
           "zh": "彩度",
           "en": "Colour Intensity",
-          "ja": "Colour Intensity"
+          "ja": "色の濃さ"
         },
         "OverrideIcon": {
           "FileName": "Urine"
@@ -2233,7 +2245,7 @@
           "Text": "毛皮",
           "zh": "毛皮",
           "en": "Fur",
-          "ja": "Fur"
+          "ja": "毛皮"
         },
         "OverrideIcon": {
           "FileName": "Fur_Cured"
@@ -2247,7 +2259,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2261,7 +2273,7 @@
           "Text": "柔软度",
           "zh": "柔软度",
           "en": "Softness",
-          "ja": "Softness"
+          "ja": "柔らかさ"
         },
         "OverrideIcon": {
           "FileName": "Brain"
@@ -2275,7 +2287,7 @@
           "Text": "颜色",
           "zh": "颜色",
           "en": "Colour",
-          "ja": "Colour"
+          "ja": "色"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -2322,7 +2334,7 @@
         "CardType": 2,
         "zh": "工作中的原木围栏",
         "en": "Active Log Boom",
-        "ja": "Active Log Boom",
+        "ja": "稼働中の流木止め",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {

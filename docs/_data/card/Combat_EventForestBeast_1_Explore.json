@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "你看到了森林猛兽！",
   "en": "You see the Forest Beast!",
-  "ja": "You see the Forest Beast!",
-  "UniqueIDIndex": 899,
+  "ja": "森の獣がいた！",
+  "UniqueIDIndex": 929,
   "CardType": 3,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
     "Text": "你看到了森林猛兽！",
     "zh": "你看到了森林猛兽！",
     "en": "You see the Forest Beast!",
-    "ja": "You see the Forest Beast!"
+    "ja": "森の獣がいた！"
   },
   "CardImage": {
     "FileName": "ForestBeast"
@@ -898,6 +898,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1083,8 +1087,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1219,7 +1231,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1254,6 +1266,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1604,13 +1620,14 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": {
             "key": "Combat_EncounterForestBeast",
             "icon": "ForestBeast",
             "type": "encounter",
             "zh": "森林猛兽",
             "en": "Forest Beast",
-            "ja": "Forest Beast"
+            "ja": "森の獣"
           },
           "EncounterNPC": {
             "key": "Agent_Bear",

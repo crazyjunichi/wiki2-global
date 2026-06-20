@@ -6,16 +6,16 @@
   "type": "card",
   "zh": "未工作的原木围栏",
   "en": "Inactive Log Boom",
-  "ja": "Inactive Log Boom",
-  "UniqueIDIndex": 1606,
+  "ja": "停止中の流木止め",
+  "UniqueIDIndex": 1648,
   "CardType": 2,
   "CardTags": [
     {
-      "key": "tag_FloodSafe",
+      "key": "NOT_USED_tag_FloodSafe",
       "text": "“不怕洪水”",
       "icon": "",
       "type": "tag",
-      "count": 137,
+      "count": 138,
       "zh": "不怕洪水",
       "en": "Safe from Floods",
       "ja": "洪水から安全",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +106,7 @@
           "Text": "烟雾",
           "zh": "烟雾",
           "en": "Smoke",
-          "ja": "Smoke"
+          "ja": "煙"
         },
         "OverrideIcon": {
           "FileName": "Ash"
@@ -120,7 +120,7 @@
     "Text": "未工作的原木围栏",
     "zh": "未工作的原木围栏",
     "en": "Inactive Log Boom",
-    "ja": "Inactive Log Boom"
+    "ja": "停止中の流木止め"
   },
   "CardImage": {
     "FileName": "LogBoom"
@@ -962,7 +962,7 @@
     "Text": "放下围栏，开始拦截顺流而下的原木和木筏。",
     "zh": "放下围栏，开始拦截顺流而下的原木和木筏。",
     "en": "Release to start catching logs and rafts drifting downriver.",
-    "ja": "Release to start catching logs and rafts drifting downriver."
+    "ja": "解放すると流れてくる丸太や筏をせき止め始める。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -994,6 +994,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1179,8 +1183,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1315,7 +1327,7 @@
         "Text": "放下原木围栏",
         "zh": "放下原木围栏",
         "en": "Release Log Boom",
-        "ja": "Release Log Boom"
+        "ja": "流木止めを解放する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1350,6 +1362,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1726,7 +1742,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -1802,7 +1818,7 @@
           "CardType": 2,
           "zh": "工作中的原木围栏",
           "en": "Active Log Boom",
-          "ja": "Active Log Boom",
+          "ja": "稼働中の流木止め",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -2052,7 +2068,7 @@
         "Text": "拆解",
         "zh": "拆解",
         "en": "Dismantle",
-        "ja": "Dismantle"
+        "ja": "解体する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2087,6 +2103,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2737,7 +2757,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -2846,6 +2866,7 @@
           ],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3046,7 +3067,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -3122,7 +3143,7 @@
           "CardType": 2,
           "zh": "未工作的原木围栏",
           "en": "Inactive Log Boom",
-          "ja": "Inactive Log Boom",
+          "ja": "停止中の流木止め",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -3516,12 +3537,12 @@
         "CardType": 2,
         "zh": "工作中的原木围栏",
         "en": "Active Log Boom",
-        "ja": "Active Log Boom"
+        "ja": "稼働中の流木止め"
       },
       "localization": {
         "zh": "动作：拉开原木围栏",
         "en": "Action: Draw Log Boom",
-        "ja": "アクション：Draw Log Boom"
+        "ja": "アクション：流木止めを引き上げる"
       }
     }
   ],
@@ -3534,7 +3555,7 @@
         "CardType": 8,
         "zh": "木质房间",
         "en": "Cabin Room",
-        "ja": "Cabin Room"
+        "ja": "小屋部屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3550,7 +3571,7 @@
         "CardType": 8,
         "zh": "木屋",
         "en": "Cabin",
-        "ja": "Cabin"
+        "ja": "小屋"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",
@@ -3646,7 +3667,7 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "被动效果：在非河流区域隐藏水位",

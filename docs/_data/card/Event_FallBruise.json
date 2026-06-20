@@ -7,7 +7,7 @@
   "zh": "坠落！",
   "en": "Fall!",
   "ja": "落ちた！",
-  "UniqueIDIndex": 1042,
+  "UniqueIDIndex": 1078,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1726,7 +1742,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [
             null
@@ -2149,12 +2168,12 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow"
+        "ja": "湿った窪地"
       },
       "localization": {
         "zh": "动作：爬上去",
         "en": "Action: Climb Up",
-        "ja": "アクション：Climb Up"
+        "ja": "アクション：登る"
       }
     },
     {
@@ -2165,12 +2184,12 @@
         "CardType": 8,
         "zh": "死亡幽谷",
         "en": "Dead Hollow",
-        "ja": "Dead Hollow"
+        "ja": "枯れた窪地"
       },
       "localization": {
         "zh": "动作：爬上去",
         "en": "Action: Climb Up",
-        "ja": "アクション：Climb Up"
+        "ja": "アクション：登る"
       }
     },
     {
@@ -2181,12 +2200,12 @@
         "CardType": 8,
         "zh": "死亡幽谷",
         "en": "Dead Hollow",
-        "ja": "Dead Hollow"
+        "ja": "枯れた窪地"
       },
       "localization": {
         "zh": "动作：爬上去",
         "en": "Action: Climb Up ",
-        "ja": "アクション：Climb Up "
+        "ja": "アクション：登る"
       }
     },
     {
@@ -2245,12 +2264,12 @@
         "CardType": 8,
         "zh": "乌鸦松林",
         "en": "Crow Pines",
-        "ja": "Crow Pines"
+        "ja": "カラスの松林"
       },
       "localization": {
         "zh": "动作：爬下去",
         "en": "Action:  Climb Down",
-        "ja": "アクション： Climb Down"
+        "ja": "アクション：降りる"
       }
     },
     {
@@ -2266,7 +2285,7 @@
       "localization": {
         "zh": "动作：爬下去",
         "en": "Action:  Climb Down",
-        "ja": "アクション： Climb Down"
+        "ja": "アクション：降りる"
       }
     },
     {
@@ -2277,12 +2296,12 @@
         "CardType": 8,
         "zh": "风针松林",
         "en": "Wind Needles",
-        "ja": "Wind Needles"
+        "ja": "風鳴る針葉"
       },
       "localization": {
         "zh": "动作：爬下去",
         "en": "Action: Climb Down",
-        "ja": "アクション：Climb Down"
+        "ja": "アクション：降りる"
       }
     },
     {
@@ -2389,12 +2408,12 @@
         "CardType": 8,
         "zh": "幽影丛林",
         "en": "Shady Thicket",
-        "ja": "Shady Thicket"
+        "ja": "木陰の茂み"
       },
       "localization": {
         "zh": "动作：爬上去",
         "en": "Action:  Climb up ",
-        "ja": "アクション： Climb up "
+        "ja": "アクション：登る"
       }
     },
     {
@@ -2421,12 +2440,12 @@
         "CardType": 8,
         "zh": "松林峭崖",
         "en": "Pine Cliffs",
-        "ja": "Pine Cliffs"
+        "ja": "松の崖"
       },
       "localization": {
         "zh": "动作：爬下去",
         "en": "Action: Climb Down",
-        "ja": "アクション：Climb Down"
+        "ja": "アクション：降りる"
       }
     },
     {
@@ -2484,7 +2503,7 @@
               "Text": "标记橡树",
               "zh": "标记橡树",
               "en": "Marked Oak Tree",
-              "ja": "Marked Oak Tree"
+              "ja": "印付きのオークの木"
             }
           }
         ]
@@ -2517,7 +2536,7 @@
               "Text": "标记松树",
               "zh": "标记松树",
               "en": "Marked Pine Tree",
-              "ja": "Marked Pine Tree"
+              "ja": "印付きの松の木"
             }
           }
         ]

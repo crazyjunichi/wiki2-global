@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "召唤仪式(召唤成功)",
   "en": "Summoning Ritual",
-  "ja": "Summoning Ritual",
-  "UniqueIDIndex": 1120,
+  "ja": "召喚の儀式",
+  "UniqueIDIndex": 1161,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "召唤仪式",
     "zh": "召唤仪式",
     "en": "Summoning Ritual",
-    "ja": "Summoning Ritual"
+    "ja": "召喚の儀式"
   },
   "CardImage": {
     "FileName": "FFMoonIcon"
@@ -855,7 +855,7 @@
     "Text": "你成功地完成了仪式。精魄暂时与你一体。",
     "zh": "你成功地完成了仪式。精魄暂时与你一体。",
     "en": "You sucessfully completed the ritual. The spirit is now temporarily a part of you.",
-    "ja": "You sucessfully completed the ritual. The spirit is now temporarily a part of you."
+    "ja": "儀式は成功した。精霊はいま、しばらくの間あなたの一部となる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "继续",
         "zh": "继续",
         "en": "Continue",
-        "ja": "Continue"
+        "ja": "続ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1597,7 +1613,7 @@
                 "CardType": 0,
                 "zh": "月精魄(召唤)",
                 "en": "Moon Spirit",
-                "ja": "Moon Spirit",
+                "ja": "月の精霊",
                 "SpoilageTime": {
                   "Active": true,
                   "CardStatName": {
@@ -1605,7 +1621,7 @@
                     "Text": "共鸣",
                     "zh": "共鸣",
                     "en": "Attunement",
-                    "ja": "Attunement"
+                    "ja": "調和"
                   },
                   "OverrideIcon": {
                     "FileName": "Morale1"
@@ -1631,7 +1647,7 @@
                     "Text": "耗时",
                     "zh": "耗时",
                     "en": "Duration",
-                    "ja": "Duration"
+                    "ja": "待ち時間"
                   },
                   "OverrideIcon": {
                     "FileName": "Spoilage"
@@ -1752,6 +1768,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2205,12 +2222,12 @@
         "CardType": 3,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "动作：融合",
         "en": "Action: Bind",
-        "ja": "アクション：Bind"
+        "ja": "アクション：結び付ける"
       }
     }
   ],

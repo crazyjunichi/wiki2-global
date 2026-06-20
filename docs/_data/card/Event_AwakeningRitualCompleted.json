@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "唤醒仪式",
   "en": "Awakening Ritual",
-  "ja": "Awakening Ritual",
-  "UniqueIDIndex": 996,
+  "ja": "覚醒の儀式",
+  "UniqueIDIndex": 1026,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "唤醒仪式",
     "zh": "唤醒仪式",
     "en": "Awakening Ritual",
-    "ja": "Awakening Ritual"
+    "ja": "覚醒の儀式"
   },
   "CardImage": {
     "FileName": "Darkness"
@@ -855,7 +855,7 @@
     "Text": "经过长时间的呼唤，终于有人，或某物，回应了。",
     "zh": "经过长时间的呼唤，终于有人，或某物，回应了。",
     "en": "After a long time calling, someone, something, finally answers.",
-    "ja": "After a long time calling, someone, something, finally answers."
+    "ja": "長い呼びかけの末に、誰かが、いや、何かがついに応えた。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1208,7 +1220,7 @@
         "Text": "仔细听...",
         "zh": "仔细听...",
         "en": "Listen carefully...",
-        "ja": "Listen carefully..."
+        "ja": "よく聞く・・・"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1785,7 +1801,7 @@
         "CardType": 7,
         "zh": "唤醒仪式",
         "en": "Awakening Ritual",
-        "ja": "Awakening Ritual"
+        "ja": "覚醒の儀式"
       },
       "localization": {
         "zh": "蓝图制作",

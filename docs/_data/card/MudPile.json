@@ -7,7 +7,7 @@
   "zh": "泥堆",
   "en": "Mud Pile",
   "ja": "泥の山",
-  "UniqueIDIndex": 1864,
+  "UniqueIDIndex": 1920,
   "CardType": 0,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "冰",
           "zh": "冰",
           "en": "Ice",
-          "ja": "Ice"
+          "ja": "氷"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -52,7 +52,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -78,7 +78,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -90,7 +90,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -104,7 +104,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -117,7 +117,7 @@
       "text": "“沉重的”",
       "icon": "",
       "type": "tag",
-      "count": 56,
+      "count": 57,
       "zh": "沉重的",
       "en": "Heavy",
       "ja": "重い",
@@ -154,7 +154,7 @@
           "Text": "容器温度",
           "zh": "容器温度",
           "en": "Container Temperature",
-          "ja": "Container Temperature"
+          "ja": "容器の温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -168,7 +168,7 @@
           "Text": "熔炼",
           "zh": "熔炼",
           "en": "Smelted",
-          "ja": "Smelted"
+          "ja": "精錬済み"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -182,7 +182,7 @@
           "Text": "染料",
           "zh": "染料",
           "en": "Dye",
-          "ja": "Dye"
+          "ja": "染料"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -208,7 +208,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -222,7 +222,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -233,7 +233,7 @@
       "text": "“粉末”",
       "icon": "",
       "type": "tag",
-      "count": 30,
+      "count": 33,
       "zh": "粉末",
       "en": "Powder",
       "ja": "パウダー",
@@ -410,6 +410,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -967,7 +971,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -981,7 +985,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Snowflake_Old"
@@ -1090,12 +1094,131 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
             },
             "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "加護を受けている"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Clay Jar - Chilled",
+          "en": "Passive Effect：Preserve - Clay Jar - Chilled",
+          "ja": "パッシブ効果：Preserve - Clay Jar - Chilled"
+        },
+        "value": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
           },
           "SpecialDurability3": {
             "Active": true,
@@ -1125,9 +1248,128 @@
           }
         },
         "localization": {
-          "zh": "被动效果：Preserve - Clay Jar - Chilled",
-          "en": "Passive Effect：Preserve - Clay Jar - Chilled",
-          "ja": "パッシブ効果：Preserve - Clay Jar - Chilled"
+          "zh": "被动效果：保存-麻袋",
+          "en": "Passive Effect：Preserve  - Sack",
+          "ja": "パッシブ効果：保存 - 袋"
+        },
+        "value": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "isMultiplier": true
+      },
+      {
+        "link": {
+          "key": "ClothSack",
+          "icon": "Sack_Cloth",
+          "type": "card",
+          "CardType": 0,
+          "zh": "布袋",
+          "en": "Cloth Sack",
+          "ja": "Cloth Sack",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "FuelCapacity",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "Blessed"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "localization": {
+          "zh": "被动效果：Preserve - Sack - Chilled",
+          "en": "Passive Effect：Preserve - Sack - Chilled",
+          "ja": "パッシブ効果：Preserve - Sack - Chilled"
         },
         "value": {
           "x": 0.75,
@@ -1213,7 +1455,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1264,7 +1506,7 @@
           "CardType": 0,
           "zh": "小陶罐(专有)",
           "en": "Clay Jar(Pk)",
-          "ja": "Clay Jar",
+          "ja": "粘土の壺",
           "SpoilageTime": {
             "Active": false,
             "CardStatName": {
@@ -1296,7 +1538,7 @@
               "Text": "容器温度",
               "zh": "容器温度",
               "en": "Container Temperature",
-              "ja": "Container Temperature"
+              "ja": "容器の温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1334,7 +1576,7 @@
               "Text": "容器品质",
               "zh": "容器品质",
               "en": "Container Quality",
-              "ja": "Container Quality"
+              "ja": "容器の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1820,7 +2062,7 @@
       "Text": "品质",
       "zh": "品质",
       "en": "Quality",
-      "ja": "Quality"
+      "ja": "質"
     },
     "RandomStartingOffset": 50,
     "MaxValue": 50,
@@ -1995,6 +2237,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -2002,7 +2248,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2010,7 +2256,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2024,7 +2270,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2038,7 +2284,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -2052,7 +2298,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -2967,25 +3213,27 @@
         "TriggerCards": [],
         "TriggerTags": [
           {
-            "key": "tag_Temper",
+            "key": "tag_BrickBinder",
             "text": "“抗裂剂”",
             "icon": "",
             "type": "tag",
-            "count": 17,
+            "count": 10,
             "zh": "抗裂剂",
             "en": "Temper",
-            "ja": "骨材",
+            "ja": "Temper",
             "FuelCapacity": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
+                "DefaultText": "Wetness",
+                "Text": "湿度",
+                "zh": "湿度",
+                "en": "Wetness",
+                "ja": "水分量"
               },
-              "OverrideIcon": null,
-              "MaxValue": 1
+              "OverrideIcon": {
+                "FileName": "Water"
+              },
+              "MaxValue": 40
             },
             "Progress": {
               "Active": true,
@@ -2994,7 +3242,7 @@
                 "Text": "营养",
                 "zh": "营养",
                 "en": "Nutrition",
-                "ja": "Nutrition"
+                "ja": "栄養"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3008,7 +3256,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3078,6 +3326,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -3085,7 +3337,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3093,7 +3345,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -3107,7 +3359,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3121,7 +3373,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -3135,7 +3387,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3424,7 +3676,7 @@
             "type": "stat",
             "zh": "陶艺",
             "en": "Pottery",
-            "ja": "Pottery",
+            "ja": "陶芸のスキル",
             "max": 150,
             "min": 0
           },
@@ -3716,7 +3968,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3730,7 +3982,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -4204,7 +4456,7 @@
             "text": "“锤”",
             "icon": "",
             "type": "tag",
-            "count": 36,
+            "count": 34,
             "zh": "锤击工具(通用)",
             "en": "Hammer",
             "ja": "ハンマー",
@@ -4215,7 +4467,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -4243,7 +4495,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4255,7 +4507,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4293,7 +4545,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4307,7 +4559,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4825,6 +5077,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -5229,7 +5485,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5427,8 +5686,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -5598,6 +5865,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -5605,7 +5876,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -5613,7 +5884,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -5627,7 +5898,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -5641,7 +5912,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -5655,7 +5926,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -6088,7 +6359,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -6102,7 +6373,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -6305,6 +6576,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -6312,7 +6587,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -6320,7 +6595,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -6334,7 +6609,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -6348,7 +6623,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -6362,7 +6637,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -6813,7 +7088,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -6827,7 +7102,7 @@
               "Text": "研磨",
               "zh": "研磨",
               "en": "Mill",
-              "ja": "Mill"
+              "ja": "製粉"
             },
             "OverrideIcon": null,
             "MaxValue": 1
@@ -7251,7 +7526,7 @@
               "Text": "上冻的湖泊",
               "zh": "上冻的湖泊",
               "en": "Frozen Lake",
-              "ja": "Frozen Lake"
+              "ja": "凍った湖"
             }
           },
           {
@@ -7266,7 +7541,7 @@
               "Text": "上冻的沼泽",
               "zh": "上冻的沼泽",
               "en": "Frozen Marsh",
-              "ja": "Frozen Marsh"
+              "ja": "凍った湿地"
             }
           },
           {
@@ -7319,7 +7594,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥を掘り出す"
       }
     },
     {
@@ -7344,7 +7619,7 @@
               "Text": "上冻的湖泊",
               "zh": "上冻的湖泊",
               "en": "Frozen Lake",
-              "ja": "Frozen Lake"
+              "ja": "凍った湖"
             }
           },
           {
@@ -7359,7 +7634,7 @@
               "Text": "上冻的沼泽",
               "zh": "上冻的沼泽",
               "en": "Frozen Marsh",
-              "ja": "Frozen Marsh"
+              "ja": "凍った湿地"
             }
           },
           {
@@ -7414,16 +7689,16 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥を掘り出す"
       }
     },
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -7436,10 +7711,10 @@
     {
       "link": {
         "key": "HagPond",
-        "icon": "Pond",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "老妪池塘",
+        "zh": "老巫池塘",
         "en": "Hag Pond",
         "ja": "Hag Pond"
       },
@@ -7454,10 +7729,10 @@
     {
       "link": {
         "key": "HagPondFrozen",
-        "icon": "Pond_Winter",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "冰冻老妪池塘",
+        "zh": "结冰的老巫池塘",
         "en": "Frozen Hag Pond",
         "ja": "Frozen Hag Pond"
       },
@@ -7470,10 +7745,10 @@
     {
       "link": {
         "key": "HagPondFrozen",
-        "icon": "Pond_Winter",
+        "icon": "HagPond",
         "type": "card",
         "CardType": 2,
-        "zh": "冰冻老妪池塘",
+        "zh": "结冰的老巫池塘",
         "en": "Frozen Hag Pond",
         "ja": "Frozen Hag Pond"
       },
@@ -7535,74 +7810,6 @@
     },
     {
       "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：挖泥巴",
-        "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPond",
-        "icon": "Pond",
-        "type": "card",
-        "CardType": 2,
-        "zh": "蚊虫池塘",
-        "en": "Mosquito Pond",
-        "ja": "Mosquito Pond"
-      },
-      "localization": {
-        "DefaultText": "Dig Up Mud",
-        "Text": "挖泥巴",
-        "zh": "挖泥巴",
-        "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPondFrozen",
-        "icon": "Pond_Winter",
-        "type": "card",
-        "CardType": 2,
-        "zh": "冰冻蚊虫池塘",
-        "en": "Frozen Mosquito Pond",
-        "ja": "Frozen Mosquito Pond"
-      },
-      "localization": {
-        "zh": "动作：挖泥巴",
-        "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
-      }
-    },
-    {
-      "link": {
-        "key": "MosquitoPondFrozen",
-        "icon": "Pond_Winter",
-        "type": "card",
-        "CardType": 2,
-        "zh": "冰冻蚊虫池塘",
-        "en": "Frozen Mosquito Pond",
-        "ja": "Frozen Mosquito Pond"
-      },
-      "localization": {
-        "DefaultText": "Dig Up Mud",
-        "Text": "挖泥巴",
-        "zh": "挖泥巴",
-        "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
-      }
-    },
-    {
-      "link": {
         "key": "Pond",
         "icon": "Pond",
         "type": "card",
@@ -7648,7 +7855,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥を掘り出す"
       }
     },
     {
@@ -7666,7 +7873,7 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥を掘り出す"
       }
     },
     {
@@ -7725,7 +7932,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7740,7 +7947,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -7818,7 +8025,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -7833,7 +8040,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -8011,7 +8218,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -8026,7 +8233,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -8034,7 +8241,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥をすくう"
       }
     },
     {
@@ -8059,7 +8266,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -8074,7 +8281,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -8084,7 +8291,7 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     },
     {
@@ -8109,7 +8316,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -8124,7 +8331,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -8132,7 +8339,7 @@
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥をすくう"
       }
     },
     {
@@ -8157,7 +8364,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -8172,7 +8379,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -8182,7 +8389,7 @@
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     },
     {
@@ -8372,6 +8579,74 @@
             }
           }
         ]
+      },
+      "localization": {
+        "DefaultText": "Dig Up Mud",
+        "Text": "挖泥巴",
+        "zh": "挖泥巴",
+        "en": "Dig Up Mud",
+        "ja": "Dig Up Mud"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：挖泥巴",
+        "en": "Action: Dig up Mud",
+        "ja": "アクション：Dig up Mud"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPond",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "蚊虫池塘",
+        "en": "Mosquito Pond",
+        "ja": "Mosquito Pond"
+      },
+      "localization": {
+        "DefaultText": "Dig Up Mud",
+        "Text": "挖泥巴",
+        "zh": "挖泥巴",
+        "en": "Dig Up Mud",
+        "ja": "Dig Up Mud"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPondFrozen",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "结冰的蚊虫池塘",
+        "en": "Frozen Mosquito Pond",
+        "ja": "Frozen Mosquito Pond"
+      },
+      "localization": {
+        "zh": "动作：挖泥巴",
+        "en": "Action: Dig up Mud",
+        "ja": "アクション：Dig up Mud"
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Bugs_MosquitoPondFrozen",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 2,
+        "zh": "结冰的蚊虫池塘",
+        "en": "Frozen Mosquito Pond",
+        "ja": "Frozen Mosquito Pond"
       },
       "localization": {
         "DefaultText": "Dig Up Mud",
@@ -8423,12 +8698,12 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "zh": "动作：挖泥巴",
         "en": "Action: Dig up Mud",
-        "ja": "アクション：Dig up Mud"
+        "ja": "アクション：泥をすくう"
       }
     },
     {
@@ -8439,14 +8714,14 @@
         "CardType": 2,
         "zh": "溪流",
         "en": "Stream",
-        "ja": "Stream"
+        "ja": "小川"
       },
       "localization": {
         "DefaultText": "Dig Up Mud",
         "Text": "挖泥巴",
         "zh": "挖泥巴",
         "en": "Dig Up Mud",
-        "ja": "Dig Up Mud"
+        "ja": "泥をすくう"
       }
     }
   ],
@@ -8560,7 +8835,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -8576,7 +8851,7 @@
       "localization": {
         "zh": "动作：密封",
         "en": "Action: Seal",
-        "ja": "アクション：Seal"
+        "ja": "アクション：塞ぐ"
       }
     },
     {
@@ -8747,7 +9022,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8763,7 +9038,7 @@
         "CardType": 10,
         "zh": "新木质房间（东）",
         "en": "New Cabin Room (East)",
-        "ja": "New Cabin Room (East)"
+        "ja": "小屋部屋を増設（東）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8779,7 +9054,7 @@
         "CardType": 10,
         "zh": "新木质房间（北）",
         "en": "New Cabin Room (North)",
-        "ja": "New Cabin Room (North)"
+        "ja": "小屋部屋を増設（北）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8795,7 +9070,7 @@
         "CardType": 10,
         "zh": "新木质房间（南）",
         "en": "New Cabin Room (South)",
-        "ja": "New Cabin Room (South)"
+        "ja": "小屋部屋を増設（南）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8811,7 +9086,7 @@
         "CardType": 10,
         "zh": "新木质房间（上）",
         "en": "New Cabin Room (Up)",
-        "ja": "New Cabin Room (Up)"
+        "ja": "小屋部屋を増設（上）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8827,7 +9102,7 @@
         "CardType": 10,
         "zh": "新木质房间（西）",
         "en": "New Cabin Room (West)",
-        "ja": "New Cabin Room (West)"
+        "ja": "小屋部屋を増設（西）"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -8843,7 +9118,7 @@
         "CardType": 0,
         "zh": "黑麦粒(专有)",
         "en": "Rye Grains(Pk)",
-        "ja": "Rye Grains"
+        "ja": "ライ麦"
       },
       "localization": {
         "zh": "被动效果：浸泡",
@@ -8891,7 +9166,7 @@
         "CardType": 0,
         "zh": "正在发芽的黑麦",
         "en": "Malting Rye",
-        "ja": "Malting Rye"
+        "ja": "ライ麦の麦芽化"
       },
       "localization": {
         "zh": "被动效果：浸泡",
@@ -8939,7 +9214,7 @@
         "CardType": 0,
         "zh": "小麦粒",
         "en": "Wheat Grains",
-        "ja": "Wheat Grains"
+        "ja": "小麦粒"
       },
       "localization": {
         "zh": "被动效果：浸泡",
@@ -8955,7 +9230,7 @@
         "CardType": 0,
         "zh": "正在发芽的小麦",
         "en": "Malting Wheat",
-        "ja": "Malting Wheat"
+        "ja": "麦芽化中の小麦"
       },
       "localization": {
         "zh": "被动效果：浸泡",

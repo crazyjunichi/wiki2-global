@@ -7,7 +7,7 @@
   "zh": "树叶",
   "en": "Fresh Leaves",
   "ja": "新鮮な葉",
-  "UniqueIDIndex": 1596,
+  "UniqueIDIndex": 1638,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "耐久度",
           "zh": "耐久度",
           "en": "Durability",
-          "ja": "Durability"
+          "ja": "耐久性"
         },
         "OverrideIcon": {
           "FileName": "Shield"
@@ -52,21 +52,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
-        },
-        "OverrideIcon": {
-          "FileName": "Quality"
-        },
-        "MaxValue": 100
-      },
-      "SpecialDurability2": {
-        "Active": true,
-        "CardStatName": {
-          "DefaultText": "Quality",
-          "Text": "品质",
-          "zh": "品质",
-          "en": "Quality",
-          "ja": "クオリティ"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -90,7 +76,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Spoilage"
@@ -104,7 +90,7 @@
           "Text": "营养",
           "zh": "营养",
           "en": "Nutrition",
-          "ja": "Nutrition"
+          "ja": "栄養"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -123,7 +109,7 @@
         "OverrideIcon": {
           "FileName": "Quality"
         },
-        "MaxValue": 100
+        "MaxValue": 96
       }
     },
     {
@@ -300,6 +286,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -555,7 +545,7 @@
               "Text": "耐久度",
               "zh": "耐久度",
               "en": "Durability",
-              "ja": "Durability"
+              "ja": "耐久性"
             },
             "OverrideIcon": {
               "FileName": "Shield"
@@ -593,7 +583,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -961,14 +951,14 @@
     "durabilityKey": "SpecialDurability1"
   },
   "SpecialDurability2": {
-    "Active": true,
+    "Active": false,
     "FloatValue": 10,
     "CardStatName": {
-      "DefaultText": "Quality",
+      "DefaultText": "",
       "Text": "品质",
-      "zh": "品质",
-      "en": "Quality",
-      "ja": "クオリティ"
+      "zh": "特殊2",
+      "en": "Special2",
+      "ja": ""
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -1604,6 +1594,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": true,
+    "IntValue": 50
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1789,8 +1783,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2186,12 +2188,12 @@
         "CardType": 8,
         "zh": "林间旧地",
         "en": "Old Glade",
-        "ja": "Old Glade"
+        "ja": "古き空き地"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -2202,14 +2204,14 @@
         "CardType": 8,
         "zh": "林间旧地",
         "en": "Old Glade",
-        "ja": "Old Glade"
+        "ja": "古き空き地"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -2356,12 +2358,12 @@
         "CardType": 8,
         "zh": "巨石林地",
         "en": "Boulder Grove",
-        "ja": "Boulder Grove"
+        "ja": "巨石の木立"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -2372,14 +2374,14 @@
         "CardType": 8,
         "zh": "巨石林地",
         "en": "Boulder Grove",
-        "ja": "Boulder Grove"
+        "ja": "巨石の木立"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -2594,12 +2596,12 @@
         "CardType": 8,
         "zh": "古老森林",
         "en": "Old Woods",
-        "ja": "Old Woods"
+        "ja": "古き森"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -2610,14 +2612,14 @@
         "CardType": 8,
         "zh": "古老森林",
         "en": "Old Woods",
-        "ja": "Old Woods"
+        "ja": "古き森"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -2628,12 +2630,12 @@
         "CardType": 8,
         "zh": "原初森林",
         "en": "Primeval Woods",
-        "ja": "Primeval Woods"
+        "ja": "太古の森"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -2644,14 +2646,14 @@
         "CardType": 8,
         "zh": "原初森林",
         "en": "Primeval Woods",
-        "ja": "Primeval Woods"
+        "ja": "太古の森"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -2769,23 +2771,7 @@
       "localization": {
         "zh": "动作：拆除",
         "en": "Action: Deconstruct",
-        "ja": "アクション：Deconstruct"
-      }
-    },
-    {
-      "link": {
-        "key": "ImprovisedShelter",
-        "icon": "ImprovisedShelter",
-        "type": "card",
-        "CardType": 2,
-        "zh": "临时庇护所",
-        "en": "Improvised Shelter",
-        "ja": "手作りシェルター"
-      },
-      "localization": {
-        "zh": "动作：拆除",
-        "en": "Action: Deconstruct",
-        "ja": "アクション：分解する"
+        "ja": "アクション：解体する"
       }
     },
     {
@@ -2808,6 +2794,38 @@
     },
     {
       "link": {
+        "key": "LQ_LeavesFresh",
+        "icon": "Leaves_Fresh",
+        "type": "card",
+        "CardType": 9,
+        "zh": "树叶",
+        "en": "Fresh Leaves",
+        "ja": "Fresh Leaves"
+      },
+      "localization": {
+        "zh": "动作：取出",
+        "en": "Action: Take Out",
+        "ja": "アクション：Take Out"
+      }
+    },
+    {
+      "link": {
+        "key": "LQ_LeavesFresh",
+        "icon": "Leaves_Fresh",
+        "type": "card",
+        "CardType": 9,
+        "zh": "树叶",
+        "en": "Fresh Leaves",
+        "ja": "Fresh Leaves"
+      },
+      "localization": {
+        "zh": "动作：拿出10份",
+        "en": "Action: Take Out 10",
+        "ja": "アクション：Take Out 10"
+      }
+    },
+    {
+      "link": {
         "key": "MudHutEnclosure",
         "icon": "Enclosure",
         "type": "card",
@@ -3110,6 +3128,22 @@
         "zh": "劈柴",
         "en": "Chop Wood",
         "ja": "木を切る"
+      }
+    },
+    {
+      "link": {
+        "key": "River_ClearingOak_RiverClearing",
+        "icon": "River1",
+        "type": "card",
+        "CardType": 8,
+        "zh": "河畔林隙",
+        "en": "River Clearing",
+        "ja": "川沿いの平地"
+      },
+      "localization": {
+        "zh": "状态触发",
+        "en": "Stats Change",
+        "ja": "状態変化"
       }
     },
     {
@@ -3505,7 +3539,7 @@
     {
       "link": {
         "key": "SpiritShrine_Rott_RottenOak",
-        "icon": "SacredOak",
+        "icon": "RottenOak",
         "type": "card",
         "CardType": 2,
         "zh": "枯橡树",
@@ -3513,7 +3547,7 @@
         "ja": "Rotten Oak"
       },
       "localization": {
-        "zh": "分割 降为零",
+        "zh": "砍倒进程 降为零",
         "en": "Cut Depleted",
         "ja": "Cut ゼロ"
       }
@@ -3521,7 +3555,7 @@
     {
       "link": {
         "key": "SpiritShrine_Willow_SacredWillow",
-        "icon": "SacredOak",
+        "icon": "SacredWillow",
         "type": "card",
         "CardType": 2,
         "zh": "神圣柳树",
@@ -3778,12 +3812,12 @@
         "CardType": 8,
         "zh": "古寂丛林",
         "en": "Old Thicket",
-        "ja": "Old Thicket"
+        "ja": "古き茂み"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -3794,14 +3828,14 @@
         "CardType": 8,
         "zh": "古寂丛林",
         "en": "Old Thicket",
-        "ja": "Old Thicket"
+        "ja": "古き茂み"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -3812,12 +3846,12 @@
         "CardType": 8,
         "zh": "幽影丛林",
         "en": "Shady Thicket",
-        "ja": "Shady Thicket"
+        "ja": "木陰の茂み"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -3828,14 +3862,14 @@
         "CardType": 8,
         "zh": "幽影丛林",
         "en": "Shady Thicket",
-        "ja": "Shady Thicket"
+        "ja": "木陰の茂み"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -3880,12 +3914,12 @@
         "CardType": 8,
         "zh": "蛮荒杂林",
         "en": "Wild Tangle",
-        "ja": "Wild Tangle"
+        "ja": "荒れ茂る茂み"
       },
       "localization": {
         "zh": "动作：清理",
         "en": "Action: Clear",
-        "ja": "アクション：Clear"
+        "ja": "アクション：取り除く"
       }
     },
     {
@@ -3896,14 +3930,14 @@
         "CardType": 8,
         "zh": "蛮荒杂林",
         "en": "Wild Tangle",
-        "ja": "Wild Tangle"
+        "ja": "荒れ茂る茂み"
       },
       "localization": {
         "DefaultText": "Chop Wood",
         "Text": "劈柴",
         "zh": "劈柴",
         "en": "Chop Wood",
-        "ja": "Chop Wood"
+        "ja": "木を切る"
       }
     },
     {
@@ -3968,7 +4002,7 @@
         ]
       },
       "localization": {
-        "zh": "分割 降为零",
+        "zh": "砍倒进程 降为零",
         "en": "Cut Depleted",
         "ja": "Cut ゼロ"
       }
@@ -4011,7 +4045,7 @@
               "Text": "标记橡树",
               "zh": "标记橡树",
               "en": "Marked Oak Tree",
-              "ja": "Marked Oak Tree"
+              "ja": "印付きのオークの木"
             }
           }
         ]
@@ -4180,12 +4214,12 @@
         "CardType": 0,
         "zh": "小牛",
         "en": "Calf",
-        "ja": "Calf"
+        "ja": "子牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4196,12 +4230,12 @@
         "CardType": 0,
         "zh": "牛",
         "en": "Cow",
-        "ja": "Cow"
+        "ja": "牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4212,12 +4246,12 @@
         "CardType": 0,
         "zh": "公牛",
         "en": "Bull",
-        "ja": "Bull"
+        "ja": "オス牛"
       },
       "localization": {
         "zh": "动作：喂食",
         "en": "Action: Feed",
-        "ja": "アクション：Feed"
+        "ja": "アクション：餌をあげる"
       }
     },
     {
@@ -4436,12 +4470,12 @@
         "CardType": 8,
         "zh": "畜栏",
         "en": "Enclosure",
-        "ja": "Enclosure"
+        "ja": "囲い"
       },
       "localization": {
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
-        "ja": "アクション：Throw Inside"
+        "ja": "アクション：中に投げる"
       }
     },
     {
@@ -4452,12 +4486,12 @@
         "CardType": 2,
         "zh": "雪棚",
         "en": "Snow Shelter",
-        "ja": "Snow Shelter"
+        "ja": "雪シェルター"
       },
       "localization": {
         "zh": "动作：修复",
         "en": "Action: Repair",
-        "ja": "アクション：Repair"
+        "ja": "アクション：修理"
       }
     },
     {
@@ -4477,226 +4511,7 @@
       }
     }
   ],
-  "existEnvCards": [
-    {
-      "key": "Env_River_ClearingOak_RiverClearing",
-      "icon": "River1",
-      "type": "card",
-      "CardType": 4,
-      "zh": "河畔林隙",
-      "en": "River Clearing",
-      "ja": "川沿いの平地",
-      "SpoilageTime": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpoilageTime",
-          "zh": "时间",
-          "en": "Spoilage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "UsageDurability": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "UsageDurability",
-          "zh": "耐久",
-          "en": "Usage",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "FuelCapacity": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "FuelCapacity",
-          "zh": "容量",
-          "en": "Fuel",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "Progress": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "Progress",
-          "zh": "进度",
-          "en": "Progress",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability1": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability1",
-          "zh": "特殊1",
-          "en": "Special1",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability2": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability2",
-          "zh": "特殊2",
-          "en": "Special2",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability3": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability3",
-          "zh": "特殊3",
-          "en": "Special3",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "SpecialDurability4": {
-        "Active": false,
-        "CardStatName": {
-          "DefaultText": "",
-          "Text": "SpecialDurability4",
-          "zh": "特殊4",
-          "en": "Special4",
-          "ja": ""
-        },
-        "OverrideIcon": null,
-        "MaxValue": 0
-      },
-      "envPlaceCard": {
-        "key": "River_ClearingOak_RiverClearing",
-        "icon": "River1",
-        "type": "card",
-        "CardType": 8,
-        "zh": "河畔林隙",
-        "en": "River Clearing",
-        "ja": "川沿いの平地",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": {
-            "FileName": "Dirt4_Old"
-          },
-          "MaxValue": 96
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "FuelCapacity": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "FuelCapacity",
-            "zh": "容量",
-            "en": "Fuel",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 1
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 288
-        },
-        "SpecialDurability1": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Trees",
-            "Text": "树林",
-            "zh": "树林",
-            "en": "Trees",
-            "ja": "木"
-          },
-          "OverrideIcon": {
-            "FileName": "Tree1"
-          },
-          "MaxValue": 115200
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Overgrowth",
-            "Text": "过度生长",
-            "zh": "过度生长",
-            "en": "Overgrowth",
-            "ja": "茂み"
-          },
-          "OverrideIcon": {
-            "FileName": "Overgrowth"
-          },
-          "MaxValue": 1440
-        },
-        "SpecialDurability3": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Foraging",
-            "Text": "觅食",
-            "zh": "觅食",
-            "en": "Foraging",
-            "ja": "資源集め"
-          },
-          "OverrideIcon": {
-            "FileName": "SaturationBerries"
-          },
-          "MaxValue": 360
-        },
-        "SpecialDurability4": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Fertility",
-            "Text": "Fertility",
-            "zh": "繁衍",
-            "en": "Fertility",
-            "ja": "Fertility"
-          },
-          "OverrideIcon": null,
-          "MaxValue": 5760
-        }
-      }
-    }
-  ],
+  "existEnvCards": [],
   "containers": [],
   "tradingValueRange": {
     "x": 0,

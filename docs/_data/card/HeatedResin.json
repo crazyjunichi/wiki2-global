@@ -7,7 +7,7 @@
   "zh": "液态松脂",
   "en": "Heated Resin",
   "ja": "温めた樹脂",
-  "UniqueIDIndex": 1432,
+  "UniqueIDIndex": 1474,
   "CardType": 0,
   "CardTags": [
     {
@@ -156,6 +156,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -645,7 +649,7 @@
           "CardType": 7,
           "zh": "凿子",
           "en": "Chisel",
-          "ja": "Chisel"
+          "ja": "のみ"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -665,7 +669,7 @@
           "CardType": 7,
           "zh": "勺型钻",
           "en": "Spoon Auger",
-          "ja": "Spoon Auger"
+          "ja": "繰り錐"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -975,7 +979,7 @@
           "CardType": 7,
           "zh": "风箱",
           "en": "Bellows",
-          "ja": "Bellows"
+          "ja": "ふいご"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -995,7 +999,7 @@
           "CardType": 7,
           "zh": "墨水",
           "en": "Soot Ink",
-          "ja": "Soot Ink"
+          "ja": "煤インク"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1015,7 +1019,7 @@
           "CardType": 7,
           "zh": "凿子",
           "en": "Chisel",
-          "ja": "Chisel"
+          "ja": "のみ"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -1035,7 +1039,7 @@
           "CardType": 7,
           "zh": "勺型钻",
           "en": "Spoon Auger",
-          "ja": "Spoon Auger"
+          "ja": "繰り錐"
         },
         "localization": {
           "zh": "蓝图制作",
@@ -2539,6 +2543,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -2821,7 +2829,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3115,7 +3126,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3409,7 +3423,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -3607,8 +3624,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -3920,7 +3945,7 @@
         "CardType": 7,
         "zh": "平弓",
         "en": "Flatbow",
-        "ja": "Flatbow"
+        "ja": "フラットボウ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3952,7 +3977,7 @@
         "CardType": 7,
         "zh": "风箱",
         "en": "Bellows",
-        "ja": "Bellows"
+        "ja": "ふいご"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3968,7 +3993,7 @@
         "CardType": 7,
         "zh": "墨水",
         "en": "Soot Ink",
-        "ja": "Soot Ink"
+        "ja": "煤インク"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3984,7 +4009,7 @@
         "CardType": 7,
         "zh": "凿子",
         "en": "Chisel",
-        "ja": "Chisel"
+        "ja": "のみ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4000,23 +4025,7 @@
         "CardType": 7,
         "zh": "勺型钻",
         "en": "Spoon Auger",
-        "ja": "Spoon Auger"
-      },
-      "localization": {
-        "zh": "蓝图制作",
-        "en": "Blueprint",
-        "ja": "ブループリント"
-      }
-    },
-    {
-      "link": {
-        "key": "Bp_TranquilizerCoating",
-        "icon": "Coating_Tranquilizer",
-        "type": "card",
-        "CardType": 7,
-        "zh": "麻醉涂层",
-        "en": "Tranquilizer Coating",
-        "ja": "鎮静コーティング"
+        "ja": "繰り錐"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4030,9 +4039,9 @@
         "icon": "Coating_Wolfsbane",
         "type": "card",
         "CardType": 7,
-        "zh": "乌头涂层",
-        "en": "Wolfsbane Coating",
-        "ja": "トリカブトのコーティング"
+        "zh": "乌头麻醉涂层",
+        "en": "Wolfsbane Tranquilizer Coating",
+        "ja": "Wolfsbane Tranquilizer Coating"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -4048,12 +4057,12 @@
         "CardType": 0,
         "zh": "水袋(专有)",
         "en": "Waterskin(Pk)",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：防水",
         "en": "Action: Waterproof",
-        "ja": "アクション：Waterproof"
+        "ja": "アクション：防水"
       }
     },
     {
@@ -4080,12 +4089,12 @@
         "CardType": 0,
         "zh": "水袋",
         "en": "Waterskin",
-        "ja": "Waterskin"
+        "ja": "水袋"
       },
       "localization": {
         "zh": "动作：防水",
         "en": "Action: Waterproof",
-        "ja": "アクション：Waterproof"
+        "ja": "アクション：防水"
       }
     }
   ],

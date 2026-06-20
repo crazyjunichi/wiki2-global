@@ -2,12 +2,12 @@
   "m_Name": "SpiritShrine_Rott_RottenOak",
   "key": "SpiritShrine_Rott_RottenOak",
   "exportName": "SpiritShrine_Rott_RottenOak",
-  "icon": "SacredOak",
+  "icon": "RottenOak",
   "type": "card",
   "zh": "枯橡树",
   "en": "Rotten Oak",
   "ja": "Rotten Oak",
-  "UniqueIDIndex": 2351,
+  "UniqueIDIndex": 2421,
   "CardType": 2,
   "CardTags": [
     {
@@ -82,7 +82,7 @@
           "Text": "韦石亲密关系",
           "zh": "韦石亲密关系",
           "en": "West Stone Propinquity",
-          "ja": "West Stone Propinquity"
+          "ja": "ウエストストーン"
         },
         "OverrideIcon": {
           "FileName": "WestStone_1"
@@ -113,7 +113,7 @@
     "ja": "Rotten Oak"
   },
   "CardImage": {
-    "FileName": "SacredOak"
+    "FileName": "RottenOak"
   },
   "CardBackground": null,
   "ShowImageAboveTitle": false,
@@ -258,8 +258,8 @@
     "FloatValue": 26,
     "CardStatName": {
       "DefaultText": "Cut",
-      "Text": "分割",
-      "zh": "分割",
+      "Text": "砍倒进程",
+      "zh": "砍倒进程",
       "en": "Cut",
       "ja": "Cut"
     },
@@ -332,6 +332,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -904,13 +908,13 @@
                   "MaxValue": 0
                 },
                 "SpecialDurability2": {
-                  "Active": true,
+                  "Active": false,
                   "CardStatName": {
-                    "DefaultText": "Quality",
+                    "DefaultText": "",
                     "Text": "品质",
-                    "zh": "品质",
-                    "en": "Quality",
-                    "ja": "クオリティ"
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -995,6 +999,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1244,7 +1249,7 @@
               "Text": "干燥度",
               "zh": "干燥度",
               "en": "Dryness",
-              "ja": "Dryness"
+              "ja": "乾燥度"
             },
             "OverrideIcon": {
               "FileName": "Drying"
@@ -1439,7 +1444,7 @@
       {
         "link": {
           "key": "SpiritShrine_Rott_RottenOak",
-          "icon": "SacredOak",
+          "icon": "RottenOak",
           "type": "card",
           "CardType": 2,
           "zh": "枯橡树",
@@ -1694,6 +1699,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ChoppingTree_Shorter"
@@ -1705,7 +1714,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1713,7 +1722,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1727,7 +1736,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -1741,7 +1750,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -1755,7 +1764,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3019,7 +3028,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3045,7 +3054,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -3057,7 +3066,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3083,7 +3092,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3097,7 +3106,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3615,6 +3624,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -3981,7 +3994,7 @@
                 "Text": "健康度",
                 "zh": "健康度",
                 "en": "Health",
-                "ja": "Health"
+                "ja": "健全度"
               },
               "OverrideIcon": {
                 "FileName": "Health"
@@ -3995,7 +4008,7 @@
                 "Text": "饱满度",
                 "zh": "饱满度",
                 "en": "Yield",
-                "ja": "Yield"
+                "ja": "収穫量"
               },
               "OverrideIcon": {
                 "FileName": "SaturationBerries"
@@ -4009,7 +4022,7 @@
                 "Text": "照料",
                 "zh": "照料",
                 "en": "Care",
-                "ja": "Care"
+                "ja": "手入れ"
               },
               "OverrideIcon": {
                 "FileName": "Wakefulness4"
@@ -4091,7 +4104,7 @@
                 "Text": "盛开",
                 "zh": "盛开",
                 "en": "Bloom",
-                "ja": "Bloom"
+                "ja": "開花"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4103,7 +4116,7 @@
                 "Text": "健康度",
                 "zh": "健康度",
                 "en": "Health",
-                "ja": "Health"
+                "ja": "健全度"
               },
               "OverrideIcon": {
                 "FileName": "Health"
@@ -4117,7 +4130,7 @@
                 "Text": "饱满度",
                 "zh": "饱满度",
                 "en": "Yield",
-                "ja": "Yield"
+                "ja": "収穫量"
               },
               "OverrideIcon": {
                 "FileName": "SaturationBerries"
@@ -4131,7 +4144,7 @@
                 "Text": "照料",
                 "zh": "照料",
                 "en": "Care",
-                "ja": "Care"
+                "ja": "手入れ"
               },
               "OverrideIcon": {
                 "FileName": "Wakefulness4"
@@ -4337,7 +4350,10 @@
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
           "RequiredInGameTimes": [],
-          "RequiredAlreadyVisitedEnvironments": []
+          "RequiredAlreadyVisitedEnvironments": [],
+          "RequiredUnlockedBps": [],
+          "RequiredNOTUnlockedBps": [],
+          "NPCInventoryConditions": []
         },
         "StatModifiers": [],
         "EffectStacksWithRequiredCards": false,
@@ -4641,8 +4657,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,

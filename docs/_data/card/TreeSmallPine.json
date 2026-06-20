@@ -7,7 +7,7 @@
   "zh": "小松树",
   "en": "Small Pine Tree",
   "ja": "小さい松の木",
-  "UniqueIDIndex": 2573,
+  "UniqueIDIndex": 2648,
   "CardType": 2,
   "CardTags": [
     {
@@ -567,6 +567,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 1,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ChoppingTree_Shorter"
@@ -578,7 +582,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -586,7 +590,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -600,7 +604,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -614,7 +618,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -628,7 +632,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1406,8 +1410,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -1458,7 +1462,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -1729,6 +1733,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -1774,6 +1779,43 @@
         }
       ],
       "StatModifications": [
+        {
+          "Stat": {
+            "key": "BeaverUrge",
+            "icon": "Beaver_Wild",
+            "type": "stat",
+            "zh": "河狸本能",
+            "en": "Beaver Urge",
+            "ja": "Beaver Urge",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -24,
+            "y": -24
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": true,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
         {
           "Stat": {
             "key": "HandDamage",
@@ -2540,7 +2582,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -2566,7 +2608,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2578,7 +2620,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2604,7 +2646,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -2618,7 +2660,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -2674,6 +2716,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [
         {
           "FileName": "ChoppingTree_Shorter"
@@ -2685,7 +2731,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2693,7 +2739,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2707,7 +2753,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -2721,7 +2767,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -2735,7 +2781,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -3513,8 +3559,8 @@
                     },
                     "Name": {
                       "DefaultText": "Alder Long Stick",
-                      "Text": "Alder Long Stick",
-                      "zh": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
                       "en": "Alder Long Stick",
                       "ja": "Alder Long Stick"
                     }
@@ -3565,7 +3611,7 @@
                     "Text": "干燥度",
                     "zh": "干燥度",
                     "en": "Dryness",
-                    "ja": "Dryness"
+                    "ja": "乾燥度"
                   },
                   "OverrideIcon": {
                     "FileName": "Drying"
@@ -3836,6 +3882,752 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
+          "DroppedEncounter": null,
+          "EncounterNPC": null,
+          "SkipEncounterEvent": false,
+          "StatModifications": [],
+          "ReceivingCardDurabilityModifications": {
+            "SpoilageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "UsageChange": {
+              "x": 0,
+              "y": 0
+            },
+            "FuelChange": {
+              "x": 0,
+              "y": 0
+            },
+            "ChargesChange": {
+              "x": 0,
+              "y": 0
+            },
+            "Special1Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special2Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special3Change": {
+              "x": 0,
+              "y": 0
+            },
+            "Special4Change": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "BpDropDurabilityChangesReplaceStartingValue": {
+            "MaskValue": 0
+          },
+          "DropsStatInterpolatedDurabilityChanges": []
+        },
+        {
+          "CollectionName": "Sticks",
+          "CollectionMessages": [],
+          "CountsAsSuccess": false,
+          "RevealInventory": false,
+          "CollectionUses": {
+            "m_X": 0,
+            "m_Y": 0
+          },
+          "CollectionWeight": 1,
+          "StatsDropChanceModifiers": [],
+          "NPCStatsDropChanceModifiers": [],
+          "CardDropChanceModifiers": [],
+          "DurabilitiesDropChanceModifier": {
+            "Spoilage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Usage": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Fuel": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Progress": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special1": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special2": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special3": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            },
+            "Special4": {
+              "Active": false,
+              "DurabilityRange": {
+                "x": 0,
+                "y": 0
+              },
+              "InterpWeightRange": {
+                "m_X": 0,
+                "m_Y": 0
+              },
+              "WhenOutOfRange": 0
+            }
+          },
+          "CreatedLiquid": {
+            "LiquidCard": null,
+            "Quantity": {
+              "x": 0,
+              "y": 0
+            },
+            "Durabilities": {
+              "Spoilage": 0,
+              "Usage": 0,
+              "Fuel": 0,
+              "Progress": 0,
+              "Special1": 0,
+              "Special2": 0,
+              "Special3": 0,
+              "Special4": 0,
+              "SpoilageValue": 0,
+              "UsageValue": 0,
+              "FuelValue": 0,
+              "ProgressValue": 0,
+              "Special1Value": 0,
+              "Special2Value": 0,
+              "Special3Value": 0,
+              "Special4Value": 0,
+              "SpoilageFrom": 0,
+              "UsageFrom": 0,
+              "FuelFrom": 0,
+              "ProgressFrom": 0,
+              "Special1From": 0,
+              "Special2From": 0,
+              "Special3From": 0,
+              "Special4From": 0
+            }
+          },
+          "DroppedCards": [
+            {
+              "DroppedCard": {
+                "key": "Twigs",
+                "icon": "Twigs",
+                "type": "card",
+                "CardType": 0,
+                "zh": "树枝",
+                "en": "Twigs",
+                "ja": "枝",
+                "SpoilageTime": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpoilageTime",
+                    "zh": "时间",
+                    "en": "Spoilage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "FuelCapacity": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "FuelCapacity",
+                    "zh": "容量",
+                    "en": "Fuel",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability1": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability1",
+                    "zh": "特殊1",
+                    "en": "Special1",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability2",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability3": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability3",
+                    "zh": "特殊3",
+                    "en": "Special3",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "ID",
+                    "Text": "ID",
+                    "zh": "ID",
+                    "en": "ID",
+                    "ja": "ID"
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 100
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 2
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": false,
+                "BaseDropChance": 0,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [],
+                "CardsModifiers": [],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
+            },
+            {
+              "DroppedCard": {
+                "key": "StickLong",
+                "icon": "LongStick",
+                "type": "card",
+                "CardType": 0,
+                "zh": "长木棍",
+                "en": "Long Stick",
+                "ja": "長い棒",
+                "AlternateNames": [
+                  {
+                    "Conditions": {
+                      "Special4Range": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "Name": {
+                      "DefaultText": "Oak Long Stick",
+                      "Text": "长橡木棍",
+                      "zh": "长橡木棍",
+                      "en": "Oak Long Stick",
+                      "ja": "オークの長い棒"
+                    }
+                  },
+                  {
+                    "Conditions": {
+                      "Special4Range": {
+                        "x": 2,
+                        "y": 2
+                      }
+                    },
+                    "Name": {
+                      "DefaultText": "Pine Long Stick",
+                      "Text": "长松木棍",
+                      "zh": "长松木棍",
+                      "en": "Pine Long Stick",
+                      "ja": "松の長い棒"
+                    }
+                  },
+                  {
+                    "Conditions": {
+                      "Special4Range": {
+                        "x": 3,
+                        "y": 3
+                      }
+                    },
+                    "Name": {
+                      "DefaultText": "Birch Long Stick",
+                      "Text": "长白桦木棍",
+                      "zh": "长白桦木棍",
+                      "en": "Birch Long Stick",
+                      "ja": "シラカバの長い棒"
+                    }
+                  },
+                  {
+                    "Conditions": {
+                      "Special4Range": {
+                        "x": 4,
+                        "y": 4
+                      }
+                    },
+                    "Name": {
+                      "DefaultText": "Willow Long Stick",
+                      "Text": "长柳木棍",
+                      "zh": "长柳木棍",
+                      "en": "Willow Long Stick",
+                      "ja": "ヤナギの長い棒"
+                    }
+                  },
+                  {
+                    "Conditions": {
+                      "Special4Range": {
+                        "x": 5,
+                        "y": 5
+                      }
+                    },
+                    "Name": {
+                      "DefaultText": "Alder Long Stick",
+                      "Text": "桤木长木棍",
+                      "zh": "桤木长木棍",
+                      "en": "Alder Long Stick",
+                      "ja": "Alder Long Stick"
+                    }
+                  }
+                ],
+                "SpoilageTime": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpoilageTime",
+                    "zh": "时间",
+                    "en": "Spoilage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "FuelCapacity": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "FuelCapacity",
+                    "zh": "容量",
+                    "en": "Fuel",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Drying"
+                  },
+                  "MaxValue": 672
+                },
+                "Progress": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Dryness",
+                    "Text": "干燥度",
+                    "zh": "干燥度",
+                    "en": "Dryness",
+                    "ja": "乾燥度"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Drying"
+                  },
+                  "MaxValue": 23040
+                },
+                "SpecialDurability1": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability1",
+                    "zh": "特殊1",
+                    "en": "Special1",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability2": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Quality",
+                    "Text": "品质",
+                    "zh": "品质",
+                    "en": "Quality",
+                    "ja": "クオリティ"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Quality"
+                  },
+                  "MaxValue": 96
+                },
+                "SpecialDurability3": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability3",
+                    "zh": "特殊3",
+                    "en": "Special3",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability4": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "ID",
+                    "Text": "ID",
+                    "zh": "ID",
+                    "en": "ID",
+                    "ja": "ID"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "TreeOak"
+                  },
+                  "MaxValue": 10000
+                }
+              },
+              "Quantity": {
+                "m_X": 1,
+                "m_Y": 1
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 1,
+                "Special3": 0,
+                "Special4": 1,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": false,
+                "BaseDropChance": 0,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [],
+                "CardsModifiers": [],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
+            },
+            {
+              "DroppedCard": {
+                "key": "NeedlesFresh",
+                "icon": "PineNeedles",
+                "type": "card",
+                "CardType": 0,
+                "zh": "松针",
+                "en": "Pine Needles",
+                "ja": "松の針",
+                "SpoilageTime": {
+                  "Active": true,
+                  "CardStatName": {
+                    "DefaultText": "Wetness",
+                    "Text": "湿度",
+                    "zh": "湿度",
+                    "en": "Wetness",
+                    "ja": "濡れ"
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Spoilage"
+                  },
+                  "MaxValue": 480
+                },
+                "UsageDurability": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "UsageDurability",
+                    "zh": "耐久",
+                    "en": "Usage",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "FuelCapacity": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "FuelCapacity",
+                    "zh": "容量",
+                    "en": "Fuel",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "Progress": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "Progress",
+                    "zh": "进度",
+                    "en": "Progress",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability1": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability1",
+                    "zh": "特殊1",
+                    "en": "Special1",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability2": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "品质",
+                    "zh": "特殊2",
+                    "en": "Special2",
+                    "ja": ""
+                  },
+                  "OverrideIcon": {
+                    "FileName": "Quality"
+                  },
+                  "MaxValue": 100
+                },
+                "SpecialDurability3": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability3",
+                    "zh": "特殊3",
+                    "en": "Special3",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                },
+                "SpecialDurability4": {
+                  "Active": false,
+                  "CardStatName": {
+                    "DefaultText": "",
+                    "Text": "SpecialDurability4",
+                    "zh": "特殊4",
+                    "en": "Special4",
+                    "ja": ""
+                  },
+                  "OverrideIcon": null,
+                  "MaxValue": 0
+                }
+              },
+              "Quantity": {
+                "m_X": 3,
+                "m_Y": 9
+              },
+              "FinishUnlocking": false,
+              "TransferRules": {
+                "Spoilage": 0,
+                "Usage": 0,
+                "Fuel": 0,
+                "Progress": 0,
+                "Special1": 0,
+                "Special2": 0,
+                "Special3": 0,
+                "Special4": 0,
+                "SpoilageValue": 0,
+                "UsageValue": 0,
+                "FuelValue": 0,
+                "ProgressValue": 0,
+                "Special1Value": 0,
+                "Special2Value": 0,
+                "Special3Value": 0,
+                "Special4Value": 0,
+                "SpoilageFrom": 0,
+                "UsageFrom": 0,
+                "FuelFrom": 0,
+                "ProgressFrom": 0,
+                "Special1From": 0,
+                "Special2From": 0,
+                "Special3From": 0,
+                "Special4From": 0
+              },
+              "DropChance": {
+                "Active": false,
+                "BaseDropChance": 0,
+                "DurabilitiesModifiers": [],
+                "StatsModifiers": [],
+                "CardsModifiers": [],
+                "NPCStatsModifiers": []
+              },
+              "DropsDurabilityMultipliers": [],
+              "DropsStatMultipliers": [],
+              "AddFlavoursFromTargetCard": false,
+              "AddFlavoursFromOtherCard": false,
+              "AddSpicesFromTargetCard": false,
+              "AddSpicesFromOtherCard": false,
+              "AddedFlavours": [],
+              "AddedSpiceTags": []
+            }
+          ],
+          "DropSavedBpIngredients": false,
+          "DroppedIfNoBpIngredient": [],
+          "DropCardsInsideInventory": false,
+          "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3881,6 +4673,43 @@
         }
       ],
       "StatModifications": [
+        {
+          "Stat": {
+            "key": "BeaverUrge",
+            "icon": "Beaver_Wild",
+            "type": "stat",
+            "zh": "河狸本能",
+            "en": "Beaver Urge",
+            "ja": "Beaver Urge",
+            "max": 96,
+            "min": 0
+          },
+          "ValueModifier": {
+            "x": -24,
+            "y": -24
+          },
+          "RateModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MinValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "MaxValueModifier": {
+            "x": 0,
+            "y": 0
+          },
+          "CannotModifyBeyond": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "ApplyEachTick": true,
+          "InstantModifier": false,
+          "IgnoreNovelty": false,
+          "IsInverse": false
+        },
         {
           "Stat": {
             "key": "HandDamage",
@@ -4636,7 +5465,7 @@
             "text": "“斧头”",
             "icon": "",
             "type": "tag",
-            "count": 4,
+            "count": 5,
             "zh": "斧头",
             "en": "Axe",
             "ja": "斧",
@@ -4647,7 +5476,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -4673,7 +5502,7 @@
                 "Text": "近期磨利",
                 "zh": "近期磨利",
                 "en": "Recently Sharpened",
-                "ja": "Recently Sharpened"
+                "ja": "研いだばかり"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -4685,7 +5514,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -4723,7 +5552,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -4737,7 +5566,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -5255,6 +6084,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": true,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -5440,8 +6273,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -5719,7 +6560,7 @@
         "CardType": 8,
         "zh": "獾丘",
         "en": "Badger Hill",
-        "ja": "Badger Hill"
+        "ja": "アナグマの丘"
       },
       "localization": {
         "zh": "状态触发",
@@ -5735,7 +6576,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow"
+        "ja": "湿った窪地"
       },
       "localization": {
         "zh": "状态触发",
@@ -5751,7 +6592,7 @@
         "CardType": 8,
         "zh": "死亡幽谷",
         "en": "Dead Hollow",
-        "ja": "Dead Hollow"
+        "ja": "枯れた窪地"
       },
       "localization": {
         "zh": "状态触发",
@@ -5783,7 +6624,7 @@
         "CardType": 8,
         "zh": "石南空地",
         "en": "Heather Glade",
-        "ja": "Heather Glade"
+        "ja": "ヒースの空き地"
       },
       "localization": {
         "zh": "状态触发",
@@ -5799,7 +6640,7 @@
         "CardType": 8,
         "zh": "月丘",
         "en": "Moon Hills",
-        "ja": "Moon Hills"
+        "ja": "月の丘"
       },
       "localization": {
         "zh": "状态触发",
@@ -5831,7 +6672,7 @@
         "CardType": 8,
         "zh": "松林草场",
         "en": "Pine Meadows",
-        "ja": "Pine Meadows"
+        "ja": "金属製の針"
       },
       "localization": {
         "zh": "状态触发",
@@ -5847,7 +6688,7 @@
         "CardType": 8,
         "zh": "静谧空洞",
         "en": "Still Hollow",
-        "ja": "Still Hollow"
+        "ja": "静寂の窪み"
       },
       "localization": {
         "zh": "状态触发",
@@ -5863,7 +6704,7 @@
         "CardType": 8,
         "zh": "乌鸦松林",
         "en": "Crow Pines",
-        "ja": "Crow Pines"
+        "ja": "カラスの松林"
       },
       "localization": {
         "zh": "状态触发",
@@ -5895,7 +6736,7 @@
         "CardType": 8,
         "zh": "东部荒林",
         "en": "Eastern Wild Woods",
-        "ja": "Eastern Wild Woods"
+        "ja": "東の荒森"
       },
       "localization": {
         "zh": "状态触发",
@@ -5911,7 +6752,7 @@
         "CardType": 8,
         "zh": "高架林地",
         "en": "Elevated Grove",
-        "ja": "Elevated Grove"
+        "ja": "高台の木立"
       },
       "localization": {
         "zh": "状态触发",
@@ -5943,7 +6784,7 @@
         "CardType": 8,
         "zh": "狼嚎幽径",
         "en": "Howling Woods",
-        "ja": "Howling Woods"
+        "ja": "遠吠えの森"
       },
       "localization": {
         "zh": "状态触发",
@@ -5959,7 +6800,7 @@
         "CardType": 8,
         "zh": "湖畔林地",
         "en": "Lake Grove",
-        "ja": "Lake Grove"
+        "ja": "湖の木立"
       },
       "localization": {
         "zh": "状态触发",
@@ -5991,7 +6832,7 @@
         "CardType": 8,
         "zh": "古旧寂谷",
         "en": "Old Hollow",
-        "ja": "Old Hollow"
+        "ja": "古き窪地"
       },
       "localization": {
         "zh": "状态触发",
@@ -6007,7 +6848,7 @@
         "CardType": 8,
         "zh": "平和林地",
         "en": "Peaceful Grove",
-        "ja": "Peaceful Grove"
+        "ja": "静かな林"
       },
       "localization": {
         "zh": "状态触发",
@@ -6023,7 +6864,7 @@
         "CardType": 8,
         "zh": "松树林地",
         "en": "Pine Grove",
-        "ja": "Pine Grove"
+        "ja": "松林"
       },
       "localization": {
         "zh": "状态触发",
@@ -6087,7 +6928,7 @@
         "CardType": 8,
         "zh": "摇曳松林",
         "en": "Swaying Pines",
-        "ja": "Swaying Pines"
+        "ja": "銅の針"
       },
       "localization": {
         "zh": "状态触发",
@@ -6103,7 +6944,7 @@
         "CardType": 8,
         "zh": "西部荒林",
         "en": "Western Wild Woods",
-        "ja": "Western Wild Woods"
+        "ja": "西の荒森"
       },
       "localization": {
         "zh": "状态触发",
@@ -6135,7 +6976,7 @@
         "CardType": 8,
         "zh": "风针松林",
         "en": "Wind Needles",
-        "ja": "Wind Needles"
+        "ja": "風鳴る針葉"
       },
       "localization": {
         "zh": "状态触发",
@@ -6151,7 +6992,7 @@
         "CardType": 8,
         "zh": "狼嚎隘口",
         "en": "Wolf Pass",
-        "ja": "Wolf Pass"
+        "ja": "狼の峠"
       },
       "localization": {
         "zh": "状态触发",
@@ -6167,7 +7008,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes"
+        "ja": "ヒースの沼"
       },
       "localization": {
         "zh": "状态触发",
@@ -6183,7 +7024,7 @@
         "CardType": 8,
         "zh": "北部湖岸",
         "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank"
+        "ja": "北の湖畔"
       },
       "localization": {
         "zh": "状态触发",
@@ -6199,7 +7040,7 @@
         "CardType": 8,
         "zh": "湖心岛",
         "en": "Lake Island",
-        "ja": "Lake Island"
+        "ja": "湖島"
       },
       "localization": {
         "zh": "状态触发",
@@ -6231,7 +7072,7 @@
         "CardType": 8,
         "zh": "河道隘口",
         "en": "River Pass",
-        "ja": "River Pass"
+        "ja": "川の渡り場"
       },
       "localization": {
         "zh": "状态触发",
@@ -6263,7 +7104,7 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank"
+        "ja": "南の湖岸"
       },
       "localization": {
         "zh": "状态触发",
@@ -6311,7 +7152,7 @@
         "CardType": 8,
         "zh": "狼牙谷",
         "en": "Fangvale",
-        "ja": "Fangvale"
+        "ja": "牙の谷"
       },
       "localization": {
         "zh": "状态触发",
@@ -6343,7 +7184,7 @@
         "CardType": 8,
         "zh": "松针山坡",
         "en": "Needle Slopes",
-        "ja": "Needle Slopes"
+        "ja": "針葉樹の斜面"
       },
       "localization": {
         "zh": "状态触发",
@@ -6359,7 +7200,7 @@
         "CardType": 8,
         "zh": "松针丛林",
         "en": "Needle Thicket",
-        "ja": "Needle Thicket"
+        "ja": "針葉の茂み"
       },
       "localization": {
         "zh": "状态触发",
@@ -6375,7 +7216,7 @@
         "CardType": 8,
         "zh": "松林峭崖",
         "en": "Pine Cliffs",
-        "ja": "Pine Cliffs"
+        "ja": "松の崖"
       },
       "localization": {
         "zh": "状态触发",
@@ -6391,7 +7232,7 @@
         "CardType": 8,
         "zh": "松林坡地",
         "en": "Pine Slopes",
-        "ja": "Pine Slopes"
+        "ja": "松林の斜面"
       },
       "localization": {
         "zh": "状态触发",
@@ -6407,7 +7248,7 @@
         "CardType": 8,
         "zh": "浓荫松林",
         "en": "Shady Pines",
-        "ja": "Shady Pines"
+        "ja": "薄暗い松林"
       },
       "localization": {
         "zh": "状态触发",
@@ -6458,7 +7299,7 @@
       "CardType": 4,
       "zh": "獾丘",
       "en": "Badger Hill",
-      "ja": "Badger Hill",
+      "ja": "アナグマの丘",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6562,7 +7403,7 @@
         "CardType": 8,
         "zh": "獾丘",
         "en": "Badger Hill",
-        "ja": "Badger Hill",
+        "ja": "アナグマの丘",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -6620,7 +7461,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -6634,7 +7475,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -6648,7 +7489,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -6676,7 +7517,7 @@
       "CardType": 4,
       "zh": "潮润幽谷",
       "en": "Damp Hollow",
-      "ja": "Damp Hollow",
+      "ja": "湿った窪地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -6780,7 +7621,7 @@
         "CardType": 8,
         "zh": "潮润幽谷",
         "en": "Damp Hollow",
-        "ja": "Damp Hollow",
+        "ja": "湿った窪地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -6842,7 +7683,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -6856,7 +7697,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -6870,7 +7711,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -6898,7 +7739,7 @@
       "CardType": 4,
       "zh": "死亡幽谷",
       "en": "Dead Hollow",
-      "ja": "Dead Hollow",
+      "ja": "枯れた窪地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -7002,7 +7843,7 @@
         "CardType": 8,
         "zh": "死亡幽谷",
         "en": "Dead Hollow",
-        "ja": "Dead Hollow",
+        "ja": "枯れた窪地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -7060,7 +7901,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -7074,7 +7915,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -7088,7 +7929,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -7334,7 +8175,7 @@
       "CardType": 4,
       "zh": "石南空地",
       "en": "Heather Glade",
-      "ja": "Heather Glade",
+      "ja": "ヒースの空き地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -7438,7 +8279,7 @@
         "CardType": 8,
         "zh": "石南空地",
         "en": "Heather Glade",
-        "ja": "Heather Glade",
+        "ja": "ヒースの空き地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -7496,7 +8337,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -7510,7 +8351,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -7524,7 +8365,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -7552,7 +8393,7 @@
       "CardType": 4,
       "zh": "月丘",
       "en": "Moon Hills",
-      "ja": "Moon Hills",
+      "ja": "月の丘",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -7656,7 +8497,7 @@
         "CardType": 8,
         "zh": "月丘",
         "en": "Moon Hills",
-        "ja": "Moon Hills",
+        "ja": "月の丘",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -7714,7 +8555,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -7728,7 +8569,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -7742,7 +8583,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -7988,7 +8829,7 @@
       "CardType": 4,
       "zh": "松林草场",
       "en": "Pine Meadows",
-      "ja": "Pine Meadows",
+      "ja": "金属製の針",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8092,7 +8933,7 @@
         "CardType": 8,
         "zh": "松林草场",
         "en": "Pine Meadows",
-        "ja": "Pine Meadows",
+        "ja": "金属製の針",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -8150,7 +8991,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -8164,7 +9005,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -8178,7 +9019,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -8206,7 +9047,7 @@
       "CardType": 4,
       "zh": "静谧空洞",
       "en": "Still Hollow",
-      "ja": "Still Hollow",
+      "ja": "静寂の窪み",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8310,7 +9151,7 @@
         "CardType": 8,
         "zh": "静谧空洞",
         "en": "Still Hollow",
-        "ja": "Still Hollow",
+        "ja": "静寂の窪み",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -8372,7 +9213,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -8386,7 +9227,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -8400,7 +9241,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -8428,7 +9269,7 @@
       "CardType": 4,
       "zh": "乌鸦松林",
       "en": "Crow Pines",
-      "ja": "Crow Pines",
+      "ja": "カラスの松林",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8532,7 +9373,7 @@
         "CardType": 8,
         "zh": "乌鸦松林",
         "en": "Crow Pines",
-        "ja": "Crow Pines",
+        "ja": "カラスの松林",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -8592,7 +9433,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -8606,7 +9447,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -8620,7 +9461,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -8868,7 +9709,7 @@
       "CardType": 4,
       "zh": "东部荒林",
       "en": "Eastern Wild Woods",
-      "ja": "Eastern Wild Woods",
+      "ja": "東の荒森",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -8972,7 +9813,7 @@
         "CardType": 8,
         "zh": "东部荒林",
         "en": "Eastern Wild Woods",
-        "ja": "Eastern Wild Woods",
+        "ja": "東の荒森",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -9032,7 +9873,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -9046,7 +9887,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -9060,7 +9901,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -9088,7 +9929,7 @@
       "CardType": 4,
       "zh": "高架林地",
       "en": "Elevated Grove",
-      "ja": "Elevated Grove",
+      "ja": "高台の木立",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9192,7 +10033,7 @@
         "CardType": 8,
         "zh": "高架林地",
         "en": "Elevated Grove",
-        "ja": "Elevated Grove",
+        "ja": "高台の木立",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -9252,7 +10093,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -9266,7 +10107,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -9280,7 +10121,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -9528,7 +10369,7 @@
       "CardType": 4,
       "zh": "狼嚎幽径",
       "en": "Howling Woods",
-      "ja": "Howling Woods",
+      "ja": "遠吠えの森",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9632,7 +10473,7 @@
         "CardType": 8,
         "zh": "狼嚎幽径",
         "en": "Howling Woods",
-        "ja": "Howling Woods",
+        "ja": "遠吠えの森",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -9692,7 +10533,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -9706,7 +10547,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -9720,7 +10561,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -9748,7 +10589,7 @@
       "CardType": 4,
       "zh": "湖畔林地",
       "en": "Lake Grove",
-      "ja": "Lake Grove",
+      "ja": "湖の木立",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -9852,7 +10693,7 @@
         "CardType": 8,
         "zh": "湖畔林地",
         "en": "Lake Grove",
-        "ja": "Lake Grove",
+        "ja": "湖の木立",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -10188,7 +11029,7 @@
       "CardType": 4,
       "zh": "古旧寂谷",
       "en": "Old Hollow",
-      "ja": "Old Hollow",
+      "ja": "古き窪地",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10292,7 +11133,7 @@
         "CardType": 8,
         "zh": "古旧寂谷",
         "en": "Old Hollow",
-        "ja": "Old Hollow",
+        "ja": "古き窪地",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -10352,7 +11193,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -10366,7 +11207,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -10380,7 +11221,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -10408,7 +11249,7 @@
       "CardType": 4,
       "zh": "平和林地",
       "en": "Peaceful Grove",
-      "ja": "Peaceful Grove",
+      "ja": "静かな林",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10512,7 +11353,7 @@
         "CardType": 8,
         "zh": "平和林地",
         "en": "Peaceful Grove",
-        "ja": "Peaceful Grove",
+        "ja": "静かな林",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -10572,7 +11413,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -10586,7 +11427,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -10600,7 +11441,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -10628,7 +11469,7 @@
       "CardType": 4,
       "zh": "松树林地",
       "en": "Pine Grove",
-      "ja": "Pine Grove",
+      "ja": "松林",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -10732,7 +11573,7 @@
         "CardType": 8,
         "zh": "松树林地",
         "en": "Pine Grove",
-        "ja": "Pine Grove",
+        "ja": "松林",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -10792,7 +11633,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -10806,7 +11647,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -10820,7 +11661,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -11502,7 +12343,7 @@
       "CardType": 4,
       "zh": "摇曳松林",
       "en": "Swaying Pines",
-      "ja": "Swaying Pines",
+      "ja": "銅の針",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -11606,7 +12447,7 @@
         "CardType": 8,
         "zh": "摇曳松林",
         "en": "Swaying Pines",
-        "ja": "Swaying Pines",
+        "ja": "銅の針",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -11666,7 +12507,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -11680,7 +12521,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -11694,7 +12535,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -11722,7 +12563,7 @@
       "CardType": 4,
       "zh": "西部荒林",
       "en": "Western Wild Woods",
-      "ja": "Western Wild Woods",
+      "ja": "西の荒森",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -11826,7 +12667,7 @@
         "CardType": 8,
         "zh": "西部荒林",
         "en": "Western Wild Woods",
-        "ja": "Western Wild Woods",
+        "ja": "西の荒森",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -11886,7 +12727,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -11900,7 +12741,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -11914,7 +12755,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -12162,7 +13003,7 @@
       "CardType": 4,
       "zh": "风针松林",
       "en": "Wind Needles",
-      "ja": "Wind Needles",
+      "ja": "風鳴る針葉",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -12266,7 +13107,7 @@
         "CardType": 8,
         "zh": "风针松林",
         "en": "Wind Needles",
-        "ja": "Wind Needles",
+        "ja": "風鳴る針葉",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -12326,7 +13167,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -12340,7 +13181,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -12354,7 +13195,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -12382,7 +13223,7 @@
       "CardType": 4,
       "zh": "狼嚎隘口",
       "en": "Wolf Pass",
-      "ja": "Wolf Pass",
+      "ja": "狼の峠",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -12486,7 +13327,7 @@
         "CardType": 8,
         "zh": "狼嚎隘口",
         "en": "Wolf Pass",
-        "ja": "Wolf Pass",
+        "ja": "狼の峠",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -12546,7 +13387,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -12560,7 +13401,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -12574,7 +13415,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -12602,7 +13443,7 @@
       "CardType": 4,
       "zh": "石南沼泽",
       "en": "Heather Marshes",
-      "ja": "Heather Marshes",
+      "ja": "ヒースの沼",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -12706,7 +13547,7 @@
         "CardType": 8,
         "zh": "石南沼泽",
         "en": "Heather Marshes",
-        "ja": "Heather Marshes",
+        "ja": "ヒースの沼",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -12766,7 +13607,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -12780,7 +13621,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -12794,7 +13635,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -12822,7 +13663,7 @@
       "CardType": 4,
       "zh": "湖心岛",
       "en": "Lake Island",
-      "ja": "Lake Island",
+      "ja": "湖島",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -12926,7 +13767,7 @@
         "CardType": 8,
         "zh": "湖心岛",
         "en": "Lake Island",
-        "ja": "Lake Island",
+        "ja": "湖島",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -12984,7 +13825,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -12998,7 +13839,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -13012,7 +13853,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -13040,7 +13881,7 @@
       "CardType": 4,
       "zh": "北部湖岸",
       "en": "Northern Lake Bank",
-      "ja": "Northern Lake Bank",
+      "ja": "北の湖畔",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -13144,7 +13985,7 @@
         "CardType": 8,
         "zh": "北部湖岸",
         "en": "Northern Lake Bank",
-        "ja": "Northern Lake Bank",
+        "ja": "北の湖畔",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -13202,7 +14043,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -13216,7 +14057,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -13230,7 +14071,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -13244,7 +14085,7 @@
             "Text": "丰饶度",
             "zh": "丰饶度",
             "en": "Fertility",
-            "ja": "Fertility"
+            "ja": "繁殖力"
           },
           "OverrideIcon": null,
           "MaxValue": 5760
@@ -13476,7 +14317,7 @@
       "CardType": 4,
       "zh": "河道隘口",
       "en": "River Pass",
-      "ja": "River Pass",
+      "ja": "川の渡り場",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -13580,7 +14421,7 @@
         "CardType": 8,
         "zh": "河道隘口",
         "en": "River Pass",
-        "ja": "River Pass",
+        "ja": "川の渡り場",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -13638,7 +14479,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -13652,7 +14493,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -13666,7 +14507,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -13912,7 +14753,7 @@
       "CardType": 4,
       "zh": "南部湖岸",
       "en": "Southern Lake Bank",
-      "ja": "Southern Lake Bank",
+      "ja": "南の湖岸",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -14016,7 +14857,7 @@
         "CardType": 8,
         "zh": "南部湖岸",
         "en": "Southern Lake Bank",
-        "ja": "Southern Lake Bank",
+        "ja": "南の湖岸",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -14074,7 +14915,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -14088,7 +14929,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -14102,7 +14943,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -14568,7 +15409,7 @@
       "CardType": 4,
       "zh": "狼牙谷",
       "en": "Fangvale",
-      "ja": "Fangvale",
+      "ja": "牙の谷",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -14672,7 +15513,7 @@
         "CardType": 8,
         "zh": "狼牙谷",
         "en": "Fangvale",
-        "ja": "Fangvale",
+        "ja": "牙の谷",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -14732,7 +15573,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -14746,7 +15587,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -14760,7 +15601,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -15008,7 +15849,7 @@
       "CardType": 4,
       "zh": "松针山坡",
       "en": "Needle Slopes",
-      "ja": "Needle Slopes",
+      "ja": "針葉樹の斜面",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -15112,7 +15953,7 @@
         "CardType": 8,
         "zh": "松针山坡",
         "en": "Needle Slopes",
-        "ja": "Needle Slopes",
+        "ja": "針葉樹の斜面",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -15172,7 +16013,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -15186,7 +16027,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂 "
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -15200,7 +16041,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -15228,7 +16069,7 @@
       "CardType": 4,
       "zh": "松针丛林",
       "en": "Needle Thicket",
-      "ja": "Needle Thicket",
+      "ja": "針葉の茂み",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -15332,7 +16173,7 @@
         "CardType": 8,
         "zh": "松针丛林",
         "en": "Needle Thicket",
-        "ja": "Needle Thicket",
+        "ja": "針葉の茂み",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -15392,7 +16233,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -15406,7 +16247,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -15420,7 +16261,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -15448,7 +16289,7 @@
       "CardType": 4,
       "zh": "松林峭崖",
       "en": "Pine Cliffs",
-      "ja": "Pine Cliffs",
+      "ja": "松の崖",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -15552,7 +16393,7 @@
         "CardType": 8,
         "zh": "松林峭崖",
         "en": "Pine Cliffs",
-        "ja": "Pine Cliffs",
+        "ja": "松の崖",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -15612,7 +16453,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -15626,7 +16467,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -15640,7 +16481,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -15668,7 +16509,7 @@
       "CardType": 4,
       "zh": "松林坡地",
       "en": "Pine Slopes",
-      "ja": "Pine Slopes",
+      "ja": "松林の斜面",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -15772,7 +16613,7 @@
         "CardType": 8,
         "zh": "松林坡地",
         "en": "Pine Slopes",
-        "ja": "Pine Slopes",
+        "ja": "松林の斜面",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -15832,7 +16673,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -15846,7 +16687,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "雑草"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -15860,7 +16701,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"
@@ -15888,7 +16729,7 @@
       "CardType": 4,
       "zh": "浓荫松林",
       "en": "Shady Pines",
-      "ja": "Shady Pines",
+      "ja": "薄暗い松林",
       "SpoilageTime": {
         "Active": false,
         "CardStatName": {
@@ -15992,7 +16833,7 @@
         "CardType": 8,
         "zh": "浓荫松林",
         "en": "Shady Pines",
-        "ja": "Shady Pines",
+        "ja": "薄暗い松林",
         "SpoilageTime": {
           "Active": false,
           "CardStatName": {
@@ -16052,7 +16893,7 @@
             "Text": "树林",
             "zh": "树林",
             "en": "Trees",
-            "ja": "Trees"
+            "ja": "木"
           },
           "OverrideIcon": {
             "FileName": "Tree1"
@@ -16066,7 +16907,7 @@
             "Text": "过度生长",
             "zh": "过度生长",
             "en": "Overgrowth",
-            "ja": "Overgrowth"
+            "ja": "草木の繁茂"
           },
           "OverrideIcon": {
             "FileName": "Overgrowth"
@@ -16080,7 +16921,7 @@
             "Text": "觅食",
             "zh": "觅食",
             "en": "Foraging",
-            "ja": "Foraging"
+            "ja": "資源集め"
           },
           "OverrideIcon": {
             "FileName": "SaturationBerries"

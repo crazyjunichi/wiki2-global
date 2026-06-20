@@ -7,7 +7,7 @@
   "zh": "水精魄(召唤失败)",
   "en": "Water Spirit",
   "ja": "水の精霊",
-  "UniqueIDIndex": 1202,
+  "UniqueIDIndex": 1243,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -887,6 +887,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1072,8 +1076,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1243,6 +1255,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1689,7 +1705,10 @@
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
             "RequiredInGameTimes": [],
-            "RequiredAlreadyVisitedEnvironments": []
+            "RequiredAlreadyVisitedEnvironments": [],
+            "RequiredUnlockedBps": [],
+            "RequiredNOTUnlockedBps": [],
+            "NPCInventoryConditions": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -1737,7 +1756,7 @@
                   "Text": "彩度",
                   "zh": "彩度",
                   "en": "Colour Intensity",
-                  "ja": "Colour Intensity"
+                  "ja": "色の濃さ"
                 },
                 "OverrideIcon": {
                   "FileName": "Urine"
@@ -1751,7 +1770,7 @@
                   "Text": "毛皮",
                   "zh": "毛皮",
                   "en": "Fur",
-                  "ja": "Fur"
+                  "ja": "毛皮"
                 },
                 "OverrideIcon": {
                   "FileName": "Fur_Cured"
@@ -1765,7 +1784,7 @@
                   "Text": "品质",
                   "zh": "品质",
                   "en": "Quality",
-                  "ja": "Quality"
+                  "ja": "質"
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -1779,7 +1798,7 @@
                   "Text": "柔软度",
                   "zh": "柔软度",
                   "en": "Softness",
-                  "ja": "Softness"
+                  "ja": "柔らかさ"
                 },
                 "OverrideIcon": {
                   "FileName": "Brain"
@@ -1793,7 +1812,7 @@
                   "Text": "颜色",
                   "zh": "颜色",
                   "en": "Colour",
-                  "ja": "Colour"
+                  "ja": "色"
                 },
                 "OverrideIcon": null,
                 "MaxValue": 100

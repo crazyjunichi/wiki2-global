@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "铸造拉刀刃片",
   "en": "Cast Drawknife Blade",
-  "ja": "Cast Drawknife Blade",
-  "UniqueIDIndex": 332,
+  "ja": "鋳造ドローナイフの刃",
+  "UniqueIDIndex": 338,
   "CardType": 7,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "铸造拉刀刃片",
     "zh": "铸造拉刀刃片",
     "en": "Cast Drawknife Blade",
-    "ja": "Cast Drawknife Blade"
+    "ja": "鋳造ドローナイフの刃"
   },
   "CardImage": {
     "FileName": "CastingMold"
@@ -670,7 +670,7 @@
           "type": "stat",
           "zh": "金工",
           "en": "Smithing",
-          "ja": "Smithing",
+          "ja": "鍛造",
           "max": 150,
           "min": 0
         },
@@ -714,7 +714,7 @@
     "Text": "需要更高的金工或木工技能",
     "zh": "需要更高的金工或木工技能",
     "en": "More Smithing or Woodworking Needed",
-    "ja": "More Smithing or Woodworking Needed"
+    "ja": "さらに鍛冶または木工のスキルが必要"
   },
   "ExplicitBlueprintNeeded": null,
   "UnlockNotifications": 0,
@@ -902,7 +902,7 @@
     "Text": "一个金属拉刀刃片。",
     "zh": "一个金属拉刀刃片。",
     "en": "A metal drawknife blade.",
-    "ja": "A metal drawknife blade."
+    "ja": "金属製のドローナイフの刃。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -934,6 +934,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1165,7 +1169,7 @@
             "CardType": 0,
             "zh": "小型熔融坩埚",
             "en": "Small Molten Crucible",
-            "ja": "Small Molten Crucible",
+            "ja": "小型の溶融るつぼ",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1179,7 +1183,7 @@
                   "Text": "熔融铜",
                   "zh": "熔融铜",
                   "en": "Molten Copper",
-                  "ja": "Molten Copper"
+                  "ja": "溶融した銅"
                 }
               },
               {
@@ -1194,7 +1198,7 @@
                   "Text": "熔融鬼铜",
                   "zh": "熔融鬼铜",
                   "en": "Molten Ghost Bronze",
-                  "ja": "Molten Ghost Bronze"
+                  "ja": "溶融したゴーストブロンズ"
                 }
               },
               {
@@ -1209,7 +1213,7 @@
                   "Text": "熔融锡",
                   "zh": "熔融锡",
                   "en": "Molten Tin",
-                  "ja": "Molten Tin"
+                  "ja": "溶けたスズ"
                 }
               },
               {
@@ -1224,7 +1228,7 @@
                   "Text": "熔融青铜",
                   "zh": "熔融青铜",
                   "en": "Molten Tin Bronze",
-                  "ja": "Molten Tin Bronze"
+                  "ja": "溶けたスズ青銅"
                 }
               },
               {
@@ -1239,7 +1243,7 @@
                   "Text": "熔融白铜",
                   "zh": "熔融白铜",
                   "en": "Molten White Bronze",
-                  "ja": "Molten White Bronze"
+                  "ja": "溶けた白青銅"
                 }
               }
             ],
@@ -1288,7 +1292,7 @@
                 "Text": "熔炼",
                 "zh": "熔炼",
                 "en": "Smelted",
-                "ja": "Smelted"
+                "ja": "精錬済み"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
@@ -1314,7 +1318,7 @@
                 "Text": "总金属品质",
                 "zh": "总金属品质",
                 "en": "Metal Quality",
-                "ja": "Metal Quality"
+                "ja": "金属の質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1328,7 +1332,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1342,7 +1346,7 @@
                 "Text": "金属类型",
                 "zh": "金属类型",
                 "en": "Metal Type",
-                "ja": "Metal Type"
+                "ja": "金属の種類"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -1413,7 +1417,7 @@
               "CardType": 0,
               "zh": "小型空坩埚",
               "en": "Small Empty Crucible",
-              "ja": "Small Empty Crucible",
+              "ja": "空の小型るつぼ",
               "SpoilageTime": {
                 "Active": false,
                 "CardStatName": {
@@ -1982,7 +1986,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1996,7 +2000,7 @@
                 "Text": "研磨",
                 "zh": "研磨",
                 "en": "Mill",
-                "ja": "Mill"
+                "ja": "製粉"
               },
               "OverrideIcon": null,
               "MaxValue": 1
@@ -2192,14 +2196,22 @@
   ],
   "BuildingDaytimeCost": 1,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 1,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [
     {
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1450,
+      "count": 1460,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2207,7 +2219,7 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "Spoilage"
+          "ja": "腐敗物"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
@@ -2221,7 +2233,7 @@
           "Text": "温度",
           "zh": "温度",
           "en": "Temperature",
-          "ja": "Temperature"
+          "ja": "温度"
         },
         "OverrideIcon": {
           "FileName": "Hot"
@@ -2235,7 +2247,7 @@
           "Text": "烹饪",
           "zh": "烹饪",
           "en": "Cook",
-          "ja": "Cook"
+          "ja": "焼く"
         },
         "OverrideIcon": {
           "FileName": "Cooking"
@@ -2249,7 +2261,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -2324,7 +2336,7 @@
         "CardType": 0,
         "zh": "金属拉刀刃片模具",
         "en": "Metal Drawknife Blade Mold",
-        "ja": "Metal Drawknife Blade Mold",
+        "ja": "金属製ドローナイフ刃の鋳型",
         "AlternateNames": [
           {
             "Conditions": {
@@ -2338,7 +2350,7 @@
               "Text": "铜拉刀刃片模具",
               "zh": "铜拉刀刃片模具",
               "en": "Copper Drawknife Blade Mold",
-              "ja": "Copper Drawknife Blade Mold"
+              "ja": "銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -2353,7 +2365,7 @@
               "Text": "鬼铜拉刀刃片模具",
               "zh": "鬼铜拉刀刃片模具",
               "en": "Ghost Bronze Drawknife Blade Mold",
-              "ja": "Ghost Bronze Drawknife Blade Mold"
+              "ja": "幽青銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -2368,7 +2380,7 @@
               "Text": "锡拉刀刃片模具",
               "zh": "锡拉刀刃片模具",
               "en": "Tin Drawknife Blade Mold",
-              "ja": "Tin Drawknife Blade Mold"
+              "ja": "スズのドローナイフ刃の鋳型"
             }
           },
           {
@@ -2383,7 +2395,7 @@
               "Text": "青铜拉刀刃片模具",
               "zh": "青铜拉刀刃片模具",
               "en": "Tin Bronze Drawknife Blade Mold",
-              "ja": "Tin Bronze Drawknife Blade Mold"
+              "ja": "スズ青銅のドローナイフ刃の鋳型"
             }
           },
           {
@@ -2398,7 +2410,7 @@
               "Text": "白铜拉刀刃片模具",
               "zh": "白铜拉刀刃片模具",
               "en": "White Bronze Drawknife Blade Mold",
-              "ja": "White Bronze Drawknife Blade Mold"
+              "ja": "白青銅のドローナイフ刃の鋳型"
             }
           }
         ],
@@ -2477,7 +2489,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2491,7 +2503,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -2505,7 +2517,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -2568,7 +2580,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },
@@ -2596,7 +2608,7 @@
         "type": "stat",
         "zh": "金工",
         "en": "Smithing",
-        "ja": "Smithing",
+        "ja": "鍛造",
         "max": 150,
         "min": 0
       },

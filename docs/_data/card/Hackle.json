@@ -7,7 +7,7 @@
   "zh": "梳理器",
   "en": "Hackle",
   "ja": "コーム",
-  "UniqueIDIndex": 1419,
+  "UniqueIDIndex": 1461,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“美丽的/好看的”",
       "icon": "",
       "type": "tag",
-      "count": 25,
+      "count": 26,
       "zh": "美丽的/好看的",
       "en": "Pretty",
       "ja": "綺麗",
@@ -71,6 +71,20 @@
         "OverrideIcon": null,
         "MaxValue": 96
       },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Flint",
+          "Text": "燧石",
+          "zh": "燧石",
+          "en": "Flint",
+          "ja": "Flint"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 50
+      },
       "SpecialDurability2": {
         "Active": true,
         "CardStatName": {
@@ -78,7 +92,7 @@
           "Text": "容器品质",
           "zh": "容器品质",
           "en": "Container Quality",
-          "ja": "Container Quality"
+          "ja": "容器の質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -92,7 +106,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -106,7 +120,7 @@
           "Text": "金属类型",
           "zh": "金属类型",
           "en": "Metal Type",
-          "ja": "Metal Type"
+          "ja": "金属の種類"
         },
         "OverrideIcon": null,
         "MaxValue": 1000
@@ -960,7 +974,7 @@
     "Text": "一种提高纤维品质的工具。",
     "zh": "一种提高纤维品质的工具。",
     "en": "A tool for improving the quality of fiber.",
-    "ja": "A tool for improving the quality of fiber."
+    "ja": "繊維の質を向上させる道具。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -992,6 +1006,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1177,8 +1195,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1456,7 +1482,7 @@
         "CardType": 7,
         "zh": "梳理器",
         "en": "Hackle",
-        "ja": "動物の羽根"
+        "ja": "コーム"
       },
       "localization": {
         "zh": "蓝图制作",

@@ -7,7 +7,7 @@
   "zh": "鱼篓陷阱",
   "en": "Funnel Trap",
   "ja": "ファネルトラップ",
-  "UniqueIDIndex": 1347,
+  "UniqueIDIndex": 1389,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“Used for containers that the bear can eat from”",
       "icon": "",
       "type": "tag",
-      "count": 27,
+      "count": 29,
       "zh": "不安全(熊)",
       "en": "Used for containers that the bear can eat from",
       "ja": "Used for containers that the bear can eat from",
@@ -92,7 +92,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -379,7 +379,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -509,7 +509,7 @@
       "Text": "已赐福",
       "zh": "已赐福",
       "en": "Blessed",
-      "ja": "Blessed"
+      "ja": "加護を受けている"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -884,7 +884,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -1001,7 +1001,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -1338,6 +1338,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1639,7 +1643,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -1837,8 +1844,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2166,12 +2181,12 @@
         "CardType": 9,
         "zh": "狗鱼精魄",
         "en": "Pike Spirit",
-        "ja": "Pike Spirit"
+        "ja": "カワカマスの精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Bless",
-        "ja": "アクション：Bless"
+        "ja": "アクション：加護を授ける"
       }
     },
     {
@@ -2196,7 +2211,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -2211,7 +2226,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -2337,7 +2352,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -2352,7 +2367,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -2360,7 +2375,7 @@
       "localization": {
         "zh": "动作：放置陷阱",
         "en": "Action: Deploy Trap",
-        "ja": "アクション：Deploy Trap"
+        "ja": "アクション：罠を設置する"
       }
     },
     {
@@ -2385,7 +2400,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -2400,7 +2415,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -2408,7 +2423,7 @@
       "localization": {
         "zh": "动作：放置陷阱",
         "en": "Action: Deploy Trap",
-        "ja": "アクション：Deploy Trap"
+        "ja": "アクション：罠を設置する"
       }
     },
     {

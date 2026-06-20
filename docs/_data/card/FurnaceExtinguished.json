@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "熔炉(熄灭)",
   "en": "Furnace",
-  "ja": "Furnace",
-  "UniqueIDIndex": 1353,
+  "ja": "溶鉱炉",
+  "UniqueIDIndex": 1395,
   "CardType": 2,
   "CardTags": [
     {
@@ -108,7 +108,7 @@
     "Text": "熔炉",
     "zh": "熔炉",
     "en": "Furnace",
-    "ja": "Furnace"
+    "ja": "溶鉱炉"
   },
   "CardImage": {
     "FileName": "Furnace_Off"
@@ -125,7 +125,7 @@
       "Text": "温度",
       "zh": "温度",
       "en": "Temperature",
-      "ja": "Temperature"
+      "ja": "温度"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1200,
@@ -171,7 +171,7 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace",
+          "ja": "溶鉱炉",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -179,7 +179,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -384,7 +384,7 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Feed Peat",
@@ -406,14 +406,14 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Feed Fuel",
           "Text": "添入燃料",
           "zh": "添入燃料",
           "en": "Feed Fuel",
-          "ja": "Feed Fuel"
+          "ja": "燃料を入れる"
         },
         "value": {
           "x": 7,
@@ -428,14 +428,14 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Feed Fuel",
           "Text": "添入燃料",
           "zh": "添入燃料",
           "en": "Feed Fuel",
-          "ja": "Feed Fuel"
+          "ja": "燃料を入れる"
         },
         "value": {
           "x": 4,
@@ -450,14 +450,14 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Feed Charcoal",
           "Text": "添入木炭",
           "zh": "添入木炭",
           "en": "Feed Charcoal",
-          "ja": "Feed Charcoal"
+          "ja": "木炭を入れる"
         },
         "value": {
           "x": 25,
@@ -472,36 +472,14 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
-        },
-        "localization": {
-          "DefaultText": "Feed Leaves",
-          "Text": "添入树叶",
-          "zh": "添入树叶",
-          "en": "Feed Leaves",
-          "ja": "Feed Leaves"
-        },
-        "value": {
-          "x": 2,
-          "y": 2
-        }
-      },
-      {
-        "link": {
-          "key": "FurnaceExtinguished",
-          "icon": "Furnace_Off",
-          "type": "card",
-          "CardType": 2,
-          "zh": "熔炉(熄灭)",
-          "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Light Fire",
           "Text": "点燃",
           "zh": "点燃",
           "en": "Light Fire",
-          "ja": "Light Fire"
+          "ja": "火をつける"
         },
         "value": {
           "x": 1,
@@ -516,36 +494,14 @@
           "CardType": 2,
           "zh": "熔炉(熄灭)",
           "en": "Furnace",
-          "ja": "Furnace"
+          "ja": "溶鉱炉"
         },
         "localization": {
           "DefaultText": "Light Fire",
           "Text": "点燃",
           "zh": "点燃",
           "en": "Light Fire",
-          "ja": "Light Fire"
-        },
-        "value": {
-          "x": 1,
-          "y": 1
-        }
-      },
-      {
-        "link": {
-          "key": "FurnaceExtinguished",
-          "icon": "Furnace_Off",
-          "type": "card",
-          "CardType": 2,
-          "zh": "熔炉(熄灭)",
-          "en": "Furnace",
-          "ja": "Furnace"
-        },
-        "localization": {
-          "DefaultText": "Feed Tinder",
-          "Text": "添入火绒",
-          "zh": "添入火绒",
-          "en": "Feed Tinder",
-          "ja": "Feed Tinder"
+          "ja": "火をつける"
         },
         "value": {
           "x": 1,
@@ -789,7 +745,7 @@
         "Text": "添入柴火",
         "zh": "添入柴火",
         "en": "Feed Firewood",
-        "ja": "Feed Firewood"
+        "ja": "薪を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -824,6 +780,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1746,7 +1706,7 @@
             "CardType": 0,
             "zh": "柴火",
             "en": "Firewood",
-            "ja": "Firewood",
+            "ja": "薪",
             "AlternateNames": [
               {
                 "Conditions": {
@@ -1760,7 +1720,7 @@
                   "Text": "橡木柴",
                   "zh": "橡木柴",
                   "en": "Oak Firewood",
-                  "ja": "Oak Firewood"
+                  "ja": "オークの薪"
                 }
               },
               {
@@ -1775,7 +1735,7 @@
                   "Text": "松木柴",
                   "zh": "松木柴",
                   "en": "Pine Firewood",
-                  "ja": "Pine Firewood"
+                  "ja": "松の木の薪"
                 }
               },
               {
@@ -1790,7 +1750,7 @@
                   "Text": "桦木柴",
                   "zh": "桦木柴",
                   "en": "Birch Firewood",
-                  "ja": "Birch Firewood"
+                  "ja": "カバの薪"
                 }
               },
               {
@@ -1805,7 +1765,7 @@
                   "Text": "柳木柴",
                   "zh": "柳木柴",
                   "en": "Willow Firewood",
-                  "ja": "Willow Firewood"
+                  "ja": "ヤナギの薪"
                 }
               },
               {
@@ -1843,7 +1803,7 @@
                 "Text": "香气",
                 "zh": "香气",
                 "en": "Fragrance",
-                "ja": "Fragrance"
+                "ja": "香り"
               },
               "OverrideIcon": null,
               "MaxValue": 10000
@@ -1855,7 +1815,7 @@
                 "Text": "燃料",
                 "zh": "燃料",
                 "en": "Fuel",
-                "ja": "Fuel"
+                "ja": "燃料"
               },
               "OverrideIcon": null,
               "MaxValue": 10000
@@ -1891,7 +1851,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1974,6 +1934,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2824,7 +2788,7 @@
         "Text": "添入燃料",
         "zh": "添入燃料",
         "en": "Feed Fuel",
-        "ja": "Feed Fuel"
+        "ja": "燃料を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2859,6 +2823,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3567,7 +3535,7 @@
                 "Text": "锋利",
                 "zh": "锋利",
                 "en": "Sharpness",
-                "ja": "Sharpness"
+                "ja": "切れ味"
               },
               "OverrideIcon": {
                 "FileName": "Knife_Blank_Copper"
@@ -3609,7 +3577,7 @@
                 "Text": "美观",
                 "zh": "美观",
                 "en": "Beauty",
-                "ja": "Beauty"
+                "ja": "美しさ"
               },
               "OverrideIcon": null,
               "MaxValue": 1000
@@ -3635,7 +3603,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "Quality"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -3670,7 +3638,7 @@
         "Text": "添入燃料",
         "zh": "添入燃料",
         "en": "Feed Fuel",
-        "ja": "Feed Fuel"
+        "ja": "燃料を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -3705,6 +3673,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -4422,7 +4394,7 @@
         "Text": "添入木炭",
         "zh": "添入木炭",
         "en": "Feed Charcoal",
-        "ja": "Feed Charcoal"
+        "ja": "木炭を入れる"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -4457,6 +4429,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -5265,871 +5241,11 @@
     },
     {
       "ActionName": {
-        "DefaultText": "Feed Leaves",
-        "Text": "添入树叶",
-        "zh": "添入树叶",
-        "en": "Feed Leaves",
-        "ja": "Feed Leaves"
-      },
-      "ActionDescription": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoveltyShared": false,
-      "VictorySettings": {
-        "Victory": false,
-        "SpecialEnding": false,
-        "VictoryMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        }
-      },
-      "UnavailableInDemo": false,
-      "SaveGame": false,
-      "ConfirmPopup": false,
-      "CustomConfirmText": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NotInterruptedByEncounters": false,
-      "StackCompatible": true,
-      "DaytimeCost": 0,
-      "UseMiniTicks": 0,
-      "ActionSounds": [],
-      "DisablePitchVariation": false,
-      "ActionTags": [],
-      "RequiredStatValues": [],
-      "RequiredNPCStatValues": [],
-      "RequiredCardsOnBoard": [],
-      "RequiredTagsOnBoard": [],
-      "RequiredAlreadyVisitedEnvironments": [],
-      "RequiredReceivingContainer": [],
-      "RequiredReceivingContainerTag": [],
-      "RequiredNOTReceivingContainerTag": [],
-      "RequiredReceivingContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "RequiredActiveHidingGroups": [],
-      "HideIfConditionsNotMet": false,
-      "NotBaseAction": false,
-      "Cancellable": false,
-      "InstantStatModifications": false,
-      "DontDoStatModificationsOnCancel": false,
-      "InstantDurabilityModifications": false,
-      "ReceivingCardFlavourBonus": false,
-      "GivenCardFlavourBonus": false,
-      "ResetWhenDone": null,
-      "StatInterruptions": [],
-      "StartDialog": null,
-      "ProducedCards": [],
-      "StatModifications": [
-        {
-          "Stat": {
-            "key": "FireUrge",
-            "icon": "Spirit_Fire",
-            "type": "stat",
-            "zh": "火之本能",
-            "en": "Fire Urge",
-            "ja": "炎の欲求",
-            "max": 96,
-            "min": 0
-          },
-          "ValueModifier": {
-            "x": -6,
-            "y": -6
-          },
-          "RateModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MinValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "MaxValueModifier": {
-            "x": 0,
-            "y": 0
-          },
-          "CannotModifyBeyond": {
-            "Active": false,
-            "FloatValue": 0,
-            "MaxValue": 0
-          },
-          "ApplyEachTick": true,
-          "InstantModifier": false,
-          "IgnoreNovelty": false,
-          "IsInverse": false
-        }
-      ],
-      "InterpolatedStatModifications": [],
-      "NPCStatModifications": [],
-      "TemporaryStatModifications": [],
-      "MovePlayer": {
-        "MoveOption": 0,
-        "ToEnv": null,
-        "Pathfinding": null,
-        "Direction": 0
-      },
-      "MoveReceivingCard": {
-        "Card": null,
-        "UseCardinalDirection": false,
-        "MoveInDirection": 0,
-        "Pathfinding": null
-      },
-      "MoveNPC": [],
-      "SetNPCHome": [],
-      "ExtraDurabilityModifications": [],
-      "BlueprintsFullUnlock": [],
-      "CompletedImprovements": [],
-      "AddedInRunPerks": [],
-      "DontShowDestroyMessage": false,
-      "CustomDestroyMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoCardsAffectedMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "ReceivingCardChanges": {
-        "ModType": 1,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 2,
-          "y": 2
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CustomWindowPrefab": null,
-      "OpenQuestLog": false,
-      "OpenMap": false,
-      "UpdateMap": false,
-      "EditDescription": false,
-      "FadeToBlack": 0,
-      "FadeMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "FadeTips": false,
-      "TravelToPreviousEnv": false,
-      "TravelToOtherRoom": false,
-      "RoomDirection": 0,
-      "ExitDirection": 0,
-      "RequiredGivenContainer": [],
-      "RequiredGivenContainerTag": [],
-      "RequiredGivenContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "GivenCardChanges": {
-        "ModType": 3,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CreatedLiquidInGivenCard": {
-        "LiquidCard": null,
-        "Quantity": {
-          "x": 0,
-          "y": 0
-        },
-        "Durabilities": {
-          "Spoilage": 0,
-          "Usage": 0,
-          "Fuel": 0,
-          "Progress": 0,
-          "Special1": 0,
-          "Special2": 0,
-          "Special3": 0,
-          "Special4": 0,
-          "SpoilageValue": 0,
-          "UsageValue": 0,
-          "FuelValue": 0,
-          "ProgressValue": 0,
-          "Special1Value": 0,
-          "Special2Value": 0,
-          "Special3Value": 0,
-          "Special4Value": 0,
-          "SpoilageFrom": 0,
-          "UsageFrom": 0,
-          "FuelFrom": 0,
-          "ProgressFrom": 0,
-          "Special1From": 0,
-          "Special2From": 0,
-          "Special3From": 0,
-          "Special4From": 0
-        }
-      },
-      "CarryOverGivenCard": false,
-      "CompatibleCards": {
-        "TriggerCards": [],
-        "TriggerTags": [
-          {
-            "key": "tag_DryAcidicLeavesOrNeedles",
-            "text": "“Dry Acidic Leaves or Needles”",
-            "icon": "",
-            "type": "tag",
-            "count": 11,
-            "zh": "干燥酸性落叶或针叶",
-            "en": "Dry Acidic Leaves or Needles",
-            "ja": "Dry Acidic Leaves or Needles",
-            "SpoilageTime": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Spoilage",
-                "Text": "变质",
-                "zh": "变质",
-                "en": "Spoilage",
-                "ja": "Spoilage"
-              },
-              "OverrideIcon": {
-                "FileName": "Bacteria"
-              },
-              "MaxValue": 11520
-            },
-            "FuelCapacity": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Temperature",
-                "Text": "温度",
-                "zh": "温度",
-                "en": "Temperature",
-                "ja": "Temperature"
-              },
-              "OverrideIcon": {
-                "FileName": "Hot"
-              },
-              "MaxValue": 200
-            },
-            "Progress": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Nutrition",
-                "Text": "营养",
-                "zh": "营养",
-                "en": "Nutrition",
-                "ja": "Nutrition"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 100
-            },
-            "SpecialDurability2": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 96
-            },
-            "SpecialDurability4": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Boil",
-                "Text": "烹煮",
-                "zh": "烹煮",
-                "en": "Boil",
-                "ja": "Boil"
-              },
-              "OverrideIcon": {
-                "FileName": "Cooking"
-              },
-              "MaxValue": 4
-            }
-          }
-        ]
-      },
-      "NOTCompatibleCards": {
-        "TriggerCards": [],
-        "TriggerTags": []
-      },
-      "WorksInverted": false,
-      "WorksBothWays": false
-    },
-    {
-      "ActionName": {
         "DefaultText": "Light Fire",
         "Text": "点燃",
         "zh": "点燃",
         "en": "Light Fire",
-        "ja": "Light Fire"
+        "ja": "火をつける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -6164,6 +5280,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -6411,7 +5531,7 @@
           "CardType": 2,
           "zh": "熔炉",
           "en": "Furnace",
-          "ja": "Furnace",
+          "ja": "溶鉱炉",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -6419,7 +5539,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -6471,7 +5591,7 @@
               "Text": "风力",
               "zh": "风力",
               "en": "Windflow",
-              "ja": "Windflow"
+              "ja": "風通し"
             },
             "OverrideIcon": null,
             "MaxValue": 8
@@ -7086,7 +6206,7 @@
         "Text": "点燃",
         "zh": "点燃",
         "en": "Light Fire",
-        "ja": "Light Fire"
+        "ja": "火をつける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -7121,6 +6241,10 @@
       "StackCompatible": true,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -7368,7 +6492,7 @@
           "CardType": 2,
           "zh": "熔炉",
           "en": "Furnace",
-          "ja": "Furnace",
+          "ja": "溶鉱炉",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -7376,7 +6500,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -7428,7 +6552,7 @@
               "Text": "风力",
               "zh": "风力",
               "en": "Windflow",
-              "ja": "Windflow"
+              "ja": "風通し"
             },
             "OverrideIcon": null,
             "MaxValue": 8
@@ -7929,7 +7053,7 @@
             "count": 2,
             "zh": "火绒",
             "en": "Tinder",
-            "ja": "Tinder",
+            "ja": "火口",
             "FuelCapacity": {
               "Active": true,
               "CardStatName": {
@@ -7960,964 +7084,6 @@
             }
           }
         ]
-      },
-      "NOTCompatibleCards": {
-        "TriggerCards": [],
-        "TriggerTags": []
-      },
-      "WorksInverted": false,
-      "WorksBothWays": false
-    },
-    {
-      "ActionName": {
-        "DefaultText": "Feed Tinder",
-        "Text": "添入火绒",
-        "zh": "添入火绒",
-        "en": "Feed Tinder",
-        "ja": "Feed Tinder"
-      },
-      "ActionDescription": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoveltyShared": false,
-      "VictorySettings": {
-        "Victory": false,
-        "SpecialEnding": false,
-        "VictoryMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        }
-      },
-      "UnavailableInDemo": false,
-      "SaveGame": false,
-      "ConfirmPopup": false,
-      "CustomConfirmText": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NotInterruptedByEncounters": false,
-      "StackCompatible": false,
-      "DaytimeCost": 0,
-      "UseMiniTicks": 0,
-      "ActionSounds": [],
-      "DisablePitchVariation": false,
-      "ActionTags": [],
-      "RequiredStatValues": [],
-      "RequiredNPCStatValues": [],
-      "RequiredCardsOnBoard": [],
-      "RequiredTagsOnBoard": [],
-      "RequiredAlreadyVisitedEnvironments": [],
-      "RequiredReceivingContainer": [],
-      "RequiredReceivingContainerTag": [],
-      "RequiredNOTReceivingContainerTag": [],
-      "RequiredReceivingContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "RequiredActiveHidingGroups": [],
-      "HideIfConditionsNotMet": false,
-      "NotBaseAction": false,
-      "Cancellable": false,
-      "InstantStatModifications": false,
-      "DontDoStatModificationsOnCancel": false,
-      "InstantDurabilityModifications": false,
-      "ReceivingCardFlavourBonus": false,
-      "GivenCardFlavourBonus": false,
-      "ResetWhenDone": null,
-      "StatInterruptions": [],
-      "StartDialog": null,
-      "ProducedCards": [],
-      "StatModifications": [],
-      "InterpolatedStatModifications": [],
-      "NPCStatModifications": [],
-      "TemporaryStatModifications": [],
-      "MovePlayer": {
-        "MoveOption": 0,
-        "ToEnv": null,
-        "Pathfinding": null,
-        "Direction": 0
-      },
-      "MoveReceivingCard": {
-        "Card": null,
-        "UseCardinalDirection": false,
-        "MoveInDirection": 0,
-        "Pathfinding": null
-      },
-      "MoveNPC": [],
-      "SetNPCHome": [],
-      "ExtraDurabilityModifications": [],
-      "BlueprintsFullUnlock": [],
-      "CompletedImprovements": [],
-      "AddedInRunPerks": [],
-      "DontShowDestroyMessage": false,
-      "CustomDestroyMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoCardsAffectedMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "ReceivingCardChanges": {
-        "ModType": 1,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 1,
-          "y": 1
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CustomWindowPrefab": null,
-      "OpenQuestLog": false,
-      "OpenMap": false,
-      "UpdateMap": false,
-      "EditDescription": false,
-      "FadeToBlack": 0,
-      "FadeMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "FadeTips": false,
-      "TravelToPreviousEnv": false,
-      "TravelToOtherRoom": false,
-      "RoomDirection": 0,
-      "ExitDirection": 0,
-      "RequiredGivenContainer": [],
-      "RequiredGivenContainerTag": [],
-      "RequiredGivenContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredGivenLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "GivenCardChanges": {
-        "ModType": 3,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CreatedLiquidInGivenCard": {
-        "LiquidCard": null,
-        "Quantity": {
-          "x": 0,
-          "y": 0
-        },
-        "Durabilities": {
-          "Spoilage": 0,
-          "Usage": 0,
-          "Fuel": 0,
-          "Progress": 0,
-          "Special1": 0,
-          "Special2": 0,
-          "Special3": 0,
-          "Special4": 0,
-          "SpoilageValue": 0,
-          "UsageValue": 0,
-          "FuelValue": 0,
-          "ProgressValue": 0,
-          "Special1Value": 0,
-          "Special2Value": 0,
-          "Special3Value": 0,
-          "Special4Value": 0,
-          "SpoilageFrom": 0,
-          "UsageFrom": 0,
-          "FuelFrom": 0,
-          "ProgressFrom": 0,
-          "Special1From": 0,
-          "Special2From": 0,
-          "Special3From": 0,
-          "Special4From": 0
-        }
-      },
-      "CarryOverGivenCard": false,
-      "CompatibleCards": {
-        "TriggerCards": [
-          {
-            "key": "LeavesDry",
-            "icon": "Leaves_Dry",
-            "type": "card",
-            "CardType": 0,
-            "zh": "枯叶",
-            "en": "Dry Leaves",
-            "ja": "乾燥した葉",
-            "SpoilageTime": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Durability",
-                "Text": "耐久度",
-                "zh": "耐久度",
-                "en": "Durability",
-                "ja": "Durability"
-              },
-              "OverrideIcon": {
-                "FileName": "Shield"
-              },
-              "MaxValue": 2880
-            },
-            "UsageDurability": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "UsageDurability",
-                "zh": "耐久",
-                "en": "Usage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "FuelCapacity": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 1
-            },
-            "Progress": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Nutrition",
-                "Text": "营养",
-                "zh": "营养",
-                "en": "Nutrition",
-                "ja": "Nutrition"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 100
-            },
-            "SpecialDurability1": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability1",
-                "zh": "特殊1",
-                "en": "Special1",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability2": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability2",
-                "zh": "特殊2",
-                "en": "Special2",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability3": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability4": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            }
-          },
-          {
-            "key": "Fibers",
-            "icon": "Fibers",
-            "type": "card",
-            "CardType": 0,
-            "zh": "纤维",
-            "en": "Fibers",
-            "ja": "繊維",
-            "SpoilageTime": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpoilageTime",
-                "zh": "时间",
-                "en": "Spoilage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "UsageDurability": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "UsageDurability",
-                "zh": "耐久",
-                "en": "Usage",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "FuelCapacity": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 1
-            },
-            "Progress": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "Progress",
-                "zh": "进度",
-                "en": "Progress",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability1": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "CanBeCombed",
-                "Text": "CanBeCombed",
-                "zh": "CanBeCombed",
-                "en": "CanBeCombed",
-                "ja": "CanBeCombed"
-              },
-              "OverrideIcon": null,
-              "MaxValue": 1
-            },
-            "SpecialDurability2": {
-              "Active": true,
-              "CardStatName": {
-                "DefaultText": "Quality",
-                "Text": "品质",
-                "zh": "品质",
-                "en": "Quality",
-                "ja": "クオリティ"
-              },
-              "OverrideIcon": {
-                "FileName": "Quality"
-              },
-              "MaxValue": 47.5
-            },
-            "SpecialDurability3": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability3",
-                "zh": "特殊3",
-                "en": "Special3",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            },
-            "SpecialDurability4": {
-              "Active": false,
-              "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
-              },
-              "OverrideIcon": null,
-              "MaxValue": 0
-            }
-          }
-        ],
-        "TriggerTags": []
       },
       "NOTCompatibleCards": {
         "TriggerCards": [],
@@ -10326,7 +8492,7 @@
             "Text": "容器温度",
             "zh": "容器温度",
             "en": "Container Temperature",
-            "ja": "Container Temperature"
+            "ja": "容器の温度"
           },
           "OverrideIcon": {
             "FileName": "Hot"
@@ -10352,7 +8518,7 @@
             "Text": "染料",
             "zh": "染料",
             "en": "Dye",
-            "ja": "Dye"
+            "ja": "染料"
           },
           "OverrideIcon": null,
           "MaxValue": 100
@@ -10364,7 +8530,7 @@
             "Text": "容器品质",
             "zh": "容器品质",
             "en": "Container Quality",
-            "ja": "Container Quality"
+            "ja": "容器の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -10378,7 +8544,7 @@
             "Text": "已赐福",
             "zh": "已赐福",
             "en": "Blessed",
-            "ja": "Blessed"
+            "ja": "加護を受けている"
           },
           "OverrideIcon": {
             "FileName": "Snowflake_Old"
@@ -10392,7 +8558,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -10424,7 +8590,7 @@
             "Text": "总金属品质",
             "zh": "总金属品质",
             "en": "Metal Quality",
-            "ja": "Metal Quality"
+            "ja": "金属の質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -10438,7 +8604,7 @@
             "Text": "品质",
             "zh": "品质",
             "en": "Quality",
-            "ja": "Quality"
+            "ja": "質"
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -10452,7 +8618,7 @@
             "Text": "金属类型",
             "zh": "金属类型",
             "en": "Metal Type",
-            "ja": "Metal Type"
+            "ja": "金属の種類"
           },
           "OverrideIcon": null,
           "MaxValue": 1000
@@ -10508,7 +8674,7 @@
         "Text": "温度1100+：大型预备坩埚 - 大型熔融坩埚",
         "zh": "温度1100+：大型预备坩埚 - 大型熔融坩埚",
         "en": "Temperature 1100+: Large Prepared Crucible - Large Molten Crucible",
-        "ja": "Temperature 1100+: Large Prepared Crucible - Large Molten Crucible"
+        "ja": "温度１１００以上：大型準備済みるつぼ → 大型溶融るつぼ"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -10532,7 +8698,7 @@
           "CardType": 0,
           "zh": "大型预备坩埚",
           "en": "Large Prepared Crucible",
-          "ja": "Large Prepared Crucible",
+          "ja": "大型の準備済みるつぼ",
           "AlternateNames": [
             {
               "Conditions": {
@@ -10546,7 +8712,7 @@
                 "Text": "预备铜",
                 "zh": "预备铜",
                 "en": "Prepared Copper",
-                "ja": "Prepared Copper"
+                "ja": "鋳造準備済みの銅"
               }
             },
             {
@@ -10561,7 +8727,7 @@
                 "Text": "预备鬼铜",
                 "zh": "预备鬼铜",
                 "en": "Prepared Ghost Bronze",
-                "ja": "Prepared Ghost Bronze"
+                "ja": "鋳造準備済みのゴーストブロンズ"
               }
             },
             {
@@ -10576,7 +8742,7 @@
                 "Text": "预备锡",
                 "zh": "预备锡",
                 "en": "Prepared Tin",
-                "ja": "Prepared Tin"
+                "ja": "加工済みスズ"
               }
             },
             {
@@ -10591,7 +8757,7 @@
                 "Text": "预备青铜",
                 "zh": "预备青铜",
                 "en": "Prepared Tin Bronze",
-                "ja": "Prepared Tin Bronze"
+                "ja": "加工済みスズ青銅"
               }
             },
             {
@@ -10606,7 +8772,7 @@
                 "Text": "预备白铜",
                 "zh": "预备白铜",
                 "en": "Prepared White Bronze",
-                "ja": "Prepared White Bronze"
+                "ja": "加工済み白青銅"
               }
             }
           ],
@@ -10655,7 +8821,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -10681,7 +8847,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -10695,7 +8861,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -10709,7 +8875,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -10905,7 +9071,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 3,
       "DurationRdmVariation": 0,
@@ -11028,7 +9197,7 @@
           "CardType": 0,
           "zh": "大型熔融坩埚",
           "en": "Large Molten Crucible",
-          "ja": "Large Molten Crucible",
+          "ja": "大型の溶融るつぼ",
           "AlternateNames": [
             {
               "Conditions": {
@@ -11042,7 +9211,7 @@
                 "Text": "熔融铜",
                 "zh": "熔融铜",
                 "en": "Molten Copper",
-                "ja": "Molten Copper"
+                "ja": "溶融した銅"
               }
             },
             {
@@ -11057,7 +9226,7 @@
                 "Text": "熔融鬼铜",
                 "zh": "熔融鬼铜",
                 "en": "Molten Ghost Bronze",
-                "ja": "Molten Ghost Bronze"
+                "ja": "溶融したゴーストブロンズ"
               }
             },
             {
@@ -11072,7 +9241,7 @@
                 "Text": "熔融锡",
                 "zh": "熔融锡",
                 "en": "Molten Tin",
-                "ja": "Molten Tin"
+                "ja": "溶けたスズ"
               }
             },
             {
@@ -11087,7 +9256,7 @@
                 "Text": "熔融青铜",
                 "zh": "熔融青铜",
                 "en": "Molten Tin Bronze",
-                "ja": "Molten Tin Bronze"
+                "ja": "溶けたスズ青銅"
               }
             },
             {
@@ -11102,7 +9271,7 @@
                 "Text": "熔融白铜",
                 "zh": "熔融白铜",
                 "en": "Molten White Bronze",
-                "ja": "Molten White Bronze"
+                "ja": "溶けた白青銅"
               }
             }
           ],
@@ -11151,7 +9320,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -11177,7 +9346,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11191,7 +9360,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11205,7 +9374,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -11351,7 +9520,7 @@
         "Text": "温度1100+：小型预备坩埚 - 小型熔融坩埚",
         "zh": "温度1100+：小型预备坩埚 - 小型熔融坩埚",
         "en": "Temperature 1100+: Small Prepared Crucible - Small Molten Crucible",
-        "ja": "Temperature 1100+: Small Prepared Crucible - Small Molten Crucible"
+        "ja": "温度１１００以上：小型準備済みるつぼ → 小型溶融るつぼ"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -11375,7 +9544,7 @@
           "CardType": 0,
           "zh": "小型预备坩埚",
           "en": "Small Prepared Crucible",
-          "ja": "Small Prepared Crucible",
+          "ja": "小型の準備済みるつぼ",
           "AlternateNames": [
             {
               "Conditions": {
@@ -11389,7 +9558,7 @@
                 "Text": "预备铜",
                 "zh": "预备铜",
                 "en": "Prepared Copper",
-                "ja": "Prepared Copper"
+                "ja": "鋳造準備済みの銅"
               }
             },
             {
@@ -11404,7 +9573,7 @@
                 "Text": "预备鬼铜",
                 "zh": "预备鬼铜",
                 "en": "Prepared Ghost Bronze",
-                "ja": "Prepared Ghost Bronze"
+                "ja": "鋳造準備済みのゴーストブロンズ"
               }
             },
             {
@@ -11419,7 +9588,7 @@
                 "Text": "预备锡",
                 "zh": "预备锡",
                 "en": "Prepared Tin",
-                "ja": "Prepared Tin"
+                "ja": "加工済みスズ"
               }
             },
             {
@@ -11434,7 +9603,7 @@
                 "Text": "预备青铜",
                 "zh": "预备青铜",
                 "en": "Prepared Tin Bronze",
-                "ja": "Prepared Tin Bronze"
+                "ja": "加工済みスズ青銅"
               }
             },
             {
@@ -11449,7 +9618,7 @@
                 "Text": "预备白铜",
                 "zh": "预备白铜",
                 "en": "Prepared White Bronze",
-                "ja": "Prepared White Bronze"
+                "ja": "加工済み白青銅"
               }
             }
           ],
@@ -11498,7 +9667,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -11524,7 +9693,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11538,7 +9707,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11552,7 +9721,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -11748,7 +9917,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 3,
       "DurationRdmVariation": 0,
@@ -11871,7 +10043,7 @@
           "CardType": 0,
           "zh": "小型熔融坩埚",
           "en": "Small Molten Crucible",
-          "ja": "Small Molten Crucible",
+          "ja": "小型の溶融るつぼ",
           "AlternateNames": [
             {
               "Conditions": {
@@ -11885,7 +10057,7 @@
                 "Text": "熔融铜",
                 "zh": "熔融铜",
                 "en": "Molten Copper",
-                "ja": "Molten Copper"
+                "ja": "溶融した銅"
               }
             },
             {
@@ -11900,7 +10072,7 @@
                 "Text": "熔融鬼铜",
                 "zh": "熔融鬼铜",
                 "en": "Molten Ghost Bronze",
-                "ja": "Molten Ghost Bronze"
+                "ja": "溶融したゴーストブロンズ"
               }
             },
             {
@@ -11915,7 +10087,7 @@
                 "Text": "熔融锡",
                 "zh": "熔融锡",
                 "en": "Molten Tin",
-                "ja": "Molten Tin"
+                "ja": "溶けたスズ"
               }
             },
             {
@@ -11930,7 +10102,7 @@
                 "Text": "熔融青铜",
                 "zh": "熔融青铜",
                 "en": "Molten Tin Bronze",
-                "ja": "Molten Tin Bronze"
+                "ja": "溶けたスズ青銅"
               }
             },
             {
@@ -11945,7 +10117,7 @@
                 "Text": "熔融白铜",
                 "zh": "熔融白铜",
                 "en": "Molten White Bronze",
-                "ja": "Molten White Bronze"
+                "ja": "溶けた白青銅"
               }
             }
           ],
@@ -11994,7 +10166,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -12020,7 +10192,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -12034,7 +10206,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -12048,7 +10220,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -12194,7 +10366,7 @@
         "Text": "温度 1100+：熔炼物品需要 1100+ 的温度",
         "zh": "温度 1100+：熔炼物品需要 1100+ 的温度",
         "en": "Temperature 1100+: Smelts things which require 1100+ temperature",
-        "ja": "Temperature 1100+: Smelts things which require 1100+ temperature"
+        "ja": "温度１１００以上：１１００以上必要な素材を精錬する"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -12217,7 +10389,7 @@
           "text": "“tag_SmeltsAt1100”",
           "icon": "",
           "type": "tag",
-          "count": 53,
+          "count": 58,
           "zh": "熔点1100",
           "en": "tag_SmeltsAt1100",
           "ja": "tag_SmeltsAt1100",
@@ -12252,7 +10424,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -12266,7 +10438,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -12280,7 +10452,7 @@
               "Text": "捶打",
               "zh": "捶打",
               "en": "Strikes",
-              "ja": "Strikes"
+              "ja": "打撃数"
             },
             "OverrideIcon": {
               "FileName": "Hammer"
@@ -12294,7 +10466,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -12308,7 +10480,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -12322,7 +10494,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -12517,7 +10689,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -12798,7 +10973,7 @@
           "CardType": 0,
           "zh": "加热的金属块",
           "en": "Metal Nugget",
-          "ja": "Metal Nugget",
+          "ja": "金属粒",
           "AlternateNames": [
             {
               "Conditions": {
@@ -12816,7 +10991,7 @@
                 "Text": "铜块",
                 "zh": "铜块",
                 "en": "Copper Nugget",
-                "ja": "Copper Nugget"
+                "ja": "銅塊"
               }
             },
             {
@@ -12835,7 +11010,7 @@
                 "Text": "鬼铜块",
                 "zh": "鬼铜块",
                 "en": "Ghost Bronze Nugget",
-                "ja": "Ghost Bronze Nugget"
+                "ja": "幽青銅塊"
               }
             },
             {
@@ -12854,7 +11029,7 @@
                 "Text": "锡块",
                 "zh": "锡块",
                 "en": "Tin Nugget",
-                "ja": "Tin Nugget"
+                "ja": "スズ塊"
               }
             },
             {
@@ -12873,7 +11048,7 @@
                 "Text": "青铜块",
                 "zh": "青铜块",
                 "en": "Tin Bronze Nugget",
-                "ja": "Tin Bronze Nugget"
+                "ja": "スズ青銅塊"
               }
             },
             {
@@ -12892,7 +11067,7 @@
                 "Text": "白铜块",
                 "zh": "白铜块",
                 "en": "White Bronze Nugget",
-                "ja": "White Bronze Nugget"
+                "ja": "白青銅塊"
               }
             },
             {
@@ -12930,7 +11105,7 @@
                 "Text": "加热的铜块",
                 "zh": "加热的铜块",
                 "en": "Heated Copper Nugget",
-                "ja": "Heated Copper Nugget"
+                "ja": "加熱された銅塊"
               }
             },
             {
@@ -12949,7 +11124,7 @@
                 "Text": "加热的鬼铜块",
                 "zh": "加热的鬼铜块",
                 "en": "Heated Ghost Bronze Nugget",
-                "ja": "Heated Ghost Bronze Nugget"
+                "ja": "加熱された幽青銅塊"
               }
             },
             {
@@ -12968,7 +11143,7 @@
                 "Text": "加热的锡块",
                 "zh": "加热的锡块",
                 "en": "Heated Tin Nugget",
-                "ja": "Heated Tin Nugget"
+                "ja": "加熱されたスズの金属塊"
               }
             },
             {
@@ -12987,7 +11162,7 @@
                 "Text": "加热的青铜块",
                 "zh": "加热的青铜块",
                 "en": "Heated Tin Bronze Nugget",
-                "ja": "Heated Tin Bronze Nugget"
+                "ja": "加熱されたスズ青銅の金属塊"
               }
             },
             {
@@ -13006,7 +11181,7 @@
                 "Text": "加热的白铜块",
                 "zh": "加热的白铜块",
                 "en": "Heated White Bronze Nugget",
-                "ja": "Heated White Bronze Nugget"
+                "ja": "加熱された白青銅の金属塊"
               }
             },
             {
@@ -13062,7 +11237,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -13102,7 +11277,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13116,7 +11291,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13130,7 +11305,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -13160,7 +11335,7 @@
                 "DefaultText": "Unfinished Copper Bar",
                 "Text": "半成品铜锭",
                 "zh": "半成品铜锭",
-                "en": "Unfinished Lump of Copper",
+                "en": "Unfinished Copper Bar",
                 "ja": "Unfinished Copper Bar"
               }
             },
@@ -13179,7 +11354,7 @@
                 "DefaultText": "Unfinished Ghost Bronze Bar",
                 "Text": "半成品鬼铜锭",
                 "zh": "半成品鬼铜锭",
-                "en": "Unfinished Lump of Ghost Bronze",
+                "en": "Unfinished Ghost Bronze Bar",
                 "ja": "Unfinished Ghost Bronze Bar"
               }
             },
@@ -13198,7 +11373,7 @@
                 "DefaultText": "Unfinished Tin Bar",
                 "Text": "半成品锡锭",
                 "zh": "半成品锡锭",
-                "en": "Unfinished Lump of Tin",
+                "en": "Unfinished Tin Bar",
                 "ja": "Unfinished Tin Bar"
               }
             },
@@ -13217,7 +11392,7 @@
                 "DefaultText": "Unfinished Tin Bronze Bar",
                 "Text": "半成品青铜锭",
                 "zh": "半成品青铜锭",
-                "en": "Unfinished Lump of Tin Bronze",
+                "en": "Unfinished Tin Bronze Bar",
                 "ja": "Unfinished Tin Bronze Bar"
               }
             },
@@ -13236,7 +11411,7 @@
                 "DefaultText": "Unfinished White Bronze Bar",
                 "Text": "半成品白铜锭",
                 "zh": "半成品白铜锭",
-                "en": "Unfinished Lump of White Bronze",
+                "en": "Unfinished White Bronze Bar",
                 "ja": "Unfinished White Bronze Bar"
               }
             },
@@ -13274,7 +11449,7 @@
                 "DefaultText": "Unfinished Heated Copper Bar",
                 "Text": "加热的半成品铜锭",
                 "zh": "加热的半成品铜锭",
-                "en": "Unfinished Heated Lump of Copper",
+                "en": "Unfinished Heated Copper Bar",
                 "ja": "Unfinished Heated Copper Bar"
               }
             },
@@ -13293,7 +11468,7 @@
                 "DefaultText": "Unfinished Heated Ghost Bronze Bar",
                 "Text": "加热的半成品鬼铜锭",
                 "zh": "加热的半成品鬼铜锭",
-                "en": "Unfinished Heated Lump of Ghost Bronze",
+                "en": "Unfinished Heated Ghost Bronze Bar",
                 "ja": "Unfinished Heated Ghost Bronze Bar"
               }
             },
@@ -13312,7 +11487,7 @@
                 "DefaultText": "Unfinished Heated Tin Bar",
                 "Text": "加热的半成品锡锭",
                 "zh": "加热的半成品锡锭",
-                "en": "Unfinished Heated Lump of TIn",
+                "en": "Unfinished Heated Tin Bar",
                 "ja": "Unfinished Heated Tin Bar"
               }
             },
@@ -13331,7 +11506,7 @@
                 "DefaultText": "Unfinished Heated TIn Bronze Bar",
                 "Text": "加热的半成品青铜锭",
                 "zh": "加热的半成品青铜锭",
-                "en": "Unfinished Heated Lump of TIn Bronze",
+                "en": "Unfinished Heated TIn Bronze Bar",
                 "ja": "Unfinished Heated TIn Bronze Bar"
               }
             },
@@ -13350,7 +11525,7 @@
                 "DefaultText": "Unfinished Heated White Bronze Bar",
                 "Text": "加热的半成品白铜锭",
                 "zh": "加热的半成品白铜锭",
-                "en": "Unfinished Heated Lump of White Bronze",
+                "en": "Unfinished Heated White Bronze Bar",
                 "ja": "Unfinished Heated White Bronze Bar"
               }
             },
@@ -13407,7 +11582,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -13421,7 +11596,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -13435,7 +11610,7 @@
               "Text": "捶打",
               "zh": "捶打",
               "en": "Strikes",
-              "ja": "Strikes"
+              "ja": "打撃数"
             },
             "OverrideIcon": {
               "FileName": "Hammer"
@@ -13449,7 +11624,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13463,7 +11638,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13477,7 +11652,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -13507,7 +11682,7 @@
                 "DefaultText": "Copper Bar",
                 "Text": "铜锭",
                 "zh": "铜锭",
-                "en": "Lump of Copper",
+                "en": "Copper Bar",
                 "ja": "Copper Bar"
               }
             },
@@ -13526,7 +11701,7 @@
                 "DefaultText": "Ghost Bronze Bar",
                 "Text": "鬼铜锭",
                 "zh": "鬼铜锭",
-                "en": "Lump of Ghost Bronze",
+                "en": "Ghost Bronze Bar",
                 "ja": "Ghost Bronze Bar"
               }
             },
@@ -13545,7 +11720,7 @@
                 "DefaultText": "Tin Bar",
                 "Text": "锡锭",
                 "zh": "锡锭",
-                "en": "Lump of Tin",
+                "en": "Tin Bar",
                 "ja": "Tin Bar"
               }
             },
@@ -13564,7 +11739,7 @@
                 "DefaultText": "Tin Bronze Bar",
                 "Text": "青铜锭",
                 "zh": "青铜锭",
-                "en": "Lump of Tin Bronze",
+                "en": "Tin Bronze Bar",
                 "ja": "Tin Bronze Bar"
               }
             },
@@ -13583,7 +11758,7 @@
                 "DefaultText": "White Bronze Bar",
                 "Text": "白铜锭",
                 "zh": "白铜锭",
-                "en": "Lump of White Bronze",
+                "en": "White Bronze Bar",
                 "ja": "White Bronze Bar"
               }
             },
@@ -13621,7 +11796,7 @@
                 "DefaultText": "Heated Copper Bar",
                 "Text": "加热的铜锭",
                 "zh": "加热的铜锭",
-                "en": "Heated Lump of Copper",
+                "en": "Heated Copper Bar",
                 "ja": "Heated Copper Bar"
               }
             },
@@ -13640,7 +11815,7 @@
                 "DefaultText": "Heated Ghost Bronze Bar",
                 "Text": "加热的鬼铜锭",
                 "zh": "加热的鬼铜锭",
-                "en": "Heated Lump of Ghost Bronze",
+                "en": "Heated Ghost Bronze Bar",
                 "ja": "Heated Ghost Bronze Bar"
               }
             },
@@ -13659,7 +11834,7 @@
                 "DefaultText": "Heated Tin Bar",
                 "Text": "加热的锡锭",
                 "zh": "加热的锡锭",
-                "en": "Heated Lump of Tin",
+                "en": "Heated Tin Bar",
                 "ja": "Heated Tin Bar"
               }
             },
@@ -13678,7 +11853,7 @@
                 "DefaultText": "Heated Tin Bronze Bar",
                 "Text": "加热的青铜锭",
                 "zh": "加热的青铜锭",
-                "en": "Heated Lump of Tin Bronze",
+                "en": "Heated Tin Bronze Bar",
                 "ja": "Heated Tin Bronze Bar"
               }
             },
@@ -13697,7 +11872,7 @@
                 "DefaultText": "Heated White Bronze Bar",
                 "Text": "加热的白铜锭",
                 "zh": "加热的白铜锭",
-                "en": "Heated Lump of White Bronze",
+                "en": "Heated White Bronze Bar",
                 "ja": "Heated White Bronze Bar"
               }
             },
@@ -13754,7 +11929,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -13768,7 +11943,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -13782,7 +11957,7 @@
               "Text": "捶打",
               "zh": "捶打",
               "en": "Strikes",
-              "ja": "Strikes"
+              "ja": "打撃数"
             },
             "OverrideIcon": {
               "FileName": "Hammer"
@@ -13796,7 +11971,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13810,7 +11985,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13824,7 +11999,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -13837,10 +12012,36 @@
           "text": "“Copper Tool Shape”",
           "icon": "",
           "type": "tag",
-          "count": 18,
+          "count": 21,
           "zh": "工具外形",
           "en": "Copper Tool Shape",
           "ja": "Copper Tool Shape",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Beauty",
+              "Text": "美观",
+              "zh": "美观",
+              "en": "Beauty",
+              "ja": "Beauty"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1000
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Shield"
+            },
+            "MaxValue": 10000
+          },
           "FuelCapacity": {
             "Active": true,
             "CardStatName": {
@@ -13848,7 +12049,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -13862,7 +12063,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -13876,7 +12077,7 @@
               "Text": "捶打",
               "zh": "捶打",
               "en": "Strikes",
-              "ja": "Strikes"
+              "ja": "打撃数"
             },
             "OverrideIcon": {
               "FileName": "Hammer"
@@ -13890,7 +12091,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13904,7 +12105,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13918,7 +12119,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -13929,7 +12130,7 @@
           "text": "“Copper Tool Shape”",
           "icon": "",
           "type": "tag",
-          "count": 18,
+          "count": 20,
           "zh": "工具坯",
           "en": "Copper Tool Shape",
           "ja": "Copper Tool Shape",
@@ -13940,7 +12141,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -13954,7 +12155,7 @@
               "Text": "熔炼",
               "zh": "熔炼",
               "en": "Smelted",
-              "ja": "Smelted"
+              "ja": "精錬済み"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -13968,7 +12169,7 @@
               "Text": "捶打",
               "zh": "捶打",
               "en": "Strikes",
-              "ja": "Strikes"
+              "ja": "打撃数"
             },
             "OverrideIcon": {
               "FileName": "Hammer"
@@ -13982,7 +12183,7 @@
               "Text": "总金属品质",
               "zh": "总金属品质",
               "en": "Metal Quality",
-              "ja": "Metal Quality"
+              "ja": "金属の質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -13996,7 +12197,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -14010,7 +12211,7 @@
               "Text": "金属类型",
               "zh": "金属类型",
               "en": "Metal Type",
-              "ja": "Metal Type"
+              "ja": "金属の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 1000
@@ -14205,7 +12406,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -14659,7 +12863,7 @@
     "Text": "温度足以熔炼铜的熔炉。需要风箱或在多风的区域才能达到足够高的温度。\\n\\n只要有足够的燃料，就可以用火绒点燃。",
     "zh": "温度足以熔炼铜的熔炉。需要风箱或在多风的区域才能达到足够高的温度。\\n\\n只要有足够的燃料，就可以用火绒点燃。",
     "en": "A furnace hot enough to smelt copper. Requires bellows or a windy location to reach high enough temperatures.\\n\\nCan be lit with tinder, provided it has enough fuel.",
-    "ja": "A furnace hot enough to smelt copper. Requires bellows or a windy location to reach high enough temperatures.\n\nCan be lit with tinder, provided it has enough fuel."
+    "ja": "銅の精錬に必要な高温を生み出せる炉。十分な温度に達するには、ふいごまたは風通しの良い場所が必要。\\n\\n十分な燃料があれば、焚き付けで点火できる。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -14691,6 +12895,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -14973,7 +13181,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -15171,8 +13382,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -15307,7 +13526,7 @@
         "Text": "拆除",
         "zh": "拆除",
         "en": "Demolish",
-        "ja": "Demolish"
+        "ja": "解体する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -15342,6 +13561,10 @@
       "StackCompatible": false,
       "DaytimeCost": 8,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -15385,7 +13608,7 @@
               "Text": "烟雾",
               "zh": "烟雾",
               "en": "Smoke",
-              "ja": "Smoke"
+              "ja": "煙"
             },
             "OverrideIcon": {
               "FileName": "Ash"
@@ -15399,7 +13622,7 @@
               "Text": "树林",
               "zh": "树林",
               "en": "Trees",
-              "ja": "Trees"
+              "ja": "木"
             },
             "OverrideIcon": {
               "FileName": "Tree1"
@@ -15413,7 +13636,7 @@
               "Text": "过度生长",
               "zh": "过度生长",
               "en": "Overgrowth",
-              "ja": "Overgrowth"
+              "ja": "草木の繁茂 "
             },
             "OverrideIcon": {
               "FileName": "Overgrowth"
@@ -15427,7 +13650,7 @@
               "Text": "觅食",
               "zh": "觅食",
               "en": "Foraging",
-              "ja": "Foraging"
+              "ja": "資源集め"
             },
             "OverrideIcon": {
               "FileName": "SaturationBerries"
@@ -15965,6 +14188,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -16343,7 +14567,7 @@
         "CardType": 7,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -16359,7 +14583,7 @@
         "CardType": 2,
         "zh": "熔炉",
         "en": "Furnace",
-        "ja": "Furnace"
+        "ja": "溶鉱炉"
       },
       "localization": {
         "zh": "容量 降为零",

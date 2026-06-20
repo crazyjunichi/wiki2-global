@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "细线",
   "en": "Twine",
-  "ja": "Twine",
-  "UniqueIDIndex": 2590,
+  "ja": "より糸",
+  "UniqueIDIndex": 2669,
   "CardType": 0,
   "CardTags": [
     {
@@ -26,7 +26,7 @@
           "Text": "湿度",
           "zh": "湿度",
           "en": "Wetness",
-          "ja": "Wetness"
+          "ja": "水分量"
         },
         "OverrideIcon": {
           "FileName": "Water"
@@ -54,7 +54,7 @@
           "Text": "柔韧",
           "zh": "柔韧",
           "en": "Flexibility",
-          "ja": "Flexibility"
+          "ja": "柔軟性"
         },
         "OverrideIcon": null,
         "MaxValue": 100
@@ -66,7 +66,7 @@
     "Text": "细线",
     "zh": "细线",
     "en": "Twine",
-    "ja": "Twine"
+    "ja": "より糸"
   },
   "CardImage": {
     "FileName": "Twine"
@@ -348,7 +348,7 @@
       "Text": "柔韧",
       "zh": "柔韧",
       "en": "Flexibility",
-      "ja": "Flexibility"
+      "ja": "柔軟性"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -480,6 +480,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -741,7 +745,7 @@
                 "Text": "皮革绳",
                 "zh": "皮革绳",
                 "en": "Leather Cordage",
-                "ja": "Leather Cordage"
+                "ja": "革の紐"
               }
             },
             {
@@ -756,7 +760,7 @@
                 "Text": "肌腱绳",
                 "zh": "肌腱绳",
                 "en": "Sinew Cordage",
-                "ja": "Sinew Cordage"
+                "ja": "腱繊維の紐"
               }
             }
           ],
@@ -839,7 +843,7 @@
               "Text": "柔韧",
               "zh": "柔韧",
               "en": "Flexibility",
-              "ja": "Flexibility"
+              "ja": "柔軟性"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -1478,7 +1482,7 @@
     "Text": "用于建筑和制作。",
     "zh": "用于建筑和制作。",
     "en": "Used for construction and crafts.",
-    "ja": "Used for construction and crafts."
+    "ja": "建築やクラフティングで使う"
   },
   "CanBeRenamed": false,
   "AlternateNames": [
@@ -1526,7 +1530,14 @@
         "Text": "皮革绳",
         "zh": "皮革绳",
         "en": "Leather Cordage",
-        "ja": "Leather Cordage"
+        "ja": "革の紐"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1581,7 +1592,14 @@
         "Text": "肌腱绳",
         "zh": "肌腱绳",
         "en": "Sinew Cordage",
-        "ja": "Sinew Cordage"
+        "ja": "腱の紐"
+      },
+      "Description": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "Art": {
         "SeasonID": "",
@@ -1621,6 +1639,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1806,8 +1828,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -2085,7 +2115,7 @@
         "CardType": 7,
         "zh": "皮革绳",
         "en": "Leather Cordage",
-        "ja": "Leather Cordage"
+        "ja": "革の紐"
       },
       "localization": {
         "zh": "蓝图制作",

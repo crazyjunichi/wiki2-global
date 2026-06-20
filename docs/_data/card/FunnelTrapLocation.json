@@ -7,15 +7,15 @@
   "zh": "鱼篓陷阱",
   "en": "Funnel Trap",
   "ja": "ファネルトラップ",
-  "UniqueIDIndex": 1348,
+  "UniqueIDIndex": 1390,
   "CardType": 2,
   "CardTags": [
     {
-      "key": "tag_FloodUnsafe",
+      "key": "NOT_USED_tag_FloodUnsafe",
       "text": "“被洪水摧毁”",
       "icon": "",
       "type": "tag",
-      "count": 20,
+      "count": 22,
       "zh": "被洪水摧毁",
       "en": "Destroyed by Floods",
       "ja": "洪水によって破壊された",
@@ -96,7 +96,7 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "Quality"
+          "ja": "質"
         },
         "OverrideIcon": {
           "FileName": "Quality"
@@ -110,7 +110,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Pike"
@@ -135,7 +135,7 @@
       "text": "“Used for containers that the bear can eat from”",
       "icon": "",
       "type": "tag",
-      "count": 27,
+      "count": 29,
       "zh": "不安全(熊)",
       "en": "Used for containers that the bear can eat from",
       "ja": "Used for containers that the bear can eat from",
@@ -212,7 +212,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Snowflake_Old"
@@ -499,7 +499,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -629,7 +629,7 @@
       "Text": "已赐福",
       "zh": "已赐福",
       "en": "Blessed",
-      "ja": "Blessed"
+      "ja": "加護を受けている"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -755,7 +755,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -873,7 +873,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -999,6 +999,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -1326,7 +1330,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -1782,7 +1786,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -1899,7 +1903,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -2214,7 +2218,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 72,
       "DurationRdmVariation": 48,
@@ -2724,6 +2731,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2812,7 +2820,7 @@
                 "count": 12,
                 "zh": "小龙虾栖息地",
                 "en": "Frog Habitat",
-                "ja": "Frog Habitat",
+                "ja": "カエルの生息地",
                 "SpecialDurability1": {
                   "Active": true,
                   "CardStatName": {
@@ -3028,7 +3036,7 @@
                 "CardType": 0,
                 "zh": "小龙虾",
                 "en": "Crayfish",
-                "ja": "Crayfish",
+                "ja": "ザリガニ",
                 "SpoilageTime": {
                   "Active": true,
                   "CardStatName": {
@@ -3036,7 +3044,7 @@
                     "Text": "变质",
                     "zh": "变质",
                     "en": "Spoilage",
-                    "ja": "Spoilage"
+                    "ja": "腐敗物"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -3062,7 +3070,7 @@
                     "Text": "温度",
                     "zh": "温度",
                     "en": "Temperature",
-                    "ja": "Temperature"
+                    "ja": "温度"
                   },
                   "OverrideIcon": {
                     "FileName": "Hot"
@@ -3088,7 +3096,7 @@
                     "Text": "烹饪",
                     "zh": "烹饪",
                     "en": "Cook",
-                    "ja": "Cook"
+                    "ja": "料理する"
                   },
                   "OverrideIcon": {
                     "FileName": "Cooking"
@@ -3102,7 +3110,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -3187,6 +3195,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3537,7 +3546,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -3650,6 +3659,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -3736,7 +3746,7 @@
                     "Text": "树林",
                     "zh": "树林",
                     "en": "Trees",
-                    "ja": "Trees"
+                    "ja": "木"
                   },
                   "OverrideIcon": {
                     "FileName": "Tree1"
@@ -3750,7 +3760,7 @@
                     "Text": "过度生长",
                     "zh": "过度生长",
                     "en": "Overgrowth",
-                    "ja": "Overgrowth"
+                    "ja": "雑草"
                   },
                   "OverrideIcon": {
                     "FileName": "Overgrowth"
@@ -3764,7 +3774,7 @@
                     "Text": "觅食",
                     "zh": "觅食",
                     "en": "Foraging",
-                    "ja": "Foraging"
+                    "ja": "資源集め"
                   },
                   "OverrideIcon": {
                     "FileName": "SaturationBerries"
@@ -3778,7 +3788,7 @@
                     "Text": "丰饶度",
                     "zh": "丰饶度",
                     "en": "Fertility",
-                    "ja": "Fertility"
+                    "ja": "繁殖力"
                   },
                   "OverrideIcon": null,
                   "MaxValue": 5760
@@ -3990,7 +4000,7 @@
                     "Text": "精魄",
                     "zh": "精魄",
                     "en": "Spirit",
-                    "ja": "Spirit"
+                    "ja": "精霊"
                   },
                   "OverrideIcon": {
                     "FileName": "Insight"
@@ -4103,6 +4113,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4383,6 +4394,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -4684,7 +4699,10 @@
         ],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -4982,7 +5000,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "StatModifiers": [],
       "EffectStacksWithRequiredCards": false,
@@ -5177,8 +5198,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -5348,6 +5377,10 @@
       "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -5355,7 +5388,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -5363,7 +5396,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -5377,7 +5410,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -5391,7 +5424,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -5405,7 +5438,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -5805,7 +5838,7 @@
             "type": "stat",
             "zh": "满足感",
             "en": "Gratification",
-            "ja": "Gratification",
+            "ja": "満足感",
             "max": 100,
             "min": -100
           },
@@ -5961,7 +5994,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Pike"
@@ -6289,7 +6322,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -6304,7 +6337,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "湿地"
             }
           },
           {
@@ -6434,7 +6467,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -6449,7 +6482,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -6459,7 +6492,7 @@
         "Text": "放置陷阱",
         "zh": "放置陷阱",
         "en": "Deploy Trap",
-        "ja": "Deploy Trap"
+        "ja": "罠を設置する"
       }
     },
     {
@@ -6484,7 +6517,7 @@
               "Text": "湖泊",
               "zh": "湖泊",
               "en": "Lake",
-              "ja": "Lake"
+              "ja": "湖"
             }
           },
           {
@@ -6499,7 +6532,7 @@
               "Text": "沼泽",
               "zh": "沼泽",
               "en": "Marsh",
-              "ja": "Marsh"
+              "ja": "沼地"
             }
           }
         ]
@@ -6509,7 +6542,7 @@
         "Text": "放置陷阱",
         "zh": "放置陷阱",
         "en": "Deploy Trap",
-        "ja": "Deploy Trap"
+        "ja": "罠を設置する"
       }
     },
     {
@@ -6622,12 +6655,12 @@
         "CardType": 9,
         "zh": "狗鱼精魄",
         "en": "Pike Spirit",
-        "ja": "Pike Spirit"
+        "ja": "カワカマスの精霊"
       },
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Bless",
-        "ja": "アクション：Bless"
+        "ja": "アクション：加護を授ける"
       }
     }
   ],

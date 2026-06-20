@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "原木陷阱",
   "en": "Log Trap",
-  "ja": "Log Trap",
-  "UniqueIDIndex": 1964,
+  "ja": "丸太の罠",
+  "UniqueIDIndex": 2023,
   "CardType": 2,
   "CardTags": [
     {
@@ -38,7 +38,7 @@
           "Text": "已赐福",
           "zh": "已赐福",
           "en": "Blessed",
-          "ja": "Blessed"
+          "ja": "加護を受けている"
         },
         "OverrideIcon": {
           "FileName": "Fox_Wild"
@@ -52,7 +52,7 @@
     "Text": "原木陷阱",
     "zh": "原木陷阱",
     "en": "Log Trap",
-    "ja": "Log Trap"
+    "ja": "丸太の罠"
   },
   "CardImage": {
     "FileName": "LogTrap"
@@ -334,7 +334,7 @@
       "Text": "已赐福",
       "zh": "已赐福",
       "en": "Blessed",
-      "ja": "Blessed"
+      "ja": "加護を受けている"
     },
     "RandomStartingOffset": 0,
     "MaxValue": 1,
@@ -663,7 +663,7 @@
     "Text": "在此放入诱饵",
     "zh": "在此放入诱饵",
     "en": "PLACE BAIT HERE",
-    "ja": "PLACE BAIT HERE"
+    "ja": "ここに餌を置く"
   },
   "GroupInventoryActions": [],
   "CookingConditions": {
@@ -700,7 +700,7 @@
         "Text": "捕捉食草动物",
         "zh": "捕捉食草动物",
         "en": "Catch Herbivore",
-        "ja": "Catch Herbivore"
+        "ja": "草食動物を捕まえる"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -734,7 +734,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -762,7 +762,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -776,7 +776,7 @@
               "Text": "营养",
               "zh": "营养",
               "en": "Nutrition",
-              "ja": "Nutrition"
+              "ja": "栄養"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1027,7 +1027,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 192,
       "DurationRdmVariation": 192,
@@ -1120,7 +1123,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Fox_Wild"
@@ -1373,7 +1376,7 @@
         "Text": "陷阱触发了！",
         "zh": "陷阱触发了！",
         "en": "Trap Triggered!",
-        "ja": "Trap Triggered!"
+        "ja": "罠が発動した！"
       },
       "ScaleDropsPerLiquidQuantity": {
         "Active": false,
@@ -1770,6 +1773,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2151,7 +2155,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2276,6 +2280,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2721,7 +2726,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -2846,6 +2851,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2961,7 +2967,7 @@
         "Text": "捕捉食草动物或杂食动物",
         "zh": "捕捉食草动物或杂食动物",
         "en": "Catch Herbivore or Omnivore",
-        "ja": "Catch Herbivore or Omnivore"
+        "ja": "草食動物または雑食動物を捕まえる"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -2984,7 +2990,7 @@
           "text": "“草食和杂食动物饲料”",
           "icon": "",
           "type": "tag",
-          "count": 70,
+          "count": 66,
           "zh": "草食和杂食动物饲料",
           "en": "Feed for Herbivores and Omnivores",
           "ja": "雑食動物と草食動物の餌",
@@ -3023,7 +3029,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -3049,7 +3055,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -3286,7 +3292,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 192,
       "DurationRdmVariation": 192,
@@ -3379,7 +3388,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Fox_Wild"
@@ -3632,7 +3641,7 @@
         "Text": "陷阱触发了！",
         "zh": "陷阱触发了！",
         "en": "Trap Triggered!",
-        "ja": "Trap Triggered!"
+        "ja": "罠が発動した！"
       },
       "ScaleDropsPerLiquidQuantity": {
         "Active": false,
@@ -4029,6 +4038,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4146,7 +4156,7 @@
                     "Text": "树林",
                     "zh": "树林",
                     "en": "Trees",
-                    "ja": "Trees"
+                    "ja": "木"
                   },
                   "OverrideIcon": {
                     "FileName": "Tree1"
@@ -4160,7 +4170,7 @@
                     "Text": "过度生长",
                     "zh": "过度生长",
                     "en": "Overgrowth",
-                    "ja": "Overgrowth"
+                    "ja": "草木の繁茂 "
                   },
                   "OverrideIcon": {
                     "FileName": "Overgrowth"
@@ -4174,7 +4184,7 @@
                     "Text": "觅食",
                     "zh": "觅食",
                     "en": "Foraging",
-                    "ja": "Foraging"
+                    "ja": "資源集め"
                   },
                   "OverrideIcon": {
                     "FileName": "SaturationBerries"
@@ -4410,7 +4420,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -4535,6 +4545,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -4980,7 +4991,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -5020,7 +5031,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -5105,6 +5116,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -5550,7 +5562,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -5675,6 +5687,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6120,7 +6133,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -6245,6 +6258,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6690,7 +6704,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -6817,6 +6831,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -6932,7 +6947,7 @@
         "Text": "捕捉杂食动物或食肉动物",
         "zh": "捕捉杂食动物或食肉动物",
         "en": "Catch Carnivore or Omnivore",
-        "ja": "Catch Carnivore or Omnivore"
+        "ja": "肉食動物または雑食動物を捕まえる"
       },
       "CustomCookingText": {
         "DefaultText": "",
@@ -6952,13 +6967,13 @@
       "CompatibleTags": [
         {
           "key": "tag_FeedCarniOmni",
-          "text": "“肉食和杂食动物饲料”",
+          "text": "“Feed for Carnivores and Omnivores”",
           "icon": "",
           "type": "tag",
-          "count": 142,
-          "zh": "肉食和杂食动物饲料",
+          "count": 136,
+          "zh": "Feed for Carnivores and Omnivores",
           "en": "Feed for Carnivores and Omnivores",
-          "ja": "肉食動物と雑食動物の餌",
+          "ja": "Feed for Carnivores and Omnivores",
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -7008,7 +7023,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -7050,7 +7065,7 @@
               "Text": "肉部位",
               "zh": "肉部位",
               "en": "Meat Type",
-              "ja": "Meat Type"
+              "ja": "肉の種類"
             },
             "OverrideIcon": null,
             "MaxValue": 100
@@ -7259,7 +7274,10 @@
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
         "RequiredInGameTimes": [],
-        "RequiredAlreadyVisitedEnvironments": []
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": []
       },
       "Duration": 192,
       "DurationRdmVariation": 192,
@@ -7352,7 +7370,7 @@
               "Text": "已赐福",
               "zh": "已赐福",
               "en": "Blessed",
-              "ja": "Blessed"
+              "ja": "加護を受けている"
             },
             "OverrideIcon": {
               "FileName": "Fox_Wild"
@@ -7605,7 +7623,7 @@
         "Text": "陷阱触发了！",
         "zh": "陷阱触发了！",
         "en": "Trap Triggered!",
-        "ja": "Trap Triggered!"
+        "ja": "罠が発動した！"
       },
       "ScaleDropsPerLiquidQuantity": {
         "Active": false,
@@ -8002,6 +8020,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -8119,7 +8138,7 @@
                     "Text": "树林",
                     "zh": "树林",
                     "en": "Trees",
-                    "ja": "Trees"
+                    "ja": "木"
                   },
                   "OverrideIcon": {
                     "FileName": "Tree1"
@@ -8133,7 +8152,7 @@
                     "Text": "过度生长",
                     "zh": "过度生长",
                     "en": "Overgrowth",
-                    "ja": "Overgrowth"
+                    "ja": "草木の繁茂 "
                   },
                   "OverrideIcon": {
                     "FileName": "Overgrowth"
@@ -8147,7 +8166,7 @@
                     "Text": "觅食",
                     "zh": "觅食",
                     "en": "Foraging",
-                    "ja": "Foraging"
+                    "ja": "資源集め"
                   },
                   "OverrideIcon": {
                     "FileName": "SaturationBerries"
@@ -8383,7 +8402,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -8508,6 +8527,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -8953,7 +8973,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -8993,7 +9013,7 @@
                     "Text": "品质",
                     "zh": "品质",
                     "en": "Quality",
-                    "ja": "Quality"
+                    "ja": "質"
                   },
                   "OverrideIcon": {
                     "FileName": "Quality"
@@ -9078,6 +9098,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -9523,7 +9544,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -9648,6 +9669,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -10072,7 +10094,7 @@
                     "Text": "已消耗",
                     "zh": "已消耗",
                     "en": "Consumed",
-                    "ja": "Consumed"
+                    "ja": "使い切った"
                   },
                   "OverrideIcon": {
                     "FileName": "Bacteria"
@@ -10199,6 +10221,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -10511,7 +10534,7 @@
     "Text": "适于捕捉大型猎物。需要诱饵。\\n\\n<b>（更换诱饵会重置陷阱）</b>",
     "zh": "适于捕捉大型猎物。需要诱饵。\\n\\n<b>（更换诱饵会重置陷阱）</b>",
     "en": "Useful for catching large prey. Needs bait to work.\\n\\n<b>(changing bait resets trap)</b>",
-    "ja": "Useful for catching large prey. Needs bait to work.\n\n<b>(changing bait resets trap)</b>"
+    "ja": "大きい動物を捕まえる罠。餌が必要。\\n\\n<b>（餌を変えるとリセットされる）</b>"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -10543,6 +10566,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -10728,8 +10755,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -10864,7 +10899,7 @@
         "Text": "拆除陷阱",
         "zh": "拆除陷阱",
         "en": "Disassemble trap",
-        "ja": "Disassemble trap"
+        "ja": "罠を解体する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -10899,6 +10934,10 @@
       "StackCompatible": false,
       "DaytimeCost": 2,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [
@@ -10906,7 +10945,7 @@
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1450,
+          "count": 1460,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -10914,7 +10953,7 @@
               "Text": "变质",
               "zh": "变质",
               "en": "Spoilage",
-              "ja": "Spoilage"
+              "ja": "腐敗物"
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -10928,7 +10967,7 @@
               "Text": "温度",
               "zh": "温度",
               "en": "Temperature",
-              "ja": "Temperature"
+              "ja": "温度"
             },
             "OverrideIcon": {
               "FileName": "Hot"
@@ -10942,7 +10981,7 @@
               "Text": "烹饪",
               "zh": "烹饪",
               "en": "Cook",
-              "ja": "Cook"
+              "ja": "焼く"
             },
             "OverrideIcon": {
               "FileName": "Cooking"
@@ -10956,7 +10995,7 @@
               "Text": "品质",
               "zh": "品质",
               "en": "Quality",
-              "ja": "Quality"
+              "ja": "質"
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -11386,6 +11425,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -11770,7 +11810,7 @@
       "localization": {
         "zh": "动作：赐福",
         "en": "Action: Bless",
-        "ja": "アクション：Bless"
+        "ja": "アクション：加護を授ける"
       }
     }
   ],

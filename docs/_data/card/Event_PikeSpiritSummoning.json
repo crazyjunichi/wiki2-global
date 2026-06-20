@@ -6,8 +6,8 @@
   "type": "card",
   "zh": "召唤仪式",
   "en": "Summoning Ritual",
-  "ja": "Summoning Ritual",
-  "UniqueIDIndex": 1152,
+  "ja": "召喚の儀式",
+  "UniqueIDIndex": 1193,
   "CardType": 3,
   "CardTags": [],
   "CardName": {
@@ -15,7 +15,7 @@
     "Text": "召唤仪式",
     "zh": "召唤仪式",
     "en": "Summoning Ritual",
-    "ja": "Summoning Ritual"
+    "ja": "召喚の儀式"
   },
   "CardImage": {
     "FileName": "Pike"
@@ -343,7 +343,7 @@
               "Text": "精魄",
               "zh": "精魄",
               "en": "Spirit",
-              "ja": "Spirit"
+              "ja": "精霊"
             },
             "OverrideIcon": {
               "FileName": "Insight"
@@ -1349,7 +1349,7 @@
     "Text": "由此，精魄暂时与你的灵魂绑定。",
     "zh": "由此，精魄暂时与你的灵魂绑定。",
     "en": "Where a spirit is temporarily bound to your soul.",
-    "ja": "Where a spirit is temporarily bound to your soul."
+    "ja": "精霊を一時的に魂へ結びつける儀式。"
   },
   "CanBeRenamed": false,
   "AlternateNames": [],
@@ -1381,6 +1381,10 @@
   "InHandWhenEquipped": false,
   "InstancedEnvironment": false,
   "UniqueOnBoard": false,
+  "MaxQuantityInEnvironment": {
+    "Active": false,
+    "IntValue": 0
+  },
   "SpawningBlockedBy": [],
   "CannotSpawnWithoutPlayerPresent": false,
   "CannotSpawnDuringTickCatchup": false,
@@ -1566,8 +1570,16 @@
   "BlueprintStages": [],
   "BuildingDaytimeCost": 0,
   "BuildingMiniTicks": 0,
+  "BuildingMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "DeconstructDaytimeCost": 0,
   "DeconstructMiniTicks": 0,
+  "DeconstructMinDuration": {
+    "Active": false,
+    "IntValue": 0
+  },
   "BlueprintActionTags": [],
   "BPRandomSingleDrop": false,
   "BlueprintDoesntCountForEnvWeight": false,
@@ -1702,7 +1714,7 @@
         "Text": "融合",
         "zh": "融合",
         "en": "Bind",
-        "ja": "Bind"
+        "ja": "結び付ける"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -1737,6 +1749,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -2113,7 +2129,7 @@
                 "CardType": 3,
                 "zh": "狗鱼精魄(召唤失败)",
                 "en": "Pike Spirit",
-                "ja": "Pike Spirit",
+                "ja": "カワカマスの精霊",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2264,6 +2280,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2503,7 +2520,7 @@
                 "CardType": 3,
                 "zh": "召唤仪式(召唤成功)",
                 "en": "Summoning Ritual",
-                "ja": "Summoning Ritual",
+                "ja": "召喚の儀式",
                 "SpoilageTime": {
                   "Active": false,
                   "CardStatName": {
@@ -2654,6 +2671,7 @@
           "DroppedIfNoBpIngredient": [],
           "DropCardsInsideInventory": false,
           "DropCardsInPlayerHand": false,
+          "IgnoreEnvironmentQuantityLimits": false,
           "DroppedEncounter": null,
           "EncounterNPC": null,
           "SkipEncounterEvent": false,
@@ -2888,7 +2906,7 @@
         "Text": "忽略",
         "zh": "忽略",
         "en": "Ignore",
-        "ja": "Ignore"
+        "ja": "無視する"
       },
       "ActionDescription": {
         "DefaultText": "",
@@ -2923,6 +2941,10 @@
       "StackCompatible": false,
       "DaytimeCost": 0,
       "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
       "ActionSounds": [],
       "DisablePitchVariation": false,
       "ActionTags": [],
@@ -3496,7 +3518,7 @@
         "CardType": 7,
         "zh": "召唤仪式",
         "en": "Summoning Ritual",
-        "ja": "Summoning Ritual"
+        "ja": "召喚の儀式"
       },
       "localization": {
         "zh": "蓝图制作",
