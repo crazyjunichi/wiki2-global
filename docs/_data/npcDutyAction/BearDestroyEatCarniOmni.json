@@ -5,7 +5,174 @@
   "RequiredForSelectingDuty": true,
   "m_GameObject": null,
   "m_Enabled": 1,
-  "SimpleItemPool": [],
+  "SimpleItemPool": [
+    {
+      "Target": {
+        "Target": {
+          "key": "tag_FeedCarniOmni",
+          "text": "“Feed for Carnivores and Omnivores”",
+          "icon": "",
+          "type": "tag",
+          "count": 136,
+          "zh": "肉食性和杂食性饲料",
+          "en": "Feed for Carnivores and Omnivores",
+          "ja": "Feed for Carnivores and Omnivores",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 300
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Drying",
+              "Text": "干燥",
+              "zh": "干燥",
+              "en": "Drying",
+              "ja": "乾燥中"
+            },
+            "OverrideIcon": {
+              "FileName": "Hammer"
+            },
+            "MaxValue": 24
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Temperature",
+              "Text": "温度",
+              "zh": "温度",
+              "en": "Temperature",
+              "ja": "温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spirit",
+              "Text": "精魄",
+              "zh": "精魄",
+              "en": "Spirit",
+              "ja": "精霊"
+            },
+            "OverrideIcon": {
+              "FileName": "Insight"
+            },
+            "MaxValue": 1
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Burned",
+              "Text": "烤焦的",
+              "zh": "烤焦的",
+              "en": "Burned",
+              "ja": "焦げた"
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 8
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Meat Type",
+              "Text": "肉部位",
+              "zh": "肉部位",
+              "en": "Meat Type",
+              "ja": "肉の種類"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 100
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Boil",
+              "Text": "烹煮",
+              "zh": "烹煮",
+              "en": "Boil",
+              "ja": "Boil"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
+          }
+        },
+        "RequiredDurabilities": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      "Quantity": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
   "ItemModification": {
     "ModType": 3,
     "TransformInto": null,
@@ -118,7 +285,7 @@
   },
   "SearchPriority": 0,
   "Containers": {
-    "CanLookInContainers": false,
+    "CanLookInContainers": true,
     "ContainerRequiredDurabilities": {
       "SpoilageRange": {
         "x": 0,
@@ -157,7 +324,100 @@
         "y": 0
       }
     },
-    "AllowedContainers": [],
+    "AllowedContainers": [
+      {
+        "Target": {
+          "key": "tag_NotSafeFromBears",
+          "text": "“Used for containers that the bear can eat from”",
+          "icon": "",
+          "type": "tag",
+          "count": 29,
+          "zh": "不安全(熊)",
+          "en": "Used for containers that the bear can eat from",
+          "ja": "Used for containers that the bear can eat from",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "耐久",
+              "zh": "耐久",
+              "en": "Spoilage",
+              "ja": "腐敗"
+            },
+            "OverrideIcon": {
+              "FileName": "Spoilage"
+            },
+            "MaxValue": 11520
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Container Temperature",
+              "Text": "容器温度",
+              "zh": "容器温度",
+              "en": "Container Temperature",
+              "ja": "容器の温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Flood Damage",
+              "Text": "洪水损害",
+              "zh": "洪水损害",
+              "en": "Flood Damage",
+              "ja": "洪水の被害"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Common Fish Population",
+              "Text": "常见鱼类种群",
+              "zh": "常见鱼类种群",
+              "en": "Common Fish Population",
+              "ja": "コモンな魚の数"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 10000
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Blessed",
+              "Text": "已赐福",
+              "zh": "已赐福",
+              "en": "Blessed",
+              "ja": "加護を受けている"
+            },
+            "OverrideIcon": {
+              "FileName": "Snowflake_Old"
+            },
+            "MaxValue": 672
+          }
+        }
+      }
+    ],
     "NOTAllowedContainers": []
   },
   "CanAffectPlayerHand": false

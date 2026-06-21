@@ -1,1 +1,0 @@
-import{n,x as s,y as o}from"./TLiix_Tp.js";const m=n({__name:"test",async setup(r){let e,t;const a=([e,t]=s(()=>o("card/River")),e=await e,t(),e);return console.log(a),(_,c)=>null}});export{m as default};
