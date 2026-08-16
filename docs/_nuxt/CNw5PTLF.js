@@ -1,0 +1,32 @@
+import{_ as V}from"./CYF4LgNn.js";import{_ as S}from"./Bqrv0KOv.js";import{i as _}from"./Brd0kxXE.js";import{g,c as n,o as a,r as p,d as s,t as l,F as b,j as i,v as r,k as c,q as $,I as h,R as k,S as v,m as u}from"./m5P1JxQP.js";import{_ as j}from"./DWNtoF1z.js";import{_ as R}from"./Cw3dMrJi.js";const A={key:0},E={key:1,class:"bg-current/20 border border-current/50 rounded px-1.5 py-0.5 mx-0.5 text-sm"},w={key:2,class:"bg-current/20 border border-current/50 rounded px-1.5 py-0.5 mx-0.5 text-sm"},P=g({__name:"SmallChip",props:{text:{},withContent:{type:Boolean}},setup(e){return(t,o)=>!t.text&&!t.withContent?(a(),n("span",A)):t.withContent?(a(),n("span",E,[p(t.$slots,"default")])):(a(),n("span",w,[s("span",null,l(t.text??""),1),p(t.$slots,"default")]))}}),q=Object.assign(P,{__name:"SmallChip"});function O(e){switch(e){case 0:return"继续战斗";case 1:return"击败敌人";case 2:return"敌人逃跑";case 3:return"玩家逃跑";case 4:return"Special1";case 5:return"Special2";case 6:return"Special3";case 7:return"Special4";case 8:return"玩家士气低落"}return""}const B={key:0},W={class:"text-xs"},N=g({__name:"PlayerEncounterVariable",props:{obj:{}},setup(e){return(t,o)=>{const d=V,m=S;return a(),n(b,null,[i(d,{obj:t.obj.Stat},null,8,["obj"]),t.obj.AddedValue.InterpolatedAddedValue.Active?(a(),n(b,{key:0},[i(m,{obj:t.obj.AddedValue.InterpolatedAddedValue,joiner:t.$t("时增加")},null,8,["obj","joiner"]),c(_)(t.obj.AddedValue.RandomAddedValue)?r("",!0):(a(),n("span",B,[s("span",W,"（随机值："+l(t.obj.AddedValue.RandomAddedValue.x)+" - "+l(t.obj.AddedValue.RandomAddedValue.y)+"）",1)]))],64)):r("",!0)],64)}}}),ue=Object.assign(N,{__name:"PlayerEncounterVariable"});function D(e){switch(e){case 0:return"近身";case 1:return"远距离";case 2:return""}return""}function f(e,t=""){switch(e){case 0:return"";case 1:return t+"脆弱中";case 2:return t+"非脆弱"}return""}function I(e){switch(e){case 0:return"";case 1:return"缠斗中";case 2:return"非缠斗中"}return""}function T(e,t){switch(t){case 0:return e.MeleeSkill;case 1:return e.RangedSkill;case 2:return e.Blood;case 3:return e.Stamina;case 4:return e.Morale;case 5:return e.Value1;case 6:return e.Value2;case 7:return e.Value3;case 8:return e.Value4}}const F={key:0},G={class:"flex"},z={class:"text-durability"},L={key:1},M={key:2},U={key:0},H={key:3},J={key:0},K={key:4},Q={key:5},X={class:"text-right text-sm text-current/30"},Y=g({__name:"GenericEncounterPlayerAction",props:{action:{},encounter:{}},setup(e){return(t,o)=>{const d=q,m=j,C=R;return a(),n(b,null,[t.action.CannotFailClash?(a(),n("div",F,"必定成功")):r("",!0),s("div",G,[o[0]||(o[0]=s("div",null,"条件：",-1)),s("div",null,[i(d,{text:c(D)(t.action.RequiredDistance)},null,8,["text"]),i(d,{text:c(I)(t.action.RequiredWrestlingState)},null,8,["text"]),i(d,{text:c(f)(t.action.RequiredSelfVulnerableState,"玩家")},null,8,["text"]),i(d,{text:c(f)(t.action.RequiredOpponentVulnerableState,"自身")},null,8,["text"])]),i(m,{obj:t.action.RequiredConditions},null,8,["obj"]),t.action.RequiredEncounterValues.length>0?(a(!0),n(b,{key:0},$(t.action.RequiredEncounterValues,y=>(a(),n("div",null,[s("span",z,l(c(T)(t.encounter,y.Value).Name),1),i(C,{obj:y.ConditionRange},null,8,["obj"])]))),256)):r("",!0)]),t.action.WrestlingStateChange.WrestlingStateChange>0?(a(),n("div",L,[s("span",null,l(["","[成功时] ","[失败时] ",""][t.action.WrestlingStateChange.ChangeApplies]),1),o[1]||(o[1]=h(" 变为")),i(d,{text:t.action.WrestlingStateChange.WrestlingStateChange==1?"缠斗中":"未缠斗"},null,8,["text"])])):r("",!0),t.action.SelfVulnerableStateChange.Change>0?(a(),n("div",M,[s("span",null,l(["","[成功时] ","[失败时] ",""][t.action.SelfVulnerableStateChange.Change]),1),t.action.SelfVulnerableStateChange.PercentageChance.UseChance?(a(),n("span",U,l(t.action.SelfVulnerableStateChange.PercentageChance.ChanceValue*100)+"%几率 ",1)):r("",!0),o[2]||(o[2]=h(" 变为")),i(d,{text:"脆弱"})])):r("",!0),t.action.OpponentVulnerableStateChange.Change>0?(a(),n("div",H,[s("span",null,l(["","[成功时] ","[失败时] ",""][t.action.OpponentVulnerableStateChange.Change]),1),o[3]||(o[3]=h(" "+l("玩家")+" ")),t.action.OpponentVulnerableStateChange.PercentageChance.UseChance?(a(),n("span",J,l(t.action.OpponentVulnerableStateChange.PercentageChance.ChanceValue*100)+"%几率 ",1)):r("",!0),o[4]||(o[4]=h(" 变为")),i(d,{text:"脆弱"})])):r("",!0),t.action.PreClashDistanceChange>0?(a(),n("div",K,[s("span",null,l(["","增加距离","减小距离"][t.action.PreClashDistanceChange]),1)])):r("",!0),t.action.EncounterResult?(a(),n("div",Q,[s("div",X," -> "+l(c(O)(t.action.EncounterResult)),1)])):r("",!0)],64)}}}),ce=Object.assign(Y,{__name:"GenericEncounterPlayerAction"});var Z=`
+    .p-card {
+        background: dt('card.background');
+        color: dt('card.color');
+        box-shadow: dt('card.shadow');
+        border-radius: dt('card.border.radius');
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-card-caption {
+        display: flex;
+        flex-direction: column;
+        gap: dt('card.caption.gap');
+    }
+
+    .p-card-body {
+        padding: dt('card.body.padding');
+        display: flex;
+        flex-direction: column;
+        gap: dt('card.body.gap');
+    }
+
+    .p-card-title {
+        font-size: dt('card.title.font.size');
+        font-weight: dt('card.title.font.weight');
+    }
+
+    .p-card-subtitle {
+        color: dt('card.subtitle.color');
+    }
+`,x={root:"p-card p-component",header:"p-card-header",body:"p-card-body",caption:"p-card-caption",title:"p-card-title",subtitle:"p-card-subtitle",content:"p-card-content",footer:"p-card-footer"},ee=k.extend({name:"card",style:Z,classes:x}),te={name:"BaseCard",extends:v,style:ee,provide:function(){return{$pcCard:this,$parentInstance:this}}},ne={name:"Card",extends:te,inheritAttrs:!1};function ae(e,t,o,d,m,C){return a(),n("div",u({class:e.cx("root")},e.ptmi("root")),[e.$slots.header?(a(),n("div",u({key:0,class:e.cx("header")},e.ptm("header")),[p(e.$slots,"header")],16)):r("",!0),s("div",u({class:e.cx("body")},e.ptm("body")),[e.$slots.title||e.$slots.subtitle?(a(),n("div",u({key:0,class:e.cx("caption")},e.ptm("caption")),[e.$slots.title?(a(),n("div",u({key:0,class:e.cx("title")},e.ptm("title")),[p(e.$slots,"title")],16)):r("",!0),e.$slots.subtitle?(a(),n("div",u({key:1,class:e.cx("subtitle")},e.ptm("subtitle")),[p(e.$slots,"subtitle")],16)):r("",!0)],16)):r("",!0),s("div",u({class:e.cx("content")},e.ptm("content")),[p(e.$slots,"content")],16),e.$slots.footer?(a(),n("div",u({key:1,class:e.cx("footer")},e.ptm("footer")),[p(e.$slots,"footer")],16)):r("",!0)],16)],16)}ne.render=ae;export{ue as _,ce as a,q as b,T as c,D as d,I as e,f,O as g,ne as s};

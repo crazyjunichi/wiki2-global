@@ -192,18 +192,21 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "Line": {
     "DefaultText": "\" There is no beast you cannot track. We will help you find it.\"\n\nYou notice the beast's tracks, faintly glowing under the moonlight.\nYour heart knows how to find it.",
     "Text": "“没有野兽是你不可追踪的。我们会帮你找到它。”\\n\\n你注意到野兽的踪迹，在月光下隐隐发亮。\\n野兽的方位已了然于心。",
     "zh": "“没有野兽是你不可追踪的。我们会帮你找到它。”\\n\\n你注意到野兽的踪迹，在月光下隐隐发亮。\\n野兽的方位已了然于心。",
     "en": "\" There is no beast you cannot track. We will help you find it.\"\\n\\nYou notice the beast's tracks, faintly glowing under the moonlight.\\nYour heart knows how to find it.",
-    "ja": "\" There is no beast you cannot track. We will help you find it.\"\n\nYou notice the beast's tracks, faintly glowing under the moonlight.\nYour heart knows how to find it."
+    "ja": "「追えぬ獣など存在しない。\\n私たちがその道を示そう」\\n\\n獣の足跡が月光の下で淡く輝いている。\\nどう追えばよいのかを、心はすでに知っていた。"
   },
   "OverrideSpeakerName": {
     "Active": false,
@@ -275,6 +278,8 @@
       }
     ],
     "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "NPCSetHome": [],
     "DroppedCards": [],
     "BlueprintsFullUnlock": [
       {
@@ -391,7 +396,9 @@
     "StartTrading": false,
     "SpendTicks": false,
     "Ticks": 0,
-    "Miniticks": 0
+    "Miniticks": 0,
+    "SpawnNPCS": [],
+    "DeleteNPCS": []
   },
   "LeftSide": {
     "SideName": {
@@ -427,6 +434,9 @@
   "OverrideSceneImage": {
     "FileName": "MoonMaiden"
   },
+  "UseWeightsForNextStep": false,
+  "NextStepsWithWeights": [],
+  "ShowContinueButton": 0,
   "m_GameObject": null,
   "m_Enabled": 1,
   "TextSettings": {

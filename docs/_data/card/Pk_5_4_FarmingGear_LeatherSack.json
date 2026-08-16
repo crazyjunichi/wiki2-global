@@ -7,7 +7,7 @@
   "zh": "皮革包(专有)",
   "en": "Leather Sack(Pk)",
   "ja": "革の袋",
-  "UniqueIDIndex": 2176,
+  "UniqueIDIndex": 2177,
   "CardType": 0,
   "CardTags": [
     {
@@ -740,6 +740,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -931,6 +932,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -942,6 +944,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -955,6 +958,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2847,7 +2852,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3195,7 +3200,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3285,7 +3290,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3365,7 +3370,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3485,7 +3490,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3579,7 +3584,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -3669,7 +3674,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -6337,7 +6342,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -6461,13 +6466,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6831,7 +6840,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -6916,7 +6925,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -6941,6 +6950,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

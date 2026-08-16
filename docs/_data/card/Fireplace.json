@@ -1202,6 +1202,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1393,6 +1394,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1598,6 +1600,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1611,6 +1614,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2167,6 +2172,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -2358,6 +2364,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2718,6 +2725,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2731,6 +2739,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3094,6 +3104,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -3285,6 +3296,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -3334,6 +3346,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -3347,6 +3360,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3987,6 +4002,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -4178,6 +4194,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4227,6 +4244,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4240,6 +4258,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4882,7 +4902,206 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
-      "ActionTags": [],
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_Firekeeping",
+            "icon": "",
+            "type": "npc",
+            "zh": "Fire keeping",
+            "en": "Fire keeping",
+            "ja": "Fire keeping"
+          }
+        }
+      ],
+      "ActionTags": [
+        {
+          "key": "RefuelAction",
+          "text": "RefuelAction",
+          "type": "tag",
+          "count": 13,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "zh": "RefuelAction",
+          "en": "RefuelAction",
+          "ja": "RefuelAction"
+        },
+        {
+          "key": "PartnerAction1",
+          "text": "PartnerAction1",
+          "type": "tag",
+          "count": 17,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction1",
+          "en": "PartnerAction1",
+          "ja": "PartnerAction1"
+        }
+      ],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredCardsOnBoard": [],
@@ -5073,6 +5292,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -5122,6 +5342,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -5135,6 +5356,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6036,7 +6259,206 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
-      "ActionTags": [],
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_Firekeeping",
+            "icon": "",
+            "type": "npc",
+            "zh": "Fire keeping",
+            "en": "Fire keeping",
+            "ja": "Fire keeping"
+          }
+        }
+      ],
+      "ActionTags": [
+        {
+          "key": "RefuelAction",
+          "text": "RefuelAction",
+          "type": "tag",
+          "count": 13,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "zh": "RefuelAction",
+          "en": "RefuelAction",
+          "ja": "RefuelAction"
+        },
+        {
+          "key": "PartnerAction2",
+          "text": "PartnerAction2",
+          "type": "tag",
+          "count": 17,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction2",
+          "en": "PartnerAction2",
+          "ja": "PartnerAction2"
+        }
+      ],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredCardsOnBoard": [],
@@ -6227,6 +6649,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -6276,6 +6699,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -6289,6 +6713,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6925,7 +7351,206 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
-      "ActionTags": [],
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_Firekeeping",
+            "icon": "",
+            "type": "npc",
+            "zh": "Fire keeping",
+            "en": "Fire keeping",
+            "ja": "Fire keeping"
+          }
+        }
+      ],
+      "ActionTags": [
+        {
+          "key": "RefuelAction",
+          "text": "RefuelAction",
+          "type": "tag",
+          "count": 13,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "zh": "RefuelAction",
+          "en": "RefuelAction",
+          "ja": "RefuelAction"
+        },
+        {
+          "key": "PartnerAction3",
+          "text": "PartnerAction3",
+          "type": "tag",
+          "count": 12,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction3",
+          "en": "PartnerAction3",
+          "ja": "PartnerAction3"
+        }
+      ],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredCardsOnBoard": [],
@@ -7116,6 +7741,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -7165,6 +7791,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -7178,6 +7805,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -7813,7 +8442,85 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
-      "ActionTags": [],
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_Firekeeping",
+            "icon": "",
+            "type": "npc",
+            "zh": "Fire keeping",
+            "en": "Fire keeping",
+            "ja": "Fire keeping"
+          }
+        }
+      ],
+      "ActionTags": [
+        {
+          "key": "RefuelAction",
+          "text": "RefuelAction",
+          "type": "tag",
+          "count": 13,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "zh": "RefuelAction",
+          "en": "RefuelAction",
+          "ja": "RefuelAction"
+        }
+      ],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
       "RequiredCardsOnBoard": [],
@@ -8004,6 +8711,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8053,6 +8761,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8066,6 +8775,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -8607,6 +9318,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -8798,6 +9510,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8847,6 +9560,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8860,6 +9574,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -9603,6 +10319,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -9794,6 +10511,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -9843,6 +10561,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -9856,6 +10575,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -10602,6 +11323,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -10793,6 +11515,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -10879,6 +11602,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -10892,6 +11616,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -11638,6 +12364,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -11829,6 +12556,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -11878,6 +12606,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -11891,6 +12620,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -12616,6 +13347,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -12807,6 +13539,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -12893,6 +13626,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -12906,6 +13640,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -14923,11 +15659,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -15496,11 +16235,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -16081,11 +16823,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 2,
       "DurationRdmVariation": 0,
@@ -16772,11 +17517,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -18488,11 +19236,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -19199,11 +19950,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -19718,11 +20472,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -20209,11 +20966,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Duration": 1,
       "DurationRdmVariation": 0,
@@ -21254,6 +22014,43 @@
       "InstantModifier": false,
       "IgnoreNovelty": false,
       "IsInverse": false
+    },
+    {
+      "Stat": {
+        "key": "Mosquitoes",
+        "icon": "Bugs_Old",
+        "type": "stat",
+        "zh": "蚊子",
+        "en": "Mosquitoes",
+        "ja": "蚊",
+        "max": 6,
+        "min": 0
+      },
+      "ValueModifier": {
+        "x": -1,
+        "y": -1
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "MinValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "MaxValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "CannotModifyBeyond": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0
+      },
+      "ApplyEachTick": false,
+      "InstantModifier": false,
+      "IgnoreNovelty": false,
+      "IsInverse": false
     }
   ],
   "PassiveEffects": [
@@ -21471,11 +22268,14 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -21516,6 +22316,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -21825,11 +22626,14 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -21870,6 +22674,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -22160,11 +22965,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -22242,6 +23050,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 1,
       "EffectScalesWithDurabilities": {
@@ -22532,11 +23341,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -22614,6 +23426,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 1,
       "EffectScalesWithDurabilities": {
@@ -22904,11 +23717,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -22949,6 +23765,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 1,
       "EffectScalesWithDurabilities": {
@@ -23321,6 +24138,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -23512,6 +24330,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -23912,6 +24731,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -23925,6 +24745,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -24140,6 +24962,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -24331,6 +25154,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -24342,6 +25166,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -24355,6 +25180,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -24680,7 +25507,74 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
-      "ActionTags": [],
+      "CompatibleNPCDuties": [],
+      "ActionTags": [
+        {
+          "key": "WarmUpAction",
+          "text": "WarmUpAction",
+          "type": "tag",
+          "count": 2,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "zh": "WarmUpAction",
+          "en": "WarmUpAction",
+          "ja": "WarmUpAction"
+        }
+      ],
       "RequiredStatValues": [
         {
           "Stat": {
@@ -24890,6 +25784,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -25235,6 +26130,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -25248,6 +26144,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -25463,6 +26361,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -25673,6 +26572,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -25907,6 +26807,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -25920,6 +26821,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -26130,7 +27033,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -26215,7 +27118,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -26240,6 +27143,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_Firekeeping",
+      "icon": "",
+      "type": "npc",
+      "zh": "Fire keeping",
+      "en": "Fire keeping",
+      "ja": "Fire keeping"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

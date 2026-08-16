@@ -3015,7 +3015,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -3339,11 +3339,11 @@
         "SpecialDurability2": {
           "Active": false,
           "CardStatName": {
-            "DefaultText": "Quality",
+            "DefaultText": "",
             "Text": "品质",
-            "zh": "品质",
-            "en": "Quality",
-            "ja": "Quality"
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
           },
           "OverrideIcon": {
             "FileName": "Quality"
@@ -3610,6 +3610,43 @@
       "InstantModifier": false,
       "IgnoreNovelty": false,
       "IsInverse": false
+    },
+    {
+      "Stat": {
+        "key": "BeaverUrge",
+        "icon": "Beaver_Wild",
+        "type": "stat",
+        "zh": "河狸本能",
+        "en": "Beaver Urge",
+        "ja": "Beaver Urge",
+        "max": 96,
+        "min": 0
+      },
+      "ValueModifier": {
+        "x": -96,
+        "y": -96
+      },
+      "RateModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "MinValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "MaxValueModifier": {
+        "x": 0,
+        "y": 0
+      },
+      "CannotModifyBeyond": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0
+      },
+      "ApplyEachTick": true,
+      "InstantModifier": false,
+      "IgnoreNovelty": false,
+      "IsInverse": false
     }
   ],
   "BlueprintCardModifications": [],
@@ -3775,7 +3812,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -3860,7 +3897,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -3885,6 +3922,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

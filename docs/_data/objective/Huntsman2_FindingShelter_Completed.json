@@ -7,7 +7,7 @@
   "zh": "找到庇护所",
   "en": "Finding Shelter",
   "ja": "ねぐらを確保する",
-  "UniqueIDIndex": 3555,
+  "UniqueIDIndex": 3567,
   "StartUnlocked": false,
   "ActionObjectives": [],
   "CardsOnBoardObjectives": [],
@@ -28,7 +28,7 @@
         "en": "Research Improvised Shelter",
         "ja": "手作りシェルターを研究する",
         "UniqueID": "1a9912f655639f741926c2309af7f152",
-        "UniqueIDIndex": 3558,
+        "UniqueIDIndex": 3570,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [],
@@ -194,7 +194,7 @@
         "en": "Dig up Pine Roots",
         "ja": "松の根を掘り起こす",
         "UniqueID": "155804b046986f541b01599593303b2b",
-        "UniqueIDIndex": 3559,
+        "UniqueIDIndex": 3571,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -407,7 +407,7 @@
         "en": "Make some Twine from Pine Roots",
         "ja": "松の根からより糸を作る",
         "UniqueID": "910f3c3929602e545adab1c14ec81dbf",
-        "UniqueIDIndex": 3560,
+        "UniqueIDIndex": 3572,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -650,7 +650,7 @@
         "en": "Build an Improvised Shelter",
         "ja": "手作りシェルターを作る",
         "UniqueID": "c87765ed348edb247bb0f5416eeaae9e",
-        "UniqueIDIndex": 3561,
+        "UniqueIDIndex": 3573,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -716,16 +716,16 @@
                 "MaxValue": 0
               },
               "SpecialDurability1": {
-                "Active": false,
+                "Active": true,
                 "CardStatName": {
-                  "DefaultText": "",
-                  "Text": "SpecialDurability1",
-                  "zh": "特殊1",
-                  "en": "Special1",
-                  "ja": ""
+                  "DefaultText": "Being Used",
+                  "Text": "Being Used",
+                  "zh": "Being Used",
+                  "en": "Being Used",
+                  "ja": "Being Used"
                 },
                 "OverrideIcon": null,
-                "MaxValue": 0
+                "MaxValue": 1
               },
               "SpecialDurability2": {
                 "Active": false,
@@ -923,6 +923,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1114,6 +1115,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1474,6 +1476,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1487,6 +1490,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],

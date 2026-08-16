@@ -7,7 +7,7 @@
   "zh": "荒芜诅咒",
   "en": "Barren Curse",
   "ja": "不毛の呪い",
-  "UniqueIDIndex": 2701,
+  "UniqueIDIndex": 2702,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -338,6 +338,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -529,6 +530,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -540,6 +542,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -553,6 +556,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -9683,7 +9688,7 @@
             "OverrideIcon": {
               "FileName": "Health"
             },
-            "MaxValue": 1344
+            "MaxValue": 672
           },
           "UsageDurability": {
             "Active": true,
@@ -10957,11 +10962,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": false,
       "CheckConditionsOnEveryTarget": false,
@@ -11134,7 +11142,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     }
   ],
   "ActiveCounters": [],
@@ -11403,7 +11412,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -11488,7 +11497,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -11513,6 +11522,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

@@ -6,7 +6,7 @@
   "zh": "老巫",
   "en": "Hag",
   "ja": "Hag",
-  "UniqueIDIndex": 2865,
+  "UniqueIDIndex": 2867,
   "AgentName": {
     "DefaultText": "Hag",
     "Text": "老巫",
@@ -288,12 +288,14 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [
           {
             "TimeType": 0,
             "CompareType": 0,
             "StartValue": 22,
-            "EndValue": 4,
+            "EndValue": 2,
             "MomentOfDayValue": {
               "MaskValue": 0
             },
@@ -305,7 +307,8 @@
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifications": [],
       "NPCStatModifications": [],
@@ -552,7 +555,9 @@
         "NPCStatsToTrackDurabilities": []
       },
       "TriggerHidingGroups": [],
-      "DropCardsEvenIfHiding": false
+      "DropCardsEvenIfHiding": false,
+      "SpawnNPCS": [],
+      "DeleteNPCs": []
     },
     {
       "ActionID": "Go to Spirit World",
@@ -764,6 +769,8 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [
           {
             "TimeType": 0,
@@ -781,7 +788,8 @@
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifications": [],
       "NPCStatModifications": [],
@@ -915,7 +923,9 @@
         "NPCStatsToTrackDurabilities": []
       },
       "TriggerHidingGroups": [],
-      "DropCardsEvenIfHiding": false
+      "DropCardsEvenIfHiding": false,
+      "SpawnNPCS": [],
+      "DeleteNPCs": []
     }
   ],
   "MaxCarryWeight": 1,
@@ -1105,11 +1115,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "StartingInventory": [],
   "TradingModifiers": [],
@@ -1310,11 +1323,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "ButtonType": 0,
       "Dialog": {
@@ -1476,41 +1492,11 @@
         "UseAssociatedAgent": true,
         "TargetAgent": null,
         "TargetStat": {
-          "m_Name": "AgentBlood",
           "key": "AgentBlood",
           "type": "durability",
           "zh": "血量",
           "en": "AgentBlood",
-          "ja": "Agent Stamina",
-          "GameName": {
-            "DefaultText": "Agent Stamina",
-            "Text": "血量",
-            "zh": "血量",
-            "en": "AgentBlood",
-            "ja": "Agent Stamina"
-          },
-          "DefaultStartingValue": 100,
-          "DefaultMinMaxValue": {
-            "x": 0,
-            "y": 10000
-          },
-          "DefaultRate": 0,
-          "DefaultMinMaxRate": {
-            "x": 0,
-            "y": 0
-          },
-          "StatVisibleIcon": null,
-          "HidingOptions": 0,
-          "TextDisplay": 0,
-          "NumberPrecision": 0,
-          "StatScalingToModifiers": [],
-          "NPCStatScalingToModifiers": [],
-          "name": "血量",
-          "desc": "Agent Stamina",
-          "m_GameObject": null,
-          "m_Enabled": 1,
-          "UniqueID": "f2c3d787896b6874c9974806acbe757a",
-          "UniqueIDIndex": 2891
+          "ja": "Agent Stamina"
         },
         "OutputDurability": 32,
         "Value": {
@@ -1795,11 +1781,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -1877,6 +1866,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -2174,14 +2164,441 @@
       }
     ],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
+  },
+  "AlliedWithPlayer": false,
+  "HasActionOnDelete": false,
+  "OnDeleteAction": {
+    "ActionName": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "ActionDescription": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NoveltyShared": false,
+    "VictorySettings": {
+      "Victory": false,
+      "SpecialEnding": false,
+      "VictoryMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    "UnavailableInDemo": false,
+    "SaveGame": false,
+    "ConfirmPopup": false,
+    "CustomConfirmText": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NotInterruptedByEncounters": false,
+    "StackCompatible": false,
+    "DaytimeCost": 0,
+    "UseMiniTicks": 0,
+    "MinDaytimeCost": {
+      "Active": false,
+      "IntValue": 0
+    },
+    "ActionSounds": [],
+    "DisablePitchVariation": false,
+    "CompatibleNPCDuties": [],
+    "ActionTags": [],
+    "RequiredStatValues": [],
+    "RequiredNPCStatValues": [],
+    "RequiredCardsOnBoard": [],
+    "RequiredTagsOnBoard": [],
+    "RequiredAlreadyVisitedEnvironments": [],
+    "RequiredReceivingContainer": [],
+    "RequiredReceivingContainerTag": [],
+    "RequiredNOTReceivingContainerTag": [],
+    "RequiredReceivingContainerDurabilities": {
+      "RequiredSpoilagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredUsagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredFuelPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredProgressPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredLiquidQuantity": 0,
+      "RequiredSpecial1Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial2Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial3Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial4Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "HideActionIfNotMet": false,
+      "FailMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "SpecificFailMessages": []
+    },
+    "RequiredReceivingDurabilities": {
+      "RequiredSpoilagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredUsagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredFuelPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredProgressPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredLiquidQuantity": 0,
+      "RequiredSpecial1Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial2Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial3Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial4Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "HideActionIfNotMet": false,
+      "FailMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "SpecificFailMessages": []
+    },
+    "RequiredReceivingLiquidContent": {
+      "IsActive": false,
+      "RequiredLiquid": null,
+      "RequiredGroup": null,
+      "RequiredQuantity": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "RequiredActiveHidingGroups": [],
+    "HideIfConditionsNotMet": false,
+    "NotBaseAction": false,
+    "Cancellable": false,
+    "InstantStatModifications": false,
+    "LocksCardsForUse": false,
+    "DontDoStatModificationsOnCancel": false,
+    "InstantDurabilityModifications": false,
+    "ReceivingCardFlavourBonus": false,
+    "GivenCardFlavourBonus": false,
+    "ResetWhenDone": null,
+    "StatInterruptions": [],
+    "StartDialog": null,
+    "ProducedCards": [],
+    "StatModifications": [],
+    "InterpolatedStatModifications": [],
+    "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "TemporaryStatModifications": [],
+    "MovePlayer": {
+      "MoveOption": 0,
+      "ToEnv": null,
+      "Pathfinding": null,
+      "Direction": 0
+    },
+    "MoveReceivingCard": {
+      "Card": null,
+      "UseCardinalDirection": false,
+      "MoveInDirection": 0,
+      "Pathfinding": null
+    },
+    "SpawnNPCS": [],
+    "DeleteNPCS": [],
+    "MoveNPC": [],
+    "SetNPCHome": [],
+    "ExtraDurabilityModifications": [],
+    "BlueprintsFullUnlock": [],
+    "CompletedImprovements": [],
+    "AddedInRunPerks": [],
+    "DontShowDestroyMessage": false,
+    "CustomDestroyMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NoCardsAffectedMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "ReceivingCardChanges": {
+      "ModType": 0,
+      "TransformInto": null,
+      "TransformToLiquidQuantity": 0,
+      "TransferSpoilage": false,
+      "TransferUsage": false,
+      "TransferFuel": false,
+      "TransferCharges": false,
+      "TransferSpecial1": false,
+      "TransferSpecial2": false,
+      "TransferSpecial3": false,
+      "TransferSpecial4": false,
+      "TransferInventory": false,
+      "TransferSavedIngredients": false,
+      "AverageGivenAndReceivingCards": false,
+      "TransferLiquid": false,
+      "SpoilageTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "UsageTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "FuelTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "ProgressTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special1TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special2TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special3TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special4TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "ModifyDurability": false,
+      "ModifyLiquid": false,
+      "DropOnDestroyList": false,
+      "LiquidEffectScaling": 0,
+      "AddFlavoursFromTargetCard": false,
+      "AddFlavoursFromOtherCard": false,
+      "AddSpicesFromTargetCard": false,
+      "AddSpicesFromOtherCard": false,
+      "AddedFlavours": [],
+      "AddedSpiceTags": [],
+      "SpoilageChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpoilageFromOtherCard": false,
+      "UsageChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetUsageFromOtherCard": false,
+      "FuelChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetFuelFromOtherCard": false,
+      "ChargesChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetProgressFromOtherCard": false,
+      "LiquidQuantityChange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial1FromOtherCard": false,
+      "Special2Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial2FromOtherCard": false,
+      "Special3Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial3FromOtherCard": false,
+      "Special4Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial4FromOtherCard": false,
+      "StatInterpolatedDurabilityChanges": [],
+      "DurabilityInterpolatedTransfers": [],
+      "ScaleChangesPerPortionOfLiquid": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "UseOtherCardForLiquidQuantity": false
+    },
+    "CustomWindowPrefab": null,
+    "OpenQuestLog": false,
+    "OpenMap": false,
+    "UpdateMap": false,
+    "EditDescription": false,
+    "FadeToBlack": 0,
+    "FadeMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "FadeTips": false,
+    "TravelToPreviousEnv": false,
+    "TravelToOtherRoom": false,
+    "RoomDirection": 0,
+    "ExitDirection": 0
   },
   "m_GameObject": null,
   "m_Enabled": 1,
+  "Perks": [],
+  "MandatoryPerks": [],
+  "ItemPreferences": [],
+  "EquipmentSelectionTags": [],
+  "DebugEquipmentSelection": false,
   "DebugLogActions": false,
   "DebugActionIDs": [],
   "CannotTrade": true,

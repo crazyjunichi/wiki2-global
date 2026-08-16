@@ -7,7 +7,7 @@
   "zh": "黑麦秆",
   "en": "Rye Straw",
   "ja": "ライ麦",
-  "UniqueIDIndex": 2295,
+  "UniqueIDIndex": 2296,
   "CardType": 0,
   "CardTags": [
     {
@@ -648,6 +648,70 @@
           "FileName": "Quality"
         },
         "MaxValue": 50
+      }
+    },
+    {
+      "key": "tag_BrickBinder",
+      "text": "“抗裂剂”",
+      "icon": "",
+      "type": "tag",
+      "count": 12,
+      "zh": "抗裂剂",
+      "en": "Temper",
+      "ja": "Temper",
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Wetness",
+          "Text": "湿度",
+          "zh": "湿度",
+          "en": "Wetness",
+          "ja": "水分量"
+        },
+        "OverrideIcon": {
+          "FileName": "Water"
+        },
+        "MaxValue": 40
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Nutrition",
+          "Text": "营养",
+          "zh": "营养",
+          "en": "Nutrition",
+          "ja": "栄養"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "質"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 40
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
       }
     }
   ],
@@ -1830,11 +1894,14 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -1912,6 +1979,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -2278,7 +2346,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2363,7 +2431,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2388,6 +2456,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -2780,6 +2850,70 @@
     },
     {
       "link": {
+        "key": "Bp_FireBlessing",
+        "icon": "Spirit_Fire",
+        "type": "card",
+        "CardType": 7,
+        "zh": "赐福",
+        "en": "Blessing",
+        "ja": "祝福"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FireEnchantment",
+        "icon": "Spirit_Fire",
+        "type": "card",
+        "CardType": 7,
+        "zh": "火附魔",
+        "en": "Fire Enchantment",
+        "ja": "炎のエンチャント"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FireSpiritCalling",
+        "icon": "Spirit_Fire",
+        "type": "card",
+        "CardType": 7,
+        "zh": "呼唤火精魄(呼唤)",
+        "en": "Fire Spirit Calling",
+        "ja": "火の精霊召喚"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FireSummoning",
+        "icon": "Spirit_Fire",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Bp_GlazedVase",
         "icon": "",
         "type": "card",
@@ -2835,6 +2969,22 @@
         "zh": "临时庇护所",
         "en": "Improvised Shelter",
         "ja": "手作りシェルター"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MudBricks",
+        "icon": "MudBricks",
+        "type": "card",
+        "CardType": 7,
+        "zh": "泥砖",
+        "en": "Mud Bricks",
+        "ja": "泥レンガ"
       },
       "localization": {
         "zh": "蓝图制作",
@@ -3564,6 +3714,22 @@
     },
     {
       "link": {
+        "key": "Imp_IcePit",
+        "icon": "IcePit",
+        "type": "card",
+        "CardType": 10,
+        "zh": "冰窖",
+        "en": "Ice Pit",
+        "ja": "氷穴"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
         "key": "Imp_MudHutConstructionLocationRoomEast",
         "icon": "MudHutRoom",
         "type": "card",
@@ -3720,6 +3886,22 @@
         "zh": "动作：扔进去",
         "en": "Action: Throw Inside",
         "ja": "アクション：中に投げる"
+      }
+    },
+    {
+      "link": {
+        "key": "MudPile",
+        "icon": "Mud_Pile",
+        "type": "card",
+        "CardType": 0,
+        "zh": "泥堆",
+        "en": "Mud Pile",
+        "ja": "泥の山"
+      },
+      "localization": {
+        "zh": "动作：制作泥砖",
+        "en": "Action: Make a Mud Brick",
+        "ja": "アクション：泥レンガを作る"
       }
     },
     {

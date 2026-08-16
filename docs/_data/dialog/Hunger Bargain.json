@@ -192,11 +192,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "Line": {
     "DefaultText": "Good. \n\nWe will take your hunger and keep it beneath the water then.\n\nIt will no longer gnaw at you. Your belly will never cry again.\n\n\n\n<b>HUNGER BARGAIN STRUCK</b>",
@@ -237,6 +240,8 @@
   "ActionToPerform": {
     "StatModifications": [],
     "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "NPCSetHome": [],
     "DroppedCards": [
       {
         "DroppedCard": {
@@ -406,7 +411,9 @@
     "StartTrading": false,
     "SpendTicks": false,
     "Ticks": 0,
-    "Miniticks": 0
+    "Miniticks": 0,
+    "SpawnNPCS": [],
+    "DeleteNPCS": []
   },
   "LeftSide": {
     "SideName": {
@@ -618,11 +625,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Continue",
@@ -679,9 +689,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -692,7 +706,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     }
   ],
@@ -705,6 +721,9 @@
     "type": "dialog"
   },
   "OverrideSceneImage": null,
+  "UseWeightsForNextStep": false,
+  "NextStepsWithWeights": [],
+  "ShowContinueButton": 0,
   "m_GameObject": null,
   "m_Enabled": 1,
   "TextSettings": {

@@ -7,7 +7,7 @@
   "zh": "木材",
   "en": "Wood",
   "ja": "木",
-  "UniqueIDIndex": 2827,
+  "UniqueIDIndex": 2829,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -151,6 +151,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -342,6 +343,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -353,6 +355,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -366,6 +369,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -849,6 +854,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1040,6 +1046,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1051,6 +1058,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1064,6 +1072,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2158,6 +2168,7 @@
   "AddedWeightFromDurabilities": [
     {
       "InputDurability": 256,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -2174,6 +2185,7 @@
     },
     {
       "InputDurability": 256,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -2190,6 +2202,7 @@
     },
     {
       "InputDurability": 256,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -2206,6 +2219,7 @@
     },
     {
       "InputDurability": 256,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -2588,7 +2602,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2673,7 +2687,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2698,6 +2712,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

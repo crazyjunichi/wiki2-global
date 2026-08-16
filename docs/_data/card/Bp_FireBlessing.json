@@ -1189,14 +1189,16 @@
       "CannotRevertToThisStage": false,
       "RequiredElements": [
         {
-          "RequiredCard": {
-            "key": "ReedsDry",
-            "icon": "Reeds_Item",
-            "type": "card",
-            "CardType": 0,
-            "zh": "干芦苇",
-            "en": "Dry Reeds",
-            "ja": "乾燥したヨシ",
+          "RequiredCard": null,
+          "RequiredTabGroup": {
+            "key": "GpTag_DryStalks",
+            "text": "“Dry Stalks”",
+            "type": "tag",
+            "zh": "Dry Stalks",
+            "en": "Dry Stalks",
+            "ja": "Dry Stalks",
+            "SubGroups": [],
+            "count": 4,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1300,7 +1302,6 @@
               "MaxValue": 0
             }
           },
-          "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
             "Active": false,
@@ -1485,7 +1486,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2219,7 +2220,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2304,7 +2305,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2329,6 +2330,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

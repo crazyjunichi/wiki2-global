@@ -7,7 +7,7 @@
   "zh": "中块刮净的皮",
   "en": "Medium Fleshed Skin",
   "ja": "中型の肉削ぎ済み皮",
-  "UniqueIDIndex": 2336,
+  "UniqueIDIndex": 2337,
   "CardType": 0,
   "CardTags": [
     {
@@ -666,6 +666,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -857,6 +858,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -868,6 +870,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -881,6 +884,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1986,12 +1991,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_BrainTan",
+            "icon": "",
+            "type": "npc",
+            "zh": "Brain Tan",
+            "en": "Brain Tan",
+            "ja": "Brain Tan"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2332,6 +2349,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": true,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2492,6 +2510,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2505,6 +2524,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3468,6 +3489,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -3659,6 +3681,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -3670,6 +3693,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -3683,6 +3707,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4600,6 +4626,7 @@
   "AddedWeightFromDurabilities": [
     {
       "InputDurability": 256,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -4982,7 +5009,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -5067,7 +5094,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -5092,6 +5119,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_BrainTan",
+      "icon": "",
+      "type": "npc",
+      "zh": "Brain Tan",
+      "en": "Brain Tan",
+      "ja": "Brain Tan"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

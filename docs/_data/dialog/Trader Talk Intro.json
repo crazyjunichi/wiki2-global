@@ -192,11 +192,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "Line": {
     "DefaultText": "He gives a small nod.",
@@ -305,6 +308,8 @@
       }
     ],
     "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "NPCSetHome": [],
     "DroppedCards": [],
     "BlueprintsFullUnlock": [],
     "AffectCards": [],
@@ -315,7 +320,9 @@
     "StartTrading": false,
     "SpendTicks": false,
     "Ticks": 0,
-    "Miniticks": 0
+    "Miniticks": 0,
+    "SpawnNPCS": [],
+    "DeleteNPCS": []
   },
   "LeftSide": {
     "SideName": {
@@ -527,11 +534,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Let's trade",
@@ -588,9 +598,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -601,7 +615,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     },
     {
@@ -791,11 +807,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Say goodbye and leave",
@@ -845,9 +864,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -858,7 +881,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     },
     {
@@ -1048,11 +1073,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Ask specific questions",
@@ -1109,9 +1137,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -1122,7 +1154,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     },
     {
@@ -1323,98 +1357,11 @@
               "ja": "家畜商"
             },
             "TargetStat": {
-              "m_Name": "AgentTrust",
               "key": "AgentTrust",
               "type": "durability",
               "zh": "信任度",
               "en": "AgentTrust",
-              "ja": "Agent Trust",
-              "GameName": {
-                "DefaultText": "Agent Trust",
-                "Text": "信任度",
-                "zh": "信任度",
-                "en": "AgentTrust",
-                "ja": "Agent Trust"
-              },
-              "DefaultStartingValue": 0,
-              "DefaultMinMaxValue": {
-                "x": 0,
-                "y": 20000
-              },
-              "DefaultRate": 0,
-              "DefaultMinMaxRate": {
-                "x": 0,
-                "y": 20000
-              },
-              "StatVisibleIcon": null,
-              "HidingOptions": 0,
-              "TextDisplay": 0,
-              "NumberPrecision": 0,
-              "StatScalingToModifiers": [
-                {
-                  "InterpolatedValue": {
-                    "InputStat": {
-                      "key": "Trust",
-                      "icon": "Structure_Old",
-                      "type": "stat",
-                      "zh": "信任",
-                      "en": "Trust",
-                      "ja": "信頼",
-                      "max": 100,
-                      "min": 0
-                    },
-                    "UseStatPercentage": false,
-                    "Value": {
-                      "Active": true,
-                      "InputValueRange": {
-                        "x": 0,
-                        "y": 100
-                      },
-                      "OutputValueRange": {
-                        "x": 0.9,
-                        "y": 1.1
-                      },
-                      "WhenOutOfRange": 1,
-                      "OutOfRangeCustomValue": 0
-                    }
-                  }
-                },
-                {
-                  "InterpolatedValue": {
-                    "InputStat": {
-                      "key": "Skill_Socials",
-                      "icon": "Morale1",
-                      "type": "stat",
-                      "zh": "人情练达",
-                      "en": "Socials",
-                      "ja": "社交",
-                      "max": 150,
-                      "min": 0
-                    },
-                    "UseStatPercentage": false,
-                    "Value": {
-                      "Active": true,
-                      "InputValueRange": {
-                        "x": 0,
-                        "y": 150
-                      },
-                      "OutputValueRange": {
-                        "x": 0.9,
-                        "y": 1.1
-                      },
-                      "WhenOutOfRange": 1,
-                      "OutOfRangeCustomValue": 0
-                    }
-                  }
-                }
-              ],
-              "NPCStatScalingToModifiers": [],
-              "name": "信任度",
-              "desc": "Agent Trust",
-              "m_GameObject": null,
-              "m_Enabled": 1,
-              "UniqueID": "eeccbe55704197944a02a36405404c46",
-              "UniqueIDIndex": 3195
+              "ja": "Agent Trust"
             },
             "ConditionRange": {
               "x": 25,
@@ -1422,11 +1369,14 @@
             }
           }
         ],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Make a request",
@@ -1483,9 +1433,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -1496,7 +1450,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     }
   ],
@@ -1509,6 +1465,9 @@
     "type": "dialog"
   },
   "OverrideSceneImage": null,
+  "UseWeightsForNextStep": false,
+  "NextStepsWithWeights": [],
+  "ShowContinueButton": 0,
   "m_GameObject": null,
   "m_Enabled": 1,
   "TextSettings": {

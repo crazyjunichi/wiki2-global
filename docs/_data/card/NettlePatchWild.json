@@ -7,7 +7,7 @@
   "zh": "野生荨麻",
   "en": "Nettle Patch",
   "ja": "イラクサのパッチ",
-  "UniqueIDIndex": 1930,
+  "UniqueIDIndex": 1929,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -952,6 +952,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1143,6 +1144,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1154,6 +1156,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1167,6 +1170,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1543,12 +1548,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestNettle",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Nettle",
+            "en": "Harvest Nettle",
+            "ja": "Harvest Nettle"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -1985,6 +2002,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2703,6 +2721,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2716,6 +2735,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3452,12 +3473,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestNettle",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Nettle",
+            "en": "Harvest Nettle",
+            "ja": "Harvest Nettle"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3780,6 +3813,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4535,6 +4569,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4548,6 +4583,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6040,13 +6077,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6356,13 +6397,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6672,13 +6717,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6988,13 +7037,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7362,13 +7415,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7741,12 +7798,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestNettle",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Nettle",
+            "en": "Harvest Nettle",
+            "ja": "Harvest Nettle"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -8164,6 +8233,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8845,6 +8915,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8858,6 +8929,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -9073,12 +9146,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestNettle",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Nettle",
+            "en": "Harvest Nettle",
+            "ja": "Harvest Nettle"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -9382,6 +9467,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -10100,6 +10186,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -10113,6 +10200,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -10323,7 +10412,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -10408,7 +10497,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -10433,6 +10522,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_HarvestNettle",
+      "icon": "",
+      "type": "npc",
+      "zh": "Harvest Nettle",
+      "en": "Harvest Nettle",
+      "ja": "Harvest Nettle"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

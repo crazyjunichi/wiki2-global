@@ -7,7 +7,7 @@
   "zh": "成熟的牧草田(成熟)",
   "en": "Mature Meadowgrass Field",
   "ja": "成長した牧草地",
-  "UniqueIDIndex": 1789,
+  "UniqueIDIndex": 1788,
   "CardType": 2,
   "CardTags": [
     {
@@ -3818,6 +3818,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -4009,6 +4010,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4020,6 +4022,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4033,6 +4036,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5265,7 +5270,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5395,7 +5400,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5525,7 +5530,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -7048,12 +7053,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestMeadowgrass",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Meadowgrass",
+            "en": "Harvest Meadowgrass",
+            "ja": "Harvest Meadowgrass"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -7286,6 +7303,127 @@
           "zh": "腿部动作",
           "en": "LegAction",
           "ja": "LegAction"
+        },
+        {
+          "key": "PartnerAction1",
+          "text": "PartnerAction1",
+          "type": "tag",
+          "count": 17,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction1",
+          "en": "PartnerAction1",
+          "ja": "PartnerAction1"
         }
       ],
       "RequiredStatValues": [
@@ -7497,6 +7635,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -7955,6 +8094,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -8130,6 +8270,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -8305,6 +8446,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -8572,6 +8714,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8585,6 +8728,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -9321,12 +9466,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestMeadowgrass",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Meadowgrass",
+            "en": "Harvest Meadowgrass",
+            "ja": "Harvest Meadowgrass"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -9559,6 +9716,127 @@
           "zh": "腿部动作",
           "en": "LegAction",
           "ja": "LegAction"
+        },
+        {
+          "key": "PartnerAction2",
+          "text": "PartnerAction2",
+          "type": "tag",
+          "count": 17,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction2",
+          "en": "PartnerAction2",
+          "ja": "PartnerAction2"
         }
       ],
       "RequiredStatValues": [
@@ -9770,6 +10048,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -10228,6 +10507,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -10403,6 +10683,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -10578,6 +10859,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -10845,6 +11127,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -10858,6 +11141,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -11594,12 +11879,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestMeadowgrass",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Meadowgrass",
+            "en": "Harvest Meadowgrass",
+            "ja": "Harvest Meadowgrass"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -11832,6 +12129,127 @@
           "zh": "腿部动作",
           "en": "LegAction",
           "ja": "LegAction"
+        },
+        {
+          "key": "PartnerAction3",
+          "text": "PartnerAction3",
+          "type": "tag",
+          "count": 12,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "香り"
+            },
+            "OverrideIcon": {
+              "FileName": "Candle_On"
+            },
+            "MaxValue": 96
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "容量",
+              "en": "Fuel",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 96
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Charcoal",
+              "Text": "木炭",
+              "zh": "木炭",
+              "en": "Charcoal",
+              "ja": "木炭"
+            },
+            "OverrideIcon": {
+              "FileName": "Charcoal"
+            },
+            "MaxValue": 16
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Ash Amount",
+              "Text": "积灰量",
+              "zh": "积灰量",
+              "en": "Ash Amount",
+              "ja": "灰の量"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 48
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Nutrients",
+              "Text": "养分",
+              "zh": "养分",
+              "en": "Nutrients",
+              "ja": "栄養"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Health",
+              "Text": "健康度",
+              "zh": "健康度",
+              "en": "Health",
+              "ja": "健全度"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Yield",
+              "Text": "饱满度",
+              "zh": "饱满度",
+              "en": "Yield",
+              "ja": "収穫量"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationBerries"
+            },
+            "MaxValue": 5760
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Care",
+              "Text": "照料",
+              "zh": "照料",
+              "en": "Care",
+              "ja": "手入れ"
+            },
+            "OverrideIcon": {
+              "FileName": "Wakefulness4"
+            },
+            "MaxValue": 96
+          },
+          "zh": "PartnerAction3",
+          "en": "PartnerAction3",
+          "ja": "PartnerAction3"
         }
       ],
       "RequiredStatValues": [
@@ -12043,6 +12461,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -12501,6 +12920,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -12676,6 +13096,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -12851,6 +13272,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -13118,6 +13540,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -13131,6 +13554,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -13768,12 +14193,13 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -14217,6 +14643,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -14525,6 +14952,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -14538,6 +14966,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -16022,13 +16452,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -16319,13 +16753,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -16616,13 +17054,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -16913,13 +17355,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -17229,13 +17675,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -17771,13 +18221,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -18087,13 +18541,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -18403,13 +18861,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -18719,13 +19181,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -19035,13 +19501,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -19397,13 +19867,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -19759,13 +20233,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -20121,13 +20599,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -20483,13 +20965,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -20857,13 +21343,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -21231,13 +21721,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -21593,13 +22087,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -21955,13 +22453,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -22271,13 +22773,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -22587,13 +23093,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -22903,13 +23413,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -23219,13 +23733,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -23535,13 +24053,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -23832,13 +24354,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -24129,13 +24655,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -24426,13 +24956,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -24742,13 +25276,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -25284,13 +25822,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -25663,6 +26205,18 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_InspectField",
+            "icon": "",
+            "type": "npc",
+            "zh": "Inspect Field",
+            "en": "Inspect Field",
+            "ja": "Inspect Field"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "FieldInspectAction",
@@ -25995,6 +26549,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -26229,6 +26784,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -26242,6 +26798,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -26457,6 +27015,18 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_HarvestMeadowgrass",
+            "icon": "",
+            "type": "npc",
+            "zh": "Harvest Meadowgrass",
+            "en": "Harvest Meadowgrass",
+            "ja": "Harvest Meadowgrass"
+          }
+        }
+      ],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -26667,6 +27237,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -27125,6 +27696,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -27300,6 +27872,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -27475,6 +28048,7 @@
                 "DurabilitiesModifiers": [
                   {
                     "InputDurability": 64,
+                    "InterpolateUsingPercentage": false,
                     "Value": {
                       "Active": true,
                       "InputValueRange": {
@@ -27853,6 +28427,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -27866,6 +28441,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -28081,6 +28658,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -28309,6 +28887,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -28855,6 +29434,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -28868,6 +29448,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -29078,7 +29660,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -29163,7 +29745,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -29188,6 +29770,25 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_HarvestMeadowgrass",
+      "icon": "",
+      "type": "npc",
+      "zh": "Harvest Meadowgrass",
+      "en": "Harvest Meadowgrass",
+      "ja": "Harvest Meadowgrass"
+    },
+    {
+      "key": "PartnerDuty_InspectField",
+      "icon": "",
+      "type": "npc",
+      "zh": "Inspect Field",
+      "en": "Inspect Field",
+      "ja": "Inspect Field"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

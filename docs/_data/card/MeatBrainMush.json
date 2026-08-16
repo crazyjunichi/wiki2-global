@@ -7,7 +7,7 @@
   "zh": "脑浆",
   "en": "Brain Mush",
   "ja": "脳の練り物",
-  "UniqueIDIndex": 1798,
+  "UniqueIDIndex": 1797,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 375,
+      "count": 380,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -367,6 +367,128 @@
         },
         "MaxValue": 4
       }
+    },
+    {
+      "key": "tag_FeedWeak",
+      "text": "“低效饲料”",
+      "icon": "",
+      "type": "tag",
+      "count": 15,
+      "zh": "低效饲料",
+      "en": "Weak Feed",
+      "ja": "まあまあな餌",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "变质",
+          "zh": "变质",
+          "en": "Spoilage",
+          "ja": "腐敗"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 120
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Happiness",
+          "Text": "幸福感",
+          "zh": "幸福感",
+          "en": "Happiness",
+          "ja": "幸せ"
+        },
+        "OverrideIcon": {
+          "FileName": "Morale2"
+        },
+        "MaxValue": 288
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Consumed",
+          "Text": "已消耗",
+          "zh": "已消耗",
+          "en": "Consumed",
+          "ja": "使い切った"
+        },
+        "OverrideIcon": {
+          "FileName": "Bacteria"
+        },
+        "MaxValue": 1
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spirit",
+          "Text": "精魄",
+          "zh": "精魄",
+          "en": "Spirit",
+          "ja": "精霊"
+        },
+        "OverrideIcon": {
+          "FileName": "Insight"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Cook",
+          "Text": "烹饪",
+          "zh": "烹饪",
+          "en": "Cook",
+          "ja": "料理する"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 1
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Quality",
+          "Text": "品质",
+          "zh": "品质",
+          "en": "Quality",
+          "ja": "クオリティ"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 96
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Health",
+          "Text": "健康度",
+          "zh": "健康度",
+          "en": "Health",
+          "ja": "健康状態"
+        },
+        "OverrideIcon": {
+          "FileName": "Health"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Boil",
+          "Text": "烹煮",
+          "zh": "烹煮",
+          "en": "Boil",
+          "ja": "Boil"
+        },
+        "OverrideIcon": {
+          "FileName": "Cooking"
+        },
+        "MaxValue": 4
+      }
     }
   ],
   "CardName": {
@@ -472,6 +594,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -663,6 +786,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -674,6 +798,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -687,6 +812,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2612,6 +2739,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -2803,6 +2931,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2814,6 +2943,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2827,6 +2957,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3785,13 +3917,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -4101,13 +4237,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -4417,13 +4557,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -4726,13 +4870,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5035,13 +5183,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5351,13 +5503,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5724,7 +5880,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -5809,7 +5965,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -5834,6 +5990,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -6190,6 +6348,38 @@
         "zh": "动作：降低变质",
         "en": "Action: Lower Spoilage",
         "ja": "アクション：腐敗速度を下げる"
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionLocationEnclosure",
+        "icon": "Enclosure",
+        "type": "card",
+        "CardType": 8,
+        "zh": "畜栏",
+        "en": "Enclosure",
+        "ja": "囲い"
+      },
+      "localization": {
+        "zh": "动作：扔进去",
+        "en": "Action: Throw Inside",
+        "ja": "アクション：中に投げる"
+      }
+    },
+    {
+      "link": {
+        "key": "MudHutConstructionStartingPointEnclosure",
+        "icon": "Enclosure",
+        "type": "card",
+        "CardType": 8,
+        "zh": "畜栏",
+        "en": "Enclosure",
+        "ja": "囲い"
+      },
+      "localization": {
+        "zh": "动作：扔进去",
+        "en": "Action: Throw Inside",
+        "ja": "アクション：中に投げる"
       }
     },
     {

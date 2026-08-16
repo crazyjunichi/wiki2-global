@@ -7,7 +7,7 @@
   "zh": "柳树",
   "en": "Willow Tree",
   "ja": "ヤナギの木",
-  "UniqueIDIndex": 2640,
+  "UniqueIDIndex": 2641,
   "CardType": 2,
   "CardTags": [],
   "CardName": {
@@ -153,6 +153,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -344,6 +345,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -355,6 +357,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -368,6 +371,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -655,6 +660,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -846,6 +852,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1406,6 +1413,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1419,6 +1427,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2024,12 +2034,24 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_CutDownTree",
+            "icon": "",
+            "type": "npc",
+            "zh": "Cut Down Tree",
+            "en": "Cut Down Tree",
+            "ja": "Cut Down Tree"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2141,6 +2163,91 @@
           "zh": "手部动作",
           "en": "HandAction",
           "ja": "HandAction"
+        },
+        {
+          "key": "FellTreeAction",
+          "text": "FellTreeAction",
+          "type": "tag",
+          "count": 5,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fragrance",
+              "Text": "香气",
+              "zh": "香气",
+              "en": "Fragrance",
+              "ja": "Fragrance"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 10000
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Fuel",
+              "Text": "燃料",
+              "zh": "燃料",
+              "en": "Fuel",
+              "ja": "Fuel"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 10000
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Cut",
+              "Text": "砍倒进程",
+              "zh": "砍倒进程",
+              "en": "Cut",
+              "ja": "Cut"
+            },
+            "OverrideIcon": {
+              "FileName": "Spoilage"
+            },
+            "MaxValue": 75
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Marked",
+              "Text": "已标记",
+              "zh": "已标记",
+              "en": "Marked",
+              "ja": "Marked"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "Quality"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 60
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "ID",
+              "Text": "ID",
+              "zh": "ID",
+              "en": "ID",
+              "ja": "ID"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 10000
+          },
+          "zh": "FellTreeAction",
+          "en": "FellTreeAction",
+          "ja": "FellTreeAction"
         }
       ],
       "RequiredStatValues": [
@@ -2388,6 +2495,7 @@
       "NotBaseAction": true,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2696,6 +2804,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2709,6 +2818,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3446,12 +3557,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_GatherBark",
+            "icon": "",
+            "type": "npc",
+            "zh": "Gather Bark",
+            "en": "Gather Bark",
+            "ja": "Gather Bark"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3859,6 +3982,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4413,6 +4537,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4426,6 +4551,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5979,6 +6106,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -6189,6 +6317,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -6776,6 +6905,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -6789,6 +6919,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6999,7 +7131,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -7084,7 +7216,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -7109,6 +7241,25 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_CutDownTree",
+      "icon": "",
+      "type": "npc",
+      "zh": "Cut Down Tree",
+      "en": "Cut Down Tree",
+      "ja": "Cut Down Tree"
+    },
+    {
+      "key": "PartnerDuty_GatherBark",
+      "icon": "",
+      "type": "npc",
+      "zh": "Gather Bark",
+      "en": "Gather Bark",
+      "ja": "Gather Bark"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

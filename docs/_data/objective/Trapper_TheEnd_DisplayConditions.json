@@ -7,7 +7,7 @@
   "zh": "",
   "en": "",
   "ja": "",
-  "UniqueIDIndex": 4623,
+  "UniqueIDIndex": 4975,
   "StartUnlocked": false,
   "ActionObjectives": [],
   "CardsOnBoardObjectives": [],
@@ -28,7 +28,7 @@
         "en": "Big Game Traps",
         "ja": "大型獣用罠",
         "UniqueID": "963ec0f151552be4a9cee8d306176148",
-        "UniqueIDIndex": 4578,
+        "UniqueIDIndex": 4930,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [],
@@ -49,7 +49,7 @@
               "en": "Wolf",
               "ja": "狼",
               "UniqueID": "f77939c48014fe84c9a54b37c5c8620e",
-              "UniqueIDIndex": 4581,
+              "UniqueIDIndex": 4933,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -268,7 +268,7 @@
               "en": "Doe",
               "ja": "雌鹿",
               "UniqueID": "f4adacbeb85579a41858e757759c8a31",
-              "UniqueIDIndex": 4582,
+              "UniqueIDIndex": 4934,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -487,7 +487,7 @@
               "en": "Stag",
               "ja": "雄鹿",
               "UniqueID": "6602fee9025d8e84c8ee56a326b25bf2",
-              "UniqueIDIndex": 4583,
+              "UniqueIDIndex": 4935,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -706,7 +706,7 @@
               "en": "Boar",
               "ja": "イノシシ",
               "UniqueID": "bfe6323e8b9c3d044bf1bf28cd50be6e",
-              "UniqueIDIndex": 4584,
+              "UniqueIDIndex": 4936,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -987,6 +987,7 @@
             },
             "ActionSounds": [],
             "DisablePitchVariation": false,
+            "CompatibleNPCDuties": [],
             "ActionTags": [],
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
@@ -1178,6 +1179,7 @@
             "NotBaseAction": false,
             "Cancellable": false,
             "InstantStatModifications": false,
+            "LocksCardsForUse": false,
             "DontDoStatModificationsOnCancel": false,
             "InstantDurabilityModifications": false,
             "ReceivingCardFlavourBonus": false,
@@ -1538,6 +1540,7 @@
             "StatModifications": [],
             "InterpolatedStatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
             "TemporaryStatModifications": [],
             "MovePlayer": {
               "MoveOption": 0,
@@ -1551,6 +1554,8 @@
               "MoveInDirection": 0,
               "Pathfinding": null
             },
+            "SpawnNPCS": [],
+            "DeleteNPCS": [],
             "MoveNPC": [],
             "SetNPCHome": [],
             "ExtraDurabilityModifications": [],
@@ -1725,7 +1730,7 @@
         "en": "Butchering Tools",
         "ja": "解体道具",
         "UniqueID": "8b76649118abcee4687e2897a794c826",
-        "UniqueIDIndex": 4589,
+        "UniqueIDIndex": 4941,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [],
@@ -1746,7 +1751,7 @@
               "en": "Butchering Mat",
               "ja": "解体用マット",
               "UniqueID": "844e8291e37a21241ad5c3bc736b80c1",
-              "UniqueIDIndex": 4592,
+              "UniqueIDIndex": 4944,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -1963,7 +1968,7 @@
               "en": "Butchering Knife",
               "ja": "解体用ナイフ",
               "UniqueID": "8ef670bcbd504e742b5951b456ce177d",
-              "UniqueIDIndex": 4593,
+              "UniqueIDIndex": 4945,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -2274,7 +2279,7 @@
               "en": "Meat Hook",
               "ja": "肉吊りフック",
               "UniqueID": "4951cee1a8f6ad1488b499b295f52680",
-              "UniqueIDIndex": 4594,
+              "UniqueIDIndex": 4946,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -2382,13 +2387,13 @@
                       }
                     ],
                     "SpoilageTime": {
-                      "Active": true,
+                      "Active": false,
                       "CardStatName": {
-                        "DefaultText": "Sharpness",
-                        "Text": "锋利度",
-                        "zh": "锋利度",
-                        "en": "Sharpness",
-                        "ja": "切れ味"
+                        "DefaultText": "",
+                        "Text": "SpoilageTime",
+                        "zh": "时间",
+                        "en": "Spoilage",
+                        "ja": ""
                       },
                       "OverrideIcon": {
                         "FileName": "Knife_Blank_Copper"
@@ -2396,7 +2401,7 @@
                       "MaxValue": 1000
                     },
                     "UsageDurability": {
-                      "Active": true,
+                      "Active": false,
                       "CardStatName": {
                         "DefaultText": "",
                         "Text": "UsageDurability",
@@ -2410,25 +2415,25 @@
                       "MaxValue": 10000
                     },
                     "FuelCapacity": {
-                      "Active": true,
+                      "Active": false,
                       "CardStatName": {
-                        "DefaultText": "Recently Sharpened",
-                        "Text": "近期磨利",
-                        "zh": "近期磨利",
-                        "en": "Recently Sharpened",
-                        "ja": "研いだばかり"
+                        "DefaultText": "",
+                        "Text": "FuelCapacity",
+                        "zh": "容量",
+                        "en": "Fuel",
+                        "ja": ""
                       },
                       "OverrideIcon": null,
                       "MaxValue": 1
                     },
                     "Progress": {
-                      "Active": true,
+                      "Active": false,
                       "CardStatName": {
-                        "DefaultText": "Beauty",
-                        "Text": "美观",
-                        "zh": "美观",
-                        "en": "Beauty",
-                        "ja": "美しさ"
+                        "DefaultText": "",
+                        "Text": "Progress",
+                        "zh": "进度",
+                        "en": "Progress",
+                        "ja": ""
                       },
                       "OverrideIcon": null,
                       "MaxValue": 1000
@@ -2460,13 +2465,13 @@
                       "MaxValue": 100
                     },
                     "SpecialDurability3": {
-                      "Active": true,
+                      "Active": false,
                       "CardStatName": {
-                        "DefaultText": "Quality",
+                        "DefaultText": "",
                         "Text": "品质",
-                        "zh": "品质",
-                        "en": "Quality",
-                        "ja": "質"
+                        "zh": "特殊3",
+                        "en": "Special3",
+                        "ja": ""
                       },
                       "OverrideIcon": {
                         "FileName": "Quality"
@@ -2645,6 +2650,7 @@
             },
             "ActionSounds": [],
             "DisablePitchVariation": false,
+            "CompatibleNPCDuties": [],
             "ActionTags": [],
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
@@ -2836,6 +2842,7 @@
             "NotBaseAction": false,
             "Cancellable": false,
             "InstantStatModifications": false,
+            "LocksCardsForUse": false,
             "DontDoStatModificationsOnCancel": false,
             "InstantDurabilityModifications": false,
             "ReceivingCardFlavourBonus": false,
@@ -3196,6 +3203,7 @@
             "StatModifications": [],
             "InterpolatedStatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
             "TemporaryStatModifications": [],
             "MovePlayer": {
               "MoveOption": 0,
@@ -3209,6 +3217,8 @@
               "MoveInDirection": 0,
               "Pathfinding": null
             },
+            "SpawnNPCS": [],
+            "DeleteNPCS": [],
             "MoveNPC": [],
             "SetNPCHome": [],
             "ExtraDurabilityModifications": [],
@@ -3383,7 +3393,7 @@
         "en": "Skinning Tools",
         "ja": "皮剥ぎ道具",
         "UniqueID": "614f96904a34cf7498589b67ca3b39b0",
-        "UniqueIDIndex": 4598,
+        "UniqueIDIndex": 4950,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [],
@@ -3404,7 +3414,7 @@
               "en": "Stretching Frame",
               "ja": "張り伸ばし台",
               "UniqueID": "95b5bacee8f5e4c4693daeabb0d866df",
-              "UniqueIDIndex": 4601,
+              "UniqueIDIndex": 4953,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -3615,7 +3625,7 @@
               "en": "Tanning Pit",
               "ja": "タンニングピット",
               "UniqueID": "ac54777edeb9daf49aa059b1371cb203",
-              "UniqueIDIndex": 4602,
+              "UniqueIDIndex": 4954,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -3828,7 +3838,7 @@
               "en": "Fleshing Beam",
               "ja": "肉削ぎ台",
               "UniqueID": "d079d13bf081c0c469b113f9301d5f20",
-              "UniqueIDIndex": 4603,
+              "UniqueIDIndex": 4955,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -4047,7 +4057,7 @@
               "en": "Skinning Knife",
               "ja": "皮剥ぎナイフ",
               "UniqueID": "af53b67768cf6384aa7a72ce13f2734b",
-              "UniqueIDIndex": 4604,
+              "UniqueIDIndex": 4956,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -4121,6 +4131,21 @@
                           "zh": "青铜剥皮刀",
                           "en": "Tin Bronze Skinning Knife",
                           "ja": "スズ青銅の皮剥ぎナイフ"
+                        }
+                      },
+                      {
+                        "Conditions": {
+                          "Special4Range": {
+                            "x": 140,
+                            "y": 140
+                          }
+                        },
+                        "Name": {
+                          "DefaultText": "White Bronze Skinning Knife",
+                          "Text": "White Bronze Skinning Knife",
+                          "zh": "White Bronze Skinning Knife",
+                          "en": "White Bronze Skinning Knife",
+                          "ja": "White Bronze Skinning Knife"
                         }
                       },
                       {
@@ -4403,6 +4428,7 @@
             },
             "ActionSounds": [],
             "DisablePitchVariation": false,
+            "CompatibleNPCDuties": [],
             "ActionTags": [],
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
@@ -4594,6 +4620,7 @@
             "NotBaseAction": false,
             "Cancellable": false,
             "InstantStatModifications": false,
+            "LocksCardsForUse": false,
             "DontDoStatModificationsOnCancel": false,
             "InstantDurabilityModifications": false,
             "ReceivingCardFlavourBonus": false,
@@ -4954,6 +4981,7 @@
             "StatModifications": [],
             "InterpolatedStatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
             "TemporaryStatModifications": [],
             "MovePlayer": {
               "MoveOption": 0,
@@ -4967,6 +4995,8 @@
               "MoveInDirection": 0,
               "Pathfinding": null
             },
+            "SpawnNPCS": [],
+            "DeleteNPCS": [],
             "MoveNPC": [],
             "SetNPCHome": [],
             "ExtraDurabilityModifications": [],
@@ -5141,7 +5171,7 @@
         "en": "Small Game Traps",
         "ja": "小型獣用罠",
         "UniqueID": "8f2a721db59920d40bac084b51e1502c",
-        "UniqueIDIndex": 4609,
+        "UniqueIDIndex": 4961,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [],
@@ -5162,7 +5192,7 @@
               "en": "Mouse",
               "ja": "ネズミ",
               "UniqueID": "119db550bcc5cde41860a0f40e87416f",
-              "UniqueIDIndex": 4612,
+              "UniqueIDIndex": 4964,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -5385,7 +5415,7 @@
               "en": "Squirrel",
               "ja": "リス",
               "UniqueID": "bac7766de92912149a1707a03ccdebe1",
-              "UniqueIDIndex": 4613,
+              "UniqueIDIndex": 4965,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -5608,7 +5638,7 @@
               "en": "Badger",
               "ja": "アナグマ",
               "UniqueID": "730161cc26d9eea4fb41890841482b08",
-              "UniqueIDIndex": 4614,
+              "UniqueIDIndex": 4966,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -5827,7 +5857,7 @@
               "en": "Hare",
               "ja": "ノウサギ",
               "UniqueID": "d01fec3da76432e4f93982ed22948fcb",
-              "UniqueIDIndex": 4615,
+              "UniqueIDIndex": 4967,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -6046,7 +6076,7 @@
               "en": "Fox",
               "ja": "キツネ",
               "UniqueID": "d31a1c97dc4ea1141950ceddfab9d774",
-              "UniqueIDIndex": 4616,
+              "UniqueIDIndex": 4968,
               "StartUnlocked": false,
               "ActionObjectives": [],
               "CardsOnBoardObjectives": [
@@ -6325,6 +6355,7 @@
             },
             "ActionSounds": [],
             "DisablePitchVariation": false,
+            "CompatibleNPCDuties": [],
             "ActionTags": [],
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
@@ -6516,6 +6547,7 @@
             "NotBaseAction": false,
             "Cancellable": false,
             "InstantStatModifications": false,
+            "LocksCardsForUse": false,
             "DontDoStatModificationsOnCancel": false,
             "InstantDurabilityModifications": false,
             "ReceivingCardFlavourBonus": false,
@@ -6876,6 +6908,7 @@
             "StatModifications": [],
             "InterpolatedStatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
             "TemporaryStatModifications": [],
             "MovePlayer": {
               "MoveOption": 0,
@@ -6889,6 +6922,8 @@
               "MoveInDirection": 0,
               "Pathfinding": null
             },
+            "SpawnNPCS": [],
+            "DeleteNPCS": [],
             "MoveNPC": [],
             "SetNPCHome": [],
             "ExtraDurabilityModifications": [],
@@ -7123,6 +7158,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -7146,6 +7182,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -7157,6 +7194,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -7170,6 +7208,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],

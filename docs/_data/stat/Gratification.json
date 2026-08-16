@@ -7,7 +7,7 @@
   "zh": "满足感",
   "en": "Gratification",
   "ja": "満足感",
-  "UniqueIDIndex": 3466,
+  "UniqueIDIndex": 3475,
   "GameName": {
     "DefaultText": "Gratification",
     "Text": "满足感",
@@ -187,6 +187,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 0,
@@ -277,6 +278,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 0,
@@ -369,6 +371,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -461,6 +464,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -553,6 +557,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -14296,6 +14301,27 @@
     },
     {
       "link": {
+        "key": "Event_Vomit",
+        "icon": "AloeGel_Old",
+        "type": "card",
+        "CardType": 3,
+        "zh": "呕吐！",
+        "en": "Vomit!",
+        "ja": "ゲロ！"
+      },
+      "localization": {
+        "zh": "动作：呕呕呕……",
+        "en": "Action: Eughhh.....",
+        "ja": "アクション：ゔゔぅぅ・・・"
+      },
+      "value": {
+        "x": -100,
+        "y": -100
+      },
+      "key": "Event_Vomit_Eughhh....."
+    },
+    {
+      "link": {
         "key": "FairyweedPlantedMature",
         "icon": "Fairyweed_Plant",
         "type": "card",
@@ -17941,6 +17967,88 @@
         "y": -19
       },
       "key": "LQ_NightBroth_Drink"
+    },
+    {
+      "link": {
+        "key": "LQ_Water",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "水",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Potage",
+              "Text": "浓汤",
+              "zh": "浓汤",
+              "en": "Potage",
+              "ja": "Potage"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 50,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Stew",
+              "Text": "炖菜",
+              "zh": "炖菜",
+              "en": "Stew",
+              "ja": "Stew"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Soup",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Soup",
+              "ja": "Soup"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Broth",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Broth",
+              "ja": "Broth"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 0,
+        "y": 20
+      }
     },
     {
       "link": {
@@ -27731,259 +27839,6 @@
     },
     {
       "link": {
-        "key": "Shape_MetalMeatHook",
-        "icon": "MeatHook_Blank_Copper",
-        "type": "card",
-        "CardType": 0,
-        "zh": "金属肉钩",
-        "en": "Metal Meat Hook",
-        "ja": "金属製の肉吊りフック",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "幽青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "スズの肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "スズ青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "白青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "Iron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "Iron Meat Hook",
-              "ja": "Iron Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "Copper Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "Ghost Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "Tin Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "Tin Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "White Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "IIron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "IIron Meat Hook",
-              "ja": "IIron Meat Hook"
-            }
-          }
-        ]
-      },
-      "localization": {
-        "DefaultText": "Smith",
-        "Text": "锻造",
-        "zh": "锻造",
-        "en": "Smith",
-        "ja": "鍛造"
-      },
-      "value": {
-        "x": 1,
-        "y": 1
-      },
-      "key": "Shape_MetalMeatHook_Smith"
-    },
-    {
-      "link": {
         "key": "Shape_MetalPickaxeHead",
         "icon": "pickaxe_blank_iron",
         "type": "card",
@@ -30860,11 +30715,11 @@
               }
             },
             "Name": {
-              "DefaultText": "Iron Bronze Spear",
+              "DefaultText": "Iron Spear",
               "Text": "铁青铜矛",
               "zh": "铁青铜矛",
               "en": "Iron Bronze Spear",
-              "ja": "Iron Bronze Spear"
+              "ja": "Iron Spear"
             }
           }
         ]
@@ -31962,29 +31817,6 @@
         "y": -2
       },
       "key": "WitchstoneVein_Mine"
-    },
-    {
-      "link": {
-        "key": "WitchstoneVeinInfinite",
-        "icon": "WitchstoneVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "巫石矿脉",
-        "en": "Witchstone Vein",
-        "ja": "ウィッチストーン鉱脈"
-      },
-      "localization": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘する"
-      },
-      "value": {
-        "x": -2,
-        "y": -2
-      },
-      "key": "WitchstoneVeinInfinite_Mine"
     },
     {
       "link": {
@@ -34725,6 +34557,63 @@
       "value": {
         "x": 20,
         "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 25,
+        "y": 25
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 25,
+        "y": 25
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 40,
+        "y": 40
       }
     }
   ],

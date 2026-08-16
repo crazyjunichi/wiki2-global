@@ -10,10 +10,10 @@
     {
       "m_Name": "DuckIntro",
       "m_Script": {
-        "FileName": "Female"
+        "FileName": "Badger"
       },
-      "___key": "0_2281",
-      "___fn": "DuckIntro@2281.json",
+      "___key": "0_2466",
+      "___fn": "DuckIntro@2466.json",
       "key": "DuckIntro",
       "exportName": "DuckIntro",
       "zh": "DuckIntro",
@@ -206,11 +206,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Line": {
         "DefaultText": "You see a group of ducks. ",
@@ -244,6 +247,8 @@
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -254,7 +259,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       },
       "LeftSide": {
         "SideName": {
@@ -466,11 +473,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Hunt",
@@ -527,9 +537,13 @@
             },
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -554,7 +568,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         },
         {
@@ -744,11 +760,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Ignore",
@@ -798,9 +817,13 @@
             "NextScene": null,
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -811,7 +834,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         }
       ],
@@ -824,6 +849,9 @@
         "type": "dialog"
       },
       "OverrideSceneImage": null,
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
+      "ShowContinueButton": 0,
       "m_GameObject": null,
       "m_Enabled": 1,
       "TextSettings": {

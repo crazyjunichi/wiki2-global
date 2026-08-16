@@ -6,7 +6,7 @@
   "zh": "Test 2",
   "en": "Test 2",
   "ja": "Test 2",
-  "UniqueIDIndex": 4481,
+  "UniqueIDIndex": 4826,
   "AgentName": {
     "DefaultText": "Test 2",
     "Text": "Test 2",
@@ -42,41 +42,11 @@
   "AgentStats": [
     {
       "ModelStat": {
-        "m_Name": "TestNPCStat",
         "key": "TestNPCStat",
         "type": "durability",
         "zh": "TestNPCStat",
         "en": "TestNPCStat",
-        "ja": "Blobbiness",
-        "GameName": {
-          "DefaultText": "Blobbiness",
-          "Text": "TestNPCStat",
-          "zh": "TestNPCStat",
-          "en": "TestNPCStat",
-          "ja": "Blobbiness"
-        },
-        "DefaultStartingValue": 20,
-        "DefaultMinMaxValue": {
-          "x": 0,
-          "y": 100
-        },
-        "DefaultRate": 1,
-        "DefaultMinMaxRate": {
-          "x": 0,
-          "y": 0
-        },
-        "StatVisibleIcon": null,
-        "HidingOptions": 0,
-        "TextDisplay": 0,
-        "NumberPrecision": 0,
-        "StatScalingToModifiers": [],
-        "NPCStatScalingToModifiers": [],
-        "name": "TestNPCStat",
-        "desc": "Blobbiness",
-        "m_GameObject": null,
-        "m_Enabled": 1,
-        "UniqueID": "4f60d4497a50f3b4ea0eabae2e48457f",
-        "UniqueIDIndex": 4482
+        "ja": "Blobbiness"
       },
       "OverrideStartingValue": {
         "Active": false,
@@ -100,8 +70,11 @@
       "StatScalingToModifiers": [],
       "NPCStatAddedPercentageToModifiersOverride": 0,
       "NPCStatScalingToModifiers": [],
+      "StatusesOverride": 0,
+      "Statuses": [],
       "OverrideVisibleIcon": false,
-      "Icon": null
+      "Icon": null,
+      "StatusDebugMode": false
     }
   ],
   "AgentActions": [
@@ -315,11 +288,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifications": [],
       "NPCStatModifications": [],
@@ -706,27 +682,29 @@
           "m_Enabled": 1,
           "m_Script": {
             "m_FileID": 1,
-            "m_PathID": 284
+            "m_PathID": 293
           },
           "m_Name": "TestHunting",
           "UniqueID": "d4c0e4a8da0cc1d459aefaf110bc5d93",
-          "UniqueIDIndex": 4478,
+          "UniqueIDIndex": 4823,
           "Cooldown": 5,
           "HideAgents": [
             {
               "m_FileID": 0,
-              "m_PathID": 7717
+              "m_PathID": 8326
             },
             {
               "m_FileID": 0,
-              "m_PathID": 7718
+              "m_PathID": 8327
             }
           ],
           "IgnoreSourceAgent": true,
-          "___fn": "TestHunting@7716.json"
+          "___fn": "TestHunting@8325.json"
         }
       ],
-      "DropCardsEvenIfHiding": false
+      "DropCardsEvenIfHiding": false,
+      "SpawnNPCS": [],
+      "DeleteNPCs": []
     }
   ],
   "MaxCarryWeight": 10000,
@@ -916,11 +894,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "StartingInventory": [
     {
@@ -1708,11 +1689,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "ButtonType": 0,
       "Dialog": null,
@@ -1931,14 +1915,441 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
+  },
+  "AlliedWithPlayer": false,
+  "HasActionOnDelete": false,
+  "OnDeleteAction": {
+    "ActionName": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "ActionDescription": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NoveltyShared": false,
+    "VictorySettings": {
+      "Victory": false,
+      "SpecialEnding": false,
+      "VictoryMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      }
+    },
+    "UnavailableInDemo": false,
+    "SaveGame": false,
+    "ConfirmPopup": false,
+    "CustomConfirmText": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NotInterruptedByEncounters": false,
+    "StackCompatible": false,
+    "DaytimeCost": 0,
+    "UseMiniTicks": 0,
+    "MinDaytimeCost": {
+      "Active": false,
+      "IntValue": 0
+    },
+    "ActionSounds": [],
+    "DisablePitchVariation": false,
+    "CompatibleNPCDuties": [],
+    "ActionTags": [],
+    "RequiredStatValues": [],
+    "RequiredNPCStatValues": [],
+    "RequiredCardsOnBoard": [],
+    "RequiredTagsOnBoard": [],
+    "RequiredAlreadyVisitedEnvironments": [],
+    "RequiredReceivingContainer": [],
+    "RequiredReceivingContainerTag": [],
+    "RequiredNOTReceivingContainerTag": [],
+    "RequiredReceivingContainerDurabilities": {
+      "RequiredSpoilagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredUsagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredFuelPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredProgressPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredLiquidQuantity": 0,
+      "RequiredSpecial1Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial2Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial3Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial4Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "HideActionIfNotMet": false,
+      "FailMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "SpecificFailMessages": []
+    },
+    "RequiredReceivingDurabilities": {
+      "RequiredSpoilagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredUsagePercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredFuelPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredProgressPercent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredLiquidQuantity": 0,
+      "RequiredSpecial1Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial2Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial3Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "RequiredSpecial4Percent": {
+        "Active": false,
+        "FloatValue": 0,
+        "MaxValue": 0,
+        "ScaleRequirementPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        }
+      },
+      "HideActionIfNotMet": false,
+      "FailMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "SpecificFailMessages": []
+    },
+    "RequiredReceivingLiquidContent": {
+      "IsActive": false,
+      "RequiredLiquid": null,
+      "RequiredGroup": null,
+      "RequiredQuantity": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "RequiredActiveHidingGroups": [],
+    "HideIfConditionsNotMet": false,
+    "NotBaseAction": false,
+    "Cancellable": false,
+    "InstantStatModifications": false,
+    "LocksCardsForUse": false,
+    "DontDoStatModificationsOnCancel": false,
+    "InstantDurabilityModifications": false,
+    "ReceivingCardFlavourBonus": false,
+    "GivenCardFlavourBonus": false,
+    "ResetWhenDone": null,
+    "StatInterruptions": [],
+    "StartDialog": null,
+    "ProducedCards": [],
+    "StatModifications": [],
+    "InterpolatedStatModifications": [],
+    "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "TemporaryStatModifications": [],
+    "MovePlayer": {
+      "MoveOption": 0,
+      "ToEnv": null,
+      "Pathfinding": null,
+      "Direction": 0
+    },
+    "MoveReceivingCard": {
+      "Card": null,
+      "UseCardinalDirection": false,
+      "MoveInDirection": 0,
+      "Pathfinding": null
+    },
+    "SpawnNPCS": [],
+    "DeleteNPCS": [],
+    "MoveNPC": [],
+    "SetNPCHome": [],
+    "ExtraDurabilityModifications": [],
+    "BlueprintsFullUnlock": [],
+    "CompletedImprovements": [],
+    "AddedInRunPerks": [],
+    "DontShowDestroyMessage": false,
+    "CustomDestroyMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "NoCardsAffectedMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "ReceivingCardChanges": {
+      "ModType": 0,
+      "TransformInto": null,
+      "TransformToLiquidQuantity": 0,
+      "TransferSpoilage": false,
+      "TransferUsage": false,
+      "TransferFuel": false,
+      "TransferCharges": false,
+      "TransferSpecial1": false,
+      "TransferSpecial2": false,
+      "TransferSpecial3": false,
+      "TransferSpecial4": false,
+      "TransferInventory": false,
+      "TransferSavedIngredients": false,
+      "AverageGivenAndReceivingCards": false,
+      "TransferLiquid": false,
+      "SpoilageTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "UsageTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "FuelTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "ProgressTransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special1TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special2TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special3TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "Special4TransferScale": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "ModifyDurability": false,
+      "ModifyLiquid": false,
+      "DropOnDestroyList": false,
+      "LiquidEffectScaling": 0,
+      "AddFlavoursFromTargetCard": false,
+      "AddFlavoursFromOtherCard": false,
+      "AddSpicesFromTargetCard": false,
+      "AddSpicesFromOtherCard": false,
+      "AddedFlavours": [],
+      "AddedSpiceTags": [],
+      "SpoilageChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpoilageFromOtherCard": false,
+      "UsageChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetUsageFromOtherCard": false,
+      "FuelChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetFuelFromOtherCard": false,
+      "ChargesChange": {
+        "x": 0,
+        "y": 0
+      },
+      "GetProgressFromOtherCard": false,
+      "LiquidQuantityChange": {
+        "x": 0,
+        "y": 0
+      },
+      "Special1Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial1FromOtherCard": false,
+      "Special2Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial2FromOtherCard": false,
+      "Special3Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial3FromOtherCard": false,
+      "Special4Change": {
+        "x": 0,
+        "y": 0
+      },
+      "GetSpecial4FromOtherCard": false,
+      "StatInterpolatedDurabilityChanges": [],
+      "DurabilityInterpolatedTransfers": [],
+      "ScaleChangesPerPortionOfLiquid": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "UseOtherCardForLiquidQuantity": false
+    },
+    "CustomWindowPrefab": null,
+    "OpenQuestLog": false,
+    "OpenMap": false,
+    "UpdateMap": false,
+    "EditDescription": false,
+    "FadeToBlack": 0,
+    "FadeMessage": {
+      "DefaultText": "",
+      "Text": "",
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "FadeTips": false,
+    "TravelToPreviousEnv": false,
+    "TravelToOtherRoom": false,
+    "RoomDirection": 0,
+    "ExitDirection": 0
   },
   "m_GameObject": null,
   "m_Enabled": 1,
+  "Perks": [],
+  "MandatoryPerks": [],
+  "ItemPreferences": [],
+  "EquipmentSelectionTags": [],
+  "DebugEquipmentSelection": false,
   "DebugLogActions": false,
   "DebugActionIDs": [],
   "CannotTrade": false,

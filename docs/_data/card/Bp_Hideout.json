@@ -720,16 +720,16 @@
           "MaxValue": 0
         },
         "SpecialDurability1": {
-          "Active": false,
+          "Active": true,
           "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
+            "DefaultText": "Being Used",
+            "Text": "Being Used",
+            "zh": "Being Used",
+            "en": "Being Used",
+            "ja": "Being Used"
           },
           "OverrideIcon": null,
-          "MaxValue": 0
+          "MaxValue": 1
         },
         "SpecialDurability2": {
           "Active": false,
@@ -4311,7 +4311,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -4973,7 +4973,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -5058,7 +5058,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -5083,6 +5083,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

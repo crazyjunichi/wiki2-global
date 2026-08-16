@@ -1,0 +1,1 @@
+import{g as s,w as n,l as o}from"./m5P1JxQP.js";const l=s({__name:"test",async setup(r){let e,t;const a=([e,t]=n(()=>o("card/River")),e=await e,t(),e);return console.log(a),(_,c)=>null}});export{l as default};

@@ -7,7 +7,7 @@
   "zh": "屠宰工具",
   "en": "Butchering Tools",
   "ja": "解体道具",
-  "UniqueIDIndex": 4589,
+  "UniqueIDIndex": 4941,
   "StartUnlocked": false,
   "ActionObjectives": [],
   "CardsOnBoardObjectives": [],
@@ -28,7 +28,7 @@
         "en": "Butchering Mat",
         "ja": "解体用マット",
         "UniqueID": "844e8291e37a21241ad5c3bc736b80c1",
-        "UniqueIDIndex": 4592,
+        "UniqueIDIndex": 4944,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -245,7 +245,7 @@
         "en": "Butchering Knife",
         "ja": "解体用ナイフ",
         "UniqueID": "8ef670bcbd504e742b5951b456ce177d",
-        "UniqueIDIndex": 4593,
+        "UniqueIDIndex": 4945,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -556,7 +556,7 @@
         "en": "Meat Hook",
         "ja": "肉吊りフック",
         "UniqueID": "4951cee1a8f6ad1488b499b295f52680",
-        "UniqueIDIndex": 4594,
+        "UniqueIDIndex": 4946,
         "StartUnlocked": false,
         "ActionObjectives": [],
         "CardsOnBoardObjectives": [
@@ -664,13 +664,13 @@
                 }
               ],
               "SpoilageTime": {
-                "Active": true,
+                "Active": false,
                 "CardStatName": {
-                  "DefaultText": "Sharpness",
-                  "Text": "锋利度",
-                  "zh": "锋利度",
-                  "en": "Sharpness",
-                  "ja": "切れ味"
+                  "DefaultText": "",
+                  "Text": "SpoilageTime",
+                  "zh": "时间",
+                  "en": "Spoilage",
+                  "ja": ""
                 },
                 "OverrideIcon": {
                   "FileName": "Knife_Blank_Copper"
@@ -678,7 +678,7 @@
                 "MaxValue": 1000
               },
               "UsageDurability": {
-                "Active": true,
+                "Active": false,
                 "CardStatName": {
                   "DefaultText": "",
                   "Text": "UsageDurability",
@@ -692,25 +692,25 @@
                 "MaxValue": 10000
               },
               "FuelCapacity": {
-                "Active": true,
+                "Active": false,
                 "CardStatName": {
-                  "DefaultText": "Recently Sharpened",
-                  "Text": "近期磨利",
-                  "zh": "近期磨利",
-                  "en": "Recently Sharpened",
-                  "ja": "研いだばかり"
+                  "DefaultText": "",
+                  "Text": "FuelCapacity",
+                  "zh": "容量",
+                  "en": "Fuel",
+                  "ja": ""
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1
               },
               "Progress": {
-                "Active": true,
+                "Active": false,
                 "CardStatName": {
-                  "DefaultText": "Beauty",
-                  "Text": "美观",
-                  "zh": "美观",
-                  "en": "Beauty",
-                  "ja": "美しさ"
+                  "DefaultText": "",
+                  "Text": "Progress",
+                  "zh": "进度",
+                  "en": "Progress",
+                  "ja": ""
                 },
                 "OverrideIcon": null,
                 "MaxValue": 1000
@@ -742,13 +742,13 @@
                 "MaxValue": 100
               },
               "SpecialDurability3": {
-                "Active": true,
+                "Active": false,
                 "CardStatName": {
-                  "DefaultText": "Quality",
+                  "DefaultText": "",
                   "Text": "品质",
-                  "zh": "品质",
-                  "en": "Quality",
-                  "ja": "質"
+                  "zh": "特殊3",
+                  "en": "Special3",
+                  "ja": ""
                 },
                 "OverrideIcon": {
                   "FileName": "Quality"
@@ -927,6 +927,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1118,6 +1119,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1478,6 +1480,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1491,6 +1494,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],

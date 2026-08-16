@@ -7,7 +7,7 @@
   "zh": "纺车",
   "en": "Spinning Wheel",
   "ja": "Spinning Wheel",
-  "UniqueIDIndex": 2369,
+  "UniqueIDIndex": 2370,
   "CardType": 0,
   "CardTags": [],
   "CardName": {
@@ -249,11 +249,11 @@
     "Active": false,
     "FloatValue": 0,
     "CardStatName": {
-      "DefaultText": "Quality",
+      "DefaultText": "",
       "Text": "品质",
-      "zh": "品质",
-      "en": "Quality",
-      "ja": "Quality"
+      "zh": "特殊2",
+      "en": "Special2",
+      "ja": ""
     },
     "RandomStartingOffset": 0,
     "MaxValue": 100,
@@ -1251,6 +1251,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1442,6 +1443,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1453,6 +1455,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1466,6 +1469,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1494,7 +1499,7 @@
           "icon": "Spinning_Wheel",
           "type": "card",
           "CardType": 2,
-          "zh": "纺车",
+          "zh": "Spinning Wheel",
           "en": "Spinning Wheel",
           "ja": "Spinning Wheel",
           "SpoilageTime": {
@@ -1560,11 +1565,11 @@
           "SpecialDurability2": {
             "Active": false,
             "CardStatName": {
-              "DefaultText": "Quality",
+              "DefaultText": "",
               "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "Quality"
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Quality"
@@ -1782,7 +1787,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -1867,7 +1872,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -1892,6 +1897,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -1916,7 +1923,7 @@
         "icon": "Spinning_Wheel",
         "type": "card",
         "CardType": 2,
-        "zh": "纺车",
+        "zh": "Spinning Wheel",
         "en": "Spinning Wheel",
         "ja": "Spinning Wheel"
       },

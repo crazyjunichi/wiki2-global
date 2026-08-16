@@ -134,6 +134,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -325,6 +326,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -336,6 +338,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -349,6 +352,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1127,6 +1132,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [
@@ -1141,41 +1147,11 @@
             "ja": "Beaver"
           },
           "TargetStat": {
-            "m_Name": "AgentHasHome",
             "key": "AgentHasHome",
             "type": "durability",
             "zh": "有洞穴",
             "en": "AgentHasHome",
-            "ja": "Agent Has Home",
-            "GameName": {
-              "DefaultText": "Agent Has Home",
-              "Text": "有洞穴",
-              "zh": "有洞穴",
-              "en": "AgentHasHome",
-              "ja": "Agent Has Home"
-            },
-            "DefaultStartingValue": 0,
-            "DefaultMinMaxValue": {
-              "x": 0,
-              "y": 1
-            },
-            "DefaultRate": 0,
-            "DefaultMinMaxRate": {
-              "x": 0,
-              "y": 0
-            },
-            "StatVisibleIcon": null,
-            "HidingOptions": 0,
-            "TextDisplay": 0,
-            "NumberPrecision": 0,
-            "StatScalingToModifiers": [],
-            "NPCStatScalingToModifiers": [],
-            "name": "有洞穴",
-            "desc": "Agent Has Home",
-            "m_GameObject": null,
-            "m_Enabled": 1,
-            "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
-            "UniqueIDIndex": 3165
+            "ja": "Agent Has Home"
           },
           "ConditionRange": {
             "x": 0,
@@ -1371,6 +1347,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1384,41 +1361,11 @@
       "NPCStatModifications": [
         {
           "TargetStat": {
-            "m_Name": "AgentHasHome",
             "key": "AgentHasHome",
             "type": "durability",
             "zh": "有洞穴",
             "en": "AgentHasHome",
-            "ja": "Agent Has Home",
-            "GameName": {
-              "DefaultText": "Agent Has Home",
-              "Text": "有洞穴",
-              "zh": "有洞穴",
-              "en": "AgentHasHome",
-              "ja": "Agent Has Home"
-            },
-            "DefaultStartingValue": 0,
-            "DefaultMinMaxValue": {
-              "x": 0,
-              "y": 1
-            },
-            "DefaultRate": 0,
-            "DefaultMinMaxRate": {
-              "x": 0,
-              "y": 0
-            },
-            "StatVisibleIcon": null,
-            "HidingOptions": 0,
-            "TextDisplay": 0,
-            "NumberPrecision": 0,
-            "StatScalingToModifiers": [],
-            "NPCStatScalingToModifiers": [],
-            "name": "有洞穴",
-            "desc": "Agent Has Home",
-            "m_GameObject": null,
-            "m_Enabled": 1,
-            "UniqueID": "f4fefc266bb654544bbab4f2be38f692",
-            "UniqueIDIndex": 3165
+            "ja": "Agent Has Home"
           },
           "UseAssociatedAgent": false,
           "TargetAgent": {
@@ -1432,9 +1379,11 @@
           "ValueChange": {
             "x": 1,
             "y": 1
-          }
+          },
+          "IgnoreNovelty": false
         }
       ],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1448,6 +1397,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [
         {
@@ -2457,13 +2408,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -2838,12 +2793,13 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3268,6 +3224,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4170,6 +4127,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4183,6 +4141,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4393,7 +4353,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -4478,7 +4438,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -4503,6 +4463,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

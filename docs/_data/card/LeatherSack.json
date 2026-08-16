@@ -917,7 +917,74 @@
   },
   "DefaultLiquidImage": null,
   "LiquidImages": [],
-  "ExclusivelyAcceptedLiquids": [],
+  "ExclusivelyAcceptedLiquids": [
+    {
+      "Target": {
+        "key": "tag_PowderLiquid",
+        "text": "“Powder Liquid”",
+        "icon": "",
+        "type": "tag",
+        "count": 27,
+        "zh": "粉末液体",
+        "en": "Powder Liquid",
+        "ja": "Powder Liquid",
+        "SpoilageTime": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Spoilage",
+            "Text": "变质",
+            "zh": "变质",
+            "en": "Spoilage",
+            "ja": "Spoilage"
+          },
+          "OverrideIcon": {
+            "FileName": "Bacteria"
+          },
+          "MaxValue": 3600
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 1
+        },
+        "Progress": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Nutrition",
+            "Text": "营养",
+            "zh": "营养",
+            "en": "Nutrition",
+            "ja": "Nutrition"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Quality",
+            "Text": "品质",
+            "zh": "品质",
+            "en": "Quality",
+            "ja": "Quality"
+          },
+          "OverrideIcon": {
+            "FileName": "Quality"
+          },
+          "MaxValue": 96
+        }
+      }
+    }
+  ],
   "NOTAcceptedLiquids": [],
   "CannotGiveLiquidWithDragNDrop": false,
   "CannotReceiveLiquidWithDragNDrop": false,
@@ -1191,7 +1258,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -1539,7 +1606,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -1629,7 +1696,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -1709,7 +1776,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -1829,7 +1896,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -1923,7 +1990,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -2013,7 +2080,7 @@
         "SpoilageTime": {
           "Active": true,
           "CardStatName": {
-            "DefaultText": "Hunger",
+            "DefaultText": "Satiation",
             "Text": "饥饿",
             "zh": "饥饿",
             "en": "Hunger",
@@ -4681,7 +4748,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -4805,13 +4872,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5097,7 +5168,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -5221,13 +5292,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5551,7 +5626,7 @@
   "WeaponMoves": [],
   "DismantleActions": [],
   "AlternateDismantleActions": [],
-  "MaxLiquidCapacity": 0,
+  "MaxLiquidCapacity": 1800,
   "UseCoordinates": false,
   "CreatedPath": null,
   "OppositePath": null,
@@ -5591,7 +5666,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -5676,7 +5751,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -5701,6 +5776,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

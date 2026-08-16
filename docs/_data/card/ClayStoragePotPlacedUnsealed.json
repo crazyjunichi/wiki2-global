@@ -722,7 +722,7 @@
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Hunger",
+          "DefaultText": "Satiation",
           "Text": "饥饿",
           "zh": "饥饿",
           "en": "Hunger",
@@ -6160,6 +6160,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -6351,6 +6352,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -6511,6 +6513,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -6524,6 +6527,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -7502,46 +7507,6 @@
         "en": "Spirit Liquid",
         "ja": "精霊水"
       }
-    },
-    {
-      "Target": {
-        "key": "tag_PowderLiquid",
-        "text": "“Powder Liquid”",
-        "icon": "",
-        "type": "tag",
-        "count": 13,
-        "zh": "粉末液体",
-        "en": "Powder Liquid",
-        "ja": "Powder Liquid",
-        "SpoilageTime": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Spoilage",
-            "Text": "变质",
-            "zh": "变质",
-            "en": "Spoilage",
-            "ja": "腐敗"
-          },
-          "OverrideIcon": {
-            "FileName": "Bacteria"
-          },
-          "MaxValue": 3600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Quality",
-            "Text": "品质",
-            "zh": "品质",
-            "en": "Quality",
-            "ja": "クオリティ"
-          },
-          "OverrideIcon": {
-            "FileName": "Quality"
-          },
-          "MaxValue": 192
-        }
-      }
     }
   ],
   "CannotGiveLiquidWithDragNDrop": false,
@@ -8385,7 +8350,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -8509,7 +8474,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -8633,7 +8598,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -8731,7 +8696,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -8825,7 +8790,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -9450,11 +9415,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -9495,6 +9463,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9785,13 +9754,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10081,7 +10054,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -10205,13 +10178,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10497,7 +10474,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -10621,13 +10598,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10997,6 +10978,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -11188,6 +11170,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -11199,6 +11182,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -11212,6 +11196,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -11535,6 +11521,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -11859,6 +11846,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -11982,6 +11970,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -11995,6 +11984,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -12210,6 +12201,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -12420,6 +12412,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -12851,6 +12844,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -12864,6 +12858,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -13034,7 +13030,7 @@
     }
   ],
   "AlternateDismantleActions": [],
-  "MaxLiquidCapacity": 5400,
+  "MaxLiquidCapacity": 6000,
   "UseCoordinates": false,
   "CreatedPath": null,
   "OppositePath": null,
@@ -13074,7 +13070,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -13159,7 +13155,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": true,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -13184,6 +13180,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_StoreFood",
+      "icon": "",
+      "type": "npc",
+      "zh": "Store Food",
+      "en": "Store Food",
+      "ja": "Store Food"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

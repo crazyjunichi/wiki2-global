@@ -7,7 +7,7 @@
   "zh": "水",
   "en": "Water",
   "ja": "水",
-  "UniqueIDIndex": 1768,
+  "UniqueIDIndex": 1767,
   "CardType": 9,
   "CardTags": [
     {
@@ -727,6 +727,120 @@
         },
         "MaxValue": 1000
       }
+    },
+    {
+      "key": "tag_HumanDrink",
+      "text": "“Human Drink”",
+      "icon": "",
+      "type": "tag",
+      "count": 4,
+      "zh": "Human Drink",
+      "en": "Human Drink",
+      "ja": "Human Drink",
+      "SpoilageTime": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Spoilage",
+          "Text": "耐久",
+          "zh": "耐久",
+          "en": "Spoilage",
+          "ja": "腐敗物"
+        },
+        "OverrideIcon": {
+          "FileName": "Spoilage"
+        },
+        "MaxValue": 16
+      },
+      "UsageDurability": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Vitamins",
+          "Text": "维生素",
+          "zh": "维生素",
+          "en": "Vitamins",
+          "ja": "ビタミン"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationVegetables"
+        },
+        "MaxValue": 1000
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Temperature",
+          "Text": "温度",
+          "zh": "温度",
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "OverrideIcon": {
+          "FileName": "Hot"
+        },
+        "MaxValue": 200
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Thickness",
+          "Text": "浓稠度",
+          "zh": "浓稠度",
+          "en": "Thickness",
+          "ja": "濃厚さ"
+        },
+        "OverrideIcon": {
+          "FileName": "SaturationCauldron"
+        },
+        "MaxValue": 100
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Common Fish Population",
+          "Text": "常见鱼类种群",
+          "zh": "常见鱼类种群",
+          "en": "Common Fish Population",
+          "ja": "コモンな魚の数"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 10000
+      },
+      "SpecialDurability2": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Uncommon Fish Population",
+          "Text": "罕见鱼类种群数量",
+          "zh": "罕见鱼类种群数量",
+          "en": "Uncommon Fish Population",
+          "ja": "アンコモンな魚の数"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 3000
+      },
+      "SpecialDurability3": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Rare Fish Population",
+          "Text": "珍稀鱼类种群数量",
+          "zh": "珍稀鱼类种群数量",
+          "en": "Rare Fish Population",
+          "ja": "レアな魚の数"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1000
+      },
+      "SpecialDurability4": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "River Type",
+          "Text": "河流类型",
+          "zh": "河流类型",
+          "en": "River Type",
+          "ja": "River Type"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1000
+      }
     }
   ],
   "CardName": {
@@ -832,6 +946,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1023,6 +1138,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1034,6 +1150,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1047,6 +1164,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3923,6 +4042,134 @@
               "FileName": "Cooking"
             },
             "MaxValue": 1
+          }
+        },
+        "localization": {
+          "zh": "转化：Transform into Fly Agaric Tea",
+          "en": "Action: Transform into Fly Agaric Tea",
+          "ja": "アクション：Transform into Fly Agaric Tea"
+        },
+        "value": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "link": {
+          "key": "FlyAgaricBoiled",
+          "icon": "FlyAgaric",
+          "type": "card",
+          "CardType": 0,
+          "zh": "水煮毒蝇伞",
+          "en": "Boiled Fly Agaric",
+          "ja": "ゆでベニテングタケ",
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 120
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "进度",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Hammer"
+            },
+            "MaxValue": 24
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Temperature",
+              "Text": "温度",
+              "zh": "温度",
+              "en": "Temperature",
+              "ja": "温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "燃烧度",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": {
+              "FileName": "Flame"
+            },
+            "MaxValue": 8
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 96
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Boil",
+              "Text": "烹煮",
+              "zh": "烹煮",
+              "en": "Boil",
+              "ja": "Boil"
+            },
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
           }
         },
         "localization": {
@@ -22491,7 +22738,7 @@
           "type": "card",
           "CardType": 0,
           "zh": "肠子",
-          "en": "Intestines",
+          "en": "Dirty Intestines",
           "ja": "腸",
           "SpoilageTime": {
             "Active": true,
@@ -23139,7 +23386,7 @@
           "type": "card",
           "CardType": 0,
           "zh": "肾脏",
-          "en": "Kidney",
+          "en": "Dirty Kidney",
           "ja": "腎臓",
           "SpoilageTime": {
             "Active": true,
@@ -24467,16 +24714,18 @@
             "MaxValue": 0
           },
           "SpecialDurability4": {
-            "Active": false,
+            "Active": true,
             "CardStatName": {
-              "DefaultText": "",
-              "Text": "SpecialDurability4",
-              "zh": "特殊4",
-              "en": "Special4",
-              "ja": ""
+              "DefaultText": "Boil",
+              "Text": "Boil",
+              "zh": "Boil",
+              "en": "Boil",
+              "ja": "Boil"
             },
-            "OverrideIcon": null,
-            "MaxValue": 2
+            "OverrideIcon": {
+              "FileName": "Cooking"
+            },
+            "MaxValue": 4
           }
         },
         "localization": {
@@ -24758,7 +25007,7 @@
           "type": "card",
           "CardType": 0,
           "zh": "小牛胃",
-          "en": "Calf Stomach",
+          "en": "Dirty Calf Stomach",
           "ja": "子牛の胃",
           "SpoilageTime": {
             "Active": true,
@@ -25278,7 +25527,7 @@
           "type": "card",
           "CardType": 0,
           "zh": "胃",
-          "en": "Stomach",
+          "en": "Dirty Stomach",
           "ja": "胃",
           "SpoilageTime": {
             "Active": true,
@@ -31932,6 +32181,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -32148,6 +32398,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -32159,6 +32410,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -32172,6 +32424,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -34253,6 +34507,7 @@
   "AddedWeightFromDurabilities": [
     {
       "InputDurability": 8,
+      "InterpolateUsingPercentage": false,
       "Value": {
         "Active": true,
         "InputValueRange": {
@@ -34599,13 +34854,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -34933,13 +35192,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -35241,13 +35504,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -35587,13 +35854,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -35884,13 +36155,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -36181,13 +36456,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -36478,13 +36757,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -36775,13 +37058,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -37329,11 +37616,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -37622,7 +37912,8 @@
         "zh": "火酿已完成",
         "en": "Firebrew ready",
         "ja": "Firebrew ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Fairybrew",
@@ -38043,11 +38334,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -38336,7 +38630,8 @@
         "zh": "仙酿已完成",
         "en": "Fairybrew ready",
         "ja": "Fairybrew ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Appleweed Tea",
@@ -38757,11 +39052,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -39101,7 +39399,8 @@
         "zh": "柰草茶已完成",
         "en": "Appleweed Tea ready",
         "ja": "Appleweed Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Bog Myrtle Tea",
@@ -39783,11 +40082,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -40131,7 +40433,8 @@
         "zh": "沼泽香木茶已煮好",
         "en": "Bog Myrtle Tea ready",
         "ja": "Bog Myrtle Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Charcoal Tea",
@@ -40567,11 +40870,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -40856,7 +41162,8 @@
         "zh": "木炭茶已完成",
         "en": "Charcoal Tea ready",
         "ja": "Charcoal Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Fly Agaric Tea",
@@ -41086,6 +41393,125 @@
                 "FileName": "Cooking"
               },
               "MaxValue": 1
+            }
+          }
+        },
+        {
+          "Target": {
+            "key": "FlyAgaricBoiled",
+            "icon": "FlyAgaric",
+            "type": "card",
+            "CardType": 0,
+            "zh": "水煮毒蝇伞",
+            "en": "Boiled Fly Agaric",
+            "ja": "ゆでベニテングタケ",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Spoilage",
+                "Text": "变质",
+                "zh": "变质",
+                "en": "Spoilage",
+                "ja": "腐敗"
+              },
+              "OverrideIcon": {
+                "FileName": "Bacteria"
+              },
+              "MaxValue": 120
+            },
+            "UsageDurability": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "进度",
+                "zh": "耐久",
+                "en": "Usage",
+                "ja": ""
+              },
+              "OverrideIcon": {
+                "FileName": "Hammer"
+              },
+              "MaxValue": 24
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Temperature",
+                "Text": "温度",
+                "zh": "温度",
+                "en": "Temperature",
+                "ja": "温度"
+              },
+              "OverrideIcon": {
+                "FileName": "Hot"
+              },
+              "MaxValue": 200
+            },
+            "Progress": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability1": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "燃烧度",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
+              },
+              "OverrideIcon": {
+                "FileName": "Flame"
+              },
+              "MaxValue": 8
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "クオリティ"
+              },
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 96
+            },
+            "SpecialDurability3": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability3",
+                "zh": "特殊3",
+                "en": "Special3",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Boil",
+                "Text": "烹煮",
+                "zh": "烹煮",
+                "en": "Boil",
+                "ja": "Boil"
+              },
+              "OverrideIcon": {
+                "FileName": "Cooking"
+              },
+              "MaxValue": 4
             }
           }
         }
@@ -41413,11 +41839,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -41757,7 +42186,8 @@
         "zh": "毒蝇伞茶已完成",
         "en": "Fly Agaric Tea ready",
         "ja": "Fly Agaric Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Frostleaf Tea",
@@ -42192,11 +42622,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -42540,7 +42973,8 @@
         "zh": "霜叶茶已完成",
         "en": "Frostleaf Tea ready",
         "ja": "Frostleaf Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Garlic Water",
@@ -42982,11 +43416,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -43326,7 +43763,8 @@
         "zh": "蒜水已完成",
         "en": "Garlic Water ready",
         "ja": "Garlic Water ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Heather Flowers tea",
@@ -43996,11 +44434,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -44340,7 +44781,8 @@
         "zh": "帚石南茶已完成",
         "en": "Heather Tea ready",
         "ja": "Heather Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Juniperl Tea",
@@ -44780,11 +45222,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -45069,7 +45514,8 @@
         "zh": "杜松茶已完成",
         "en": "Juniper Tea ready",
         "ja": "Juniper Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Needle Tea",
@@ -45509,11 +45955,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -45798,7 +46247,8 @@
         "zh": "针叶茶已完成",
         "en": "Needle Tea ready",
         "ja": "Needle Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Spirit Tea",
@@ -46476,11 +46926,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -46820,7 +47273,8 @@
         "zh": "神奇茶已完成",
         "en": "Spirit Tea ready",
         "ja": "Spirit Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Willow Bark Tea",
@@ -47490,11 +47944,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -47816,7 +48273,8 @@
         "zh": "柳树皮茶已完成",
         "en": "Willow Bark Tea ready",
         "ja": "Willow Bark Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Transform into Wood Sorrel Tea",
@@ -48262,11 +48720,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -48588,7 +49049,8 @@
         "zh": "酢浆草茶已完成",
         "en": "Wood Sorrel Tea ready",
         "ja": "Wood Sorrel Tea ready"
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Acorns",
@@ -49853,11 +50315,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -49920,13 +50385,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -49942,7 +50400,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -30
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -50073,7 +50550,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Billberries",
@@ -51114,11 +51592,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -51181,13 +51662,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -51203,7 +51677,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -26
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -51334,7 +51827,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Bird Meat",
@@ -52137,11 +52631,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -52204,13 +52701,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 96,
@@ -52226,7 +52716,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -34
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -52357,7 +52866,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Blood Curd",
@@ -53279,11 +53789,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -53346,13 +53859,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 192,
@@ -53368,7 +53874,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -45
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -53499,7 +54024,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Blood Product with Fat",
@@ -54540,11 +55066,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -54607,13 +55136,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 240,
@@ -54629,7 +55151,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -57
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -54760,7 +55301,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Blood Product with Flour and Fat",
@@ -55801,11 +56343,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -55868,13 +56413,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 240,
@@ -55890,7 +56428,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -97
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -56021,7 +56578,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Bog Myrtle",
@@ -56703,11 +57261,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -56770,13 +57331,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -56792,7 +57346,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -56923,7 +57496,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Bones",
@@ -57470,11 +58044,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -57537,13 +58114,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 36,
@@ -57559,7 +58129,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -7
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -57690,7 +58279,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Breadloaf",
@@ -58491,11 +59081,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -58558,13 +59151,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -58580,7 +59166,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -26
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -58711,7 +59316,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Bugs",
@@ -59385,11 +59991,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -59452,13 +60061,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 36,
@@ -59474,7 +60076,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -9
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -59605,7 +60226,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Cattail Root",
@@ -60406,11 +61028,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -60473,13 +61098,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -60495,7 +61113,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -5
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -60626,7 +61263,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Clover",
@@ -61187,11 +61825,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -61254,13 +61895,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -61276,7 +61910,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -61407,7 +62060,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Egg Chicken",
@@ -62087,11 +62741,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -62154,13 +62811,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 4,
@@ -62176,7 +62826,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -8
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -62307,7 +62976,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Egg Partridge",
@@ -62989,11 +63659,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -63056,13 +63729,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 2.5,
@@ -63078,7 +63744,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -4
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -63209,7 +63894,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Egg Wild",
@@ -63893,11 +64579,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -63960,13 +64649,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 4,
@@ -63982,7 +64664,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -4
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -64113,7 +64814,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Fat",
@@ -64561,11 +65263,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -64628,13 +65333,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 48,
@@ -64650,7 +65348,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -12
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -64781,7 +65498,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Fly Agaric and Forest Caps",
@@ -66056,11 +66774,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -66123,13 +66844,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -66145,7 +66859,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -10
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -66276,7 +67009,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Fishmeat",
@@ -67672,11 +68406,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -67739,13 +68476,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 192,
@@ -67761,7 +68491,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -34
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -67892,7 +68641,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Fishscraps",
@@ -68443,11 +69193,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -68510,13 +69263,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 9.6,
@@ -68532,7 +69278,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -1.7
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -68663,7 +69428,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Fireroot",
@@ -69579,11 +70345,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -69646,13 +70415,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -69668,7 +70430,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -10
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -69799,7 +70580,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Flatbread",
@@ -70479,11 +71261,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -70546,13 +71331,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -70568,7 +71346,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -40
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -70699,7 +71496,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Flour",
@@ -71371,11 +72169,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -71438,13 +72239,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -71460,7 +72254,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -44
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -71591,7 +72404,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Frog",
@@ -72273,11 +73087,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -72340,13 +73157,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 24,
@@ -72362,7 +73172,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -10
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -72493,7 +73322,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Frosfleaf",
@@ -73175,11 +74005,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -73242,13 +74075,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -73264,7 +74090,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -73395,7 +74240,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Garlic",
@@ -74192,11 +75038,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -74259,13 +75108,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -74281,7 +75123,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -10
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -74412,7 +75273,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Healers Moss",
@@ -74979,11 +75841,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -75046,13 +75911,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -75068,7 +75926,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -6.4
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -75199,7 +76076,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Juniper Berries",
@@ -76121,11 +76999,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -76188,13 +77069,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -76210,7 +77084,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -5
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -76341,7 +77234,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Leeches",
@@ -77015,11 +77909,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -77082,13 +77979,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 4,
@@ -77104,7 +77994,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -1
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -77235,7 +78144,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Meat",
@@ -79263,7 +80173,7 @@
             "type": "card",
             "CardType": 0,
             "zh": "肠子",
-            "en": "Intestines",
+            "en": "Dirty Intestines",
             "ja": "腸",
             "SpoilageTime": {
               "Active": true,
@@ -79866,7 +80776,7 @@
             "type": "card",
             "CardType": 0,
             "zh": "肾脏",
-            "en": "Kidney",
+            "en": "Dirty Kidney",
             "ja": "腎臓",
             "SpoilageTime": {
               "Active": true,
@@ -81113,16 +82023,18 @@
               "MaxValue": 0
             },
             "SpecialDurability4": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
+                "DefaultText": "Boil",
+                "Text": "Boil",
+                "zh": "Boil",
+                "en": "Boil",
+                "ja": "Boil"
               },
-              "OverrideIcon": null,
-              "MaxValue": 2
+              "OverrideIcon": {
+                "FileName": "Cooking"
+              },
+              "MaxValue": 4
             }
           }
         },
@@ -81377,7 +82289,7 @@
             "type": "card",
             "CardType": 0,
             "zh": "小牛胃",
-            "en": "Calf Stomach",
+            "en": "Dirty Calf Stomach",
             "ja": "子牛の胃",
             "SpoilageTime": {
               "Active": true,
@@ -81861,7 +82773,7 @@
             "type": "card",
             "CardType": 0,
             "zh": "胃",
-            "en": "Stomach",
+            "en": "Dirty Stomach",
             "ja": "胃",
             "SpoilageTime": {
               "Active": true,
@@ -82299,11 +83211,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -82366,13 +83281,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 192,
@@ -82388,7 +83296,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -45
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -82519,7 +83446,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Meat Fat",
@@ -83560,11 +84488,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -83627,13 +84558,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 240,
@@ -83649,7 +84573,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -57
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -83780,7 +84723,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Meat Fat Flour",
@@ -84821,11 +85765,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -84888,13 +85835,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 240,
@@ -84910,7 +85850,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -97
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -85041,7 +86000,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Minnow",
@@ -85604,11 +86564,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -85671,13 +86634,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 16,
@@ -85693,7 +86649,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -10
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -85824,7 +86799,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Mouse or Squirrel",
@@ -86744,11 +87720,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -86811,13 +87790,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 96,
@@ -86833,7 +87805,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -16
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -86964,7 +87955,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb NettleLeaves",
@@ -87648,11 +88640,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -87715,13 +88710,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -87737,7 +88725,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -4
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -87868,7 +88875,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Kingcup",
@@ -88433,11 +89441,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -88500,13 +89511,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -88522,7 +89526,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -88653,7 +89676,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Peas",
@@ -89573,11 +90597,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -89640,13 +90667,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 40,
@@ -89662,7 +90682,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -18
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -89793,7 +90832,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Spirit Mushrooms",
@@ -90471,11 +91511,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -90538,13 +91581,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -90560,7 +91596,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -90691,7 +91746,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Springberries",
@@ -91732,11 +92788,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -91799,13 +92858,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -91821,7 +92873,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -18
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -91952,7 +93023,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Tumour",
@@ -92755,11 +93827,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -92822,13 +93897,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 96,
@@ -92844,7 +93912,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -22.5
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -92975,7 +94062,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Turnroot",
@@ -93893,11 +94981,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -93960,13 +95051,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -93982,7 +95066,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -8
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -94113,7 +95216,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     },
     {
       "EffectName": "Absorb Wood Sorrel",
@@ -94674,11 +95778,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "PerformEvenIfTransferIs0": true,
       "CheckConditionsOnEveryTarget": true,
@@ -94741,13 +95848,6 @@
           }
         },
         {
-          "Durability": 64,
-          "Value": {
-            "x": -160,
-            "y": -160
-          }
-        },
-        {
           "Durability": 128,
           "Value": {
             "x": 0,
@@ -94763,7 +95863,26 @@
         }
       ],
       "TargetDurabilityChanges": [],
-      "SelfInterpolatedDurabilityChanges": [],
+      "SelfInterpolatedDurabilityChanges": [
+        {
+          "InputDurability": 64,
+          "OutputDurability": 64,
+          "UseOtherCard": true,
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 100,
+              "y": 0
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": -2
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
       "ScaleOtherChangesFromTransferQuantity": false,
       "ScaleOtherChangesWithLiquidQuantity": true,
       "SelfCardChange": {
@@ -94894,7 +96013,8 @@
         "zh": "",
         "en": "",
         "ja": ""
-      }
+      },
+      "Debug": false
     }
   ],
   "ActiveCounters": [],
@@ -95161,6 +96281,835 @@
       },
       "NotInterruptedByEncounters": false,
       "StackCompatible": false,
+      "DaytimeCost": 0,
+      "UseMiniTicks": 0,
+      "MinDaytimeCost": {
+        "Active": false,
+        "IntValue": 0
+      },
+      "ActionSounds": [],
+      "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_DrinkFree",
+            "icon": "",
+            "type": "npc",
+            "zh": "Drink",
+            "en": "Drink",
+            "ja": "Drink"
+          }
+        }
+      ],
+      "ActionTags": [
+        {
+          "key": "DrinkingAction",
+          "text": "DrinkingAction",
+          "type": "tag",
+          "count": 61,
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Vitamins",
+              "Text": "维生素",
+              "zh": "维生素",
+              "en": "Vitamins",
+              "ja": "ビタミン"
+            },
+            "OverrideIcon": {
+              "FileName": "Shield"
+            },
+            "MaxValue": 1000
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Liquid Temperature",
+              "Text": "液体温度",
+              "zh": "液体温度",
+              "en": "Liquid Temperature",
+              "ja": "Liquid Temperature"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "濃厚さ"
+            },
+            "OverrideIcon": {
+              "FileName": "Water"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Calories",
+              "Text": "卡路里",
+              "zh": "卡路里",
+              "en": "Calories",
+              "ja": "カロリー"
+            },
+            "OverrideIcon": {
+              "FileName": "Weight3"
+            },
+            "MaxValue": 1
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Proteins",
+              "Text": "蛋白质",
+              "zh": "蛋白质",
+              "en": "Proteins",
+              "ja": "タンパク質"
+            },
+            "OverrideIcon": {
+              "FileName": "Health"
+            },
+            "MaxValue": 1
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Waste",
+              "Text": "铁元素",
+              "zh": "铁元素",
+              "en": "Iron",
+              "ja": "Waste"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 1
+          },
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Spoilage",
+              "Text": "变质",
+              "zh": "变质",
+              "en": "Spoilage",
+              "ja": "腐敗"
+            },
+            "OverrideIcon": {
+              "FileName": "Spoilage"
+            },
+            "MaxValue": 16
+          },
+          "zh": "饮水动作",
+          "en": "DrinkingAction",
+          "ja": "DrinkingAction"
+        }
+      ],
+      "RequiredStatValues": [],
+      "RequiredNPCStatValues": [],
+      "RequiredCardsOnBoard": [],
+      "RequiredTagsOnBoard": [],
+      "RequiredAlreadyVisitedEnvironments": [],
+      "RequiredReceivingContainer": [],
+      "RequiredReceivingContainerTag": [],
+      "RequiredNOTReceivingContainerTag": [],
+      "RequiredReceivingContainerDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": false,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingDurabilities": {
+        "RequiredSpoilagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredUsagePercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredFuelPercent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredProgressPercent": {
+          "Active": true,
+          "FloatValue": 0,
+          "MaxValue": 0.0001,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredLiquidQuantity": 0,
+        "RequiredSpecial1Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial2Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial3Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "RequiredSpecial4Percent": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0,
+          "ScaleRequirementPerPortionOfLiquid": {
+            "Active": false,
+            "FloatValue": 0
+          }
+        },
+        "HideActionIfNotMet": true,
+        "FailMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        },
+        "SpecificFailMessages": []
+      },
+      "RequiredReceivingLiquidContent": {
+        "IsActive": false,
+        "RequiredLiquid": null,
+        "RequiredGroup": null,
+        "RequiredQuantity": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "RequiredActiveHidingGroups": [],
+      "HideIfConditionsNotMet": false,
+      "NotBaseAction": false,
+      "Cancellable": false,
+      "InstantStatModifications": false,
+      "LocksCardsForUse": false,
+      "DontDoStatModificationsOnCancel": false,
+      "InstantDurabilityModifications": false,
+      "ReceivingCardFlavourBonus": true,
+      "GivenCardFlavourBonus": false,
+      "ResetWhenDone": null,
+      "StatInterruptions": [],
+      "StartDialog": null,
+      "ProducedCards": [],
+      "StatModifications": [],
+      "InterpolatedStatModifications": [
+        {
+          "InputDurability": 32,
+          "OutputStat": {
+            "key": "Calories_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "胃部",
+            "en": "Stomach",
+            "ja": "お腹",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 2,
+          "OutputStat": {
+            "key": "Vitamins_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "胃中的维生素",
+            "en": "Stomach Vitamins",
+            "ja": "お腹のビタミン",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "Waste_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "胃中的残渣",
+            "en": "Stomach Waste",
+            "ja": "お腹の廃棄物",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 75
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 128,
+          "OutputStat": {
+            "key": "Proteins_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "胃中的蛋白质",
+            "en": "Stomach Proteins",
+            "ja": "お腹のタンパク質",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 256,
+          "OutputStat": {
+            "key": "Iron_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "铁元素",
+            "en": "Iron",
+            "ja": "鉄",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 1000
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "Fullness_Stomach",
+            "icon": "Stomach_Old",
+            "type": "stat",
+            "zh": "胃部饱胀",
+            "en": "Stomach Fullness",
+            "ja": "お腹の満腹感",
+            "max": 200,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 300
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "Satiation",
+            "icon": "Hunger",
+            "type": "stat",
+            "zh": "饱食度",
+            "en": "Satiation",
+            "ja": "飽き",
+            "max": 330,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 180
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "SaturationStew",
+            "icon": "SaturationCauldron",
+            "type": "stat",
+            "zh": "炖菜厌倦度",
+            "en": "Stew Saturation",
+            "ja": "シチューの飽き",
+            "max": 288,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 66
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 8,
+          "OutputStat": {
+            "key": "Thirst",
+            "icon": "Water",
+            "type": "stat",
+            "zh": "口渴度",
+            "en": "Thirst",
+            "ja": "喉の渇き",
+            "max": 288,
+            "min": 0
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 80,
+              "y": 40
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        },
+        {
+          "InputDurability": 64,
+          "OutputStat": {
+            "key": "Gratification",
+            "icon": "Morale2",
+            "type": "stat",
+            "zh": "满足感",
+            "en": "Gratification",
+            "ja": "満足感",
+            "max": 100,
+            "min": -100
+          },
+          "Value": {
+            "Active": true,
+            "InputValueRange": {
+              "x": 0,
+              "y": 100
+            },
+            "OutputValueRange": {
+              "x": 0,
+              "y": 20
+            },
+            "WhenOutOfRange": 1,
+            "OutOfRangeCustomValue": 0
+          }
+        }
+      ],
+      "NPCStatModifications": [],
+      "NPCSetDuties": [],
+      "TemporaryStatModifications": [],
+      "MovePlayer": {
+        "MoveOption": 0,
+        "ToEnv": null,
+        "Pathfinding": null,
+        "Direction": 0
+      },
+      "MoveReceivingCard": {
+        "Card": null,
+        "UseCardinalDirection": false,
+        "MoveInDirection": 0,
+        "Pathfinding": null
+      },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
+      "MoveNPC": [],
+      "SetNPCHome": [],
+      "ExtraDurabilityModifications": [],
+      "BlueprintsFullUnlock": [],
+      "CompletedImprovements": [],
+      "AddedInRunPerks": [],
+      "DontShowDestroyMessage": false,
+      "CustomDestroyMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoCardsAffectedMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "ReceivingCardChanges": {
+        "ModType": 0,
+        "TransformInto": null,
+        "TransformToLiquidQuantity": 0,
+        "TransferSpoilage": false,
+        "TransferUsage": false,
+        "TransferFuel": false,
+        "TransferCharges": false,
+        "TransferSpecial1": false,
+        "TransferSpecial2": false,
+        "TransferSpecial3": false,
+        "TransferSpecial4": false,
+        "TransferInventory": false,
+        "TransferSavedIngredients": false,
+        "AverageGivenAndReceivingCards": false,
+        "TransferLiquid": false,
+        "SpoilageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UsageTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "FuelTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ProgressTransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special1TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special2TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special3TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "Special4TransferScale": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "ModifyDurability": false,
+        "ModifyLiquid": true,
+        "DropOnDestroyList": false,
+        "LiquidEffectScaling": 2,
+        "AddFlavoursFromTargetCard": false,
+        "AddFlavoursFromOtherCard": false,
+        "AddSpicesFromTargetCard": false,
+        "AddSpicesFromOtherCard": false,
+        "AddedFlavours": [],
+        "AddedSpiceTags": [],
+        "SpoilageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpoilageFromOtherCard": false,
+        "UsageChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetUsageFromOtherCard": false,
+        "FuelChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetFuelFromOtherCard": false,
+        "ChargesChange": {
+          "x": 0,
+          "y": 0
+        },
+        "GetProgressFromOtherCard": false,
+        "LiquidQuantityChange": {
+          "x": -300,
+          "y": -300
+        },
+        "Special1Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial1FromOtherCard": false,
+        "Special2Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial2FromOtherCard": false,
+        "Special3Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial3FromOtherCard": false,
+        "Special4Change": {
+          "x": 0,
+          "y": 0
+        },
+        "GetSpecial4FromOtherCard": false,
+        "StatInterpolatedDurabilityChanges": [],
+        "DurabilityInterpolatedTransfers": [],
+        "ScaleChangesPerPortionOfLiquid": {
+          "Active": false,
+          "FloatValue": 0
+        },
+        "UseOtherCardForLiquidQuantity": false
+      },
+      "CustomWindowPrefab": null,
+      "OpenQuestLog": false,
+      "OpenMap": false,
+      "UpdateMap": false,
+      "EditDescription": false,
+      "FadeToBlack": 0,
+      "FadeMessage": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "FadeTips": false,
+      "TravelToPreviousEnv": false,
+      "TravelToOtherRoom": false,
+      "RoomDirection": 0,
+      "ExitDirection": 0,
+      "MinMaxExplorationDrops": {
+        "m_X": 0,
+        "m_Y": 0
+      },
+      "ExplorationValue": 0,
+      "HasExplorationDirection": false,
+      "ExplorationDirection": 0,
+      "DontShowOnCompass": false,
+      "DontShowOnInGameMap": false,
+      "PerformUponInspection": false,
+      "DontCloseInspectionWindow": false,
+      "AlwaysShow": false,
+      "AppearsOnCardsInInventory": false,
+      "VisibilityWithInventory": 0,
+      "AlternateActionIfConditionsNotMet": {
+        "Active": false,
+        "IntValue": 0
+      }
+    },
+    {
+      "ActionName": {
+        "DefaultText": "Drink",
+        "Text": "饮用",
+        "zh": "饮用",
+        "en": "Drink",
+        "ja": "飲む"
+      },
+      "ActionDescription": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NoveltyShared": false,
+      "VictorySettings": {
+        "Victory": false,
+        "SpecialEnding": false,
+        "VictoryMessage": {
+          "DefaultText": "",
+          "Text": "",
+          "zh": "",
+          "en": "",
+          "ja": ""
+        }
+      },
+      "UnavailableInDemo": false,
+      "SaveGame": false,
+      "ConfirmPopup": false,
+      "CustomConfirmText": {
+        "DefaultText": "",
+        "Text": "",
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "NotInterruptedByEncounters": false,
+      "StackCompatible": false,
       "DaytimeCost": 1,
       "UseMiniTicks": 0,
       "MinDaytimeCost": {
@@ -95169,6 +97118,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "StewDrinkingAction",
@@ -95482,6 +97432,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": true,
@@ -95754,6 +97705,7 @@
         }
       ],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -95767,6 +97719,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -95982,6 +97936,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "StewDrinkingAction",
@@ -96295,6 +98250,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": true,
@@ -96567,6 +98523,7 @@
         }
       ],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -96580,6 +98537,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -96795,12 +98754,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_DrinkFree",
+            "icon": "",
+            "type": "npc",
+            "zh": "Drink",
+            "en": "Drink",
+            "ja": "Drink"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 59,
+          "count": 61,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -97108,6 +99079,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": true,
@@ -97380,6 +99352,7 @@
         }
       ],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -97393,6 +99366,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -97610,6 +99585,7 @@
         null
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -97909,6 +99885,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -97920,6 +99897,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -97933,6 +99911,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -98152,12 +100132,13 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -98274,7 +100255,7 @@
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 59,
+          "count": 61,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -98703,6 +100684,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -99159,6 +101141,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -99172,6 +101155,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [
@@ -99362,11 +101347,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AffectedCards": [
             null
@@ -99674,12 +101662,13 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -99796,7 +101785,7 @@
           "key": "DrinkingAction",
           "text": "DrinkingAction",
           "type": "tag",
-          "count": 59,
+          "count": 61,
           "UsageDurability": {
             "Active": true,
             "CardStatName": {
@@ -100225,6 +102214,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -100681,6 +102671,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -100694,6 +102685,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [
@@ -100884,11 +102877,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AffectedCards": [
             null
@@ -101187,7 +103183,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -101272,7 +103268,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -101395,6 +103391,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -101472,9 +103470,41 @@
         "ja": "粘土のたらい"
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい"
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい"
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -101486,22 +103516,6 @@
         "zh": "未烧制的陶盆",
         "en": "Unfired Clay Basin",
         "ja": "未焼成の粘土のたらい"
-      },
-      "localization": {
-        "zh": "被动效果：下雨",
-        "en": "Passive Effect：Rain",
-        "ja": "パッシブ効果：雨"
-      }
-    },
-    {
-      "link": {
-        "key": "ClayBowl",
-        "icon": "Bowl_Clay",
-        "type": "card",
-        "CardType": 0,
-        "zh": "陶碗",
-        "en": "Clay Bowl",
-        "ja": "粘土のボウル"
       },
       "localization": {
         "zh": "被动效果：下雨",
@@ -101523,22 +103537,6 @@
         "zh": "动作：收集雨水",
         "en": "Action: Collect Rain",
         "ja": "アクション：雨水を貯める"
-      }
-    },
-    {
-      "link": {
-        "key": "ClayVase",
-        "icon": "Vase_Clay",
-        "type": "card",
-        "CardType": 0,
-        "zh": "陶罐",
-        "en": "Clay Vase",
-        "ja": "粘土の壺"
-      },
-      "localization": {
-        "zh": "被动效果：下雨",
-        "en": "Passive Effect：Rain",
-        "ja": "パッシブ効果：雨"
       }
     },
     {
@@ -101906,9 +103904,41 @@
         "ja": "雨水貯水槽"
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽"
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽"
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -102031,9 +104061,41 @@
         "ja": "シンプルな樽"
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽"
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽"
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -102063,9 +104125,41 @@
         "ja": "シンプルな樽"
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽"
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽"
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -102797,7 +104891,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "肠子",
-        "en": "Intestines",
+        "en": "Dirty Intestines",
         "ja": "腸"
       },
       "localization": {
@@ -102813,7 +104907,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "肾脏",
-        "en": "Kidney",
+        "en": "Dirty Kidney",
         "ja": "腎臓"
       },
       "localization": {
@@ -102829,7 +104923,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "小牛胃",
-        "en": "Calf Stomach",
+        "en": "Dirty Calf Stomach",
         "ja": "子牛の胃"
       },
       "localization": {
@@ -102845,7 +104939,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "胃",
-        "en": "Stomach",
+        "en": "Dirty Stomach",
         "ja": "胃"
       },
       "localization": {

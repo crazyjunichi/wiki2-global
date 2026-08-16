@@ -7,7 +7,7 @@
   "zh": "灵魂菇粉",
   "en": "Spirit Mushrooms Powder",
   "ja": "精霊キノコの粉",
-  "UniqueIDIndex": 2413,
+  "UniqueIDIndex": 2414,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 375,
+      "count": 380,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -481,7 +481,7 @@
     "MaxValue": 3600,
     "RestrictToSpecificValues": false,
     "ValidValues": [],
-    "RatePerDaytimePoint": 1,
+    "RatePerDaytimePoint": 0.5,
     "ExtraRateWhenEquipped": 0,
     "PauseRateWhenEnvWeightIsFull": false,
     "PauseRateWhenInventoryIsFull": false,
@@ -556,6 +556,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -747,6 +748,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -758,6 +760,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -771,6 +774,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4275,6 +4280,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -4466,6 +4472,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4477,6 +4484,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4490,6 +4498,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5408,6 +5418,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -5599,6 +5610,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -5610,6 +5622,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -5623,6 +5636,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6473,6 +6488,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -6664,6 +6680,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -6675,6 +6692,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -6688,6 +6706,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -7379,7 +7399,7 @@
     "ja": "<b>発見場所：</b> オークの平地.\\n\\n<b>成長に必要：</b> 酸度（高）、水分（高）、栄養（高）。\\n\\n<b>メリット：</b> 精神活性。"
   },
   "NotAutoSolvableEvent": false,
-  "ObjectWeight": 10,
+  "ObjectWeight": 16.66,
   "AddedWeightFromDurabilities": [],
   "WeightReductionWhenEquipped": 0,
   "NeedsRoomInLocationToSpawn": false,
@@ -7698,13 +7718,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8014,13 +8038,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8330,13 +8358,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8639,13 +8671,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8948,13 +8984,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9264,13 +9304,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9637,7 +9681,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -9722,7 +9766,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -9747,6 +9791,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -9849,6 +9895,310 @@
     }
   ],
   "_useFor": [
+    {
+      "link": {
+        "key": "Bp_BadgerSummoning",
+        "icon": "Badger_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_BearSummoning",
+        "icon": "Bear_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "招霊の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_BeaverSummoning",
+        "icon": "Beaver_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "Summoning Ritual"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_BoarSummoning",
+        "icon": "Boar_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_DeerSummoning",
+        "icon": "Stag_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_EarthSummoning",
+        "icon": "Spirit_Earth",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FireSummoning",
+        "icon": "Spirit_Fire",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FoxSummoning",
+        "icon": "Fox_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FrostSummoning",
+        "icon": "Spirit_Frost",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_HareSummoning",
+        "icon": "Hare_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_HummingWidowSummoning",
+        "icon": "MosquitoPond",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "Summoning Ritual"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonMaidenSummoning",
+        "icon": "MoonMaiden",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤月之少女中",
+        "en": "Moon Maiden Summoning",
+        "ja": "月乙女の召喚"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoonSummoning",
+        "icon": "FFMoonIcon",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_MoontouchedSummoning",
+        "icon": "Moontouched",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_PikeSummoning",
+        "icon": "Pike",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_PrimevalWolfSummoning",
+        "icon": "PrimevalWolf",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_WaterSummoning",
+        "icon": "Spirit_Water",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_WindSummoning",
+        "icon": "Spirit_Wind",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_WolfSummoning",
+        "icon": "Wolf_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
     {
       "link": {
         "key": "LQ_SpiritFrost",

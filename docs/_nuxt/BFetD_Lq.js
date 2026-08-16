@@ -1,1 +1,0 @@
-import{n as a,p as n,c as o,o as t,S as r,C as p,w as l}from"./D1gb29iu.js";const c=a({__name:"ModValueDescriptor",props:{value:{}},setup(u){const{t:s}=n();return(e,_)=>(t(),o("span",{class:r({"text-red-500/70":e.value<0,"text-green-500/70":e.value>0})},p(l(s)(e.value>=0?"增加":"减少")),3))}}),m=Object.assign(c,{__name:"UtilModValueDescriptor"});export{m as _};

@@ -7,7 +7,7 @@
   "zh": "情绪",
   "en": "Morale",
   "ja": "士気",
-  "UniqueIDIndex": 3856,
+  "UniqueIDIndex": 3870,
   "GameName": {
     "DefaultText": "Morale",
     "Text": "情绪",
@@ -337,6 +337,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 2,
       "RepeatTextNotification": 0,
@@ -577,6 +578,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 2,
       "RepeatTextNotification": 0,
@@ -743,6 +745,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 2,
       "RepeatTextNotification": 0,
@@ -980,6 +983,40 @@
           "ApplyEachTick": false,
           "InstantModifier": false,
           "IgnoreNovelty": false,
+          "IsInverse": false
+        }
+      ],
+      "EffectsOnNPCStats": [
+        {
+          "TargetStat": {
+            "key": "Partner_Favour",
+            "type": "durability",
+            "zh": "Partner_Favour",
+            "en": "Partner_Favour",
+            "ja": "Favour"
+          },
+          "TargetSpecificAgent": false,
+          "TargetAgent": null,
+          "ValueChange": {
+            "Active": true,
+            "FloatValue": 0.25,
+            "MaxValue": 0.25
+          },
+          "RateChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MinValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MaxValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
           "IsInverse": false
         }
       ],
@@ -1223,6 +1260,40 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [
+        {
+          "TargetStat": {
+            "key": "Partner_Favour",
+            "type": "durability",
+            "zh": "Partner_Favour",
+            "en": "Partner_Favour",
+            "ja": "Favour"
+          },
+          "TargetSpecificAgent": false,
+          "TargetAgent": null,
+          "ValueChange": {
+            "Active": true,
+            "FloatValue": 0.5,
+            "MaxValue": 0.5
+          },
+          "RateChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MinValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MaxValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "IsInverse": false
+        }
+      ],
       "EffectsOnActions": [
         {
           "Conditions": {
@@ -1411,11 +1482,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AppliesTo": [
             {
@@ -1436,6 +1510,18 @@
                   "FileName": "Spoilage"
                 },
                 "MaxValue": 576
+              },
+              "SpecialDurability1": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Being Used",
+                  "Text": "Being Used",
+                  "zh": "Being Used",
+                  "en": "Being Used",
+                  "ja": "Being Used"
+                },
+                "OverrideIcon": null,
+                "MaxValue": 1
               },
               "UsageDurability": {
                 "Active": true,
@@ -1908,6 +1994,40 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [
+        {
+          "TargetStat": {
+            "key": "Partner_Favour",
+            "type": "durability",
+            "zh": "Partner_Favour",
+            "en": "Partner_Favour",
+            "ja": "Favour"
+          },
+          "TargetSpecificAgent": false,
+          "TargetAgent": null,
+          "ValueChange": {
+            "Active": true,
+            "FloatValue": 1,
+            "MaxValue": 1
+          },
+          "RateChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MinValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MaxValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "IsInverse": false
+        }
+      ],
       "EffectsOnActions": [
         {
           "Conditions": {
@@ -2096,18 +2216,21 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AppliesTo": [
             {
               "key": "HandAction",
               "text": "HandAction",
               "type": "tag",
-              "count": 1460,
+              "count": 1457,
               "SpoilageTime": {
                 "Active": true,
                 "CardStatName": {
@@ -2666,11 +2789,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AppliesTo": [
             {
@@ -2691,6 +2817,18 @@
                   "FileName": "Spoilage"
                 },
                 "MaxValue": 576
+              },
+              "SpecialDurability1": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Being Used",
+                  "Text": "Being Used",
+                  "zh": "Being Used",
+                  "en": "Being Used",
+                  "ja": "Being Used"
+                },
+                "OverrideIcon": null,
+                "MaxValue": 1
               },
               "UsageDurability": {
                 "Active": true,
@@ -3200,6 +3338,40 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [
+        {
+          "TargetStat": {
+            "key": "Partner_Favour",
+            "type": "durability",
+            "zh": "Partner_Favour",
+            "en": "Partner_Favour",
+            "ja": "Favour"
+          },
+          "TargetSpecificAgent": false,
+          "TargetAgent": null,
+          "ValueChange": {
+            "Active": true,
+            "FloatValue": 2,
+            "MaxValue": 2
+          },
+          "RateChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MinValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "MaxValueChange": {
+            "Active": false,
+            "FloatValue": 0,
+            "MaxValue": 0
+          },
+          "IsInverse": false
+        }
+      ],
       "EffectsOnActions": [
         {
           "Conditions": {
@@ -3388,18 +3560,21 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AppliesTo": [
             {
               "key": "HandAction",
               "text": "HandAction",
               "type": "tag",
-              "count": 1460,
+              "count": 1457,
               "SpoilageTime": {
                 "Active": true,
                 "CardStatName": {
@@ -3958,11 +4133,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AppliesTo": [
             {
@@ -3983,6 +4161,18 @@
                   "FileName": "Spoilage"
                 },
                 "MaxValue": 576
+              },
+              "SpecialDurability1": {
+                "Active": true,
+                "CardStatName": {
+                  "DefaultText": "Being Used",
+                  "Text": "Being Used",
+                  "zh": "Being Used",
+                  "en": "Being Used",
+                  "ja": "Being Used"
+                },
+                "OverrideIcon": null,
+                "MaxValue": 1
               },
               "UsageDurability": {
                 "Active": true,
@@ -5459,27 +5649,6 @@
     },
     {
       "link": {
-        "key": "Event_Vomit",
-        "icon": "AloeGel_Old",
-        "type": "card",
-        "CardType": 3,
-        "zh": "呕吐！",
-        "en": "Vomit!",
-        "ja": "ゲロ！"
-      },
-      "localization": {
-        "zh": "动作：呕呕呕……",
-        "en": "Action: Eughhh.....",
-        "ja": "アクション：ゔゔぅぅ・・・"
-      },
-      "value": {
-        "x": -10,
-        "y": -10
-      },
-      "key": "Event_Vomit_Eughhh....."
-    },
-    {
-      "link": {
         "key": "Event_WatchedExperience1a",
         "icon": "Watcher1",
         "type": "card",
@@ -6861,6 +7030,367 @@
       "value": {
         "x": 20,
         "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressAttraction",
+        "zh": "PartnerDialog_ExpressAttraction",
+        "en": "PartnerDialog_ExpressAttraction",
+        "ja": "PartnerDialog_ExpressAttraction",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressGratitude",
+        "zh": "PartnerDialog_ExpressGratitude",
+        "en": "PartnerDialog_ExpressGratitude",
+        "ja": "PartnerDialog_ExpressGratitude",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressNeedAttention",
+        "zh": "PartnerDialog_ExpressNeedAttention",
+        "en": "PartnerDialog_ExpressNeedAttention",
+        "ja": "PartnerDialog_ExpressNeedAttention",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressNeedFood",
+        "zh": "PartnerDialog_ExpressNeedFood",
+        "en": "PartnerDialog_ExpressNeedFood",
+        "ja": "PartnerDialog_ExpressNeedFood",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressNeedTrust",
+        "zh": "PartnerDialog_ExpressNeedTrust",
+        "en": "PartnerDialog_ExpressNeedTrust",
+        "ja": "PartnerDialog_ExpressNeedTrust",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -5,
+        "y": -5
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressNeedWarmth",
+        "zh": "PartnerDialog_ExpressNeedWarmth",
+        "en": "PartnerDialog_ExpressNeedWarmth",
+        "ja": "PartnerDialog_ExpressNeedWarmth",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressUltimatum",
+        "zh": "PartnerDialog_ExpressUltimatum",
+        "en": "PartnerDialog_ExpressUltimatum",
+        "ja": "PartnerDialog_ExpressUltimatum",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -25,
+        "y": -25
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressUltimatum",
+        "zh": "PartnerDialog_ExpressUltimatum",
+        "en": "PartnerDialog_ExpressUltimatum",
+        "ja": "PartnerDialog_ExpressUltimatum",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": 20,
+        "y": 20
+      }
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_ExpressUltimatum",
+        "zh": "PartnerDialog_ExpressUltimatum",
+        "en": "PartnerDialog_ExpressUltimatum",
+        "ja": "PartnerDialog_ExpressUltimatum",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -20,
+        "y": -20
       }
     }
   ],

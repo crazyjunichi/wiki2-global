@@ -7,7 +7,7 @@
   "zh": "鸭子",
   "en": "Duck",
   "ja": "カモ",
-  "UniqueIDIndex": 3290,
+  "UniqueIDIndex": 3295,
   "EncounterTitle": {
     "DefaultText": "Duck",
     "Text": "鸭子",
@@ -1150,41 +1150,11 @@
       "y": 12
     },
     "LoadedFromNPCStat": {
-      "m_Name": "AgentPoisonResistance",
       "key": "AgentPoisonResistance",
       "type": "durability",
       "zh": "毒抗",
       "en": "AgentPoisonResistance",
-      "ja": "Agent Special1",
-      "GameName": {
-        "DefaultText": "Agent Special1",
-        "Text": "毒抗",
-        "zh": "毒抗",
-        "en": "AgentPoisonResistance",
-        "ja": "Agent Special1"
-      },
-      "DefaultStartingValue": 0,
-      "DefaultMinMaxValue": {
-        "x": 0,
-        "y": 1
-      },
-      "DefaultRate": -1,
-      "DefaultMinMaxRate": {
-        "x": 0,
-        "y": 0
-      },
-      "StatVisibleIcon": null,
-      "HidingOptions": 0,
-      "TextDisplay": 0,
-      "NumberPrecision": 0,
-      "StatScalingToModifiers": [],
-      "NPCStatScalingToModifiers": [],
-      "name": "毒抗",
-      "desc": "Agent Special1",
-      "m_GameObject": null,
-      "m_Enabled": 1,
-      "UniqueID": "ef9eb06fd9bff0545906eb75d99a2937",
-      "UniqueIDIndex": 3170
+      "ja": "Agent Special1"
     },
     "TriggerLoadStat": 1,
     "MaxValue": 12,
@@ -4729,48 +4699,19 @@
     "NPCStatChanges": [
       {
         "TargetStat": {
-          "m_Name": "AgentBlood",
           "key": "AgentBlood",
           "type": "durability",
           "zh": "血量",
           "en": "AgentBlood",
-          "ja": "Agent Stamina",
-          "GameName": {
-            "DefaultText": "Agent Stamina",
-            "Text": "血量",
-            "zh": "血量",
-            "en": "AgentBlood",
-            "ja": "Agent Stamina"
-          },
-          "DefaultStartingValue": 100,
-          "DefaultMinMaxValue": {
-            "x": 0,
-            "y": 10000
-          },
-          "DefaultRate": 0,
-          "DefaultMinMaxRate": {
-            "x": 0,
-            "y": 0
-          },
-          "StatVisibleIcon": null,
-          "HidingOptions": 0,
-          "TextDisplay": 0,
-          "NumberPrecision": 0,
-          "StatScalingToModifiers": [],
-          "NPCStatScalingToModifiers": [],
-          "name": "血量",
-          "desc": "Agent Stamina",
-          "m_GameObject": null,
-          "m_Enabled": 1,
-          "UniqueID": "f2c3d787896b6874c9974806acbe757a",
-          "UniqueIDIndex": 2891
+          "ja": "Agent Stamina"
         },
         "UseAssociatedAgent": true,
         "TargetAgent": null,
         "ValueChange": {
           "x": -10000,
           "y": -10000
-        }
+        },
+        "IgnoreNovelty": false
       }
     ],
     "TransferValuesToStats": [],
@@ -5270,138 +5211,51 @@
     "NPCStatChanges": [
       {
         "TargetStat": {
-          "m_Name": "AgentCounter",
           "key": "AgentCounter",
           "type": "durability",
           "zh": "计步器",
           "en": "AgentCounter",
-          "ja": "Agent Counter",
-          "GameName": {
-            "DefaultText": "Agent Counter",
-            "Text": "计步器",
-            "zh": "计步器",
-            "en": "AgentCounter",
-            "ja": "Agent Counter"
-          },
-          "DefaultStartingValue": 0,
-          "DefaultMinMaxValue": {
-            "x": 0,
-            "y": 10000
-          },
-          "DefaultRate": 1,
-          "DefaultMinMaxRate": {
-            "x": 0,
-            "y": 1
-          },
-          "StatVisibleIcon": null,
-          "HidingOptions": 0,
-          "TextDisplay": 0,
-          "NumberPrecision": 0,
-          "StatScalingToModifiers": [],
-          "NPCStatScalingToModifiers": [],
-          "name": "计步器",
-          "desc": "Agent Counter",
-          "m_GameObject": null,
-          "m_Enabled": 1,
-          "UniqueID": "e404a2f165f845845856ce872fd2fd56",
-          "UniqueIDIndex": 2895
+          "ja": "Agent Counter"
         },
         "UseAssociatedAgent": true,
         "TargetAgent": null,
         "ValueChange": {
           "x": -10000,
           "y": -10000
-        }
+        },
+        "IgnoreNovelty": false
       },
       {
         "TargetStat": {
-          "m_Name": "AgentRespawnCounter",
           "key": "AgentRespawnCounter",
           "type": "durability",
           "zh": "刷新倒计时",
           "en": "AgentRespawnCounter",
-          "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
-          "GameName": {
-            "DefaultText": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
-            "Text": "刷新倒计时",
-            "zh": "刷新倒计时",
-            "en": "AgentRespawnCounter",
-            "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. "
-          },
-          "DefaultStartingValue": 0,
-          "DefaultMinMaxValue": {
-            "x": 0,
-            "y": 2880
-          },
-          "DefaultRate": 0,
-          "DefaultMinMaxRate": {
-            "x": -10000,
-            "y": 10000
-          },
-          "StatVisibleIcon": null,
-          "HidingOptions": 0,
-          "TextDisplay": 0,
-          "NumberPrecision": 0,
-          "StatScalingToModifiers": [],
-          "NPCStatScalingToModifiers": [],
-          "name": "刷新倒计时",
-          "desc": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. ",
-          "m_GameObject": null,
-          "m_Enabled": 1,
-          "UniqueID": "0e991b807e7703949b02b48ca7828f59",
-          "UniqueIDIndex": 3180
+          "ja": "Agent Respawn Counter - The default values probably do not need to be changed. Reduce Value to 0 by using Agent actions to enable spawning. Reset the value to max value when Agent is killed. "
         },
         "UseAssociatedAgent": true,
         "TargetAgent": null,
         "ValueChange": {
           "x": 480,
           "y": 480
-        }
+        },
+        "IgnoreNovelty": false
       },
       {
         "TargetStat": {
-          "m_Name": "AgentExists",
           "key": "AgentExists",
           "type": "durability",
           "zh": "存在",
           "en": "AgentExists",
-          "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
-          "GameName": {
-            "DefaultText": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
-            "Text": "存在",
-            "zh": "存在",
-            "en": "AgentExists",
-            "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
-          },
-          "DefaultStartingValue": 0,
-          "DefaultMinMaxValue": {
-            "x": 0,
-            "y": 1
-          },
-          "DefaultRate": 0,
-          "DefaultMinMaxRate": {
-            "x": 0,
-            "y": 0
-          },
-          "StatVisibleIcon": null,
-          "HidingOptions": 0,
-          "TextDisplay": 0,
-          "NumberPrecision": 0,
-          "StatScalingToModifiers": [],
-          "NPCStatScalingToModifiers": [],
-          "name": "存在",
-          "desc": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. ",
-          "m_GameObject": null,
-          "m_Enabled": 1,
-          "UniqueID": "16eb4865d583a1d4d82def0680f3065d",
-          "UniqueIDIndex": 3164
+          "ja": "1 if Agent is in the World. 0 if not. Used not to spawn additional Agents until the previous one perishes. Change to 0 in Encounter when animal is killed. Change to 1 in Agent Action when it is spawned. "
         },
         "UseAssociatedAgent": true,
         "TargetAgent": null,
         "ValueChange": {
           "x": -1,
           "y": -1
-        }
+        },
+        "IgnoreNovelty": false
       }
     ],
     "TransferValuesToStats": [],

@@ -1595,14 +1595,14 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_Fairyweed",
-            "text": "“仙灵草”",
+            "key": "GpTag_SpiritHerb",
+            "text": "“Spirit Herb”",
             "type": "tag",
-            "zh": "仙灵草",
-            "en": "Fairyweed",
-            "ja": "精霊草",
+            "zh": "Spirit Herb",
+            "en": "Spirit Herb",
+            "ja": "Spirit Herb",
             "SubGroups": [],
-            "count": 3,
+            "count": 9,
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -1615,33 +1615,35 @@
               "OverrideIcon": {
                 "FileName": "Bacteria"
               },
-              "MaxValue": 420
+              "MaxValue": 360
             },
             "UsageDurability": {
               "Active": true,
               "CardStatName": {
                 "DefaultText": "Drying",
-                "Text": "干燥",
-                "zh": "干燥",
+                "Text": "干燥中",
+                "zh": "干燥中",
                 "en": "Drying",
                 "ja": "乾燥中"
               },
               "OverrideIcon": {
                 "FileName": "Hammer"
               },
-              "MaxValue": 8
+              "MaxValue": 24
             },
             "FuelCapacity": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "FuelCapacity",
-                "zh": "容量",
-                "en": "Fuel",
-                "ja": ""
+                "DefaultText": "Temperature",
+                "Text": "温度",
+                "zh": "温度",
+                "en": "Temperature",
+                "ja": "温度"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Hot"
+              },
+              "MaxValue": 200
             },
             "Progress": {
               "Active": true,
@@ -1658,16 +1660,16 @@
             "SpecialDurability1": {
               "Active": true,
               "CardStatName": {
-                "DefaultText": "Burn",
-                "Text": "烧",
-                "zh": "烧",
-                "en": "Burn",
-                "ja": "焦がす"
+                "DefaultText": "Cook",
+                "Text": "烹饪",
+                "zh": "烹饪",
+                "en": "Cook",
+                "ja": "焼く"
               },
               "OverrideIcon": {
                 "FileName": "Cooking"
               },
-              "MaxValue": 8
+              "MaxValue": 1
             },
             "SpecialDurability2": {
               "Active": true,
@@ -1696,16 +1698,18 @@
               "MaxValue": 0
             },
             "SpecialDurability4": {
-              "Active": false,
+              "Active": true,
               "CardStatName": {
-                "DefaultText": "",
-                "Text": "SpecialDurability4",
-                "zh": "特殊4",
-                "en": "Special4",
-                "ja": ""
+                "DefaultText": "Boil",
+                "Text": "烹煮",
+                "zh": "烹煮",
+                "en": "Boil",
+                "ja": "茹でる"
               },
-              "OverrideIcon": null,
-              "MaxValue": 0
+              "OverrideIcon": {
+                "FileName": "Cooking"
+              },
+              "MaxValue": 1
             }
           },
           "RequiredQuantity": 1,
@@ -1892,7 +1896,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2626,7 +2630,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2711,7 +2715,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2736,6 +2740,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [
     {
       "key": "Carcass_DoeCarcass",

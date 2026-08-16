@@ -615,6 +615,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -806,6 +807,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1166,6 +1168,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1179,6 +1182,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1776,12 +1781,13 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -2104,6 +2110,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2464,6 +2471,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2477,6 +2485,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4038,7 +4048,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -4123,7 +4133,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -4148,6 +4158,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -4276,99 +4288,6 @@
         "zh": "转化：烧制木炭",
         "en": "Action: Make Charcoal",
         "ja": "アクション：木炭を作る"
-      }
-    },
-    {
-      "link": {
-        "key": "Oven",
-        "icon": "Oven_On",
-        "type": "card",
-        "CardType": 2,
-        "zh": "烤箱",
-        "en": "Oven",
-        "ja": "オーブン",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "SpoilageRange": {
-                "x": 0,
-                "y": 1
-              }
-            },
-            "Name": {
-              "DefaultText": "Oven (cold)",
-              "Text": "烤箱（冷）",
-              "zh": "烤箱（冷）",
-              "en": "Oven (cold)",
-              "ja": "オーブン（冷たい）"
-            }
-          },
-          {
-            "Conditions": {
-              "SpoilageRange": {
-                "x": 2,
-                "y": 49
-              }
-            },
-            "Name": {
-              "DefaultText": "Oven (warming)",
-              "Text": "烤箱（热）",
-              "zh": "烤箱（热）",
-              "en": "Oven (warming)",
-              "ja": "オーブン（温め中）"
-            }
-          },
-          {
-            "Conditions": {
-              "SpoilageRange": {
-                "x": 50,
-                "y": 177
-              }
-            },
-            "Name": {
-              "DefaultText": "Oven (drying)",
-              "Text": "烤箱（干燥中）",
-              "zh": "烤箱（干燥中）",
-              "en": "Oven (drying)",
-              "ja": "オーブン（乾燥中）"
-            }
-          },
-          {
-            "Conditions": {
-              "SpoilageRange": {
-                "x": 178,
-                "y": 315
-              }
-            },
-            "Name": {
-              "DefaultText": "Oven (cooking)",
-              "Text": "烤箱（烹饪中）",
-              "zh": "烤箱（烹饪中）",
-              "en": "Oven (cooking)",
-              "ja": "オーブン（クッキング中）"
-            }
-          },
-          {
-            "Conditions": {
-              "SpoilageRange": {
-                "x": 316,
-                "y": 1000000
-              }
-            },
-            "Name": {
-              "DefaultText": "Oven (firing)",
-              "Text": "烤箱（点燃）",
-              "zh": "烤箱（点燃）",
-              "en": "Oven (firing)",
-              "ja": "オーブン（焼いている）"
-            }
-          }
-        ]
-      },
-      "localization": {
-        "zh": "容量 降为零",
-        "en": "Fuel Depleted",
-        "ja": " ゼロ"
       }
     },
     {

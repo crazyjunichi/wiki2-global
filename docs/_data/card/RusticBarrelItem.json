@@ -7,7 +7,7 @@
   "zh": "粗制木桶",
   "en": "Rustic Barrel",
   "ja": "シンプルな樽",
-  "UniqueIDIndex": 2253,
+  "UniqueIDIndex": 2254,
   "CardType": 0,
   "CardTags": [
     {
@@ -394,7 +394,7 @@
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Hunger",
+          "DefaultText": "Satiation",
           "Text": "饥饿",
           "zh": "饥饿",
           "en": "Hunger",
@@ -3374,46 +3374,6 @@
         "en": "Spirit Liquid",
         "ja": "精霊水"
       }
-    },
-    {
-      "Target": {
-        "key": "tag_PowderLiquid",
-        "text": "“Powder Liquid”",
-        "icon": "",
-        "type": "tag",
-        "count": 13,
-        "zh": "粉末液体",
-        "en": "Powder Liquid",
-        "ja": "Powder Liquid",
-        "SpoilageTime": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Spoilage",
-            "Text": "变质",
-            "zh": "变质",
-            "en": "Spoilage",
-            "ja": "腐敗"
-          },
-          "OverrideIcon": {
-            "FileName": "Bacteria"
-          },
-          "MaxValue": 3600
-        },
-        "SpecialDurability2": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Quality",
-            "Text": "品质",
-            "zh": "品质",
-            "en": "Quality",
-            "ja": "クオリティ"
-          },
-          "OverrideIcon": {
-            "FileName": "Quality"
-          },
-          "MaxValue": 192
-        }
-      }
     }
   ],
   "CannotGiveLiquidWithDragNDrop": false,
@@ -3920,7 +3880,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -4044,7 +4004,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -4168,7 +4128,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -4266,7 +4226,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -4360,7 +4320,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5107,13 +5067,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5389,6 +5353,611 @@
         "en": "Rain into Empty",
         "zh": "Rain into Empty",
         "ja": "Rain into Empty"
+      }
+    },
+    {
+      "EffectName": "Snow into Empty",
+      "OnlyWhenEquipped": false,
+      "EquippedOnBodyOnly": false,
+      "OnlyWhenNOTEquipped": false,
+      "OnlyWhenInHand": false,
+      "OnlyOnBaseActions": false,
+      "OnlyOnNOTBaseActions": false,
+      "OnlyWhenNOTInBG": false,
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [
+          {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        ],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "SnowValue",
+              "icon": "Rain",
+              "type": "stat",
+              "zh": "SnowValue",
+              "en": "Snow Value",
+              "ja": "Snow Value",
+              "max": 5,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 1,
+              "y": 5
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": [],
+        "NPCExists": []
+      },
+      "StatModifiers": [],
+      "NPCStatModifiers": [],
+      "EffectStacksWithRequiredCards": false,
+      "OnBoardEffectCap": 0,
+      "EffectScalesWithDurabilities": {
+        "Active": false,
+        "Inputs": [],
+        "EffectScalingOutput": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "SpoilageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpoilageRate": false,
+      "UsageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyUsageRate": false,
+      "FuelRateModifier": {
+        "Active": false,
+        "FloatValue": -4
+      },
+      "MultiplyFuelRate": false,
+      "ConsumableChargesModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyConsumableChargesRate": false,
+      "Special1RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial1Rate": false,
+      "Special2RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial2Rate": false,
+      "Special3RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial3Rate": false,
+      "Special4RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial4Rate": false,
+      "LiquidRateModifier": 0,
+      "UpdateDurabilityConcentrations": {
+        "MaskValue": 0
+      },
+      "GeneratedLiquid": {
+        "LiquidCard": {
+          "key": "LQ_Water",
+          "icon": "Thirst_Old",
+          "type": "card",
+          "CardType": 9,
+          "zh": "水",
+          "en": "Water",
+          "ja": "水",
+          "AlternateNames": [
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 75,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Potage",
+                "Text": "浓汤",
+                "zh": "浓汤",
+                "en": "Potage",
+                "ja": "Potage"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 50,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Stew",
+                "Text": "炖菜",
+                "zh": "炖菜",
+                "en": "Stew",
+                "ja": "Stew"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 25,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Soup",
+                "Text": "汤",
+                "zh": "汤",
+                "en": "Soup",
+                "ja": "Soup"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 1,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Broth",
+                "Text": "汤",
+                "zh": "汤",
+                "en": "Broth",
+                "ja": "Broth"
+              }
+            }
+          ],
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Bacteria",
+              "Text": "细菌",
+              "zh": "细菌",
+              "en": "Bacteria",
+              "ja": "Bacteria"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 480
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Vitamins",
+              "Text": "维生素",
+              "zh": "维生素",
+              "en": "Vitamins",
+              "ja": "ビタミン"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationVegetables"
+            },
+            "MaxValue": 1000
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Liquid Temperature",
+              "Text": "液体温度",
+              "zh": "液体温度",
+              "en": "Liquid Temperature",
+              "ja": "Liquid Temperature"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "濃厚さ"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Calories",
+              "Text": "卡路里",
+              "zh": "卡路里",
+              "en": "Calories",
+              "ja": "カロリー"
+            },
+            "OverrideIcon": {
+              "FileName": "Weight3"
+            },
+            "MaxValue": 1000
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Proteins",
+              "Text": "蛋白质",
+              "zh": "蛋白质",
+              "en": "Proteins",
+              "ja": "タンパク質"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationMeat"
+            },
+            "MaxValue": 1000
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Iron",
+              "Text": "铁元素",
+              "zh": "铁元素",
+              "en": "Iron",
+              "ja": "Iron"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 1000
+          }
+        },
+        "Quantity": {
+          "x": 1,
+          "y": 1
+        },
+        "Durabilities": {
+          "Spoilage": 0,
+          "Usage": 0,
+          "Fuel": 0,
+          "Progress": 0,
+          "Special1": 0,
+          "Special2": 0,
+          "Special3": 0,
+          "Special4": 0,
+          "SpoilageValue": 0,
+          "UsageValue": 0,
+          "FuelValue": 0,
+          "ProgressValue": 0,
+          "Special1Value": 0,
+          "Special2Value": 0,
+          "Special3Value": 0,
+          "Special4Value": 0,
+          "SpoilageFrom": 0,
+          "UsageFrom": 0,
+          "FuelFrom": 0,
+          "ProgressFrom": 0,
+          "Special1From": 0,
+          "Special2From": 0,
+          "Special3From": 0,
+          "Special4From": 0
+        }
+      },
+      "WeightCapacityModifier": 0,
+      "DroppedCards": [],
+      "name": {
+        "en": "Snow into Empty",
+        "zh": "Snow into Empty",
+        "ja": "Snow into Empty"
       }
     },
     {
@@ -5892,13 +6461,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6174,6 +6747,795 @@
         "en": "Rain into Fresh Water",
         "zh": "雨水转化为淡水",
         "ja": "雨水を淡水に変える"
+      }
+    },
+    {
+      "EffectName": "Snow into Fresh Water",
+      "OnlyWhenEquipped": false,
+      "EquippedOnBodyOnly": false,
+      "OnlyWhenNOTEquipped": false,
+      "OnlyWhenInHand": false,
+      "OnlyOnBaseActions": false,
+      "OnlyOnNOTBaseActions": false,
+      "OnlyWhenNOTInBG": false,
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [
+          {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        ],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [
+          {
+            "key": "LQ_Water",
+            "icon": "Thirst_Old",
+            "type": "card",
+            "CardType": 9,
+            "zh": "水",
+            "en": "Water",
+            "ja": "水",
+            "AlternateNames": [
+              {
+                "Conditions": {
+                  "ProgressRange": {
+                    "x": 75,
+                    "y": 0
+                  }
+                },
+                "Name": {
+                  "DefaultText": "Potage",
+                  "Text": "浓汤",
+                  "zh": "浓汤",
+                  "en": "Potage",
+                  "ja": "Potage"
+                }
+              },
+              {
+                "Conditions": {
+                  "ProgressRange": {
+                    "x": 50,
+                    "y": 0
+                  }
+                },
+                "Name": {
+                  "DefaultText": "Stew",
+                  "Text": "炖菜",
+                  "zh": "炖菜",
+                  "en": "Stew",
+                  "ja": "Stew"
+                }
+              },
+              {
+                "Conditions": {
+                  "ProgressRange": {
+                    "x": 25,
+                    "y": 0
+                  }
+                },
+                "Name": {
+                  "DefaultText": "Soup",
+                  "Text": "汤",
+                  "zh": "汤",
+                  "en": "Soup",
+                  "ja": "Soup"
+                }
+              },
+              {
+                "Conditions": {
+                  "ProgressRange": {
+                    "x": 1,
+                    "y": 0
+                  }
+                },
+                "Name": {
+                  "DefaultText": "Broth",
+                  "Text": "汤",
+                  "zh": "汤",
+                  "en": "Broth",
+                  "ja": "Broth"
+                }
+              }
+            ],
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Bacteria",
+                "Text": "细菌",
+                "zh": "细菌",
+                "en": "Bacteria",
+                "ja": "Bacteria"
+              },
+              "OverrideIcon": {
+                "FileName": "Bacteria"
+              },
+              "MaxValue": 480
+            },
+            "UsageDurability": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Vitamins",
+                "Text": "维生素",
+                "zh": "维生素",
+                "en": "Vitamins",
+                "ja": "ビタミン"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationVegetables"
+              },
+              "MaxValue": 1000
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Liquid Temperature",
+                "Text": "液体温度",
+                "zh": "液体温度",
+                "en": "Liquid Temperature",
+                "ja": "Liquid Temperature"
+              },
+              "OverrideIcon": {
+                "FileName": "Hot"
+              },
+              "MaxValue": 200
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Thickness",
+                "Text": "浓稠度",
+                "zh": "浓稠度",
+                "en": "Thickness",
+                "ja": "濃厚さ"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationCauldron"
+              },
+              "MaxValue": 100
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Calories",
+                "Text": "卡路里",
+                "zh": "卡路里",
+                "en": "Calories",
+                "ja": "カロリー"
+              },
+              "OverrideIcon": {
+                "FileName": "Weight3"
+              },
+              "MaxValue": 1000
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Quality",
+                "Text": "品质",
+                "zh": "品质",
+                "en": "Quality",
+                "ja": "クオリティ"
+              },
+              "OverrideIcon": {
+                "FileName": "Quality"
+              },
+              "MaxValue": 100
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Proteins",
+                "Text": "蛋白质",
+                "zh": "蛋白质",
+                "en": "Proteins",
+                "ja": "タンパク質"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationMeat"
+              },
+              "MaxValue": 1000
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Iron",
+                "Text": "铁元素",
+                "zh": "铁元素",
+                "en": "Iron",
+                "ja": "Iron"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 1000
+            }
+          }
+        ],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "SnowValue",
+              "icon": "Rain",
+              "type": "stat",
+              "zh": "SnowValue",
+              "en": "Snow Value",
+              "ja": "Snow Value",
+              "max": 5,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 1,
+              "y": 5
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": [],
+        "NPCExists": []
+      },
+      "StatModifiers": [],
+      "NPCStatModifiers": [],
+      "EffectStacksWithRequiredCards": false,
+      "OnBoardEffectCap": 0,
+      "EffectScalesWithDurabilities": {
+        "Active": false,
+        "Inputs": [],
+        "EffectScalingOutput": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "SpoilageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpoilageRate": false,
+      "UsageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyUsageRate": false,
+      "FuelRateModifier": {
+        "Active": false,
+        "FloatValue": -4
+      },
+      "MultiplyFuelRate": false,
+      "ConsumableChargesModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyConsumableChargesRate": false,
+      "Special1RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial1Rate": false,
+      "Special2RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial2Rate": false,
+      "Special3RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial3Rate": false,
+      "Special4RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial4Rate": false,
+      "LiquidRateModifier": 0,
+      "UpdateDurabilityConcentrations": {
+        "MaskValue": 0
+      },
+      "GeneratedLiquid": {
+        "LiquidCard": {
+          "key": "LQ_Water",
+          "icon": "Thirst_Old",
+          "type": "card",
+          "CardType": 9,
+          "zh": "水",
+          "en": "Water",
+          "ja": "水",
+          "AlternateNames": [
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 75,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Potage",
+                "Text": "浓汤",
+                "zh": "浓汤",
+                "en": "Potage",
+                "ja": "Potage"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 50,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Stew",
+                "Text": "炖菜",
+                "zh": "炖菜",
+                "en": "Stew",
+                "ja": "Stew"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 25,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Soup",
+                "Text": "汤",
+                "zh": "汤",
+                "en": "Soup",
+                "ja": "Soup"
+              }
+            },
+            {
+              "Conditions": {
+                "ProgressRange": {
+                  "x": 1,
+                  "y": 0
+                }
+              },
+              "Name": {
+                "DefaultText": "Broth",
+                "Text": "汤",
+                "zh": "汤",
+                "en": "Broth",
+                "ja": "Broth"
+              }
+            }
+          ],
+          "SpoilageTime": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Bacteria",
+              "Text": "细菌",
+              "zh": "细菌",
+              "en": "Bacteria",
+              "ja": "Bacteria"
+            },
+            "OverrideIcon": {
+              "FileName": "Bacteria"
+            },
+            "MaxValue": 480
+          },
+          "UsageDurability": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Vitamins",
+              "Text": "维生素",
+              "zh": "维生素",
+              "en": "Vitamins",
+              "ja": "ビタミン"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationVegetables"
+            },
+            "MaxValue": 1000
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Liquid Temperature",
+              "Text": "液体温度",
+              "zh": "液体温度",
+              "en": "Liquid Temperature",
+              "ja": "Liquid Temperature"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Thickness",
+              "Text": "浓稠度",
+              "zh": "浓稠度",
+              "en": "Thickness",
+              "ja": "濃厚さ"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationCauldron"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Calories",
+              "Text": "卡路里",
+              "zh": "卡路里",
+              "en": "Calories",
+              "ja": "カロリー"
+            },
+            "OverrideIcon": {
+              "FileName": "Weight3"
+            },
+            "MaxValue": 1000
+          },
+          "SpecialDurability2": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Quality",
+              "Text": "品质",
+              "zh": "品质",
+              "en": "Quality",
+              "ja": "クオリティ"
+            },
+            "OverrideIcon": {
+              "FileName": "Quality"
+            },
+            "MaxValue": 100
+          },
+          "SpecialDurability3": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Proteins",
+              "Text": "蛋白质",
+              "zh": "蛋白质",
+              "en": "Proteins",
+              "ja": "タンパク質"
+            },
+            "OverrideIcon": {
+              "FileName": "SaturationMeat"
+            },
+            "MaxValue": 1000
+          },
+          "SpecialDurability4": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Iron",
+              "Text": "铁元素",
+              "zh": "铁元素",
+              "en": "Iron",
+              "ja": "Iron"
+            },
+            "OverrideIcon": {
+              "FileName": "Filth"
+            },
+            "MaxValue": 1000
+          }
+        },
+        "Quantity": {
+          "x": 160,
+          "y": 160
+        },
+        "Durabilities": {
+          "Spoilage": 0,
+          "Usage": 0,
+          "Fuel": 0,
+          "Progress": 0,
+          "Special1": 0,
+          "Special2": 0,
+          "Special3": 0,
+          "Special4": 0,
+          "SpoilageValue": 0,
+          "UsageValue": 0,
+          "FuelValue": 0,
+          "ProgressValue": 0,
+          "Special1Value": 0,
+          "Special2Value": 0,
+          "Special3Value": 0,
+          "Special4Value": 0,
+          "SpoilageFrom": 0,
+          "UsageFrom": 0,
+          "FuelFrom": 0,
+          "ProgressFrom": 0,
+          "Special1From": 0,
+          "Special2From": 0,
+          "Special3From": 0,
+          "Special4From": 0
+        }
+      },
+      "WeightCapacityModifier": 0,
+      "DroppedCards": [],
+      "name": {
+        "en": "Snow into Fresh Water",
+        "zh": "Snow into Fresh Water",
+        "ja": "Snow into Fresh Water"
       }
     },
     {
@@ -6601,13 +7963,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6807,6 +8173,643 @@
         "en": "Rain into Unsafe Water",
         "zh": "雨水转化为不安全水源",
         "ja": "雨水を安全でない水源に変える"
+      }
+    },
+    {
+      "EffectName": "Snow into Unsafe Water",
+      "OnlyWhenEquipped": false,
+      "EquippedOnBodyOnly": false,
+      "OnlyWhenNOTEquipped": false,
+      "OnlyWhenInHand": false,
+      "OnlyOnBaseActions": false,
+      "OnlyOnNOTBaseActions": false,
+      "OnlyWhenNOTInBG": false,
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [
+          {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        ],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [
+          {
+            "key": "LQ_WaterUnsafe",
+            "icon": "Thirst_Old",
+            "type": "card",
+            "CardType": 9,
+            "zh": "不安全的水",
+            "en": "Unsafe Water",
+            "ja": "危険な水",
+            "SpoilageTime": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "UsageDurability": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "UsageDurability",
+                "zh": "耐久",
+                "en": "Usage",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Liquid Temperature",
+                "Text": "液体温度",
+                "zh": "液体温度",
+                "en": "Liquid Temperature",
+                "ja": "Liquid Temperature"
+              },
+              "OverrideIcon": {
+                "FileName": "Hot"
+              },
+              "MaxValue": 200
+            },
+            "Progress": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability1": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability1",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability2": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability2",
+                "zh": "特殊2",
+                "en": "Special2",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability3": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability3",
+                "zh": "特殊3",
+                "en": "Special3",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability4": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability4",
+                "zh": "特殊4",
+                "en": "Special4",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            }
+          }
+        ],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "SnowValue",
+              "icon": "Rain",
+              "type": "stat",
+              "zh": "SnowValue",
+              "en": "Snow Value",
+              "ja": "Snow Value",
+              "max": 5,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 1,
+              "y": 5
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": [],
+        "NPCExists": []
+      },
+      "StatModifiers": [],
+      "NPCStatModifiers": [],
+      "EffectStacksWithRequiredCards": false,
+      "OnBoardEffectCap": 0,
+      "EffectScalesWithDurabilities": {
+        "Active": false,
+        "Inputs": [],
+        "EffectScalingOutput": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "SpoilageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpoilageRate": false,
+      "UsageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyUsageRate": false,
+      "FuelRateModifier": {
+        "Active": false,
+        "FloatValue": -4
+      },
+      "MultiplyFuelRate": false,
+      "ConsumableChargesModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyConsumableChargesRate": false,
+      "Special1RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial1Rate": false,
+      "Special2RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial2Rate": false,
+      "Special3RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial3Rate": false,
+      "Special4RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial4Rate": false,
+      "LiquidRateModifier": 0,
+      "UpdateDurabilityConcentrations": {
+        "MaskValue": 0
+      },
+      "GeneratedLiquid": {
+        "LiquidCard": {
+          "key": "LQ_WaterUnsafe",
+          "icon": "Thirst_Old",
+          "type": "card",
+          "CardType": 9,
+          "zh": "不安全的水",
+          "en": "Unsafe Water",
+          "ja": "危険な水",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Liquid Temperature",
+              "Text": "液体温度",
+              "zh": "液体温度",
+              "en": "Liquid Temperature",
+              "ja": "Liquid Temperature"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "Quantity": {
+          "x": 160,
+          "y": 160
+        },
+        "Durabilities": {
+          "Spoilage": 0,
+          "Usage": 0,
+          "Fuel": 0,
+          "Progress": 0,
+          "Special1": 0,
+          "Special2": 0,
+          "Special3": 0,
+          "Special4": 0,
+          "SpoilageValue": 0,
+          "UsageValue": 0,
+          "FuelValue": 0,
+          "ProgressValue": 0,
+          "Special1Value": 0,
+          "Special2Value": 0,
+          "Special3Value": 0,
+          "Special4Value": 0,
+          "SpoilageFrom": 0,
+          "UsageFrom": 0,
+          "FuelFrom": 0,
+          "ProgressFrom": 0,
+          "Special1From": 0,
+          "Special2From": 0,
+          "Special3From": 0,
+          "Special4From": 0
+        }
+      },
+      "WeightCapacityModifier": 0,
+      "DroppedCards": [],
+      "name": {
+        "en": "Snow into Unsafe Water",
+        "zh": "Snow into Unsafe Water",
+        "ja": "Snow into Unsafe Water"
       }
     },
     {
@@ -7234,13 +9237,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7443,6 +9450,643 @@
       }
     },
     {
+      "EffectName": "Snow into River Water",
+      "OnlyWhenEquipped": false,
+      "EquippedOnBodyOnly": false,
+      "OnlyWhenNOTEquipped": false,
+      "OnlyWhenInHand": false,
+      "OnlyOnBaseActions": false,
+      "OnlyOnNOTBaseActions": false,
+      "OnlyWhenNOTInBG": false,
+      "Conditions": {
+        "NotInBackground": false,
+        "InBackground": false,
+        "PlayerUsesCard": 0,
+        "RequiredEnvironment": null,
+        "InvertEnvironmentRequirement": false,
+        "RequiredEnvironmentTags": [],
+        "RequiredNOTEnvironmentTags": [],
+        "RequiredContainer": [],
+        "RequiredNOTContainer": [],
+        "RequiredContainerTags": [],
+        "RequiredNOTContainerTags": [],
+        "RequiredCardsOnBoard": [],
+        "RequiredTagsOnBoard": [
+          {
+            "key": "tag_OpenSky",
+            "text": "“开阔的天空”",
+            "icon": "",
+            "type": "tag",
+            "count": 99,
+            "zh": "开阔的天空",
+            "en": "Open Sky",
+            "ja": "開けた空",
+            "SpoilageTime": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Filth",
+                "Text": "污垢",
+                "zh": "污垢",
+                "en": "Filth",
+                "ja": "汚物"
+              },
+              "OverrideIcon": {
+                "FileName": "Filth"
+              },
+              "MaxValue": 11520
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Flood",
+                "Text": "洪水",
+                "zh": "洪水",
+                "en": "Flood",
+                "ja": "洪水"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 1
+            },
+            "Progress": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Squirell Counter",
+                "Text": "松鼠计数器",
+                "zh": "松鼠计数器",
+                "en": "Squirell Counter",
+                "ja": "リスカウンター"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 288
+            },
+            "SpecialDurability1": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Trees",
+                "Text": "树林",
+                "zh": "树林",
+                "en": "Trees",
+                "ja": "Trees"
+              },
+              "OverrideIcon": {
+                "FileName": "Tree1"
+              },
+              "MaxValue": 115200
+            },
+            "SpecialDurability2": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Overgrowth",
+                "Text": "过度生长",
+                "zh": "过度生长",
+                "en": "Overgrowth",
+                "ja": "Overgrowth"
+              },
+              "OverrideIcon": {
+                "FileName": "Overgrowth"
+              },
+              "MaxValue": 1440
+            },
+            "SpecialDurability3": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Foraging",
+                "Text": "觅食",
+                "zh": "觅食",
+                "en": "Foraging",
+                "ja": "Foraging"
+              },
+              "OverrideIcon": {
+                "FileName": "SaturationBerries"
+              },
+              "MaxValue": 360
+            },
+            "SpecialDurability4": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Fertility",
+                "Text": "Fertility",
+                "zh": "繁衍",
+                "en": "Fertility",
+                "ja": "Fertility"
+              },
+              "OverrideIcon": null,
+              "MaxValue": 5760
+            }
+          }
+        ],
+        "RequiredCardsNOTOnBoard": [],
+        "RequiredTagsNOTOnBoard": [],
+        "RequiredLiquidContainers": [],
+        "RequiredCardsInInventory": [
+          {
+            "key": "LQ_WaterRiver",
+            "icon": "Thirst_Old",
+            "type": "card",
+            "CardType": 9,
+            "zh": "河水",
+            "en": "River Water",
+            "ja": "川の水",
+            "SpoilageTime": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpoilageTime",
+                "zh": "时间",
+                "en": "Spoilage",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "UsageDurability": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "UsageDurability",
+                "zh": "耐久",
+                "en": "Usage",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "FuelCapacity": {
+              "Active": true,
+              "CardStatName": {
+                "DefaultText": "Liquid Temperature",
+                "Text": "液体温度",
+                "zh": "液体温度",
+                "en": "Liquid Temperature",
+                "ja": "液体温度"
+              },
+              "OverrideIcon": {
+                "FileName": "Hot"
+              },
+              "MaxValue": 200
+            },
+            "Progress": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "Progress",
+                "zh": "进度",
+                "en": "Progress",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability1": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability1",
+                "zh": "特殊1",
+                "en": "Special1",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability2": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability2",
+                "zh": "特殊2",
+                "en": "Special2",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability3": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability3",
+                "zh": "特殊3",
+                "en": "Special3",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            },
+            "SpecialDurability4": {
+              "Active": false,
+              "CardStatName": {
+                "DefaultText": "",
+                "Text": "SpecialDurability4",
+                "zh": "特殊4",
+                "en": "Special4",
+                "ja": ""
+              },
+              "OverrideIcon": null,
+              "MaxValue": 0
+            }
+          }
+        ],
+        "RequiredTagsInInventory": [],
+        "CardWasBuiltWith": [],
+        "CardWasNOTBuiltWith": [],
+        "RequiredPlayerOwnedCards": [],
+        "RequiredPlayerNOTOwnedCards": [],
+        "ReceivingRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "GivenContainerRequiredDurabilityRanges": {
+          "SpoilageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "UsageRange": {
+            "x": 0,
+            "y": 0
+          },
+          "FuelRange": {
+            "x": 0,
+            "y": 0
+          },
+          "ProgressRange": {
+            "x": 0,
+            "y": 0
+          },
+          "Special1Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special2Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special3Range": {
+            "x": 0,
+            "y": 0
+          },
+          "Special4Range": {
+            "x": 0,
+            "y": 0
+          },
+          "LiquidQuantityRange": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "ReceivingCardTags": [],
+        "GivenCardTags": [],
+        "ReceivingCardSpices": [],
+        "GivenCardSpices": [],
+        "RequiredEnvironmentWeight": {
+          "Active": false,
+          "FloatValue": 0,
+          "MaxValue": 0
+        },
+        "RequiredStatValues": [
+          {
+            "Stat": {
+              "key": "SnowValue",
+              "icon": "Rain",
+              "type": "stat",
+              "zh": "SnowValue",
+              "en": "Snow Value",
+              "ja": "Snow Value",
+              "max": 5,
+              "min": 0
+            },
+            "TriggerRange": {
+              "x": 1,
+              "y": 5
+            },
+            "NotifyWhenNotMet": false,
+            "HideAllWhenNotMet": false
+          }
+        ],
+        "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
+        "RequiredInGameTimes": [],
+        "RequiredAlreadyVisitedEnvironments": [],
+        "RequiredUnlockedBps": [],
+        "RequiredNOTUnlockedBps": [],
+        "NPCInventoryConditions": [],
+        "NPCExists": []
+      },
+      "StatModifiers": [],
+      "NPCStatModifiers": [],
+      "EffectStacksWithRequiredCards": false,
+      "OnBoardEffectCap": 0,
+      "EffectScalesWithDurabilities": {
+        "Active": false,
+        "Inputs": [],
+        "EffectScalingOutput": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "SpoilageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpoilageRate": false,
+      "UsageRateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyUsageRate": false,
+      "FuelRateModifier": {
+        "Active": false,
+        "FloatValue": -4
+      },
+      "MultiplyFuelRate": false,
+      "ConsumableChargesModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplyConsumableChargesRate": false,
+      "Special1RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial1Rate": false,
+      "Special2RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial2Rate": false,
+      "Special3RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial3Rate": false,
+      "Special4RateModifier": {
+        "Active": false,
+        "FloatValue": 0
+      },
+      "MultiplySpecial4Rate": false,
+      "LiquidRateModifier": 0,
+      "UpdateDurabilityConcentrations": {
+        "MaskValue": 0
+      },
+      "GeneratedLiquid": {
+        "LiquidCard": {
+          "key": "LQ_WaterRiver",
+          "icon": "Thirst_Old",
+          "type": "card",
+          "CardType": 9,
+          "zh": "河水",
+          "en": "River Water",
+          "ja": "川の水",
+          "SpoilageTime": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
+              "en": "Spoilage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "UsageDurability": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "UsageDurability",
+              "zh": "耐久",
+              "en": "Usage",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "FuelCapacity": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Liquid Temperature",
+              "Text": "液体温度",
+              "zh": "液体温度",
+              "en": "Liquid Temperature",
+              "ja": "液体温度"
+            },
+            "OverrideIcon": {
+              "FileName": "Hot"
+            },
+            "MaxValue": 200
+          },
+          "Progress": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "Progress",
+              "zh": "进度",
+              "en": "Progress",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability1": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability1",
+              "zh": "特殊1",
+              "en": "Special1",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability2": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability2",
+              "zh": "特殊2",
+              "en": "Special2",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability3": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability3",
+              "zh": "特殊3",
+              "en": "Special3",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          },
+          "SpecialDurability4": {
+            "Active": false,
+            "CardStatName": {
+              "DefaultText": "",
+              "Text": "SpecialDurability4",
+              "zh": "特殊4",
+              "en": "Special4",
+              "ja": ""
+            },
+            "OverrideIcon": null,
+            "MaxValue": 0
+          }
+        },
+        "Quantity": {
+          "x": 160,
+          "y": 160
+        },
+        "Durabilities": {
+          "Spoilage": 0,
+          "Usage": 0,
+          "Fuel": 0,
+          "Progress": 0,
+          "Special1": 0,
+          "Special2": 0,
+          "Special3": 0,
+          "Special4": 0,
+          "SpoilageValue": 0,
+          "UsageValue": 0,
+          "FuelValue": 0,
+          "ProgressValue": 0,
+          "Special1Value": 0,
+          "Special2Value": 0,
+          "Special3Value": 0,
+          "Special4Value": 0,
+          "SpoilageFrom": 0,
+          "UsageFrom": 0,
+          "FuelFrom": 0,
+          "ProgressFrom": 0,
+          "Special1From": 0,
+          "Special2From": 0,
+          "Special3From": 0,
+          "Special4From": 0
+        }
+      },
+      "WeightCapacityModifier": 0,
+      "DroppedCards": [],
+      "name": {
+        "en": "Snow into River Water",
+        "zh": "Snow into River Water",
+        "ja": "Snow into River Water"
+      }
+    },
+    {
       "EffectName": "Cool Down",
       "OnlyWhenEquipped": false,
       "EquippedOnBodyOnly": false,
@@ -7637,13 +10281,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7933,7 +10581,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -8057,13 +10705,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8349,7 +11001,7 @@
             "text": "“可储存的”",
             "icon": "",
             "type": "tag",
-            "count": 375,
+            "count": 380,
             "zh": "可储存的",
             "en": "Preservable",
             "ja": "保存できる",
@@ -8473,13 +11125,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8849,6 +11505,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -9040,6 +11697,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -9051,6 +11709,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -9064,6 +11723,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -9387,6 +12048,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -9711,6 +12373,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -9834,6 +12497,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -9847,6 +12511,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -10062,6 +12728,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -10272,6 +12939,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -10703,6 +13371,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -10716,6 +13385,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -10886,7 +13557,7 @@
     }
   ],
   "AlternateDismantleActions": [],
-  "MaxLiquidCapacity": 10800,
+  "MaxLiquidCapacity": 12000,
   "UseCoordinates": false,
   "CreatedPath": null,
   "OppositePath": null,
@@ -10926,7 +13597,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -11011,7 +13682,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -11036,6 +13707,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

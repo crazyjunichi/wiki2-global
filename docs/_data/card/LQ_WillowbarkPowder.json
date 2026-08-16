@@ -7,7 +7,7 @@
   "zh": "柳树皮粉",
   "en": "Willow Bark Powder",
   "ja": "柳の樹皮粉末",
-  "UniqueIDIndex": 1778,
+  "UniqueIDIndex": 1777,
   "CardType": 9,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 375,
+      "count": 380,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -133,7 +133,7 @@
       "text": "“Powder Liquid”",
       "icon": "",
       "type": "tag",
-      "count": 13,
+      "count": 27,
       "zh": "粉末液体",
       "en": "Powder Liquid",
       "ja": "Powder Liquid",
@@ -144,12 +144,38 @@
           "Text": "变质",
           "zh": "变质",
           "en": "Spoilage",
-          "ja": "腐敗"
+          "ja": "Spoilage"
         },
         "OverrideIcon": {
           "FileName": "Bacteria"
         },
         "MaxValue": 3600
+      },
+      "FuelCapacity": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "",
+          "Text": "FuelCapacity",
+          "zh": "容量",
+          "en": "Fuel",
+          "ja": ""
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
+      },
+      "Progress": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Nutrition",
+          "Text": "营养",
+          "zh": "营养",
+          "en": "Nutrition",
+          "ja": "Nutrition"
+        },
+        "OverrideIcon": {
+          "FileName": "Quality"
+        },
+        "MaxValue": 100
       },
       "SpecialDurability2": {
         "Active": true,
@@ -158,12 +184,12 @@
           "Text": "品质",
           "zh": "品质",
           "en": "Quality",
-          "ja": "クオリティ"
+          "ja": "Quality"
         },
         "OverrideIcon": {
           "FileName": "Quality"
         },
-        "MaxValue": 192
+        "MaxValue": 96
       }
     }
   ],
@@ -182,14 +208,14 @@
   "DroppedOnDestroy": [],
   "DropFromTrashButton": false,
   "SpoilageTime": {
-    "Active": true,
+    "Active": false,
     "FloatValue": 0,
     "CardStatName": {
-      "DefaultText": "Spoilage",
-      "Text": "变质",
-      "zh": "变质",
+      "DefaultText": "",
+      "Text": "SpoilageTime",
+      "zh": "时间",
       "en": "Spoilage",
-      "ja": "腐敗"
+      "ja": ""
     },
     "RandomStartingOffset": 0,
     "MaxValue": 3600,
@@ -223,418 +249,6 @@
     "RepeatActionOnFull": false,
     "ShowPopupOnFull": false,
     "OnFullNotification": 1,
-    "OnFull": {
-      "ActionName": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "ActionDescription": {
-        "DefaultText": "Bark Spoiled!",
-        "Text": "树皮变质了！",
-        "zh": "树皮变质了！",
-        "en": "Bark Spoiled!",
-        "ja": "樹皮が腐敗した！"
-      },
-      "NoveltyShared": false,
-      "VictorySettings": {
-        "Victory": false,
-        "SpecialEnding": false,
-        "VictoryMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        }
-      },
-      "UnavailableInDemo": false,
-      "SaveGame": false,
-      "ConfirmPopup": false,
-      "CustomConfirmText": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NotInterruptedByEncounters": false,
-      "StackCompatible": false,
-      "DaytimeCost": 0,
-      "UseMiniTicks": 0,
-      "MinDaytimeCost": {
-        "Active": false,
-        "IntValue": 0
-      },
-      "ActionSounds": [],
-      "DisablePitchVariation": false,
-      "ActionTags": [],
-      "RequiredStatValues": [],
-      "RequiredNPCStatValues": [],
-      "RequiredCardsOnBoard": [],
-      "RequiredTagsOnBoard": [],
-      "RequiredAlreadyVisitedEnvironments": [],
-      "RequiredReceivingContainer": [],
-      "RequiredReceivingContainerTag": [],
-      "RequiredNOTReceivingContainerTag": [],
-      "RequiredReceivingContainerDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingDurabilities": {
-        "RequiredSpoilagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredUsagePercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredFuelPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredProgressPercent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredLiquidQuantity": 0,
-        "RequiredSpecial1Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial2Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial3Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "RequiredSpecial4Percent": {
-          "Active": false,
-          "FloatValue": 0,
-          "MaxValue": 0,
-          "ScaleRequirementPerPortionOfLiquid": {
-            "Active": false,
-            "FloatValue": 0
-          }
-        },
-        "HideActionIfNotMet": false,
-        "FailMessage": {
-          "DefaultText": "",
-          "Text": "",
-          "zh": "",
-          "en": "",
-          "ja": ""
-        },
-        "SpecificFailMessages": []
-      },
-      "RequiredReceivingLiquidContent": {
-        "IsActive": false,
-        "RequiredLiquid": null,
-        "RequiredGroup": null,
-        "RequiredQuantity": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "RequiredActiveHidingGroups": [],
-      "HideIfConditionsNotMet": false,
-      "NotBaseAction": false,
-      "Cancellable": false,
-      "InstantStatModifications": false,
-      "DontDoStatModificationsOnCancel": false,
-      "InstantDurabilityModifications": false,
-      "ReceivingCardFlavourBonus": false,
-      "GivenCardFlavourBonus": false,
-      "ResetWhenDone": null,
-      "StatInterruptions": [],
-      "StartDialog": null,
-      "ProducedCards": [],
-      "StatModifications": [],
-      "InterpolatedStatModifications": [],
-      "NPCStatModifications": [],
-      "TemporaryStatModifications": [],
-      "MovePlayer": {
-        "MoveOption": 0,
-        "ToEnv": null,
-        "Pathfinding": null,
-        "Direction": 0
-      },
-      "MoveReceivingCard": {
-        "Card": null,
-        "UseCardinalDirection": false,
-        "MoveInDirection": 0,
-        "Pathfinding": null
-      },
-      "MoveNPC": [],
-      "SetNPCHome": [],
-      "ExtraDurabilityModifications": [],
-      "BlueprintsFullUnlock": [],
-      "CompletedImprovements": [],
-      "AddedInRunPerks": [],
-      "DontShowDestroyMessage": false,
-      "CustomDestroyMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "NoCardsAffectedMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "ReceivingCardChanges": {
-        "ModType": 2,
-        "TransformInto": null,
-        "TransformToLiquidQuantity": 0,
-        "TransferSpoilage": false,
-        "TransferUsage": false,
-        "TransferFuel": false,
-        "TransferCharges": false,
-        "TransferSpecial1": false,
-        "TransferSpecial2": false,
-        "TransferSpecial3": false,
-        "TransferSpecial4": false,
-        "TransferInventory": false,
-        "TransferSavedIngredients": false,
-        "AverageGivenAndReceivingCards": false,
-        "TransferLiquid": false,
-        "SpoilageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UsageTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "FuelTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ProgressTransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special1TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special2TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special3TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "Special4TransferScale": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "ModifyDurability": false,
-        "ModifyLiquid": false,
-        "DropOnDestroyList": false,
-        "LiquidEffectScaling": 0,
-        "AddFlavoursFromTargetCard": false,
-        "AddFlavoursFromOtherCard": false,
-        "AddSpicesFromTargetCard": false,
-        "AddSpicesFromOtherCard": false,
-        "AddedFlavours": [],
-        "AddedSpiceTags": [],
-        "SpoilageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpoilageFromOtherCard": false,
-        "UsageChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetUsageFromOtherCard": false,
-        "FuelChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetFuelFromOtherCard": false,
-        "ChargesChange": {
-          "x": 0,
-          "y": 0
-        },
-        "GetProgressFromOtherCard": false,
-        "LiquidQuantityChange": {
-          "x": 0,
-          "y": 0
-        },
-        "Special1Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial1FromOtherCard": false,
-        "Special2Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial2FromOtherCard": false,
-        "Special3Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial3FromOtherCard": false,
-        "Special4Change": {
-          "x": 0,
-          "y": 0
-        },
-        "GetSpecial4FromOtherCard": false,
-        "StatInterpolatedDurabilityChanges": [],
-        "DurabilityInterpolatedTransfers": [],
-        "ScaleChangesPerPortionOfLiquid": {
-          "Active": false,
-          "FloatValue": 0
-        },
-        "UseOtherCardForLiquidQuantity": false
-      },
-      "CustomWindowPrefab": null,
-      "OpenQuestLog": false,
-      "OpenMap": false,
-      "UpdateMap": false,
-      "EditDescription": false,
-      "FadeToBlack": 0,
-      "FadeMessage": {
-        "DefaultText": "",
-        "Text": "",
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "FadeTips": false,
-      "TravelToPreviousEnv": false,
-      "TravelToOtherRoom": false,
-      "RoomDirection": 0,
-      "ExitDirection": 0
-    },
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
     "durabilityKey": "SpoilageTime",
@@ -893,13 +507,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1014,13 +628,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1135,13 +749,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1256,13 +870,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1377,13 +991,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1498,13 +1112,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -1955,13 +1569,13 @@
           "en": "Willow Bark Powder",
           "ja": "柳の樹皮粉末",
           "SpoilageTime": {
-            "Active": true,
+            "Active": false,
             "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
+              "DefaultText": "",
+              "Text": "SpoilageTime",
+              "zh": "时间",
               "en": "Spoilage",
-              "ja": "腐敗"
+              "ja": ""
             },
             "OverrideIcon": {
               "FileName": "Bacteria"
@@ -2346,6 +1960,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -2537,6 +2152,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2548,6 +2164,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2561,6 +2178,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3461,6 +3080,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -3652,6 +3272,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -3663,6 +3284,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -3676,6 +3298,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4949,7 +4573,7 @@
     "ja": ""
   },
   "NotAutoSolvableEvent": false,
-  "ObjectWeight": 0.33,
+  "ObjectWeight": 0.66,
   "AddedWeightFromDurabilities": [],
   "WeightReductionWhenEquipped": 0,
   "NeedsRoomInLocationToSpawn": false,
@@ -5268,13 +4892,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5584,13 +5212,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -5900,13 +5532,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6209,13 +5845,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6518,13 +6158,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6827,13 +6471,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7143,13 +6791,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7522,6 +7174,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -7652,7 +7305,7 @@
             "FloatValue": 0
           }
         },
-        "RequiredLiquidQuantity": 2,
+        "RequiredLiquidQuantity": 5,
         "RequiredSpecial1Percent": {
           "Active": false,
           "FloatValue": 0,
@@ -7713,6 +7366,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8077,6 +7731,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8090,6 +7745,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -8190,8 +7847,8 @@
         },
         "GetProgressFromOtherCard": false,
         "LiquidQuantityChange": {
-          "x": -3,
-          "y": -3
+          "x": -5,
+          "y": -5
         },
         "Special1Change": {
           "x": 0,
@@ -8305,6 +7962,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -8435,7 +8093,7 @@
             "FloatValue": 0
           }
         },
-        "RequiredLiquidQuantity": 29,
+        "RequiredLiquidQuantity": 50,
         "RequiredSpecial1Percent": {
           "Active": false,
           "FloatValue": 0,
@@ -8496,6 +8154,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8860,6 +8519,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8873,6 +8533,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -8973,8 +8635,8 @@
         },
         "GetProgressFromOtherCard": false,
         "LiquidQuantityChange": {
-          "x": -30,
-          "y": -30
+          "x": -50,
+          "y": -50
         },
         "Special1Change": {
           "x": 0,
@@ -9083,7 +8745,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -9168,7 +8830,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -9193,6 +8855,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [

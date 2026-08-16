@@ -7,7 +7,7 @@
   "zh": "水煮脑花",
   "en": "Boiled Brain",
   "ja": "茹でた脳",
-  "UniqueIDIndex": 1795,
+  "UniqueIDIndex": 1794,
   "CardType": 0,
   "CardTags": [
     {
@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 375,
+      "count": 380,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -1081,7 +1081,7 @@
       "text": "“人类食物”",
       "icon": "",
       "type": "tag",
-      "count": 168,
+      "count": 175,
       "zh": "人类食物",
       "en": "Human Food",
       "ja": "人間の食べ物",
@@ -1553,14 +1553,14 @@
       }
     },
     {
-      "key": "tag_SmellyMeat",
-      "text": "“Smelly Meat”",
+      "key": "tag_FoodFatty",
+      "text": "“Fatty”",
       "icon": "",
       "type": "tag",
-      "count": 69,
-      "zh": "有气味的肉",
-      "en": "Smelly Meat",
-      "ja": "Smelly Meat",
+      "count": 53,
+      "zh": "Fatty",
+      "en": "Fatty",
+      "ja": "Fatty",
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -1573,14 +1573,14 @@
         "OverrideIcon": {
           "FileName": "Bacteria"
         },
-        "MaxValue": 300
+        "MaxValue": 180
       },
       "UsageDurability": {
         "Active": true,
         "CardStatName": {
           "DefaultText": "Drying",
-          "Text": "干燥",
-          "zh": "干燥",
+          "Text": "干燥中",
+          "zh": "干燥中",
           "en": "Drying",
           "ja": "乾燥中"
         },
@@ -1606,15 +1606,13 @@
       "Progress": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Spirit",
-          "Text": "精魄",
-          "zh": "精魄",
-          "en": "Spirit",
-          "ja": "精霊"
+          "DefaultText": "",
+          "Text": "Progress",
+          "zh": "进度",
+          "en": "Progress",
+          "ja": ""
         },
-        "OverrideIcon": {
-          "FileName": "Insight"
-        },
+        "OverrideIcon": null,
         "MaxValue": 1
       },
       "SpecialDurability1": {
@@ -1648,14 +1646,14 @@
       "SpecialDurability3": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Meat Type",
-          "Text": "肉部位",
-          "zh": "肉部位",
-          "en": "Meat Type",
-          "ja": "肉の種類"
+          "DefaultText": "Mill",
+          "Text": "研磨",
+          "zh": "研磨",
+          "en": "Mill",
+          "ja": "製粉"
         },
         "OverrideIcon": null,
-        "MaxValue": 100
+        "MaxValue": 1
       },
       "SpecialDurability4": {
         "Active": true,
@@ -1776,6 +1774,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1967,6 +1966,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1978,6 +1978,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1991,6 +1992,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -8661,13 +8664,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -8977,13 +8984,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9293,13 +9304,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9602,13 +9617,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -9911,13 +9930,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10227,13 +10250,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10610,6 +10637,28 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_Eat",
+            "icon": "",
+            "type": "npc",
+            "zh": "Eat",
+            "en": "Eat",
+            "ja": "Eat"
+          }
+        },
+        {
+          "Target": {
+            "key": "PartnerDuty_EatFree",
+            "icon": "",
+            "type": "npc",
+            "zh": "Eat",
+            "en": "Eat",
+            "ja": "Eat"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "CarnivorousAction",
@@ -11040,6 +11089,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": true,
@@ -11671,6 +11721,7 @@
         }
       ],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -11684,6 +11735,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -11894,7 +11947,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -11979,7 +12032,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -12004,6 +12057,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

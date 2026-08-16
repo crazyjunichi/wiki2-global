@@ -1260,6 +1260,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1451,6 +1452,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1696,50 +1698,22 @@
       "NPCStatModifications": [
         {
           "TargetStat": {
-            "m_Name": "AgentMorale",
             "key": "AgentMorale",
             "type": "durability",
             "zh": "斗志",
             "en": "AgentMorale",
-            "ja": "Agent Morale",
-            "GameName": {
-              "DefaultText": "Agent Morale",
-              "Text": "斗志",
-              "zh": "斗志",
-              "en": "AgentMorale",
-              "ja": "Agent Morale"
-            },
-            "DefaultStartingValue": 100,
-            "DefaultMinMaxValue": {
-              "x": 0,
-              "y": 10000
-            },
-            "DefaultRate": 1,
-            "DefaultMinMaxRate": {
-              "x": 0,
-              "y": 0
-            },
-            "StatVisibleIcon": null,
-            "HidingOptions": 0,
-            "TextDisplay": 0,
-            "NumberPrecision": 0,
-            "StatScalingToModifiers": [],
-            "NPCStatScalingToModifiers": [],
-            "name": "斗志",
-            "desc": "Agent Morale",
-            "m_GameObject": null,
-            "m_Enabled": 1,
-            "UniqueID": "02ddd4de2bc32564daa80cdcdaa87cc2",
-            "UniqueIDIndex": 3168
+            "ja": "Agent Morale"
           },
           "UseAssociatedAgent": true,
           "TargetAgent": null,
           "ValueChange": {
             "x": -50,
             "y": -50
-          }
+          },
+          "IgnoreNovelty": false
         }
       ],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1753,6 +1727,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [
         {
           "Target": {
@@ -1983,6 +1959,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -2174,6 +2151,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2616,6 +2594,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2629,6 +2608,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2839,7 +2820,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2924,7 +2905,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2949,6 +2930,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

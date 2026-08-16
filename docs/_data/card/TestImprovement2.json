@@ -7,7 +7,7 @@
   "zh": "Other Improvement!",
   "en": "Other Improvement!",
   "ja": "Other Improvement!",
-  "UniqueIDIndex": 2521,
+  "UniqueIDIndex": 2522,
   "CardType": 10,
   "CardTags": [],
   "CardName": {
@@ -1241,11 +1241,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -1286,6 +1289,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -1584,13 +1588,17 @@
           },
           "RequiredStatValues": [],
           "RequiredNPCStatValues": [],
+          "RequiredNPCActiveDuties": [],
+          "RequiredNPCAtHome": [],
           "RequiredInGameTimes": [],
           "RequiredAlreadyVisitedEnvironments": [],
           "RequiredUnlockedBps": [],
           "RequiredNOTUnlockedBps": [],
-          "NPCInventoryConditions": []
+          "NPCInventoryConditions": [],
+          "NPCExists": []
         },
         "StatModifiers": [],
+        "NPCStatModifiers": [],
         "EffectStacksWithRequiredCards": false,
         "OnBoardEffectCap": 0,
         "EffectScalesWithDurabilities": {
@@ -2318,7 +2326,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2403,7 +2411,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2428,6 +2436,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

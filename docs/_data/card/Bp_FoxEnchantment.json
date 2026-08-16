@@ -1476,14 +1476,16 @@
           "Remember": false
         },
         {
-          "RequiredCard": {
-            "key": "Carcass_PartridgeCarcass",
-            "icon": "Partridge",
-            "type": "card",
-            "CardType": 0,
-            "zh": "灰山鹑尸体",
-            "en": "Dead Partridge",
-            "ja": "死んだヤマウズラ",
+          "RequiredCard": null,
+          "RequiredTabGroup": {
+            "key": "GpTag_BirdCarcass",
+            "text": "“Bird Carcass”",
+            "type": "tag",
+            "zh": "Bird Carcass",
+            "en": "Bird Carcass",
+            "ja": "Bird Carcass",
+            "SubGroups": [],
+            "count": 4,
             "SpoilageTime": {
               "Active": true,
               "CardStatName": {
@@ -1491,7 +1493,7 @@
                 "Text": "变质",
                 "zh": "变质",
                 "en": "Spoilage",
-                "ja": "腐敗"
+                "ja": "腐敗物"
               },
               "OverrideIcon": {
                 "FileName": "Bacteria"
@@ -1557,7 +1559,7 @@
                 "Text": "品质",
                 "zh": "品质",
                 "en": "Quality",
-                "ja": "クオリティ"
+                "ja": "質"
               },
               "OverrideIcon": {
                 "FileName": "Quality"
@@ -1589,7 +1591,6 @@
               "MaxValue": 0
             }
           },
-          "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
             "Active": false,
@@ -1774,7 +1775,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2510,7 +2511,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -2595,7 +2596,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -2620,6 +2621,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [
     {
       "key": "Carcass_FoxCarcass",

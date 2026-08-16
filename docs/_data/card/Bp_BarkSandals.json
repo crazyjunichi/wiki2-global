@@ -675,7 +675,7 @@
           "min": 0
         },
         "TriggerRange": {
-          "x": 22,
+          "x": 5,
           "y": 150
         },
         "NotifyWhenNotMet": false,
@@ -1117,14 +1117,16 @@
       "CannotRevertToThisStage": false,
       "RequiredElements": [
         {
-          "RequiredCard": {
-            "key": "OakBark",
-            "icon": "Bark",
-            "type": "card",
-            "CardType": 0,
-            "zh": "橡树皮",
-            "en": "Oak Bark",
-            "ja": "オークの樹皮",
+          "RequiredCard": null,
+          "RequiredTabGroup": {
+            "key": "GpTag_Bark",
+            "text": "“Bark”",
+            "type": "tag",
+            "zh": "Bark",
+            "en": "Bark",
+            "ja": "Bark",
+            "SubGroups": [],
+            "count": 2,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1222,7 +1224,6 @@
               "MaxValue": 0
             }
           },
-          "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
             "Active": false,
@@ -1711,14 +1712,16 @@
       "CannotRevertToThisStage": false,
       "RequiredElements": [
         {
-          "RequiredCard": {
-            "key": "OakBark",
-            "icon": "Bark",
-            "type": "card",
-            "CardType": 0,
-            "zh": "橡树皮",
-            "en": "Oak Bark",
-            "ja": "オークの樹皮",
+          "RequiredCard": null,
+          "RequiredTabGroup": {
+            "key": "GpTag_Bark",
+            "text": "“Bark”",
+            "type": "tag",
+            "zh": "Bark",
+            "en": "Bark",
+            "ja": "Bark",
+            "SubGroups": [],
+            "count": 2,
             "SpoilageTime": {
               "Active": false,
               "CardStatName": {
@@ -1816,7 +1819,6 @@
               "MaxValue": 0
             }
           },
-          "RequiredTabGroup": null,
           "RequiredQuantity": 1,
           "Spoilage": {
             "Active": false,
@@ -2311,7 +2313,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -2745,8 +2747,8 @@
         "min": 0
       },
       "ValueModifier": {
-        "x": 5,
-        "y": 5
+        "x": 1,
+        "y": 1
       },
       "RateModifier": {
         "x": 0,
@@ -3119,7 +3121,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -3204,7 +3206,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -3229,6 +3231,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],

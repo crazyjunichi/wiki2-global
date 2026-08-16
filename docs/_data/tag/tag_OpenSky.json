@@ -203,11 +203,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "AppliesTo": [
         {
@@ -648,11 +651,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "AppliesTo": [
         {
@@ -1151,9 +1157,237 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -1379,9 +1613,237 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Unsafe Water",
+        "en": "Passive Effect：Snow into Unsafe Water",
+        "ja": "パッシブ効果：Snow into Unsafe Water"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为河水",
         "en": "Passive Effect：Rain into River Water",
         "ja": "パッシブ効果：雨水を川の水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "ClayBasin",
+        "icon": "Basin_Clay",
+        "type": "card",
+        "CardType": 0,
+        "zh": "陶盆",
+        "en": "Clay Basin",
+        "ja": "粘土のたらい",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into River Water",
+        "en": "Passive Effect：Snow into River Water",
+        "ja": "パッシブ効果：Snow into River Water"
       }
     },
     {
@@ -1454,234 +1916,6 @@
             "FileName": "Cooking"
           },
           "MaxValue": 16
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "localization": {
-        "zh": "被动效果：下雨",
-        "en": "Passive Effect：Rain",
-        "ja": "パッシブ効果：雨"
-      }
-    },
-    {
-      "link": {
-        "key": "ClayBowl",
-        "icon": "Bowl_Clay",
-        "type": "card",
-        "CardType": 0,
-        "zh": "陶碗",
-        "en": "Clay Bowl",
-        "ja": "粘土のボウル",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Container Temperature",
-            "Text": "容器温度",
-            "zh": "容器温度",
-            "en": "Container Temperature",
-            "ja": "容器の温度"
-          },
-          "OverrideIcon": {
-            "FileName": "Hot"
-          },
-          "MaxValue": 200
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability2": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability2",
-            "zh": "特殊2",
-            "en": "Special2",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability3": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability3",
-            "zh": "特殊3",
-            "en": "Special3",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability4": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability4",
-            "zh": "特殊4",
-            "en": "Special4",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        }
-      },
-      "localization": {
-        "zh": "被动效果：下雨",
-        "en": "Passive Effect：Rain",
-        "ja": "パッシブ効果：雨"
-      }
-    },
-    {
-      "link": {
-        "key": "ClayVase",
-        "icon": "Vase_Clay",
-        "type": "card",
-        "CardType": 0,
-        "zh": "陶罐",
-        "en": "Clay Vase",
-        "ja": "粘土の壺",
-        "SpoilageTime": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpoilageTime",
-            "zh": "时间",
-            "en": "Spoilage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "UsageDurability": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "UsageDurability",
-            "zh": "耐久",
-            "en": "Usage",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "FuelCapacity": {
-          "Active": true,
-          "CardStatName": {
-            "DefaultText": "Container Temperature",
-            "Text": "容器温度",
-            "zh": "容器温度",
-            "en": "Container Temperature",
-            "ja": "容器の温度"
-          },
-          "OverrideIcon": {
-            "FileName": "Hot"
-          },
-          "MaxValue": 200
-        },
-        "Progress": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "Progress",
-            "zh": "进度",
-            "en": "Progress",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
-        },
-        "SpecialDurability1": {
-          "Active": false,
-          "CardStatName": {
-            "DefaultText": "",
-            "Text": "SpecialDurability1",
-            "zh": "特殊1",
-            "en": "Special1",
-            "ja": ""
-          },
-          "OverrideIcon": null,
-          "MaxValue": 0
         },
         "SpecialDurability2": {
           "Active": false,
@@ -4498,9 +4732,237 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "BugsNot_Old"
+          },
+          "MaxValue": 672
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "BugsNot_Old"
+          },
+          "MaxValue": 672
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -4726,9 +5188,237 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Unsafe Water",
+        "en": "Passive Effect：Snow into Unsafe Water",
+        "ja": "パッシブ効果：Snow into Unsafe Water"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "BugsNot_Old"
+          },
+          "MaxValue": 672
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为河水",
         "en": "Passive Effect：Rain into River Water",
         "ja": "パッシブ効果：雨水を川の水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RainCistern",
+        "icon": "Cistern",
+        "type": "card",
+        "CardType": 2,
+        "zh": "雨水窖",
+        "en": "Rain Cistern",
+        "ja": "雨水貯水槽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "FuelCapacity",
+            "zh": "容量",
+            "en": "Fuel",
+            "ja": ""
+          },
+          "OverrideIcon": {
+            "FileName": "BugsNot_Old"
+          },
+          "MaxValue": 672
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Dye",
+            "Text": "染料",
+            "zh": "染料",
+            "en": "Dye",
+            "ja": "染料"
+          },
+          "OverrideIcon": null,
+          "MaxValue": 100
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability3",
+            "zh": "特殊3",
+            "en": "Special3",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into River Water",
+        "en": "Passive Effect：Snow into River Water",
+        "ja": "パッシブ効果：Snow into River Water"
       }
     },
     {
@@ -5076,9 +5766,241 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -5308,9 +6230,241 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Unsafe Water",
+        "en": "Passive Effect：Snow into Unsafe Water",
+        "ja": "パッシブ効果：Snow into Unsafe Water"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为河水",
         "en": "Passive Effect：Rain into River Water",
         "ja": "パッシブ効果：雨水を川の水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelItem",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 0,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into River Water",
+        "en": "Passive Effect：Snow into River Water",
+        "ja": "パッシブ効果：Snow into River Water"
       }
     },
     {
@@ -5540,9 +6694,241 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Empty",
+        "en": "Passive Effect：Snow into Empty",
+        "ja": "パッシブ効果：Snow into Empty"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为淡水",
         "en": "Passive Effect：Rain into Fresh Water",
         "ja": "パッシブ効果：雨水を淡水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into Fresh Water",
+        "en": "Passive Effect：Snow into Fresh Water",
+        "ja": "パッシブ効果：Snow into Fresh Water"
       }
     },
     {
@@ -5772,9 +7158,241 @@
         }
       },
       "localization": {
+        "zh": "被动效果：Snow into Unsafe Water",
+        "en": "Passive Effect：Snow into Unsafe Water",
+        "ja": "パッシブ効果：Snow into Unsafe Water"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
         "zh": "被动效果：雨水转化为河水",
         "en": "Passive Effect：Rain into River Water",
         "ja": "パッシブ効果：雨水を川の水に変える"
+      }
+    },
+    {
+      "link": {
+        "key": "RusticBarrelLocation",
+        "icon": "BarrelRustic",
+        "type": "card",
+        "CardType": 2,
+        "zh": "粗制木桶",
+        "en": "Rustic Barrel",
+        "ja": "シンプルな樽",
+        "SpoilageTime": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpoilageTime",
+            "zh": "时间",
+            "en": "Spoilage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "UsageDurability": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "UsageDurability",
+            "zh": "耐久",
+            "en": "Usage",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "FuelCapacity": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Container Temperature",
+            "Text": "容器温度",
+            "zh": "容器温度",
+            "en": "Container Temperature",
+            "ja": "容器の温度"
+          },
+          "OverrideIcon": {
+            "FileName": "Hot"
+          },
+          "MaxValue": 200
+        },
+        "Progress": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "Progress",
+            "zh": "进度",
+            "en": "Progress",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability1": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability1",
+            "zh": "特殊1",
+            "en": "Special1",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability2": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability2",
+            "zh": "特殊2",
+            "en": "Special2",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        },
+        "SpecialDurability3": {
+          "Active": true,
+          "CardStatName": {
+            "DefaultText": "Blessed",
+            "Text": "已赐福",
+            "zh": "已赐福",
+            "en": "Blessed",
+            "ja": "加護を受けている"
+          },
+          "OverrideIcon": {
+            "FileName": "Snowflake_Old"
+          },
+          "MaxValue": 672
+        },
+        "SpecialDurability4": {
+          "Active": false,
+          "CardStatName": {
+            "DefaultText": "",
+            "Text": "SpecialDurability4",
+            "zh": "特殊4",
+            "en": "Special4",
+            "ja": ""
+          },
+          "OverrideIcon": null,
+          "MaxValue": 0
+        }
+      },
+      "localization": {
+        "zh": "被动效果：Snow into River Water",
+        "en": "Passive Effect：Snow into River Water",
+        "ja": "パッシブ効果：Snow into River Water"
       }
     },
     {

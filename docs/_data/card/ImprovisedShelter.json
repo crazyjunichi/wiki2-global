@@ -46,6 +46,18 @@
           "FileName": "Spoilage"
         },
         "MaxValue": 2880
+      },
+      "SpecialDurability1": {
+        "Active": true,
+        "CardStatName": {
+          "DefaultText": "Being Used",
+          "Text": "Being Used",
+          "zh": "Being Used",
+          "en": "Being Used",
+          "ja": "Being Used"
+        },
+        "OverrideIcon": null,
+        "MaxValue": 1
       }
     },
     {
@@ -116,16 +128,14 @@
       "SpecialDurability1": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Ash Amount",
-          "Text": "积灰量",
-          "zh": "积灰量",
-          "en": "Ash Amount",
-          "ja": "灰の量"
+          "DefaultText": "Being Used",
+          "Text": "Being Used",
+          "zh": "Being Used",
+          "en": "Being Used",
+          "ja": "Being Used"
         },
-        "OverrideIcon": {
-          "FileName": "Filth"
-        },
-        "MaxValue": 48
+        "OverrideIcon": null,
+        "MaxValue": 1
       },
       "SpecialDurability2": {
         "Active": true,
@@ -932,6 +942,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1123,6 +1134,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1912,6 +1924,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1925,6 +1938,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -2197,17 +2212,17 @@
   },
   "LiquidEvaporationRate": 0,
   "SpecialDurability1": {
-    "Active": false,
+    "Active": true,
     "FloatValue": 0,
     "CardStatName": {
-      "DefaultText": "",
-      "Text": "SpecialDurability1",
-      "zh": "特殊1",
-      "en": "Special1",
-      "ja": ""
+      "DefaultText": "Being Used",
+      "Text": "Being Used",
+      "zh": "Being Used",
+      "en": "Being Used",
+      "ja": "Being Used"
     },
     "RandomStartingOffset": 0,
-    "MaxValue": 0,
+    "MaxValue": 1,
     "RestrictToSpecificValues": false,
     "ValidValues": [],
     "RatePerDaytimePoint": 0,
@@ -2427,6 +2442,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -2637,6 +2653,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -2648,6 +2665,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -2661,6 +2679,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4218,11 +4238,14 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -4263,6 +4286,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -4642,6 +4666,7 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "SleepAction",
@@ -4661,6 +4686,18 @@
               "FileName": "Spoilage"
             },
             "MaxValue": 576
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Being Used",
+              "Text": "Being Used",
+              "zh": "Being Used",
+              "en": "Being Used",
+              "ja": "Being Used"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
           },
           "UsageDurability": {
             "Active": true,
@@ -4812,9 +4849,9 @@
         },
         "RequiredLiquidQuantity": 0,
         "RequiredSpecial1Percent": {
-          "Active": false,
+          "Active": true,
           "FloatValue": 0,
-          "MaxValue": 0,
+          "MaxValue": 0.1,
           "ScaleRequirementPerPortionOfLiquid": {
             "Active": false,
             "FloatValue": 0
@@ -4871,6 +4908,7 @@
       "NotBaseAction": false,
       "Cancellable": true,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -5641,6 +5679,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -5654,6 +5693,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5876,6 +5917,7 @@
         }
       ],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "SleepAction",
@@ -5895,6 +5937,18 @@
               "FileName": "Spoilage"
             },
             "MaxValue": 576
+          },
+          "SpecialDurability1": {
+            "Active": true,
+            "CardStatName": {
+              "DefaultText": "Being Used",
+              "Text": "Being Used",
+              "zh": "Being Used",
+              "en": "Being Used",
+              "ja": "Being Used"
+            },
+            "OverrideIcon": null,
+            "MaxValue": 1
           },
           "UsageDurability": {
             "Active": true,
@@ -6046,9 +6100,9 @@
         },
         "RequiredLiquidQuantity": 0,
         "RequiredSpecial1Percent": {
-          "Active": false,
+          "Active": true,
           "FloatValue": 0,
-          "MaxValue": 0,
+          "MaxValue": 0.1,
           "ScaleRequirementPerPortionOfLiquid": {
             "Active": false,
             "FloatValue": 0
@@ -6105,6 +6159,7 @@
       "NotBaseAction": false,
       "Cancellable": true,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -6875,6 +6930,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -6888,6 +6944,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -7103,6 +7161,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [
         {
@@ -7313,6 +7372,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -8102,6 +8162,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -8115,6 +8176,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -8325,7 +8388,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -8410,7 +8473,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": true,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -8435,6 +8498,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_Bedkeeping",
+      "icon": "",
+      "type": "npc",
+      "zh": "Bed keeping",
+      "en": "Bed keeping",
+      "ja": "Bed keeping"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

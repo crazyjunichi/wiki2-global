@@ -15,7 +15,7 @@
       "text": "“可储存的”",
       "icon": "",
       "type": "tag",
-      "count": 375,
+      "count": 380,
       "zh": "可储存的",
       "en": "Preservable",
       "ja": "保存できる",
@@ -802,6 +802,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -993,6 +994,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1004,6 +1006,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1017,6 +1020,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -1274,6 +1279,90 @@
     "CountsForTradingValue": false,
     "TradingValueCustomRanges": [],
     "durabilityKey": "SpoilageTime",
+    "_valueModifications": [
+      {
+        "link": {
+          "key": "Bp_FoxEnchantment",
+          "icon": "Fox_Wild",
+          "type": "card",
+          "CardType": 7,
+          "zh": "狐附魔",
+          "en": "Fox Enchantment",
+          "ja": "キツネのエンチャント"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": 120,
+          "y": 120
+        }
+      },
+      {
+        "link": {
+          "key": "Bp_FoxSpiritCalling",
+          "icon": "Fox_Wild",
+          "type": "card",
+          "CardType": 7,
+          "zh": "呼唤狐精魄(呼唤)",
+          "en": "Fox Spirit Calling",
+          "ja": "狐の精霊召喚"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": 120,
+          "y": 120
+        }
+      },
+      {
+        "link": {
+          "key": "Bp_FoxSummoning",
+          "icon": "Fox_Wild",
+          "type": "card",
+          "CardType": 7,
+          "zh": "召唤仪式",
+          "en": "Summoning Ritual",
+          "ja": "召喚の儀式"
+        },
+        "localization": {
+          "zh": "蓝图制作",
+          "en": "Blueprint",
+          "ja": "ブループリント"
+        },
+        "value": {
+          "x": 120,
+          "y": 120
+        }
+      },
+      {
+        "link": {
+          "key": "Carcass_DuckCarcass",
+          "icon": "Duck",
+          "type": "card",
+          "CardType": 0,
+          "zh": "死鸭子",
+          "en": "Dead Duck",
+          "ja": "カモの死骸"
+        },
+        "localization": {
+          "DefaultText": "Cut Open",
+          "Text": "切开",
+          "zh": "切开",
+          "en": "Cut Open",
+          "ja": "切り開く"
+        },
+        "value": {
+          "x": -160,
+          "y": -160
+        }
+      }
+    ],
     "_rateModifications": [
       {
         "link": {
@@ -3002,30 +3091,6 @@
           "y": -1.625
         }
       }
-    ],
-    "_valueModifications": [
-      {
-        "link": {
-          "key": "Carcass_DuckCarcass",
-          "icon": "Duck",
-          "type": "card",
-          "CardType": 0,
-          "zh": "死鸭子",
-          "en": "Dead Duck",
-          "ja": "カモの死骸"
-        },
-        "localization": {
-          "DefaultText": "Cut Open",
-          "Text": "切开",
-          "zh": "切开",
-          "en": "Cut Open",
-          "ja": "切り開く"
-        },
-        "value": {
-          "x": -160,
-          "y": -160
-        }
-      }
     ]
   },
   "UsageDurability": {
@@ -3111,6 +3176,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -3302,6 +3368,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -3313,6 +3380,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -3326,6 +3394,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3793,6 +3863,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -3984,6 +4055,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4500,6 +4572,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4513,6 +4586,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -6262,12 +6337,24 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [
+        {
+          "Target": {
+            "key": "PartnerDuty_ButcherTiny",
+            "icon": "",
+            "type": "npc",
+            "zh": "Butcher Tiny Animal",
+            "en": "Butcher Tiny Animal",
+            "ja": "Butcher Tiny Animal"
+          }
+        }
+      ],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -6709,6 +6796,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": true,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -7817,6 +7905,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -7830,6 +7919,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [
@@ -8132,11 +8223,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AffectedCards": [],
           "AffectedTags": [
@@ -8625,11 +8719,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "AffectedCards": [
             {
@@ -10236,13 +10333,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10552,13 +10653,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -10868,13 +10973,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -11177,13 +11286,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -11486,13 +11599,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -11802,13 +11919,17 @@
           }
         ],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -12175,7 +12296,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -12260,7 +12381,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -12285,6 +12406,17 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [
+    {
+      "key": "PartnerDuty_ButcherTiny",
+      "icon": "",
+      "type": "npc",
+      "zh": "Butcher Tiny Animal",
+      "en": "Butcher Tiny Animal",
+      "ja": "Butcher Tiny Animal"
+    }
+  ],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -12489,6 +12621,54 @@
         "zh": "动作：喂食",
         "en": "Action: Feed",
         "ja": "アクション：餌をあげる"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FoxEnchantment",
+        "icon": "Fox_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "狐附魔",
+        "en": "Fox Enchantment",
+        "ja": "キツネのエンチャント"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FoxSpiritCalling",
+        "icon": "Fox_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "呼唤狐精魄(呼唤)",
+        "en": "Fox Spirit Calling",
+        "ja": "狐の精霊召喚"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
+      }
+    },
+    {
+      "link": {
+        "key": "Bp_FoxSummoning",
+        "icon": "Fox_Wild",
+        "type": "card",
+        "CardType": 7,
+        "zh": "召唤仪式",
+        "en": "Summoning Ritual",
+        "ja": "召喚の儀式"
+      },
+      "localization": {
+        "zh": "蓝图制作",
+        "en": "Blueprint",
+        "ja": "ブループリント"
       }
     },
     {

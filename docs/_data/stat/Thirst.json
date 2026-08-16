@@ -7,7 +7,7 @@
   "zh": "口渴度",
   "en": "Thirst",
   "ja": "喉の渇き",
-  "UniqueIDIndex": 4571,
+  "UniqueIDIndex": 4923,
   "GameName": {
     "DefaultText": "Thirst",
     "Text": "口渴度",
@@ -187,6 +187,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 0,
@@ -279,6 +280,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -371,6 +373,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -500,6 +503,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 1,
@@ -629,6 +633,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 2,
@@ -758,6 +763,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 3,
@@ -3913,6 +3919,88 @@
         "y": 20
       },
       "key": "LQ_UrineFresh_Drink"
+    },
+    {
+      "link": {
+        "key": "LQ_Water",
+        "icon": "Thirst_Old",
+        "type": "card",
+        "CardType": 9,
+        "zh": "水",
+        "en": "Water",
+        "ja": "水",
+        "AlternateNames": [
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Potage",
+              "Text": "浓汤",
+              "zh": "浓汤",
+              "en": "Potage",
+              "ja": "Potage"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 50,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Stew",
+              "Text": "炖菜",
+              "zh": "炖菜",
+              "en": "Stew",
+              "ja": "Stew"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Soup",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Soup",
+              "ja": "Soup"
+            }
+          },
+          {
+            "Conditions": {
+              "ProgressRange": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            "Name": {
+              "DefaultText": "Broth",
+              "Text": "汤",
+              "zh": "汤",
+              "en": "Broth",
+              "ja": "Broth"
+            }
+          }
+        ]
+      },
+      "localization": {
+        "zh": "动作：饮用",
+        "en": "Action: Drink",
+        "ja": "アクション：飲む"
+      },
+      "value": {
+        "x": 80,
+        "y": 40
+      }
     },
     {
       "link": {

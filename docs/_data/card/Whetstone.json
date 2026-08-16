@@ -7,7 +7,7 @@
   "zh": "磨刀石",
   "en": "Whetstone",
   "ja": "砥石",
-  "UniqueIDIndex": 2786,
+  "UniqueIDIndex": 2787,
   "CardType": 0,
   "CardTags": [
     {
@@ -3654,7 +3654,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -3739,7 +3739,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -3764,6 +3764,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {
@@ -9709,114 +9711,6 @@
     },
     {
       "link": {
-        "key": "ToolOrWeapon_MeatHook_MetalLocation",
-        "icon": "MeatHook_Copper",
-        "type": "card",
-        "CardType": 2,
-        "zh": "金属肉钩",
-        "en": "Metal Meat Hook",
-        "ja": "金属製の肉吊りフック",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "幽青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "スズの肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "スズ青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "白青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "Iron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "Iron Meat Hook",
-              "ja": "Iron Meat Hook"
-            }
-          }
-        ]
-      },
-      "localization": {
-        "zh": "动作：磨利",
-        "en": "Action: Sharpen",
-        "ja": "アクション：研ぐ"
-      }
-    },
-    {
-      "link": {
         "key": "ToolOrWeapon_Scythe_Metal",
         "icon": "scythe_copper",
         "type": "card",
@@ -10212,6 +10106,21 @@
           {
             "Conditions": {
               "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Skinning Knife",
+              "Text": "White Bronze Skinning Knife",
+              "zh": "White Bronze Skinning Knife",
+              "en": "White Bronze Skinning Knife",
+              "ja": "White Bronze Skinning Knife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
                 "x": 200,
                 "y": 200
               }
@@ -10433,11 +10342,11 @@
               }
             },
             "Name": {
-              "DefaultText": "Iron Bronze Spear",
+              "DefaultText": "Iron Spear",
               "Text": "铁青铜矛",
               "zh": "铁青铜矛",
               "en": "Iron Bronze Spear",
-              "ja": "Iron Bronze Spear"
+              "ja": "Iron Spear"
             }
           }
         ]
@@ -10714,22 +10623,6 @@
         "zh": "动作：研磨",
         "en": "Action: Grind",
         "ja": "アクション：粉砕"
-      }
-    },
-    {
-      "link": {
-        "key": "WitchstoneVeinInfinite",
-        "icon": "WitchstoneVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "巫石矿脉",
-        "en": "Witchstone Vein",
-        "ja": "ウィッチストーン鉱脈"
-      },
-      "localization": {
-        "zh": "动作：采掘",
-        "en": "Action: Mine",
-        "ja": "アクション：採掘する"
       }
     },
     {

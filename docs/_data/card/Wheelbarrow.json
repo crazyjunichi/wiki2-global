@@ -7,7 +7,7 @@
   "zh": "手推车",
   "en": "Wheelbarrow",
   "ja": "Wheelbarrow",
-  "UniqueIDIndex": 2785,
+  "UniqueIDIndex": 2786,
   "CardType": 0,
   "CardTags": [
     {
@@ -88,7 +88,7 @@
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
-          "DefaultText": "Hunger",
+          "DefaultText": "Satiation",
           "Text": "饥饿",
           "zh": "饥饿",
           "en": "Hunger",
@@ -460,6 +460,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -651,6 +652,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -856,6 +858,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -869,6 +872,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -3599,12 +3604,13 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -4025,6 +4031,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4148,6 +4155,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4161,6 +4169,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5130,7 +5140,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5214,7 +5224,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5308,7 +5318,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5406,7 +5416,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -5512,98 +5522,6 @@
               "FileName": "Pregnancy_Old"
             },
             "MaxValue": 2880
-          }
-        },
-        "NOT": true,
-        "OnlyWithLiquid": false
-      },
-      {
-        "Tag": {
-          "key": "tag_Powder",
-          "text": "“粉末”",
-          "icon": "",
-          "type": "tag",
-          "count": 33,
-          "zh": "粉末",
-          "en": "Powder",
-          "ja": "パウダー",
-          "SpoilageTime": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Spoilage",
-              "Text": "变质",
-              "zh": "变质",
-              "en": "Spoilage",
-              "ja": "腐敗"
-            },
-            "OverrideIcon": {
-              "FileName": "Bacteria"
-            },
-            "MaxValue": 3600
-          },
-          "FuelCapacity": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "",
-              "Text": "FuelCapacity",
-              "zh": "容量",
-              "en": "Fuel",
-              "ja": ""
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1
-          },
-          "Progress": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Milling Bonus",
-              "Text": "研磨加成",
-              "zh": "研磨加成",
-              "en": "Milling Bonus",
-              "ja": "製粉ボーナス"
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1
-          },
-          "SpecialDurability2": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Quality",
-              "Text": "品质",
-              "zh": "品质",
-              "en": "Quality",
-              "ja": "クオリティ"
-            },
-            "OverrideIcon": {
-              "FileName": "Quality"
-            },
-            "MaxValue": 96
-          },
-          "SpecialDurability3": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Mill",
-              "Text": "研磨",
-              "zh": "研磨",
-              "en": "Mill",
-              "ja": "製粉"
-            },
-            "OverrideIcon": null,
-            "MaxValue": 1
-          },
-          "SpecialDurability4": {
-            "Active": true,
-            "CardStatName": {
-              "DefaultText": "Boil",
-              "Text": "烹煮",
-              "zh": "烹煮",
-              "en": "Boil",
-              "ja": "Boil"
-            },
-            "OverrideIcon": {
-              "FileName": "Cooking"
-            },
-            "MaxValue": 4
           }
         },
         "NOT": true,
@@ -6229,13 +6147,17 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -6526,11 +6448,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -6645,6 +6570,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -7011,7 +6937,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -7096,7 +7022,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -7121,6 +7047,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

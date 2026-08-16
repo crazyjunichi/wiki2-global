@@ -7,7 +7,7 @@
   "zh": "耐力",
   "en": "Stamina",
   "ja": "スタミナ",
-  "UniqueIDIndex": 4366,
+  "UniqueIDIndex": 4710,
   "GameName": {
     "DefaultText": "Stamina",
     "Text": "耐力",
@@ -300,6 +300,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 2,
@@ -540,6 +541,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 3,
       "RepeatTextNotification": 0,
@@ -778,6 +780,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 0,
@@ -830,6 +833,7 @@
       },
       "UsePercentageForRange": false,
       "EffectsOnStats": [],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 0,
@@ -902,6 +906,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -1093,6 +1098,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -1253,6 +1259,7 @@
       ],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -1266,6 +1273,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -37163,7 +37172,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "肠子",
-        "en": "Intestines",
+        "en": "Dirty Intestines",
         "ja": "腸"
       },
       "localization": {
@@ -37186,7 +37195,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "肾脏",
-        "en": "Kidney",
+        "en": "Dirty Kidney",
         "ja": "腎臓"
       },
       "localization": {
@@ -37209,7 +37218,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "小牛胃",
-        "en": "Calf Stomach",
+        "en": "Dirty Calf Stomach",
         "ja": "子牛の胃"
       },
       "localization": {
@@ -37232,7 +37241,7 @@
         "type": "card",
         "CardType": 0,
         "zh": "胃",
-        "en": "Stomach",
+        "en": "Dirty Stomach",
         "ja": "胃"
       },
       "localization": {
@@ -54114,259 +54123,6 @@
     },
     {
       "link": {
-        "key": "Shape_MetalMeatHook",
-        "icon": "MeatHook_Blank_Copper",
-        "type": "card",
-        "CardType": 0,
-        "zh": "金属肉钩",
-        "en": "Metal Meat Hook",
-        "ja": "金属製の肉吊りフック",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "幽青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "スズの肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "スズ青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "白青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "Iron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "Iron Meat Hook",
-              "ja": "Iron Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "Copper Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "Ghost Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "Tin Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "Tin Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "White Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "IIron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "IIron Meat Hook",
-              "ja": "IIron Meat Hook"
-            }
-          }
-        ]
-      },
-      "localization": {
-        "DefaultText": "Smith",
-        "Text": "锻造",
-        "zh": "锻造",
-        "en": "Smith",
-        "ja": "鍛造"
-      },
-      "value": {
-        "x": -12,
-        "y": -12
-      },
-      "key": "Shape_MetalMeatHook_Smith"
-    },
-    {
-      "link": {
         "key": "Shape_MetalPickaxeHead",
         "icon": "pickaxe_blank_iron",
         "type": "card",
@@ -67097,6 +66853,21 @@
           {
             "Conditions": {
               "Special4Range": {
+                "x": 140,
+                "y": 140
+              }
+            },
+            "Name": {
+              "DefaultText": "White Bronze Skinning Knife",
+              "Text": "White Bronze Skinning Knife",
+              "zh": "White Bronze Skinning Knife",
+              "en": "White Bronze Skinning Knife",
+              "ja": "White Bronze Skinning Knife"
+            }
+          },
+          {
+            "Conditions": {
+              "Special4Range": {
                 "x": 200,
                 "y": 200
               }
@@ -67327,11 +67098,11 @@
               }
             },
             "Name": {
-              "DefaultText": "Iron Bronze Spear",
+              "DefaultText": "Iron Spear",
               "Text": "铁青铜矛",
               "zh": "铁青铜矛",
               "en": "Iron Bronze Spear",
-              "ja": "Iron Bronze Spear"
+              "ja": "Iron Spear"
             }
           }
         ]
@@ -70288,29 +70059,6 @@
         "ja": "採掘する"
       },
       "value": {
-        "x": -10,
-        "y": -10
-      },
-      "key": "WitchstoneVeinInfinite_Mine"
-    },
-    {
-      "link": {
-        "key": "WitchstoneVeinInfinite",
-        "icon": "WitchstoneVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "巫石矿脉",
-        "en": "Witchstone Vein",
-        "ja": "ウィッチストーン鉱脈"
-      },
-      "localization": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘する"
-      },
-      "value": {
         "x": -12,
         "y": -12
       },
@@ -72415,6 +72163,25 @@
         "y": -12
       },
       "key": "Agent_WanderingOak_Cut Tree"
+    },
+    {
+      "link": {
+        "key": "PartnerDialog_Expression",
+        "zh": "PartnerDialog_Expression",
+        "en": "PartnerDialog_Expression",
+        "ja": "PartnerDialog_Expression",
+        "icon": "",
+        "type": "dialog"
+      },
+      "localization": {
+        "zh": "对话",
+        "en": "Dialog",
+        "ja": "ダイアログ"
+      },
+      "value": {
+        "x": -10,
+        "y": -10
+      }
     }
   ],
   "_modifierRateList": [
@@ -106076,258 +105843,6 @@
     },
     {
       "link": {
-        "key": "Shape_MetalMeatHook",
-        "icon": "MeatHook_Blank_Copper",
-        "type": "card",
-        "CardType": 0,
-        "zh": "金属肉钩",
-        "en": "Metal Meat Hook",
-        "ja": "金属製の肉吊りフック",
-        "AlternateNames": [
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "幽青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "スズの肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "スズ青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "白青銅の肉吊りフック"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 0,
-                "y": 150
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "Iron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "Iron Meat Hook",
-              "ja": "Iron Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 100,
-                "y": 100
-              }
-            },
-            "Name": {
-              "DefaultText": "Copper Meat Hook",
-              "Text": "铜肉钩",
-              "zh": "铜肉钩",
-              "en": "Copper Meat Hook",
-              "ja": "Copper Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 110,
-                "y": 110
-              }
-            },
-            "Name": {
-              "DefaultText": "Ghost Bronze Meat Hook",
-              "Text": "鬼铜肉钩",
-              "zh": "鬼铜肉钩",
-              "en": "Ghost Bronze Meat Hook",
-              "ja": "Ghost Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 120,
-                "y": 120
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Meat Hook",
-              "Text": "锡肉钩",
-              "zh": "锡肉钩",
-              "en": "Tin Meat Hook",
-              "ja": "Tin Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 130,
-                "y": 130
-              }
-            },
-            "Name": {
-              "DefaultText": "Tin Bronze Meat Hook",
-              "Text": "青铜肉钩",
-              "zh": "青铜肉钩",
-              "en": "Tin Bronze Meat Hook",
-              "ja": "Tin Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 140,
-                "y": 140
-              }
-            },
-            "Name": {
-              "DefaultText": "White Bronze Meat Hook",
-              "Text": "白铜肉钩",
-              "zh": "白铜肉钩",
-              "en": "White Bronze Meat Hook",
-              "ja": "White Bronze Meat Hook"
-            }
-          },
-          {
-            "Conditions": {
-              "FuelRange": {
-                "x": 151,
-                "y": 300
-              },
-              "Special4Range": {
-                "x": 200,
-                "y": 200
-              }
-            },
-            "Name": {
-              "DefaultText": "IIron Meat Hook",
-              "Text": "铁肉钩",
-              "zh": "铁肉钩",
-              "en": "IIron Meat Hook",
-              "ja": "IIron Meat Hook"
-            }
-          }
-        ]
-      },
-      "localization": {
-        "DefaultText": "Smith",
-        "Text": "锻造",
-        "zh": "锻造",
-        "en": "Smith",
-        "ja": "鍛造"
-      },
-      "value": {
-        "x": 16,
-        "y": 1000000000
-      }
-    },
-    {
-      "link": {
         "key": "Shape_MetalPickaxeHead",
         "icon": "pickaxe_blank_iron",
         "type": "card",
@@ -115668,28 +115183,6 @@
       },
       "value": {
         "x": 24,
-        "y": 100
-      }
-    },
-    {
-      "link": {
-        "key": "WitchstoneVeinInfinite",
-        "icon": "WitchstoneVein",
-        "type": "card",
-        "CardType": 2,
-        "zh": "巫石矿脉",
-        "en": "Witchstone Vein",
-        "ja": "ウィッチストーン鉱脈"
-      },
-      "localization": {
-        "DefaultText": "Mine",
-        "Text": "采掘",
-        "zh": "采掘",
-        "en": "Mine",
-        "ja": "採掘する"
-      },
-      "value": {
-        "x": 16,
         "y": 100
       }
     },

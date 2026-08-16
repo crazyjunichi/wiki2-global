@@ -192,11 +192,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "Line": {
     "DefaultText": "The Stone is grateful for your presence.\nIt says you are good to have near. That you should stay a while.\n\n\nYou have its blessing, if you need it.\nSo you may feel less alone.\nSo you do not have to listen to the silence.",
@@ -230,6 +233,8 @@
   "ActionToPerform": {
     "StatModifications": [],
     "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "NPCSetHome": [],
     "DroppedCards": [],
     "BlueprintsFullUnlock": [],
     "AffectCards": [],
@@ -240,7 +245,9 @@
     "StartTrading": false,
     "SpendTicks": false,
     "Ticks": 0,
-    "Miniticks": 0
+    "Miniticks": 0,
+    "SpawnNPCS": [],
+    "DeleteNPCS": []
   },
   "LeftSide": {
     "SideName": {
@@ -452,11 +459,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Leave",
@@ -506,6 +516,8 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [
           {
@@ -547,6 +559,8 @@
           }
         ],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -557,7 +571,9 @@
         "StartTrading": false,
         "SpendTicks": true,
         "Ticks": 1,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     }
   ],
@@ -570,6 +586,9 @@
     "type": "dialog"
   },
   "OverrideSceneImage": null,
+  "UseWeightsForNextStep": false,
+  "NextStepsWithWeights": [],
+  "ShowContinueButton": 0,
   "m_GameObject": null,
   "m_Enabled": 1,
   "TextSettings": {

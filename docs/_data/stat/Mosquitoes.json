@@ -7,7 +7,7 @@
   "zh": "蚊子",
   "en": "Mosquitoes",
   "ja": "蚊",
-  "UniqueIDIndex": 3858,
+  "UniqueIDIndex": 3872,
   "GameName": {
     "DefaultText": "Mosquitoes",
     "Text": "蚊子",
@@ -226,6 +226,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 1,
@@ -442,6 +443,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 1,
@@ -658,6 +660,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 1,
@@ -874,6 +877,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 2,
@@ -1090,6 +1094,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 2,
@@ -1310,6 +1315,7 @@
           "IsInverse": false
         }
       ],
+      "EffectsOnNPCStats": [],
       "EffectsOnActions": [],
       "NotifyPlayer": 0,
       "RepeatTextNotification": 2,
@@ -1865,71 +1871,8 @@
         "ja": "ステータス段階: 弱雨"
       },
       "value": {
-        "x": -2,
-        "y": -2
-      }
-    },
-    {
-      "link": {
-        "key": "RainValue",
-        "icon": "Rain",
-        "type": "stat",
-        "zh": "降水值",
-        "en": "Rain Value",
-        "ja": "雨の激しさ",
-        "max": 5,
-        "min": 0
-      },
-      "localization": {
-        "zh": "状态阶段: 少量降水",
-        "en": "Status Stage: Light Rain",
-        "ja": "ステータス段階: 弱雨"
-      },
-      "value": {
         "x": -3,
         "y": -3
-      }
-    },
-    {
-      "link": {
-        "key": "RainValue",
-        "icon": "Rain",
-        "type": "stat",
-        "zh": "降水值",
-        "en": "Rain Value",
-        "ja": "雨の激しさ",
-        "max": 5,
-        "min": 0
-      },
-      "localization": {
-        "zh": "状态阶段: 少量降水",
-        "en": "Status Stage: Light Rain",
-        "ja": "ステータス段階: 弱雨"
-      },
-      "value": {
-        "x": -3,
-        "y": -3
-      }
-    },
-    {
-      "link": {
-        "key": "RainValue",
-        "icon": "Rain",
-        "type": "stat",
-        "zh": "降水值",
-        "en": "Rain Value",
-        "ja": "雨の激しさ",
-        "max": 5,
-        "min": 0
-      },
-      "localization": {
-        "zh": "状态阶段: 小雨",
-        "en": "Status Stage: Light Rain",
-        "ja": "ステータス段階: 弱雨"
-      },
-      "value": {
-        "x": -4,
-        "y": -4
       }
     },
     {
@@ -1972,48 +1915,6 @@
       "value": {
         "x": -5,
         "y": -5
-      }
-    },
-    {
-      "link": {
-        "key": "RainValue",
-        "icon": "Rain",
-        "type": "stat",
-        "zh": "降水值",
-        "en": "Rain Value",
-        "ja": "雨の激しさ",
-        "max": 5,
-        "min": 0
-      },
-      "localization": {
-        "zh": "状态阶段: 中等降水",
-        "en": "Status Stage: Moderate Rain",
-        "ja": "ステータス段階: 普通のの雨"
-      },
-      "value": {
-        "x": -5,
-        "y": -5
-      }
-    },
-    {
-      "link": {
-        "key": "RainValue",
-        "icon": "Rain",
-        "type": "stat",
-        "zh": "降水值",
-        "en": "Rain Value",
-        "ja": "雨の激しさ",
-        "max": 5,
-        "min": 0
-      },
-      "localization": {
-        "zh": "状态阶段: 大量降水",
-        "en": "Status Stage: Strong Rain",
-        "ja": "ステータス段階: 大雨"
-      },
-      "value": {
-        "x": -6,
-        "y": -6
       }
     },
     {
@@ -3022,6 +2923,26 @@
         "zh": "火坑",
         "en": "Fire Pit",
         "ja": "Fire Pit"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
+      }
+    },
+    {
+      "link": {
+        "key": "Fireplace",
+        "icon": "Fireplace_On",
+        "type": "card",
+        "CardType": 2,
+        "zh": "壁炉",
+        "en": "Fireplace",
+        "ja": "暖炉"
       },
       "localization": {
         "zh": "被动效果",
@@ -7792,6 +7713,26 @@
       "value": {
         "x": 100,
         "y": 100
+      }
+    },
+    {
+      "link": {
+        "key": "SpiritShrine_Fire_RitualPyre",
+        "icon": "Pyre",
+        "type": "card",
+        "CardType": 2,
+        "zh": "仪式柴堆",
+        "en": "Ritual Pyre",
+        "ja": "儀式用の火葬の薪"
+      },
+      "localization": {
+        "zh": "被动效果",
+        "en": "Passive Effect",
+        "ja": "パッシブ効果"
+      },
+      "value": {
+        "x": -1,
+        "y": -1
       }
     },
     {

@@ -192,11 +192,14 @@
     },
     "RequiredStatValues": [],
     "RequiredNPCStatValues": [],
+    "RequiredNPCActiveDuties": [],
+    "RequiredNPCAtHome": [],
     "RequiredInGameTimes": [],
     "RequiredAlreadyVisitedEnvironments": [],
     "RequiredUnlockedBps": [],
     "RequiredNOTUnlockedBps": [],
-    "NPCInventoryConditions": []
+    "NPCInventoryConditions": [],
+    "NPCExists": []
   },
   "Line": {
     "DefaultText": "The man pauses, studying you in silence.",
@@ -268,6 +271,8 @@
       }
     ],
     "NPCStatModifications": [],
+    "NPCSetDuties": [],
+    "NPCSetHome": [],
     "DroppedCards": [],
     "BlueprintsFullUnlock": [],
     "AffectCards": [],
@@ -278,7 +283,9 @@
     "StartTrading": false,
     "SpendTicks": false,
     "Ticks": 0,
-    "Miniticks": 0
+    "Miniticks": 0,
+    "SpawnNPCS": [],
+    "DeleteNPCS": []
   },
   "LeftSide": {
     "SideName": {
@@ -490,11 +497,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Approach cautiously",
@@ -542,64 +552,39 @@
         "NextStep": 1,
         "NextLine": null,
         "NextScene": {
-          "key": "TraderTalkGeneral",
-          "zh": "TraderTalkGeneral",
-          "en": "TraderTalkGeneral",
-          "ja": "TraderTalkGeneral",
+          "key": "TraderTalkAnimal",
+          "zh": "TraderTalkAnimal",
+          "en": "TraderTalkAnimal",
+          "ja": "TraderTalkAnimal",
           "icon": "",
           "type": "dialog"
         },
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [
           {
             "TargetStat": {
-              "m_Name": "SeenPlayerEver",
               "key": "SeenPlayerEver",
               "type": "durability",
               "zh": "见过玩家",
               "en": "SeenPlayerEver",
-              "ja": "Seen Player Ever",
-              "GameName": {
-                "DefaultText": "Seen Player Ever",
-                "Text": "见过玩家",
-                "zh": "见过玩家",
-                "en": "SeenPlayerEver",
-                "ja": "Seen Player Ever"
-              },
-              "DefaultStartingValue": 0,
-              "DefaultMinMaxValue": {
-                "x": 0,
-                "y": 1
-              },
-              "DefaultRate": 0,
-              "DefaultMinMaxRate": {
-                "x": 0,
-                "y": 0
-              },
-              "StatVisibleIcon": null,
-              "HidingOptions": 0,
-              "TextDisplay": 0,
-              "NumberPrecision": 0,
-              "StatScalingToModifiers": [],
-              "NPCStatScalingToModifiers": [],
-              "name": "见过玩家",
-              "desc": "Seen Player Ever",
-              "m_GameObject": null,
-              "m_Enabled": 1,
-              "UniqueID": "42ceede610e6053498ba43292e3d0684",
-              "UniqueIDIndex": 4204
+              "ja": "Seen Player Ever"
             },
             "UseAssociatedAgent": true,
             "TargetAgent": null,
             "ValueChange": {
               "x": 1,
               "y": 1
-            }
+            },
+            "IgnoreNovelty": false
           }
         ],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -610,7 +595,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     },
     {
@@ -800,11 +787,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Answer": {
         "DefaultText": "Leave the man alone",
@@ -854,9 +844,13 @@
         "NextScene": null,
         "DontClearHistory": false
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -867,7 +861,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       }
     }
   ],
@@ -880,6 +876,9 @@
     "type": "dialog"
   },
   "OverrideSceneImage": null,
+  "UseWeightsForNextStep": false,
+  "NextStepsWithWeights": [],
+  "ShowContinueButton": 0,
   "m_GameObject": null,
   "m_Enabled": 1,
   "TextSettings": {

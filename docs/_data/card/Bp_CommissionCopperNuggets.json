@@ -1539,7 +1539,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -1624,7 +1624,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -1643,41 +1643,11 @@
   "BlueprintNPCStatModifications": [
     {
       "TargetStat": {
-        "m_Name": "AgentCommisionAvailableCopperNuggets",
         "key": "AgentCommisionAvailableCopperNuggets",
         "type": "durability",
         "zh": "委托可用-铜块",
         "en": "AgentCommisionAvailableCopperNuggets",
-        "ja": "AgentCommisionAvailableCopperNuggets",
-        "GameName": {
-          "DefaultText": "AgentCommisionAvailableCopperNuggets",
-          "Text": "委托可用-铜块",
-          "zh": "委托可用-铜块",
-          "en": "AgentCommisionAvailableCopperNuggets",
-          "ja": "AgentCommisionAvailableCopperNuggets"
-        },
-        "DefaultStartingValue": 0,
-        "DefaultMinMaxValue": {
-          "x": 0,
-          "y": 1
-        },
-        "DefaultRate": 0,
-        "DefaultMinMaxRate": {
-          "x": 0,
-          "y": 1
-        },
-        "StatVisibleIcon": null,
-        "HidingOptions": 0,
-        "TextDisplay": 0,
-        "NumberPrecision": 0,
-        "StatScalingToModifiers": [],
-        "NPCStatScalingToModifiers": [],
-        "name": "委托可用-铜块",
-        "desc": "AgentCommisionAvailableCopperNuggets",
-        "m_GameObject": null,
-        "m_Enabled": 1,
-        "UniqueID": "e88093d49e13f3749b57bf97d0b3f3da",
-        "UniqueIDIndex": 2893
+        "ja": "AgentCommisionAvailableCopperNuggets"
       },
       "UseAssociatedAgent": false,
       "TargetAgent": {
@@ -1691,45 +1661,16 @@
       "ValueChange": {
         "x": -1,
         "y": -1
-      }
+      },
+      "IgnoreNovelty": false
     },
     {
       "TargetStat": {
-        "m_Name": "AgentTraderAvailable",
         "key": "AgentTraderAvailable",
         "type": "durability",
         "zh": "商人可用",
         "en": "AgentTraderAvailable",
-        "ja": "AgentTraderAvailable",
-        "GameName": {
-          "DefaultText": "AgentTraderAvailable",
-          "Text": "商人可用",
-          "zh": "商人可用",
-          "en": "AgentTraderAvailable",
-          "ja": "AgentTraderAvailable"
-        },
-        "DefaultStartingValue": 0,
-        "DefaultMinMaxValue": {
-          "x": 0,
-          "y": 1
-        },
-        "DefaultRate": 0,
-        "DefaultMinMaxRate": {
-          "x": 0,
-          "y": 1
-        },
-        "StatVisibleIcon": null,
-        "HidingOptions": 0,
-        "TextDisplay": 0,
-        "NumberPrecision": 0,
-        "StatScalingToModifiers": [],
-        "NPCStatScalingToModifiers": [],
-        "name": "商人可用",
-        "desc": "AgentTraderAvailable",
-        "m_GameObject": null,
-        "m_Enabled": 1,
-        "UniqueID": "f361a98afe344ba4aab2b00a7412fb08",
-        "UniqueIDIndex": 3187
+        "ja": "AgentTraderAvailable"
       },
       "UseAssociatedAgent": false,
       "TargetAgent": {
@@ -1743,7 +1684,8 @@
       "ValueChange": {
         "x": 1,
         "y": 1
-      }
+      },
+      "IgnoreNovelty": false
     }
   ],
   "UniqueFlavourFadeRates": [],
@@ -1761,6 +1703,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],
@@ -1806,98 +1750,11 @@
         "ja": "商人"
       },
       "TargetStat": {
-        "m_Name": "AgentTrust",
         "key": "AgentTrust",
         "type": "durability",
         "zh": "信任度",
         "en": "AgentTrust",
-        "ja": "Agent Trust",
-        "GameName": {
-          "DefaultText": "Agent Trust",
-          "Text": "信任度",
-          "zh": "信任度",
-          "en": "AgentTrust",
-          "ja": "Agent Trust"
-        },
-        "DefaultStartingValue": 0,
-        "DefaultMinMaxValue": {
-          "x": 0,
-          "y": 20000
-        },
-        "DefaultRate": 0,
-        "DefaultMinMaxRate": {
-          "x": 0,
-          "y": 20000
-        },
-        "StatVisibleIcon": null,
-        "HidingOptions": 0,
-        "TextDisplay": 0,
-        "NumberPrecision": 0,
-        "StatScalingToModifiers": [
-          {
-            "InterpolatedValue": {
-              "InputStat": {
-                "key": "Trust",
-                "icon": "Structure_Old",
-                "type": "stat",
-                "zh": "信任",
-                "en": "Trust",
-                "ja": "信頼",
-                "max": 100,
-                "min": 0
-              },
-              "UseStatPercentage": false,
-              "Value": {
-                "Active": true,
-                "InputValueRange": {
-                  "x": 0,
-                  "y": 100
-                },
-                "OutputValueRange": {
-                  "x": 0.9,
-                  "y": 1.1
-                },
-                "WhenOutOfRange": 1,
-                "OutOfRangeCustomValue": 0
-              }
-            }
-          },
-          {
-            "InterpolatedValue": {
-              "InputStat": {
-                "key": "Skill_Socials",
-                "icon": "Morale1",
-                "type": "stat",
-                "zh": "人情练达",
-                "en": "Socials",
-                "ja": "社交",
-                "max": 150,
-                "min": 0
-              },
-              "UseStatPercentage": false,
-              "Value": {
-                "Active": true,
-                "InputValueRange": {
-                  "x": 0,
-                  "y": 150
-                },
-                "OutputValueRange": {
-                  "x": 0.9,
-                  "y": 1.1
-                },
-                "WhenOutOfRange": 1,
-                "OutOfRangeCustomValue": 0
-              }
-            }
-          }
-        ],
-        "NPCStatScalingToModifiers": [],
-        "name": "信任度",
-        "desc": "Agent Trust",
-        "m_GameObject": null,
-        "m_Enabled": 1,
-        "UniqueID": "eeccbe55704197944a02a36405404c46",
-        "UniqueIDIndex": 3195
+        "ja": "Agent Trust"
       },
       "ConditionRange": {
         "x": 50,
@@ -1915,41 +1772,11 @@
         "ja": "商人"
       },
       "TargetStat": {
-        "m_Name": "AgentCommisionAvailableCopperNuggets",
         "key": "AgentCommisionAvailableCopperNuggets",
         "type": "durability",
         "zh": "委托可用-铜块",
         "en": "AgentCommisionAvailableCopperNuggets",
-        "ja": "AgentCommisionAvailableCopperNuggets",
-        "GameName": {
-          "DefaultText": "AgentCommisionAvailableCopperNuggets",
-          "Text": "委托可用-铜块",
-          "zh": "委托可用-铜块",
-          "en": "AgentCommisionAvailableCopperNuggets",
-          "ja": "AgentCommisionAvailableCopperNuggets"
-        },
-        "DefaultStartingValue": 0,
-        "DefaultMinMaxValue": {
-          "x": 0,
-          "y": 1
-        },
-        "DefaultRate": 0,
-        "DefaultMinMaxRate": {
-          "x": 0,
-          "y": 1
-        },
-        "StatVisibleIcon": null,
-        "HidingOptions": 0,
-        "TextDisplay": 0,
-        "NumberPrecision": 0,
-        "StatScalingToModifiers": [],
-        "NPCStatScalingToModifiers": [],
-        "name": "委托可用-铜块",
-        "desc": "AgentCommisionAvailableCopperNuggets",
-        "m_GameObject": null,
-        "m_Enabled": 1,
-        "UniqueID": "e88093d49e13f3749b57bf97d0b3f3da",
-        "UniqueIDIndex": 2893
+        "ja": "AgentCommisionAvailableCopperNuggets"
       },
       "ConditionRange": {
         "x": 1,

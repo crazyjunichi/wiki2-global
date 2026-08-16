@@ -10,10 +10,10 @@
     {
       "m_Name": "MoontouchedHunt",
       "m_Script": {
-        "FileName": "Female"
+        "FileName": "Badger"
       },
-      "___key": "0_2283",
-      "___fn": "MoontouchedHunt@2283.json",
+      "___key": "0_2468",
+      "___fn": "MoontouchedHunt@2468.json",
       "key": "MoontouchedHunt",
       "exportName": "MoontouchedHunt",
       "zh": "MoontouchedHunt",
@@ -206,11 +206,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Line": {
         "DefaultText": "You approach the Moontouched. ",
@@ -244,6 +247,8 @@
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -254,7 +259,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       },
       "LeftSide": {
         "SideName": {
@@ -466,11 +473,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Leave it alone. ",
@@ -520,9 +530,13 @@
             "NextScene": null,
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -533,7 +547,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         },
         {
@@ -723,11 +739,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Attack",
@@ -777,6 +796,8 @@
             "NextScene": null,
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [
               {
@@ -818,6 +839,8 @@
               }
             ],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -842,7 +865,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         },
         {
@@ -1051,11 +1076,14 @@
               }
             ],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Talk",
@@ -1112,9 +1140,13 @@
             },
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -1132,7 +1164,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         }
       ],
@@ -1147,6 +1181,9 @@
       "OverrideSceneImage": {
         "FileName": "Moontouched"
       },
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
+      "ShowContinueButton": 0,
       "m_GameObject": null,
       "m_Enabled": 1,
       "TextSettings": {

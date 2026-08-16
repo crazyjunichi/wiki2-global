@@ -7,7 +7,7 @@
   "zh": "陷坑",
   "en": "Pit Trap",
   "ja": "落とし穴",
-  "UniqueIDIndex": 2151,
+  "UniqueIDIndex": 2152,
   "CardType": 2,
   "CardTags": [
     {
@@ -1974,7 +1974,7 @@
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
-              "DefaultText": "Hunger",
+              "DefaultText": "Satiation",
               "Text": "饥饿",
               "zh": "饥饿",
               "en": "Hunger",
@@ -3380,12 +3380,13 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [
         {
           "key": "HandAction",
           "text": "HandAction",
           "type": "tag",
-          "count": 1460,
+          "count": 1457,
           "SpoilageTime": {
             "Active": true,
             "CardStatName": {
@@ -3708,6 +3709,7 @@
       "NotBaseAction": true,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -4463,6 +4465,7 @@
       "StatModifications": [],
       "InterpolatedStatModifications": [],
       "NPCStatModifications": [],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -4476,6 +4479,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -4686,7 +4691,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -4771,7 +4776,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [
     {
@@ -4821,6 +4826,7 @@
       },
       "ActionSounds": [],
       "DisablePitchVariation": false,
+      "CompatibleNPCDuties": [],
       "ActionTags": [],
       "RequiredStatValues": [],
       "RequiredNPCStatValues": [],
@@ -5012,6 +5018,7 @@
       "NotBaseAction": false,
       "Cancellable": false,
       "InstantStatModifications": false,
+      "LocksCardsForUse": false,
       "DontDoStatModificationsOnCancel": false,
       "InstantDurabilityModifications": false,
       "ReceivingCardFlavourBonus": false,
@@ -5025,50 +5032,22 @@
       "NPCStatModifications": [
         {
           "TargetStat": {
-            "m_Name": "AgentTrapType",
             "key": "AgentTrapType",
             "type": "durability",
             "zh": "陷阱类型",
             "en": "AgentTrapType",
-            "ja": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
-            "GameName": {
-              "DefaultText": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
-              "Text": "陷阱类型",
-              "zh": "陷阱类型",
-              "en": "AgentTrapType",
-              "ja": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40"
-            },
-            "DefaultStartingValue": 0,
-            "DefaultMinMaxValue": {
-              "x": 0,
-              "y": 100
-            },
-            "DefaultRate": 0,
-            "DefaultMinMaxRate": {
-              "x": -10000,
-              "y": 10000
-            },
-            "StatVisibleIcon": null,
-            "HidingOptions": 0,
-            "TextDisplay": 0,
-            "NumberPrecision": 0,
-            "StatScalingToModifiers": [],
-            "NPCStatScalingToModifiers": [],
-            "name": "陷阱类型",
-            "desc": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40",
-            "m_GameObject": null,
-            "m_Enabled": 1,
-            "UniqueID": "cf4a2923e7142524f8aff07c95a916e5",
-            "UniqueIDIndex": 3194
+            "ja": "Agent Trap Type, Deadfall = 10, Snare = 20, PitTrap = 30, LogTrap = 40"
           },
           "UseAssociatedAgent": true,
           "TargetAgent": null,
           "ValueChange": {
             "x": 40,
             "y": 40
-          }
+          },
+          "IgnoreNovelty": false
         }
       ],
+      "NPCSetDuties": [],
       "TemporaryStatModifications": [],
       "MovePlayer": {
         "MoveOption": 0,
@@ -5082,6 +5061,8 @@
         "MoveInDirection": 0,
         "Pathfinding": null
       },
+      "SpawnNPCS": [],
+      "DeleteNPCS": [],
       "MoveNPC": [],
       "SetNPCHome": [],
       "ExtraDurabilityModifications": [],
@@ -5577,6 +5558,7 @@
         "DurabilitiesModifiers": [
           {
             "InputDurability": 128,
+            "InterpolateUsingPercentage": false,
             "Value": {
               "Active": true,
               "InputValueRange": {
@@ -5624,41 +5606,11 @@
         "NPCStatsModifiers": [
           {
             "InputStat": {
-              "m_Name": "AgentTrapCunning",
               "key": "AgentTrapCunning",
               "type": "durability",
               "zh": "陷阱技巧",
               "en": "AgentTrapCunning",
-              "ja": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
-              "GameName": {
-                "DefaultText": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
-                "Text": "陷阱技巧",
-                "zh": "陷阱技巧",
-                "en": "AgentTrapCunning",
-                "ja": "Agent Cunning Value, use to calculate the % catch reduction for traps. "
-              },
-              "DefaultStartingValue": 0,
-              "DefaultMinMaxValue": {
-                "x": 0,
-                "y": 100
-              },
-              "DefaultRate": 0,
-              "DefaultMinMaxRate": {
-                "x": -10000,
-                "y": 10000
-              },
-              "StatVisibleIcon": null,
-              "HidingOptions": 0,
-              "TextDisplay": 0,
-              "NumberPrecision": 0,
-              "StatScalingToModifiers": [],
-              "NPCStatScalingToModifiers": [],
-              "name": "陷阱技巧",
-              "desc": "Agent Cunning Value, use to calculate the % catch reduction for traps. ",
-              "m_GameObject": null,
-              "m_Enabled": 1,
-              "UniqueID": "879f824941ccad94daff21e4cde082fb",
-              "UniqueIDIndex": 3189
+              "ja": "Agent Cunning Value, use to calculate the % catch reduction for traps. "
             },
             "UseAssociatedAgent": true,
             "TargetAgent": null,
@@ -5679,41 +5631,11 @@
           },
           {
             "InputStat": {
-              "m_Name": "AgentTrapCunningPitTrap",
               "key": "AgentTrapCunningPitTrap",
               "type": "durability",
               "zh": "陷阱技巧-陷坑",
               "en": "AgentTrapCunningPitTrap",
-              "ja": "Agent Cunning Value bonus for Pit Traps, use to calculate the % catch reduction for traps. ",
-              "GameName": {
-                "DefaultText": "Agent Cunning Value bonus for Pit Traps, use to calculate the % catch reduction for traps. ",
-                "Text": "陷阱技巧-陷坑",
-                "zh": "陷阱技巧-陷坑",
-                "en": "AgentTrapCunningPitTrap",
-                "ja": "Agent Cunning Value bonus for Pit Traps, use to calculate the % catch reduction for traps. "
-              },
-              "DefaultStartingValue": 0,
-              "DefaultMinMaxValue": {
-                "x": 0,
-                "y": 10000
-              },
-              "DefaultRate": 0,
-              "DefaultMinMaxRate": {
-                "x": -10000,
-                "y": 10000
-              },
-              "StatVisibleIcon": null,
-              "HidingOptions": 0,
-              "TextDisplay": 0,
-              "NumberPrecision": 0,
-              "StatScalingToModifiers": [],
-              "NPCStatScalingToModifiers": [],
-              "name": "陷阱技巧-陷坑",
-              "desc": "Agent Cunning Value bonus for Pit Traps, use to calculate the % catch reduction for traps. ",
-              "m_GameObject": null,
-              "m_Enabled": 1,
-              "UniqueID": "7ac23f79b1fb4e843b4cda85e550ff2c",
-              "UniqueIDIndex": 3192
+              "ja": "Agent Cunning Value bonus for Pit Traps, use to calculate the % catch reduction for traps. "
             },
             "UseAssociatedAgent": true,
             "TargetAgent": null,
@@ -5758,6 +5680,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [
     {

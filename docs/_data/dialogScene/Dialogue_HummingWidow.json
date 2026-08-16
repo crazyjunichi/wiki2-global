@@ -10,10 +10,10 @@
     {
       "m_Name": "HummingWidowIntro",
       "m_Script": {
-        "FileName": "Female"
+        "FileName": "Badger"
       },
-      "___key": "0_2291",
-      "___fn": "HummingWidowIntro@2291.json",
+      "___key": "0_2476",
+      "___fn": "HummingWidowIntro@2476.json",
       "key": "HummingWidowIntro",
       "exportName": "HummingWidowIntro",
       "zh": "HummingWidowIntro",
@@ -206,11 +206,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "Line": {
         "DefaultText": "The Humming Widow fixes you with an empty stare.\n\n\nHer swarms gather oppressively around you, growing louder and louder.\n\n\nTheir ceaseless buzzing presses against both your skin and your mind, searching for the smallest openings through which to seep.",
@@ -244,6 +247,8 @@
       "ActionToPerform": {
         "StatModifications": [],
         "NPCStatModifications": [],
+        "NPCSetDuties": [],
+        "NPCSetHome": [],
         "DroppedCards": [],
         "BlueprintsFullUnlock": [],
         "AffectCards": [],
@@ -254,7 +259,9 @@
         "StartTrading": false,
         "SpendTicks": false,
         "Ticks": 0,
-        "Miniticks": 0
+        "Miniticks": 0,
+        "SpawnNPCS": [],
+        "DeleteNPCS": []
       },
       "LeftSide": {
         "SideName": {
@@ -466,11 +473,14 @@
             },
             "RequiredStatValues": [],
             "RequiredNPCStatValues": [],
+            "RequiredNPCActiveDuties": [],
+            "RequiredNPCAtHome": [],
             "RequiredInGameTimes": [],
             "RequiredAlreadyVisitedEnvironments": [],
             "RequiredUnlockedBps": [],
             "RequiredNOTUnlockedBps": [],
-            "NPCInventoryConditions": []
+            "NPCInventoryConditions": [],
+            "NPCExists": []
           },
           "Answer": {
             "DefaultText": "Leave",
@@ -520,9 +530,13 @@
             "NextScene": null,
             "DontClearHistory": false
           },
+          "UseWeightsForNextStep": false,
+          "NextStepsWithWeights": [],
           "ActionToPerform": {
             "StatModifications": [],
             "NPCStatModifications": [],
+            "NPCSetDuties": [],
+            "NPCSetHome": [],
             "DroppedCards": [],
             "BlueprintsFullUnlock": [],
             "AffectCards": [],
@@ -533,7 +547,9 @@
             "StartTrading": false,
             "SpendTicks": false,
             "Ticks": 0,
-            "Miniticks": 0
+            "Miniticks": 0,
+            "SpawnNPCS": [],
+            "DeleteNPCS": []
           }
         }
       ],
@@ -546,6 +562,9 @@
         "type": "dialog"
       },
       "OverrideSceneImage": null,
+      "UseWeightsForNextStep": false,
+      "NextStepsWithWeights": [],
+      "ShowContinueButton": 0,
       "m_GameObject": null,
       "m_Enabled": 1,
       "TextSettings": {

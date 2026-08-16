@@ -109,6 +109,16 @@
         },
         "MaxValue": 4
       }
+    },
+    {
+      "key": "tag_Door",
+      "text": "“Secure”",
+      "icon": "",
+      "type": "tag",
+      "count": 1,
+      "zh": "Secure",
+      "en": "Secure",
+      "ja": "Secure"
     }
   ],
   "CardName": {
@@ -1331,11 +1341,14 @@
         },
         "RequiredStatValues": [],
         "RequiredNPCStatValues": [],
+        "RequiredNPCActiveDuties": [],
+        "RequiredNPCAtHome": [],
         "RequiredInGameTimes": [],
         "RequiredAlreadyVisitedEnvironments": [],
         "RequiredUnlockedBps": [],
         "RequiredNOTUnlockedBps": [],
-        "NPCInventoryConditions": []
+        "NPCInventoryConditions": [],
+        "NPCExists": []
       },
       "StatModifiers": [
         {
@@ -1376,6 +1389,7 @@
           "IsInverse": false
         }
       ],
+      "NPCStatModifiers": [],
       "EffectStacksWithRequiredCards": false,
       "OnBoardEffectCap": 0,
       "EffectScalesWithDurabilities": {
@@ -3228,7 +3242,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -3313,8 +3327,8 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
-  "ApplyTagsToEnvironment": false,
+  "UsesOwnershipSystem": false,
+  "ApplyTagsToEnvironment": true,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
   "CannotSpawnIfCurrentEnvIsNewlyDiscovered": false,
@@ -3338,6 +3352,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [
@@ -3970,7 +3986,12 @@
   "CannotBeTransferred": false,
   "MapStructureType": 0,
   "CannotHaveFlavoursOrSpices": false,
-  "PathfindingLinkModifiers": [],
+  "PathfindingLinkModifiers": [
+    {
+      "AppliesToDirection": 0,
+      "Tags": []
+    }
+  ],
   "WhenCreatedSounds": [],
   "DebugCardSorting": false,
   "CannotPutItemsIn": false,

@@ -1494,12 +1494,12 @@
         {
           "RequiredCard": null,
           "RequiredTabGroup": {
-            "key": "GpTag_SharpKnife",
-            "text": "“锋利的切割工具”",
+            "key": "GpTag_ShavingTool",
+            "text": "“刨削工具”",
             "type": "tag",
-            "zh": "锋利的切割工具",
-            "en": "Sharp Cutting Tool",
-            "ja": "鋭利な切断工具",
+            "zh": "刨削工具",
+            "en": "Shaving Tool",
+            "ja": "削り加工道具",
             "SubGroups": [],
             "count": 5,
             "SpoilageTime": {
@@ -2958,7 +2958,7 @@
       "key": "HandAction",
       "text": "HandAction",
       "type": "tag",
-      "count": 1460,
+      "count": 1457,
       "SpoilageTime": {
         "Active": true,
         "CardStatName": {
@@ -3205,6 +3205,15 @@
       "zh": "成型特殊2掉落",
       "en": "ShapingActionSpecial2Drops",
       "ja": "ShapingActionSpecial2Drops"
+    },
+    {
+      "key": "ShavingActionSpecial2Drops",
+      "text": "ShavingActionSpecial2Drops",
+      "type": "tag",
+      "count": 0,
+      "zh": "刮皮动作特殊2掉落",
+      "en": "ShavingActionSpecial2Drops",
+      "ja": "ShavingActionSpecial2Drops"
     },
     {
       "key": "WoodworkingAction",
@@ -3875,7 +3884,7 @@
   "AlsoUnlocks": [],
   "ActionModifiers": [],
   "UsedInBpActionModifiers": [],
-  "AssociatedDuties": [],
+  "AlwaysAssociatedDuties": [],
   "HideContainedBlueprintsConditions": {
     "RequiredSpoilagePercent": {
       "Active": false,
@@ -3960,7 +3969,7 @@
     },
     "SpecificFailMessages": []
   },
-  "Ownership": false,
+  "UsesOwnershipSystem": false,
   "ApplyTagsToEnvironment": false,
   "OnInteractActions": [],
   "IngredientDurabilityAveragesReplaceResultDurabilities": false,
@@ -3985,6 +3994,8 @@
     "Active": false,
     "IntValue": 0
   },
+  "CompatibleDuties": [],
+  "AlwaysDropUniqueDefaultEnvDrops": false,
   "_blueprintContainerCard": [],
   "_gotFrom": [],
   "_useFor": [],
